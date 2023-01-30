@@ -1,0 +1,12 @@
+{
+    "znuny.PostMasterObject.CheckFollowUp": {
+        "body": [
+            "${1:my (\$TicketNumber, \$TicketID) = \$PostMasterObject->CheckFollowUp(",
+            "    Subject => 'Re: [Ticket:#123456] Some Subject',",
+            ");}",
+        ],
+        "prefix": "znuny.PostMasterObject.CheckFollowUp",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

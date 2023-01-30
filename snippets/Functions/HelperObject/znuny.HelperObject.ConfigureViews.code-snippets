@@ -1,0 +1,37 @@
+{
+    "znuny.HelperObject.ConfigureViews": {
+        "body": [
+            "${1:my \$Result = \$HelperObject->ConfigureViews(",
+            "    AgentTicketNote => {",
+            "        Note             => 1,",
+            "        NoteMandatory    => 1,",
+            "        Owner            => 1,",
+            "        OwnerMandatory   => 1,",
+            "        Priority         => 1,",
+            "        PriorityDefault  => '3 normal',",
+            "        Queue            => 1,",
+            "        Responsible      => 1,",
+            "        Service          => 1,",
+            "        ServiceMandatory => 1,",
+            "        SLAMandatory     => 1,",
+            "        State            => 1,",
+            "        StateType        => ['open', 'closed', 'pending reminder', 'pending auto'],",
+            "        TicketType       => 1,",
+            "        Title            => 1,",
+            "    \\},",
+            "    CustomerTicketMessage => {",
+            "        Priority         => 1,",
+            "        Queue            => 1,",
+            "        Service          => 1,",
+            "        ServiceMandatory => 1,",
+            "        SLA              => 1,",
+            "        SLAMandatory     => 1,",
+            "        TicketType       => 1,",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.ConfigureViews",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "znuny.DebuggerObject.HandleResponse": {
+        "body": [
+            "${1:my \$Result = \$DebuggerObject->HandleResponse(",
+            "    ResponseSuccess      => 1,              # success status of the remote web service",
+            "    ResponseErrorMessage => '',             # in case of web service error",
+            "    Data => {                               # data payload",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.DebuggerObject.HandleResponse",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

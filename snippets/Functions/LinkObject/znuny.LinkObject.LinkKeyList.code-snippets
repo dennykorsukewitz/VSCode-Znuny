@@ -1,0 +1,18 @@
+{
+    "znuny.LinkObject.LinkKeyList": {
+        "body": [
+            "${1:my %LinkKeyList = \$LinkObject->LinkKeyList(",
+            "    Object1   => 'Ticket',",
+            "    Key1      => '321',",
+            "    Object2   => 'FAQ',",
+            "    State     => 'Valid',",
+            "    Type      => 'ParentChild', # (optional)",
+            "    Direction => 'Target',      # (optional) default Both (Source|Target|Both)",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.LinkKeyList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

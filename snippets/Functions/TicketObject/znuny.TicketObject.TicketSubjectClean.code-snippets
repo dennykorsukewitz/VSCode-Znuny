@@ -1,0 +1,14 @@
+{
+    "znuny.TicketObject.TicketSubjectClean": {
+        "body": [
+            "${1:my \$NewSubject = \$TicketObject->TicketSubjectClean(",
+            "    TicketNumber => \$TicketNumber,",
+            "    Subject      => \$OldSubject,",
+            "    Size         => \$SubjectSizeToBeDisplayed   # optional, if 0 do not cut subject",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketSubjectClean",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

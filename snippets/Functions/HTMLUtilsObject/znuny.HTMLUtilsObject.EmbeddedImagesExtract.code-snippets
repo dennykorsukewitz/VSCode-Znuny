@@ -1,0 +1,13 @@
+{
+    "znuny.HTMLUtilsObject.EmbeddedImagesExtract": {
+        "body": [
+            "${1:\$HTMLUtilsObject->EmbeddedImagesExtract(",
+            "    DocumentRef    => \\$Body,",
+            "    AttachmentsRef => \@Attachments,",
+            ");}",
+        ],
+        "prefix": "znuny.HTMLUtilsObject.EmbeddedImagesExtract",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

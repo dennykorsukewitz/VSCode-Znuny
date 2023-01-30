@@ -1,0 +1,15 @@
+{
+    "znuny.Config.String": {
+        "body": [
+            "<Setting Name=\"$1\" Required=\"${8:1}\" Valid=\"1\">",
+            "    <Description Translatable=\"1\">${2:This configuration defines}.</Description>",
+            "    <Value>",
+            "        <Item ValueType=\"String\" ValueRegex=\"$6\">$5</Item>",
+            "    </Value>",
+            "</Setting>",
+        ],
+        "prefix": "znuny.Config.String",
+        "description": "xml",
+        "scope": "xml"
+    }
+}

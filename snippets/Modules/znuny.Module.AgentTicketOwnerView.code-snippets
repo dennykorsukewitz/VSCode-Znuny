@@ -1,0 +1,10 @@
+{
+    "AgentTicketOwnerView": {
+        "body": [
+            "AgentTicketOwnerView",
+        ],
+        "prefix": "AgentTicketOwnerView",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "map.hash": {
+        "body": [
+            "${1:my %NewHash = map \\{ \\$_ => \\$_ \\} sort keys \\%Hash;}\n${2:my %NewHash = map \\{ s\\{SEARCH\\}\\{REPLACE\\}g => s\\{SEARCH\\}\\{REPLACE\\}g \\} sort keys \\%Hash;}",
+        ],
+        "prefix": "map.hash",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "znuny.ServiceObject.ServiceSearch": {
+        "body": [
+            "${1:my @ServiceList = \$ServiceObject->ServiceSearch(",
+            "    Name   => 'Service Name', # (optional)",
+            "    Limit  => 122,            # (optional) default 1000",
+            "    UserID => \$UserID,",
+            "",
+            "    # ITSMCore (if installed)",
+            "    TypeIDs       => 2,",
+            "    Criticalities => [ '2 low', '3 normal' ],",
+            ");}",
+            "${2:my @ServiceList = \$ServiceObject->ServiceSearch(",
+            "    Name   => 'Service Name', # (optional)",
+            "    Limit  => 122,            # (optional) default 1000",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ServiceObject.ServiceSearch",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

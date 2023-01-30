@@ -1,0 +1,18 @@
+{
+    "znuny.StandardTemplateObject.StandardTemplateUpdate": {
+        "body": [
+            "${1:\$StandardTemplateObject->StandardTemplateUpdate(",
+            "    ID           => 123,",
+            "    Name         => 'New Standard Template',",
+            "    Template     => 'Thank you for your email.',",
+            "    ContentType  => 'text/plain; charset=utf-8',",
+            "    TemplateType => 'Answer',",
+            "    ValidID      => \$ValidID,",
+            "    UserID       => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

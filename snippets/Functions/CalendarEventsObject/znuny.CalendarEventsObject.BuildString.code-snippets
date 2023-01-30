@@ -1,0 +1,19 @@
+{
+    "znuny.CalendarEventsObject.BuildString": {
+        "body": [
+            "${1:my \$OutputString = \$CalendarEventsObject->BuildString(",
+            "    Data => {",
+            "      'Type'      => 'Recurrent', # required",
+            "      'Interval'  => '5',",
+            "      'ByDay'     => 'SU,TU,WE,TH,FR,SA',",
+            "      'AllDay'    => 1,",
+            "      'Frequency' => 'Weekly'",
+            "    \\},",
+            "    Type => 'Frequency',",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarEventsObject.BuildString",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

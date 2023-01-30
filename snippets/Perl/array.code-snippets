@@ -1,0 +1,15 @@
+{
+    "array": {
+        "body": [
+            "${1:my @${3:Array} = (\"${4:Element1}\",\"${5:Element2}\",${6:@Array2});}",
+            "",
+            "${2:my @${3:Array} = (",
+            "    \"${4:Element1}\",",
+            "    \"${5:Element2}\",",
+            "    ${6:@Array2}",
+            ");}",
+        ],
+        "prefix": "array",
+        "scope": "perl"
+    }
+}

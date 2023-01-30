@@ -1,0 +1,16 @@
+{
+    "znuny.TimeObject.SystemTime2TimeStamp": {
+        "body": [
+            "${1:my \$TimeStamp = \$TimeObject->SystemTime2TimeStamp(",
+            "    SystemTime => \$SystemTime,",
+            "    Type       => 'Short',",
+            ");}",
+            "${2:my \$TimeStamp = \$TimeObject->SystemTime2TimeStamp(",
+            "    SystemTime => \$SystemTime,",
+            ");}",
+        ],
+        "prefix": "znuny.TimeObject.SystemTime2TimeStamp",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

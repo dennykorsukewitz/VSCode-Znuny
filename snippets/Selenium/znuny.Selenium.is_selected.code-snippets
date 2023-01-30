@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.is_selected": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->is_selected();",
+        ],
+        "prefix": "znuny.Selenium.is_selected",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "array.deref": {
+        "body": [
+            "my @${1:Array} = @{ \\$$2 };",
+        ],
+        "prefix": "array.deref",
+        "scope": "perl"
+    }
+},

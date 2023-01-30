@@ -1,0 +1,19 @@
+{
+    "znuny.TemplateGeneratorObject.Signature": {
+        "body": [
+            "${1:my \$Signature = \$TemplateGeneratorObject->Signature(",
+            "    QueueID => \$QueueID,",
+            "    UserID  => \$UserID,",
+            "    Data    => \$ArticleHashRef,",
+            ");}",
+            "${2:my \$Signature = \$TemplateGeneratorObject->Signature(",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            "    Data     => \$ArticleHashRef,",
+            ");}",
+        ],
+        "prefix": "znuny.TemplateGeneratorObject.Signature",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

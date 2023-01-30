@@ -1,0 +1,13 @@
+{
+    "znuny.BackendObject.StatsSearchFieldParameterBuild": {
+        "body": [
+            "${1:my \$DynamicFieldStatsSearchParameter = \$BackendObject->StatsSearchFieldParameterBuild(",
+            "    DynamicFieldConfig   => \$DynamicFieldConfig,    # complete config of the DynamicField",
+            "    Value                => \$Value,                 # the serach profile",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.StatsSearchFieldParameterBuild",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

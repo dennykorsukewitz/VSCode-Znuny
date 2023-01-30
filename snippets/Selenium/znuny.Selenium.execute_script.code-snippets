@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.execute_script": {
+        "body": [
+            "my \\$Result = \\$SeleniumObject->execute_script('$3');",
+        ],
+        "prefix": "znuny.Selenium.execute_script",
+        "scope": "perl"
+    }
+}

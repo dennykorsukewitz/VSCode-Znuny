@@ -1,0 +1,13 @@
+{
+    "znuny.CalendarObject.GetAccessToken": {
+        "body": [
+            "${1:my \$Token = \$CalendarObject->GetAccessToken(",
+            "    CalendarID => \$CalendarID,              # (required) CalendarID",
+            "    UserLogin  => 'agent-1',      # (required) User login",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarObject.GetAccessToken",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

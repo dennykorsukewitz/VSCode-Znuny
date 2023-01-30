@@ -1,0 +1,10 @@
+{
+    "znuny.PackageObject.PackageUpgradeAllIsRunning": {
+        "body": [
+            "${1:my %Result = \$PackageObject->PackageUpgradeAllIsRunning();}",
+        ],
+        "prefix": "znuny.PackageObject.PackageUpgradeAllIsRunning",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

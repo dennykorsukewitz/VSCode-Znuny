@@ -1,0 +1,14 @@
+{
+    "znuny.CustomerUserObject.SetPreferences": {
+        "body": [
+            "${1:\$CustomerUserObject->SetPreferences(",
+            "    Key    => 'UserComment',",
+            "    Value  => 'some comment',",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerUserObject.SetPreferences",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

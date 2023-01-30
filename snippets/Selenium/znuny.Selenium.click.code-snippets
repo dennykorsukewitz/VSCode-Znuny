@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.click": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->click();",
+        ],
+        "prefix": "znuny.Selenium.click",
+        "scope": "perl"
+    }
+}

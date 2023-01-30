@@ -1,0 +1,15 @@
+{
+    "znuny.Codemarker.css": {
+        "body": [
+            "/* ---",
+            " * ${1:Znuny-}${2:}",
+            " * $3",
+            "*/",
+            "",
+            "/* --- */",
+        ],
+        "prefix": "znuny.Codemarker.css",
+        "description": "css",
+        "scope": "css"
+    }
+}

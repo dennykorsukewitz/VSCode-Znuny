@@ -1,0 +1,17 @@
+{
+    "znuny.TicketObject.TicketDeepGet": {
+        "body": [
+            "${1:my %Ticket = \$TicketObject->TicketDeepGet(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID, # optional",
+            "    UserID    => \$UserID,",
+            "",
+            "    # Also fetch all attachments for all articles of the given ticket.",
+            "    GetAllArticleAttachments => 1, # defaults to 0",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketDeepGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

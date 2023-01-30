@@ -1,0 +1,13 @@
+{
+    "znuny.SystemAddressObject.NameExistsCheck": {
+        "body": [
+            "${1:my \$Exists = \$SystemAddressObject->NameExistsCheck(",
+            "    Name => 'Some Address',",
+            "    ID   => 1,                  # optional",
+            ");}",
+        ],
+        "prefix": "znuny.SystemAddressObject.NameExistsCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

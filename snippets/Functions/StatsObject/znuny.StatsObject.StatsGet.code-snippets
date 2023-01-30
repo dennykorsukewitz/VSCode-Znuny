@@ -1,0 +1,13 @@
+{
+    "znuny.StatsObject.StatsGet": {
+        "body": [
+            "${1:my \$HashRef = \$StatsObject->StatsGet(",
+            "    StatID             => \$StatID,",
+            "    NoObjectAttributes => 1,       # optional",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StatsGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

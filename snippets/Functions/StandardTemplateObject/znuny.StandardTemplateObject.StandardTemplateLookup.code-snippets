@@ -1,0 +1,15 @@
+{
+    "znuny.StandardTemplateObject.StandardTemplateLookup": {
+        "body": [
+            "${1:my \$StandardTemplateID = \$StandardTemplateObject->StandardTemplateLookup(",
+            "    StandardTemplate => 'Std Template Name',",
+            ");}",
+            "${2:my \$StandardTemplateName = \$StandardTemplateObject->StandardTemplateLookup(",
+            "    StandardTemplateID => \$StandardTemplateID,",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateLookup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

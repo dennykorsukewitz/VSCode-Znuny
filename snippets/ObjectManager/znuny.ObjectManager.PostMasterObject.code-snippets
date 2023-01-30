@@ -1,0 +1,16 @@
+{
+    "znuny.ObjectManager.PostMasterObject": {
+        "body": [
+            "my \$PostMasterObject = \$Kernel::OM->Create(",
+            "        'Kernel::System::PostMaster',",
+            "        ObjectParams => {",
+            "            Email        => \@ArrayOfEmailContent,",
+            "            Trusted      => 1, # 1|0 ignore X-OTRS header if false",
+            "        \\},",
+            "    );",
+        ],
+        "prefix": "znuny.ObjectManager.PostMasterObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

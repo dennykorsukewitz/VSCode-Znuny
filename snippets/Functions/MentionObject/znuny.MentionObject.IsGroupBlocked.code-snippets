@@ -1,0 +1,12 @@
+{
+    "znuny.MentionObject.IsGroupBlocked": {
+        "body": [
+            "${1:my \$GroupIsBlocked = \$MentionObject->IsGroupBlocked(",
+            "    Group => 'users',",
+            ");}",
+        ],
+        "prefix": "znuny.MentionObject.IsGroupBlocked",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

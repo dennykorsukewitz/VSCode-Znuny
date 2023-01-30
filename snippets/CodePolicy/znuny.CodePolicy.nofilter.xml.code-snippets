@@ -1,0 +1,10 @@
+{
+    "znuny.CodePolicy.nofilter.sopm_xml": {
+        "body": [
+            "<!-- nofilter($1) -->$0",
+        ],
+        "prefix": "znuny.CodePolicy.nofilter.sopm_xml",
+        "description": "sopm, xml",
+        "scope": "xml"
+    }
+}

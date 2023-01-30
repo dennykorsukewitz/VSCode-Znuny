@@ -1,0 +1,17 @@
+{
+    "znuny.DBCRUDTestObject.DataImport": {
+        "body": [
+            "${1:my \$Success = \$DBCRUDTestObject->DataImport(",
+            "    Content   => \$ContentString,",
+            "    Format    => 'yml',                 # optional - default",
+            "    Overwrite => 1,                     # optional to overwrite existing data",
+            "    Data      => {                      # additional data if not all needed data exists",
+            "        ValidID => \$ValidID,",
+            "    \\}",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDTestObject.DataImport",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

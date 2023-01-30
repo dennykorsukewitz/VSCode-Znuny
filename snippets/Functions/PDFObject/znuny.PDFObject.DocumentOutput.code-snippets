@@ -1,0 +1,10 @@
+{
+    "znuny.PDFObject.DocumentOutput": {
+        "body": [
+            "${1:\$DocumentString = \$PDFObject->DocumentOutput();}",
+        ],
+        "prefix": "znuny.PDFObject.DocumentOutput",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

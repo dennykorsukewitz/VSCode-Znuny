@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.SignatureObject": {
+        "body": [
+            "my \$SignatureObject = \$Kernel::OM->Get('Kernel::System::Signature');",
+        ],
+        "prefix": "znuny.ObjectManager.SignatureObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

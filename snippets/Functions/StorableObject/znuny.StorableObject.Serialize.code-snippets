@@ -1,0 +1,13 @@
+{
+    "znuny.StorableObject.Serialize": {
+        "body": [
+            "${1:my \$StoableString = \$StorableObject->Serialize(",
+            "    Data => \$Data,          # must be a reference,",
+            "    Sort => 1,              # optional 1 or 0, default 0",
+            ");}",
+        ],
+        "prefix": "znuny.StorableObject.Serialize",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

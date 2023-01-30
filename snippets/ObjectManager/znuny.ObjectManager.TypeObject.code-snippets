@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.TypeObject": {
+        "body": [
+            "my \$TypeObject = \$Kernel::OM->Get('Kernel::System::Type');",
+        ],
+        "prefix": "znuny.ObjectManager.TypeObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

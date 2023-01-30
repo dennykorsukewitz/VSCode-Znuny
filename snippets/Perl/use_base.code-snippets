@@ -1,0 +1,9 @@
+{
+    "use_base": {
+        "body": [
+            "use base qw( $1 );",
+        ],
+        "prefix": "use_base",
+        "scope": "perl"
+    }
+}

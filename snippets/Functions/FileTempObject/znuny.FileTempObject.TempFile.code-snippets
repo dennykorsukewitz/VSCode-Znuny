@@ -1,0 +1,12 @@
+{
+    "znuny.FileTempObject.TempFile": {
+        "body": [
+            "${1:my (\$FileHandle, \$Filename) = \$FileTempObject->TempFile(",
+            "    Suffix => '.png',   # optional, defaults to '.tmp'",
+            ");}",
+        ],
+        "prefix": "znuny.FileTempObject.TempFile",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

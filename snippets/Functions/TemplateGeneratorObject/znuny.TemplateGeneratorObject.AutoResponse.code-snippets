@@ -1,0 +1,15 @@
+{
+    "znuny.TemplateGeneratorObject.AutoResponse": {
+        "body": [
+            "${1:my %AutoResponse = \$TemplateGeneratorObject->AutoResponse(",
+            "    TicketID         => \$TicketID,",
+            "    OrigHeader       => {\\},",
+            "    AutoResponseType => 'auto reply',",
+            "    UserID           => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TemplateGeneratorObject.AutoResponse",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

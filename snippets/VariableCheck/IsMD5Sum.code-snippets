@@ -1,0 +1,11 @@
+{
+    "VariableCheck": {
+        "body": [
+            "my \\$${1:IsMD5Sum} = IsMD5Sum(",
+            "    ${2:'6f1ed002ab5595859014ebf0951522d9'},",
+            ");",
+        ],
+        "prefix": "IsMD5Sum",
+        "scope": "perl"
+    }
+}

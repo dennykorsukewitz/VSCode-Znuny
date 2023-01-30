@@ -1,0 +1,19 @@
+{
+    "znuny.XMLObject.XMLHashAdd": {
+        "body": [
+            "${1:my \$AutoKey = \$XMLObject->XMLHashAdd(",
+            "    Type             => 'SomeType',",
+            "    KeyAutoIncrement => 1,",
+            "    XMLHash          => \@XMLHash,",
+            ");}",
+            "${2:my \$Key = \$XMLObject->XMLHashAdd(",
+            "    Type    => 'SomeType',",
+            "    Key     => '123',",
+            "    XMLHash => \@XMLHash,",
+            ");}",
+        ],
+        "prefix": "znuny.XMLObject.XMLHashAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

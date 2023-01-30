@@ -1,0 +1,10 @@
+{
+    "znuny.DateTimeObject.Format": {
+        "body": [
+            "${1:my \$DateTimeString = \$DateTimeObject->Format( Format => '%Y-%m-%d %H:%M:%S' );}",
+        ],
+        "prefix": "znuny.DateTimeObject.Format",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

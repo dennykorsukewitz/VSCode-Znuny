@@ -1,0 +1,14 @@
+{
+    "znuny.CustomerGroupObject.PermissionCheck": {
+        "body": [
+            "${1:my \$HasPermission = \$CustomerGroupObject->PermissionCheck(",
+            "    UserID    => \$UserID,",
+            "    GroupName => \$GroupName,",
+            "    Type      => 'move_into',",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerGroupObject.PermissionCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

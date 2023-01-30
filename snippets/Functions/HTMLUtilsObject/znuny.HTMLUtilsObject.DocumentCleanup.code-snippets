@@ -1,0 +1,12 @@
+{
+    "znuny.HTMLUtilsObject.DocumentCleanup": {
+        "body": [
+            "${1:\$HTMLBody = \$HTMLUtilsObject->DocumentCleanup(",
+            "    String => \$HTMLBody,",
+            ");}",
+        ],
+        "prefix": "znuny.HTMLUtilsObject.DocumentCleanup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

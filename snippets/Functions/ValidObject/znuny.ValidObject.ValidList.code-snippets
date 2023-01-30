@@ -1,0 +1,10 @@
+{
+    "znuny.ValidObject.ValidList": {
+        "body": [
+            "${1:my %List = \$ValidObject->ValidList();}",
+        ],
+        "prefix": "znuny.ValidObject.ValidList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

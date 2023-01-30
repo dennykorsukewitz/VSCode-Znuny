@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.UnitTestWebserviceObject": {
+        "body": [
+            "my \$UnitTestWebserviceObject = \$Kernel::OM->Get('Kernel::System::UnitTest::Webservice');",
+        ],
+        "prefix": "znuny.ObjectManager.UnitTestWebserviceObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

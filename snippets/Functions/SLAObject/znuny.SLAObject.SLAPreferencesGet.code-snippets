@@ -1,0 +1,13 @@
+{
+    "znuny.SLAObject.SLAPreferencesGet": {
+        "body": [
+            "${1:my %Preferences = \$SLAObject->SLAPreferencesGet(",
+            "    SLAID  => \$SLAID,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SLAObject.SLAPreferencesGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

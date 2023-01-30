@@ -1,0 +1,20 @@
+{
+    "znuny.UnitTestObject.Is": {
+        "body": [
+            "${1:\$Self->Is(",
+            "    \$ValueFromFunction,      # test data",
+            "    1,                       # expected value",
+            "    'Test Name',",
+            ");}",
+            "${2:\$Self->Is(\$A, \$B, 'Test Name');}",
+            "${3:my \$IsResult = \$Self->Is(",
+            "    \$ValueFromFunction,      # test data",
+            "    1,                       # expected value",
+            "    'Test Name',",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestObject.Is",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "znuny.OAuth2TokenConfigObject.DataListGet": {
+        "body": [
+            "${1:my @Data = \$OAuth2TokenConfigObject->DataListGet(",
+            "    ID         => '...', # optional",
+            "    Name       => '...', # optional",
+            "    Config     => '...', # optional",
+            "    ValidID    => \$ValidID, # optional",
+            "    CreateTime => '...', # optional",
+            "    CreateBy   => '...', # optional",
+            "    ChangeTime => '...', # optional",
+            "    ChangeBy   => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenConfigObject.DataListGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

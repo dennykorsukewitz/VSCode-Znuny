@@ -1,0 +1,15 @@
+{
+    "znuny.UserObject.UserName": {
+        "body": [
+            "${1:my \$Name = \$UserObject->UserName(",
+            "    User => 'some-login',",
+            ");}",
+            "${2:my \$Name = \$UserObject->UserName(",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.UserObject.UserName",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

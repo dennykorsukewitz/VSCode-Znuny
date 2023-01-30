@@ -1,0 +1,12 @@
+{
+    "znuny.LayoutObject.RichTextDocumentComplete": {
+        "body": [
+            "${1:\$HTMLBody = \$LayoutObject->RichTextDocumentComplete(",
+            "    String => \$HTMLBody,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.RichTextDocumentComplete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.GroupObject.GroupList": {
+        "body": [
+            "${1:my %Groups = \$GroupObject->GroupList(",
+            "    Valid => 1,   # (optional) default 0",
+            ");}",
+        ],
+        "prefix": "znuny.GroupObject.GroupList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

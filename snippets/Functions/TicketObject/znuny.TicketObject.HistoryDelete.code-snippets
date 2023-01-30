@@ -1,0 +1,13 @@
+{
+    "znuny.TicketObject.HistoryDelete": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->HistoryDelete(",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.HistoryDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "znuny.PDFObject.PageBlankNew": {
+        "body": [
+            "${1:\$True = \$PDFObject->PageBlankNew(",
+            "    Width           => 200,          # (optional) default 595 (Din A4) - _ both or nothing",
+            "    Height          => 300,          # (optional) default 842 (Din A4) -",
+            "    PageOrientation => 'landscape',  # (optional) default normal (normal|landscape)",
+            "    MarginTop       => 40,           # (optional) default 0 -",
+            "    MarginRight     => 40,           # (optional) default 0  |_ all or nothing",
+            "    MarginBottom    => 40,           # (optional) default 0  |",
+            "    MarginLeft      => 40,           # (optional) default 0 -",
+            "    ShowPageNumber  => 0,            # (optional) default 1",
+            ");}",
+        ],
+        "prefix": "znuny.PDFObject.PageBlankNew",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.PackageObject.PackageExport": {
+        "body": [
+            "${1:\$PackageObject->PackageExport(",
+            "    String => \$FileString,",
+            "    Home   => '/path/to/export'",
+            ");}",
+        ],
+        "prefix": "znuny.PackageObject.PackageExport",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

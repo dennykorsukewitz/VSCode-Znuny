@@ -1,0 +1,12 @@
+{
+    "znuny.PriorityObject.PriorityList": {
+        "body": [
+            "${1:my %PriorityList = \$PriorityObject->PriorityList(",
+            "    Valid => 0,   # (optional) default 1 (0|1)",
+            ");}",
+        ],
+        "prefix": "znuny.PriorityObject.PriorityList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

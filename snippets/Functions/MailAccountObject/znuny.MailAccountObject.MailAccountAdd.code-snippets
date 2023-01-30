@@ -1,0 +1,35 @@
+{
+    "znuny.MailAccountObject.MailAccountAdd": {
+        "body": [
+            "${1:\$MailAccountObject->MailAccountAdd(",
+            "    Login         => 'mail',",
+            "    Password      => 'SomePassword',",
+            "    Host          => 'pop3.example.com',",
+            "    Type          => 'POP3',",
+            "    IMAPFolder    => 'Some Folder', # optional, only valid for IMAP-type accounts",
+            "    ValidID       => \$ValidID,",
+            "    Trusted       => 0,",
+            "    DispatchingBy => 'Queue', # Queue|From",
+            "    QueueID       => \$QueueID,",
+            "    UserID        => \$UserID,",
+            ");}",
+            "${2:my \$MailAccountID = \$MailAccountObject->MailAccountAdd(",
+            "    Login               => 'mail',",
+            "    Password            => 'SomePassword',",
+            "    Host                => 'pop3.example.com',",
+            "    Type                => 'POP3',",
+            "    IMAPFolder          => 'Some Folder',       # optional, only valid for IMAP-type accounts",
+            "    ValidID             => \$ValidID,",
+            "    Trusted             => 0,",
+            "    AuthenticationType  => 'oauth2_token',      # optional; defaults to 'password'",
+            "    OAuth2TokenConfigID => \$OAuth2TokenConfigID,                   # optional",
+            "    DispatchingBy       => 'Queue',             # Queue|From",
+            "    QueueID             => \$QueueID,",
+            "    UserID              => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.MailAccountObject.MailAccountAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

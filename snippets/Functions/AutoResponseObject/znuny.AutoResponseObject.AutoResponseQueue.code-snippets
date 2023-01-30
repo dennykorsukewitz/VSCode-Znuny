@@ -1,0 +1,14 @@
+{
+    "znuny.AutoResponseObject.AutoResponseQueue": {
+        "body": [
+            "${1:my \$Success = \$AutoResponseObject->AutoResponseQueue(",
+            "    QueueID         => \$QueueID,",
+            "    AutoResponseIDs => [1,2,3],",
+            "    UserID          => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseQueue",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

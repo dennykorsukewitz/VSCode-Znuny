@@ -1,0 +1,15 @@
+{
+    "znuny.TemplateGeneratorObject.Attributes": {
+        "body": [
+            "${1:my %Attributes = \$TemplateGeneratorObject->Attributes(",
+            "    TicketID   => \$TicketID,",
+            "    ArticleID  => \$ArticleID,",
+            "    ResponseID => \$ResponseID,",
+            "    Action     => 'Forward', # Possible values are Reply and Forward, Reply is default.",
+            ");}",
+        ],
+        "prefix": "znuny.TemplateGeneratorObject.Attributes",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

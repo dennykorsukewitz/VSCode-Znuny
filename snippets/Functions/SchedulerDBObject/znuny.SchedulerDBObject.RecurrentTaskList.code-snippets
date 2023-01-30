@@ -1,0 +1,12 @@
+{
+    "znuny.SchedulerDBObject.RecurrentTaskList": {
+        "body": [
+            "${1:my @List = \$SchedulerDBObject->RecurrentTaskList(",
+            "    Type => 'some type',  # optional",
+            ");}",
+        ],
+        "prefix": "znuny.SchedulerDBObject.RecurrentTaskList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

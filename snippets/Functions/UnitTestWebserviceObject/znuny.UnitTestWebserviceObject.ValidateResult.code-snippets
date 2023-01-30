@@ -1,0 +1,13 @@
+{
+    "znuny.UnitTestWebserviceObject.ValidateResult": {
+        "body": [
+            "${1:my \$Result = \$UnitTestWebserviceObject->ValidateResult(",
+            "    UnitTestObject => \$Self,",
+            "    RequestCount   => 1, # default, defines the number of requests that should have been processed",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.ValidateResult",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

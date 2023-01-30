@@ -1,0 +1,13 @@
+{
+    "znuny.QueueObject.QueuePreferencesGet": {
+        "body": [
+            "${1:my %Preferences = \$QueueObject->QueuePreferencesGet(",
+            "    QueueID => \$QueueID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.QueueObject.QueuePreferencesGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

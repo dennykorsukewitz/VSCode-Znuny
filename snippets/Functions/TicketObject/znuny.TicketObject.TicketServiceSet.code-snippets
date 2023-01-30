@@ -1,0 +1,19 @@
+{
+    "znuny.TicketObject.TicketServiceSet": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketServiceSet(",
+            "    Service  => 'Service A',",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+            "${2:my \$Success = \$TicketObject->TicketServiceSet(",
+            "    ServiceID => \$ServiceID,",
+            "    TicketID  => \$TicketID,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketServiceSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

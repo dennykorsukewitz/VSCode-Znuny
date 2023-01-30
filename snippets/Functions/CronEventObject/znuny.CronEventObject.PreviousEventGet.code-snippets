@@ -1,0 +1,13 @@
+{
+    "znuny.CronEventObject.PreviousEventGet": {
+        "body": [
+            "${1:my \$PreviousSystemTime = \$CronEventObject->PreviousEventGet(",
+            "    Schedule      => '*/2 * * * *',    # recurrence parameters based in Cron notation",
+            "    StartDateTime => \$DateTimeObject,  # optional, defaults to current date/time",
+            ");}",
+        ],
+        "prefix": "znuny.CronEventObject.PreviousEventGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

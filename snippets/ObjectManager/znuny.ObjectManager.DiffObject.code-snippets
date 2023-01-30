@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.DiffObject": {
+        "body": [
+            "my \$DiffObject = \$Kernel::OM->Get('Kernel::System::Diff');",
+        ],
+        "prefix": "znuny.ObjectManager.DiffObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.ZnunyHelperObject.DynamicFieldValueCreate": {
+        "body": [
+            "${1:my \$Success = \$ZnunyHelperObject->DynamicFieldValueCreate(",
+            "    Name  => 'DynamicFieldName',",
+            "    Key   => 'ValueDropdown',",
+            "    Value => 'ValueDropdown',    # optional (Parameter "Key" is default)",
+            ");}",
+        ],
+        "prefix": "znuny.ZnunyHelperObject.DynamicFieldValueCreate",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

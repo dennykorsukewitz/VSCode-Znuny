@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.OAuth2TokenObject": {
+        "body": [
+            "my \$OAuth2TokenObject = \$Kernel::OM->Get('Kernel::System::OAuth2Token');",
+        ],
+        "prefix": "znuny.ObjectManager.OAuth2TokenObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

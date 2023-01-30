@@ -1,0 +1,23 @@
+{
+    "znuny.ServiceObject.ServiceGet": {
+        "body": [
+            "${1:# With installed ITSM:",
+            "my %ServiceData = \$ServiceObject->ServiceGet(",
+            "    ServiceID     => \$ServiceID,",
+            "    IncidentState => 1, # Optional, returns CurInciState etc.",
+            "    UserID        => \$UserID,",
+            ");}",
+            "${2:my %ServiceData = \$ServiceObject->ServiceGet(",
+            "    Name    => 'Service::SubService',",
+            "    UserID  => \$UserID,",
+            ");}",
+            "${3:my %ServiceData = \$ServiceObject->ServiceGet(",
+            "    ServiceID => \$ServiceID,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ServiceObject.ServiceGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

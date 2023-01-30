@@ -1,0 +1,13 @@
+{
+    "znuny.SysConfigObject.ConfigurationEntityCheck": {
+        "body": [
+            "${1:my @Result = \$SysConfigObject->ConfigurationEntityCheck(",
+            "    EntityType  => 'Priority',",
+            "    EntityName  => '3 normal',",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.ConfigurationEntityCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

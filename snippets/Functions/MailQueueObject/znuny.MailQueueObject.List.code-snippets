@@ -1,0 +1,16 @@
+{
+    "znuny.MailQueueObject.List": {
+        "body": [
+            "${1:my \$List = \$MailQueueObject->List(",
+            "    ID              => '...' # optional",
+            "    ArticleID       => '...' # optional",
+            "    Sender          => '...' # optional",
+            "    Recipient       => '...' # optional",
+            "    Attempts        => '...' # optional",
+            ");}",
+        ],
+        "prefix": "znuny.MailQueueObject.List",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

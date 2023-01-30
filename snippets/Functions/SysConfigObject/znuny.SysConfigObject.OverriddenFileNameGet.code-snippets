@@ -1,0 +1,14 @@
+{
+    "znuny.SysConfigObject.OverriddenFileNameGet": {
+        "body": [
+            "${1:my \$FileName = \$SysConfigObject->OverriddenFileNameGet(",
+            "    SettingName    => 'Setting::Name',  # (required)",
+            "    UserID         => \$UserID,                # (required)",
+            "    EffectiveValue => '3',              # (optional) EffectiveValue stored in the DB.",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.OverriddenFileNameGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

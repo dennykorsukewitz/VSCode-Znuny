@@ -1,0 +1,20 @@
+{
+    "znuny.CacheObject.Get": {
+        "body": [
+            "${1:my \$Value = \$CacheObject->Get(",
+            "    Type => 'ObjectName',",
+            "    Key  => 'SomeKey',",
+            "",
+            "    CacheInMemory => 0,     # optional, defaults to 1",
+            "    CacheInBackend => 1,    # optional, defaults to 1",
+            ");}",
+            "${2:my \$Value = \$CacheObject->Get(",
+            "    Type => 'ObjectName',       # only [a-zA-Z0-9_] chars usable",
+            "    Key  => 'SomeKey',",
+            ");}",
+        ],
+        "prefix": "znuny.CacheObject.Get",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

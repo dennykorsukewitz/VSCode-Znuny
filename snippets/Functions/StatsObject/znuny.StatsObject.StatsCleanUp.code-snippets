@@ -1,0 +1,16 @@
+{
+    "znuny.StatsObject.StatsCleanUp": {
+        "body": [
+            "${1:my \$Result = \$StatsObject->StatsCleanUp(",
+            "    UserID => \$UserID,",
+            "",
+            "    ObjectNames => [ 'Ticket', 'TicketList' ],",
+            "    or",
+            "    CheckAllObjects => 1,",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StatsCleanUp",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

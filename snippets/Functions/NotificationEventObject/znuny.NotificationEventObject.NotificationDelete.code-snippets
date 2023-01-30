@@ -1,0 +1,13 @@
+{
+    "znuny.NotificationEventObject.NotificationDelete": {
+        "body": [
+            "${1:\$NotificationEventObject->NotificationDelete(",
+            "    ID     => 1,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.NotificationEventObject.NotificationDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "znuny.ArticleObject.ArticleSearchIndexDelete": {
+        "body": [
+            "${1:my \$Success = \$ArticleObject->ArticleSearchIndexDelete(",
+            "    ArticleID => \$ArticleID,   # required, deletes search index for single article",
+            "                        # or",
+            "    TicketID  => \$TicketID,   # required, deletes search index for all ticket articles",
+            "",
+            "    UserID    => \$UserID,     # required",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleSearchIndexDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "znuny.StdAttachmentObject.StdAttachmentAdd": {
+        "body": [
+            "${1:my \$ID = \$StdAttachmentObject->StdAttachmentAdd(",
+            "    Name        => 'Some Name',",
+            "    ValidID     => \$ValidID,",
+            "    Content     => \$Content,",
+            "    ContentType => 'text/xml',",
+            "    Filename    => 'SomeFile.xml',",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StdAttachmentObject.StdAttachmentAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

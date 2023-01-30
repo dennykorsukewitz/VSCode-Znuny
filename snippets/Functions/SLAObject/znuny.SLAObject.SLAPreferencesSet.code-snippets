@@ -1,0 +1,15 @@
+{
+    "znuny.SLAObject.SLAPreferencesSet": {
+        "body": [
+            "${1:\$SLAObject->SLAPreferencesSet(",
+            "    SLAID  => \$SLAID,",
+            "    Key    => 'UserComment',",
+            "    Value  => 'some comment',",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SLAObject.SLAPreferencesSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

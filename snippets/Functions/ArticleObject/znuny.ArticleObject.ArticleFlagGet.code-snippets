@@ -1,0 +1,13 @@
+{
+    "znuny.ArticleObject.ArticleFlagGet": {
+        "body": [
+            "${1:my %Flags = \$ArticleObject->ArticleFlagGet(",
+            "    ArticleID => \$ArticleID,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleFlagGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

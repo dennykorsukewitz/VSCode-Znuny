@@ -1,0 +1,17 @@
+{
+    "znuny.UserObject.UserLookup": {
+        "body": [
+            "${1:my \$UserID = \$UserObject->UserLookup(",
+            "    UserLogin => 'some_user_login',",
+            "    Silent    => 1, # optional, don't generate log entry if user was not found",
+            ");}",
+            "${2:my \$UserLogin = \$UserObject->UserLookup(",
+            "    UserID => \$UserID,",
+            "    Silent => 1, # optional, don't generate log entry if user was not found",
+            ");}",
+        ],
+        "prefix": "znuny.UserObject.UserLookup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.OAuth2TokenObject.GenerateAuthorizationCodeRequestURL": {
+        "body": [
+            "${1:my \$URL = \$OAuth2TokenObject->GenerateAuthorizationCodeRequestURL(",
+            "    TokenConfigID => \$TokenConfigID,",
+            "    UserID        => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenObject.GenerateAuthorizationCodeRequestURL",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

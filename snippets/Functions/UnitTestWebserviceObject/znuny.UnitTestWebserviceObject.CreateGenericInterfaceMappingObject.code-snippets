@@ -1,0 +1,20 @@
+{
+    "znuny.UnitTestWebserviceObject.CreateGenericInterfaceMappingObject": {
+        "body": [
+            "${1:my \$MappingObject = \$UnitTestWebserviceObject->CreateGenericInterfaceMappingObject(",
+            "    UnitTestObject    => \$Self,",
+            "    WebserviceName    => 'MyWebservice',",
+            "    CommunicationType => 'Provider',",
+            "    MappingConfig     => {",
+            "        Type => 'MyMapping', # name of mapping module",
+            "        Config => {",
+            "            # ...",
+            "        \\},",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.CreateGenericInterfaceMappingObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.PDFObject.Image": {
+        "body": [
+            "${1:\$True = \$PDFObject->Image(",
+            "    File   => '/path/image.gif',  # (gif|jpg|png)",
+            "    Type   => 'ReturnFalse'       # (optional) default Reduce (ReturnFalse|Reduce)",
+            "    Width  => 300,                # width of image",
+            "    Height => 150,                # height of image",
+            ");}",
+        ],
+        "prefix": "znuny.PDFObject.Image",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

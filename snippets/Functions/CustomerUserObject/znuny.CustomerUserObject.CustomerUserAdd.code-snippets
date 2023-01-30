@@ -1,0 +1,20 @@
+{
+    "znuny.CustomerUserObject.CustomerUserAdd": {
+        "body": [
+            "${1:my \$UserLogin = \$CustomerUserObject->CustomerUserAdd(",
+            "    Source         => 'CustomerUser', # CustomerUser source config",
+            "    UserFirstname  => 'Huber',",
+            "    UserLastname   => 'Manfred',",
+            "    UserCustomerID => \$UserCustomerID,",
+            "    UserLogin      => 'mhuber',",
+            "    UserPassword   => 'some-pass', # not required",
+            "    UserEmail      => 'email@example.com',",
+            "    ValidID        => \$ValidID,",
+            "    UserID         => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerUserObject.CustomerUserAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

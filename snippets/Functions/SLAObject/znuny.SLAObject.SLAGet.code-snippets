@@ -1,0 +1,13 @@
+{
+    "znuny.SLAObject.SLAGet": {
+        "body": [
+            "${1:my %SLAData = \$SLAObject->SLAGet(",
+            "    SLAID  => \$SLAID,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SLAObject.SLAGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

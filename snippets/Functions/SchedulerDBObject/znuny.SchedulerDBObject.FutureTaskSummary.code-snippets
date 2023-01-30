@@ -1,0 +1,10 @@
+{
+    "znuny.SchedulerDBObject.FutureTaskSummary": {
+        "body": [
+            "${1:my @Summary = \$SchedulerDBObject->FutureTaskSummary();}",
+        ],
+        "prefix": "znuny.SchedulerDBObject.FutureTaskSummary",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

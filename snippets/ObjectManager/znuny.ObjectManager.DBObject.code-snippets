@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.DBObject": {
+        "body": [
+            "my \$DBObject = \$Kernel::OM->Get('Kernel::System::DB');",
+        ],
+        "prefix": "znuny.ObjectManager.DBObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

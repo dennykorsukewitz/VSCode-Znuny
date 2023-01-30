@@ -1,0 +1,14 @@
+{
+    "znuny.GitLab.Oracle": {
+        "body": [
+            "image: \\$JOB_IMAGE",
+            "",
+            "include:",
+            "  - project: \\$INCLUDE_PROJECT",
+            "    file: '/templates/gitlab/default/oracle.yml'",
+        ],
+        "prefix": "znuny.GitLab.Oracle",
+        "description": "GitLab Templates .gitlab-ci.yml",
+        "scope": "yaml"
+    }
+}

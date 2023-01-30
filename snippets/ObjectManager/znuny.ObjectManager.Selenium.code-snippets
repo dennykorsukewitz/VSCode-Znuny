@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.Selenium": {
+        "body": [
+            "my \$Selenium = \$Kernel::OM->Get('Kernel::System::UnitTest::Selenium');",
+        ],
+        "prefix": "znuny.ObjectManager.Selenium",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

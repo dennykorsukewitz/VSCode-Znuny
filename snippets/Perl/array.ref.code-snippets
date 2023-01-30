@@ -1,0 +1,9 @@
+{
+    "array.ref": {
+        "body": [
+            "\\@${1:Array}",
+        ],
+        "prefix": "array.ref",
+        "scope": "perl"
+    }
+}

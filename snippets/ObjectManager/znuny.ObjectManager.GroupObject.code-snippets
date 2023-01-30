@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.GroupObject": {
+        "body": [
+            "my \$GroupObject = \$Kernel::OM->Get('Kernel::System::Group');",
+        ],
+        "prefix": "znuny.ObjectManager.GroupObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

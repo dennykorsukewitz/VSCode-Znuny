@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.SystemMaintenanceObject": {
+        "body": [
+            "my \$SystemMaintenanceObject = \$Kernel::OM->Get('Kernel::System::SystemMaintenance');",
+        ],
+        "prefix": "znuny.ObjectManager.SystemMaintenanceObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

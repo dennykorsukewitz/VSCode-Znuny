@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.is_displayed": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->is_displayed();",
+        ],
+        "prefix": "znuny.Selenium.is_displayed",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.StatsObject.GetParams": {
+        "body": [
+            "${1:my \$Params = \$StatsObject->GetParams( StatID => '123' );}",
+        ],
+        "prefix": "znuny.StatsObject.GetParams",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

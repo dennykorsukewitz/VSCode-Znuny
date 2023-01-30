@@ -1,0 +1,14 @@
+{
+    "znuny.StatsObject.ObjectModuleCheck": {
+        "body": [
+            "${1:my \$ObjectModuleCheck = \$StatsObject->ObjectModuleCheck(",
+            "    StatType                     => 'static',",
+            "    ObjectModule                 => 'Kernel::System::Stats::Static::StateAction',",
+            "    CheckAlreadyUsedStaticObject => 1,                                             # optional",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.ObjectModuleCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

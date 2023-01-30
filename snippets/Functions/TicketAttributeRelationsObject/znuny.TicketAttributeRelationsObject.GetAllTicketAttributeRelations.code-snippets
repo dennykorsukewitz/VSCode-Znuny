@@ -1,0 +1,12 @@
+{
+    "znuny.TicketAttributeRelationsObject.GetAllTicketAttributeRelations": {
+        "body": [
+            "${1:my \$TicketAttributeRelations = \$TicketAttributeRelationsObject->GetAllTicketAttributeRelations(",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketAttributeRelationsObject.GetAllTicketAttributeRelations",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

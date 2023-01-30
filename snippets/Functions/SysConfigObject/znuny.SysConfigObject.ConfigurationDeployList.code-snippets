@@ -1,0 +1,10 @@
+{
+    "znuny.SysConfigObject.ConfigurationDeployList": {
+        "body": [
+            "${1:my @List = \$SysConfigObject->ConfigurationDeployList();}",
+        ],
+        "prefix": "znuny.SysConfigObject.ConfigurationDeployList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.TransitionActionObject.TransitionActionList": {
+        "body": [
+            "${1:my \$TransitionActionList = \$TransitionActionObject->TransitionActionList(",
+            "    TransitionActionEntityID => \$TransitionActionEntityID, 'TA2', 'TA3',],",
+            ");}",
+        ],
+        "prefix": "znuny.TransitionActionObject.TransitionActionList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

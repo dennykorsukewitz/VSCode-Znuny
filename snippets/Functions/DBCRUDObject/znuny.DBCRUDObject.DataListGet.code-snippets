@@ -1,0 +1,14 @@
+{
+    "znuny.DBCRUDObject.DataListGet": {
+        "body": [
+            "${1:my @Data = \$DBCRUDObject->DataListGet(",
+            "    ID          => '...', # optional",
+            "    CreateTime  => '...', # optional",
+            "    ChangeTime  => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDObject.DataListGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

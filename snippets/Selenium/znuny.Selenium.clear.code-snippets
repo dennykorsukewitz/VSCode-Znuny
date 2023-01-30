@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.clear": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->clear();",
+        ],
+        "prefix": "znuny.Selenium.clear",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "CustomerTicketOverview": {
+        "body": [
+            "CustomerTicketOverview",
+        ],
+        "prefix": "CustomerTicketOverview",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

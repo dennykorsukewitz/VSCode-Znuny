@@ -1,0 +1,12 @@
+{
+    "znuny.HelperObject.TestCustomerUserDataGet": {
+        "body": [
+            "${1:my %CustomerUserData = \$HelperObject->TestCustomerUserDataGet(",
+            "    Language => 'de' # optional, defaults to 'en' if not set",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.TestCustomerUserDataGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

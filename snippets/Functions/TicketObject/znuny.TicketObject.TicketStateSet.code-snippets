@@ -1,0 +1,20 @@
+{
+    "znuny.TicketObject.TicketStateSet": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketStateSet(",
+            "    State     => 'open',",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID, #optional, for history",
+            "    UserID    => \$UserID,",
+            ");}",
+            "${2:my \$Success = \$TicketObject->TicketStateSet(",
+            "    StateID  => \$StateID,",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketStateSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

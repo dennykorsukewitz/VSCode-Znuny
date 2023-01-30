@@ -1,0 +1,13 @@
+{
+    "znuny.OAuth2TokenObject.GetTokenErrorMessage": {
+        "body": [
+            "${1:my \$TokenErrorMessage = \$OAuth2TokenObject->GetTokenErrorMessage(",
+            "    TokenConfigID => \$TokenConfigID,",
+            "    UserID        => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenObject.GetTokenErrorMessage",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

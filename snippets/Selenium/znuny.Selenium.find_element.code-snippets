@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.find_element": {
+        "body": [
+            "my \\$${1:Element} = \\$SeleniumObject->find_element(\"${2:#Name}\", 'css');",
+        ],
+        "prefix": "znuny.Selenium.find_element",
+        "scope": "perl"
+    }
+}

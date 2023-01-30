@@ -1,0 +1,15 @@
+{
+    "znuny.SystemAddressObject.SystemAddressIsLocalAddress": {
+        "body": [
+            "${1:if ( \$SystemAddressObject->SystemAddressIsLocalAddress( Address => 'info@example.com' ) ) {",
+            "    # is local",
+            "\\}",
+            "else {",
+            "    # is not local",
+            "\\}}",
+        ],
+        "prefix": "znuny.SystemAddressObject.SystemAddressIsLocalAddress",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

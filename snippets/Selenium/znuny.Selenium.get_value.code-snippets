@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.get_value": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->get_value();",
+        ],
+        "prefix": "znuny.Selenium.get_value",
+        "scope": "perl"
+    }
+}

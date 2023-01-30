@@ -1,0 +1,10 @@
+{
+    "znuny.CustomerAuthObject.GetLastErrorMessage": {
+        "body": [
+            "${1:my \$AuthErrorMessage = \$CustomerAuthObject->GetLastErrorMessage();}",
+        ],
+        "prefix": "znuny.CustomerAuthObject.GetLastErrorMessage",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.EncodeObject.EncodingIsAsciiSuperset": {
+        "body": [
+            "${1:my \$IsSuperset = \$EncodeObject->EncodingIsAsciiSuperset(",
+            "    Encoding    => 'UTF-8',",
+            ");}",
+        ],
+        "prefix": "znuny.EncodeObject.EncodingIsAsciiSuperset",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

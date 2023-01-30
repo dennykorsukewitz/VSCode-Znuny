@@ -1,0 +1,12 @@
+{
+    "znuny.TicketObject.TicketCheckNumber": {
+        "body": [
+            "${1:my \$TicketID = \$TicketObject->TicketCheckNumber(",
+            "    Tn => '200404051004575',",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketCheckNumber",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

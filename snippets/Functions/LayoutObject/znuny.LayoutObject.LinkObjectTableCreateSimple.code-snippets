@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.LinkObjectTableCreateSimple": {
+        "body": [
+            "${1:my \$String = \$LayoutObject->LinkObjectTableCreateSimple(",
+            "    LinkListWithData => \$LinkListWithDataRef,",
+            "    ViewMode         => 'SimpleRaw',            # (optional) (Simple|SimpleRaw)",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectTableCreateSimple",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.TypeObject.TypeAdd": {
+        "body": [
+            "${1:my \$ID = \$TypeObject->TypeAdd(",
+            "    Name    => 'New Type',",
+            "    ValidID => \$ValidID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TypeObject.TypeAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

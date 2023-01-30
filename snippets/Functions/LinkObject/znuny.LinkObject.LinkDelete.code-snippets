@@ -1,0 +1,17 @@
+{
+    "znuny.LinkObject.LinkDelete": {
+        "body": [
+            "${1:\$True = \$LinkObject->LinkDelete(",
+            "    Object1 => 'Ticket',",
+            "    Key1    => '321',",
+            "    Object2 => 'FAQ',",
+            "    Key2    => '5',",
+            "    Type    => 'Normal',",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.LinkDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

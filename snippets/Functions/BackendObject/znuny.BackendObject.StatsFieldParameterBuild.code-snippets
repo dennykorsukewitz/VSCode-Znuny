@@ -1,0 +1,15 @@
+{
+    "znuny.BackendObject.StatsFieldParameterBuild": {
+        "body": [
+            "${1:my \$DynamicFieldStatsParameter =  \$BackendObject->StatsFieldParameterBuild(",
+            "    DynamicFieldConfig   => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    PossibleValuesFilter => ['value1', 'value2'],     # Optional. Some backends may support this.",
+            "                                                      #     This may be needed to realize ACL support for ticket masks,",
+            "                                                      #     where the possible values can be limited with and ACL.",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.StatsFieldParameterBuild",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

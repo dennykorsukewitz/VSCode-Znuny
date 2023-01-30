@@ -1,0 +1,18 @@
+{
+    "znuny.StdAttachmentObject.StdAttachmentUpdate": {
+        "body": [
+            "${1:my \$ID = \$StdAttachmentObject->StdAttachmentUpdate(",
+            "    ID          => \$ID,",
+            "    Name        => 'Some Name',",
+            "    ValidID     => \$ValidID,",
+            "    Content     => \$Content,",
+            "    ContentType => 'text/xml',",
+            "    Filename    => 'SomeFile.xml',",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StdAttachmentObject.StdAttachmentUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

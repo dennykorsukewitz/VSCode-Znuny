@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.UnitTestSchedulerObject": {
+        "body": [
+            "my \$UnitTestSchedulerObject = \$Kernel::OM->Get('Kernel::System::UnitTest::Scheduler');",
+        ],
+        "prefix": "znuny.ObjectManager.UnitTestSchedulerObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

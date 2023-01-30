@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.ParserObject": {
+        "body": [
+            "my \$ParserObject = Kernel::System::EmailParser",
+        ],
+        "prefix": "znuny.ObjectManager.ParserObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

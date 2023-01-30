@@ -1,0 +1,16 @@
+{
+    "znuny.VirtualFSObject.Read": {
+        "body": [
+            "${1:my %File = \$VirtualFSObject->Read(",
+            "    Filename => '/Object/some/name.txt',",
+            "    Mode     => 'utf8',",
+            "",
+            "    # optional",
+            "    DisableWarnings => 1,",
+            ");}",
+        ],
+        "prefix": "znuny.VirtualFSObject.Read",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

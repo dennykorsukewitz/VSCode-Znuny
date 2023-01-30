@@ -1,0 +1,10 @@
+{
+    "znuny.QueueObject.GetAllCustomQueues": {
+        "body": [
+            "${1:my @Queues = \$QueueObject->GetAllCustomQueues( UserID => 123 );}",
+        ],
+        "prefix": "znuny.QueueObject.GetAllCustomQueues",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

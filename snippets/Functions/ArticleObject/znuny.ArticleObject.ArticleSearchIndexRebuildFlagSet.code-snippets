@@ -1,0 +1,14 @@
+{
+    "znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet": {
+        "body": [
+            "${1:my \$Success = \$ArticleObject->ArticleSearchIndexRebuildFlagSet(",
+            "    ArticleIDs => [ 123, 234, 345 ]   # (Either 'ArticleIDs' or 'All' must be provided) The ArticleIDs to be updated.",
+            "    All        => 1                   # (Either 'ArticleIDs' or 'All' must be provided) Set all articles to \$Value. Default: 0,",
+            "    Value      => 1, # 0/1 default 0",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

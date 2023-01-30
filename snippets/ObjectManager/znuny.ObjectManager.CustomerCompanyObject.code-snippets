@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.CustomerCompanyObject": {
+        "body": [
+            "my \$CustomerCompanyObject = \$Kernel::OM->Get('Kernel::System::CustomerCompany');",
+        ],
+        "prefix": "znuny.ObjectManager.CustomerCompanyObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "znuny.LinkObject.LinkAdd": {
+        "body": [
+            "${1:\$True = \$LinkObject->LinkAdd(",
+            "    SourceObject => 'Ticket',",
+            "    SourceKey    => '321',",
+            "    TargetObject => 'FAQ',",
+            "    TargetKey    => '5',",
+            "    Type         => 'ParentChild',",
+            "    State        => 'Valid',",
+            "    UserID       => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.LinkAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

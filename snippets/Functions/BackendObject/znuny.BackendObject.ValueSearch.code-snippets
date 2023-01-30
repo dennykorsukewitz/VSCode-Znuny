@@ -1,0 +1,13 @@
+{
+    "znuny.BackendObject.ValueSearch": {
+        "body": [
+            "${1:my \$Value = \$BackendObject->ValueSearch(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    Search             => 'search term',",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.ValueSearch",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

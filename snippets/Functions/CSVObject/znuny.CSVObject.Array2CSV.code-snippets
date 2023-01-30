@@ -1,0 +1,22 @@
+{
+    "znuny.CSVObject.Array2CSV": {
+        "body": [
+            "${1:\$CSV = \$CSVObject->Array2CSV(",
+            "    WithHeader => [ 'RowA', 'RowB', ],   # optional",
+            "    Head       => [ 'RowA', 'RowB', ],   # optional",
+            "    Data       => [",
+            "        [ 1, 4 ],",
+            "        [ 7, 3 ],",
+            "        [ 1, 9 ],",
+            "        [ 34, 4 ],",
+            "    ],",
+            "    Separator => ';',  # optional separator (default is ;)",
+            "    Quote     => '"',  # optional quote (default is ")",
+            "    Format    => 'CSV', # optional format [Excel|CSV ] (default is CSV)",
+            ");}",
+        ],
+        "prefix": "znuny.CSVObject.Array2CSV",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

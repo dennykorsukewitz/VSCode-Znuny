@@ -1,0 +1,10 @@
+{
+    "znuny.DBObject.GetDatabaseFunction": {
+        "body": [
+            "${1:my \$What = \$DBObject->GetDatabaseFunction('DirectBlob');}",
+        ],
+        "prefix": "znuny.DBObject.GetDatabaseFunction",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

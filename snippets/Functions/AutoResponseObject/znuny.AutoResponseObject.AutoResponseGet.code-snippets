@@ -1,0 +1,12 @@
+{
+    "znuny.AutoResponseObject.AutoResponseGet": {
+        "body": [
+            "${1:my %Data = \$AutoResponseObject->AutoResponseGet(",
+            "    ID => 123,",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

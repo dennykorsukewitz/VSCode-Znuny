@@ -1,0 +1,15 @@
+{
+    "znuny.GroupObject.PermissionRoleUserAdd": {
+        "body": [
+            "${1:my \$Success = \$GroupObject->PermissionRoleUserAdd(",
+            "    UID    => \$UID,",
+            "    RID    => \$RID,",
+            "    Active => 1,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.GroupObject.PermissionRoleUserAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

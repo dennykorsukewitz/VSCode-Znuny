@@ -1,0 +1,15 @@
+{
+    "znuny.TypeObject.TypeGet": {
+        "body": [
+            "${1:my %Type = \$TypeObject->TypeGet(",
+            "    ID => 123,",
+            ");}",
+            "${2:my %Type = \$TypeObject->TypeGet(",
+            "    Name => 'default',",
+            ");}",
+        ],
+        "prefix": "znuny.TypeObject.TypeGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.CustomerGroupObject.GroupContextNameGet": {
+        "body": [
+            "${1:my \$ContextName = \$CustomerGroupObject->GroupContextNameGet(",
+            "    SysConfigName => '100-CustomerID-other', # optional, defaults to '001-CustomerID-same'",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerGroupObject.GroupContextNameGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

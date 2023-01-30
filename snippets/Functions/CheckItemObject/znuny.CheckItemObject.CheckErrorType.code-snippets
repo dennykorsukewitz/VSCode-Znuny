@@ -1,0 +1,10 @@
+{
+    "znuny.CheckItemObject.CheckErrorType": {
+        "body": [
+            "${1:my \$ErrorType = \$CheckItemObject->CheckErrorType();}",
+        ],
+        "prefix": "znuny.CheckItemObject.CheckErrorType",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

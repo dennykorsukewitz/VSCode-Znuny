@@ -1,0 +1,13 @@
+{
+    "znuny.PackageObject.PackageIsInstalled": {
+        "body": [
+            "${1:\$PackageObject->PackageIsInstalled(",
+            "    String => \$PackageString,    # Attribute String or Name is required",
+            "    Name   => \$NameOfThePackage,",
+            ");}",
+        ],
+        "prefix": "znuny.PackageObject.PackageIsInstalled",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "znuny.XMLObject.XMLHashGet": {
+        "body": [
+            "${1:my @XMLHash = \$XMLObject->XMLHashGet(",
+            "    Type  => 'SomeType',",
+            "    Key   => '123',",
+            "    Cache => 0,   # (optional) do not use cached data",
+            ");}",
+            "${2:my @XMLHash = \$XMLObject->XMLHashGet(",
+            "    Type => 'SomeType',",
+            "    Key  => '123',",
+            ");}",
+        ],
+        "prefix": "znuny.XMLObject.XMLHashGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.TicketObject.TicketArchiveFlagGet": {
+        "body": [
+            "${1:if ( \$TicketObject->TicketArchiveFlagGet( TicketID => 123 ) ) {",
+            "    print "Ticket is archived!\n";",
+            "\\}",
+            "else {",
+            "    print "Ticket is not archived!\n";",
+            "\\}}",
+        ],
+        "prefix": "znuny.TicketObject.TicketArchiveFlagGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

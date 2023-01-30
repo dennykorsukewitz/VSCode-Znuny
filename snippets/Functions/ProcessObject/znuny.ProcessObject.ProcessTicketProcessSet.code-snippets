@@ -1,0 +1,14 @@
+{
+    "znuny.ProcessObject.ProcessTicketProcessSet": {
+        "body": [
+            "${1:my \$Success = \$ProcessObject->ProcessTicketProcessSet(",
+            "    ProcessEntityID => \$ProcessEntityID,",
+            "    TicketID        => \$TicketID,",
+            "    UserID          => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ProcessObject.ProcessTicketProcessSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

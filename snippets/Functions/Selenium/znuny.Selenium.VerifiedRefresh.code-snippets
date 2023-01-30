@@ -1,0 +1,10 @@
+{
+    "znuny.Selenium.VerifiedRefresh": {
+        "body": [
+            "${1:\$Selenium->VerifiedRefresh();}",
+        ],
+        "prefix": "znuny.Selenium.VerifiedRefresh",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

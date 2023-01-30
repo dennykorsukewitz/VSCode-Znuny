@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.WebserviceObject": {
+        "body": [
+            "my \$WebserviceObject = \$Kernel::OM->Get('Kernel::System::GenericInterface::Webservice');",
+        ],
+        "prefix": "znuny.ObjectManager.WebserviceObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

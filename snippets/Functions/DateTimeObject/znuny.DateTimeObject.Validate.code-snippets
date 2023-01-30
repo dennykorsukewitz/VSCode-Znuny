@@ -1,0 +1,18 @@
+{
+    "znuny.DateTimeObject.Validate": {
+        "body": [
+            "${1:my \$IsValid = \$DateTimeObject->Validate(",
+            "    Year     => 2016,",
+            "    Month    => 1,",
+            "    Day      => 22,",
+            "    Hour     => 16,",
+            "    Minute   => 35,",
+            "    Second   => 59,",
+            "    TimeZone => 'Europe/Berlin',",
+            ");}",
+        ],
+        "prefix": "znuny.DateTimeObject.Validate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.AutoResponseObject.AutoResponseList": {
+        "body": [
+            "${1:my %AutoResponse = \$AutoResponseObject->AutoResponseList(",
+            "    Valid   => 1,                 # (optional) default 1",
+            "    TypeID  => \$TypeID,                 # (optional) Auto Response type ID",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

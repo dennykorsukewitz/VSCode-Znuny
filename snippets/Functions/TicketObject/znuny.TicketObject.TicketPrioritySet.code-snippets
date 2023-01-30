@@ -1,0 +1,19 @@
+{
+    "znuny.TicketObject.TicketPrioritySet": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketPrioritySet(",
+            "    TicketID   => \$TicketID,",
+            "    PriorityID => \$PriorityID,",
+            "    UserID     => \$UserID,",
+            ");}",
+            "${2:my \$Success = \$TicketObject->TicketPrioritySet(",
+            "    TicketID => \$TicketID,",
+            "    Priority => 'low',",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketPrioritySet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

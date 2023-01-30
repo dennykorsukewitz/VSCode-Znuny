@@ -1,0 +1,21 @@
+{
+    "znuny.SchedulerDBObject.TaskAdd": {
+        "body": [
+            "${1:my \$TaskID = \$SchedulerDBObject->TaskAdd(",
+            "    Type                     => 'GenericInterface',     # e. g. GenericInterface, Test",
+            "    Name                     => 'any name',             # optional",
+            "    Attempts                 => 5,                      # optional (default 1)",
+            "    MaximumParallelInstances => 2,                      # optional (default 0), number of tasks",
+            "                                                        #   with the same type (and name if",
+            "                                                        #   provided) that can exists at the same",
+            "                                                        #   time, value of 0 means unlimited",
+            "    Data => {                                           # data payload",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.SchedulerDBObject.TaskAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

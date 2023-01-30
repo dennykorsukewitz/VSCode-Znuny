@@ -1,0 +1,15 @@
+{
+    "znuny.TransitionObject.TransitionValidationTypeList": {
+        "body": [
+            "${1:my %TransitionValidationTypeList = \$TransitionObject->TransitionValidationTypeList();}",
+            "${2:my %TransitionValidationTypeList = TransitionValidationTypeList(",
+            "    'String' => 'String',",
+            "    'Regexp' => 'Regular expression',",
+            "    'Module' => 'Transition validation module',",
+            ");}",
+        ],
+        "prefix": "znuny.TransitionObject.TransitionValidationTypeList",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

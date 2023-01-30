@@ -1,0 +1,10 @@
+{
+    "znuny.JSONObject.True": {
+        "body": [
+            "${1:my \$TrueConstant = \$JSONObject->True();}",
+        ],
+        "prefix": "znuny.JSONObject.True",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

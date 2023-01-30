@@ -1,0 +1,13 @@
+{
+    "znuny.ServiceObject.ServiceListGet": {
+        "body": [
+            "${1:my \$ServiceList = \$ServiceObject->ServiceListGet(",
+            "    Valid  => 0,   # (optional) default 1 (0|1)",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ServiceObject.ServiceListGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

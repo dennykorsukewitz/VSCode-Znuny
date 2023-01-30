@@ -1,0 +1,10 @@
+{
+    "znuny.PackageObject.PackageUninstall": {
+        "body": [
+            "${1:\$PackageObject->PackageUninstall( String => \$FileString );}",
+        ],
+        "prefix": "znuny.PackageObject.PackageUninstall",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

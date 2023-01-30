@@ -1,0 +1,15 @@
+{
+    "znuny.QueueObject.QueueGet": {
+        "body": [
+            "${1:my %Queue = \$QueueObject->QueueGet(",
+            "    ID    => 123,",
+            ");}",
+            "${2:my %Queue = \$QueueObject->QueueGet(",
+            "    Name  => 'Some::Queue',",
+            ");}",
+        ],
+        "prefix": "znuny.QueueObject.QueueGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

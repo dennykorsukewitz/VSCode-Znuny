@@ -1,0 +1,13 @@
+{
+    "znuny.StandardTemplateObject.NameExistsCheck": {
+        "body": [
+            "${1:\$Exist = \$StandardTemplateObject->NameExistsCheck(",
+            "    Name => 'Some::Template',",
+            "    ID => 1, # optional",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.NameExistsCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "znuny.AutoResponseObject.AutoResponseUpdate": {
+        "body": [
+            "${1:\$AutoResponseObject->AutoResponseUpdate(",
+            "    ID          => 123,",
+            "    Name        => 'Some::AutoResponse',",
+            "    ValidID     => \$ValidID,",
+            "    Subject     => 'Some Subject..',",
+            "    Response    => 'Auto Response Test....',",
+            "    ContentType => 'text/plain',",
+            "    AddressID   => \$AddressID,",
+            "    TypeID      => \$TypeID,",
+            "    UserID      => \$UserID,",
+            ");}",
+            "${2:my \$Success = \$AutoResponseObject->AutoResponseUpdate(",
+            "    ID          => 123,",
+            "    Name        => 'Some::AutoResponse',",
+            "    ValidID     => \$ValidID,",
+            "    Subject     => 'Some Subject..',",
+            "    Response    => 'Auto Response Test....',",
+            "    ContentType => 'text/plain',",
+            "    AddressID   => \$AddressID,",
+            "    TypeID      => \$TypeID,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

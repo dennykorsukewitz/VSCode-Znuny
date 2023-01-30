@@ -1,0 +1,14 @@
+{
+    "znuny.OperationObject.HandleError": {
+        "body": [
+            "${1:my \$Result = \$OperationObject->HandleError(",
+            "    Data => {                               # data payload",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.OperationObject.HandleError",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

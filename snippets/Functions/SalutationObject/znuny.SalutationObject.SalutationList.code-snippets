@@ -1,0 +1,13 @@
+{
+    "znuny.SalutationObject.SalutationList": {
+        "body": [
+            "${1:my %List = \$SalutationObject->SalutationList(",
+            "    Valid => 0,",
+            ");}",
+            "${2:my %List = \$SalutationObject->SalutationList();}",
+        ],
+        "prefix": "znuny.SalutationObject.SalutationList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

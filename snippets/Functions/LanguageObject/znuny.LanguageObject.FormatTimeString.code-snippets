@@ -1,0 +1,14 @@
+{
+    "znuny.LanguageObject.FormatTimeString": {
+        "body": [
+            "${1:my \$Date = \$LanguageObject->FormatTimeString(",
+            "    '2009-12-12 12:12:12',  # timestamp",
+            "    'DateFormat',           # which date format to use, e. g. DateFormatLong",
+            "    0,                      # optional, hides the seconds from the time output",
+            ");}",
+        ],
+        "prefix": "znuny.LanguageObject.FormatTimeString",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

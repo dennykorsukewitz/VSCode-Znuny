@@ -1,0 +1,13 @@
+{
+    "znuny.UserObject.UserLoginExistsCheck": {
+        "body": [
+            "${1:\$Exist = \$UserObject->UserLoginExistsCheck(",
+            "    UserLogin => 'Some::UserLogin',",
+            "    UserID => \$UserID, # optional",
+            ");}",
+        ],
+        "prefix": "znuny.UserObject.UserLoginExistsCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

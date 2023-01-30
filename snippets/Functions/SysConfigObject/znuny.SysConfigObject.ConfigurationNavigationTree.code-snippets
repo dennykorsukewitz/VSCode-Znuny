@@ -1,0 +1,15 @@
+{
+    "znuny.SysConfigObject.ConfigurationNavigationTree": {
+        "body": [
+            "${1:my %Result = \$SysConfigObject->ConfigurationNavigationTree(",
+            "    RootNavigation         => 'Parent',     # (optional) If provided only sub groups of the root navigation are returned.",
+            "    UserModificationActive => 1,            # (optional) Return settings that can be modified on user level only.",
+            "    IsValid                => 1,            # (optional) By default, display all settings.",
+            "    Category               => 'OTRS'        # (optional)",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.ConfigurationNavigationTree",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

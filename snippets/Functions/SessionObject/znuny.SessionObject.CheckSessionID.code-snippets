@@ -1,0 +1,12 @@
+{
+    "znuny.SessionObject.CheckSessionID": {
+        "body": [
+            "${1:my \$Ok = \$SessionObject->CheckSessionID(",
+            "    SessionID => \$SessionID,",
+            ");}",
+        ],
+        "prefix": "znuny.SessionObject.CheckSessionID",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.DBCRUDObject.DataDelete": {
+        "body": [
+            "${1:my \$Success = \$DBCRUDObject->DataDelete(",
+            "    ID          => '...', # optional",
+            "    CreateTime  => '...', # optional",
+            "    ChangeTime  => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDObject.DataDelete",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

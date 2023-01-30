@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.LinkObjectSelectableObjectList": {
+        "body": [
+            "${1:my \$String = \$LayoutObject->LinkObjectSelectableObjectList(",
+            "    Object   => 'Ticket',",
+            "    Selected => \$Identifier,  # (optional)",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectSelectableObjectList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

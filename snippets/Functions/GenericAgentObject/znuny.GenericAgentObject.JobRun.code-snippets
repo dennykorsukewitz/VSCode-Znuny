@@ -1,0 +1,15 @@
+{
+    "znuny.GenericAgentObject.JobRun": {
+        "body": [
+            "${1:\$GenericAgentObject->JobRun(",
+            "    Job          => 'JobName',",
+            "    OnlyTicketID => \$OnlyTicketID,     # (optional) for event based Job execution",
+            "    SleepTime    => 100_000  # (optional) sleeptime per ticket in microseconds",
+            "    UserID       => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobRun",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

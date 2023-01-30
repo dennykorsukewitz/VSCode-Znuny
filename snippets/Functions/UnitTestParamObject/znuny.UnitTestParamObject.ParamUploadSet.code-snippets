@@ -1,0 +1,13 @@
+{
+    "znuny.UnitTestParamObject.ParamUploadSet": {
+        "body": [
+            "${1:my \$Success = \$UnitTestParamObject->ParamUploadSet(",
+            "    Name     => 'Upload',",
+            "    Location => '...',",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestParamObject.ParamUploadSet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

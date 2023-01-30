@@ -1,0 +1,19 @@
+{
+    "znuny.TicketObject.TicketLockSet": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketLockSet(",
+            "    Lock     => 'lock',",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+            "${2:my \$Success = \$TicketObject->TicketLockSet(",
+            "    LockID   => \$LockID,",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketLockSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

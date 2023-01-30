@@ -1,0 +1,13 @@
+{
+    "znuny.ConfigObject.Set": {
+        "body": [
+            "${1:\$ConfigObject->Set(",
+            "    Key   => 'My::Setting::Name',",
+            "    Value => 42,    # new value; set to undef to remove the setting",
+            ");}",
+        ],
+        "prefix": "znuny.ConfigObject.Set",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

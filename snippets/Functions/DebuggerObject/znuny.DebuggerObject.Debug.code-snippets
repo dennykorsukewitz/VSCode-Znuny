@@ -1,0 +1,13 @@
+{
+    "znuny.DebuggerObject.Debug": {
+        "body": [
+            "${1:\$DebuggerObject->Debug(",
+            "    Summary => 'Short summary, one line',",
+            "    Data    => \$Data, # optional, \$Data can be a string or a scalar reference",
+            ");}",
+        ],
+        "prefix": "znuny.DebuggerObject.Debug",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

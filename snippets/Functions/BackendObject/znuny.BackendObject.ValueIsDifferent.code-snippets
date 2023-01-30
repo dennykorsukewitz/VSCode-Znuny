@@ -1,0 +1,15 @@
+{
+    "znuny.BackendObject.ValueIsDifferent": {
+        "body": [
+            "${1:my \$Success = \$BackendObject->ValueIsDifferent(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "                                                    # must be linked to, e. g. TicketID",
+            "    Value1             => \$Value1,                  # Dynamic Field Value",
+            "    Value2             => \$Value2,                  # Dynamic Field Value",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.ValueIsDifferent",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.CalendarObject.TicketAppointmentRuleIDsGet": {
+        "body": [
+            "${1:my @RuleIDs = \$CalendarObject->TicketAppointmentRuleIDsGet(",
+            "    CalendarID => \$CalendarID,",
+            "    TicketID   => \$TicketID,    # (optional) Return rules used only for specific ticket",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarObject.TicketAppointmentRuleIDsGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

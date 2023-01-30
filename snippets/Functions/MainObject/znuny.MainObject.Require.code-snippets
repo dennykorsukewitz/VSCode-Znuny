@@ -1,0 +1,13 @@
+{
+    "znuny.MainObject.Require": {
+        "body": [
+            "${1:my \$Loaded = \$MainObject->Require(",
+            "    'Kernel::System::Example',",
+            "    Silent => 1,                # optional, no log entry if module was not found",
+            ");}",
+        ],
+        "prefix": "znuny.MainObject.Require",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

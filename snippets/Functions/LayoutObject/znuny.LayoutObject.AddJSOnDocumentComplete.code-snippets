@@ -1,0 +1,12 @@
+{
+    "znuny.LayoutObject.AddJSOnDocumentComplete": {
+        "body": [
+            "${1:\$LayoutObject->AddJSOnDocumentComplete(",
+            "    Code => \$MyCode,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.AddJSOnDocumentComplete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

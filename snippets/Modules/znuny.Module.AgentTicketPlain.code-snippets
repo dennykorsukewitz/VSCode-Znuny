@@ -1,0 +1,10 @@
+{
+    "AgentTicketPlain": {
+        "body": [
+            "AgentTicketPlain",
+        ],
+        "prefix": "AgentTicketPlain",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

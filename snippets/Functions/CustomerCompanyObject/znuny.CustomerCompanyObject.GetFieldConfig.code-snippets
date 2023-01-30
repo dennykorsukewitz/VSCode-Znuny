@@ -1,0 +1,13 @@
+{
+    "znuny.CustomerCompanyObject.GetFieldConfig": {
+        "body": [
+            "${1:my %FieldConfig = \$CustomerCompanyObject->GetFieldConfig(",
+            "    FieldName => 'CustomerCompanyName',",
+            "    Source    => 'CustomerCompany', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerCompanyObject.GetFieldConfig",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

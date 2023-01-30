@@ -1,0 +1,20 @@
+{
+    "znuny.TicketObject.TicketWatchGet": {
+        "body": [
+            "${1:my %Watch = \$TicketObject->TicketWatchGet(",
+            "    TicketID => \$TicketID,",
+            "    Notify   => 1,",
+            ");}",
+            "${2:my %Watch = \$TicketObject->TicketWatchGet(",
+            "    TicketID => \$TicketID,",
+            ");}",
+            "${3:my @Watch = \$TicketObject->TicketWatchGet(",
+            "    TicketID => \$TicketID,",
+            "    Result   => 'ARRAY',",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketWatchGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

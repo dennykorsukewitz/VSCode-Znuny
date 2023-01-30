@@ -1,0 +1,15 @@
+{
+    "znuny.HelperObject.DatabaseXMLExecute": {
+        "body": [
+            "${1:\$HelperObject->DatabaseXMLExecute(",
+            "    XML => \$XML,                 # OTRS database XML schema to execute",
+            ");}",
+            "${2:\$HelperObject->DatabaseXMLExecute(",
+            "    XMLFile => '/path/to/file',  # OTRS database XML file to execute",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.DatabaseXMLExecute",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

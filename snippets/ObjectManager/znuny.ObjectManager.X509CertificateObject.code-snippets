@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.X509CertificateObject": {
+        "body": [
+            "my \$X509CertificateObject = \$Kernel::OM->Get('Kernel::System::X509Certificate');",
+        ],
+        "prefix": "znuny.ObjectManager.X509CertificateObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

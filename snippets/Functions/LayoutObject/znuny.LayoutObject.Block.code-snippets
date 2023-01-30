@@ -1,0 +1,15 @@
+{
+    "znuny.LayoutObject.Block": {
+        "body": [
+            "${1:\$LayoutObject->Block(",
+            "    Name => 'Row',",
+            "    Data => {",
+            "        Time => ...,",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.Block",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

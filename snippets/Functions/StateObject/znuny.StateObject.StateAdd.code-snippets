@@ -1,0 +1,16 @@
+{
+    "znuny.StateObject.StateAdd": {
+        "body": [
+            "${1:my \$ID = \$StateObject->StateAdd(",
+            "    Name    => 'New State',",
+            "    Comment => 'some comment',",
+            "    ValidID => \$ValidID,",
+            "    TypeID  => \$TypeID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StateObject.StateAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.LinkObject.PossibleLinkList": {
+        "body": [
+            "${1:my %PossibleLinkList = \$LinkObject->PossibleLinkList();}",
+        ],
+        "prefix": "znuny.LinkObject.PossibleLinkList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

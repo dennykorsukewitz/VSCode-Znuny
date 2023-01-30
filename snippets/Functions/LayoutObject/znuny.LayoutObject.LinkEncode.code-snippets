@@ -1,0 +1,10 @@
+{
+    "znuny.LayoutObject.LinkEncode": {
+        "body": [
+            "${1:my \$ParamValueEncoded = \$LayoutObject->LinkEncode(\$ParamValue);}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkEncode",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

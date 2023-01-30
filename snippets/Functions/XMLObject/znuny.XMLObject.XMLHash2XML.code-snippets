@@ -1,0 +1,10 @@
+{
+    "znuny.XMLObject.XMLHash2XML": {
+        "body": [
+            "${1:my \$XMLString = \$XMLObject->XMLHash2XML(@XMLHash);}",
+        ],
+        "prefix": "znuny.XMLObject.XMLHash2XML",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

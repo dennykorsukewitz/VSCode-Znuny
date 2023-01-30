@@ -1,0 +1,14 @@
+{
+    "znuny.PackageObject.DeployCheck": {
+        "body": [
+            "${1:\$PackageObject->DeployCheck(",
+            "    Name    => 'Application A',",
+            "    Version => '1.0',",
+            "    Log     => 1, # Default: 1",
+            ");}",
+        ],
+        "prefix": "znuny.PackageObject.DeployCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

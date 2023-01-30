@@ -1,0 +1,14 @@
+{
+    "znuny.BackendObject.ValueValidate": {
+        "body": [
+            "${1:my \$Success = \$BackendObject->ValueValidate(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    Value              => \$Value,                   # Value to store, depends on backend type",
+            "    UserID             => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.ValueValidate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

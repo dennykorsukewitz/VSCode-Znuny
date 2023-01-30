@@ -1,0 +1,15 @@
+{
+    "znuny.CustomerAuthObject.Auth": {
+        "body": [
+            "${1:if (\$CustomerAuthObject->Auth(User => \$User, Pw => \$Pw)) {",
+            "    print "Auth ok!\n";",
+            "\\}",
+            "else {",
+            "    print "Auth invalid!\n";",
+            "\\}}",
+        ],
+        "prefix": "znuny.CustomerAuthObject.Auth",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

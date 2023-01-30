@@ -1,0 +1,14 @@
+{
+    "znuny.Selenium.Login": {
+        "body": [
+            "${1:\$Selenium->Login(",
+            "    Type     => 'Agent', # Agent|Customer",
+            "    User     => 'someuser',",
+            "    Password => 'somepassword',",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.Login",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.TemplateGeneratorObject.Salutation": {
+        "body": [
+            "${1:my \$Salutation = \$TemplateGeneratorObject->Salutation(",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            "    Data     => \$ArticleHashRef,",
+            ");}",
+        ],
+        "prefix": "znuny.TemplateGeneratorObject.Salutation",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

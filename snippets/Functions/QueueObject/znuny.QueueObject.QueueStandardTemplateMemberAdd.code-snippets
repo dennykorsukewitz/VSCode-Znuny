@@ -1,0 +1,15 @@
+{
+    "znuny.QueueObject.QueueStandardTemplateMemberAdd": {
+        "body": [
+            "${1:my \$Success = \$QueueObject->QueueStandardTemplateMemberAdd(",
+            "    QueueID            => \$QueueID,",
+            "    StandardTemplateID => \$StandardTemplateID,",
+            "    Active             => 1,        # to set/confirm (1) or remove (0) the relation",
+            "    UserID             => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.QueueObject.QueueStandardTemplateMemberAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

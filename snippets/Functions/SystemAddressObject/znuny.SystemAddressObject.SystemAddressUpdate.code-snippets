@@ -1,0 +1,18 @@
+{
+    "znuny.SystemAddressObject.SystemAddressUpdate": {
+        "body": [
+            "${1:\$SystemAddressObject->SystemAddressUpdate(",
+            "    ID       => 1,",
+            "    Name     => 'info@example.com',",
+            "    Realname => 'Hotline',",
+            "    ValidID  => \$ValidID,",
+            "    QueueID  => \$QueueID,",
+            "    Comment  => 'some comment',",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SystemAddressObject.SystemAddressUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

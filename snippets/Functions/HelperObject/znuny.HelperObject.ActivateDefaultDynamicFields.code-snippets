@@ -1,0 +1,10 @@
+{
+    "znuny.HelperObject.ActivateDefaultDynamicFields": {
+        "body": [
+            "${1:my \$Result = \$HelperObject->ActivateDefaultDynamicFields();}",
+        ],
+        "prefix": "znuny.HelperObject.ActivateDefaultDynamicFields",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

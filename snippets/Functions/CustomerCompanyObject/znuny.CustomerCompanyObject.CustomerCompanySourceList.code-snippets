@@ -1,0 +1,12 @@
+{
+    "znuny.CustomerCompanyObject.CustomerCompanySourceList": {
+        "body": [
+            "${1:my %List = \$CustomerCompanyObject->CustomerCompanySourceList(",
+            "    ReadOnly => 0 # optional, 1 returns only RO backends, 0 returns writable, if not passed returns all backends",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerCompanyObject.CustomerCompanySourceList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

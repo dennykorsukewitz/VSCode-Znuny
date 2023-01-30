@@ -1,0 +1,15 @@
+{
+    "znuny.LinkObject.StateLookup": {
+        "body": [
+            "${1:\$Name = \$LinkObject->StateLookup(",
+            "    StateID => \$StateID,",
+            ");}",
+            "${2:\$StateID = \$LinkObject->StateLookup(",
+            "    Name => 'Valid',",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.StateLookup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

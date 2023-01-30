@@ -1,0 +1,19 @@
+{
+    "znuny.TicketObject.TicketFlagDelete": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketFlagDelete(",
+            "    TicketID => \$TicketID,",
+            "    Key      => 'Seen',",
+            "    AllUsers => 1,",
+            ");}",
+            "${2:my \$Success = \$TicketObject->TicketFlagDelete(",
+            "    TicketID => \$TicketID,",
+            "    Key      => 'Seen',",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketFlagDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

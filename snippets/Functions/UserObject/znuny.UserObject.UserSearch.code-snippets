@@ -1,0 +1,22 @@
+{
+    "znuny.UserObject.UserSearch": {
+        "body": [
+            "${1:my %List = \$UserObject->UserSearch(",
+            "    PostMasterSearch => 'email@example.com',",
+            "    Valid            => 1, # not required",
+            ");}",
+            "${2:my %List = \$UserObject->UserSearch(",
+            "    Search => '*some*', # also 'hans+huber' possible",
+            "    Valid  => 1, # not required",
+            ");}",
+            "${3:my %List = \$UserObject->UserSearch(",
+            "    UserLogin => '*some*',",
+            "    Limit     => 50,",
+            "    Valid     => 1, # not required",
+            ");}",
+        ],
+        "prefix": "znuny.UserObject.UserSearch",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

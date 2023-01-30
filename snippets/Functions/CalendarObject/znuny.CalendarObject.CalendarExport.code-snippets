@@ -1,0 +1,13 @@
+{
+    "znuny.CalendarObject.CalendarExport": {
+        "body": [
+            "${1:my %Data = \$CalendarObject->CalendarExport(",
+            "    CalendarID => \$CalendarID,",
+            "    UserID     => \$UserID,",
+            "\\}}",
+        ],
+        "prefix": "znuny.CalendarObject.CalendarExport",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

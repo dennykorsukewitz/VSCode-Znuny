@@ -1,0 +1,17 @@
+{
+    "znuny.TicketObject.TicketFlagGet": {
+        "body": [
+            "${1:my %Flags = \$TicketObject->TicketFlagGet(",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,  # to get flags of one user",
+            ");}",
+            "${2:my @Flags = \$TicketObject->TicketFlagGet(",
+            "    TicketID => \$TicketID,",
+            "    AllUsers => 1,    # to get flags of all users",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketFlagGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

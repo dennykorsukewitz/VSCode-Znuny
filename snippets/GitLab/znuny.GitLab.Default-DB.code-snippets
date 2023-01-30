@@ -1,0 +1,14 @@
+{
+    "znuny.GitLab.Default-DB": {
+        "body": [
+            "image: \\$JOB_IMAGE",
+            "",
+            "include:",
+            "  - project: \\$INCLUDE_PROJECT",
+            "    file: '/templates/gitlab/default/default-db.yml'",
+        ],
+        "prefix": "znuny.GitLab.Default-DB",
+        "description": "GitLab Templates .gitlab-ci.yml",
+        "scope": "yaml"
+    }
+}

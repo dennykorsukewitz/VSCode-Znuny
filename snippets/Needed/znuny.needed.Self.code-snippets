@@ -1,0 +1,20 @@
+{
+    "znuny.Needed.Self": {
+        "body": [
+            "NEEDED:",
+            "for my \\$Needed ( qw($1) ) {",
+            "",
+            "    next NEEDED if defined \\$Param{ \\$Needed };",
+            "",
+            "    \\$Self->{LogObject}->Log(",
+            "        Priority => 'error',",
+            "        Message  => \"Parameter '\\$Needed' is needed!\",",
+            "    );",
+            "    return;",
+            "}",
+        ],
+        "prefix": "znuny.Needed.Self",
+        "description": "Needed Self",
+        "scope": "perl"
+    }
+}

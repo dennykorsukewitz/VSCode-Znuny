@@ -1,0 +1,16 @@
+{
+    "znuny.ArticleObject.ArticleIndex": {
+        "body": [
+            "${1:my @ArticleIDs = \$ArticleObject->ArticleIndex(",
+            "    SenderType => 'customer',                   # optional, to limit to a certain sender type",
+            "    TicketID   => \$TicketID,",
+            ");}",
+            "${2:my @ArticleIDs = \$ArticleObject->ArticleIndex(",
+            "    TicketID => \$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleIndex",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

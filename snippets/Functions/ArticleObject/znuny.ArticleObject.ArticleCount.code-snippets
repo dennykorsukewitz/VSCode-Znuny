@@ -1,0 +1,12 @@
+{
+    "znuny.ArticleObject.ArticleCount": {
+        "body": [
+            "${1:my \$Count = \$ArticleObject->ArticleCount(",
+            "    TicketID  => \$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleCount",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

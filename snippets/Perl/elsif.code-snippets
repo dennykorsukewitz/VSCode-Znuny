@@ -1,0 +1,13 @@
+{
+    "elsif": {
+        "prefix": "elsif",
+        "body": [
+            "elsif ($1) {",
+            "    $2",
+            "}",
+            "$3"
+        ],
+        "prefix": "else",
+        "scope": "perl"
+    }
+}

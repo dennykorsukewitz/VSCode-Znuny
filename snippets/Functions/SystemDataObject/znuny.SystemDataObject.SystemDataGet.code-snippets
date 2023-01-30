@@ -1,0 +1,12 @@
+{
+    "znuny.SystemDataObject.SystemDataGet": {
+        "body": [
+            "${1:my \$SystemData = \$SystemDataObject->SystemDataGet(",
+            "    Key => 'OTRS Version',",
+            ");}",
+        ],
+        "prefix": "znuny.SystemDataObject.SystemDataGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.UnitTestWebUserAgentObject": {
+        "body": [
+            "my \$UnitTestWebUserAgentObject = \$Kernel::OM->Get('Kernel::System::UnitTest::WebUserAgent');",
+        ],
+        "prefix": "znuny.ObjectManager.UnitTestWebUserAgentObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "znuny.JWTObject.Decode": {
+        "body": [
+            "${1:my \$JWT = \$JWTObject->Decode(",
+            "    Token       => '...',",
+            "",
+            "    # Key or KeyFilePath",
+            "    Key         => '...', # see https://metacpan.org/pod/Crypt::JWT#key1",
+            "    KeyFilePath => '/home/user1/key.pem',",
+            "",
+            "    KeyPassword => '...', # optional, password for the key",
+            "",
+            "    # Optional: Use this hash to give additional parameters to Crypt::JWT.",
+            "    CryptJWTParameters => {",
+            "",
+            "        # see https://metacpan.org/pod/Crypt::JWT#decode_jwt",
+            "        '...' => '...',",
+            "",
+            "        # ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.JWTObject.Decode",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

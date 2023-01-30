@@ -1,0 +1,15 @@
+{
+    "znuny.TicketObject.TicketMergeDynamicFields": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketMergeDynamicFields(",
+            "    MainTicketID  => \$MainTicketID,",
+            "    MergeTicketID => \$MergeTicketID,",
+            "    UserID        => \$UserID,",
+            "    DynamicFields => ['DynamicField_TicketFreeText1'], # optional",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketMergeDynamicFields",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

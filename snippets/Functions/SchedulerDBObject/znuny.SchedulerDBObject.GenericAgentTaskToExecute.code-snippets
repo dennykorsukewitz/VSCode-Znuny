@@ -1,0 +1,13 @@
+{
+    "znuny.SchedulerDBObject.GenericAgentTaskToExecute": {
+        "body": [
+            "${1:my \$Success = \$SchedulerDBObject->GenericAgentTaskToExecute(",
+            "    NodeID => \$NodeID,    # the ID of the node in a cluster environment",
+            "    PID    => \$PID,  # the process ID of the daemon that is creating the tasks to execution",
+            ");}",
+        ],
+        "prefix": "znuny.SchedulerDBObject.GenericAgentTaskToExecute",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.DBCRUDObject.DataSearch": {
+        "body": [
+            "${1:my %Data = \$DBCRUDObject->DataSearch(",
+            "    Search      => 'test*test',",
+            "    ID          => '...', # optional",
+            "    CreateTime  => '...', # optional",
+            "    ChangeTime  => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDObject.DataSearch",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

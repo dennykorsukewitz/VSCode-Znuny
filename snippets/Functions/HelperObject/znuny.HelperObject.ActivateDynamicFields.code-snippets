@@ -1,0 +1,18 @@
+{
+    "znuny.HelperObject.ActivateDynamicFields": {
+        "body": [
+            "${1:\$HelperObject->ActivateDynamicFields(",
+            "    'UnitTestDropdown',",
+            "    'UnitTestCheckbox',",
+            "    'UnitTestText',",
+            "    'UnitTestMultiSelect',",
+            "    'UnitTestTextArea',",
+            "    'UnitTestDate',",
+            "    'UnitTestDateTime',",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.ActivateDynamicFields",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

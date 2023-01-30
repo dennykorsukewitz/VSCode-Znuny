@@ -1,0 +1,14 @@
+{
+    "znuny.XMLObject.XMLHashUpdate": {
+        "body": [
+            "${1:\$XMLObject->XMLHashUpdate(",
+            "    Type    => 'SomeType',",
+            "    Key     => '123',",
+            "    XMLHash => \@XMLHash,",
+            ");}",
+        ],
+        "prefix": "znuny.XMLObject.XMLHashUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

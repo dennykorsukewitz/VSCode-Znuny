@@ -1,0 +1,13 @@
+{
+    "znuny.SystemMaintenanceObject.SystemMaintenanceList": {
+        "body": [
+            "${1:my \$List = \$SystemMaintenanceObject->SystemMaintenanceList(",
+            "    ValidIDs => ['1','2'],           # optional, to filter SystemMaintenances that match listed valid IDs",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

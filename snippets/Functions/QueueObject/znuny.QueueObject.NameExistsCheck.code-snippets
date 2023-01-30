@@ -1,0 +1,13 @@
+{
+    "znuny.QueueObject.NameExistsCheck": {
+        "body": [
+            "${1:\$Exist = \$QueueObject->NameExistsCheck(",
+            "    Name => 'Some::Queue',",
+            "    ID => 1, # optional",
+            ");}",
+        ],
+        "prefix": "znuny.QueueObject.NameExistsCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

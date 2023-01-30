@@ -1,0 +1,12 @@
+{
+    "znuny.ReferenceDataObject.CountryList": {
+        "body": [
+            "${1:my \$CountryList = \$ReferenceDataObject->CountryList(",
+            "   Result => 'CODE', # optional: returns CODE => Country pairs conform ISO 3166-2.",
+            ");}",
+        ],
+        "prefix": "znuny.ReferenceDataObject.CountryList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

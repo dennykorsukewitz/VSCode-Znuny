@@ -1,0 +1,10 @@
+{
+    "znuny.TimeObject.CurrentTimestamp": {
+        "body": [
+            "${1:my \$TimeStamp = \$TimeObject->CurrentTimestamp();}",
+        ],
+        "prefix": "znuny.TimeObject.CurrentTimestamp",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

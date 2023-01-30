@@ -1,0 +1,113 @@
+repository:
+  # The name of the repository. Changing this will rename the repository
+  name: DK4Znuny-VisualStudioCode
+
+  # A short description of the repository that will show up on GitHub
+  description: DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny development less painful.
+
+  # A URL with more information about the repository
+  homepage: https://dennykorsukewitz.github.io/DK4Znuny-VisualStudioCode/
+
+  # A comma-separated list of topics to set on the repository
+  topics: znuny, znuny-package, package, DK4Znuny-VisualStudioCode, VisualStudioCode, VSC
+
+  # Either `true` to make the repository private, or `false` to make it public.
+  private: false
+
+  # Either `true` to enable issues for this repository, `false` to disable them.
+  has_issues: true
+
+  # Either `true` to enable projects for this repository, or `false` to disable them.
+  # If projects are disabled for the organization, passing `true` will cause an API error.
+  has_projects: false
+
+  # Either `true` to enable the wiki for this repository, `false` to disable it.
+  has_wiki: false
+
+  # Either `true` to enable downloads for this repository, `false` to disable them.
+  has_downloads: true
+
+  # Updates the default branch for this repository.
+  default_branch: dev
+
+  # Either `true` to allow squash-merging pull requests, or `false` to prevent
+  # squash-merging.
+  allow_squash_merge: true
+
+  # Either `true` to allow merging pull requests with a merge commit, or `false`
+  # to prevent merging pull requests with merge commits.
+  allow_merge_commit: false
+
+  # Either `true` to allow rebase-merging pull requests, or `false` to prevent
+  # rebase-merging.
+  allow_rebase_merge: false
+
+# Labels: define labels for Issues and Pull Requests
+labels:
+  - name: dev
+    color: '#44cc11'
+    description: Default Branch
+
+  - name: Znuny 6.0
+    color: '#ff9b00'
+    description: Znuny 6.0 Framework.
+
+  - name: Znuny 6.4
+    color: '#ff9b00'
+    description: Znuny 6.4 Framework.
+
+  - name: Znuny 6.5
+    color: '#ff9b00'
+    description: Znuny 6.5 Framework.
+
+  - name: Znuny 7.0
+    color: '#ff9b00'
+    description: Znuny 7.0 Framework.
+
+  - name: Bug
+    color: '#FF0000'
+    description: An issue with the system.
+
+  - name: Documentation
+    color: '#EB9419'
+    description: Improvements or additions to documentation.
+
+  - name: Feature
+    color: '#428BCA'
+    description: New functionality.
+
+  - name: Duplicate
+    color: '#cfd3d7'
+    description: This issue or pull request already exists.
+
+  - name: Framework
+    color: '#AA0033'
+    description: Framework.
+
+  - name: Refactoring
+    color: '#7F8C8D'
+    description: Refactoring is needed.
+
+  - name: WontFix
+    color: '#000000'
+    description: This will not be worked on.
+
+  - name: Unit Test
+    color: '#2ea7b2'
+    description: Unit Test.
+
+  - name: Clarification
+    color: '#3399FF'
+    description: Clarification of the current situation.
+
+  - name: Verified
+    color: '#b8e550'
+    description: This issue or pull request was verified.
+
+  - name: Verification
+    color: '#e8dd45'
+    description: This issue or pull request needs a verification.
+
+  - name: Progress
+    color: '#AD8D43'
+    description: This is in Progress.

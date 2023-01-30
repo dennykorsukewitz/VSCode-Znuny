@@ -1,0 +1,33 @@
+{
+    "znuny.NotificationEventObject.NotificationUpdate": {
+        "body": [
+            "${1:my \$Ok = \$NotificationEventObject->NotificationUpdate(",
+            "    ID      => 123,",
+            "    Name    => 'Agent::OwnerUpdate',",
+            "    Data => {",
+            "        Events => [ 'TicketQueueUpdate' ],",
+            "        ...",
+            "        Queue => [ 'SomeQueue' ],",
+            "    \\},",
+            "    Message => {",
+            "        en => {",
+            "            Subject     => 'Hello',",
+            "            Body        => 'Hello World',",
+            "            ContentType => 'text/plain',",
+            "        \\},",
+            "        de => {",
+            "            Subject     => 'Hallo',",
+            "            Body        => 'Hallo Welt',",
+            "            ContentType => 'text/plain',",
+            "        \\},",
+            "    \\},",
+            "    Comment => 'An optional comment',  # (optional)",
+            "    ValidID => \$ValidID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.NotificationEventObject.NotificationUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

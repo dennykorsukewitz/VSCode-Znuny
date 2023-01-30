@@ -1,0 +1,12 @@
+{
+    "znuny.StatsObject.StatsAdd": {
+        "body": [
+            "${1:my \$StatID = \$StatsObject->StatsAdd(",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StatsAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

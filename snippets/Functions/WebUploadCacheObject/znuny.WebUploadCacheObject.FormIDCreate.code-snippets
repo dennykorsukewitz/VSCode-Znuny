@@ -1,0 +1,10 @@
+{
+    "znuny.WebUploadCacheObject.FormIDCreate": {
+        "body": [
+            "${1:my \$FormID = \$WebUploadCacheObject->FormIDCreate();}",
+        ],
+        "prefix": "znuny.WebUploadCacheObject.FormIDCreate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

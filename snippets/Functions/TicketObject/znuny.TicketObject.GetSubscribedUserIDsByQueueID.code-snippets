@@ -1,0 +1,12 @@
+{
+    "znuny.TicketObject.GetSubscribedUserIDsByQueueID": {
+        "body": [
+            "${1:my @UserIDs = \$TicketObject->GetSubscribedUserIDsByQueueID(",
+            "    QueueID => \$QueueID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.GetSubscribedUserIDsByQueueID",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.ExcelObject": {
+        "body": [
+            "my \$ExcelObject = \$Kernel::OM->Get('Kernel::System::Excel');",
+        ],
+        "prefix": "znuny.ObjectManager.ExcelObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

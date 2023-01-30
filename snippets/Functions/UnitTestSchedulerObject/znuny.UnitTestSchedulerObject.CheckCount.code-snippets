@@ -1,0 +1,15 @@
+{
+    "znuny.UnitTestSchedulerObject.CheckCount": {
+        "body": [
+            "${1:my \$Success = \$UnitTestSchedulerObject->CheckCount(",
+            "    UnitTestObject => \$Self,",
+            "    Count          => '2',",
+            "    Message        => "2 'AsynchronousExecutor' tasks added",    # optional",
+            "    Type           => 'AsynchronousExecutor',                    # optional",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestSchedulerObject.CheckCount",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

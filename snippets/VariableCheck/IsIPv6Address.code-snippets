@@ -1,0 +1,11 @@
+{
+    "VariableCheck": {
+        "body": [
+            "my \\$${1:IsIPv6Address} = IsIPv6Address(",
+            "    ${2:'0000:1111:2222:3333:4444:5555:6666:7777'},",
+            ");",
+        ],
+        "prefix": "IsIPv6Address",
+        "scope": "perl"
+    }
+}

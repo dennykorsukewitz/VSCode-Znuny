@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.HTMLUtilsObject": {
+        "body": [
+            "my \$HTMLUtilsObject = \$Kernel::OM->Get('Kernel::System::HTMLUtils');",
+        ],
+        "prefix": "znuny.ObjectManager.HTMLUtilsObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

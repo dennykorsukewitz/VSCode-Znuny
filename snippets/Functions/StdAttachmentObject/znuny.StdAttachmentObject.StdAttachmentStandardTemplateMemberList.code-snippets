@@ -1,0 +1,16 @@
+{
+    "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberList": {
+        "body": [
+            "${1:my %List = \$StdAttachmentObject->StdAttachmentStandardTemplateMemberList(",
+            "    AttachmentID => \$AttachmentID,",
+            ");}",
+            "${2:or",
+            "my %List = \$StdAttachmentObject->StdAttachmentStandardTemplateMemberList(",
+            "    StandardTemplateID => \$StandardTemplateID,",
+            ");}",
+        ],
+        "prefix": "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

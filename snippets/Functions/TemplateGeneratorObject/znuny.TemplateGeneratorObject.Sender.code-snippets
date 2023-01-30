@@ -1,0 +1,13 @@
+{
+    "znuny.TemplateGeneratorObject.Sender": {
+        "body": [
+            "${1:my \$Sender = \$TemplateGeneratorObject->Sender(",
+            "    QueueID    => \$QueueID,",
+            "    UserID     => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TemplateGeneratorObject.Sender",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

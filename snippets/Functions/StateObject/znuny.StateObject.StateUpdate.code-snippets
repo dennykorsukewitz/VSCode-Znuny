@@ -1,0 +1,17 @@
+{
+    "znuny.StateObject.StateUpdate": {
+        "body": [
+            "${1:\$StateObject->StateUpdate(",
+            "    ID             => 123,",
+            "    Name           => 'New State',",
+            "    Comment        => 'some comment',",
+            "    ValidID        => \$ValidID,",
+            "    TypeID         => \$TypeID,",
+            "    UserID         => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StateObject.StateUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

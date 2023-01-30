@@ -1,0 +1,12 @@
+{
+    "znuny.LanguageObject.GetPerlModuleTranslatableStrings": {
+        "body": [
+            "${1:my @TranslationStrings = \$LanguageObject->GetPerlModuleTranslatableStrings(",
+            "    ModuleDirectory  => "\$Home/...",  # optional, translates the Znuny module in the given directory",
+            ");}",
+        ],
+        "prefix": "znuny.LanguageObject.GetPerlModuleTranslatableStrings",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

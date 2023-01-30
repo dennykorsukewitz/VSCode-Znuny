@@ -1,0 +1,14 @@
+{
+    "znuny.GitLab.PostgreSQL": {
+        "body": [
+            "image: \\$JOB_IMAGE",
+            "",
+            "include:",
+            "  - project: \\$INCLUDE_PROJECT",
+            "    file: '/templates/gitlab/default/postgresql.yml'",
+        ],
+        "prefix": "znuny.GitLab.PostgreSQL",
+        "description": "GitLab Templates .gitlab-ci.yml",
+        "scope": "yaml"
+    }
+}

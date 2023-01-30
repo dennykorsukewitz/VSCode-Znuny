@@ -1,0 +1,15 @@
+{
+    "znuny.BackendObject.ValueDelete": {
+        "body": [
+            "${1:my \$Success = \$BackendObject->ValueDelete(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    ObjectID           => \$ObjectID,                # ID of the current object that the field",
+            "                                                    # must be linked to, e. g. TicketID",
+            "    UserID             => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.ValueDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

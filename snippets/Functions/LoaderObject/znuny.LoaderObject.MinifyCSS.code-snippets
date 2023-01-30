@@ -1,0 +1,10 @@
+{
+    "znuny.LoaderObject.MinifyCSS": {
+        "body": [
+            "${1:my \$MinifiedCSS = \$LoaderObject->MinifyCSS( Code => \$CSS );}",
+        ],
+        "prefix": "znuny.LoaderObject.MinifyCSS",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

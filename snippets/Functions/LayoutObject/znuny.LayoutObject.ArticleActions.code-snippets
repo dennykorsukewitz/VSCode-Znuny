@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.ArticleActions": {
+        "body": [
+            "${1:my @Actions = \$LayoutObject->ArticleActions(",
+            "    TicketID  => \$TicketID,     # (required)",
+            "    ArticleID => \$ArticleID,     # (required)",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.ArticleActions",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

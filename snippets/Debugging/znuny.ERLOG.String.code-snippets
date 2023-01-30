@@ -1,0 +1,12 @@
+{
+    "znuny.ERLOG.String": {
+        "body": [
+            "open ERLOG, \">>/tmp/znuny.log\";",
+            "print ERLOG \"${1:Logtext}\\n\";",
+            "close ERLOG;",
+        ],
+        "prefix": "znuny.ERLOG.String",
+        "description": "perl",
+        "scope": "perl"
+    }
+}

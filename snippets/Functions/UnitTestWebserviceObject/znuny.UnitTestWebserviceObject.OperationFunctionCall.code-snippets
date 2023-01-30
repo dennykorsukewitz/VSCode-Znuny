@@ -1,0 +1,28 @@
+{
+    "znuny.UnitTestWebserviceObject.OperationFunctionCall": {
+        "body": [
+            "${1:my \$Success = \$UnitTestWebserviceObject->OperationFunctionCall(",
+            "    Webservice           => 'webservice-name',",
+            "    Operation            => 'operation-name',",
+            "    Function             => 'function',",
+            "    Data                 => {\\},",
+            "    ObjectModifyFunction => sub {",
+            "        my (%Params) = @_;",
+            "",
+            "        \$Params{Object\\}->{BackendObject\\}->{MessageName\\} = 'SEND_UPDATE';",
+            "",
+            "        return 1;",
+            "    \\},",
+            ");}",
+            "${2:my \$Success = \$UnitTestWebserviceObject->OperationFunctionCall(",
+            "    Webservice    => 'webservice-name',",
+            "    Operation     => 'operation-name',",
+            "    Function      => 'function',",
+            "    Data          => {\\},",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.OperationFunctionCall",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

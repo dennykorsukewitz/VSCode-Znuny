@@ -1,0 +1,11 @@
+{
+    "znuny.CodePolicy.nofilter.pm": {
+        "body": [
+            "## nofilter($1)$0",
+        ],
+        "prefix": "znuny.CodePolicy.nofilter.pm",
+        "description": "perl, html",
+        "scope": "perl,html"
+
+    }
+}

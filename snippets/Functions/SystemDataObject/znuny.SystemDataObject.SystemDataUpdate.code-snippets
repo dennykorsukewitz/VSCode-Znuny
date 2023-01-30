@@ -1,0 +1,14 @@
+{
+    "znuny.SystemDataObject.SystemDataUpdate": {
+        "body": [
+            "${1:my \$Result = \$SystemDataObject->SystemDataUpdate(",
+            "    Key    => 'OTRS Version',",
+            "    Value  => 'Some New Value',",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SystemDataObject.SystemDataUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

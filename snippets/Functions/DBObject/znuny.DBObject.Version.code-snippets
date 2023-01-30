@@ -1,0 +1,10 @@
+{
+    "znuny.DBObject.Version": {
+        "body": [
+            "${1:my \$DBVersion = \$DBObject->Version();}",
+        ],
+        "prefix": "znuny.DBObject.Version",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "else": {
+        "body": [
+            "else {",
+            "    $1",
+            "}",
+        ],
+        "prefix": "else",
+        "scope": "perl"
+    }
+}

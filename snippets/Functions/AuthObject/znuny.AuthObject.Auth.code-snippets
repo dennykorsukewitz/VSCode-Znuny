@@ -1,0 +1,19 @@
+{
+    "znuny.AuthObject.Auth": {
+        "body": [
+            "${1:if ( \$AuthObject->Auth( User => \$User, Pw => \$Pw ) ) {",
+            "    print "Auth ok!\n";",
+            "\\}",
+            "else {",
+            "    print "Auth invalid!\n";",
+            "\\}}",
+            "${2:my \$User = \$AuthObject->Auth(",
+            "    User => \$User,",
+            "    Pw   => \$Pw,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthObject.Auth",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

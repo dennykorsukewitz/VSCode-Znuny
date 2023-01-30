@@ -1,0 +1,11 @@
+{
+    "znuny.HelperObject.BeginWork": {
+        "body": [
+            "${1:    \$HelperObject->BeginWork()}",
+            "${2:\$HelperObject->BeginWork();}",
+        ],
+        "prefix": "znuny.HelperObject.BeginWork",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

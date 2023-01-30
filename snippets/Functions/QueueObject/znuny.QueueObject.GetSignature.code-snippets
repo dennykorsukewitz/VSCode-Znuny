@@ -1,0 +1,10 @@
+{
+    "znuny.QueueObject.GetSignature": {
+        "body": [
+            "${1:my \$Signature = \$QueueObject->GetSignature(QueueID => 123);}",
+        ],
+        "prefix": "znuny.QueueObject.GetSignature",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

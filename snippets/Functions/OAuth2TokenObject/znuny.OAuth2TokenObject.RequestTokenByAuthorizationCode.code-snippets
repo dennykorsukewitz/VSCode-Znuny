@@ -1,0 +1,14 @@
+{
+    "znuny.OAuth2TokenObject.RequestTokenByAuthorizationCode": {
+        "body": [
+            "${1:my %Token = \$OAuth2TokenObject->RequestTokenByAuthorizationCode(",
+            "    TokenConfigID     => \$TokenConfigID,",
+            "    AuthorizationCode => '...',",
+            "    UserID            => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenObject.RequestTokenByAuthorizationCode",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

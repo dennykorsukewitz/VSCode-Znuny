@@ -1,0 +1,14 @@
+{
+    "znuny.HTMLUtilsObject.TruncateBodyQuote": {
+        "body": [
+            "${1:\$Body = \$HTMLUtilsObject->TruncateBodyQuote(",
+            "    Body       => \$Body,",
+            "    Limit      => 10000,",
+            "    HTMLOutput => 1|0,",
+            ");}",
+        ],
+        "prefix": "znuny.HTMLUtilsObject.TruncateBodyQuote",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

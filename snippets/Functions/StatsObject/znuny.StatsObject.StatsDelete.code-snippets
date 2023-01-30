@@ -1,0 +1,10 @@
+{
+    "znuny.StatsObject.StatsDelete": {
+        "body": [
+            "${1:\$StatsObject->StatsDelete( StatID => '123' );}",
+        ],
+        "prefix": "znuny.StatsObject.StatsDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

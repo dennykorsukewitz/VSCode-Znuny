@@ -1,0 +1,16 @@
+{
+    "znuny.BackendObject.BuildSelectionDataGet": {
+        "body": [
+            "${1:my \$DataValues = \$BackendObject->BuildSelectionDataGet(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,       # complete config of the DynamicField",
+            "    PossibleValues     => \$PossibleValues,           # field possible values (could be reduced",
+            "                                                     #    by ACLs)",
+            "    Value              => \$Value,                    # optional scalar, ArrayRef or HashRef",
+            "                                                     #    depending on dynamic field the",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.BuildSelectionDataGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

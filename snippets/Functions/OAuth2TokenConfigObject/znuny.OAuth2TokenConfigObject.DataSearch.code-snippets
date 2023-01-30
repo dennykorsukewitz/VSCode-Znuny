@@ -1,0 +1,20 @@
+{
+    "znuny.OAuth2TokenConfigObject.DataSearch": {
+        "body": [
+            "${1:my %Data = \$OAuth2TokenConfigObject->DataSearch(",
+            "    Search     => 'test*test',",
+            "    ID         => '...', # optional",
+            "    Name       => '...', # optional",
+            "    Config     => '...', # optional",
+            "    ValidID    => \$ValidID, # optional",
+            "    CreateTime => '...', # optional",
+            "    CreateBy   => '...', # optional",
+            "    ChangeTime => '...', # optional",
+            "    ChangeBy   => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenConfigObject.DataSearch",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

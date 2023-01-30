@@ -1,0 +1,12 @@
+{
+    "znuny.UnitTestSchedulerObject.CleanUp": {
+        "body": [
+            "${1:my \$Success = \$UnitTestSchedulerObject->CleanUp(",
+            "    Type => 'AsynchronousExecutor', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestSchedulerObject.CleanUp",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

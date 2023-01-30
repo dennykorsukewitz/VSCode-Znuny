@@ -1,0 +1,10 @@
+{
+    "znuny.Origin.pm": {
+        "body": [
+            "# \\$origin: https://github.com/znuny/Znuny/blob/$1/$2"
+        ],
+        "prefix": "znuny.Origin.pm",
+        "description": "pm pl tt dtl",
+        "scope": "perl, html"
+    }
+}

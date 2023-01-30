@@ -1,0 +1,12 @@
+{
+    "znuny.DateTimeObject.ToTimeZone": {
+        "body": [
+            "${1:my \$Success = \$DateTimeObject->ToTimeZone(",
+            "    TimeZone => 'Europe/Berlin',",
+            ");}",
+        ],
+        "prefix": "znuny.DateTimeObject.ToTimeZone",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

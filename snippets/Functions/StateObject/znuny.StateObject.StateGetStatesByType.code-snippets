@@ -1,0 +1,17 @@
+{
+    "znuny.StateObject.StateGetStatesByType": {
+        "body": [
+            "${1:my %List = \$StateObject->StateGetStatesByType(",
+            "    Type   => 'Viewable',",
+            "    Result => 'HASH', # HASH|ID|Name",
+            ");}",
+            "${2:my @List = \$StateObject->StateGetStatesByType(",
+            "    StateType => ['open', 'new'],",
+            "    Result    => 'ID', # HASH|ID|Name",
+            ");}",
+        ],
+        "prefix": "znuny.StateObject.StateGetStatesByType",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

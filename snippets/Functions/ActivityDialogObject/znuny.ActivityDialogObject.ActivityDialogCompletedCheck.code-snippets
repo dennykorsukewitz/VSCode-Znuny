@@ -1,0 +1,18 @@
+{
+    "znuny.ActivityDialogObject.ActivityDialogCompletedCheck": {
+        "body": [
+            "${1:my \$Completed = \$ActivityDialogObject->ActivityDialogCompletedCheck(",
+            "    ActivityDialogEntityID => \$ActivityDialogEntityID,",
+            "    Data                   => {",
+            "        Queue         => 'Raw',",
+            "        DynamicField1 => 'Value',",
+            "        Subject       => 'Testsubject',",
+            "        # ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityDialogObject.ActivityDialogCompletedCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.TicketObject.TicketAclActionData": {
+        "body": [
+            "${1:my %AclAction = \$TicketObject->TicketAclActionData();}",
+        ],
+        "prefix": "znuny.TicketObject.TicketAclActionData",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.ArticleObject.ArticleAttachment": {
+        "body": [
+            "${1:my %Attachment = \$ArticleObject->ArticleAttachment(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID,",
+            "    FileID    => \$FileID,   # as returned by ArticleAttachmentIndex",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleAttachment",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

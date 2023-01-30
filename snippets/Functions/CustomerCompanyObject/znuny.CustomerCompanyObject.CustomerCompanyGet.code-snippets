@@ -1,0 +1,12 @@
+{
+    "znuny.CustomerCompanyObject.CustomerCompanyGet": {
+        "body": [
+            "${1:my %CustomerCompany = \$CustomerCompanyObject->CustomerCompanyGet(",
+            "    CustomerID => \$CustomerID,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerCompanyObject.CustomerCompanyGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

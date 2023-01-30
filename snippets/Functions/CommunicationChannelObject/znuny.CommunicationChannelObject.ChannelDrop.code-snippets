@@ -1,0 +1,16 @@
+{
+    "znuny.CommunicationChannelObject.ChannelDrop": {
+        "body": [
+            "${1:my \$Success = \$CommunicationChannelObject->ChannelDrop(",
+            "    ChannelID   => \$ChannelID,               # (required) Delete by channel ID",
+            "                                    # or",
+            "    ChannelName => 'SomeChannel',   # (required) Delete by channel name",
+            "",
+            "    DropArticleData => 1,           # (optional) Also drop article data if possible, default: 0",
+            ");}",
+        ],
+        "prefix": "znuny.CommunicationChannelObject.ChannelDrop",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

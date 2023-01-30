@@ -1,0 +1,14 @@
+{
+    "znuny.BackendObject.ColumnFilterValuesGet": {
+        "body": [
+            "${1:my \$ColumnFilterValues = \$BackendObject->ColumnFilterValuesGet(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      #DynamicField configuraction",
+            "    LayoutObject       => \$LayoutObject,",
+            "    TicketIDs          => [23, 1, 56, 74],          # array ref list of ticket IDs",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.ColumnFilterValuesGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

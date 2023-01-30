@@ -1,0 +1,17 @@
+{
+    "znuny.CommunicationChannelObject.ChannelAdd": {
+        "body": [
+            "${1:my \$ChannelID = \$CommunicationChannelObject->ChannelAdd(",
+            "    ChannelName => 'Email',                                          # (required) Communication channel name",
+            "    Module      => 'Kernel::System::CommunicationChannel::Internal', # (required) Module",
+            "    PackageName => 'Framework',                                      # (required) Package name",
+            "    ChannelData => {...\\},                                            # (optional) Additional channel data (can be array, hash, scalar).",
+            "    ValidID     => \$ValidID,                                                # (optional) Default 1.",
+            "    UserID      => \$UserID,                                                # (required) UserID",
+            ");}",
+        ],
+        "prefix": "znuny.CommunicationChannelObject.ChannelAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

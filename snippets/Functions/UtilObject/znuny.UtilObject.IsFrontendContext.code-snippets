@@ -1,0 +1,10 @@
+{
+    "znuny.UtilObject.IsFrontendContext": {
+        "body": [
+            "${1:my \$IsFrontendContext = \$UtilObject->IsFrontendContext();}",
+        ],
+        "prefix": "znuny.UtilObject.IsFrontendContext",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

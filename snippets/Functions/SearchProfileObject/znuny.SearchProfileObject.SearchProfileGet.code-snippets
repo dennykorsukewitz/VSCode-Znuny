@@ -1,0 +1,14 @@
+{
+    "znuny.SearchProfileObject.SearchProfileGet": {
+        "body": [
+            "${1:my %SearchProfileData = \$SearchProfileObject->SearchProfileGet(",
+            "    Base      => 'TicketSearch',",
+            "    Name      => 'last-search',",
+            "    UserLogin => 'me',",
+            ");}",
+        ],
+        "prefix": "znuny.SearchProfileObject.SearchProfileGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

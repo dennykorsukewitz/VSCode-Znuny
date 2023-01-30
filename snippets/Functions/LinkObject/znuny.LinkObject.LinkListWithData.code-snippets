@@ -1,0 +1,23 @@
+{
+    "znuny.LinkObject.LinkListWithData": {
+        "body": [
+            "${1:my \$LinkList = \$LinkObject->LinkListWithData(",
+            "    Object                          => 'Ticket',",
+            "    Key                             => '321',",
+            "    Object2                         => 'FAQ',         # (optional)",
+            "    State                           => 'Valid',",
+            "    Type                            => 'ParentChild', # (optional)",
+            "    Direction                       => 'Target',      # (optional) default Both (Source|Target|Both)",
+            "    UserID                          => \$UserID,",
+            "    ObjectParameters                => {              # (optional) backend specific flags",
+            "        Ticket => {",
+            "            IgnoreLinkedTicketStateTypes => 0|1,",
+            "        \\},",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.LinkListWithData",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

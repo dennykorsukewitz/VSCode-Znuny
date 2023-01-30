@@ -1,0 +1,10 @@
+{
+    "znuny.X509CertificateObject.IsSupported": {
+        "body": [
+            "${1:my \$X509CertificateObjectIsSupported = \$X509CertificateObject->IsSupported();}",
+        ],
+        "prefix": "znuny.X509CertificateObject.IsSupported",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

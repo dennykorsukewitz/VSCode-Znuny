@@ -1,0 +1,21 @@
+{
+    "znuny.MainObject.Dump": {
+        "body": [
+            "${1:my \$Dump = \$MainObject->Dump(",
+            "    \$SomeVariable,",
+            "    'ascii', # ascii|binary - default is binary",
+            ");}",
+            "${2:my \$Dump = \$MainObject->Dump(",
+            "    \$SomeVariable,",
+            ");}",
+            "${3:my \$Dump = \$MainObject->Dump(",
+            "    {",
+            "        Key1 => \$SomeVariable,",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.MainObject.Dump",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

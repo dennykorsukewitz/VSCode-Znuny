@@ -1,0 +1,10 @@
+{
+    "znuny.UnitTestWebserviceObject.Result": {
+        "body": [
+            "${1:my \$Result = \$UnitTestWebserviceObject->Result();}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.Result",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

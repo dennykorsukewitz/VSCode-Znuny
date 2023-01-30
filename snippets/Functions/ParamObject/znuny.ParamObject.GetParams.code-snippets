@@ -1,0 +1,14 @@
+{
+    "znuny.ParamObject.GetParams": {
+        "body": [
+            "${1:my %Params = \$ParamObject->GetParams(",
+            "    Params           => [ 'TicketID', 'Queue', ]      # optional, only these parameters are fetched and returned",
+            "    Raw              => 1,                            # optional, input data is not changed",
+            "    JSONDecodeParams => ['ParamNameWithJSONData1',]   # optional, this JSON-decodes the given parameters",
+            ");}",
+        ],
+        "prefix": "znuny.ParamObject.GetParams",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

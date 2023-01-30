@@ -1,0 +1,9 @@
+{
+    "grep.array": {
+        "body": [
+            "grep \\{ \\$_ eq $1 \\} @${2:\\{ \\$$3 \\}};",
+        ],
+        "prefix": "grep.array",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "znuny.GroupObject.GroupUpdate": {
+        "body": [
+            "${1:my \$Success = \$GroupObject->GroupUpdate(",
+            "    ID      => 123,",
+            "    Name    => 'example-group',",
+            "    Comment => 'comment describing the group',   # optional",
+            "    ValidID => \$ValidID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.GroupObject.GroupUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

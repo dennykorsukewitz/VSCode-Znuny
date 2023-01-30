@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.TimeAccountingWebserviceObject": {
+        "body": [
+            "my \$TimeAccountingWebserviceObject = \$Kernel::OM->Get('Kernel::System::TimeAccountingWebservice');",
+        ],
+        "prefix": "znuny.ObjectManager.TimeAccountingWebserviceObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

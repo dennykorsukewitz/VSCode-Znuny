@@ -1,0 +1,13 @@
+{
+    "znuny.StatsObject.Export": {
+        "body": [
+            "${1:my \$ExportFile = \$StatsObject->Export(",
+            "    StatID => \$StatID,",
+            "    ExportStatNumber => 1 || 0, # optional, only useful move statistics from the test system to the productive system",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.Export",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

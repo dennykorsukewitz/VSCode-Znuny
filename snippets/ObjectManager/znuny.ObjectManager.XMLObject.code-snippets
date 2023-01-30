@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.XMLObject": {
+        "body": [
+            "my \$XMLObject = \$Kernel::OM->Get('Kernel::System::XML');",
+        ],
+        "prefix": "znuny.ObjectManager.XMLObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.SessionObject.RemoveSessionByUser": {
+        "body": [
+            "${1:\$SessionObject->RemoveSessionByUser(",
+            "    UserLogin => 'some_user_login'",
+            ");}",
+        ],
+        "prefix": "znuny.SessionObject.RemoveSessionByUser",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

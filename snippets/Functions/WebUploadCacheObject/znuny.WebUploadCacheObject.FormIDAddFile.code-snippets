@@ -1,0 +1,24 @@
+{
+    "znuny.WebUploadCacheObject.FormIDAddFile": {
+        "body": [
+            "${1:\$WebUploadCacheObject->FormIDAddFile(",
+            "    FormID      => \$FormID,",
+            "    Filename    => 'somefile.html',",
+            "    Content     => \$FileInString,",
+            "    ContentID   => \$ContentID,",
+            "    ContentType => 'text/html',",
+            "    Disposition => 'inline', # optional",
+            ");}",
+            "${2:\$WebUploadCacheObject->FormIDAddFile(",
+            "    FormID      => \$FormID,",
+            "    Filename    => 'somefile.html',",
+            "    Content     => \$FileInString,",
+            "    ContentType => 'text/html',",
+            "    Disposition => 'inline', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.WebUploadCacheObject.FormIDAddFile",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

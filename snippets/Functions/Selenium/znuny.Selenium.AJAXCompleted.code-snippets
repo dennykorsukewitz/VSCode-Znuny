@@ -1,0 +1,10 @@
+{
+    "znuny.Selenium.AJAXCompleted": {
+        "body": [
+            "${1:\$Selenium->AJAXCompleted();}",
+        ],
+        "prefix": "znuny.Selenium.AJAXCompleted",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

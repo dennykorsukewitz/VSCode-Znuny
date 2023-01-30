@@ -1,0 +1,20 @@
+{
+    "znuny.TicketObject.TicketPermission": {
+        "body": [
+            "${1:my \$Access = \$TicketObject->TicketPermission(",
+            "    Type     => 'ro',",
+            "    TicketID => \$TicketID,",
+            "    LogNo    => 1,",
+            "    UserID   => \$UserID,",
+            ");}",
+            "${2:my \$Access = \$TicketObject->TicketPermission(",
+            "    Type     => 'ro',",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketPermission",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

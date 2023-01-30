@@ -1,0 +1,20 @@
+{
+    "znuny.HelperObject.ConsoleCommand": {
+        "body": [
+            "${1:my \$Result = \$HelperObject->ConsoleCommand(",
+            "    CommandModule => 'Kernel::System::Console::Command::Help',",
+            "    Parameter     => 'Lis',",
+            ");}",
+            "${2:my \$Result = \$HelperObject->ConsoleCommand(",
+            "    CommandModule => 'Kernel::System::Console::Command::Maint::Cache::Delete',",
+            "    Parameter     => [ '--type', 'Znuny' ],",
+            ");}",
+            "${3:my \$Result = \$HelperObject->ConsoleCommand(",
+            "    CommandModule => 'Kernel::System::Console::Command::Maint::Cache::Delete',",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.ConsoleCommand",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

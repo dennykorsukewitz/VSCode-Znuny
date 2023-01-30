@@ -1,0 +1,14 @@
+{
+    "znuny.HelperObject.ConfigSettingChange": {
+        "body": [
+            "${1:\$HelperObject->ConfigSettingChange(",
+            "    Valid => 1,            # (optional) enable or disable setting",
+            "    Key   => 'MySetting',  # setting name",
+            "    Value => { ... \\} ,     # setting value",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.ConfigSettingChange",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

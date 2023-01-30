@@ -1,0 +1,15 @@
+{
+    "znuny.LockObject.LockViewableLock": {
+        "body": [
+            "${1:my @List = \$LockObject->LockViewableLock(",
+            "    Type => 'Name', # ID|Name",
+            ");}",
+            "${2:my @ListID = \$LockObject->LockViewableLock(",
+            "    Type => 'ID', # ID|Name",
+            ");}",
+        ],
+        "prefix": "znuny.LockObject.LockViewableLock",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

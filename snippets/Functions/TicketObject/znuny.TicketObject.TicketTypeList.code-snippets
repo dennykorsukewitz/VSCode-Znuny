@@ -1,0 +1,23 @@
+{
+    "znuny.TicketObject.TicketTypeList": {
+        "body": [
+            "${1:my %Types = \$TicketObject->TicketTypeList(",
+            "    CustomerUserID => \$CustomerUserID,",
+            ");}",
+            "${2:my %Types = \$TicketObject->TicketTypeList(",
+            "    QueueID => \$QueueID,",
+            "    UserID  => \$UserID,",
+            ");}",
+            "${3:my %Types = \$TicketObject->TicketTypeList(",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+            "${4:my %Types = \$TicketObject->TicketTypeList(",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketTypeList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

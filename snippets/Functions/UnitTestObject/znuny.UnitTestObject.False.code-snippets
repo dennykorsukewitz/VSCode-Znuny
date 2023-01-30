@@ -1,0 +1,15 @@
+{
+    "znuny.UnitTestObject.False": {
+        "body": [
+            "${1:\$Self->False(",
+            "    \$TestValue,",
+            "    'Test Name',",
+            ");}",
+            "${2:\$Self->False(\$ParamA, 'Test Name');}",
+            "${3:\$Self->False(1, 'Test Name');}",
+        ],
+        "prefix": "znuny.UnitTestObject.False",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

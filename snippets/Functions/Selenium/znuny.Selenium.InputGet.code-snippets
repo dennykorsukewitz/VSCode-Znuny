@@ -1,0 +1,15 @@
+{
+    "znuny.Selenium.InputGet": {
+        "body": [
+            "${1:my \$Result = \$Selenium->InputGet(",
+            "    Attribute => 'QueueID',",
+            "    Options   => {                          # optional",
+            "        KeyOrValue => 'Value',              # default is 'Key'",
+            "    \\}",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.InputGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

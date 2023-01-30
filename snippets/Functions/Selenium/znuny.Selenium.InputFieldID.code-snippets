@@ -1,0 +1,12 @@
+{
+    "znuny.Selenium.InputFieldID": {
+        "body": [
+            "${1:my \$Result = \$Selenium->InputFieldID(",
+            "    Attribute => 'QueueID',",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.InputFieldID",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

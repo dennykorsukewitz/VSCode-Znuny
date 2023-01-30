@@ -1,0 +1,14 @@
+{
+    "znuny.StatsObject.StatsUpdate": {
+        "body": [
+            "${1:\$StatsObject->StatsUpdate(",
+            "    StatID => \$StatID,",
+            "    Hash   => \%Hash,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StatsUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

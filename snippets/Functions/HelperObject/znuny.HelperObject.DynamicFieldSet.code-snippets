@@ -1,0 +1,20 @@
+{
+    "znuny.HelperObject.DynamicFieldSet": {
+        "body": [
+            "${1:my \$Success = \$HelperObject->DynamicFieldSet(",
+            "    Field          => 'DF1',",
+            "    ObjectID       => \$ObjectID,",
+            "    Value          => '123',",
+            "    UserID         => \$UserID, # optional",
+            ");}",
+            "${2:my \$Success = \$HelperObject->DynamicFieldSet(",
+            "    Field      => 'DF1',",
+            "    ObjectID   => \$ObjectID,",
+            "    Value      => '123',",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.DynamicFieldSet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

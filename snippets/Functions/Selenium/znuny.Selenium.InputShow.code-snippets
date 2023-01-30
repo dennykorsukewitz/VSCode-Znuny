@@ -1,0 +1,12 @@
+{
+    "znuny.Selenium.InputShow": {
+        "body": [
+            "${1:my \$Result = \$Selenium->InputShow(",
+            "    Attribute => 'QueueID',",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.InputShow",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

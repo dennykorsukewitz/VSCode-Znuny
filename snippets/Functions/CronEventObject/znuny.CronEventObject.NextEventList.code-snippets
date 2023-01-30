@@ -1,0 +1,14 @@
+{
+    "znuny.CronEventObject.NextEventList": {
+        "body": [
+            "${1:my @NextEvents = \$CronEventObject->NextEventList(",
+            "    Schedule      => '*/2 * * * *',         # recurrence parameters based in cron notation",
+            "    StartDateTime => \$StartDateTimeObject,  # optional, defaults to current date/time",
+            "    StopDateTime  => \$StopDateTimeObject,",
+            ");}",
+        ],
+        "prefix": "znuny.CronEventObject.NextEventList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

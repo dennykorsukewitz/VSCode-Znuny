@@ -1,0 +1,12 @@
+{
+    "znuny.StdAttachmentObject.StdAttachmentGet": {
+        "body": [
+            "${1:my %Data = \$StdAttachmentObject->StdAttachmentGet(",
+            "    ID => \$ID,",
+            ");}",
+        ],
+        "prefix": "znuny.StdAttachmentObject.StdAttachmentGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

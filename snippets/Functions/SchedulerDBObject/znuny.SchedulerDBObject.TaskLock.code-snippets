@@ -1,0 +1,14 @@
+{
+    "znuny.SchedulerDBObject.TaskLock": {
+        "body": [
+            "${1:my \$Success = \$SchedulerDBObject->TaskLock(",
+            "    TaskID => \$TaskID,",
+            "    NodeID => \$NodeID,    # the id on the node in a cluster environment",
+            "    PID    => \$PID,  # the process ID of the worker that is locking the task",
+            ");}",
+        ],
+        "prefix": "znuny.SchedulerDBObject.TaskLock",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

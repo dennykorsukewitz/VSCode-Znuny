@@ -1,0 +1,13 @@
+{
+    "znuny.LastViewsObject.GetList": {
+        "body": [
+            "${1:my @LastViews = \$LastViewsObject->GetList(",
+            "    SessionID => \$SessionID,",
+            "    Types     => ['Ticket', 'Admin'],   # optional",
+            ");}",
+        ],
+        "prefix": "znuny.LastViewsObject.GetList",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

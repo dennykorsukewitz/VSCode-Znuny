@@ -1,0 +1,15 @@
+{
+    "znuny.LayoutObject.HTMLLinkQuote": {
+        "body": [
+            "${1:my \$HTMLWithLinks = \$LayoutObject->HTMLLinkQuote(",
+            "    String => \$HTMLString,",
+            ");}",
+            "${2:my \$HTMLWithLinksRef = \$LayoutObject->HTMLLinkQuote(",
+            "    String => \\$HTMLString,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.HTMLLinkQuote",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

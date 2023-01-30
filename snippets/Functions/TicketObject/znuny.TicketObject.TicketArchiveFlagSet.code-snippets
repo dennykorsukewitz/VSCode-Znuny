@@ -1,0 +1,14 @@
+{
+    "znuny.TicketObject.TicketArchiveFlagSet": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketArchiveFlagSet(",
+            "    ArchiveFlag => 'y',  # (y|n)",
+            "    TicketID    => \$TicketID,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketArchiveFlagSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

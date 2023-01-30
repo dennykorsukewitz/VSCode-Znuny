@@ -1,0 +1,13 @@
+{
+    "znuny.TicketObject.TicketCalendarGet": {
+        "body": [
+            "${1:my \$Calendar = \$TicketObject->TicketCalendarGet(",
+            "    QueueID => \$QueueID,",
+            "    SLAID   => \$SLAID,   # optional",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketCalendarGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

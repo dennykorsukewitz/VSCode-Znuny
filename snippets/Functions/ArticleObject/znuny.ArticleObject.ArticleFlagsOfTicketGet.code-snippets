@@ -1,0 +1,13 @@
+{
+    "znuny.ArticleObject.ArticleFlagsOfTicketGet": {
+        "body": [
+            "${1:my %Flags = \$ArticleObject->ArticleFlagsOfTicketGet(",
+            "    TicketID  => \$TicketID,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleFlagsOfTicketGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

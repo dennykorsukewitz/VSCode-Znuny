@@ -1,0 +1,20 @@
+{
+    "znuny.SysConfigObject.SettingsUpdatedList": {
+        "body": [
+            "${1:my @List = \$SysConfigObject->SettingsUpdatedList(",
+            "    Settings => [                                               # (required) List of settings that needs to be checked",
+            "        {",
+            "            SettingName           => 'SettingName',",
+            "            ChangeTime            => '2017-01-13 11:23:07',",
+            "            IsLockedByAnotherUser => 0,",
+            "        \\},",
+            "        ...",
+            "    ],",
+            "    UserID => \$UserID,                                                # (required) Current user id",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.SettingsUpdatedList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

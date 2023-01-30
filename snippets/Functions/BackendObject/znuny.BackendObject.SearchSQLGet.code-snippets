@@ -1,0 +1,16 @@
+{
+    "znuny.BackendObject.SearchSQLGet": {
+        "body": [
+            "${1:my \$SQL = \$BackendObject->SearchSQLGet(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    TableAlias         => \$TableAlias,              # the alias of the already joined dynamic_field_value table to use",
+            "    SearchTerm         => \$SearchTerm,              # What to look for. Placeholders in LIKE searches must be passed as %.",
+            "    Operator           => \$Operator,                # One of [Equals, Like, GreaterThan, GreaterThanEquals, SmallerThan, SmallerThanEquals]",
+            "                                                    #   The supported operators differ for the different backends.",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.SearchSQLGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

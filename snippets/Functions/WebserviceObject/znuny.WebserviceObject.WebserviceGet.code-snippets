@@ -1,0 +1,13 @@
+{
+    "znuny.WebserviceObject.WebserviceGet": {
+        "body": [
+            "${1:my \$Webservice = \$WebserviceObject->WebserviceGet(",
+            "    ID   => 123,            # ID or Name must be provided",
+            "    Name => 'MyWebservice',",
+            ");}",
+        ],
+        "prefix": "znuny.WebserviceObject.WebserviceGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.CodePolicy.nofilter.js": {
+        "body": [
+            "// nofilter($1)$0",
+        ],
+        "prefix": "znuny.CodePolicy.nofilter.js",
+        "description": "javascript",
+        "scope": "javascript"
+    }
+}

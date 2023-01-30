@@ -1,0 +1,12 @@
+{
+    "znuny.Selenium.InputModule": {
+        "body": [
+            "${1:my \$Result = \$Selenium->InputModule(",
+            "    Action => 'QueueID',",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.InputModule",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

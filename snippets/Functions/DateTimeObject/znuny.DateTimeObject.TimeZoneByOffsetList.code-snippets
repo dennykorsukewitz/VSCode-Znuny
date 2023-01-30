@@ -1,0 +1,10 @@
+{
+    "znuny.DateTimeObject.TimeZoneByOffsetList": {
+        "body": [
+            "${1:my %TimeZoneByOffset = \$DateTimeObject->TimeZoneByOffsetList();}",
+        ],
+        "prefix": "znuny.DateTimeObject.TimeZoneByOffsetList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

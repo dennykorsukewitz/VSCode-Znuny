@@ -1,0 +1,10 @@
+{
+    "znuny.SupportDataCollectorObject.CollectAsynchronous": {
+        "body": [
+            "${1:my %Result = \$SupportDataCollectorObject->CollectAsynchronous();}",
+        ],
+        "prefix": "znuny.SupportDataCollectorObject.CollectAsynchronous",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

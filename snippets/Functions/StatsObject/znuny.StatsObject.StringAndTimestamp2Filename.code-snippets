@@ -1,0 +1,13 @@
+{
+    "znuny.StatsObject.StringAndTimestamp2Filename": {
+        "body": [
+            "${1:my \$Filename = \$StatsObject->StringAndTimestamp2Filename(",
+            "    String   => 'Title',",
+            "    TimeZone => 'Europe/Berlin',  # optional",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StringAndTimestamp2Filename",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

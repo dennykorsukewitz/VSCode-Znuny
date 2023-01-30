@@ -1,0 +1,17 @@
+{
+    "znuny.ArticleObject.ArticleAttachmentIndex": {
+        "body": [
+            "${1:my %AttachmentIndex = \$ArticleObject->ArticleAttachmentIndex(",
+            "    TicketID         => \$TicketID,",
+            "    ArticleID        => \$ArticleID,",
+            "    ExcludePlainText => 1,       # (optional) Exclude plain text attachment",
+            "    ExcludeHTMLBody  => 1,       # (optional) Exclude HTML body attachment",
+            "    ExcludeInline    => 1,       # (optional) Exclude inline attachments",
+            "    OnlyHTMLBody     => 1,       # (optional) Return only HTML body attachment, return nothing if not found",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleAttachmentIndex",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.DBCRUDObject.DataAdd": {
+        "body": [
+            "${1:my \$Success = \$DBCRUDObject->DataAdd(",
+            "    ID          => '...',",
+            "    '...',",
+            "    CreateTime  => '...', # optional",
+            "    ChangeTime  => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDObject.DataAdd",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

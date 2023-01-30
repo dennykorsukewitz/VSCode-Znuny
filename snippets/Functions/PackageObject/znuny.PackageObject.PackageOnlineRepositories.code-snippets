@@ -1,0 +1,10 @@
+{
+    "znuny.PackageObject.PackageOnlineRepositories": {
+        "body": [
+            "${1:my %List = \$PackageObject->PackageOnlineRepositories();}",
+        ],
+        "prefix": "znuny.PackageObject.PackageOnlineRepositories",
+        "description": "6.0",
+        "scope": "perl"
+    }
+}

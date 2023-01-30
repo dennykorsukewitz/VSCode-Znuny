@@ -1,0 +1,10 @@
+{
+    "znuny.SysConfigObject.ConfigurationDeployGetLast": {
+        "body": [
+            "${1:my %Deployment = \$SysConfigObject->ConfigurationDeployGetLast();}",
+        ],
+        "prefix": "znuny.SysConfigObject.ConfigurationDeployGetLast",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

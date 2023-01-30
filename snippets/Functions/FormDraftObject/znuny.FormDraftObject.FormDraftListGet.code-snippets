@@ -1,0 +1,15 @@
+{
+    "znuny.FormDraftObject.FormDraftListGet": {
+        "body": [
+            "${1:my \$FormDraftList = \$FormDraftObject->FormDraftListGet(",
+            "    ObjectType => 'Ticket',             # optional",
+            "    ObjectID   => \$ObjectID,                  # optional",
+            "    Action     => 'AgentTicketCompose', # optional",
+            "    UserID     => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.FormDraftObject.FormDraftListGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

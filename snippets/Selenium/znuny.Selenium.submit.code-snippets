@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.submit": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->submit();",
+        ],
+        "prefix": "znuny.Selenium.submit",
+        "scope": "perl"
+    }
+}

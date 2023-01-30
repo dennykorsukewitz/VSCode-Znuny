@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.UtilObject": {
+        "body": [
+            "my \$UtilObject = \$Kernel::OM->Get('Kernel::System::Util');",
+        ],
+        "prefix": "znuny.ObjectManager.UtilObject",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

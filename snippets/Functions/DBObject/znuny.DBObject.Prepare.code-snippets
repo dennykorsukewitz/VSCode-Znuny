@@ -1,0 +1,27 @@
+{
+    "znuny.DBObject.Prepare": {
+        "body": [
+            "${1:\$DBObject->Prepare(",
+            "    SQL    => "SELECT id, name, content FROM table WHERE name_a = ? AND name_b = ?",",
+            "    Encode => [ 1, 1, 0 ],",
+            "    Bind   => [ \\$Var1, \\$Var2 ],",
+            ");}",
+            "${2:\$DBObject->Prepare(",
+            "    SQL    => "SELECT id, name, content FROM table",",
+            "    Encode => [ 1, 1, 0 ],",
+            ");}",
+            "${3:\$DBObject->Prepare(",
+            "    SQL   => "SELECT id, name FROM table",",
+            "    Limit => 10,",
+            ");}",
+            "${4:\$DBObject->Prepare(",
+            "    SQL   => "SELECT id, name FROM table",",
+            "    Start => 10,",
+            "    Limit => 20,",
+            ");}",
+        ],
+        "prefix": "znuny.DBObject.Prepare",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

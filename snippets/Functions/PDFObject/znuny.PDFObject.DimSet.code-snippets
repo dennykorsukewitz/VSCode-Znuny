@@ -1,0 +1,12 @@
+{
+    "znuny.PDFObject.DimSet": {
+        "body": [
+            "${1:\$Dim = \$PDFObject->DimSet(",
+            "    Dim => 'printable',  # (optional) default content (content|printable)",
+            ");}",
+        ],
+        "prefix": "znuny.PDFObject.DimSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

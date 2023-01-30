@@ -1,0 +1,14 @@
+{
+    "znuny.SysConfigObject.ConfigurationSearch": {
+        "body": [
+            "${1:my @Result = \$SysConfigObject->ConfigurationSearch(",
+            "    Search           => 'The search string', # (optional)",
+            "    Category         => 'OTRS'               # (optional)",
+            "    IncludeInvisible => 1,                   # (optional) Default 0.",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.ConfigurationSearch",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

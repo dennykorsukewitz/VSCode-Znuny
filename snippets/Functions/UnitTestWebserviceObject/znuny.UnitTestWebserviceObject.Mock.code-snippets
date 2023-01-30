@@ -1,0 +1,27 @@
+{
+    "znuny.UnitTestWebserviceObject.Mock": {
+        "body": [
+            "${1:my \$Result = \$UnitTestWebserviceObject->Mock(",
+            "    InvokerName123 => [",
+            "        {",
+            "            Data => {",
+            "                OutgoingData => 'Value'",
+            "            \\},",
+            "            Result => {",
+            "                Success      => 1,",
+            "                ErrorMessage => '',",
+            "                Data         => {",
+            "                    YAY => 'so true',",
+            "                \\},",
+            "            \\}",
+            "        \\},",
+            "        ...",
+            "    ],",
+            "    ...",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.Mock",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

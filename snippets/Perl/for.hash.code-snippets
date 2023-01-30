@@ -1,0 +1,12 @@
+{
+    "for.hash": {
+        "body": [
+            "$1:",
+            "for my \\$$2 ( ${3:sort }keys %$4 ) {",
+            "    $5",
+            "}",
+        ],
+        "prefix": "for.hash",
+        "scope": "perl"
+    }
+}

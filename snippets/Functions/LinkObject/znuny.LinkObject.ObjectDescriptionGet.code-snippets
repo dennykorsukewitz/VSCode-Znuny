@@ -1,0 +1,14 @@
+{
+    "znuny.LinkObject.ObjectDescriptionGet": {
+        "body": [
+            "${1:%Description = \$LinkObject->ObjectDescriptionGet(",
+            "    Object  => 'Ticket',",
+            "    Key     => 123,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.ObjectDescriptionGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.CalendarObject.GetTextColor": {
+        "body": [
+            "${1:my \$BestTextColor = \$CalendarObject->GetTextColor(",
+            "    Background => '#FFF',    # (required) must be in valid hexadecimal RGB notation",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarObject.GetTextColor",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

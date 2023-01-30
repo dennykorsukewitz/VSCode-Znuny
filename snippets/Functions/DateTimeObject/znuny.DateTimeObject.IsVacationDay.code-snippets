@@ -1,0 +1,12 @@
+{
+    "znuny.DateTimeObject.IsVacationDay": {
+        "body": [
+            "${1:my \$IsVacationDay = \$DateTimeObject->IsVacationDay(",
+            "    Calendar => 9, # optional, OTRS vacation days otherwise",
+            ");}",
+        ],
+        "prefix": "znuny.DateTimeObject.IsVacationDay",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

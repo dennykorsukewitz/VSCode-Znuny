@@ -1,0 +1,13 @@
+{
+    "znuny.TypeObject.TypeList": {
+        "body": [
+            "${1:my %List = \$TypeObject->TypeList(",
+            "    Valid => 0,",
+            ");}",
+            "${2:my %List = \$TypeObject->TypeList();}",
+        ],
+        "prefix": "znuny.TypeObject.TypeList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

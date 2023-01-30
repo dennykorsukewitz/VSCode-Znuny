@@ -1,0 +1,18 @@
+{
+    "znuny.DBCRUDTestObject.DataDelete": {
+        "body": [
+            "${1:my \$Success = \$DBCRUDTestObject->DataDelete(",
+            "    ID          => '...', # optional",
+            "    Name        => '...', # optional",
+            "    Age         => '...', # optional",
+            "    Description => '...', # optional",
+            "    ContentJSON => '...', # optional",
+            "    CreateTime  => '...', # optional",
+            "    ChangeTime  => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDTestObject.DataDelete",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

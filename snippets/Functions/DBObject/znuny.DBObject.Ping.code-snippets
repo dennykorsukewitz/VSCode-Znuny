@@ -1,0 +1,12 @@
+{
+    "znuny.DBObject.Ping": {
+        "body": [
+            "${1:my \$Success = \$DBObject->Ping(",
+            "    AutoConnect => 0,  # default 1",
+            ");}",
+        ],
+        "prefix": "znuny.DBObject.Ping",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

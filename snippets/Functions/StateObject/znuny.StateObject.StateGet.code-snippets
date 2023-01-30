@@ -1,0 +1,15 @@
+{
+    "znuny.StateObject.StateGet": {
+        "body": [
+            "${1:my %State = \$StateObject->StateGet(",
+            "    ID    => 123,",
+            ");}",
+            "${2:my %State = \$StateObject->StateGet(",
+            "    Name  => 'New State',",
+            ");}",
+        ],
+        "prefix": "znuny.StateObject.StateGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

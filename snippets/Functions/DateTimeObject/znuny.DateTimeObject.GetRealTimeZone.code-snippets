@@ -1,0 +1,12 @@
+{
+    "znuny.DateTimeObject.GetRealTimeZone": {
+        "body": [
+            "${1:# You can also call this function without an object:",
+            "my \$TimeZone = Kernel::System::DateTime->GetRealTimeZone( TimeZone => 'Africa/Addis_Ababa' );}",
+            "${2:my \$TimeZone = \$DateTimeObject->GetRealTimeZone( TimeZone => 'Africa/Addis_Ababa' );}",
+        ],
+        "prefix": "znuny.DateTimeObject.GetRealTimeZone",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.PackageObject.PackageVerifyInfo": {
+        "body": [
+            "${1:my %Hash = \$PackageObject->PackageVerifyInfo();}",
+        ],
+        "prefix": "znuny.PackageObject.PackageVerifyInfo",
+        "description": "6.0",
+        "scope": "perl"
+    }
+}

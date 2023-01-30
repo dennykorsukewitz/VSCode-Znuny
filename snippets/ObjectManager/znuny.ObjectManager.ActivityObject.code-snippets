@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.ActivityObject": {
+        "body": [
+            "my \$ActivityObject = \$Kernel::OM->Get('Kernel::System::ProcessManagement::Activity');",
+        ],
+        "prefix": "znuny.ObjectManager.ActivityObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

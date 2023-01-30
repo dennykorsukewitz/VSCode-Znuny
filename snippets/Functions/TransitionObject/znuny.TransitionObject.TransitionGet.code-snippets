@@ -1,0 +1,12 @@
+{
+    "znuny.TransitionObject.TransitionGet": {
+        "body": [
+            "${1:my \$Transition = \$TransitionObject->TransitionGet(",
+            "    TransitionEntityID => \$TransitionEntityID,",
+            ");}",
+        ],
+        "prefix": "znuny.TransitionObject.TransitionGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

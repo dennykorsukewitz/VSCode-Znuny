@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.Permission": {
+        "body": [
+            "${1:my \$Access = \$LayoutObject->Permission(",
+            "    Action => 'AdminCustomerUser',",
+            "    Type   => 'rw', # ro|rw possible",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.Permission",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.PriorityObject.PriorityUpdate": {
+        "body": [
+            "${1:my \$True = \$PriorityObject->PriorityUpdate(",
+            "    PriorityID     => \$PriorityID,",
+            "    Name           => 'New Prio',",
+            "    ValidID        => \$ValidID,",
+            "    UserID         => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.PriorityObject.PriorityUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

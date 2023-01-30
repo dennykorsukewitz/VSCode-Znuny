@@ -1,0 +1,14 @@
+{
+    "znuny.SearchProfileObject.SearchProfileUpdateUserLogin": {
+        "body": [
+            "${1:my \$Result = \$SearchProfileObject->SearchProfileUpdateUserLogin(",
+            "    Base         => 'TicketSearch',",
+            "    UserLogin    => 'me',",
+            "    NewUserLogin => 'newme',",
+            ");}",
+        ],
+        "prefix": "znuny.SearchProfileObject.SearchProfileUpdateUserLogin",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

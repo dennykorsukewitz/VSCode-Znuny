@@ -1,0 +1,12 @@
+{
+    "znuny.TicketObject.TicketCheckForProcessType": {
+        "body": [
+            "${1:\$TicketObject->TicketCheckForProcessType(",
+            "    TicketID => \$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketCheckForProcessType",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

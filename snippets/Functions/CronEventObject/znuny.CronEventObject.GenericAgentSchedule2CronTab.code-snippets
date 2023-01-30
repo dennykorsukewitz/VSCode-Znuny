@@ -1,0 +1,14 @@
+{
+    "znuny.CronEventObject.GenericAgentSchedule2CronTab": {
+        "body": [
+            "${1:my \$Schedule = \$CronEventObject->GenericAgentSchedule2CronTab(",
+            "    ScheduleMinutes [1,2,3],",
+            "    ScheduleHours   [1,2,3],",
+            "    ScheduleDays    [1,2,3],",
+            ");}",
+        ],
+        "prefix": "znuny.CronEventObject.GenericAgentSchedule2CronTab",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

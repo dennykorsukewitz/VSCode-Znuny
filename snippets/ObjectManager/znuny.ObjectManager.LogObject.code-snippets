@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.LogObject": {
+        "body": [
+            "my \$LogObject = \$Kernel::OM->Get('Kernel::System::Log');",
+        ],
+        "prefix": "znuny.ObjectManager.LogObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

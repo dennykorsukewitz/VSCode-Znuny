@@ -1,0 +1,13 @@
+{
+    "znuny.ArticleObject.ArticleAttachmentCount": {
+        "body": [
+            "${1:my \$Count = \$ArticleObject->ArticleAttachmentCount(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleAttachmentCount",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

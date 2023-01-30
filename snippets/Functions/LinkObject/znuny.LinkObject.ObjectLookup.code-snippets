@@ -1,0 +1,15 @@
+{
+    "znuny.LinkObject.ObjectLookup": {
+        "body": [
+            "${1:\$Name = \$LinkObject->ObjectLookup(",
+            "    ObjectID => \$ObjectID,",
+            ");}",
+            "${2:\$ObjectID = \$LinkObject->ObjectLookup(",
+            "    Name => 'Ticket',",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.ObjectLookup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

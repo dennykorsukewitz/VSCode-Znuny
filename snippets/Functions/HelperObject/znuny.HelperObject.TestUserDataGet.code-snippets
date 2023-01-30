@@ -1,0 +1,13 @@
+{
+    "znuny.HelperObject.TestUserDataGet": {
+        "body": [
+            "${1:my %UserData = \$HelperObject->TestUserDataGet(",
+            "    Groups => ['admin', 'users'],           # optional, list of groups to add this user to (rw rights)",
+            "    Language => 'de'                        # optional, defaults to 'en' if not set",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.TestUserDataGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

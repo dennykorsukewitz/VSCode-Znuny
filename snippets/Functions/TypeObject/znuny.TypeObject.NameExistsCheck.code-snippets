@@ -1,0 +1,13 @@
+{
+    "znuny.TypeObject.NameExistsCheck": {
+        "body": [
+            "${1:\$Exist = \$TypeObject->NameExistsCheck(",
+            "    Name => 'Some::Template',",
+            "    ID => 1, # optional",
+            ");}",
+        ],
+        "prefix": "znuny.TypeObject.NameExistsCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

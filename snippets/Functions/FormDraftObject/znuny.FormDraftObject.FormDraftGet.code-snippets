@@ -1,0 +1,14 @@
+{
+    "znuny.FormDraftObject.FormDraftGet": {
+        "body": [
+            "${1:my \$FormDraft = \$FormDraftObject->FormDraftGet(",
+            "    FormDraftID    => \$FormDraftID,",
+            "    GetContent => 1,                # optional, default 1",
+            "    UserID     => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.FormDraftObject.FormDraftGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

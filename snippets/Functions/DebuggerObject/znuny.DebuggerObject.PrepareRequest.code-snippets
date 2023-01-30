@@ -1,0 +1,14 @@
+{
+    "znuny.DebuggerObject.PrepareRequest": {
+        "body": [
+            "${1:my \$Result = \$DebuggerObject->PrepareRequest(",
+            "    Data => {                               # data payload",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.DebuggerObject.PrepareRequest",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.StatsObject.GetStatsObjectAttributes": {
+        "body": [
+            "${1:my %ObjectAttributes = \$StatsObject->GetStatsObjectAttributes(",
+            "    ObjectModule => 'Ticket',",
+            "    Use          => 'UseAsXvalue' || 'UseAsValueSeries' || 'UseAsRestriction',",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.GetStatsObjectAttributes",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

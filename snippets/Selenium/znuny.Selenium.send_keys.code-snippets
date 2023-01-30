@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.send_keys": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->send_keys('$3');",
+        ],
+        "prefix": "znuny.Selenium.send_keys",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.NotificationEventObject.NotificationGet": {
+        "body": [
+            "${1:my %Notification = \$NotificationEventObject->NotificationGet(",
+            "    ID => 1,",
+            ");}",
+            "${2:my %Notification = \$NotificationEventObject->NotificationGet(",
+            "    Name => 'NotificationName',",
+            ");}",
+        ],
+        "prefix": "znuny.NotificationEventObject.NotificationGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

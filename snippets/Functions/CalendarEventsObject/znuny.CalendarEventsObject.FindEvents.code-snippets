@@ -1,0 +1,37 @@
+{
+    "znuny.CalendarEventsObject.FindEvents": {
+        "body": [
+            "${1:my \$Result = \$CalendarEventsObject->FindEvents(",
+            "    String => [",
+            "        {",
+            "            Content =>",
+            "                "Hello! You've got an invitation for a meeting:",
+            "                BEGIN:VCALENDAR",
+            "                ..",
+            "                END:VCALENDAR"",
+            "        \\}",
+            "    ],",
+            "    Attachments => [",
+            "        {",
+            "            Content =>",
+            "                "Hello! You've got an invitation for a meeting:",
+            "                BEGIN:VCALENDAR",
+            "                ..",
+            "                END:VCALENDAR"",
+            "        \\},",
+            "        {",
+            "            Content =>",
+            "                "Hello! You've got an invitation for a meeting:",
+            "                BEGIN:VCALENDAR",
+            "                ..",
+            "                END:VCALENDAR"",
+            "        \\},",
+            "        ..",
+            "    ],",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarEventsObject.FindEvents",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

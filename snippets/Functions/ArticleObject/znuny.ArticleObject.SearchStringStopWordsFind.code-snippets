@@ -1,0 +1,15 @@
+{
+    "znuny.ArticleObject.SearchStringStopWordsFind": {
+        "body": [
+            "${1:my \$StopWords = \$ArticleObject->SearchStringStopWordsFind(",
+            "    SearchStrings => {",
+            "        'Fulltext'      => '(this AND is) OR test',",
+            "        'MIMEBase_From' => 'myself',",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.SearchStringStopWordsFind",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

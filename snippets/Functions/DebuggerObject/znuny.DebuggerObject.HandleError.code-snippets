@@ -1,0 +1,14 @@
+{
+    "znuny.DebuggerObject.HandleError": {
+        "body": [
+            "${1:my \$Result = \$DebuggerObject->HandleError(",
+            "    Data => {                               # data payload",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.DebuggerObject.HandleError",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

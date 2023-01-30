@@ -1,0 +1,13 @@
+{
+    "znuny.DBCRUDObject.DataNameExists": {
+        "body": [
+            "${1:my \$Success = \$DBCRUDObject->DataNameExists(",
+            "    Name   => 'name',",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDObject.DataNameExists",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

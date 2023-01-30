@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.JSONEncode": {
+        "body": [
+            "${1:my \$JSON = \$LayoutObject->JSONEncode(",
+            "    Data        => \$Data,",
+            "    NoQuotes    => 0|1, # optional: no double quotes at the start and the end of JSON string",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.JSONEncode",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

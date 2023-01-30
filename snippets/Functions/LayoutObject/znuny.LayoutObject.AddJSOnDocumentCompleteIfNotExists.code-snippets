@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists": {
+        "body": [
+            "${1:my \$Success = \$LayoutObject->AddJSOnDocumentCompleteIfNotExists(",
+            "    Key  => 'identifier_key_of_your_js',",
+            "    Code => \$JSBlock,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

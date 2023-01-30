@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.BackendObject": {
+        "body": [
+            "my \$BackendObject = \$Kernel::OM->Get('Kernel::System::DynamicField::Backend');",
+        ],
+        "prefix": "znuny.ObjectManager.BackendObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

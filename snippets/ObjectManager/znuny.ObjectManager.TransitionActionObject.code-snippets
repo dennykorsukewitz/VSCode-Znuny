@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.TransitionActionObject": {
+        "body": [
+            "my \$TransitionActionObject = \$Kernel::OM->Get('Kernel::System::ProcessManagement::TransitionAction');",
+        ],
+        "prefix": "znuny.ObjectManager.TransitionActionObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

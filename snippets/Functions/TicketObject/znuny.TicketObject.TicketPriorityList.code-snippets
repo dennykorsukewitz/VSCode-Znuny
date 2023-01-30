@@ -1,0 +1,21 @@
+{
+    "znuny.TicketObject.TicketPriorityList": {
+        "body": [
+            "${1:my %Priorities = \$TicketObject->TicketPriorityList(",
+            "    QueueID => \$QueueID,",
+            "    UserID  => \$UserID,",
+            ");}",
+            "${2:my %Priorities = \$TicketObject->TicketPriorityList(",
+            "    TicketID       => \$TicketID,",
+            "    CustomerUserID => \$CustomerUserID,",
+            ");}",
+            "${3:my %Priorities = \$TicketObject->TicketPriorityList(",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketPriorityList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

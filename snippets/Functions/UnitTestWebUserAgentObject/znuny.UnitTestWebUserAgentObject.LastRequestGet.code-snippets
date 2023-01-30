@@ -1,0 +1,10 @@
+{
+    "znuny.UnitTestWebUserAgentObject.LastRequestGet": {
+        "body": [
+            "${1:my %Request = \$UnitTestWebUserAgentObject->LastRequestGet();}",
+        ],
+        "prefix": "znuny.UnitTestWebUserAgentObject.LastRequestGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

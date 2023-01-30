@@ -1,0 +1,13 @@
+{
+    "znuny.PackageObject.RepositoryRemove": {
+        "body": [
+            "${1:\$PackageObject->RepositoryRemove(",
+            "    Name    => 'Application A',",
+            "    Version => '1.0',",
+            ");}",
+        ],
+        "prefix": "znuny.PackageObject.RepositoryRemove",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

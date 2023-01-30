@@ -1,0 +1,12 @@
+{
+    "znuny.TicketObject.TicketInvolvedAgentsList": {
+        "body": [
+            "${1:my @InvolvedAgents = \$TicketObject->TicketInvolvedAgentsList(",
+            "    TicketID => \$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketInvolvedAgentsList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

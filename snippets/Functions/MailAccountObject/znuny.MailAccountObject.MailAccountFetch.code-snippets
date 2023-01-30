@@ -1,0 +1,19 @@
+{
+    "znuny.MailAccountObject.MailAccountFetch": {
+        "body": [
+            "${1:my \$Ok = \$MailAccountObject->MailAccountFetch(",
+            "    Login         => 'mail',",
+            "    Password      => 'SomePassword',",
+            "    Host          => 'pop3.example.com',",
+            "    Type          => 'POP3', # POP3,POP3s,IMAP,IMAPS",
+            "    Trusted       => 0,",
+            "    DispatchingBy => 'Queue', # Queue|From",
+            "    QueueID       => \$QueueID,",
+            "    UserID        => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.MailAccountObject.MailAccountFetch",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "znuny.ProcessObject.ProcessTransition": {
+        "body": [
+            "${1:my \$ProcessTransition = \$ProcessObject->ProcessTransition(",
+            "    ProcessEntityID  => \$ProcessEntityID,",
+            "    ActivityEntityID => \$ActivityEntityID,",
+            "    TicketID         => \$TicketID,",
+            "    UserID           => \$UserID,",
+            "    CheckOnly        => 1,             # optional",
+            "    Data             => {              # optional",
+            "        Queue         => 'Raw',",
+            "        DynamicField1 => 'Value',",
+            "        Subject       => 'Testsubject',",
+            "        #...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.ProcessObject.ProcessTransition",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.TicketToUnitTestObject.SystemTimeTicketGet": {
+        "body": [
+            "${1:my %HistoryData = \$TicketToUnitTestObject->SystemTimeTicketGet(",
+            "    SystemTime => 19435456436,",
+            "    TicketID   => \$TicketID,",
+            "    Force      => 0, # cache",
+            ");}",
+        ],
+        "prefix": "znuny.TicketToUnitTestObject.SystemTimeTicketGet",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

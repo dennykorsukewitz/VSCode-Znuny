@@ -1,0 +1,31 @@
+{
+    "znuny.CustomerCompanyObject.CustomerCompanySearchDetail": {
+        "body": [
+            "${1:my \$CustomerCompanyIDsRef = \$CustomerCompanyObject->CustomerCompanySearchDetail(",
+            "",
+            "    # all search fields possible which are defined in CustomerCompany::EnhancedSearchFields",
+            "    CustomerID          => \$CustomerID,                                  # (optional)",
+            "    CustomerCompanyName => 'Name*',                                     # (optional)",
+            "",
+            "    # array parameters are used with logical OR operator (all values are possible which",
+            "    are defined in the config selection hash for the field)",
+            "    CustomerCompanyCountry => [ 'Austria', 'Germany', ],                # (optional)",
+            "",
+            "    # DynamicFields",
+            "    #   At least one operator must be specified. Operators will be connected with AND,",
+            "    #       values in an operator with OR.",
+            "    #   You can also pass more than one argument to an operator: ['value1', 'value2']",
+            "    DynamicField_FieldNameX => {",
+            "        Equals            => 123,",
+            "        Like              => 'value*',                # "equals" operator with wildcard support",
+            "        GreaterThan       => '2001-01-01 01:01:01',",
+            "        GreaterThanEquals => '2001-01-01 01:01:01',",
+            "        SmallerThan       => '2002-02-02 02:02:02',",
+            "        SmallerThanEquals => '2002-02-02 02:02:02',",
+            "    \\}}",
+        ],
+        "prefix": "znuny.CustomerCompanyObject.CustomerCompanySearchDetail",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

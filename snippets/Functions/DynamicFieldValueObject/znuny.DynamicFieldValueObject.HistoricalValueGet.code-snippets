@@ -1,0 +1,13 @@
+{
+    "znuny.DynamicFieldValueObject.HistoricalValueGet": {
+        "body": [
+            "${1:my \$HistoricalValues = \$DynamicFieldValueObject->HistoricalValueGet(",
+            "    FieldID   => \$FieldID,                  # ID of the dynamic field",
+            "    ValueType => 'Text',                    # or 'DateTime' or 'Integer'. Default 'Text'",
+            ");}",
+        ],
+        "prefix": "znuny.DynamicFieldValueObject.HistoricalValueGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

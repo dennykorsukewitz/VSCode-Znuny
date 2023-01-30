@@ -1,0 +1,18 @@
+{
+    "znuny.SalutationObject.SalutationUpdate": {
+        "body": [
+            "${1:\$SalutationObject->SalutationUpdate(",
+            "    ID          => 123,",
+            "    Name        => 'New Salutation',",
+            "    Text        => "--\nSome Salutation Infos",",
+            "    ContentType => 'text/plain; charset=utf-8',",
+            "    Comment     => 'some comment',",
+            "    ValidID     => \$ValidID,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SalutationObject.SalutationUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

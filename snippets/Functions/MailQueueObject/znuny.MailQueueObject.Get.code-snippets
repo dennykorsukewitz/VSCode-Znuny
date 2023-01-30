@@ -1,0 +1,13 @@
+{
+    "znuny.MailQueueObject.Get": {
+        "body": [
+            "${1:my \$Item = \$MailQueueObject->Get(",
+            "    ID              => '...' # optional",
+            "    ArticleID       => '...' # optional",
+            ");}",
+        ],
+        "prefix": "znuny.MailQueueObject.Get",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

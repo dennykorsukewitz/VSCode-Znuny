@@ -1,0 +1,22 @@
+{
+    "znuny.VirtualFSObject.Write": {
+        "body": [
+            "${1:my \$Success = \$VirtualFSObject->Write(",
+            "    Content  => \\$Content,",
+            "    Filename => '/Object/SomeFileName.txt',",
+            "    Mode     => 'binary'            # (binary|utf8)",
+            "",
+            "    # optional, preferences data",
+            "    Preferences => {",
+            "        ContentType        => 'text/plain',",
+            "        ContentID          => \$ContentID,",
+            "        ContentAlternative => 1,",
+            "        SomeCustomParams   => 'with our own value',",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.VirtualFSObject.Write",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

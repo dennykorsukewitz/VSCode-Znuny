@@ -1,0 +1,13 @@
+{
+    "znuny.CustomerUserObject.TokenCheck": {
+        "body": [
+            "${1:my \$Valid = \$CustomerUserObject>TokenCheck(",
+            "    Token  => \$Token,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerUserObject.TokenCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

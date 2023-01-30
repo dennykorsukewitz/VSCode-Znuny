@@ -1,0 +1,10 @@
+{
+    "znuny.PackageObject.PackageVerifyAll": {
+        "body": [
+            "${1:my %VerificationInfo = \$PackageObject->PackageVerifyAll();}",
+        ],
+        "prefix": "znuny.PackageObject.PackageVerifyAll",
+        "description": "6.0",
+        "scope": "perl"
+    }
+}

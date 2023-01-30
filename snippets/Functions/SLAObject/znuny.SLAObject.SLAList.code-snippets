@@ -1,0 +1,14 @@
+{
+    "znuny.SLAObject.SLAList": {
+        "body": [
+            "${1:my %SLAList = \$SLAObject->SLAList(",
+            "    ServiceID => \$ServiceID,  # (optional)",
+            "    Valid     => 0,  # (optional) default 1 (0|1)",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SLAObject.SLAList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

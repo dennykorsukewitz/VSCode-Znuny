@@ -1,0 +1,14 @@
+{
+    "znuny.TicketObject.TicketMergeLinkedObjects": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketMergeLinkedObjects(",
+            "    MainTicketID  => \$MainTicketID,",
+            "    MergeTicketID => \$MergeTicketID,",
+            "    UserID        => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketMergeLinkedObjects",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

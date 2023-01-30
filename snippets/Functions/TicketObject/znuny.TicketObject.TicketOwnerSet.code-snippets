@@ -1,0 +1,19 @@
+{
+    "znuny.TicketObject.TicketOwnerSet": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketOwnerSet(",
+            "    TicketID  => \$TicketID,",
+            "    NewUserID => \$NewUserID,",
+            "    UserID    => \$UserID,",
+            ");}",
+            "${2:my \$Success = \$TicketObject->TicketOwnerSet(",
+            "    TicketID => \$TicketID,",
+            "    NewUser  => 'some-user-login',",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketOwnerSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

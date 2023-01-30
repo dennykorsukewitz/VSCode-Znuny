@@ -1,0 +1,12 @@
+{
+    "znuny.Selenium.VerifiedGet": {
+        "body": [
+            "${1:# get script alias",
+            "my \\$ScriptAlias = \\$Kernel::OM->Get('Kernel::Config')->Get('ScriptAlias');",
+            "",
+            "}\\$SeleniumObject->VerifiedGet(\"\\${ScriptAlias}${2:index}.pl?Action=$3\");",
+        ],
+        "prefix": "znuny.Selenium.VerifiedGet",
+        "scope": "perl"
+    }
+}

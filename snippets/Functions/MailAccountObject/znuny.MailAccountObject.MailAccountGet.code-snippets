@@ -1,0 +1,12 @@
+{
+    "znuny.MailAccountObject.MailAccountGet": {
+        "body": [
+            "${1:my %MailAccount = \$MailAccountObject->MailAccountGet(",
+            "    ID => 123,",
+            ");}",
+        ],
+        "prefix": "znuny.MailAccountObject.MailAccountGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

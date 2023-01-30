@@ -1,0 +1,21 @@
+{
+    "znuny.ArticleObject.ArticleFlagDelete": {
+        "body": [
+            "${1:my \$Success = \$ArticleObject->ArticleFlagDelete(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID,",
+            "    Key       => 'seen',",
+            "    AllUsers  => 1,         # delete for all users",
+            ");}",
+            "${2:my \$Success = \$ArticleObject->ArticleFlagDelete(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID,",
+            "    Key       => 'seen',",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleFlagDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.MentionObject.CanUserRemoveMention": {
+        "body": [
+            "${1:my \$UserCanRemoveMention = \$MentionObject->CanUserRemoveMention(",
+            "    TicketID        => \$TicketID,",
+            "    MentionedUserID => \$MentionedUserID,",
+            "    UserID          => \$UserID, # user who wants to remove the mention",
+            ");}",
+        ],
+        "prefix": "znuny.MentionObject.CanUserRemoveMention",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

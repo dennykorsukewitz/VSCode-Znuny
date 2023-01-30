@@ -1,0 +1,13 @@
+{
+    "znuny.LinkObject.PossibleTypesList": {
+        "body": [
+            "${1:my %PossibleTypesList = \$LinkObject->PossibleTypesList(",
+            "    Object1 => 'Ticket',",
+            "    Object2 => 'FAQ',",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.PossibleTypesList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

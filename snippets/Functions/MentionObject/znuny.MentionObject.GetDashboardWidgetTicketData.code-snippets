@@ -1,0 +1,12 @@
+{
+    "znuny.MentionObject.GetDashboardWidgetTicketData": {
+        "body": [
+            "${1:my \$Data = \$MentionObject->GetDashboardWidgetTicketData(",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.MentionObject.GetDashboardWidgetTicketData",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

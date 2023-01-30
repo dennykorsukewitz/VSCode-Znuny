@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.CronEventObject": {
+        "body": [
+            "my \$CronEventObject = \$Kernel::OM->Get('Kernel::System::CronEvent');",
+        ],
+        "prefix": "znuny.ObjectManager.CronEventObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

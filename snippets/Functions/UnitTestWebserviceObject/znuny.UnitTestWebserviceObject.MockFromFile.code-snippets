@@ -1,0 +1,23 @@
+{
+    "znuny.UnitTestWebserviceObject.MockFromFile": {
+        "body": [
+            "${1:\$UnitTestWebserviceObject->MockFromFile(",
+            "    Location => \$ConfigObject->Get('Home') . "/misc/mocks/WebserviceName/SomeInvoker.json";",
+            "    Invoker    => 'SomeInvoker',",
+            "    Data       => {",
+            "",
+            "    \\}",
+            ");}",
+            "${2:\$UnitTestWebserviceObject->MockFromFile(",
+            "    Webservice => 'ExampleWebservice',",
+            "    Invoker    => 'SomeInvoker',",
+            "    Data       => {",
+            "",
+            "    \\}",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.MockFromFile",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

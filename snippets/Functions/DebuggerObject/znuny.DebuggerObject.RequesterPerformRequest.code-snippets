@@ -1,0 +1,15 @@
+{
+    "znuny.DebuggerObject.RequesterPerformRequest": {
+        "body": [
+            "${1:my \$Result = \$DebuggerObject->RequesterPerformRequest(",
+            "    Operation       => 'remote_op', # name of remote operation to perform",
+            "    Data            => {            # data payload for request",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.DebuggerObject.RequesterPerformRequest",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.FormDraftObject.FormDraftDelete": {
+        "body": [
+            "${1:my \$Success = \$FormDraftObject->FormDraftDelete(",
+            "    FormDraftID => \$FormDraftID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.FormDraftObject.FormDraftDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

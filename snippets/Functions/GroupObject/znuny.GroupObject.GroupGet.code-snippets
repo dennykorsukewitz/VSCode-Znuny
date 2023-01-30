@@ -1,0 +1,12 @@
+{
+    "znuny.GroupObject.GroupGet": {
+        "body": [
+            "${1:my %GroupData = \$GroupObject->GroupGet(",
+            "    ID => 2,",
+            ");}",
+        ],
+        "prefix": "znuny.GroupObject.GroupGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

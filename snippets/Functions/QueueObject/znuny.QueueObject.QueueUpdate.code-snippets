@@ -1,0 +1,32 @@
+{
+    "znuny.QueueObject.QueueUpdate": {
+        "body": [
+            "${1:my \$Success = \$QueueObject->QueueUpdate(",
+            "    QueueID             => \$QueueID,",
+            "    Name                => 'Some::Queue',",
+            "    ValidID             => \$ValidID,",
+            "    GroupID             => \$GroupID,",
+            "    Calendar            => '1', # (optional) default ''",
+            "    FirstResponseTime   => 120, # (optional)",
+            "    FirstResponseNotify => 60,  # (optional, notify agent if first response escalation is 60% reached)",
+            "    UpdateTime          => 180, # (optional)",
+            "    UpdateNotify        => 80,  # (optional, notify agent if update escalation is 80% reached)",
+            "    SolutionTime        => 580, # (optional)",
+            "    SolutionNotify      => 80,  # (optional, notify agent if solution escalation is 80% reached)",
+            "    SystemAddressID     => \$SystemAddressID,",
+            "    SalutationID        => \$SalutationID,",
+            "    SignatureID         => \$SignatureID,",
+            "    UserID              => \$UserID,",
+            "    FollowUpID          => \$FollowUpID,",
+            "    Comment             => 'Some Comment2',",
+            "    DefaultSignKey      => ''",
+            "    UnlockTimeOut       => ''",
+            "    FollowUpLock        => 1,",
+            "    ParentQueueID       => \$ParentQueueID,",
+            ");}",
+        ],
+        "prefix": "znuny.QueueObject.QueueUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

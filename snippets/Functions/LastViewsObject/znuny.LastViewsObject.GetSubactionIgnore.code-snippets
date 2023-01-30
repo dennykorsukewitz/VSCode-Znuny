@@ -1,0 +1,10 @@
+{
+    "znuny.LastViewsObject.GetSubactionIgnore": {
+        "body": [
+            "${1:my @SubactionIgnore = \$LastViewsObject->GetSubactionIgnore();}",
+        ],
+        "prefix": "znuny.LastViewsObject.GetSubactionIgnore",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

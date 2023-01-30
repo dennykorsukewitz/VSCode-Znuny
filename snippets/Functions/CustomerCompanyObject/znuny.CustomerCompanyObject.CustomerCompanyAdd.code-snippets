@@ -1,0 +1,21 @@
+{
+    "znuny.CustomerCompanyObject.CustomerCompanyAdd": {
+        "body": [
+            "${1:my \$ID = \$CustomerCompanyObject->CustomerCompanyAdd(",
+            "    CustomerID              => \$CustomerID,",
+            "    CustomerCompanyName     => 'New Customer Inc.',",
+            "    CustomerCompanyStreet   => '5201 Blue Lagoon Drive',",
+            "    CustomerCompanyZIP      => '33126',",
+            "    CustomerCompanyCity     => 'Miami',",
+            "    CustomerCompanyCountry  => 'USA',",
+            "    CustomerCompanyURL      => 'http://www.example.org',",
+            "    CustomerCompanyComment  => 'some comment',",
+            "    ValidID                 => \$ValidID,",
+            "    UserID                  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerCompanyObject.CustomerCompanyAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.FormDraftObject": {
+        "body": [
+            "my \$FormDraftObject = \$Kernel::OM->Get('Kernel::System::FormDraft');",
+        ],
+        "prefix": "znuny.ObjectManager.FormDraftObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

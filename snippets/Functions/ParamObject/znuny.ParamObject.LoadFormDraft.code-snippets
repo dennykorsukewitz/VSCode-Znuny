@@ -1,0 +1,13 @@
+{
+    "znuny.ParamObject.LoadFormDraft": {
+        "body": [
+            "${1:my \$FormDraftID = \$ParamObject->LoadFormDraft(",
+            "    FormDraftID => \$FormDraftID,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ParamObject.LoadFormDraft",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

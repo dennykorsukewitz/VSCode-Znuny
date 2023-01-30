@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.VerifiedSubmit": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->VerifiedSubmit();",
+        ],
+        "prefix": "znuny.Selenium.VerifiedSubmit",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.AutoResponseObject.AutoResponseGetByTypeQueueID": {
+        "body": [
+            "${1:my %QueueAddressData = \$AutoResponseObject->AutoResponseGetByTypeQueueID(",
+            "    QueueID => \$QueueID,",
+            "    Type    => 'auto reply/new ticket',",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseGetByTypeQueueID",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

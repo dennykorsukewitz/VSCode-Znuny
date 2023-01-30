@@ -1,0 +1,18 @@
+{
+    "znuny.CalendarObject.CalendarList": {
+        "body": [
+            "${1:my @Result = \$CalendarObject->CalendarList(",
+            "    UserID     => \$UserID,            # (optional) For permission check",
+            "    Permission => 'rw',         # (optional) Required permission (default ro)",
+            "    ValidID    => \$ValidID,            # (optional) Default 0.",
+            "                                # 0 - All states",
+            "                                # 1 - All valid",
+            "                                # 2 - All invalid",
+            "                                # 3 - All temporary invalid",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarObject.CalendarList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.SessionObject.GetAllSessionIDs": {
+        "body": [
+            "${1:my @Sessions = \$SessionObject->GetAllSessionIDs();}",
+        ],
+        "prefix": "znuny.SessionObject.GetAllSessionIDs",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

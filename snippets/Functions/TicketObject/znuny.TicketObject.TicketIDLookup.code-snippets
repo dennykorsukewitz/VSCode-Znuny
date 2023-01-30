@@ -1,0 +1,12 @@
+{
+    "znuny.TicketObject.TicketIDLookup": {
+        "body": [
+            "${1:my \$TicketID = \$TicketObject->TicketIDLookup(",
+            "    TicketNumber => \$TicketNumber,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketIDLookup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

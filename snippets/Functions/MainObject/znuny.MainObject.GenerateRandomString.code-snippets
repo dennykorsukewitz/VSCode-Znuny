@@ -1,0 +1,17 @@
+{
+    "znuny.MainObject.GenerateRandomString": {
+        "body": [
+            "${1:my \$String = \$MainObject->GenerateRandomString(",
+            "    Length     => 32,",
+            "    Dictionary => [ 0..9, 'a'..'f' ], # hexadecimal",
+            "    );}",
+            "${2:my \$String = \$MainObject->GenerateRandomString(",
+            "    Length => 32,",
+            ");}",
+            "${3:my \$String = \$MainObject->GenerateRandomString();}",
+        ],
+        "prefix": "znuny.MainObject.GenerateRandomString",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

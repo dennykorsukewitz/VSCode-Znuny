@@ -1,0 +1,20 @@
+{
+    "znuny.TimeObject.VacationCheck": {
+        "body": [
+            "${1:\$TimeObject->VacationCheck(",
+            "    Year     => 2005,",
+            "    Month    => 7 || '07',",
+            "    Day      => 13,",
+            "    Calendar => 3, # '' is default; 0 is handled like ''",
+            ");}",
+            "${2:\$TimeObject->VacationCheck(",
+            "    Year     => 2005,",
+            "    Month    => 7 || '07',",
+            "    Day      => 13,",
+            ");}",
+        ],
+        "prefix": "znuny.TimeObject.VacationCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "znuny.GenericAgentObject.JobGet": {
+        "body": [
+            "${1:my %Job = \$GenericAgentObject->JobGet(Name => 'JobName');}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

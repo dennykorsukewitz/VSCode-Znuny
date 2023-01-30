@@ -1,0 +1,10 @@
+{
+    "znuny.ParserObject.GetCharset": {
+        "body": [
+            "${1:my \$Charset = \$ParserObject->GetCharset();}",
+        ],
+        "prefix": "znuny.ParserObject.GetCharset",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.OAuth2TokenObject.GetAuthorizationCodeParameters": {
+        "body": [
+            "${1:my %AuthorizationCodeParameters = \$OAuth2TokenObject->GetAuthorizationCodeParameters(",
+            "    ParamObject => \$ParamObject,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenObject.GetAuthorizationCodeParameters",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

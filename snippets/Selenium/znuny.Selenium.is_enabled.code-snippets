@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.is_enabled": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->is_enabled();",
+        ],
+        "prefix": "znuny.Selenium.is_enabled",
+        "scope": "perl"
+    }
+}

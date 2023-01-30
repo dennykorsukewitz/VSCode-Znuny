@@ -1,0 +1,22 @@
+{
+    "znuny.SysConfigObject.SettingsSet": {
+        "body": [
+            "${1:my \$Success = \$SysConfigObject->SettingsSet(",
+            "    UserID   => \$UserID,                                      # (required) UserID",
+            "    Comments => 'Deployment comment',                   # (optional) Comment",
+            "    Settings => [                                       # (required) List of settings to update.",
+            "        {",
+            "            Name                   => 'Setting::Name',  # (required)",
+            "            EffectiveValue         => 'Value',          # (optional)",
+            "            IsValid                => 1,                # (optional)",
+            "            UserModificationActive => 1,                # (optional)",
+            "        \\},",
+            "        ...",
+            "    ],",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.SettingsSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

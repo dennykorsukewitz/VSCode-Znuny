@@ -1,0 +1,14 @@
+{
+    "znuny.CommunicationChannelObject.ChannelGet": {
+        "body": [
+            "${1:my %CommunicationChannel = \$CommunicationChannelObject->ChannelGet(",
+            "    ChannelID   => \$ChannelID,      # (optional) Communication channel id",
+            "                             # or",
+            "    ChannelName => 'Email',  # (optional) Communication channel name",
+            ");}",
+        ],
+        "prefix": "znuny.CommunicationChannelObject.ChannelGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.DBCRUDObject.DataCopy": {
+        "body": [
+            "${1:my \$ObjectID = \$DBCRUDObject->DataCopy(",
+            "    ID     => 123,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDObject.DataCopy",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

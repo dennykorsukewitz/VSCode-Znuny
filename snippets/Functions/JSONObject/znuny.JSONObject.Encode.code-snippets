@@ -1,0 +1,14 @@
+{
+    "znuny.JSONObject.Encode": {
+        "body": [
+            "${1:my \$JSONString = \$JSONObject->Encode(",
+            "    Data     => \$Data,",
+            "    SortKeys => 1,          # (optional) (0|1) default 0, to sort the keys of the json data",
+            "    Pretty => 1,            # (optional) (0|1) default 0, to pretty print",
+            ");}",
+        ],
+        "prefix": "znuny.JSONObject.Encode",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

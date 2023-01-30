@@ -1,0 +1,10 @@
+{
+    "znuny.GenericAgentObject.JobEventList": {
+        "body": [
+            "${1:my %List = \$GenericAgentObject->JobEventList();}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobEventList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

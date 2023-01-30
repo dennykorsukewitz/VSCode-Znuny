@@ -1,0 +1,16 @@
+{
+    "znuny.ArticleObject.ArticleFlagSet": {
+        "body": [
+            "${1:my \$Success = \$ArticleObject->ArticleFlagSet(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID,",
+            "    Key       => 'Seen',",
+            "    Value     => 1,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleFlagSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

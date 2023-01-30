@@ -1,0 +1,15 @@
+{
+    "znuny.MentionObject.AddMention": {
+        "body": [
+            "${1:my \$Success = \$MentionObject->AddMention(",
+            "    TicketID        => \$TicketID,",
+            "    ArticleID       => \$ArticleID,",
+            "    MentionedUserID => \$MentionedUserID,",
+            "    UserID          => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.MentionObject.AddMention",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

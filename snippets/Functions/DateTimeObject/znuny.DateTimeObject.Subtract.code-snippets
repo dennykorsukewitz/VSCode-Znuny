@@ -1,0 +1,18 @@
+{
+    "znuny.DateTimeObject.Subtract": {
+        "body": [
+            "${1:my \$Success = \$DateTimeObject->Subtract(",
+            "    Years     => 1,",
+            "    Months    => 2,",
+            "    Weeks     => 4,",
+            "    Days      => 34,",
+            "    Hours     => 2,",
+            "    Minutes   => 5,",
+            "    Seconds   => 459,",
+            ");}",
+        ],
+        "prefix": "znuny.DateTimeObject.Subtract",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

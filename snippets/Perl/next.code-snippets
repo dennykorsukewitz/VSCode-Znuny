@@ -1,0 +1,9 @@
+{
+    "next": {
+        "body": [
+            "next $1 if ${2:!};",
+        ],
+        "prefix": "next",
+        "scope": "perl"
+    }
+}

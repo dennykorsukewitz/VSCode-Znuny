@@ -1,0 +1,16 @@
+{
+    "znuny.TicketObject.OwnerCheck": {
+        "body": [
+            "${1:my \$AccessOk = \$TicketObject->OwnerCheck(",
+            "    TicketID => \$TicketID,",
+            "    OwnerID  => \$OwnerID,",
+            ");}",
+            "${2:my (\$OwnerID, \$Owner) = \$TicketObject->OwnerCheck(",
+            "    TicketID => \$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.OwnerCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

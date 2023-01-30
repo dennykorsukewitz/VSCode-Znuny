@@ -1,0 +1,9 @@
+{
+    "VariableCheck": {
+        "body": [
+            "use Kernel::System::VariableCheck qw(:all);",
+        ],
+        "prefix": "znuny.use.VariableCheck",
+        "scope": "perl"
+    }
+}

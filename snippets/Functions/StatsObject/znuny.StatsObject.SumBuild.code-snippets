@@ -1,0 +1,14 @@
+{
+    "znuny.StatsObject.SumBuild": {
+        "body": [
+            "${1:\$StatArray = \$StatsObject->SumBuild(",
+            "    Array  => \@Result,",
+            "    SumRow => 1,",
+            "    SumCol => 0,",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.SumBuild",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

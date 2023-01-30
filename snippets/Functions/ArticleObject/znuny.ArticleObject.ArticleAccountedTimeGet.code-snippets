@@ -1,0 +1,12 @@
+{
+    "znuny.ArticleObject.ArticleAccountedTimeGet": {
+        "body": [
+            "${1:my \$AccountedTime = \$ArticleObject->ArticleAccountedTimeGet(",
+            "    ArticleID => \$ArticleID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleAccountedTimeGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

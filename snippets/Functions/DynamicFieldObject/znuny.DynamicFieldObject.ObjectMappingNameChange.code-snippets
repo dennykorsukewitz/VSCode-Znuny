@@ -1,0 +1,14 @@
+{
+    "znuny.DynamicFieldObject.ObjectMappingNameChange": {
+        "body": [
+            "${1:my \$Success = \$DynamicFieldObject->ObjectMappingNameChange(",
+            "    OldObjectName => 'customer-1',",
+            "    NewObjectName => 'customer-2',",
+            "    ObjectType    => 'CustomerUser', # Type of object to change name for",
+            ");}",
+        ],
+        "prefix": "znuny.DynamicFieldObject.ObjectMappingNameChange",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

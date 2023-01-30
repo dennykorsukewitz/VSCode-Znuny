@@ -1,0 +1,15 @@
+{
+    "znuny.ValidObject.ValidLookup": {
+        "body": [
+            "${1:my \$Valid = \$ValidObject->ValidLookup(",
+            "    ValidID => \$ValidID,",
+            ");}",
+            "${2:my \$ValidID = \$ValidObject->ValidLookup(",
+            "    Valid => 'valid',",
+            ");}",
+        ],
+        "prefix": "znuny.ValidObject.ValidLookup",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

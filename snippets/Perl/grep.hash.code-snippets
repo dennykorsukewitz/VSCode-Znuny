@@ -1,0 +1,9 @@
+{
+    "grep.hash": {
+        "body": [
+            "grep \\{ \\$_ eq $1 \\} ${2:sort }keys %${3:\\{ \\$$4 \\}};",
+        ],
+        "prefix": "grep.hash",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.GroupObject.PermissionGroupUserGet": {
+        "body": [
+            "${1:my %UserList = \$GroupObject->PermissionGroupUserGet(",
+            "    GroupID => \$GroupID,",
+            "    Type    => 'move_into',  # ro|move_into|create|note|owner|priority|rw",
+            ");}",
+        ],
+        "prefix": "znuny.GroupObject.PermissionGroupUserGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

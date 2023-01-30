@@ -1,0 +1,13 @@
+{
+    "znuny.Selenium.PublicInterface": {
+        "body": [
+            "${1:\$Selenium->PublicInterface(",
+            "    Action      => 'PublicFAQ',",
+            "    WaitForAJAX => 0,             # optional, default 1",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.PublicInterface",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

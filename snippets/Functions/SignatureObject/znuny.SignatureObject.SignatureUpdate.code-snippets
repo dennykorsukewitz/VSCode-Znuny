@@ -1,0 +1,18 @@
+{
+    "znuny.SignatureObject.SignatureUpdate": {
+        "body": [
+            "${1:\$SignatureObject->SignatureUpdate(",
+            "    ID          => 123,",
+            "    Name        => 'New Signature',",
+            "    Text        => "--\nSome Signature Infos",",
+            "    ContentType => 'text/plain; charset=utf-8',",
+            "    Comment     => 'some comment',",
+            "    ValidID     => \$ValidID,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

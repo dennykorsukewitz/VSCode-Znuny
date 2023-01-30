@@ -1,0 +1,13 @@
+{
+    "znuny.ServiceObject.ServicePreferencesGet": {
+        "body": [
+            "${1:my %Preferences = \$ServiceObject->ServicePreferencesGet(",
+            "    ServiceID => \$ServiceID,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ServiceObject.ServicePreferencesGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

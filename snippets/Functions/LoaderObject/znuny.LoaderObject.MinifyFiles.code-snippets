@@ -1,0 +1,20 @@
+{
+    "znuny.LoaderObject.MinifyFiles": {
+        "body": [
+            "${1:my \$TargetFilename = \$LoaderObject->MinifyFiles(",
+            "    List  => [                          # optional,  minify list of files",
+            "        \$Filename,",
+            "        \$Filename2,",
+            "    ],",
+            "    Checksum             => '...'       # optional, pass a checksum for the minified file",
+            "    Content              => '...'       # optional, pass direct (already minified) content instead of a file list",
+            "    Type                 => 'CSS',      # CSS | JavaScript",
+            "    TargetDirectory      => \$TargetDirectory,",
+            "    TargetFilenamePrefix => 'CommonCSS',    # optional, prefix for the target filename",
+            ");}",
+        ],
+        "prefix": "znuny.LoaderObject.MinifyFiles",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

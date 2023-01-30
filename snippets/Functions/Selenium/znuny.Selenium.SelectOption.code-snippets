@@ -1,0 +1,13 @@
+{
+    "znuny.Selenium.SelectOption": {
+        "body": [
+            "${1:my \$Success = \$Selenium->SelectOption(",
+            "    Selector => 'li.ui-menu-item',",
+            "    Content  => 'ABCDEFG',",
+            ");}",
+        ],
+        "prefix": "znuny.Selenium.SelectOption",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

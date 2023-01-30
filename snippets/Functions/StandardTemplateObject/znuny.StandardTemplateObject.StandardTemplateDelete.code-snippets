@@ -1,0 +1,12 @@
+{
+    "znuny.StandardTemplateObject.StandardTemplateDelete": {
+        "body": [
+            "${1:\$StandardTemplateObject->StandardTemplateDelete(",
+            "    ID => 123,",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

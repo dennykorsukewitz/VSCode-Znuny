@@ -1,0 +1,12 @@
+{
+    "znuny.TimeObject.TimeStamp2SystemTime": {
+        "body": [
+            "${1:my \$SystemTime = \$TimeObject->TimeStamp2SystemTime(",
+            "    String => '2004-08-14 22:45:00',",
+            ");}",
+        ],
+        "prefix": "znuny.TimeObject.TimeStamp2SystemTime",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

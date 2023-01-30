@@ -1,0 +1,14 @@
+{
+    "znuny.MentionObject.GetTicketMentions": {
+        "body": [
+            "${1:my \$Mentions = \$MentionObject->GetTicketMentions(",
+            "    TicketID  => \$TicketID,",
+            "    OrderBy   => 'create_time', # optional; default",
+            "    SortOrder => 'ASC', # or 'DESC', optional; default",
+            ");}",
+        ],
+        "prefix": "znuny.MentionObject.GetTicketMentions",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

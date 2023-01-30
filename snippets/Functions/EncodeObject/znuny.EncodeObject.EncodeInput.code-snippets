@@ -1,0 +1,11 @@
+{
+    "znuny.EncodeObject.EncodeInput": {
+        "body": [
+            "${1:\$EncodeObject->EncodeInput( \\$String );}",
+            "${2:\$EncodeObject->EncodeInput( \@Array );}",
+        ],
+        "prefix": "znuny.EncodeObject.EncodeInput",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

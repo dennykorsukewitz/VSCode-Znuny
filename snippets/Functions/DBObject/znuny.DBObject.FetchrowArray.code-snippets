@@ -1,0 +1,12 @@
+{
+    "znuny.DBObject.FetchrowArray": {
+        "body": [
+            "${1:while (my @Row = \$DBObject->FetchrowArray()) {",
+            "    print "\$Row[0]:\$Row[1]\n";",
+            "\\}}",
+        ],
+        "prefix": "znuny.DBObject.FetchrowArray",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "znuny.DBCRUDTestObject.DataAdd": {
+        "body": [
+            "${1:my \$Success = \$DBCRUDTestObject->DataAdd(",
+            "    ID          => '...',",
+            "    Name        => '...', # optional",
+            "    Age         => '...', # optional",
+            "    Description => '...', # optional",
+            "    ContentJSON => '...', # optional",
+            "    CreateTime  => '...', # optional",
+            "    ChangeTime  => '...', # optional",
+            ");}",
+        ],
+        "prefix": "znuny.DBCRUDTestObject.DataAdd",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

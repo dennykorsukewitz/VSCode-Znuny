@@ -1,0 +1,14 @@
+{
+    "znuny.CommunicationLogObject.ObjectLookupSet": {
+        "body": [
+            "${1:my \$Result = \$CommunicationLogObject->ObjectLookupSet(",
+            "    ObjectID         => \$ObjectID,       # (required)",
+            "    TargetObjectType => 'Article', # (required)",
+            "    TargetObjectID   => \$TargetObjectID,       # (required)",
+            ");}",
+        ],
+        "prefix": "znuny.CommunicationLogObject.ObjectLookupSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

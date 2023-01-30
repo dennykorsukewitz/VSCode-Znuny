@@ -1,0 +1,18 @@
+{
+    "znuny.MainObject.FileDelete": {
+        "body": [
+            "${1:my \$Success = \$MainObject->FileDelete(",
+            "    Directory       => 'c:\some\location',",
+            "    Filename        => 'me_to/alal.xml',",
+            "    # or Location",
+            "    Location        => 'c:\some\location\me_to\alal.xml'",
+            "",
+            "    Type            => 'Local',   # optional - Local|Attachment|MD5",
+            "    DisableWarnings => 1, # optional",
+            ");}",
+        ],
+        "prefix": "znuny.MainObject.FileDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

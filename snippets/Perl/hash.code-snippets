@@ -1,0 +1,11 @@
+{
+    "hash": {
+        "body": [
+            "my %${1:Hash}${2: = (",
+            "    ${3:Key} => ${4:Value},",
+            ")};",
+        ],
+        "prefix": "hash",
+        "scope": "perl"
+    }
+}

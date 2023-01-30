@@ -1,0 +1,14 @@
+{
+    "znuny.StatsObject.StatsResultCacheGet": {
+        "body": [
+            "${1:my \$StatArray = \$StatsObject->StatsResultCacheGet(",
+            "    StatID       => \$StatID,",
+            "    UserID       => \$UserID,    # target UserID",
+            "    UserGetParam => \%GetParam,",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StatsResultCacheGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

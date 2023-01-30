@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.ArticleCustomerRecipientsGet": {
+        "body": [
+            "${1:my @CustomerUserIDs = \$LayoutObject->ArticleCustomerRecipientsGet(",
+            "    TicketID  => \$TicketID,     # (required)",
+            "    ArticleID => \$ArticleID,     # (required)",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.ArticleCustomerRecipientsGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

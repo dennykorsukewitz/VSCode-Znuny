@@ -1,0 +1,13 @@
+{
+    "znuny.OAuth2TokenObject.HasTokenExpired": {
+        "body": [
+            "${1:my \$HasExpired = \$OAuth2TokenObject->HasTokenExpired(",
+            "    TokenConfigID => \$TokenConfigID,",
+            "    UserID        => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenObject.HasTokenExpired",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

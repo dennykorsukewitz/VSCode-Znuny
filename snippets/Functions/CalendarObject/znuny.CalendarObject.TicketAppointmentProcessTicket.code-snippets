@@ -1,0 +1,12 @@
+{
+    "znuny.CalendarObject.TicketAppointmentProcessTicket": {
+        "body": [
+            "${1:\$CalendarObject->TicketAppointmentProcessTicket(",
+            "    TicketID => \$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.CalendarObject.TicketAppointmentProcessTicket",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

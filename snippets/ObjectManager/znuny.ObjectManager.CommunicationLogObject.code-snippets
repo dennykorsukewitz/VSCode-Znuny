@@ -1,0 +1,15 @@
+{
+    "znuny.ObjectManager.CommunicationLogObject": {
+        "body": [
+            "my \$CommunicationLogObject = \$Kernel::OM->Create(",
+            "        'Kernel::System::CommunicationLog',",
+            "        ObjectParams => {",
+            "            CommunicationID => 123,",
+            "        \\}",
+            "    );",
+        ],
+        "prefix": "znuny.ObjectManager.CommunicationLogObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

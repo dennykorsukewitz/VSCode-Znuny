@@ -1,0 +1,10 @@
+{
+    "znuny.SysConfigObject.CreateZZZAAutoBackup": {
+        "body": [
+            "${1:my \$Success = \$SysConfigObject->CreateZZZAAutoBackup();}",
+        ],
+        "prefix": "znuny.SysConfigObject.CreateZZZAAutoBackup",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

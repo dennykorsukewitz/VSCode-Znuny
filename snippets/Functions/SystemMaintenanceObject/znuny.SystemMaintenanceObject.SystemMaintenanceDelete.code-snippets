@@ -1,0 +1,13 @@
+{
+    "znuny.SystemMaintenanceObject.SystemMaintenanceDelete": {
+        "body": [
+            "${1:my \$Success = \$SystemMaintenanceObject->SystemMaintenanceDelete(",
+            "    ID     => 123,",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

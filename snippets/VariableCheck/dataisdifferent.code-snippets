@@ -1,0 +1,12 @@
+{
+    "VariableCheck": {
+        "body": [
+            "my \\$${3:DataIsDifferent} = DataIsDifferent(",
+            "    Data1 => \\\\${1:Data1},",
+            "    Data2 => \\\\${2:Data2},",
+            ");",
+        ],
+        "prefix": "DataIsDifferent",
+        "scope": "perl"
+    }
+}

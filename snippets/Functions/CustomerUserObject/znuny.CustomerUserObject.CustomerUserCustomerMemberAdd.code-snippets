@@ -1,0 +1,15 @@
+{
+    "znuny.CustomerUserObject.CustomerUserCustomerMemberAdd": {
+        "body": [
+            "${1:my \$Success = \$CustomerUserObject->CustomerUserCustomerMemberAdd(",
+            "    CustomerUserID => \$CustomerUserID,",
+            "    CustomerID     => \$CustomerID,",
+            "    Active         => 1,        # optional",
+            "    UserID         => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerUserObject.CustomerUserCustomerMemberAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

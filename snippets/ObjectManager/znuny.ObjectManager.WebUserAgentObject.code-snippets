@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.WebUserAgentObject": {
+        "body": [
+            "my \$WebUserAgentObject = Kernel::System::WebUserAgent",
+        ],
+        "prefix": "znuny.ObjectManager.WebUserAgentObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

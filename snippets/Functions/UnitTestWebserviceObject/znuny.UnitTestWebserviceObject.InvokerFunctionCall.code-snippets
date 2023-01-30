@@ -1,0 +1,28 @@
+{
+    "znuny.UnitTestWebserviceObject.InvokerFunctionCall": {
+        "body": [
+            "${1:my \$Success = \$UnitTestWebserviceObject->InvokerFunctionCall(",
+            "    Webservice => 'webservice-name',",
+            "    Invoker    => 'invoker-name',",
+            "    Function   => 'function',",
+            "    Data       => {\\},",
+            "    ObjectModifyFunction => sub {",
+            "        my (%Params) = @_;",
+            "",
+            "        \$Params{Object\\}->{BackendObject\\}->{MessageName\\} = 'SEND_UPDATE';",
+            "",
+            "        return 1;",
+            "    \\},",
+            ");}",
+            "${2:my \$Success = \$UnitTestWebserviceObject->InvokerFunctionCall(",
+            "    Webservice => 'webservice-name',",
+            "    Invoker    => 'invoker-name',",
+            "    Function   => 'function',",
+            "    Data       => {\\},",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestWebserviceObject.InvokerFunctionCall",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

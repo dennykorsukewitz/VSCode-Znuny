@@ -1,0 +1,10 @@
+{
+    "znuny.CommunicationLogObject.CommunicationIDGet": {
+        "body": [
+            "${1:my \$CommunicationID = \$CommunicationLogObject->CommunicationIDGet();}",
+        ],
+        "prefix": "znuny.CommunicationLogObject.CommunicationIDGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "znuny.DynamicFieldObject.DynamicFieldGet": {
+        "body": [
+            "${1:my \$DynamicField = \$DynamicFieldObject->DynamicFieldGet(",
+            "    ID   => 123,             # ID or Name must be provided",
+            "    Name => 'DynamicField',",
+            ");}",
+        ],
+        "prefix": "znuny.DynamicFieldObject.DynamicFieldGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

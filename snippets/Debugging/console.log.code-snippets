@@ -1,0 +1,10 @@
+{
+    "console.log": {
+        "body": [
+            "console.log('$1');",
+        ],
+        "prefix": "console.log",
+        "description": "js",
+        "scope": "javascript"
+    }
+}

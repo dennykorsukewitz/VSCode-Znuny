@@ -1,0 +1,9 @@
+{
+    "VariableCheck": {
+        "body": [
+            "IsArrayRefWithData(\\$$1)",
+        ],
+        "prefix": "IsArrayRefWithData",
+        "scope": "perl"
+    }
+}

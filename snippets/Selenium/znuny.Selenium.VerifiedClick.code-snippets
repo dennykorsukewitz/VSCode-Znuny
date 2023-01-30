@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.VerifiedClick": {
+        "body": [
+            "\\$SeleniumObject->find_element(\"${2:#Name}\", 'css')->VerifiedClick();",
+        ],
+        "prefix": "znuny.Selenium.VerifiedClick",
+        "scope": "perl"
+    }
+}

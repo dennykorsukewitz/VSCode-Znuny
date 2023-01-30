@@ -1,0 +1,9 @@
+{
+    "znuny.Selenium.get_page_source": {
+        "body": [
+            "my \\$PageContent = \\$SeleniumObject->get_page_source();",
+        ],
+        "prefix": "znuny.Selenium.get_page_source",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "scalar": {
+        "body": [
+            "my \\$${1:Scalar} = scalar @$2;",
+        ],
+        "prefix": "scalar",
+        "scope": "perl"
+    }
+}

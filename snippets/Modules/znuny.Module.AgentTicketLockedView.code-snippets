@@ -1,0 +1,10 @@
+{
+    "AgentTicketLockedView": {
+        "body": [
+            "AgentTicketLockedView",
+        ],
+        "prefix": "AgentTicketLockedView",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

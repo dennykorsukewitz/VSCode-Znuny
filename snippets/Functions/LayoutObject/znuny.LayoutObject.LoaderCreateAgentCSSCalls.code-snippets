@@ -1,0 +1,12 @@
+{
+    "znuny.LayoutObject.LoaderCreateAgentCSSCalls": {
+        "body": [
+            "${1:\$LayoutObject->LoaderCreateAgentCSSCalls(",
+            "    Skin => 'MySkin', # optional, if not provided skin is the configured by default",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LoaderCreateAgentCSSCalls",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

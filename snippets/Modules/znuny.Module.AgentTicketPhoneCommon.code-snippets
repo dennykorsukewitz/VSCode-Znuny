@@ -1,0 +1,10 @@
+{
+    "AgentTicketPhoneCommon": {
+        "body": [
+            "AgentTicketPhoneCommon",
+        ],
+        "prefix": "AgentTicketPhoneCommon",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

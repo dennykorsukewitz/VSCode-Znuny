@@ -1,0 +1,20 @@
+{
+    "znuny.LanguageObject.Translatable": {
+        "body": [
+            "${1:my \$Selection = \$LayoutObject BuildSelection (",
+            "    Data => {",
+            "        'and' => Translatable('and'),",
+            "        'or'  => Translatable('or'),",
+            "        'xor' => Translatable('xor'),",
+            "    \\},",
+            "    Name        => "ConditionLinking[_INDEX_]",",
+            "    Sort        => 'AlphanumericKey',",
+            "    Translation => 1,",
+            "    Class       => 'Modernize W50pc',",
+            ");}",
+        ],
+        "prefix": "znuny.LanguageObject.Translatable",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

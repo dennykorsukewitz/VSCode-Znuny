@@ -1,0 +1,23 @@
+{
+    "znuny.LayoutObject.ArticleQuote": {
+        "body": [
+            "${1:my \$HTMLBody = \$LayoutObject->ArticleQuote(",
+            "    TicketID           => \$TicketID,",
+            "    ArticleID          => \$ArticleID,",
+            "    FormID             => \$FormID,",
+            "    UploadCacheObject   => \$Self->{UploadCacheObject\\},",
+            "    AttachmentsInclude => 1,",
+            ");}",
+            "${2:my \$HTMLBody = \$LayoutObject->ArticleQuote(",
+            "    TicketID           => \$TicketID,",
+            "    ArticleID          => \$ArticleID,",
+            "    FormID             => \$FormID,",
+            "    UploadCacheObject  => \$Self->{UploadCacheObject\\},",
+            "    AttachmentsInclude => 0,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.ArticleQuote",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

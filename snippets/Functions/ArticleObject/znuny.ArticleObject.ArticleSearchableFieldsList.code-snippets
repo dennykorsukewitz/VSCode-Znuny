@@ -1,0 +1,10 @@
+{
+    "znuny.ArticleObject.ArticleSearchableFieldsList": {
+        "body": [
+            "${1:my %SearchableFields = \$ArticleObject->ArticleSearchableFieldsList();}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleSearchableFieldsList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

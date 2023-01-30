@@ -1,0 +1,13 @@
+{
+    "znuny.LayoutObject.LinkObjectTableCreateComplex": {
+        "body": [
+            "${1:my \$String = \$LayoutObject->LinkObjectTableCreateComplex(",
+            "    LinkListWithData => \$LinkListRef,",
+            "    ViewMode         => 'Complex', # (Complex|ComplexAdd|ComplexDelete|ComplexRaw)",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectTableCreateComplex",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

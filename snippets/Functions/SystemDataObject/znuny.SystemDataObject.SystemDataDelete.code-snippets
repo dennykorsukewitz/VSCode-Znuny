@@ -1,0 +1,13 @@
+{
+    "znuny.SystemDataObject.SystemDataDelete": {
+        "body": [
+            "${1:\$SystemDataObject->SystemDataDelete(",
+            "    Key    => 'OTRS Version',",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SystemDataObject.SystemDataDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

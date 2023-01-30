@@ -1,0 +1,9 @@
+{
+    "map.array": {
+        "body": [
+            "${1:my %${4:New} = map \\{ \\$_ => \\$_ \\} \\@${7:Array};}\n${2:my @${4:New} = map \\{ \\$_ =~ s\\{${5:SEARCH}\\}\\{${6:REPLACE}\\}g \\} \\@${7:Array}; ## no critic}\n${3:my @${4:New} = map \\{ \\$_ =~ s\\{${5:SEARCH}\\}\\{${6:REPLACE}\\}g; \\$_ \\} \\@${7:Array}; ## no critic}",
+        ],
+        "prefix": "map.array",
+        "scope": "perl"
+    }
+}

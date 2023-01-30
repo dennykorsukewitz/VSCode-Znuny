@@ -1,0 +1,16 @@
+{
+    "znuny.SysConfigObject.SettingUnlock": {
+        "body": [
+            "${1:my \$Success = \$SysConfigObject->SettingUnlock(",
+            "    DefaultID => \$DefaultID,                     # the ID of the setting that needs to be unlocked",
+            "                                        #   or",
+            "    Name      => 'SettingName',         # the name of the setting that needs to be locked",
+            "                                        #   or",
+            "    UnlockAll => 1,                     # unlock all settings",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.SettingUnlock",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

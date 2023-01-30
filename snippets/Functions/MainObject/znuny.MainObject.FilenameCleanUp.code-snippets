@@ -1,0 +1,17 @@
+{
+    "znuny.MainObject.FilenameCleanUp": {
+        "body": [
+            "${1:my \$Filename = \$MainObject->FilenameCleanUp(",
+            "    Filename => 'me_to/alal.xml',",
+            "    Type     => 'Local', # Local|Attachment|MD5",
+            ");}",
+            "${2:my \$Filename = \$MainObject->FilenameCleanUp(",
+            "    Filename => 'some:file.xml',",
+            "    Type     => 'MD5', # Local|Attachment|MD5",
+            ");}",
+        ],
+        "prefix": "znuny.MainObject.FilenameCleanUp",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

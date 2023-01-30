@@ -1,0 +1,13 @@
+{
+    "znuny.WebserviceObject.WebserviceDelete": {
+        "body": [
+            "${1:my \$Success = \$WebserviceObject->WebserviceDelete(",
+            "    ID      => 123,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.WebserviceObject.WebserviceDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

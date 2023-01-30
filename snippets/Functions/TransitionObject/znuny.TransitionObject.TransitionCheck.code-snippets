@@ -1,0 +1,20 @@
+{
+    "znuny.TransitionObject.TransitionCheck": {
+        "body": [
+            "${1:my \$TransitionCheck = \$TransitionObject->TransitionCheck(",
+            "    TransitionEntityID => \$TransitionEntityID,",
+            "    or",
+            "    TransitionEntityID => \$TransitionEntityID, 'T2', 'T3'],",
+            "    Data       => {",
+            "        Queue         => 'Raw',",
+            "        DynamicField1 => 'Value',",
+            "        Subject       => 'Testsubject',",
+            "        ...",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.TransitionObject.TransitionCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

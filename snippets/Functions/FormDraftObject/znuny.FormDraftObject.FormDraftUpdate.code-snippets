@@ -1,0 +1,34 @@
+{
+    "znuny.FormDraftObject.FormDraftUpdate": {
+        "body": [
+            "${1:my \$Success = \$FormDraftObject->FormDraftUpdate(",
+            "    FormData => {",
+            "        InformUserID => \$InformUserID, 124, ],",
+            "        Subject      => 'Request for information',",
+            "        ...",
+            "    \\},",
+            "    FileData => [                                           # optional",
+            "        {",
+            "            'Content'     => 'Dear customer\n\nthank you!',",
+            "            'ContentType' => 'text/plain',",
+            "            'ContentID'   => undef,                         # optional",
+            "            'Filename'    => 'thankyou.txt',",
+            "            'Filesize'    => 25,",
+            "            'FileID'      => 1,",
+            "            'Disposition' => 'attachment',",
+            "        \\},",
+            "        ...",
+            "    ],",
+            "    ObjectType  => 'Ticket',",
+            "    ObjectID    => \$ObjectID,",
+            "    Action      => 'AgentTicketCompose',",
+            "    Title       => 'my draft',",
+            "    FormDraftID => \$FormDraftID,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.FormDraftObject.FormDraftUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

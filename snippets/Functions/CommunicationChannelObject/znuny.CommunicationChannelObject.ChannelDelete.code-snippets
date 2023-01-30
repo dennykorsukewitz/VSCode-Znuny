@@ -1,0 +1,14 @@
+{
+    "znuny.CommunicationChannelObject.ChannelDelete": {
+        "body": [
+            "${1:my \$Success = \$CommunicationChannelObject->ChannelDelete(",
+            "    ChannelID   => \$ChannelID,       # (optional) Delete by ChannelID",
+            "                            # or",
+            "    ChannelName => 'Email', # (optional) Delete by Channel name",
+            ");}",
+        ],
+        "prefix": "znuny.CommunicationChannelObject.ChannelDelete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

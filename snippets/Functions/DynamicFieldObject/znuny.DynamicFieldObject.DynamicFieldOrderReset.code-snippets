@@ -1,0 +1,10 @@
+{
+    "znuny.DynamicFieldObject.DynamicFieldOrderReset": {
+        "body": [
+            "${1:my \$Success = \$DynamicFieldObject->DynamicFieldOrderReset();}",
+        ],
+        "prefix": "znuny.DynamicFieldObject.DynamicFieldOrderReset",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

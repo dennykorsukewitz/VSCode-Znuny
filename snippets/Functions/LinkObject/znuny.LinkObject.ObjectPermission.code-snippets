@@ -1,0 +1,14 @@
+{
+    "znuny.LinkObject.ObjectPermission": {
+        "body": [
+            "${1:\$Permission = \$LinkObject->ObjectPermission(",
+            "    Object  => 'Ticket',",
+            "    Key     => 123,",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.LinkObject.ObjectPermission",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

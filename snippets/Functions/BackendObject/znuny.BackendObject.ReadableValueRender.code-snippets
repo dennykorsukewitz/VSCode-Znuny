@@ -1,0 +1,15 @@
+{
+    "znuny.BackendObject.ReadableValueRender": {
+        "body": [
+            "${1:my \$ValueStrg = \$BackendObject->ReadableValueRender(",
+            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    Value              => 'Any value',              # Optional",
+            "    ValueMaxChars      => 20,                       # Optional",
+            "    TitleMaxChars      => 20,                       # Optional",
+            ");}",
+        ],
+        "prefix": "znuny.BackendObject.ReadableValueRender",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

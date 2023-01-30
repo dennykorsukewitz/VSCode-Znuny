@@ -1,0 +1,9 @@
+{
+    "hash.deref": {
+        "body": [
+            "my %${1:Hash} = %{ \\$$2 };",
+        ],
+        "prefix": "hash.deref",
+        "scope": "perl"
+    }
+}

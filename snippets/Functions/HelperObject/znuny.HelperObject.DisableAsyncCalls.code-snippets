@@ -1,0 +1,10 @@
+{
+    "znuny.HelperObject.DisableAsyncCalls": {
+        "body": [
+            "${1:\$HelperObject->DisableAsyncCalls();}",
+        ],
+        "prefix": "znuny.HelperObject.DisableAsyncCalls",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

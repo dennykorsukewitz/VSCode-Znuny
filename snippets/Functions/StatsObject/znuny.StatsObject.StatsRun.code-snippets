@@ -1,0 +1,15 @@
+{
+    "znuny.StatsObject.StatsRun": {
+        "body": [
+            "${1:my \$StatArray = \$StatsObject->StatsRun(",
+            "    StatID     => \$StatID,",
+            "    GetParam   => \%GetParam,",
+            "    Preview    => 1,        # optional, return fake data for preview (only for dynamic stats)",
+            "    UserID     => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StatsObject.StatsRun",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

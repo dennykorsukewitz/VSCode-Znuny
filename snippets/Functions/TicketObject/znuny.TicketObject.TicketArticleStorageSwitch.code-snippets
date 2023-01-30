@@ -1,0 +1,15 @@
+{
+    "znuny.TicketObject.TicketArticleStorageSwitch": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketArticleStorageSwitch(",
+            "    TicketID    => \$TicketID,",
+            "    Source      => 'ArticleStorageDB',",
+            "    Destination => 'ArticleStorageFS',",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketArticleStorageSwitch",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

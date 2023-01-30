@@ -1,0 +1,10 @@
+{
+    "znuny.HTMLUtilsObject.ToAscii": {
+        "body": [
+            "${1:my \$Ascii = \$HTMLUtilsObject->ToAscii( String => \$String );}",
+        ],
+        "prefix": "znuny.HTMLUtilsObject.ToAscii",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

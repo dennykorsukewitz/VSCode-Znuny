@@ -1,0 +1,17 @@
+{
+    "znuny.HelperObject.CheckNumberOfEventExecution": {
+        "body": [
+            "${1:my \$Result = \$HelperObject->CheckNumberOfEventExecution(",
+            "    TicketID => \$TicketID,",
+            "    Comment  => 'after article create',",
+            "    Events   => {",
+            "        AnExampleHistoryEntry      => 2,",
+            "        AnotherExampleHistoryEntry => 0,",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.CheckNumberOfEventExecution",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

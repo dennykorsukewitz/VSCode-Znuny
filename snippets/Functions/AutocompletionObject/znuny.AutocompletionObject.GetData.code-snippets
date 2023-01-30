@@ -1,0 +1,17 @@
+{
+    "znuny.AutocompletionObject.GetData": {
+        "body": [
+            "${1:my \$Data = \$AutocompletionObject->GetData(",
+            "    Trigger          => '!EX', # !EX is from example autocompletion module Kernel::System::Autocompletion::Example",
+            "    SearchString     => 'Raw',",
+            "    UserID           => \$UserID,",
+            "    AdditionalParams => { # optional",
+            "        TicketID => \$TicketID, # this will only be passed if available (e.g. it's not available for AgentTicketPhone)",
+            "    \\},",
+            ");}",
+        ],
+        "prefix": "znuny.AutocompletionObject.GetData",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

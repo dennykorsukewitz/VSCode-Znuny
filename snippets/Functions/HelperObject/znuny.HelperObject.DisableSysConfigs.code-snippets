@@ -1,0 +1,15 @@
+{
+    "znuny.HelperObject.DisableSysConfigs": {
+        "body": [
+            "${1:\$HelperObject->DisableSysConfigs(",
+            "    DisableSysConfigs => [",
+            "        'Ticket::Responsible'",
+            "        'DashboardBackend###0442-RSS'",
+            "    ],",
+            ");}",
+        ],
+        "prefix": "znuny.HelperObject.DisableSysConfigs",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

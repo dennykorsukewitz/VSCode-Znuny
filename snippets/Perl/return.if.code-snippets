@@ -1,0 +1,9 @@
+{
+    "return.if": {
+        "body": [
+            "return${1: } if ${2:!};",
+        ],
+        "prefix": "return.if",
+        "scope": "perl"
+    }
+}

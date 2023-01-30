@@ -1,0 +1,14 @@
+{
+    "znuny.TicketObject.TicketWatchUnsubscribe": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketWatchUnsubscribe(",
+            "    TicketID    => \$TicketID,",
+            "    WatchUserID => \$WatchUserID,",
+            "    UserID      => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketWatchUnsubscribe",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

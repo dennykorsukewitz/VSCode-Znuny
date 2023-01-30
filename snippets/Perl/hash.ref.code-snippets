@@ -1,0 +1,9 @@
+{
+    "hash.ref": {
+        "body": [
+            "\\%${1:Hash}",
+        ],
+        "prefix": "hash.ref",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.NotificationEventObject.NotificationEventCheck": {
+        "body": [
+            "${1:my @IDs = \$NotificationEventObject->NotificationEventCheck(",
+            "    Event => 'ArticleCreate',",
+            ");}",
+        ],
+        "prefix": "znuny.NotificationEventObject.NotificationEventCheck",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

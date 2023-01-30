@@ -1,0 +1,14 @@
+{
+    "znuny.ArticleObject.ArticleSearchIndexBuild": {
+        "body": [
+            "${1:my \$Success = \$ArticleObject->ArticleSearchIndexBuild(",
+            "    TicketID  => \$TicketID,",
+            "    ArticleID => \$ArticleID,",
+            "    UserID    => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleSearchIndexBuild",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

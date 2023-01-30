@@ -1,0 +1,12 @@
+{
+    "znuny.QueueObject.GetFollowUpOptionList": {
+        "body": [
+            "${1:my %FollowUpOptionList = \$QueueObject->GetFollowUpOptionList(",
+            "    Valid => 0,             # (optional) default 1",
+            ");}",
+        ],
+        "prefix": "znuny.QueueObject.GetFollowUpOptionList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

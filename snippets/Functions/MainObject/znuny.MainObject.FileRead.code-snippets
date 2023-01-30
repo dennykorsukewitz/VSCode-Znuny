@@ -1,0 +1,34 @@
+{
+    "znuny.MainObject.FileRead": {
+        "body": [
+            "${1:my \$ContentARRAYRef = \$MainObject->FileRead(",
+            "    Directory => 'c:\some\location',",
+            "    Filename  => 'file2read.txt',",
+            "    # or Location",
+            "    Location  => 'c:\some\location\file2read.txt',",
+            "",
+            "    Result    => 'ARRAY', # optional - SCALAR|ARRAY",
+            ");}",
+            "${2:my \$ContentSCALARRef = \$MainObject->FileRead(",
+            "    Directory       => 'c:\some\location',",
+            "    Filename        => 'file2read.txt',",
+            "    # or Location",
+            "    Location        => 'c:\some\location\file2read.txt',",
+            "",
+            "    Mode            => 'binmode', # optional - binmode|utf8",
+            "    Type            => 'Local',   # optional - Local|Attachment|MD5",
+            "    Result          => 'SCALAR',  # optional - SCALAR|ARRAY",
+            "    DisableWarnings => 1,         # optional",
+            ");}",
+            "${3:my \$ContentSCALARRef = \$MainObject->FileRead(",
+            "    Directory => 'c:\some\location',",
+            "    Filename  => 'file2read.txt',",
+            "    # or Location",
+            "    Location  => 'c:\some\location\file2read.txt',",
+            ");}",
+        ],
+        "prefix": "znuny.MainObject.FileRead",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

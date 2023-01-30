@@ -1,0 +1,16 @@
+{
+    "znuny.WebserviceHistoryObject.WebserviceHistoryAdd": {
+        "body": [
+            "${1:my \$ID = \$WebserviceHistoryObject->WebserviceHistoryAdd(",
+            "    WebserviceID => \$WebserviceID,",
+            "    Config       => {",
+            "        ...",
+            "    \\},",
+            "    UserID  => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.WebserviceHistoryObject.WebserviceHistoryAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

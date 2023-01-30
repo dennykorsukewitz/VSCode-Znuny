@@ -1,0 +1,10 @@
+{
+    "znuny.ActivityObject.ActivityList": {
+        "body": [
+            "${1:my \$Activities = \$ActivityObject->ActivityList();}",
+        ],
+        "prefix": "znuny.ActivityObject.ActivityList",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

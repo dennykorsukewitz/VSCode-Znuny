@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.CommunicationChannelObject": {
+        "body": [
+            "my \$CommunicationChannelObject = \$Kernel::OM->Get('Kernel::System::CommunicationChannel');",
+        ],
+        "prefix": "znuny.ObjectManager.CommunicationChannelObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

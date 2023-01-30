@@ -1,0 +1,15 @@
+{
+    "znuny.XMLObject.XMLHashMove": {
+        "body": [
+            "${1:\$XMLObject->XMLHashMove(",
+            "    OldType => 'SomeType',",
+            "    OldKey  => '123',",
+            "    NewType => 'NewType',",
+            "    NewKey  => '321',",
+            ");}",
+        ],
+        "prefix": "znuny.XMLObject.XMLHashMove",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "znuny.GitLab.Deploy": {
+        "body": [
+            "image: \\$JOB_IMAGE",
+            "",
+            "include:",
+            "  - project: \\$INCLUDE_PROJECT",
+            "    file: '/templates/gitlab/default/deploy.yml'",
+        ],
+        "prefix": "znuny.GitLab.Deploy",
+        "description": "GitLab Templates .gitlab-ci.yml",
+        "scope": "yaml"
+    }
+}

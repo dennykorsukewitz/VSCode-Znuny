@@ -1,0 +1,19 @@
+{
+    "znuny.POD.AGPL.footer": {
+        "body": [
+            "=back",
+            "",
+            "=head1 TERMS AND CONDITIONS",
+            "",
+            "This software is part of the Znuny project (L<http://znuny.org/>).",
+            "",
+            "This software comes with ABSOLUTELY NO WARRANTY. For details, see",
+            "the enclosed file COPYING for license information (AGPL). If you",
+            "did not receive this file, see http://www.gnu.org/licenses/agpl.txt.",
+            "",
+            "=cut",
+        ],
+        "prefix": "znuny.POD.AGPL.footer",
+        "scope": "perl"
+    }
+}

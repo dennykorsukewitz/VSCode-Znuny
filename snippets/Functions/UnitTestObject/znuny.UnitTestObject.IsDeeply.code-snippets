@@ -1,0 +1,20 @@
+{
+    "znuny.UnitTestObject.IsDeeply": {
+        "body": [
+            "${1:\$Self->IsDeeply(",
+            "    \%ResultHash,           # test data",
+            "    \%ExpectedHash,         # expected value",
+            "    'Dummy Test Name',",
+            ");}",
+            "${2:\$Self->IsDeeply(\$ParamA, \$ParamB, 'Test Name');}",
+            "${3:my \$IsDeeplyResult = \$Self->IsDeeply(",
+            "    \%ResultHash,           # test data",
+            "    \%ExpectedHash,         # expected value",
+            "    'Dummy Test Name',",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestObject.IsDeeply",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

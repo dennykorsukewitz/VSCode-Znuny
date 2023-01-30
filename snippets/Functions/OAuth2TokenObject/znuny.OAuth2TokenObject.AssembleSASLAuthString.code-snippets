@@ -1,0 +1,13 @@
+{
+    "znuny.OAuth2TokenObject.AssembleSASLAuthString": {
+        "body": [
+            "${1:my \$SASLAuthString = \$OAuth2TokenObject->AssembleSASLAuthString(",
+            "    Username    => 'user2',",
+            "    OAuth2Token => 'the token',",
+            ");}",
+        ],
+        "prefix": "znuny.OAuth2TokenObject.AssembleSASLAuthString",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

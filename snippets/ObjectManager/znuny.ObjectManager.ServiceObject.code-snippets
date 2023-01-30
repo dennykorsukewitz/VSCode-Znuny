@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.ServiceObject": {
+        "body": [
+            "my \$ServiceObject = \$Kernel::OM->Get('Kernel::System::Service');",
+        ],
+        "prefix": "znuny.ObjectManager.ServiceObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "znuny.GenericAgentObject.JobAdd": {
+        "body": [
+            "${1:\$GenericAgentObject->JobAdd(",
+            "    Name => 'JobName',",
+            "    Data => {",
+            "        Queue => 'SomeQueue',",
+            "        ...",
+            "        Valid => 1,",
+            "    \\},",
+            "    UserID => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobAdd",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

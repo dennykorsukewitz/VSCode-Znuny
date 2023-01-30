@@ -1,0 +1,10 @@
+{
+    "znuny.ObjectManager.CSVObject": {
+        "body": [
+            "my \$CSVObject = \$Kernel::OM->Get('Kernel::System::CSV');",
+        ],
+        "prefix": "znuny.ObjectManager.CSVObject",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

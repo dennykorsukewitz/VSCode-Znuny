@@ -1,0 +1,13 @@
+{
+    "znuny.UserObject.SearchPreferences": {
+        "body": [
+            "${1:my %UserList = \$UserObject->SearchPreferences(",
+            "    Key   => 'UserEmail',",
+            "    Value => 'email@example.com',   # optional, limit to a certain value/pattern",
+            ");}",
+        ],
+        "prefix": "znuny.UserObject.SearchPreferences",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "znuny.VirtualFSObject.Delete": {
+        "body": [
+            "${1:my \$Success = \$VirtualFSObject->Delete(",
+            "    Filename => '/Object/SomeFileName.txt',",
+            "",
+            "    # optional",
+            "    DisableWarnings => 1,",
+            ");}",
+        ],
+        "prefix": "znuny.VirtualFSObject.Delete",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

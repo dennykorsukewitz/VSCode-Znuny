@@ -1,0 +1,31 @@
+{
+    "znuny.MainObject.DirectoryRead": {
+        "body": [
+            "${1:my @FilesInDirectory = \$MainObject->DirectoryRead(",
+            "    Directory => \$Path,",
+            "    Filter    => '*',",
+            "    Recursive => 1,",
+            ");}",
+            "${2:my @FilesInDirectory = \$MainObject->DirectoryRead(",
+            "    Directory => \$Path,",
+            "    Filter    => '*',",
+            ");}",
+            "${3:my @FilesInDirectory = \$MainObject->DirectoryRead(",
+            "    Directory => '/special/optional/directory/',",
+            "    Filter    => '*',",
+            "    Silent    => 1,     # will not log errors if the directory does not exist",
+            ");}",
+            "${4:my @FilesInDirectory = \$MainObject->DirectoryRead(",
+            "    Directory => '/tmp',",
+            "    Filter    => 'Filenam*',",
+            ");}",
+            "${5:my @FilesInDirectory = \$MainObject->DirectoryRead(",
+            "    Directory => '/tmp',",
+            "    Filter    => \@MyFilters,",
+            ");}",
+        ],
+        "prefix": "znuny.MainObject.DirectoryRead",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

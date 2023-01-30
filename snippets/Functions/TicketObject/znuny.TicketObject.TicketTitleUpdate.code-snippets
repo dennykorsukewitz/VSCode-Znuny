@@ -1,0 +1,14 @@
+{
+    "znuny.TicketObject.TicketTitleUpdate": {
+        "body": [
+            "${1:my \$Success = \$TicketObject->TicketTitleUpdate(",
+            "    Title    => 'Some Title',",
+            "    TicketID => \$TicketID,",
+            "    UserID   => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TicketObject.TicketTitleUpdate",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

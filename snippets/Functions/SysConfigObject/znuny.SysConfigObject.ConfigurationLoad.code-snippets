@@ -1,0 +1,13 @@
+{
+    "znuny.SysConfigObject.ConfigurationLoad": {
+        "body": [
+            "${1:my \$Success = \$SysConfigObject->ConfigurationLoad(",
+            "    ConfigurationYAML   => \$YAMLString,     # a YAML string in the format of L<ConfigurationDump()>",
+            "    UserID              => \$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SysConfigObject.ConfigurationLoad",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

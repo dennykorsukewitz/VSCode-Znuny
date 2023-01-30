@@ -1,0 +1,15 @@
+{
+    "znuny.PackageObject.CheckVersion": {
+        "body": [
+            "${1:    my \$CheckOk = \$PackageObject->CheckVersion(",
+            "        VersionNew       => '1.3.92',",
+            "        VersionInstalled => '1.3.91',",
+            "        Type             => 'Min',     # 'Min' or 'Max'",
+            "        ExternalPackage  => 1,         # optional",
+            "    )}",
+        ],
+        "prefix": "znuny.PackageObject.CheckVersion",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

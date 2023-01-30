@@ -1,0 +1,13 @@
+{
+    "znuny.UnitTestObject.AttachSeleniumScreenshot": {
+        "body": [
+            "${1:\$Self->AttachSeleniumScreenshot(",
+            "    Filename => \$Filename,",
+            "    Content  => \$Data               # raw image data",
+            ");}",
+        ],
+        "prefix": "znuny.UnitTestObject.AttachSeleniumScreenshot",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}
