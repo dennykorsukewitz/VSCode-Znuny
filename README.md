@@ -33,6 +33,8 @@ DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny developme
   - Selenium
   - VariableCheck
 
+![snippets](doc/images/snippets.gif)
+
 ## Installation
 
 To install this extension, you have three options:

@@ -4,7 +4,7 @@
   "description": "DK4Znuny VisualStudioCode is an extension that helps you to make Znuny development less painful.",
   "version": "1.0.0",
   "publisher": "dennykorsukewitz",
-  "icon": "icon.png",
+  "icon": "doc/images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode"
