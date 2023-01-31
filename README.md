@@ -39,7 +39,7 @@ DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny developme
 
 To install this extension, you have three options:
 
-1. Install via VSC extensions menu, `Code` -> `Preferences` -> `Extensions` -> `Views and More Action` -> `Install from VSIX` to install.
+1. Install via VSC extensions menu, `Code` -> `Preferences` -> `Extensions` -> `Views and More Action` -> `Install from VSIX` to install` .
 2. Clone source code to VisualStudioCode extensions folder `$HOME/.vscode/extensions/`.
 3. Download archive with the latest [release](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/releases) and unpack it to VisualStudioCode extensions folder `$HOME/.vscode/extensions/`.
 
