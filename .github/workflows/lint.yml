@@ -22,7 +22,7 @@ jobs:
           fetch-depth: "1"
         with:
           repository: dennykorsukewitz/DK4
-          ref: 'dev' # update-dev
+          ref: 'dev' # dev-update
           path: DK4
 
       - name: Prepare linters config

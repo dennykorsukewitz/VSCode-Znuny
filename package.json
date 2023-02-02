@@ -1,20 +1,33 @@
 {
   "name": "dk4znuny-visualstudiocode",
-  "displayName": "DK4Znuny-VisualStudioCode",
-  "description": "DK4Znuny VisualStudioCode is an extension that helps you to make Znuny development less painful.",
+  "displayName": "Znuny",
+  "description": "DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny development less painful.",
   "version": "1.0.0",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/blob/dev/README.md",
+  "pricing": "Free",
+  "bugs": {
+    "url": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/issues",
+    "email": "dennykorsukewitz@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode"
   },
-  "engines": {
-    "vscode": "^1.74.0"
+  "sponsor": {
+    "url": "https://github.com/sponsors/dennykorsukewitz"
   },
+  "keywords": [
+    "OTRS", "Znuny", "Snippets"
+  ],
   "categories": [
     "Snippets"
   ],
+  "engines": {
+    "vscode": "^1.74.0"
+  },
   "contributes": {
     "snippets": [
 
