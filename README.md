@@ -11,7 +11,7 @@ DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny developme
 
 | Versions | Status |
 | ------ | ------ |
-| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/DK4Znuny-VisualStudioCode/1.0.0/dev)](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/compare/1.0.0...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/DK4Znuny-VisualStudioCode/1.0.1/dev)](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/compare/1.0.1...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ## Features
 
