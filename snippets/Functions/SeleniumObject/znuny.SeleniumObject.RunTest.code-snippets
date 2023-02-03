@@ -1,0 +1,10 @@
+{
+    "znuny.SeleniumObject.RunTest": {
+        "body": [
+            "${1:\$SeleniumObject->RunTest( sub { ... \\} );}",
+        ],
+        "prefix": "znuny.SeleniumObject.RunTest",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

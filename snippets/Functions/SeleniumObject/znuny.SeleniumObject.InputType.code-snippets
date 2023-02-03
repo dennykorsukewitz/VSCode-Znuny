@@ -1,0 +1,12 @@
+{
+    "znuny.SeleniumObject.InputType": {
+        "body": [
+            "${1:my \$Result = \$SeleniumObject->InputType(",
+            "    FieldID => \$FieldID,",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.InputType",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

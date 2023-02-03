@@ -1,9 +1,0 @@
-{
-    "VariableCheck": {
-        "body": [
-            "IsString($1)",
-        ],
-        "prefix": "IsString",
-        "scope": "perl"
-    }
-}

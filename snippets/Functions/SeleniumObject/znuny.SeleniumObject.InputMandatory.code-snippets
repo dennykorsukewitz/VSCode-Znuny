@@ -1,0 +1,16 @@
+{
+    "znuny.SeleniumObject.InputMandatory": {
+        "body": [
+            "${1:my \$Result = \$SeleniumObject->InputMandatory(",
+            "    Attribute => 'QueueID',",
+            "    Mandatory => 1,         # 1 or 0",
+            ");}",
+            "${2:my \$Result = \$SeleniumObject->InputMandatory(",
+            "    Attribute => 'QueueID',",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.InputMandatory",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

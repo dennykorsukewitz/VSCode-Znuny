@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.InputFieldValueSet": {
+        "body": [
+            "${1:\$SeleniumObject->InputFieldValueSet(",
+            "    Element => 'css-selector',              # (required) css selector",
+            "    Value   => 3,                           # (optional) Value",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.InputFieldValueSet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

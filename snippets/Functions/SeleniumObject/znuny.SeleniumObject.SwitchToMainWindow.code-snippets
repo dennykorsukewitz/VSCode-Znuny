@@ -1,0 +1,12 @@
+{
+    "znuny.SeleniumObject.SwitchToMainWindow": {
+        "body": [
+            "${1:\$SeleniumObject->SwitchToMainWindow(",
+            "    WaitForAJAX => 0, # optional, default 1",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.SwitchToMainWindow",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

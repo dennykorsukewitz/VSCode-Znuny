@@ -1,7 +1,7 @@
 {
     "znuny.ServiceObject.GetAllCustomServices": {
         "body": [
-            "${1:my @Services = \$ServiceObject->GetAllCustomServices( UserID => 123 );}",
+            "${1:my @Services = \$ServiceObject->GetAllCustomServices( UserID => \$UserID );}",
         ],
         "prefix": "znuny.ServiceObject.GetAllCustomServices",
         "description": "6.0, 6.4, 6.5",

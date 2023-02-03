@@ -107,6 +107,9 @@ my %ObjectFilesMapping = (
     UnitTestObject => [
         $Home . '/Kernel/System/UnitTest/Driver.pm',
     ],
+    SeleniumObject => [
+        $Home . '/Kernel/System/UnitTest/Selenium/WebElement.pm',
+    ],
 );
 
 # change CallObject name to other
@@ -120,6 +123,7 @@ my %ObjectFilesMapping = (
 my %CallObjectMapping = (
     UnitTestObject => 'Self',
     Helper         => 'HelperObject',
+    Selenium       => 'SeleniumObject',
 );
 
 # skip this files
@@ -765,11 +769,21 @@ sub _GetObjects {
 
                 my $FunctionCallReplaced = $FunctionCall;
 
-                # replace " TicketID => 123," with " TicketID => $TicketID,"
-                $FunctionCallReplaced =~ s{(\s(\w+ID)\s+=>\s+)[^,]+,}{$1\$$2,}gxms;
+                # replace " TicketID => 123,"            with " TicketID => $TicketID,"
+                # replace " TicketID => [1234, 1235],"   with " TicketID => [$TicketID, 1235],"
+                $FunctionCallReplaced =~ s{(\s(\w+ID)\s+=>\s+\[*\s*)(\d+)(.*)}{$1\$$2$4}gxm;
+
+                # replace " TicketID => '123',"          with " TicketID => $TicketID,"
+                # replace " TicketID => "123","          with " TicketID => $TicketID,"
+                # replace " TicketID => '20160101T160000-71E386@localhost',"   with " TicketID => $TicketID,"
+                $FunctionCallReplaced =~ s{(\s(\w+ID)\s+=>\s+\[*\s*)([\'|\"]+.*[\'|\"]+)(.*)}{$1\$$2$4}gxm;
+
+                # replace " TicketID => $ID,"   with " TicketID => $TicketID,"
+                $FunctionCallReplaced =~ s{(\s(\w+ID)\s+=>\s+\[*\s*)(\$ID)(.*)}{$1\$$2$4}gxm;
 
                 # replace TicketNumber parameter with var
-                $FunctionCallReplaced =~ s{(\sTicketNumber\s+=>\s+)[^,]+,}{$1\$TicketNumber,}gxms;
+                # replace " TicketNumber => '2004040510440485'," with " TicketNumber => $TicketNumber,"
+                $FunctionCallReplaced =~ s{(\sTicketNumber\s+=>\s+\[*\s*)([\'|\"]*\d+[\'|\"]*)(.*)}{$1\$TicketNumber$3}gxm;
 
                 $ObjectFunction->{$FunctionCallReplaced} ||= [];
 

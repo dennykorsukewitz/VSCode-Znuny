@@ -12,7 +12,7 @@
             "    Rule => {",
             "        StartDate => 'DynamicField_TestDate',",
             "        EndDate   => 'Plus_5',",
-            "        QueueID   => \$QueueID,",
+            "        QueueID   => [ \$QueueID ],",
             "        RuleID    => \$RuleID,",
             "        SearchParams => {",
             "            Title => 'Welcome*',",

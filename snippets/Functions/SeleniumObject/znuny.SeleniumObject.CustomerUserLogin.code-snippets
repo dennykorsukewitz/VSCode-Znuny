@@ -1,0 +1,12 @@
+{
+    "znuny.SeleniumObject.CustomerUserLogin": {
+        "body": [
+            "${1:my %CustomerUserData = \$SeleniumObject->CustomerUserLogin(",
+            "    Language => 'de' # optional, defaults to 'en' if not set",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.CustomerUserLogin",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -4,7 +4,7 @@
             "${1:my \$TransitionCheck = \$TransitionObject->TransitionCheck(",
             "    TransitionEntityID => \$TransitionEntityID,",
             "    or",
-            "    TransitionEntityID => \$TransitionEntityID, 'T2', 'T3'],",
+            "    TransitionEntityID => [\$TransitionEntityID],",
             "    Data       => {",
             "        Queue         => 'Raw',",
             "        DynamicField1 => 'Value',",

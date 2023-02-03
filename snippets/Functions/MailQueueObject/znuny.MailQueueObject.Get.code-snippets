@@ -3,7 +3,7 @@
         "body": [
             "${1:my \$Item = \$MailQueueObject->Get(",
             "    ID              => '...' # optional",
-            "    ArticleID       => '...' # optional",
+            "    ArticleID       => \$ArticleID # optional",
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.Get",

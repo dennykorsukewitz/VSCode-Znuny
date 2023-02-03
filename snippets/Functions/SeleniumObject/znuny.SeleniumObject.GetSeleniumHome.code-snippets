@@ -1,0 +1,12 @@
+{
+    "znuny.SeleniumObject.GetSeleniumHome": {
+        "body": [
+            "${1:my \$SeleniumHome = \$SeleniumObject->GetSeleniumHome(",
+            "    Directory => '/opt/otrs',",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.GetSeleniumHome",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

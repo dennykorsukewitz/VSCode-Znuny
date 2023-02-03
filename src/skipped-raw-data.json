@@ -33,10 +33,12 @@
    },
    "Functions" : {
       "_ArticleActionsAdd" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ArticleActionsRemove" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ArticleCacheClear" : [
          "6.0",
@@ -44,13 +46,16 @@
          "6.5"
       ],
       "_AssembleRequestData" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_AssembleResponseDataFromJSONString" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_AssembleResponseDataFromWebRequest" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_AutocorrectNonExistingDateTimeForTimeZone" : [
          "6.0",
@@ -63,7 +68,8 @@
          "6.5"
       ],
       "_BuildLastViewsOutput" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_BuildSelectionAttributeRefCreate" : [
          "6.0",
@@ -144,7 +150,8 @@
          "6.0"
       ],
       "_CreateExpirationDateTimeObject" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_CreateStaticResultCacheFilename" : [
          "6.0",
@@ -212,7 +219,8 @@
          "6.5"
       ],
       "_CustomerUserCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DBGroupRoleGet" : [
          "6.0",
@@ -230,10 +238,12 @@
          "6.5"
       ],
       "_DaysMappingGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DaysOrderMappingGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DecodeString" : [
          "6.0",
@@ -241,13 +251,16 @@
          "6.5"
       ],
       "_DefaultColumnsDisable" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DefaultColumnsEnable" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DefaultColumnsGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DefaultSettingAddBulk" : [
          "6.0",
@@ -265,37 +278,48 @@
          "6.5"
       ],
       "_DynamicFieldsConfigExport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsDefaultColumnsGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsDelete" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsDisable" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsScreenConfigExport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsScreenConfigImport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsScreenDisable" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsScreenEnable" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_DynamicFieldsScreenGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_EffectiveValues2PerlFile" : [
          "6.0",
@@ -303,13 +327,16 @@
          "6.5"
       ],
       "_EventAdd" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_EventRemove" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_Excel2ArrayTicketAttributeRelationsData" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_FileWriteAtomic" : [
          "6.0",
@@ -322,7 +349,8 @@
          "6.5"
       ],
       "_FrequencyStringMappingGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_FromOTRSTimeZone" : [
          "6.0",
@@ -330,13 +358,16 @@
          "6.5"
       ],
       "_GETInterface" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GETRequest" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GeneralCatalogItemCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GenerateDynamicStats" : [
          "6.0",
@@ -354,16 +385,20 @@
          "6.5"
       ],
       "_GenerateTemporaryPriority" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GenericAgentCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GenericAgentCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GetBase64EncodedArticleAttachments" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GetCacheString" : [
          "6.0",
@@ -386,10 +421,12 @@
          "6.5"
       ],
       "_GetOrCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GetRequestTypes" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_GetResultCache" : [
          "6.0",
@@ -402,7 +439,8 @@
          "6.5"
       ],
       "_GroupCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_HandleError" : [
          "6.0",
@@ -415,7 +453,8 @@
          "6.5"
       ],
       "_Hash2GETParamString" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_HumanReadableAgeGet" : [
          "6.0",
@@ -423,22 +462,28 @@
          "6.5"
       ],
       "_ITSMConfigItemDefinitionCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ITSMConfigItemDefinitionCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ITSMConfigItemVersionAdd" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ITSMConfigItemVersionExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ITSMConfigItemVersionGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ImportExcelValue" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_Init" : [
          "6.0",
@@ -446,7 +491,8 @@
          "6.5"
       ],
       "_IsExcelFilename" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_IsOverriddenInModule" : [
          "6.0",
@@ -454,7 +500,8 @@
          "6.5"
       ],
       "_ItemReverseListGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_JobRunTicket" : [
          "6.0",
@@ -462,7 +509,8 @@
          "6.5"
       ],
       "_LastViewParameters" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_LinkObjectContentStringCreate" : [
          "6.0",
@@ -495,13 +543,16 @@
          "6.5"
       ],
       "_ModuleGroupAdd" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ModuleGroupRemove" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_MonthsMappingGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_NameExistsCheck" : [
          "6.0",
@@ -509,28 +560,36 @@
          "6.5"
       ],
       "_NotificationEventCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_NotificationEventCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_OutputFilterHookExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_OutputFilterHookInsertAfter" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_OutputFilterHookInsertBefore" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_OutputFilterHookReplace" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_OutputFilterHookShift" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_OverwrittenUserAgentRestore" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PackageInstallOrderListGet" : [
          "6.0",
@@ -548,13 +607,16 @@
          "6.5"
       ],
       "_ParseData2XML" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ParseTicketAttributeRelationsData" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ParseXML2Data" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PermissionTypeList" : [
          "6.0",
@@ -562,28 +624,36 @@
          "6.5"
       ],
       "_PostMasterFilterConfigExport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PostMasterFilterConfigImport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PostMasterFilterCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PostMasterFilterCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PostReorderTicketAttributeRelationsPriorities" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PostmasterXHeaderAdd" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PostmasterXHeaderRemove" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PreReorderTicketAttributeRelationsPriorities" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_PrepareText" : [
          "6.0",
@@ -591,34 +661,44 @@
          "6.5"
       ],
       "_PriorityCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ProcessCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ProcessCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ProcessWidgetDynamicFieldGroupsAdd" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ProcessWidgetDynamicFieldGroupsGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ProcessWidgetDynamicFieldGroupsRemove" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ProcessesGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_QueueCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_RebuildConfig" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_RedefineTransport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_RemoveScriptTags" : [
          "6.0",
@@ -631,7 +711,8 @@
          "6.5"
       ],
       "_ReplaceDataSeries" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_RepositoryCacheClear" : [
          "6.0",
@@ -644,10 +725,12 @@
          "6.5"
       ],
       "_RoleCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_SLACreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_SanitizeConfig" : [
          "6.0",
@@ -675,10 +758,12 @@
          "6.5"
       ],
       "_ServiceCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ServiceGetCurrentIncidentState" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_SetArticleTransmissionError" : [
          "6.0",
@@ -701,16 +786,20 @@
          "6.5"
       ],
       "_StandardTemplateCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_StateCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_StateDisable" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_StateTypeCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_StringToHash" : [
          "6.0",
@@ -783,7 +872,8 @@
          "6.5"
       ],
       "_TicketDeepGetDataCleanUp" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_TicketGetClosed" : [
          "6.0",
@@ -816,13 +906,16 @@
          "6.5"
       ],
       "_TypeCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_UpdateDynamicFieldConfigs" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_UserCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_UserFullname" : [
          "6.0",
@@ -830,7 +923,8 @@
          "6.5"
       ],
       "_ValidDynamicFieldScreenListGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_ValueTypesList" : [
          "6.0",
@@ -843,22 +937,28 @@
          "6.5"
       ],
       "_WebserviceCreate" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_WebserviceCreateIfNotExists" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_WebserviceDelete" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_WebserviceObjectModify" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_WebservicesGet" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_WhereTimeStamp" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "_XMLHashAddAutoIncrement" : [
          "6.0",
@@ -868,13 +968,16 @@
    },
    "Modules" : {
       "AJAXDynamicFieldWebservice" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AJAXNotificationEventTransportWebservice" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AJAXRichTextAutocompletion" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "Admin" : [
          "6.0",
@@ -967,7 +1070,8 @@
          "6.5"
       ],
       "AdminDynamicFieldConfigurationImportExport" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AdminDynamicFieldDateTime" : [
          "6.0",
@@ -985,7 +1089,8 @@
          "6.5"
       ],
       "AdminDynamicFieldScreenConfiguration" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AdminDynamicFieldText" : [
          "6.0",
@@ -993,7 +1098,8 @@
          "6.5"
       ],
       "AdminDynamicFieldWebservice" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AdminEmail" : [
          "6.0",
@@ -1091,7 +1197,8 @@
          "6.5"
       ],
       "AdminOAuth2TokenManagement" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AdminOTRSBusiness" : [
          "6.0",
@@ -1252,7 +1359,8 @@
          "6.5"
       ],
       "AdminSystemFiles" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AdminSystemMaintenance" : [
          "6.0",
@@ -1270,7 +1378,8 @@
          "6.5"
       ],
       "AdminTicketAttributeRelations" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "AdminType" : [
          "6.0",
@@ -1423,7 +1532,8 @@
          "6.5"
       ],
       "Mentions" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "PictureUpload" : [
          "6.0",
@@ -1431,7 +1541,8 @@
          "6.5"
       ],
       "PreApplicationLastViews" : [
-         "6.4"
+         "6.4",
+         "6.5"
       ],
       "PublicCalendar" : [
          "6.0",

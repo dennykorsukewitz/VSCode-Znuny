@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.GetScreenshotURL": {
+        "body": [
+            "${1:my \$ScreenshotURL = \$SeleniumObject->GetScreenshotURL(",
+            "    WebPath  = '/otrs-web/SeleniumScreenshots/ZnunyRocks/',",
+            "    Filename = 'AgentTicketZoom',",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.GetScreenshotURL",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

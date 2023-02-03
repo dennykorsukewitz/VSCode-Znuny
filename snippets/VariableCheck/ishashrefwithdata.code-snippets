@@ -1,9 +1,0 @@
-{
-    "VariableCheck": {
-        "body": [
-            "IsHashRefWithData($1)",
-        ],
-        "prefix": "IsHashRefWithData",
-        "scope": "perl"
-    }
-}

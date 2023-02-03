@@ -3,7 +3,8 @@
         "body": [
             "${1:my \$Success = \$WebserviceHistoryObject->WebserviceHistoryUpdate(",
             "    ID           => 123,",
-            "    WebserviceID => \$WebserviceID,",
+            "    WebserviceID => \$WebserviceID",
+            "    Config       => \$ConfigHashRef,",
             "    UserID       => \$UserID,",
             ");}",
         ],

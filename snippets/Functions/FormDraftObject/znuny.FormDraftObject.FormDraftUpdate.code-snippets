@@ -3,7 +3,7 @@
         "body": [
             "${1:my \$Success = \$FormDraftObject->FormDraftUpdate(",
             "    FormData => {",
-            "        InformUserID => \$InformUserID, 124, ],",
+            "        InformUserID => [ \$InformUserID, 124, ],",
             "        Subject      => 'Request for information',",
             "        ...",
             "    \\},",

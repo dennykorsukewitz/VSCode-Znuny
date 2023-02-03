@@ -3,7 +3,7 @@
         "body": [
             "${1:my %Escalation = \$TicketObject->TicketEscalationDateCalculation(",
             "    Ticket => \$Param{Ticket\\},",
-            "    UserID => \$UserID,",
+            "    UserID => \$Param{UserID\\},",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationDateCalculation",

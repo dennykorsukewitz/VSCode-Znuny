@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.ElementExistsNot": {
+        "body": [
+            "${1:\$SeleniumObject->ElementExistsNot(",
+            "    Selector     => '#GroupID',",
+            "    SelectorType => 'css',        # optional",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.ElementExistsNot",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

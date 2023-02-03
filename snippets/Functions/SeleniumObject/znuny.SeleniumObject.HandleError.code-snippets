@@ -1,0 +1,10 @@
+{
+    "znuny.SeleniumObject.HandleError": {
+        "body": [
+            "${1:\$SeleniumObject->HandleError(\$@);}",
+        ],
+        "prefix": "znuny.SeleniumObject.HandleError",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

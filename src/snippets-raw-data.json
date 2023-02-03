@@ -1024,7 +1024,7 @@
                ]
             },
             "Parse" : {
-               "my $CalendarEventsData = $CalendarEventsObject->Parse(\n    TicketID    => $TicketID,\n    ArticleID   => $ArticleID,\n    String      => $ArticleContent, # parse specified text content\n    Attachments => { # parse attachments\n        Data => {\n            '4' => {\n                'Disposition' => 'attachment',\n                'ContentType' => 'text/calendar; charset=UTF-8; name=\"Some calendar name.ics\"',\n                'Filename'    => 'calendar.ics',\n                'FilesizeRaw' => '949'\n            },\n            '1' => {\n                'Disposition' => 'attachment',\n                'ContentType' => 'text/calendar; charset=UTF-8; name=\"Some calendar name1.ics\"',\n                'Filename'    => 'calendar1.ics',\n                'FilesizeRaw' => '2967'\n            },\n        },\n        Type => \"Article\", # specify type of attachments\n    },\n    ToTimeZone => $UserTimeZone,\n);" : [
+               "my $CalendarEventsData = $CalendarEventsObject->Parse(\n    TicketID    => $Param{TicketID},\n    ArticleID   => $Param{ArticleID},\n    String      => $ArticleContent, # parse specified text content\n    Attachments => { # parse attachments\n        Data => {\n            '4' => {\n                'Disposition' => 'attachment',\n                'ContentType' => 'text/calendar; charset=UTF-8; name=\"Some calendar name.ics\"',\n                'Filename'    => 'calendar.ics',\n                'FilesizeRaw' => '949'\n            },\n            '1' => {\n                'Disposition' => 'attachment',\n                'ContentType' => 'text/calendar; charset=UTF-8; name=\"Some calendar name1.ics\"',\n                'Filename'    => 'calendar1.ics',\n                'FilesizeRaw' => '2967'\n            },\n        },\n        Type => \"Article\", # specify type of attachments\n    },\n    ToTimeZone => $UserTimeZone,\n);" : [
                   "6.4",
                   "6.5"
                ]
@@ -1041,7 +1041,7 @@
          ],
          "Functions" : {
             "CalendarCreate" : {
-               "my %Calendar = $CalendarObject->CalendarCreate(\n    CalendarName    => 'Meetings',          # (required) Personal calendar name\n    GroupID         => $GroupID,                   # (required) GroupID\n    Color           => '#FF7700',           # (required) Color in hexadecimal RGB notation\n    UserID          => $UserID,                   # (required) UserID\n\n    TicketAppointments => [                 # (optional) Ticket appointments, array ref of hashes\n        {\n            StartDate => 'FirstResponse',\n            EndDate   => 'Plus_5',\n            QueueID   => $QueueID,\n            SearchParams => {\n                Title => 'This is a title',\n                Types => 'This is a type',\n            },\n        },\n    ],\n\n    ValidID => $ValidID,                   # (optional) Default is 1.\n);" : [
+               "my %Calendar = $CalendarObject->CalendarCreate(\n    CalendarName    => 'Meetings',          # (required) Personal calendar name\n    GroupID         => $GroupID,                   # (required) GroupID\n    Color           => '#FF7700',           # (required) Color in hexadecimal RGB notation\n    UserID          => $UserID,                   # (required) UserID\n\n    TicketAppointments => [                 # (optional) Ticket appointments, array ref of hashes\n        {\n            StartDate => 'FirstResponse',\n            EndDate   => 'Plus_5',\n            QueueID   => [ $QueueID ],\n            SearchParams => {\n                Title => 'This is a title',\n                Types => 'This is a type',\n            },\n        },\n    ],\n\n    ValidID => $ValidID,                   # (optional) Default is 1.\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -1083,7 +1083,7 @@
                ]
             },
             "CalendarUpdate" : {
-               "my $Success = $CalendarObject->CalendarUpdate(\n    CalendarID       => $CalendarID,                   # (required) CalendarID\n    GroupID          => $GroupID,                   # (required) Calendar group\n    CalendarName     => 'Meetings',          # (required) Personal calendar name\n    Color            => '#FF9900',           # (required) Color in hexadecimal RGB notation\n    UserID           => $UserID,                   # (required) UserID (who made update)\n    ValidID          => $ValidID,                   # (required) ValidID\n\n    TicketAppointments => [                 # (optional) Ticket appointments, array ref of hashes\n        {\n            StartDate => 'FirstResponse',\n            EndDate   => 'Plus_5',\n            QueueID   => $QueueID,\n            SearchParams => {\n                Title => 'This is a title',\n                Types => 'This is a type',\n            },\n        },\n    ],\n);" : [
+               "my $Success = $CalendarObject->CalendarUpdate(\n    CalendarID       => $CalendarID,                   # (required) CalendarID\n    GroupID          => $GroupID,                   # (required) Calendar group\n    CalendarName     => 'Meetings',          # (required) Personal calendar name\n    Color            => '#FF9900',           # (required) Color in hexadecimal RGB notation\n    UserID           => $UserID,                   # (required) UserID (who made update)\n    ValidID          => $ValidID,                   # (required) ValidID\n\n    TicketAppointments => [                 # (optional) Ticket appointments, array ref of hashes\n        {\n            StartDate => 'FirstResponse',\n            EndDate   => 'Plus_5',\n            QueueID   => [ $QueueID ],\n            SearchParams => {\n                Title => 'This is a title',\n                Types => 'This is a type',\n            },\n        },\n    ],\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -1118,7 +1118,7 @@
                ]
             },
             "TicketAppointmentProcessRule" : {
-               "my $Success = $CalendarObject->TicketAppointmentProcessRule(\n    CalendarID => $CalendarID,\n    Config => {\n        DynamicField_TestDate => {\n            Module => 'Kernel::System::Calendar::Ticket::DynamicField',\n        },\n        ...\n    },\n    Rule => {\n        StartDate => 'DynamicField_TestDate',\n        EndDate   => 'Plus_5',\n        QueueID   => $QueueID,\n        RuleID    => $RuleID,\n        SearchParams => {\n            Title => 'Welcome*',\n        },\n    },\n    TicketID => $TicketID,\n);" : [
+               "my $Success = $CalendarObject->TicketAppointmentProcessRule(\n    CalendarID => $CalendarID,\n    Config => {\n        DynamicField_TestDate => {\n            Module => 'Kernel::System::Calendar::Ticket::DynamicField',\n        },\n        ...\n    },\n    Rule => {\n        StartDate => 'DynamicField_TestDate',\n        EndDate   => 'Plus_5',\n        QueueID   => [ $QueueID ],\n        RuleID    => $RuleID,\n        SearchParams => {\n            Title => 'Welcome*',\n        },\n    },\n    TicketID => $TicketID,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -3087,7 +3087,7 @@
          ],
          "Functions" : {
             "FormDraftAdd" : {
-               "my $Success = $FormDraftObject->FormDraftAdd(\n    FormData => {\n        InformUserID => $InformUserID, 124, ],\n        Subject      => 'Request for information',\n        ...\n    },\n    FileData => [                                           # optional\n        {\n            'Content'     => 'Dear customer\\n\\nthank you!',\n            'ContentType' => 'text/plain',\n            'ContentID'   => undef,                         # optional\n            'Filename'    => 'thankyou.txt',\n            'Filesize'    => 25,\n            'FileID'      => 1,\n            'Disposition' => 'attachment',\n        },\n        ...\n    ],\n    ObjectType => 'Ticket',\n    ObjectID   => $ObjectID,\n    Action     => 'AgentTicketCompose',\n    Title      => 'my draft',                               # optional\n    UserID     => $UserID,\n);" : [
+               "my $Success = $FormDraftObject->FormDraftAdd(\n    FormData => {\n        InformUserID => [ $InformUserID, 124, ],\n        Subject      => 'Request for information',\n        ...\n    },\n    FileData => [                                           # optional\n        {\n            'Content'     => 'Dear customer\\n\\nthank you!',\n            'ContentType' => 'text/plain',\n            'ContentID'   => undef,                         # optional\n            'Filename'    => 'thankyou.txt',\n            'Filesize'    => 25,\n            'FileID'      => 1,\n            'Disposition' => 'attachment',\n        },\n        ...\n    ],\n    ObjectType => 'Ticket',\n    ObjectID   => $ObjectID,\n    Action     => 'AgentTicketCompose',\n    Title      => 'my draft',                               # optional\n    UserID     => $UserID,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -3115,7 +3115,7 @@
                ]
             },
             "FormDraftUpdate" : {
-               "my $Success = $FormDraftObject->FormDraftUpdate(\n    FormData => {\n        InformUserID => $InformUserID, 124, ],\n        Subject      => 'Request for information',\n        ...\n    },\n    FileData => [                                           # optional\n        {\n            'Content'     => 'Dear customer\\n\\nthank you!',\n            'ContentType' => 'text/plain',\n            'ContentID'   => undef,                         # optional\n            'Filename'    => 'thankyou.txt',\n            'Filesize'    => 25,\n            'FileID'      => 1,\n            'Disposition' => 'attachment',\n        },\n        ...\n    ],\n    ObjectType  => 'Ticket',\n    ObjectID    => $ObjectID,\n    Action      => 'AgentTicketCompose',\n    Title       => 'my draft',\n    FormDraftID => $FormDraftID,\n    UserID      => $UserID,\n);" : [
+               "my $Success = $FormDraftObject->FormDraftUpdate(\n    FormData => {\n        InformUserID => [ $InformUserID, 124, ],\n        Subject      => 'Request for information',\n        ...\n    },\n    FileData => [                                           # optional\n        {\n            'Content'     => 'Dear customer\\n\\nthank you!',\n            'ContentType' => 'text/plain',\n            'ContentID'   => undef,                         # optional\n            'Filename'    => 'thankyou.txt',\n            'Filesize'    => 25,\n            'FileID'      => 1,\n            'Disposition' => 'attachment',\n        },\n        ...\n    ],\n    ObjectType  => 'Ticket',\n    ObjectID    => $ObjectID,\n    Action      => 'AgentTicketCompose',\n    Title       => 'my draft',\n    FormDraftID => $FormDraftID,\n    UserID      => $UserID,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -3966,7 +3966,7 @@
          ],
          "Functions" : {
             "Delete" : {
-               "my $Success = $LastViewsObject->Delete(\n    SessionID => $SessionID,\n    Count     => 20,                    # option - deletes all views but the latest n\n);" : [
+               "my $Success = $LastViewsObject->Delete(\n    SessionID => $Param{SessionID},\n    Count     => 20,                    # option - deletes all views but the latest n\n);" : [
                   "6.4",
                   "6.5"
                ]
@@ -4014,7 +4014,7 @@
                ]
             },
             "Update" : {
-               "my $Success = $LastViewsObject->Update(\n    SessionID => $SessionID,\n    Request   => \\%Request,\n);" : [
+               "my $Success = $LastViewsObject->Update(\n    SessionID => $Self->{SessionID},\n    Request   => \\%Request,\n);" : [
                   "6.4",
                   "6.5"
                ]
@@ -4079,12 +4079,12 @@
                ]
             },
             "ArticleQuote" : {
-               "my $HTMLBody = $LayoutObject->ArticleQuote(\n    TicketID           => $TicketID,\n    ArticleID          => $ArticleID,\n    FormID             => $FormID,\n    UploadCacheObject   => $Self->{UploadCacheObject},\n    AttachmentsInclude => 1,\n);" : [
+               "my $HTMLBody = $LayoutObject->ArticleQuote(\n    TicketID           => $TicketID,\n    ArticleID          => $ArticleID,\n    FormID             => $Self->{FormID},\n    UploadCacheObject   => $Self->{UploadCacheObject},\n    AttachmentsInclude => 1,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
                ],
-               "my $HTMLBody = $LayoutObject->ArticleQuote(\n    TicketID           => $TicketID,\n    ArticleID          => $ArticleID,\n    FormID             => $FormID,\n    UploadCacheObject  => $Self->{UploadCacheObject},\n    AttachmentsInclude => 0,\n);" : [
+               "my $HTMLBody = $LayoutObject->ArticleQuote(\n    TicketID           => $TicketID,\n    ArticleID          => $ArticleID,\n    FormID             => $Self->{FormID},\n    UploadCacheObject  => $Self->{UploadCacheObject},\n    AttachmentsInclude => 0,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -4136,14 +4136,14 @@
                ]
             },
             "BuildSelection" : {
-               "my $HTML = $LayoutObject->BuildSelection(\n    Data            => $ArrayRef,        # use $HashRef, $ArrayRef or $ArrayHashRef (see below)\n    Name            => 'TheName',        # name of element\n    ID              => 'HTMLID',         # (optional) the HTML ID for this element, if not provided, the name will be used as ID as well\n    Multiple        => 0,                # (optional) default 0 (0|1)\n    Size            => 1,                # (optional) default 1 element size\n    Class           => 'class',          # (optional) a css class, include 'Modernize' to activate InputFields\n    Disabled        => 0,                # (optional) default 0 (0|1) disable the element\n    AutoComplete    => 'off',            # (optional)\n    OnChange        => 'javascript',     # (optional)\n    OnClick         => 'javascript',     # (optional)\n\n    SelectedID     => $SelectedID,                 # (optional) use integer or arrayref (unable to use with ArrayHashRef)\n    SelectedID     => $SelectedID, 5, 3],         # (optional) use integer or arrayref (unable to use with ArrayHashRef)\n    SelectedValue  => 'test',            # (optional) use string or arrayref (unable to use with ArrayHashRef)\n    SelectedValue  => ['test', 'test1'], # (optional) use string or arrayref (unable to use with ArrayHashRef)\n\n    Sort           => 'NumericValue',    # (optional) (AlphanumericValue|NumericValue|AlphanumericKey|NumericKey|TreeView|IndividualKey|IndividualValue) unable to use with ArrayHashRef\n    SortIndividual => ['sec', 'min']     # (optional) only sort is set to IndividualKey or IndividualValue\n    SortReverse    => 0,                 # (optional) reverse the list\n\n    Translation    => 1,                 # (optional) default 1 (0|1) translate value\n    PossibleNone   => 0,                 # (optional) default 0 (0|1) add a leading empty selection\n    TreeView       => 0,                 # (optional) default 0 (0|1)\n    DisabledBranch => 'Branch',          # (optional) disable all elements of this branch (use string or arrayref)\n    Max            => 100,               # (optional) default 100 max size of the shown value\n    HTMLQuote      => 0,                 # (optional) default 1 (0|1) disable html quote\n    Title          => 'C<Tooltip> Text',    # (optional) string will be shown as c<Tooltip> on c<mouseover>\n    OptionTitle    => 1,                 # (optional) default 0 (0|1) show title attribute (the option value) on every option element\n\n    Filters => {                         # (optional) filter data, used by InputFields\n        LastOwners => {                  # filter id\n            Name   => 'Last owners',     # name of the filter\n            Values => {                  # filtered data structure\n                Key1 => 'Value1',\n                Key2 => 'Value2',\n                Key3 => 'Value3',\n            },\n            Active => 1,                 # (optional) default 0 (0|1) make this filter immediately active\n        },\n        InvolvedAgents => {\n            Name   => 'Involved in this ticket',\n            Values => \\%HashWithData,\n        },\n    },\n    ExpandFilters  => 1,                 # (optional) default 0 (0|1) expand filters list by default\n\n    ValidateDateAfter  => '2016-01-01',  # (optional) validate that date is after supplied value\n    ValidateDateBefore => '2016-01-01',  # (optional) validate that date is before supplied value\n);" : [
+               "my $HTML = $LayoutObject->BuildSelection(\n    Data            => $ArrayRef,        # use $HashRef, $ArrayRef or $ArrayHashRef (see below)\n    Name            => 'TheName',        # name of element\n    ID              => 'HTMLID',         # (optional) the HTML ID for this element, if not provided, the name will be used as ID as well\n    Multiple        => 0,                # (optional) default 0 (0|1)\n    Size            => 1,                # (optional) default 1 element size\n    Class           => 'class',          # (optional) a css class, include 'Modernize' to activate InputFields\n    Disabled        => 0,                # (optional) default 0 (0|1) disable the element\n    AutoComplete    => 'off',            # (optional)\n    OnChange        => 'javascript',     # (optional)\n    OnClick         => 'javascript',     # (optional)\n\n    SelectedID     => $SelectedID,                 # (optional) use integer or arrayref (unable to use with ArrayHashRef)\n    SelectedID     => [$SelectedID, 5, 3],         # (optional) use integer or arrayref (unable to use with ArrayHashRef)\n    SelectedValue  => 'test',            # (optional) use string or arrayref (unable to use with ArrayHashRef)\n    SelectedValue  => ['test', 'test1'], # (optional) use string or arrayref (unable to use with ArrayHashRef)\n\n    Sort           => 'NumericValue',    # (optional) (AlphanumericValue|NumericValue|AlphanumericKey|NumericKey|TreeView|IndividualKey|IndividualValue) unable to use with ArrayHashRef\n    SortIndividual => ['sec', 'min']     # (optional) only sort is set to IndividualKey or IndividualValue\n    SortReverse    => 0,                 # (optional) reverse the list\n\n    Translation    => 1,                 # (optional) default 1 (0|1) translate value\n    PossibleNone   => 0,                 # (optional) default 0 (0|1) add a leading empty selection\n    TreeView       => 0,                 # (optional) default 0 (0|1)\n    DisabledBranch => 'Branch',          # (optional) disable all elements of this branch (use string or arrayref)\n    Max            => 100,               # (optional) default 100 max size of the shown value\n    HTMLQuote      => 0,                 # (optional) default 1 (0|1) disable html quote\n    Title          => 'C<Tooltip> Text',    # (optional) string will be shown as c<Tooltip> on c<mouseover>\n    OptionTitle    => 1,                 # (optional) default 0 (0|1) show title attribute (the option value) on every option element\n\n    Filters => {                         # (optional) filter data, used by InputFields\n        LastOwners => {                  # filter id\n            Name   => 'Last owners',     # name of the filter\n            Values => {                  # filtered data structure\n                Key1 => 'Value1',\n                Key2 => 'Value2',\n                Key3 => 'Value3',\n            },\n            Active => 1,                 # (optional) default 0 (0|1) make this filter immediately active\n        },\n        InvolvedAgents => {\n            Name   => 'Involved in this ticket',\n            Values => \\%HashWithData,\n        },\n    },\n    ExpandFilters  => 1,                 # (optional) default 0 (0|1) expand filters list by default\n\n    ValidateDateAfter  => '2016-01-01',  # (optional) validate that date is after supplied value\n    ValidateDateBefore => '2016-01-01',  # (optional) validate that date is before supplied value\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "BuildSelectionJSON" : {
-               "my $JSON = $LayoutObject->BuildSelectionJSON(\n    [\n        {\n            Data          => $ArrayRef,      # use $HashRef, $ArrayRef or $ArrayHashRef (see below)\n            Name          => 'TheName',      # name of element\n            SelectedID    => $SelectedID, 5, 3],      # (optional) use integer or arrayref (unable to use with ArrayHashRef)\n            SelectedValue => 'test',         # (optional) use string or arrayref (unable to use with ArrayHashRef)\n            Sort          => 'NumericValue', # (optional) (AlphanumericValue|NumericValue|AlphanumericKey|NumericKey|TreeView) unable to use with ArrayHashRef\n            SortReverse   => 0,              # (optional) reverse the list\n            Translation   => 1,              # (optional) default 1 (0|1) translate value\n            PossibleNone  => 0,              # (optional) default 0 (0|1) add a leading empty selection\n            Max => 100,                      # (optional) default 100 max size of the shown value\n        },\n        {\n            # ...\n        }\n    ]\n);" : [
+               "my $JSON = $LayoutObject->BuildSelectionJSON(\n    [\n        {\n            Data          => $ArrayRef,      # use $HashRef, $ArrayRef or $ArrayHashRef (see below)\n            Name          => 'TheName',      # name of element\n            SelectedID    => [$SelectedID, 5, 3],      # (optional) use integer or arrayref (unable to use with ArrayHashRef)\n            SelectedValue => 'test',         # (optional) use string or arrayref (unable to use with ArrayHashRef)\n            Sort          => 'NumericValue', # (optional) (AlphanumericValue|NumericValue|AlphanumericKey|NumericKey|TreeView) unable to use with ArrayHashRef\n            SortReverse   => 0,              # (optional) reverse the list\n            Translation   => 1,              # (optional) default 1 (0|1) translate value\n            PossibleNone  => 0,              # (optional) default 0 (0|1) add a leading empty selection\n            Max => 100,                      # (optional) default 100 max size of the shown value\n        },\n        {\n            # ...\n        }\n    ]\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -4695,7 +4695,7 @@
                ]
             },
             "LockLookup" : {
-               "my $Lock = $LockObject->LockLookup( LockID => 2 );" : [
+               "my $Lock = $LockObject->LockLookup( LockID => $LockID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -4872,14 +4872,14 @@
                ]
             },
             "Get" : {
-               "my $Item = $MailQueueObject->Get(\n    ID              => '...' # optional\n    ArticleID       => '...' # optional\n);" : [
+               "my $Item = $MailQueueObject->Get(\n    ID              => '...' # optional\n    ArticleID       => $ArticleID # optional\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "List" : {
-               "my $List = $MailQueueObject->List(\n    ID              => '...' # optional\n    ArticleID       => '...' # optional\n    Sender          => '...' # optional\n    Recipient       => '...' # optional\n    Attempts        => '...' # optional\n);" : [
+               "my $List = $MailQueueObject->List(\n    ID              => '...' # optional\n    ArticleID       => $ArticleID # optional\n    Sender          => '...' # optional\n    Recipient       => '...' # optional\n    Attempts        => '...' # optional\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -5876,7 +5876,7 @@
                ]
             },
             "SaveFormDraft" : {
-               "my $FormDraftID = $ParamObject->SaveFormDraft(\n    UserID         => $UserID,\n    ObjectID       => $ObjectID,\n    OverrideParams => {               # optional, can contain strings and array references\n        Subaction   => undef,\n        UserID      => $UserID,\n        CustomParam => [ 1, 2, 3, ],\n        ...\n    },\n);" : [
+               "my $FormDraftID = $ParamObject->SaveFormDraft(\n    UserID         => $UserID\n    ObjectType     => 'Ticket',\n    ObjectID       => $ObjectID,\n    OverrideParams => {               # optional, can contain strings and array references\n        Subaction   => undef,\n        UserID      => $UserID,\n        CustomParam => [ 1, 2, 3, ],\n        ...\n    },\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -6157,7 +6157,7 @@
          ],
          "Functions" : {
             "GetAllCustomQueues" : {
-               "my @Queues = $QueueObject->GetAllCustomQueues( UserID => 123 );" : [
+               "my @Queues = $QueueObject->GetAllCustomQueues( UserID => $UserID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -6289,7 +6289,7 @@
                ]
             },
             "QueueStandardTemplateMemberList" : {
-               "my %Queues = $QueueObject->QueueStandardTemplateMemberList( StandardTemplateID => 123 );" : [
+               "my %Queues = $QueueObject->QueueStandardTemplateMemberList( StandardTemplateID => $StandardTemplateID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -6299,7 +6299,7 @@
                   "6.4",
                   "6.5"
                ],
-               "my %Templates = $QueueObject->QueueStandardTemplateMemberList( QueueID => 123 );" : [
+               "my %Templates = $QueueObject->QueueStandardTemplateMemberList( QueueID => $QueueID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -6768,306 +6768,335 @@
          "ObjectManager" : "my $SearchProfileObject = $Kernel::OM->Get('Kernel::System::SearchProfile');",
          "Package" : "Kernel::System::SearchProfile"
       },
-      "Selenium" : {
+      "SeleniumObject" : {
          "FrameworkVersion" : [
+            "6.0",
             "6.4",
             "6.5"
          ],
          "Functions" : {
             "AJAXCompleted" : {
-               "$Selenium->AJAXCompleted();" : [
+               "$SeleniumObject->AJAXCompleted();" : [
                   "6.4",
                   "6.5"
                ]
             },
             "AgentInterface" : {
-               "$Selenium->AgentInterface(\n    Action      => 'AgentTicketZoom',\n    WaitForAJAX => 0,                     # optional, default 1\n);" : [
+               "$SeleniumObject->AgentInterface(\n    Action      => 'AgentTicketZoom',\n    WaitForAJAX => 0,                     # optional, default 1\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "AgentLogin" : {
-               "my %UserData = $Selenium->AgentLogin(\n    Groups => ['admin', 'users'],           # optional, list of groups to add this user to (rw rights)\n    Language => 'de'                        # optional, defaults to 'en' if not set\n);" : [
+               "my %UserData = $SeleniumObject->AgentLogin(\n    Groups => ['admin', 'users'],           # optional, list of groups to add this user to (rw rights)\n    Language => 'de'                        # optional, defaults to 'en' if not set\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "AgentRequest" : {
-               "$Selenium->AgentRequest(\n    Action      => 'CustomerUserSearch',\n    Param       => {\n        Term => 'test-customer-user'\n    }\n);" : [
+               "$SeleniumObject->AgentRequest(\n    Action      => 'CustomerUserSearch',\n    Param       => {\n        Term => 'test-customer-user'\n    }\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "CreateScreenshot" : {
-               "my $Success = $Selenium->CreateScreenshot();" : [
+               "my $Success = $SeleniumObject->CreateScreenshot();" : [
                   "6.4",
                   "6.5"
                ]
             },
             "CustomerInterface" : {
-               "$Selenium->CustomerInterface(\n    Action      => 'CustomerTicketMessage',\n    WaitForAJAX => 0,                      # optional, default 1\n);" : [
+               "$SeleniumObject->CustomerInterface(\n    Action      => 'CustomerTicketMessage',\n    WaitForAJAX => 0,                      # optional, default 1\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "CustomerRequest" : {
-               "$Selenium->CustomerRequest(\n    Action      => 'CustomerUserSearch',\n    Param       => {\n        Term => 'test-customer-user'\n    }\n);" : [
+               "$SeleniumObject->CustomerRequest(\n    Action      => 'CustomerUserSearch',\n    Param       => {\n        Term => 'test-customer-user'\n    }\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "CustomerUserLogin" : {
-               "my %CustomerUserData = $Selenium->CustomerUserLogin(\n    Language => 'de' # optional, defaults to 'en' if not set\n);" : [
+               "my %CustomerUserData = $SeleniumObject->CustomerUserLogin(\n    Language => 'de' # optional, defaults to 'en' if not set\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "DragAndDrop" : {
-               "$Selenium->DragAndDrop(\n    Element         => '.Element', # (required) css selector of element which should be dragged\n    Target          => '.Target',  # (required) css selector of element on which the dragged element should be dropped\n    TargetOffset    => {           # (optional) Offset for target. If not specified, the mouse will move to the middle of the element.\n        X   => 150,\n        Y   => 100,\n    }\n);" : [
+               "$SeleniumObject->DragAndDrop(\n    Element         => '.Element', # (required) css selector of element which should be dragged\n    Target          => '.Target',  # (required) css selector of element on which the dragged element should be dropped\n    TargetOffset    => {           # (optional) Offset for target. If not specified, the mouse will move to the middle of the element.\n        X   => 150,\n        Y   => 100,\n    }\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "ElementExists" : {
-               "$Selenium->ElementExists(\n    Selector     => '#GroupID',\n    SelectorType => 'css',        # optional\n);" : [
+               "$SeleniumObject->ElementExists(\n    Selector     => '#GroupID',\n    SelectorType => 'css',        # optional\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "ElementExistsNot" : {
-               "$Selenium->ElementExistsNot(\n    Selector     => '#GroupID',\n    SelectorType => 'css',        # optional\n);" : [
+               "$SeleniumObject->ElementExistsNot(\n    Selector     => '#GroupID',\n    SelectorType => 'css',        # optional\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "FindElementSave" : {
-               "my $Element = $Selenium->FindElementSave(\n    Selector     => '#GroupID',\n    SelectorType => 'css',        # optional\n);" : [
+               "my $Element = $SeleniumObject->FindElementSave(\n    Selector     => '#GroupID',\n    SelectorType => 'css',        # optional\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "GetScreenshotDirectory" : {
-               "my %ScreenshotDirectory = $Selenium->GetScreenshotDirectory(\n    Directory => 'Captured',\n);" : [
+               "my %ScreenshotDirectory = $SeleniumObject->GetScreenshotDirectory(\n    Directory => 'Captured',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "GetScreenshotFileName" : {
-               "my $ScreenshotFileName = $Selenium->GetScreenshotFileName(\n    Filename => 'ZnunyRocks',\n    # or\n    Line     => '359',\n    Function => 'InputFieldID',\n    Hook     => 'BEFORE',\n);" : [
+               "my $ScreenshotFileName = $SeleniumObject->GetScreenshotFileName(\n    Filename => 'ZnunyRocks',\n    # or\n    Line     => '359',\n    Function => 'InputFieldID',\n    Hook     => 'BEFORE',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "GetScreenshotURL" : {
-               "my $ScreenshotURL = $Selenium->GetScreenshotURL(\n    WebPath  = '/otrs-web/SeleniumScreenshots/ZnunyRocks/',\n    Filename = 'AgentTicketZoom',\n);" : [
+               "my $ScreenshotURL = $SeleniumObject->GetScreenshotURL(\n    WebPath  = '/otrs-web/SeleniumScreenshots/ZnunyRocks/',\n    Filename = 'AgentTicketZoom',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "GetSeleniumHome" : {
-               "my $SeleniumHome = $Selenium->GetSeleniumHome(\n    Directory => '/opt/otrs',\n);" : [
+               "my $SeleniumHome = $SeleniumObject->GetSeleniumHome(\n    Directory => '/opt/otrs',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "HandleError" : {
-               "$Selenium->HandleError($@);" : [
+               "$SeleniumObject->HandleError($@);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "InputExists" : {
-               "my $Result = $Selenium->InputExists(\n    Attribute => 'QueueID',\n);" : [
+               "my $Result = $SeleniumObject->InputExists(\n    Attribute => 'QueueID',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputFieldID" : {
-               "my $Result = $Selenium->InputFieldID(\n    Attribute => 'QueueID',\n);" : [
+               "my $Result = $SeleniumObject->InputFieldID(\n    Attribute => 'QueueID',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputFieldIDMapping" : {
-               "my $Result = $Selenium->InputFieldIDMapping(\n    Action  => 'AgentTicketZoom',\n    Mapping => {\n        ...\n        QueueID => $QueueID,\n        ...\n    },\n);" : [
+               "my $Result = $SeleniumObject->InputFieldIDMapping(\n    Action  => 'AgentTicketZoom',\n    Mapping => {\n        ...\n        QueueID => $QueueID,\n        ...\n    },\n);" : [
                   "6.4",
                   "6.5"
                ],
-               "my $Result = $Selenium->InputFieldIDMapping(\n    Action  => 'AgentTicketZoom',\n);" : [
+               "my $Result = $SeleniumObject->InputFieldIDMapping(\n    Action  => 'AgentTicketZoom',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputFieldValueSet" : {
-               "$Selenium->InputFieldValueSet(\n    Element => 'css-selector',              # (required) css selector\n    Value   => 3,                           # (optional) Value\n);" : [
+               "$SeleniumObject->InputFieldValueSet(\n    Element => 'css-selector',              # (required) css selector\n    Value   => 3,                           # (optional) Value\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "InputGet" : {
-               "my $Result = $Selenium->InputGet(\n    Attribute => 'QueueID',\n    Options   => {                          # optional\n        KeyOrValue => 'Value',              # default is 'Key'\n    }\n);" : [
+               "my $Result = $SeleniumObject->InputGet(\n    Attribute => 'QueueID',\n    Options   => {                          # optional\n        KeyOrValue => 'Value',              # default is 'Key'\n    }\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputHide" : {
-               "my $Result = $Selenium->InputHide(\n    Attribute => 'QueueID',\n);" : [
+               "my $Result = $SeleniumObject->InputHide(\n    Attribute => 'QueueID',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputMandatory" : {
-               "my $Result = $Selenium->InputMandatory(\n    Attribute => 'QueueID',\n    Mandatory => 1,         # 1 or 0\n);" : [
+               "my $Result = $SeleniumObject->InputMandatory(\n    Attribute => 'QueueID',\n    Mandatory => 1,         # 1 or 0\n);" : [
                   "6.4",
                   "6.5"
                ],
-               "my $Result = $Selenium->InputMandatory(\n    Attribute => 'QueueID',\n);" : [
+               "my $Result = $SeleniumObject->InputMandatory(\n    Attribute => 'QueueID',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputModule" : {
-               "my $Result = $Selenium->InputModule(\n    Action => 'QueueID',\n);" : [
+               "my $Result = $SeleniumObject->InputModule(\n    Action => 'QueueID',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputSet" : {
-               "my $Result = $Selenium->InputSet(\n    Attribute   => 'DynamicField_ExampleCheckbox',\n    WaitForAJAX => 0,                       # optional, default 1\n    Content     => undef,                   # optional, none removes content\n    Options     => {                        # optional\n        TriggerChange => 1,                 # default is 1\n    }\n);" : [
+               "my $Result = $SeleniumObject->InputSet(\n    Attribute   => 'DynamicField_ExampleCheckbox',\n    WaitForAJAX => 0,                       # optional, default 1\n    Content     => undef,                   # optional, none removes content\n    Options     => {                        # optional\n        TriggerChange => 1,                 # default is 1\n    }\n);" : [
                   "6.4",
                   "6.5"
                ],
-               "my $Result = $Selenium->InputSet(\n    Attribute   => 'QueueID',\n    WaitForAJAX => 0,                       # optional, default 1\n    Content     => 'Misc',                  # optional, none removes content\n    Options     => {                        # optional\n        KeyOrValue    => 'Value',           # default is 'Key'\n        TriggerChange => 0,                 # default is 1\n    }\n);" : [
+               "my $Result = $SeleniumObject->InputSet(\n    Attribute   => 'QueueID',\n    WaitForAJAX => 0,                       # optional, default 1\n    Content     => 'Misc',                  # optional, none removes content\n    Options     => {                        # optional\n        KeyOrValue    => 'Value',           # default is 'Key'\n        TriggerChange => 0,                 # default is 1\n    }\n);" : [
                   "6.4",
                   "6.5"
                ],
-               "my $Result = $Selenium->InputSet(\n    Attribute => 'DynamicField_NameOfYourDateOrDateTimeField',\n    Content   => {\n        Year   => '2016',\n        Month  => '08',\n        Day    => '30',\n        Hour   => '00',\n        Minute => '00',\n        Second => '00',\n        Used   => 1, # THIS ONE IS IMPORTANT -\n                   # if not set to 1 field will not get activated and though not transmitted\n    },\n    WaitForAJAX => 1,\n    Options     => {\n        TriggerChange => 1,\n    }\n);" : [
+               "my $Result = $SeleniumObject->InputSet(\n    Attribute => 'DynamicField_NameOfYourDateOrDateTimeField',\n    Content   => {\n        Year   => '2016',\n        Month  => '08',\n        Day    => '30',\n        Hour   => '00',\n        Minute => '00',\n        Second => '00',\n        Used   => 1, # THIS ONE IS IMPORTANT -\n                   # if not set to 1 field will not get activated and though not transmitted\n    },\n    WaitForAJAX => 1,\n    Options     => {\n        TriggerChange => 1,\n    }\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputShow" : {
-               "my $Result = $Selenium->InputShow(\n    Attribute => 'QueueID',\n);" : [
+               "my $Result = $SeleniumObject->InputShow(\n    Attribute => 'QueueID',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "InputType" : {
-               "my $Result = $Selenium->InputType(\n    FieldID => $FieldID,\n);" : [
+               "my $Result = $SeleniumObject->InputType(\n    FieldID => $FieldID,\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "Login" : {
-               "$Selenium->Login(\n    Type     => 'Agent', # Agent|Customer\n    User     => 'someuser',\n    Password => 'somepassword',\n);" : [
+               "$SeleniumObject->Login(\n    Type     => 'Agent', # Agent|Customer\n    User     => 'someuser',\n    Password => 'somepassword',\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "PageContains" : {
-               "$Selenium->PageContains(\n    String  => 'Ticked locked.',\n    Message => \"Page contains 'Ticket locked.'\" # optional - default\n);" : [
+               "$SeleniumObject->PageContains(\n    String  => 'Ticked locked.',\n    Message => \"Page contains 'Ticket locked.'\" # optional - default\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "PageContainsNot" : {
-               "$Selenium->PageContainsNot(\n    String  => 'Ticked locked.',\n    Message => \"Page does not contain 'Ticket locked.'\" # optional - default\n);" : [
+               "$SeleniumObject->PageContainsNot(\n    String  => 'Ticked locked.',\n    Message => \"Page does not contain 'Ticket locked.'\" # optional - default\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "PublicInterface" : {
-               "$Selenium->PublicInterface(\n    Action      => 'PublicFAQ',\n    WaitForAJAX => 0,             # optional, default 1\n);" : [
+               "$SeleniumObject->PublicInterface(\n    Action      => 'PublicFAQ',\n    WaitForAJAX => 0,             # optional, default 1\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "PublicRequest" : {
-               "$Selenium->PublicRequest(\n    Action      => 'PublicUserSearch',\n    Param       => {\n        Term => 'test-customer-user'\n    }\n);" : [
+               "$SeleniumObject->PublicRequest(\n    Action      => 'PublicUserSearch',\n    Param       => {\n        Term => 'test-customer-user'\n    }\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "RequestURLBuild" : {
-               "my $RequestURL = $Selenium->RequestURLBuild(\n    Interface   => 'Agent',           # or Customer or Public\n    Param       => {                  # optional\n        Action => AgentTicketZoom,\n    }\n);" : [
+               "my $RequestURL = $SeleniumObject->RequestURLBuild(\n    Interface   => 'Agent',           # or Customer or Public\n    Param       => {                  # optional\n        Action => AgentTicketZoom,\n    }\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "RunTest" : {
-               "$Selenium->RunTest( sub { ... } );" : [
+               "$SeleniumObject->RunTest( sub { ... } );" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "SelectOption" : {
-               "my $Success = $Selenium->SelectOption(\n    Selector => 'li.ui-menu-item',\n    Content  => 'ABCDEFG',\n);" : [
+               "my $Success = $SeleniumObject->SelectOption(\n    Selector => 'li.ui-menu-item',\n    Content  => 'ABCDEFG',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "SendKeys" : {
-               "my $Success = $Selenium->SendKeys(\n    Selector     => '#DynamicField_Test',\n    SelectorType => 'css',                  # optional\n    Content      => 'ABCDEFG',\n);" : [
+               "my $Success = $SeleniumObject->SendKeys(\n    Selector     => '#DynamicField_Test',\n    SelectorType => 'css',                  # optional\n    Content      => 'ABCDEFG',\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "SwitchToFrame" : {
-               "my $Success = $Selenium->SwitchToFrame(\n    FrameSelector => '.Iframe',     # (required) CSS selector of the frame element\n    WaitForLoad   => 1,             # (optional) Wait until the frame has loaded, if necessary\n    Time          => 20,            # (optional) Wait time in seconds (default 20)\n);" : [
+               "my $Success = $SeleniumObject->SwitchToFrame(\n    FrameSelector => '.Iframe',     # (required) CSS selector of the frame element\n    WaitForLoad   => 1,             # (optional) Wait until the frame has loaded, if necessary\n    Time          => 20,            # (optional) Wait time in seconds (default 20)\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "SwitchToMainWindow" : {
-               "$Selenium->SwitchToMainWindow(\n    WaitForAJAX => 0, # optional, default 1\n);" : [
+               "$SeleniumObject->SwitchToMainWindow(\n    WaitForAJAX => 0, # optional, default 1\n);" : [
                   "6.4",
                   "6.5"
                ]
             },
             "SwitchToPopUp" : {
-               "$Selenium->SwitchToPopUp(\n    WaitForAJAX => 0, # optional, default 1\n);" : [
+               "$SeleniumObject->SwitchToPopUp(\n    WaitForAJAX => 0, # optional, default 1\n);" : [
+                  "6.4",
+                  "6.5"
+               ]
+            },
+            "VerifiedClick" : {
+               "$SeleniumObject->VerifiedClick(\n    $Button             # optional, see Selenium docs\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "VerifiedGet" : {
-               "$Selenium->VerifiedGet(\n    $URL,\n);" : [
+               "$SeleniumObject->VerifiedGet(\n    $URL,\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "VerifiedRefresh" : {
-               "$Selenium->VerifiedRefresh();" : [
+               "$SeleniumObject->VerifiedRefresh();" : [
+                  "6.0",
+                  "6.4",
+                  "6.5"
+               ]
+            },
+            "VerifiedSubmit" : {
+               "$SeleniumObject->VerifiedSubmit();" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "WaitFor" : {
-               "my $Success = $Selenium->WaitFor(\n    AlertPresent   => 1,                                 # Wait until an alert, confirm or prompt dialog is present\n    Callback       => sub { ... }                        # Wait until function returns true\n    ElementExists  => 'xpath-selector'                   # Wait until an element is present\n    ElementExists  => ['css-selector', 'css'],\n    ElementMissing => 'xpath-selector',                  # Wait until an element is not present\n    ElementMissing => ['css-selector', 'css'],\n    JavaScript     => 'return $(\".someclass\").length',   # JavaScript code that checks condition\n    WindowCount    => 2,                                 # Wait until this many windows are open\n    Time           => 20,                                # optional, wait time in seconds (default 20)\n    SkipDie        => 1,                                 # Instead of a dying process do return the result of the wait for\n);" : [
+               "my $Success = $SeleniumObject->WaitFor(\n    AlertPresent   => 1,                                 # Wait until an alert, confirm or prompt dialog is present\n    Callback       => sub { ... }                        # Wait until function returns true\n    ElementExists  => 'xpath-selector'                   # Wait until an element is present\n    ElementExists  => ['css-selector', 'css'],\n    ElementMissing => 'xpath-selector',                  # Wait until an element is not present\n    ElementMissing => ['css-selector', 'css'],\n    JavaScript     => 'return $(\".someclass\").length',   # JavaScript code that checks condition\n    WindowCount    => 2,                                 # Wait until this many windows are open\n    Time           => 20,                                # optional, wait time in seconds (default 20)\n    SkipDie        => 1,                                 # Instead of a dying process do return the result of the wait for\n);" : [
                   "6.4",
                   "6.5"
+               ],
+               "my $Success = $SeleniumObject->WaitFor(\n    AlertPresent   => 1,                                 # Wait until an alert, confirm or prompt dialog is present\n    Callback       => sub { ... }                        # Wait until function returns true\n    ElementExists  => 'xpath-selector'                   # Wait until an element is present\n    ElementExists  => ['css-selector', 'css'],\n    ElementMissing => 'xpath-selector',                  # Wait until an element is not present\n    ElementMissing => ['css-selector', 'css'],\n    JavaScript     => 'return $(\".someclass\").length',   # JavaScript code that checks condition\n    WindowCount    => 2,                                 # Wait until this many windows are open\n    Time           => 20,                                # optional, wait time in seconds (default 20)\n);" : [
+                  "6.0"
                ]
             },
             "WaitForjQueryEventBound" : {
-               "$Selenium->WaitForjQueryEventBound(\n    CSSSelector => 'li > a#Test',       # (required) css selector\n    Event       => 'click',             # (optional) Specify event name. Default 'click'.\n);" : [
+               "$SeleniumObject->WaitForjQueryEventBound(\n    CSSSelector => 'li > a#Test',       # (required) css selector\n    Event       => 'click',             # (optional) Specify event name. Default 'click'.\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "get" : {
-               "$Selenium->get(\n    $URL,\n);" : [
+               "$SeleniumObject->get(\n    $URL,\n);" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "get_alert_text" : {
-               "my $AlertText = $Selenium->get_alert_text();" : [
+               "my $AlertText = $SeleniumObject->get_alert_text();" : [
+                  "6.0",
                   "6.4",
                   "6.5"
                ]
             }
          },
-         "ObjectManager" : "my $Selenium = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');",
+         "ObjectManager" : "my $SeleniumObject = $Kernel::OM->Get('Kernel::System::UnitTest::Selenium');",
          "Package" : "Kernel::System::UnitTest::Selenium"
       },
       "ServiceObject" : {
@@ -7097,7 +7126,7 @@
                ]
             },
             "GetAllCustomServices" : {
-               "my @Services = $ServiceObject->GetAllCustomServices( UserID => 123 );" : [
+               "my @Services = $ServiceObject->GetAllCustomServices( UserID => $UserID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -7110,7 +7139,6 @@
                ],
                "my $ServiceID = $ServiceObject->ServiceAdd(\n    Name     => 'Service Name',\n    ParentID => $ParentID,           # (optional)\n    ValidID  => $ValidID,\n    Comment  => 'Comment',    # (optional)\n    UserID   => $UserID,\n);" : [
                   "6.0",
-                  "6.4",
                   "6.5"
                ]
             },
@@ -7540,7 +7568,7 @@
                ]
             },
             "GetParams" : {
-               "my $Params = $StatsObject->GetParams( StatID => '123' );" : [
+               "my $Params = $StatsObject->GetParams( StatID => $StatID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -7610,7 +7638,7 @@
                ]
             },
             "StatsDelete" : {
-               "$StatsObject->StatsDelete( StatID => '123' );" : [
+               "$StatsObject->StatsDelete( StatID => $StatID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8091,7 +8119,7 @@
                ]
             },
             "SettingEffectiveValueCheck" : {
-               "my %Result = $SysConfigObject->SettingEffectiveValueCheck(\n    EffectiveValue => 'open',     # (optional)\n    XMLContentParsed => {         # (required)\n        Value => [\n            {\n                'Item' => [\n                    {\n                        'Content' => \"Scalar value\",\n                    },\n                ],\n            },\n        ],\n    },\n    StoreCache            => 1,               # (optional) Store result in the Cache. Default 0.\n    SettingUID            => $SettingUID,               # (optional) no value type validation.\n    CurrentSystemTime     => 1507894796935,   # (optional) Use provided 1507894796935, otherwise calculate\n    ExpireTime            => 1507894896935,   # (optional) Use provided ExpireTime for cache, otherwise calculate\n    UserID                => $UserID,               # (required) UserID\n);" : [
+               "my %Result = $SysConfigObject->SettingEffectiveValueCheck(\n    EffectiveValue => 'open',     # (optional)\n    XMLContentParsed => {         # (required)\n        Value => [\n            {\n                'Item' => [\n                    {\n                        'Content' => \"Scalar value\",\n                    },\n                ],\n            },\n        ],\n    },\n    StoreCache            => 1,               # (optional) Store result in the Cache. Default 0.\n    SettingUID            => $SettingUID    # (required if StoreCache)\n    NoValidation          => 1,               # (optional) no value type validation.\n    CurrentSystemTime     => 1507894796935,   # (optional) Use provided 1507894796935, otherwise calculate\n    ExpireTime            => 1507894896935,   # (optional) Use provided ExpireTime for cache, otherwise calculate\n    UserID                => $UserID,               # (required) UserID\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8140,7 +8168,7 @@
                ]
             },
             "SettingReset" : {
-               "my $Result = $SysConfigObject->SettingReset(\n    Name                  => 'Setting Name',                # (required) Setting name\n    TargetUserID          => $TargetUserID,                             # (optional) UserID for settings in AgentPreferences\n                                                            # or\n    ExclusiveLockGUID     => $ExclusiveLockGUID,                # (optional) the GUID used to locking the setting\n    UserID                => $UserID,                             # (required) UserID that creates modification\n);" : [
+               "my $Result = $SysConfigObject->SettingReset(\n    Name                  => 'Setting Name',                # (required) Setting name\n    TargetUserID          => $TargetUserID,                             # (optional) UserID for settings in AgentPreferences\n                                                            # or\n    ExclusiveLockGUID     => $LockingString,                # (optional) the GUID used to locking the setting\n    UserID                => $UserID,                             # (required) UserID that creates modification\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8154,7 +8182,7 @@
                ]
             },
             "SettingUpdate" : {
-               "my %Result = $SysConfigObject->SettingUpdate(\n    Name                   => 'Setting::Name',           # (required) setting name\n    IsValid                => 1,                         # (optional) 1 or 0, modified 0\n    EffectiveValue         => $SettingEffectiveValue,    # (optional)\n    UserModificationActive => 0,                         # (optional) 1 or 0, modified 0\n    TargetUserID           => $TargetUserID,                         # (optional) ID of the user for which the modified setting is meant,\n                                                         #   leave it undef for global changes.\n    ExclusiveLockGUID      => $ExclusiveLockGUID,            # the GUID used to locking the setting\n    UserID                 => $UserID,                         # (required) UserID\n    NoValidation           => 1,                         # (optional) no value type validation.\n);" : [
+               "my %Result = $SysConfigObject->SettingUpdate(\n    Name                   => 'Setting::Name',           # (required) setting name\n    IsValid                => 1,                         # (optional) 1 or 0, modified 0\n    EffectiveValue         => $SettingEffectiveValue,    # (optional)\n    UserModificationActive => 0,                         # (optional) 1 or 0, modified 0\n    TargetUserID           => $TargetUserID,                         # (optional) ID of the user for which the modified setting is meant,\n                                                         #   leave it undef for global changes.\n    ExclusiveLockGUID      => $LockingString,            # the GUID used to locking the setting\n    UserID                 => $UserID,                         # (required) UserID\n    NoValidation           => 1,                         # (optional) no value type validation.\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8397,7 +8425,7 @@
          ],
          "Functions" : {
             "Attributes" : {
-               "my %Attributes = $TemplateGeneratorObject->Attributes(\n    TicketID   => $TicketID,\n    ArticleID  => $ArticleID,\n    ResponseID => $ResponseID,\n    Action     => 'Forward', # Possible values are Reply and Forward, Reply is default.\n);" : [
+               "my %Attributes = $TemplateGeneratorObject->Attributes(\n    TicketID   => $TicketID,\n    ArticleID  => $ArticleID,\n    ResponseID => $ResponseID\n    UserID     => $UserID,\n    Action     => 'Forward', # Possible values are Reply and Forward, Reply is default.\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8456,7 +8484,7 @@
                ]
             },
             "Template" : {
-               "my $Template = $TemplateGeneratorObject->Template(\n    TemplateID => $TemplateID,                  # Optional\n    Data       => $ArticleHashRef,      # Optional\n    UserID     => $UserID,\n);" : [
+               "my $Template = $TemplateGeneratorObject->Template(\n    TemplateID => $TemplateID\n    TicketID   => $TicketID,                  # Optional\n    Data       => $ArticleHashRef,      # Optional\n    UserID     => $UserID,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8621,7 +8649,7 @@
                   "6.4",
                   "6.5"
                ],
-               "my $Success = $TicketObject->TicketAcl(\n    Data => {                            # Values to restrict\n        1 => AgentTicketZoom,\n        # ...\n    },\n\n    Action        => 'AgentTicketZoom',           # Optional\n    TicketID      => $TicketID,                         # Optional\n    DynamicField  => {                            # Optional\n        DynamicField_NameX => 123,\n        DynamicField_NameZ => 'some value',\n    },\n\n    QueueID          => $QueueID,                      # Optional\n    Queue            => 'some queue name',        # Optional\n    NewQueueID       => $NewQueueID,                      # Optional, QueueID or NewQueueID can be\n                                                  #   used and they both refers to QueueID\n\n    ServiceID        => $ServiceID,                      # Optional\n    Service          => 'some service name',      # Optional\n\n    TypeID           => $TypeID,\n    Type             => 'some ticket type name',  # Optional\n\n    PriorityID       => $PriorityID,                      # Optional\n    NewPriorityID    => $NewPriorityID,                      # Optional, PriorityID or NewPriorityID can be\n                                                  #   used and they both refers to PriorityID\n    Priority         => 'some priority name',     # Optional\n\n    SLAID            => $SLAID,\n    SLA              => 'some SLA name',          # Optional\n\n    StateID          => $StateID,                      # Optional\n    NextStateID      => $NextStateID,                      # Optional, StateID or NextStateID can be\n                                                  #   used and they both refers to StateID\n    State            => 'some ticket state name', # Optional\n\n    OwnerID          => $OwnerID,                      # Optional\n    NewOwnerID       => $NewOwnerID,                      # Optional, OwnerID or NewOwnerID can be\n                                                  #   used and they both refers to OwnerID\n    Owner            => 'some user login'         # Optional\n\n    ResponsibleID    => $ResponsibleID,                      # Optional\n    NewResponsibleID => $NewResponsibleID,                      # Optional, ResponsibleID or NewResposibleID\n                                                  #   can be used and they both refers to\n                                                  #     ResponsibleID\n    Responsible      => 'some user login'         # Optional\n\n    ReturnType     => 'Action',                   # To match Possible, PossibleAdd or\n                                                  #   PossibleNot key in ACL\n    ReturnSubType  => '-',                        # To match Possible, PossibleAdd or\n                                                  #   PossibleNot sub-key in ACL\n\n    UserID         => $UserID,                        # UserID => $UserID,           # UserID or CustomerUserID are mandatory\n\n    # Process Management Parameters\n    ProcessEntityID        => $ProcessEntityID,                # Optional\n    ActivityEntityID       => $ActivityEntityID,                # Optional\n    ActivityDialogEntityID => $ActivityDialogEntityID,                # Optional\n);" : [
+               "my $Success = $TicketObject->TicketAcl(\n    Data => {                            # Values to restrict\n        1 => AgentTicketZoom,\n        # ...\n    },\n\n    Action        => 'AgentTicketZoom',           # Optional\n    TicketID      => $TicketID,                         # Optional\n    DynamicField  => {                            # Optional\n        DynamicField_NameX => 123,\n        DynamicField_NameZ => 'some value',\n    },\n\n    QueueID          => $QueueID,                      # Optional\n    Queue            => 'some queue name',        # Optional\n    NewQueueID       => $NewQueueID,                      # Optional, QueueID or NewQueueID can be\n                                                  #   used and they both refers to QueueID\n\n    ServiceID        => $ServiceID,                      # Optional\n    Service          => 'some service name',      # Optional\n\n    TypeID           => $TypeID,\n    Type             => 'some ticket type name',  # Optional\n\n    PriorityID       => $PriorityID,                      # Optional\n    NewPriorityID    => $NewPriorityID,                      # Optional, PriorityID or NewPriorityID can be\n                                                  #   used and they both refers to PriorityID\n    Priority         => 'some priority name',     # Optional\n\n    SLAID            => $SLAID,\n    SLA              => 'some SLA name',          # Optional\n\n    StateID          => $StateID,                      # Optional\n    NextStateID      => $NextStateID,                      # Optional, StateID or NextStateID can be\n                                                  #   used and they both refers to StateID\n    State            => 'some ticket state name', # Optional\n\n    OwnerID          => $OwnerID,                      # Optional\n    NewOwnerID       => $NewOwnerID,                      # Optional, OwnerID or NewOwnerID can be\n                                                  #   used and they both refers to OwnerID\n    Owner            => 'some user login'         # Optional\n\n    ResponsibleID    => $ResponsibleID,                      # Optional\n    NewResponsibleID => $NewResponsibleID,                      # Optional, ResponsibleID or NewResposibleID\n                                                  #   can be used and they both refers to\n                                                  #     ResponsibleID\n    Responsible      => 'some user login'         # Optional\n\n    ReturnType     => 'Action',                   # To match Possible, PossibleAdd or\n                                                  #   PossibleNot key in ACL\n    ReturnSubType  => '-',                        # To match Possible, PossibleAdd or\n                                                  #   PossibleNot sub-key in ACL\n\n    UserID         => $UserID,                        # UserID => 1 is not affected by this function\n    CustomerUserID => $CustomerUserID,           # UserID or CustomerUserID are mandatory\n\n    # Process Management Parameters\n    ProcessEntityID        => $ProcessEntityID,                # Optional\n    ActivityEntityID       => $ActivityEntityID,                # Optional\n    ActivityDialogEntityID => $ActivityDialogEntityID,                # Optional\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8642,7 +8670,7 @@
                ]
             },
             "TicketArchiveFlagGet" : {
-               "if ( $TicketObject->TicketArchiveFlagGet( TicketID => 123 ) ) {\n    print \"Ticket is archived!\\n\";\n}\nelse {\n    print \"Ticket is not archived!\\n\";\n}" : [
+               "if ( $TicketObject->TicketArchiveFlagGet( TicketID => $TicketID ) ) {\n    print \"Ticket is archived!\\n\";\n}\nelse {\n    print \"Ticket is not archived!\\n\";\n}" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8742,21 +8770,21 @@
                ]
             },
             "TicketEscalationDateCalculation" : {
-               "my %Escalation = $TicketObject->TicketEscalationDateCalculation(\n    Ticket => $Param{Ticket},\n    UserID => $UserID,\n);" : [
+               "my %Escalation = $TicketObject->TicketEscalationDateCalculation(\n    Ticket => $Param{Ticket},\n    UserID => $Param{UserID},\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "TicketEscalationIndexBuild" : {
-               "my $Success = $TicketObject->TicketEscalationIndexBuild(\n    TicketID => $TicketID,\n    UserID   => $UserID,\n);" : [
+               "my $Success = $TicketObject->TicketEscalationIndexBuild(\n    TicketID => $Param{TicketID},\n    UserID   => $Param{UserID},\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
                ]
             },
             "TicketEscalationPreferences" : {
-               "my %Escalation = $TicketObject->TicketEscalationPreferences(\n    Ticket => $Param{Ticket},\n    UserID => $UserID,\n);" : [
+               "my %Escalation = $TicketObject->TicketEscalationPreferences(\n    Ticket => $Param{Ticket},\n    UserID => $Param{UserID},\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -8995,7 +9023,7 @@
                ]
             },
             "TicketQueueSet" : {
-               "my $Success = $TicketObject->TicketQueueSet(\n    Queue    => 'Some Queue Name',\n    TicketID => $TicketID,\n    Comment  => 'some comment', # optional\n    ForceNotificationToUserID => $ForceNotificationToUserID,43,56], # if you want to force somebody\n    UserID   => $UserID,\n);" : [
+               "my $Success = $TicketObject->TicketQueueSet(\n    Queue    => 'Some Queue Name',\n    TicketID => $TicketID,\n    Comment  => 'some comment', # optional\n    ForceNotificationToUserID => [$ForceNotificationToUserID,43,56], # if you want to force somebody\n    UserID   => $UserID,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -9065,8 +9093,11 @@
                ]
             },
             "TicketSearch" : {
-               "my @TicketIDs = $TicketObject->TicketSearch(\n    # result (optional, default is 'HASH')\n    Result => 'ARRAY' || 'HASH' || 'COUNT',\n\n    # limit the number of found tickets (optional, default is 10000)\n    Limit => 100,\n\n    # Use TicketSearch as a ticket filter on a single ticket,\n    # or a predefined ticket list\n    TicketID     => $TicketID,\n    TicketID     => $TicketID, 1235],\n\n    # ticket number (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    TicketNumber => $TicketNumber,\n    TicketNumber => $TicketNumber, '%123666%'],\n\n    # ticket title (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    # When ConditionInline is set then remaining whitespace will be treated as a && condition and\n    # and the settings of ContentSearchPrefix and ContentSearchSuffix will be honored.\n    Title => '%SomeText%',\n    Title => ['%SomeTest1%', '%SomeTest2%'],\n\n    Queues   => ['system queue', 'other queue'],\n    QueueIDs => [1, 42, 512],\n\n    # use also sub queues of Queue|Queues in search\n    UseSubQueues => 0,\n\n    # You can use types like normal, ...\n    Types   => ['normal', 'change', 'incident'],\n    TypeIDs => [3, 4],\n\n    # You can use states like new, open, pending reminder, ...\n    States   => ['new', 'open'],\n    StateIDs => [3, 4],\n\n    # (Open|Closed) tickets for all closed or open tickets.\n    StateType => 'Open',\n\n    # You also can use real state types like new, open, closed,\n    # pending reminder, pending auto, removed and merged.\n    StateType    => ['open', 'new'],\n    StateTypeIDs => [1, 2, 3],\n\n    Priorities  => ['1 very low', '2 low', '3 normal'],\n    PriorityIDs => [1, 2, 3],\n\n    Services   => ['Service A', 'Service B'],\n    ServiceIDs => [1, 2, 3],\n\n    SLAs   => ['SLA A', 'SLA B'],\n    SLAIDs => [1, 2, 3],\n\n    Locks   => ['unlock'],\n    LockIDs => [1, 2, 3],\n\n    OwnerIDs => [1, 12, 455, 32]\n\n    ResponsibleIDs => [1, 12, 455, 32]\n\n    WatchUserIDs => [1, 12, 455, 32]\n\n    # CustomerID (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    CustomerID => $CustomerID,\n    CustomerID => $CustomerID, 'ABC'],\n\n    # CustomerIDRaw (optional) as STRING or as ARRAYREF\n    # CustomerID without QueryCondition checking.\n    # The param CustomerID will be ignored when CustomerIDRaw is set.\n    # The raw values will be quoted and combined with 'OR' for the query.\n    CustomerIDRaw => '123 + 345',\n    CustomerIDRaw => ['123', 'ABC','123 && 456','ABC % efg'],\n\n    # CustomerUserLogin (optional) as STRING as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    CustomerUserLogin => 'uid123',\n    CustomerUserLogin => ['uid123', 'uid777'],\n\n    # CustomerUserLoginRaw (optional) as STRING as ARRAYREF\n    # CustomerUserLogin without QueryCondition checking.\n    # The param CustomerUserLogin will be ignored when CustomerUserLoginRaw is set.\n    # The raw values will be quoted and combined with 'OR' for the query.\n    CustomerUserLoginRaw => 'uid',\n    CustomerUserLoginRaw => 'uid + 123',\n    CustomerUserLoginRaw => ['uid  -  123', 'uid # 777 + 321'],\n\n    # create ticket properties (optional)\n    CreatedUserIDs     => [1, 12, 455, 32]\n    CreatedTypes       => ['normal', 'change', 'incident'],\n    CreatedTypeIDs     => [1, 2, 3],\n    CreatedPriorities  => ['1 very low', '2 low', '3 normal'],\n    CreatedPriorityIDs => [1, 2, 3],\n    CreatedStates      => ['new', 'open'],\n    CreatedStateIDs    => [3, 4],\n    CreatedQueues      => ['system queue', 'other queue'],\n    CreatedQueueIDs    => [1, 42, 512],\n\n    # DynamicFields\n    #   At least one operator must be specified. Operators will be connected with AND,\n    #       values in an operator with OR.\n    #   You can also pass more than one argument to an operator: ['value1', 'value2']\n    DynamicField_FieldNameX => {\n        Empty             => 1,                       # will return dynamic fields without a value\n                                                      # set to 0 to search fields with a value present\n        Equals            => 123,\n        Like              => 'value*',                # \"equals\" operator with wildcard support\n        GreaterThan       => '2001-01-01 01:01:01',\n        GreaterThanEquals => '2001-01-01 01:01:01',\n        SmallerThan       => '2002-02-02 02:02:02',\n        SmallerThanEquals => '2002-02-02 02:02:02',\n    }" : [
+               "my @TicketIDs = $TicketObject->TicketSearch(\n    # result (optional, default is 'HASH')\n    Result => 'ARRAY' || 'HASH' || 'COUNT',\n\n    # limit the number of found tickets (optional, default is 10000)\n    Limit => 100,\n\n    # Use TicketSearch as a ticket filter on a single ticket,\n    # or a predefined ticket list\n    TicketID     => $TicketID,\n    TicketID     => [$TicketID, 1235],\n\n    # ticket number (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    TicketNumber => '%123546%',\n    TicketNumber => ['%123546%', '%123666%'],\n\n    # ticket title (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    # When ConditionInline is set then remaining whitespace will be treated as a && condition and\n    # and the settings of ContentSearchPrefix and ContentSearchSuffix will be honored.\n    Title => '%SomeText%',\n    Title => ['%SomeTest1%', '%SomeTest2%'],\n\n    Queues   => ['system queue', 'other queue'],\n    QueueIDs => [1, 42, 512],\n\n    # use also sub queues of Queue|Queues in search\n    UseSubQueues => 0,\n\n    # You can use types like normal, ...\n    Types   => ['normal', 'change', 'incident'],\n    TypeIDs => [3, 4],\n\n    # You can use states like new, open, pending reminder, ...\n    States   => ['new', 'open'],\n    StateIDs => [3, 4],\n\n    # (Open|Closed) tickets for all closed or open tickets.\n    StateType => 'Open',\n\n    # You also can use real state types like new, open, closed,\n    # pending reminder, pending auto, removed and merged.\n    StateType    => ['open', 'new'],\n    StateTypeIDs => [1, 2, 3],\n\n    Priorities  => ['1 very low', '2 low', '3 normal'],\n    PriorityIDs => [1, 2, 3],\n\n    Services   => ['Service A', 'Service B'],\n    ServiceIDs => [1, 2, 3],\n\n    SLAs   => ['SLA A', 'SLA B'],\n    SLAIDs => [1, 2, 3],\n\n    Locks   => ['unlock'],\n    LockIDs => [1, 2, 3],\n\n    OwnerIDs => [1, 12, 455, 32]\n\n    ResponsibleIDs => [1, 12, 455, 32]\n\n    WatchUserIDs => [1, 12, 455, 32]\n\n    # CustomerID (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    CustomerID => $CustomerID,\n    CustomerID => [$CustomerID],\n\n    # CustomerIDRaw (optional) as STRING or as ARRAYREF\n    # CustomerID without QueryCondition checking.\n    # The param CustomerID will be ignored when CustomerIDRaw is set.\n    # The raw values will be quoted and combined with 'OR' for the query.\n    CustomerIDRaw => '123 + 345',\n    CustomerIDRaw => ['123', 'ABC','123 && 456','ABC % efg'],\n\n    # CustomerUserLogin (optional) as STRING as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    CustomerUserLogin => 'uid123',\n    CustomerUserLogin => ['uid123', 'uid777'],\n\n    # CustomerUserLoginRaw (optional) as STRING as ARRAYREF\n    # CustomerUserLogin without QueryCondition checking.\n    # The param CustomerUserLogin will be ignored when CustomerUserLoginRaw is set.\n    # The raw values will be quoted and combined with 'OR' for the query.\n    CustomerUserLoginRaw => 'uid',\n    CustomerUserLoginRaw => 'uid + 123',\n    CustomerUserLoginRaw => ['uid  -  123', 'uid # 777 + 321'],\n\n    # create ticket properties (optional)\n    CreatedUserIDs     => [1, 12, 455, 32]\n    CreatedTypes       => ['normal', 'change', 'incident'],\n    CreatedTypeIDs     => [1, 2, 3],\n    CreatedPriorities  => ['1 very low', '2 low', '3 normal'],\n    CreatedPriorityIDs => [1, 2, 3],\n    CreatedStates      => ['new', 'open'],\n    CreatedStateIDs    => [3, 4],\n    CreatedQueues      => ['system queue', 'other queue'],\n    CreatedQueueIDs    => [1, 42, 512],\n\n    # DynamicFields\n    #   At least one operator must be specified. Operators will be connected with AND,\n    #       values in an operator with OR.\n    #   You can also pass more than one argument to an operator: ['value1', 'value2']\n    DynamicField_FieldNameX => {\n        Empty             => 1,                       # will return dynamic fields without a value\n                                                      # set to 0 to search fields with a value present\n        Equals            => 123,\n        Like              => 'value*',                # \"equals\" operator with wildcard support\n        GreaterThan       => '2001-01-01 01:01:01',\n        GreaterThanEquals => '2001-01-01 01:01:01',\n        SmallerThan       => '2002-02-02 02:02:02',\n        SmallerThanEquals => '2002-02-02 02:02:02',\n    }" : [
                   "6.0",
+                  "6.5"
+               ],
+               "my @TicketIDs = $TicketObject->TicketSearch(\n    # result (optional, default is 'HASH')\n    Result => 'ARRAY' || 'HASH' || 'COUNT',\n\n    # limit the number of found tickets (optional, default is 10000)\n    Limit => 100,\n\n    # Use TicketSearch as a ticket filter on a single ticket,\n    # or a predefined ticket list\n    TicketID     => $TicketID,\n    TicketID     => [$TicketID, 1235],\n\n    # ticket number (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    TicketNumber => '%123546%',\n    TicketNumber => ['%123546%', '%123666%'],\n\n    # ticket title (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    # When ConditionInline is set then remaining whitespace will be treated as a && condition and\n    # and the settings of ContentSearchPrefix and ContentSearchSuffix will be honored.\n    Title => '%SomeText%',\n    Title => ['%SomeTest1%', '%SomeTest2%'],\n\n    Queues   => ['system queue', 'other queue'],\n    QueueIDs => [1, 42, 512],\n\n    # use also sub queues of Queue|Queues in search\n    UseSubQueues => 0,\n\n    # You can use types like normal, ...\n    Types   => ['normal', 'change', 'incident'],\n    TypeIDs => [3, 4],\n\n    # You can use states like new, open, pending reminder, ...\n    States   => ['new', 'open'],\n    StateIDs => [3, 4],\n\n    # (Open|Closed) tickets for all closed or open tickets.\n    StateType => 'Open',\n\n    # You also can use real state types like new, open, closed,\n    # pending reminder, pending auto, removed and merged.\n    StateType    => ['open', 'new'],\n    StateTypeIDs => [1, 2, 3],\n\n    Priorities  => ['1 very low', '2 low', '3 normal'],\n    PriorityIDs => [1, 2, 3],\n\n    Services   => ['Service A', 'Service B'],\n    ServiceIDs => [1, 2, 3],\n\n    SLAs   => ['SLA A', 'SLA B'],\n    SLAIDs => [1, 2, 3],\n\n    Locks   => ['unlock'],\n    LockIDs => [1, 2, 3],\n\n    OwnerIDs => [1, 12, 455, 32]\n\n    ResponsibleIDs => [1, 12, 455, 32]\n\n    WatchUserIDs => [1, 12, 455, 32]\n\n    # CustomerID (optional) as STRING or as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    CustomerID => $CustomerID,\n    CustomerID => [$CustomerID],\n\n    # CustomerIDRaw (optional) as STRING or as ARRAYREF\n    # CustomerID without QueryCondition checking.\n    # The param CustomerID will be ignored when CustomerIDRaw is set.\n    # The raw values will be quoted and combined with 'OR' for the query.\n    CustomerIDRaw => '123 + 345',\n    CustomerIDRaw => ['123', 'ABC','123 && 456','ABC % efg'],\n\n    # CustomerUserLogin (optional) as STRING as ARRAYREF\n    # The value will be treated as a SQL query expression.\n    CustomerUserLogin => 'uid123',\n    CustomerUserLogin => ['uid123', 'uid777'],\n\n    # CustomerUserLoginRaw (optional) as STRING as ARRAYREF\n    # CustomerUserLogin without QueryCondition checking.\n    # The param CustomerUserLogin will be ignored when CustomerUserLoginRaw is set.\n    # The raw values will be quoted and combined with 'OR' for the query.\n    CustomerUserLoginRaw => 'uid',\n    CustomerUserLoginRaw => 'uid + 123',\n    CustomerUserLoginRaw => ['uid  -  123', 'uid # 777 + 321'],\n\n    # create ticket properties (optional)\n    CreatedUserIDs     => [1, 12, 455, 32]\n    CreatedTypes       => ['normal', 'change', 'incident'],\n    CreatedTypeIDs     => [1, 2, 3],\n    CreatedPriorities  => ['1 very low', '2 low', '3 normal'],\n    CreatedPriorityIDs => [1, 2, 3],\n    CreatedStates      => ['new', 'open'],\n    CreatedStateIDs    => [3, 4],\n    CreatedQueues      => ['system queue', 'other queue'],\n    CreatedQueueIDs    => [1, 42, 512],\n\n    # DynamicFields\n    #   At least one operator must be specified. Operators will be connected with AND,\n    #       values in an operator with OR.\n    #   You can also pass more than one argument to an operator: ['value1', 'value2']\n    DynamicField_FieldNameX => {\n        Empty             => 1,                       # will return dynamic fields without a value\n                                                      # set to 0 to search fields with a value present\n        Equals            => 123,\n        Like              => 'value*',                # \"equals\" operator with wildcard support\n        GreaterThan       => '2001-01-01 01:01:01',\n        GreaterThanEquals => '2001-01-01 01:01:01',\n        SmallerThan       => '2002-02-02 02:02:02',\n        SmallerThanEquals => '2002-02-02 02:02:02',\n    },\n\n    # User ID for searching tickets by ticket flags (optional, defaults to UserID)\n    TicketFlagUserID => $TicketFlagUserID,\n\n    # search for ticket flags\n    TicketFlag => {\n        Seen => 1,\n    },\n\n    # search for ticket flag that is absent, or a different value than the\n    # one given:\n    NotTicketFlag => {\n        Seen => 1,\n    },\n\n    # User ID for searching tickets by article flags (optional, defaults to UserID)\n    ArticleFlagUserID => $ArticleFlagUserID,\n\n\n    # search for tickets by the presence of flags on articles\n    ArticleFlag => {\n        Important => 1,\n    },\n\n    # article stuff (optional)\n    MIMEBase_From    => '%spam@example.com%',\n    MIMEBase_To      => '%service@example.com%',\n    MIMEBase_Cc      => '%client@example.com%',\n    MIMEBase_Subject => '%VIRUS 32%',\n    MIMEBase_Body    => '%VIRUS 32%',\n\n    # attachment stuff (optional, applies only for ArticleStorageDB)\n    AttachmentName => '%anyfile.txt%',\n\n    # use full article text index if configured (optional, defaults to off)\n    FullTextIndex => 1,\n\n    # article content search (AND or OR for From, To, Cc, Subject and Body) (optional, defaults to 'AND')\n    ContentSearch => 'AND',\n\n    # article content search prefix (for From, To, Cc, Subject and Body) (optional, defaults to '*')\n    # For Title the default is the empty string.\n    ContentSearchPrefix => '*',\n\n    # article content search suffix (for From, To, Cc, Subject and Body) (optional, defaults to '*')\n    # For Title the default is the empty string.\n    ContentSearchSuffix => '*',\n\n    # content conditions for From, To, Cc, Subject, Body,\n    # and Title (all optional)\n    # For Title it also activates ContentSearchPrefix and ContentSearchSuffix,\n    ConditionInline => 1,\n\n    # articles created more than 60 minutes ago (article older than 60 minutes) (optional)\n    ArticleCreateTimeOlderMinutes => 60,\n    # articles created less than 120 minutes ago (article newer than 60 minutes) (optional)\n    ArticleCreateTimeNewerMinutes => 120,\n\n    # articles with create time after ... (article newer than this date) (optional)\n    ArticleCreateTimeNewerDate => '2006-01-09 00:00:01',\n    # articles with created time before ... (article older than this date) (optional)\n    ArticleCreateTimeOlderDate => '2006-01-19 23:59:59',\n\n    # tickets created more than 60 minutes ago (ticket older than 60 minutes)  (optional)\n    TicketCreateTimeOlderMinutes => 60,\n    # tickets created less than 120 minutes ago (ticket newer than 120 minutes) (optional)\n    TicketCreateTimeNewerMinutes => 120,\n\n    # tickets with create time after ... (ticket newer than this date) (optional)\n    TicketCreateTimeNewerDate => '2006-01-09 00:00:01',\n    # tickets with created time before ... (ticket older than this date) (optional)\n    TicketCreateTimeOlderDate => '2006-01-19 23:59:59',\n\n    # ticket history entries that created more than 60 minutes ago (optional)\n    TicketChangeTimeOlderMinutes => 60,\n    # ticket history entries that created less than 120 minutes ago (optional)\n    TicketChangeTimeNewerMinutes => 120,\n\n    # ticket history entry create time after ... (ticket history entries newer than this date) (optional)\n    TicketChangeTimeNewerDate => '2006-01-09 00:00:01',\n    # ticket history entry create time before ... (ticket history entries older than this date) (optional)\n    TicketChangeTimeOlderDate => '2006-01-19 23:59:59',\n\n    # tickets changed more than 60 minutes ago (optional)\n    TicketLastChangeTimeOlderMinutes => 60,\n    # tickets changed less than 120 minutes ago (optional)\n    TicketLastChangeTimeNewerMinutes => 120,\n\n    # tickets with changed time after ... (ticket changed newer than this date) (optional)\n    TicketLastChangeTimeNewerDate => '2006-01-09 00:00:01',\n    # tickets with changed time before ... (ticket changed older than this date) (optional)\n    TicketLastChangeTimeOlderDate => '2006-01-19 23:59:59',\n\n    # tickets closed more than 60 minutes ago (optional)\n    TicketCloseTimeOlderMinutes => 60,\n    # tickets closed less than 120 minutes ago (optional)\n    TicketCloseTimeNewerMinutes => 120,\n\n    # tickets with closed time after ... (ticket closed newer than this date) (optional)\n    TicketCloseTimeNewerDate => '2006-01-09 00:00:01',\n    # tickets with closed time before ... (ticket closed older than this date) (optional)\n    TicketCloseTimeOlderDate => '2006-01-19 23:59:59',\n\n    # tickets with last close time more than 60 minutes ago (optional)\n    TicketLastCloseTimeOlderMinutes => 60,\n    # tickets with last close time less than 120 minutes ago (optional)\n    TicketLastCloseTimeNewerMinutes => 120,\n\n    # tickets with last close time after ... (ticket last close newer than this date) (optional)\n    TicketLastCloseTimeNewerDate => '2006-01-09 00:00:01',\n    # tickets with last close time before ... (ticket last close older than this date) (optional)\n    TicketLastCloseTimeOlderDate => '2006-01-19 23:59:59',\n\n    # tickets with pending time of more than 60 minutes ago (optional)\n    TicketPendingTimeOlderMinutes => 60,\n    # tickets with pending time of less than 120 minutes ago (optional)\n    TicketPendingTimeNewerMinutes => 120,\n\n    # tickets with pending time after ... (optional)\n    TicketPendingTimeNewerDate => '2006-01-09 00:00:01',\n    # tickets with pending time before ... (optional)\n    TicketPendingTimeOlderDate => '2006-01-19 23:59:59',\n\n    # you can use all following escalation options with this four different ways of escalations\n    # TicketEscalationTime...\n    # TicketEscalationUpdateTime...\n    # TicketEscalationResponseTime...\n    # TicketEscalationSolutionTime...\n\n    # ticket escalation time of more than 60 minutes ago (optional)\n    TicketEscalationTimeOlderMinutes => -60,\n    # ticket escalation time of less than 120 minutes ago (optional)\n    TicketEscalationTimeNewerMinutes => -120,\n\n    # tickets with escalation time after ... (optional)\n    TicketEscalationTimeNewerDate => '2006-01-09 00:00:01',\n    # tickets with escalation time before ... (optional)\n    TicketEscalationTimeOlderDate => '2006-01-09 23:59:59',\n\n    # search in archive (optional)\n    # if archiving is on, if not specified the search processes unarchived only\n    # 'y' searches archived tickets, 'n' searches unarchived tickets\n    # if specified together all tickets are searched\n    ArchiveFlags => ['y', 'n'],\n\n    # OrderBy (optional, default is 'Down')\n    OrderBy => 'Down',  # Down|Up\n    # SortBy (optional, default is 'Age')\n    SortBy  => 'Age',   # Created|Owner|Responsible|CustomerID|State|TicketNumber|Queue|Priority|Age|Type|Lock\n                        # Changed|Title|Service|SLA|PendingTime|EscalationTime\n                        # EscalationUpdateTime|EscalationResponseTime|EscalationSolutionTime\n                        # DynamicField_FieldNameX\n\n    # OrderBy and SortBy as ARRAY for sub sorting (optional)\n    OrderBy => ['Down', 'Up'],\n    SortBy  => ['Priority', 'Age'],\n\n    # user search (UserID is required)\n    UserID     => $UserID,\n    Permission => 'ro' || 'rw', # optional, default is 'ro'\n\n    # customer search (CustomerUserID is required)\n    CustomerUserID => $CustomerUserID,\n    Permission     => 'ro' || 'rw', # optional, default is 'ro'\n\n    # CacheTTL, cache search result in seconds (optional, the default is four minutes)\n    CacheTTL => 60 * 15,\n);" : [
                   "6.4",
                   "6.5"
                ]
@@ -9443,7 +9474,7 @@
                ]
             },
             "TransitionActionList" : {
-               "my $TransitionActionList = $TransitionActionObject->TransitionActionList(\n    TransitionActionEntityID => $TransitionActionEntityID, 'TA2', 'TA3',],\n);" : [
+               "my $TransitionActionList = $TransitionActionObject->TransitionActionList(\n    TransitionActionEntityID => [$TransitionActionEntityID,],\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -9461,7 +9492,7 @@
          ],
          "Functions" : {
             "TransitionCheck" : {
-               "my $TransitionCheck = $TransitionObject->TransitionCheck(\n    TransitionEntityID => $TransitionEntityID,\n    or\n    TransitionEntityID => $TransitionEntityID, 'T2', 'T3'],\n    Data       => {\n        Queue         => 'Raw',\n        DynamicField1 => 'Value',\n        Subject       => 'Testsubject',\n        ...\n    },\n);" : [
+               "my $TransitionCheck = $TransitionObject->TransitionCheck(\n    TransitionEntityID => $TransitionEntityID,\n    or\n    TransitionEntityID => [$TransitionEntityID],\n    Data       => {\n        Queue         => 'Raw',\n        DynamicField1 => 'Value',\n        Subject       => 'Testsubject',\n        ...\n    },\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -9701,10 +9732,10 @@
                ]
             },
             "Run" : {
-               "$Self->Run(\n    Name                   => ['JSON', 'User'],     # optional, execute certain test files only\n    Directory              => 'Selenium',           # optional, execute tests in subdirectory\n    Verbose                => 1,                    # optional (default 0), only show result details for all tests, not just failing\n    SubmitURL              => $URL,                 # optional, send results to unit test result server\n    SubmitAuth             => $SubmitAuth # optional authentication string for unit test result server\n    SubmitResultAsExitCode => 1,                    # optional, specify if exit code should not indicate if tests were ok/not ok, but if submission was successful instead\n    JobID                  => $JobID,                   # optional job ID for unit test submission to server\n    Scenario               => 'OTRS 6 git',         # optional scenario identifier for unit test submission to server\n    PostTestScripts        => ['...'],              # Script(s) to execute after a test has been run.\n                                                    #  You can specify %File%, %TestOk% and %TestNotOk% as dynamic arguments.\n    PreSubmitScripts       => ['...'],              # Script(s) to execute after all tests have been executed\n                                                    #  and the results are about to be sent to the server.\n    NumberOfTestRuns       => 10,                   # optional (default 1), number of successive runs for every single unit test\n);" : [
+               "$Self->Run(\n    Name                   => ['JSON', 'User'],     # optional, execute certain test files only\n    Directory              => 'Selenium',           # optional, execute tests in subdirectory\n    Verbose                => 1,                    # optional (default 0), only show result details for all tests, not just failing\n    SubmitURL              => $URL,                 # optional, send results to unit test result server\n    SubmitAuth             => $SubmitAuth, # optional authentication string for unit test result server\n    SubmitResultAsExitCode => 1,                    # optional, specify if exit code should not indicate if tests were ok/not ok, but if submission was successful instead\n    JobID                  => $JobID,                   # optional job ID for unit test submission to server\n    Scenario               => 'OTRS 6 git',         # optional scenario identifier for unit test submission to server\n    PostTestScripts        => ['...'],              # Script(s) to execute after a test has been run.\n                                                    #  You can specify %File%, %TestOk% and %TestNotOk% as dynamic arguments.\n    PreSubmitScripts       => ['...'],              # Script(s) to execute after all tests have been executed\n                                                    #  and the results are about to be sent to the server.\n    NumberOfTestRuns       => 10,                   # optional (default 1), number of successive runs for every single unit test\n);" : [
                   "6.0"
                ],
-               "$Self->Run(\n    Tests                  => ['JSON', 'User'],             # optional, execute certain test files only\n    Directory              => ['Selenium', 'User'],         # optional, execute tests in subdirectory\n    ExcludeDirectory       => ['Selenium/Agent/Admin'],     # optional, all test files in the specified directory will be Excluded.\n    SOPMFile               => ['ITSMCore.sopm'],            # optional, execute all test files which are defined in these sopm.\n    Verbose                => 1,                            # optional (default 0), only show result details for all tests, not just failing\n    SubmitURL              => $URL,                         # optional, send results to unit test result server\n    SubmitAuth             => $SubmitAuth         # optional authentication string for unit test result server\n    SubmitResultAsExitCode => 1,                            # optional, specify if exit code should not indicate if tests were ok/not ok, but if submission was successful instead\n    JobID                  => $JobID,                           # optional job ID for unit test submission to server\n    Scenario               => 'Znuny 6 git',                # optional scenario identifier for unit test submission to server\n    PostTestScripts        => ['...'],                      # Script(s) to execute after a test has been run.\n                                                            #  You can specify %File%, %TestOk% and %TestNotOk% as dynamic arguments.\n    PreSubmitScripts       => ['...'],                      # Script(s) to execute after all tests have been executed\n                                                            #  and the results are about to be sent to the server.\n    NumberOfTestRuns       => 10,                           # optional (default 1), number of successive runs for every single unit test\n);" : [
+               "$Self->Run(\n    Tests                  => ['JSON', 'User'],             # optional, execute certain test files only\n    Directory              => ['Selenium', 'User'],         # optional, execute tests in subdirectory\n    ExcludeDirectory       => ['Selenium/Agent/Admin'],     # optional, all test files in the specified directory will be Excluded.\n    SOPMFile               => ['ITSMCore.sopm'],            # optional, execute all test files which are defined in these sopm.\n    Verbose                => 1,                            # optional (default 0), only show result details for all tests, not just failing\n    SubmitURL              => $URL,                         # optional, send results to unit test result server\n    SubmitAuth             => $SubmitAuth,         # optional authentication string for unit test result server\n    SubmitResultAsExitCode => 1,                            # optional, specify if exit code should not indicate if tests were ok/not ok, but if submission was successful instead\n    JobID                  => $JobID,                           # optional job ID for unit test submission to server\n    Scenario               => 'Znuny 6 git',                # optional scenario identifier for unit test submission to server\n    PostTestScripts        => ['...'],                      # Script(s) to execute after a test has been run.\n                                                            #  You can specify %File%, %TestOk% and %TestNotOk% as dynamic arguments.\n    PreSubmitScripts       => ['...'],                      # Script(s) to execute after all tests have been executed\n                                                            #  and the results are about to be sent to the server.\n    NumberOfTestRuns       => 10,                           # optional (default 1), number of successive runs for every single unit test\n);" : [
                   "6.4",
                   "6.5"
                ]
@@ -10226,7 +10257,7 @@
                ]
             },
             "FormIDRemove" : {
-               "$WebUploadCacheObject->FormIDRemove( FormID => 123456 );" : [
+               "$WebUploadCacheObject->FormIDRemove( FormID => $FormID );" : [
                   "6.0",
                   "6.4",
                   "6.5"
@@ -10327,7 +10358,7 @@
                ]
             },
             "WebserviceHistoryUpdate" : {
-               "my $Success = $WebserviceHistoryObject->WebserviceHistoryUpdate(\n    ID           => 123,\n    WebserviceID => $WebserviceID,\n    UserID       => $UserID,\n);" : [
+               "my $Success = $WebserviceHistoryObject->WebserviceHistoryUpdate(\n    ID           => 123,\n    WebserviceID => $WebserviceID\n    Config       => $ConfigHashRef,\n    UserID       => $UserID,\n);" : [
                   "6.0",
                   "6.4",
                   "6.5"

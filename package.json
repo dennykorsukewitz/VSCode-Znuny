@@ -31,6 +31,7 @@
   "contributes": {
     "snippets": [
 
+
       {
         "language": "xml",
         "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.xml.code-snippets"
@@ -44,47 +45,50 @@
         "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.js.code-snippets"
       },
 
+
       {
         "language": "xml",
-        "path": "./snippets/ConfigXML/znuny.config.array.code-snippets"
+        "path": "./snippets/ConfigXML/znuny.Config.Array.code-snippets"
       },
       {
         "language": "xml",
-        "path": "./snippets/ConfigXML/znuny.config.hash.code-snippets"
+        "path": "./snippets/ConfigXML/znuny.Config.Hash.code-snippets"
       },
       {
         "language": "xml",
-        "path": "./snippets/ConfigXML/znuny.config.select.code-snippets"
+        "path": "./snippets/ConfigXML/znuny.Config.Select.code-snippets"
       },
       {
         "language": "xml",
-        "path": "./snippets/ConfigXML/znuny.config.string.code-snippets"
+        "path": "./snippets/ConfigXML/znuny.Config.String.code-snippets"
       },
       {
         "language": "xml",
-        "path": "./snippets/ConfigXML/znuny.config.textarea.code-snippets"
+        "path": "./snippets/ConfigXML/znuny.Config.Textarea.code-snippets"
       },
+
 
       {
         "language": "css",
-        "path": "./snippets/Customizing/znuny.codemarker.css.code-snippets"
+        "path": "./snippets/Customizing/znuny.Codemarker.css.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/Customizing/znuny.codemarker.js.code-snippets"
+        "path": "./snippets/Customizing/znuny.Codemarker.js.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Customizing/znuny.codemarker.pm.code-snippets"
+        "path": "./snippets/Customizing/znuny.Codemarker.pm.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/Customizing/znuny.origin.js.code-snippets"
+        "path": "./snippets/Customizing/znuny.Origin.js.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Customizing/znuny.origin.pm.code-snippets"
+        "path": "./snippets/Customizing/znuny.Origin.pm.code-snippets"
       },
+
 
       {
         "language": "javascript",
@@ -92,15 +96,15 @@
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.dumper.log.ObjectManager.code-snippets"
+        "path": "./snippets/Debugging/znuny.Dumper.Log.ObjectManager.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.dumper.log.Self.code-snippets"
+        "path": "./snippets/Debugging/znuny.Dumper.Log.Self.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.erlog.dumper.code-snippets"
+        "path": "./snippets/Debugging/znuny.ERLOG.Dumper.code-snippets"
       },
       {
         "language": "perl",
@@ -108,49 +112,63 @@
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.erlog.traceback.code-snippets"
+        "path": "./snippets/Debugging/znuny.ERLOG.traceback.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.stderr.dumper.code-snippets"
+        "path": "./snippets/Debugging/znuny.STDERR.Dumper.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.stderr.here.code-snippets"
+        "path": "./snippets/Debugging/znuny.STDERR.HERE.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Debugging/znuny.stderr.string.code-snippets"
+        "path": "./snippets/Debugging/znuny.STDERR.String.code-snippets"
       },
+
 
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.checkbox.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.Checkbox.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.date.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.Date.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.datetime.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.DateTime.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.dropdown.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.Dropdown.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.multiselect.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.Multiselect.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.text.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.Text.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/DynamicFields/znuny.dynamicfield.textarea.code-snippets"
+        "path": "./snippets/DynamicFields/znuny.DynamicField.TextArea.code-snippets"
       },
+      {
+        "language": "perl",
+        "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceDropdown.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceMultiselect.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceText.code-snippets"
+      },
+
 
       {
         "language": "yaml",
@@ -177,13 +195,14 @@
         "path": "./snippets/GitLab/znuny.GitLab.PostgreSQL.code-snippets"
       },
 
+
       {
         "language": "perl",
-        "path": "./snippets/Language/znuny.language.doubleqoute.code-snippets"
+        "path": "./snippets/Language/znuny.Language.Doubleqoute.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Language/znuny.language.singleqoute.code-snippets"
+        "path": "./snippets/Language/znuny.Language.Singleqoute.code-snippets"
       },
       {
         "path": "./snippets/Licensing/znuny.AGPL.code-snippets"
@@ -193,22 +212,24 @@
         "path": "./snippets/Licensing/znuny.AGPL.js.code-snippets"
       },
 
+
       {
         "language": "perl",
-        "path": "./snippets/Needed/znuny.needed.ObjectManager.code-snippets"
+        "path": "./snippets/Needed/znuny.Needed.ObjectManager.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Needed/znuny.needed.Self.code-snippets"
+        "path": "./snippets/Needed/znuny.Needed.Self.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Needed/znuny.needed.subelement.ObjectManager.code-snippets"
+        "path": "./snippets/Needed/znuny.Needed.Subelement.ObjectManager.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Needed/znuny.needed.subelement.Self.code-snippets"
+        "path": "./snippets/Needed/znuny.Needed.Subelement.Self.code-snippets"
       },
+
 
       {
         "language": "perl",
@@ -291,6 +312,7 @@
         "path": "./snippets/Perl/use_base.code-snippets"
       },
 
+
       {
         "language": "perl",
         "path": "./snippets/POD/znuny.POD.AGPL.footer.code-snippets"
@@ -300,10 +322,7 @@
         "path": "./snippets/POD/znuny.POD.header.code-snippets"
       },
 
-      {
-        "language": "perl",
-        "path": "./snippets/Selenium/znuny.Selenium.login.code-snippets"
-      },
+
       {
         "language": "perl",
         "path": "./snippets/Selenium/znuny.Selenium.clear.code-snippets"
@@ -348,42 +367,23 @@
         "language": "perl",
         "path": "./snippets/Selenium/znuny.Selenium.submit.code-snippets"
       },
-      {
-        "language": "perl",
-        "path": "./snippets/Selenium/znuny.Selenium.VerifiedClick.code-snippets"
-      },
-      {
-        "language": "perl",
-        "path": "./snippets/Selenium/znuny.Selenium.VerifiedGet.code-snippets"
-      },
-      {
-        "language": "perl",
-        "path": "./snippets/Selenium/znuny.Selenium.VerifiedRefresh.code-snippets"
-      },
-      {
-        "language": "perl",
-        "path": "./snippets/Selenium/znuny.Selenium.VerifiedSubmit.code-snippets"
-      },
-      {
-        "language": "perl",
-        "path": "./snippets/Selenium/znuny.Selenium.WaitFor.code-snippets"
-      },
+
 
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/dataisdifferent.code-snippets"
+        "path": "./snippets/VariableCheck/DataIsDifferent.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/isarrayrefwithdata.code-snippets"
+        "path": "./snippets/VariableCheck/IsArrayRefWithData.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/ishashrefwithdata.code-snippets"
+        "path": "./snippets/VariableCheck/IsHashRefWithData.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/isinteger.code-snippets"
+        "path": "./snippets/VariableCheck/IsInteger.code-snippets"
       },
       {
         "language": "perl",
@@ -399,19 +399,19 @@
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/isnumber.code-snippets"
+        "path": "./snippets/VariableCheck/IsNumber.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/ispositiveinteger.code-snippets"
+        "path": "./snippets/VariableCheck/IsPositiveInteger.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/isstring.code-snippets"
+        "path": "./snippets/VariableCheck/IsString.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/VariableCheck/isstringwithdata.code-snippets"
+        "path": "./snippets/VariableCheck/IsStringWithData.code-snippets"
       },
       {
         "language": "perl",
@@ -3857,191 +3857,199 @@
       },
       {
         "language": "perl",
-        "path": "./snippets/ObjectManager/znuny.ObjectManager.Selenium.code-snippets"
+        "path": "./snippets/ObjectManager/znuny.ObjectManager.SeleniumObject.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.AJAXCompleted.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.AJAXCompleted.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.AgentInterface.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.AgentInterface.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.AgentLogin.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.AgentLogin.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.AgentRequest.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.AgentRequest.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.CreateScreenshot.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.CreateScreenshot.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.CustomerInterface.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.CustomerInterface.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.CustomerRequest.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.CustomerRequest.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.CustomerUserLogin.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.CustomerUserLogin.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.DragAndDrop.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.DragAndDrop.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.ElementExists.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.ElementExists.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.ElementExistsNot.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.ElementExistsNot.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.FindElementSave.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.FindElementSave.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.GetScreenshotDirectory.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.GetScreenshotDirectory.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.GetScreenshotFileName.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.GetScreenshotFileName.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.GetScreenshotURL.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.GetScreenshotURL.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.GetSeleniumHome.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.GetSeleniumHome.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.HandleError.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.HandleError.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputExists.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputExists.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputFieldID.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputFieldID.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputFieldIDMapping.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputFieldIDMapping.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputFieldValueSet.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputFieldValueSet.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputGet.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputGet.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputHide.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputHide.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputMandatory.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputMandatory.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputModule.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputModule.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputSet.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputSet.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputShow.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputShow.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.InputType.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.InputType.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.Login.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.Login.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.PageContains.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.PageContains.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.PageContainsNot.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.PageContainsNot.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.PublicInterface.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.PublicInterface.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.PublicRequest.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.PublicRequest.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.RequestURLBuild.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.RequestURLBuild.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.RunTest.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.RunTest.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.SelectOption.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.SelectOption.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.SendKeys.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.SendKeys.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.SwitchToFrame.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.SwitchToFrame.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.SwitchToMainWindow.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.SwitchToMainWindow.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.SwitchToPopUp.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.SwitchToPopUp.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.VerifiedGet.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.VerifiedClick.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.VerifiedRefresh.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.VerifiedGet.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.WaitFor.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.VerifiedRefresh.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.WaitForjQueryEventBound.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.VerifiedSubmit.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.get.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.WaitFor.code-snippets"
       },
       {
         "language": "perl",
-        "path": "./snippets/Functions/Selenium/znuny.Selenium.get_alert_text.code-snippets"
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.WaitForjQueryEventBound.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.get.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.get_alert_text.code-snippets"
       },
       {
         "language": "perl",

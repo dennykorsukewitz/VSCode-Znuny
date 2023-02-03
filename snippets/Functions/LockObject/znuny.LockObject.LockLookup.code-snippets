@@ -1,7 +1,7 @@
 {
     "znuny.LockObject.LockLookup": {
         "body": [
-            "${1:my \$Lock = \$LockObject->LockLookup( LockID => 2 );}",
+            "${1:my \$Lock = \$LockObject->LockLookup( LockID => \$LockID );}",
             "${2:my \$LockID = \$LockObject->LockLookup( Lock => 'lock' );}",
         ],
         "prefix": "znuny.LockObject.LockLookup",

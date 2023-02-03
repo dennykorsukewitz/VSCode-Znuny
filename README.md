@@ -15,25 +15,41 @@ DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny developme
 
 ## Features
 
-- Znuny code snippets for fast, consistent and error free coding.
+### Snippets
+
+Znuny code snippets for fast, consistent and error free coding.
+
+![snippets](doc/images/snippets.gif)
+
+#### Static
+
+Statically created snippets.
+
   - CodePolicy
   - ConfigXML
   - Customizing
   - Debugging
   - DynamicFields
-  - Functions
   - GitLab
   - Language
   - Licensing
-  - Modules
   - Needed
-  - ObjectManager
   - Perl
   - POD
   - Selenium
   - VariableCheck
 
-![snippets](doc/images/snippets.gif)
+#### Generated
+
+Snippets created generically using the existing perl POD.
+
+  - Functions
+    - Kernel/System/**
+  - Modules
+    - Kernel/Modules/**
+  - ObjectManager
+    - Kernel/System/**
+
 
 ## Installation
 

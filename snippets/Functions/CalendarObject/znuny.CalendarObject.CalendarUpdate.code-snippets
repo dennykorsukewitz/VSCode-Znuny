@@ -13,7 +13,7 @@
             "        {",
             "            StartDate => 'FirstResponse',",
             "            EndDate   => 'Plus_5',",
-            "            QueueID   => \$QueueID,",
+            "            QueueID   => [ \$QueueID ],",
             "            SearchParams => {",
             "                Title => 'This is a title',",
             "                Types => 'This is a type',",

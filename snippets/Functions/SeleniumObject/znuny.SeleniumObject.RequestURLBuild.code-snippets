@@ -1,0 +1,15 @@
+{
+    "znuny.SeleniumObject.RequestURLBuild": {
+        "body": [
+            "${1:my \$RequestURL = \$SeleniumObject->RequestURLBuild(",
+            "    Interface   => 'Agent',           # or Customer or Public",
+            "    Param       => {                  # optional",
+            "        Action => AgentTicketZoom,",
+            "    \\}",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.RequestURLBuild",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

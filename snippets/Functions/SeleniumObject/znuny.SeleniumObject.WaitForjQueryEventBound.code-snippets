@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.WaitForjQueryEventBound": {
+        "body": [
+            "${1:\$SeleniumObject->WaitForjQueryEventBound(",
+            "    CSSSelector => 'li > a#Test',       # (required) css selector",
+            "    Event       => 'click',             # (optional) Specify event name. Default 'click'.",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.WaitForjQueryEventBound",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

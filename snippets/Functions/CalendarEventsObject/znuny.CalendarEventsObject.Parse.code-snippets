@@ -2,8 +2,8 @@
     "znuny.CalendarEventsObject.Parse": {
         "body": [
             "${1:my \$CalendarEventsData = \$CalendarEventsObject->Parse(",
-            "    TicketID    => \$TicketID,",
-            "    ArticleID   => \$ArticleID,",
+            "    TicketID    => \$Param{TicketID\\},",
+            "    ArticleID   => \$Param{ArticleID\\},",
             "    String      => \$ArticleContent, # parse specified text content",
             "    Attachments => { # parse attachments",
             "        Data => {",

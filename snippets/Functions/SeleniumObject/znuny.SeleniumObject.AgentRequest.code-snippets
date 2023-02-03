@@ -1,0 +1,15 @@
+{
+    "znuny.SeleniumObject.AgentRequest": {
+        "body": [
+            "${1:\$SeleniumObject->AgentRequest(",
+            "    Action      => 'CustomerUserSearch',",
+            "    Param       => {",
+            "        Term => 'test-customer-user'",
+            "    \\}",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.AgentRequest",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

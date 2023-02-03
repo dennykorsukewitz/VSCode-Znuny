@@ -1,0 +1,14 @@
+{
+    "znuny.SeleniumObject.SendKeys": {
+        "body": [
+            "${1:my \$Success = \$SeleniumObject->SendKeys(",
+            "    Selector     => '#DynamicField_Test',",
+            "    SelectorType => 'css',                  # optional",
+            "    Content      => 'ABCDEFG',",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.SendKeys",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

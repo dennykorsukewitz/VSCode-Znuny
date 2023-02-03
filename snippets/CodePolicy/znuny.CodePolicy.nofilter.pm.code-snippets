@@ -6,6 +6,5 @@
         "prefix": "znuny.CodePolicy.nofilter.pm",
         "description": "perl, html",
         "scope": "perl,html"
-
     }
 }

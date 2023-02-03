@@ -2,7 +2,7 @@
     "znuny.LastViewsObject.Delete": {
         "body": [
             "${1:my \$Success = \$LastViewsObject->Delete(",
-            "    SessionID => \$SessionID,",
+            "    SessionID => \$Param{SessionID\\},",
             "    Count     => 20,                    # option - deletes all views but the latest n",
             ");}",
         ],

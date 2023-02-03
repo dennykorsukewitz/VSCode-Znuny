@@ -2,7 +2,8 @@
     "znuny.TemplateGeneratorObject.Template": {
         "body": [
             "${1:my \$Template = \$TemplateGeneratorObject->Template(",
-            "    TemplateID => \$TemplateID,                  # Optional",
+            "    TemplateID => \$TemplateID",
+            "    TicketID   => \$TicketID,                  # Optional",
             "    Data       => \$ArticleHashRef,      # Optional",
             "    UserID     => \$UserID,",
             ");}",

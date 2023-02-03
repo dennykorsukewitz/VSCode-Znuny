@@ -2,7 +2,7 @@
     "znuny.LastViewsObject.Update": {
         "body": [
             "${1:my \$Success = \$LastViewsObject->Update(",
-            "    SessionID => \$SessionID,",
+            "    SessionID => \$Self->{SessionID\\},",
             "    Request   => \%Request,",
             ");}",
         ],

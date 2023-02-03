@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.TicketArchiveFlagGet": {
         "body": [
-            "${1:if ( \$TicketObject->TicketArchiveFlagGet( TicketID => 123 ) ) {",
+            "${1:if ( \$TicketObject->TicketArchiveFlagGet( TicketID => \$TicketID ) ) {",
             "    print "Ticket is archived!\n";",
             "\\}",
             "else {",

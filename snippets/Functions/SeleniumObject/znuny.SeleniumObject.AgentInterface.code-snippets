@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.AgentInterface": {
+        "body": [
+            "${1:\$SeleniumObject->AgentInterface(",
+            "    Action      => 'AgentTicketZoom',",
+            "    WaitForAJAX => 0,                     # optional, default 1",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.AgentInterface",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -2,7 +2,7 @@
     "znuny.TransitionActionObject.TransitionActionList": {
         "body": [
             "${1:my \$TransitionActionList = \$TransitionActionObject->TransitionActionList(",
-            "    TransitionActionEntityID => \$TransitionActionEntityID, 'TA2', 'TA3',],",
+            "    TransitionActionEntityID => [\$TransitionActionEntityID,],",
             ");}",
         ],
         "prefix": "znuny.TransitionActionObject.TransitionActionList",

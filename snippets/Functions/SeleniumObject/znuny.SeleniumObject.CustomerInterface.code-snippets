@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.CustomerInterface": {
+        "body": [
+            "${1:\$SeleniumObject->CustomerInterface(",
+            "    Action      => 'CustomerTicketMessage',",
+            "    WaitForAJAX => 0,                      # optional, default 1",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.CustomerInterface",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

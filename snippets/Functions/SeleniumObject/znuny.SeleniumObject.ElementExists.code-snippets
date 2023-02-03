@@ -1,0 +1,13 @@
+{
+    "znuny.SeleniumObject.ElementExists": {
+        "body": [
+            "${1:\$SeleniumObject->ElementExists(",
+            "    Selector     => '#GroupID',",
+            "    SelectorType => 'css',        # optional",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.ElementExists",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "znuny.SeleniumObject.VerifiedGet": {
+        "body": [
+            "${1:\$SeleniumObject->VerifiedGet(",
+            "    \$URL,",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.VerifiedGet",
+        "description": "6.0, 6.4, 6.5",
+        "scope": "perl"
+    }
+}

@@ -14,7 +14,7 @@
             "    OnClick         => 'javascript',     # (optional)",
             "",
             "    SelectedID     => \$SelectedID,                 # (optional) use integer or arrayref (unable to use with ArrayHashRef)",
-            "    SelectedID     => \$SelectedID, 5, 3],         # (optional) use integer or arrayref (unable to use with ArrayHashRef)",
+            "    SelectedID     => [\$SelectedID, 5, 3],         # (optional) use integer or arrayref (unable to use with ArrayHashRef)",
             "    SelectedValue  => 'test',            # (optional) use string or arrayref (unable to use with ArrayHashRef)",
             "    SelectedValue  => ['test', 'test1'], # (optional) use string or arrayref (unable to use with ArrayHashRef)",
             "",

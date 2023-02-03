@@ -1,0 +1,16 @@
+{
+    "znuny.SeleniumObject.GetScreenshotFileName": {
+        "body": [
+            "${1:my \$ScreenshotFileName = \$SeleniumObject->GetScreenshotFileName(",
+            "    Filename => 'ZnunyRocks',",
+            "    # or",
+            "    Line     => '359',",
+            "    Function => 'InputFieldID',",
+            "    Hook     => 'BEFORE',",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.GetScreenshotFileName",
+        "description": "6.4, 6.5",
+        "scope": "perl"
+    }
+}
