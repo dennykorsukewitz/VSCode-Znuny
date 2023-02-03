@@ -1,0 +1,10 @@
+{
+    "znuny.Dumper.Log.ObjectManager": {
+        "body": [
+            "\\$Kernel::OM->Get('Kernel::System::Log')->Dumper('Debug - ${1:ModuleName}', '${2:VariableName}', ${3:\\\\}$4${2:VariableName});",
+        ],
+        "prefix": "znuny.Dumper.Log.ObjectManager",
+        "description": "perl",
+        "scope": "perl"
+    }
+}

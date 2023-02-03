@@ -1,0 +1,10 @@
+{
+    "znuny.Origin.js": {
+        "body": [
+            "// \\$origin: https://github.com/znuny/Znuny/blob/$1/$2"
+        ],
+        "prefix": "znuny.Origin.js",
+        "description": "js",
+        "scope": "javascript"
+    }
+}

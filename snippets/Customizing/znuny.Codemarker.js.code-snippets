@@ -1,0 +1,14 @@
+{
+    "znuny.Codemarker.js": {
+        "body": [
+            "// ---",
+            "// ${1:Znuny-}",
+            "${3:// }---",
+            "$2",
+            "// ---",
+        ],
+        "prefix": "znuny.Codemarker.js",
+        "description": "js",
+        "scope": "javascript"
+    }
+}

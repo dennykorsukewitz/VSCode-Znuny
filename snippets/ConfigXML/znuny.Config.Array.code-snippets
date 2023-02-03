@@ -1,0 +1,18 @@
+{
+    "znuny.Config.Array": {
+        "body": [
+            "<Setting Name=\"$1\" Required=\"${7:1}\" Valid=\"1\">",
+            "    <Description Translatable=\"1\">${2:This configuration defines}.</Description>",
+            "    <Navigation>${3:Core}</Navigation>",
+            "    <Value>",
+            "        <Array>",
+            "            <Item>$5</Item>",
+            "        </Array>",
+            "    </Value>",
+            "</Setting>",
+        ],
+        "prefix": "znuny.Config.Array",
+        "description": "xml",
+        "scope": "xml"
+    }
+}

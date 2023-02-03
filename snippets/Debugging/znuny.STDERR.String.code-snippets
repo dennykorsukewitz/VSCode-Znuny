@@ -1,0 +1,10 @@
+{
+    "znuny.STDERR.String": {
+        "body": [
+            "print STDERR \"Debug Dump - ${1:ModuleName} - ${2:VariableName} = '$3${2:VariableName}'\\n\";",
+        ],
+        "prefix": "znuny.STDERR.String",
+        "description": "perl",
+        "scope": "perl"
+    }
+}

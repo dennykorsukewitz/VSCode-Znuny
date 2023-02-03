@@ -1,0 +1,9 @@
+{
+    "VariableCheck": {
+        "body": [
+            "IsNumber($1)",
+        ],
+        "prefix": "IsNumber",
+        "scope": "perl"
+    }
+}

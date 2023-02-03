@@ -1,0 +1,22 @@
+{
+    "znuny.Needed.ObjectManager": {
+        "body": [
+            "my \\$LogObject = \\$Kernel::OM->Get('Kernel::System::Log');",
+            "",
+            "NEEDED:",
+            "for my \\$Needed ( qw($1) ) {",
+            "",
+            "    next NEEDED if defined \\$Param{ \\$Needed };",
+            "",
+            "    \\$LogObject->Log(",
+            "        Priority => 'error',",
+            "        Message  => \"Parameter '\\$Needed' is needed!\",",
+            "    );",
+            "    return;",
+            "}",
+        ],
+        "prefix": "znuny.Needed.ObjectManager",
+        "description": "Needed ObjectManager",
+        "scope": "perl"
+    }
+}

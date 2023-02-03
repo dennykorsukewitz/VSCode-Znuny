@@ -1,0 +1,10 @@
+{
+    "znuny.Language.Singleqoute": {
+        "body": [
+            "\\$Self->{Translation}->{'${1:English text...}'} = '${2:Translated text}';",
+        ],
+        "prefix": "znuny.Language.Singleqoute",
+        "description": "Translation Singleqoute",
+        "scope": "perl"
+    }
+}
