@@ -1,8 +1,8 @@
 {
     "znuny.StatsObject.StatsCleanUp": {
         "body": [
-            "${1:my \$Result = \$StatsObject->StatsCleanUp(",
-            "    UserID => \$UserID,",
+            "${1:my \\$Result = \\$StatsObject->StatsCleanUp(",
+            "    UserID => \\$UserID,",
             "",
             "    ObjectNames => [ 'Ticket', 'TicketList' ],",
             "    or",

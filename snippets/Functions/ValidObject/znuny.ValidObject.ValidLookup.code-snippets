@@ -1,10 +1,10 @@
 {
     "znuny.ValidObject.ValidLookup": {
         "body": [
-            "${1:my \$Valid = \$ValidObject->ValidLookup(",
-            "    ValidID => \$ValidID,",
+            "${1:my \\$Valid = \\$ValidObject->ValidLookup(",
+            "    ValidID => \\$ValidID,",
             ");}",
-            "${2:my \$ValidID = \$ValidObject->ValidLookup(",
+            "${2:my \\$ValidID = \\$ValidObject->ValidLookup(",
             "    Valid => 'valid',",
             ");}",
         ],

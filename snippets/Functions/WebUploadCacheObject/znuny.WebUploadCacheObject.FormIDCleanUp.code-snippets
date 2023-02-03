@@ -1,7 +1,7 @@
 {
     "znuny.WebUploadCacheObject.FormIDCleanUp": {
         "body": [
-            "${1:\$WebUploadCacheObject->FormIDCleanUp();}",
+            "${1:\\$WebUploadCacheObject->FormIDCleanUp();}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDCleanUp",
         "description": "6.0, 6.4, 6.5",

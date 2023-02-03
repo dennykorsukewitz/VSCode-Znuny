@@ -1,7 +1,7 @@
 {
     "znuny.OAuth2TokenObject.AssembleSASLAuthString": {
         "body": [
-            "${1:my \$SASLAuthString = \$OAuth2TokenObject->AssembleSASLAuthString(",
+            "${1:my \\$SASLAuthString = \\$OAuth2TokenObject->AssembleSASLAuthString(",
             "    Username    => 'user2',",
             "    OAuth2Token => 'the token',",
             ");}",

@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.HistoryTicketStatusGet": {
         "body": [
-            "${1:my %Tickets = \$TicketObject->HistoryTicketStatusGet(",
+            "${1:my %Tickets = \\$TicketObject->HistoryTicketStatusGet(",
             "    StartDay   => 12,",
             "    StartMonth => 1,",
             "    StartYear  => 2006,",

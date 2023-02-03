@@ -1,7 +1,7 @@
 {
     "znuny.MailAccountObject.MailAccountDelete": {
         "body": [
-            "${1:\$MailAccountObject->MailAccountDelete(",
+            "${1:\\$MailAccountObject->MailAccountDelete(",
             "    ID => 123,",
             ");}",
         ],

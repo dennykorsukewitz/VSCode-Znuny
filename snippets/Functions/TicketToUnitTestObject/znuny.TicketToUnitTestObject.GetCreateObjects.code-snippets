@@ -1,7 +1,7 @@
 {
     "znuny.TicketToUnitTestObject.GetCreateObjects": {
         "body": [
-            "${1:my \$Output = \$TicketToUnitTestObject->GetCreateObjects();}",
+            "${1:my \\$Output = \\$TicketToUnitTestObject->GetCreateObjects();}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetCreateObjects",
         "description": "6.4, 6.5",

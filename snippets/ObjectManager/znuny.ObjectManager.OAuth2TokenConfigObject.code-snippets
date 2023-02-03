@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.OAuth2TokenConfigObject": {
         "body": [
-            "my \$OAuth2TokenConfigObject = \$Kernel::OM->Get('Kernel::System::OAuth2TokenConfig');",
+            "my \\$OAuth2TokenConfigObject = \\$Kernel::OM->Get('Kernel::System::OAuth2TokenConfig');",
         ],
         "prefix": "znuny.ObjectManager.OAuth2TokenConfigObject",
         "description": "6.4, 6.5",

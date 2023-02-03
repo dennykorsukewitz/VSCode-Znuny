@@ -1,10 +1,10 @@
 {
     "znuny.LinkObject.ObjectDescriptionGet": {
         "body": [
-            "${1:%Description = \$LinkObject->ObjectDescriptionGet(",
+            "${1:%Description = \\$LinkObject->ObjectDescriptionGet(",
             "    Object  => 'Ticket',",
             "    Key     => 123,",
-            "    UserID  => \$UserID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectDescriptionGet",

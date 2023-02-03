@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.QueueObject": {
         "body": [
-            "my \$QueueObject = \$Kernel::OM->Get('Kernel::System::Queue');",
+            "my \\$QueueObject = \\$Kernel::OM->Get('Kernel::System::Queue');",
         ],
         "prefix": "znuny.ObjectManager.QueueObject",
         "description": "6.0, 6.4, 6.5",

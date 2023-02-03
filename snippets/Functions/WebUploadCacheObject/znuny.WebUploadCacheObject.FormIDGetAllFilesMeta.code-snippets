@@ -1,8 +1,8 @@
 {
     "znuny.WebUploadCacheObject.FormIDGetAllFilesMeta": {
         "body": [
-            "${1:my @Data = \$WebUploadCacheObject->FormIDGetAllFilesMeta(",
-            "    FormID => \$FormID,",
+            "${1:my @Data = \\$WebUploadCacheObject->FormIDGetAllFilesMeta(",
+            "    FormID => \\$FormID,",
             ");}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDGetAllFilesMeta",

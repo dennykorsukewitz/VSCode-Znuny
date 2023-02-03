@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.Permission": {
         "body": [
-            "${1:my \$Access = \$LayoutObject->Permission(",
+            "${1:my \\$Access = \\$LayoutObject->Permission(",
             "    Action => 'AdminCustomerUser',",
             "    Type   => 'rw', # ro|rw possible",
             ");}",

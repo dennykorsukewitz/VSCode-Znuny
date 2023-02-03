@@ -1,7 +1,7 @@
 {
     "znuny.CacheObject.Delete": {
         "body": [
-            "${1:\$CacheObject->Delete(",
+            "${1:\\$CacheObject->Delete(",
             "    Type => 'ObjectName',       # only [a-zA-Z0-9_] chars usable",
             "    Key  => 'SomeKey',",
             ");}",

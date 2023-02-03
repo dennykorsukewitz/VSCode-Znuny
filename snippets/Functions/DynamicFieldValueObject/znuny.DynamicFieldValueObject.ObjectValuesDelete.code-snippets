@@ -1,11 +1,11 @@
 {
     "znuny.DynamicFieldValueObject.ObjectValuesDelete": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldValueObject->ObjectValuesDelete(",
+            "${1:my \\$Success = \\$DynamicFieldValueObject->ObjectValuesDelete(",
             "    ObjectType => 'Ticket',    # Dynamic Field object type ( e. g. Ticket, Article, FAQ)",
-            "    ObjectID   => \$ObjectID,   # ID of the current object that the field",
+            "    ObjectID   => \\$ObjectID,   # ID of the current object that the field",
             "                               #   is linked to, e. g. TicketID",
-            "    UserID     => \$UserID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ObjectValuesDelete",

@@ -1,7 +1,7 @@
 {
     "znuny.StandardTemplateObject.StandardTemplateGet": {
         "body": [
-            "${1:my %StandardTemplate = \$StandardTemplateObject->StandardTemplateGet(",
+            "${1:my %StandardTemplate = \\$StandardTemplateObject->StandardTemplateGet(",
             "    ID => 123,",
             ");}",
         ],

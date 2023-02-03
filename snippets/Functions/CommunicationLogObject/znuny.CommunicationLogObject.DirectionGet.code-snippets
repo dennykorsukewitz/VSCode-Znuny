@@ -1,7 +1,7 @@
 {
     "znuny.CommunicationLogObject.DirectionGet": {
         "body": [
-            "${1:my \$Direction = \$CommunicationLogObject->DirectionGet();}",
+            "${1:my \\$Direction = \\$CommunicationLogObject->DirectionGet();}",
         ],
         "prefix": "znuny.CommunicationLogObject.DirectionGet",
         "description": "6.0, 6.4, 6.5",

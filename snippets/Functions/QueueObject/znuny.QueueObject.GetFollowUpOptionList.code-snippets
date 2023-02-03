@@ -1,7 +1,7 @@
 {
     "znuny.QueueObject.GetFollowUpOptionList": {
         "body": [
-            "${1:my %FollowUpOptionList = \$QueueObject->GetFollowUpOptionList(",
+            "${1:my %FollowUpOptionList = \\$QueueObject->GetFollowUpOptionList(",
             "    Valid => 0,             # (optional) default 1",
             ");}",
         ],

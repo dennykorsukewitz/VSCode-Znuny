@@ -1,17 +1,17 @@
 {
     "znuny.SysConfigObject.SettingGet": {
         "body": [
-            "${1:my %Setting = \$SysConfigObject->SettingGet(",
+            "${1:my %Setting = \\$SysConfigObject->SettingGet(",
             "    Name            => 'Setting::Name',  # (required) Setting name",
             "    Default         => 1,                # (optional) Returns the default setting attributes only",
-            "    ModifiedID      => \$ModifiedID,            # (optional) Get setting value for given ModifiedID.",
-            "    TargetUserID    => \$TargetUserID,                # (optional) Get setting value for specific user.",
+            "    ModifiedID      => \\$ModifiedID,            # (optional) Get setting value for given ModifiedID.",
+            "    TargetUserID    => \\$TargetUserID,                # (optional) Get setting value for specific user.",
             "    Deployed        => 1,                # (optional) Get deployed setting value. Default 0.",
             "    OverriddenInXML => 1,                # (optional) Consider changes made in perl files. Default 0.",
             "    Translate       => 1,                # (optional) Translate translatable strings in EffectiveValue. Default 0.",
             "    NoLog           => 1,                # (optional) Do not log error if a setting does not exist.",
             "    NoCache         => 1,                # (optional) Do not create cache.",
-            "    UserID          => \$UserID,                # Required only if OverriddenInXML is set.",
+            "    UserID          => \\$UserID,                # Required only if OverriddenInXML is set.",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingGet",

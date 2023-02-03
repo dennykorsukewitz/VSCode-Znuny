@@ -1,7 +1,7 @@
 {
     "znuny.MailAccountObject.MailAccountList": {
         "body": [
-            "${1:my %List = \$MailAccountObject->MailAccountList(",
+            "${1:my %List = \\$MailAccountObject->MailAccountList(",
             "    Valid => 0, # just valid/all accounts",
             ");}",
         ],

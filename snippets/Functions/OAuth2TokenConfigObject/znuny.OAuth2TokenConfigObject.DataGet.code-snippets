@@ -1,11 +1,11 @@
 {
     "znuny.OAuth2TokenConfigObject.DataGet": {
         "body": [
-            "${1:my %Data = \$OAuth2TokenConfigObject->DataGet(",
+            "${1:my %Data = \\$OAuth2TokenConfigObject->DataGet(",
             "    ID         => '...', # optional",
             "    Name       => '...', # optional",
             "    Config     => '...', # optional",
-            "    ValidID    => \$ValidID, # optional",
+            "    ValidID    => \\$ValidID, # optional",
             "    CreateTime => '...', # optional",
             "    CreateBy   => '...', # optional",
             "    ChangeTime => '...', # optional",

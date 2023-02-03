@@ -1,9 +1,9 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceDelete": {
         "body": [
-            "${1:my \$Success = \$SystemMaintenanceObject->SystemMaintenanceDelete(",
+            "${1:my \\$Success = \\$SystemMaintenanceObject->SystemMaintenanceDelete(",
             "    ID     => 123,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceDelete",

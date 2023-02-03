@@ -1,7 +1,7 @@
 {
     "znuny.JWTObject.IsSupported": {
         "body": [
-            "${1:my \$JWTObjectIsSupported = \$JWTObject->IsSupported();}",
+            "${1:my \\$JWTObjectIsSupported = \\$JWTObject->IsSupported();}",
         ],
         "prefix": "znuny.JWTObject.IsSupported",
         "description": "6.4, 6.5",

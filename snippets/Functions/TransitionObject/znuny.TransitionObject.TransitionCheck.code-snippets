@@ -1,10 +1,10 @@
 {
     "znuny.TransitionObject.TransitionCheck": {
         "body": [
-            "${1:my \$TransitionCheck = \$TransitionObject->TransitionCheck(",
-            "    TransitionEntityID => \$TransitionEntityID,",
+            "${1:my \\$TransitionCheck = \\$TransitionObject->TransitionCheck(",
+            "    TransitionEntityID => \\$TransitionEntityID,",
             "    or",
-            "    TransitionEntityID => [\$TransitionEntityID],",
+            "    TransitionEntityID => [\\$TransitionEntityID],",
             "    Data       => {",
             "        Queue         => 'Raw',",
             "        DynamicField1 => 'Value',",

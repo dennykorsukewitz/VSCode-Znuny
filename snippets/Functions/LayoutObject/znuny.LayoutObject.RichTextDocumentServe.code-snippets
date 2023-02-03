@@ -1,10 +1,10 @@
 {
     "znuny.LayoutObject.RichTextDocumentServe": {
         "body": [
-            "${1:my %HTMLFile = \$LayoutObject->RichTextDocumentServe(",
+            "${1:my %HTMLFile = \\$LayoutObject->RichTextDocumentServe(",
             "    Data => {",
-            "        Content     => \$HTMLBodyRef,",
-            "        ContentType => 'text/html; charset="iso-8859-1"',",
+            "        Content     => \\$HTMLBodyRef,",
+            "        ContentType => 'text/html; charset=\\"iso-8859-1\\"',",
             "    \\},",
             "    URL               => 'AgentTicketAttachment;Subaction=HTMLView;TicketID=123;ArticleID=123;FileID=',",
             "    Attachments       => \%AttachmentListOfInlineAttachments,",

@@ -1,8 +1,8 @@
 {
     "znuny.HelperObject.PostMaster": {
         "body": [
-            "${1:my @Result = \$HelperObject->PostMaster(",
-            "    Location => \$ConfigObject->Get('Home') . '/scripts/test/sample/Sample-1.box',",
+            "${1:my @Result = \\$HelperObject->PostMaster(",
+            "    Location => \\$ConfigObject->Get('Home') . '/scripts/test/sample/Sample-1.box',",
             ");}",
         ],
         "prefix": "znuny.HelperObject.PostMaster",

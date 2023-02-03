@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.CreateScreenshot": {
         "body": [
-            "${1:my \$Success = \$SeleniumObject->CreateScreenshot();}",
+            "${1:my \\$Success = \\$SeleniumObject->CreateScreenshot();}",
         ],
         "prefix": "znuny.SeleniumObject.CreateScreenshot",
         "description": "6.4, 6.5",

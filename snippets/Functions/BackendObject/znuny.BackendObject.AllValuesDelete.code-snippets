@@ -1,9 +1,9 @@
 {
     "znuny.BackendObject.AllValuesDelete": {
         "body": [
-            "${1:my \$Success = \$BackendObject->AllValuesDelete(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
-            "    UserID             => \$UserID,",
+            "${1:my \\$Success = \\$BackendObject->AllValuesDelete(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    UserID             => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.BackendObject.AllValuesDelete",

@@ -1,11 +1,11 @@
 {
     "znuny.GenericAgentObject.JobRun": {
         "body": [
-            "${1:\$GenericAgentObject->JobRun(",
+            "${1:\\$GenericAgentObject->JobRun(",
             "    Job          => 'JobName',",
-            "    OnlyTicketID => \$OnlyTicketID,     # (optional) for event based Job execution",
+            "    OnlyTicketID => \\$OnlyTicketID,     # (optional) for event based Job execution",
             "    SleepTime    => 100_000  # (optional) sleeptime per ticket in microseconds",
-            "    UserID       => \$UserID,",
+            "    UserID       => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobRun",

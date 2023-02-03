@@ -1,7 +1,7 @@
 {
     "znuny.ArticleObject.ArticleSearchIndexSQLJoin": {
         "body": [
-            "${1:my \$SQLExtenion = \$ArticleObject->ArticleSearchIndexSQLJoin(",
+            "${1:my \\$SQLExtenion = \\$ArticleObject->ArticleSearchIndexSQLJoin(",
             "    SearchParams => {",
             "        ...",
             "        ConditionInline         => 1,",

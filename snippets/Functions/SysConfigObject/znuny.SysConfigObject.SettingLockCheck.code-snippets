@@ -1,10 +1,10 @@
 {
     "znuny.SysConfigObject.SettingLockCheck": {
         "body": [
-            "${1:my %Result = \$SysConfigObject->SettingLockCheck(",
-            "    DefaultID           => \$DefaultID,                     # the ID of the setting that needs to be checked",
-            "    ExclusiveLockGUID   => \$ExclusiveLockGUID,                     # lock GUID",
-            "    ExclusiveLockUserID => \$ExclusiveLockUserID,                     # UserID",
+            "${1:my %Result = \\$SysConfigObject->SettingLockCheck(",
+            "    DefaultID           => \\$DefaultID,                     # the ID of the setting that needs to be checked",
+            "    ExclusiveLockGUID   => \\$ExclusiveLockGUID,                     # lock GUID",
+            "    ExclusiveLockUserID => \\$ExclusiveLockUserID,                     # UserID",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingLockCheck",

@@ -1,10 +1,10 @@
 {
     "znuny.ParamObject.GetParamNames": {
         "body": [
-            "${1:    my @ParamNames = \$ParamObject->GetParamNames();",
-            "    print join " :: ", @ParamNames;",
+            "${1:    my @ParamNames = \\$ParamObject->GetParamNames();",
+            "    print join \\" :: \\", @ParamNames;",
             "    #prints Action :: Subaction :: Name}",
-            "${2:my @ParamNames = \$ParamObject->GetParamNames();}",
+            "${2:my @ParamNames = \\$ParamObject->GetParamNames();}",
         ],
         "prefix": "znuny.ParamObject.GetParamNames",
         "description": "6.0, 6.4, 6.5",

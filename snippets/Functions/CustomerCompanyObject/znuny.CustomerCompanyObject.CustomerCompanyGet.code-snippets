@@ -1,8 +1,8 @@
 {
     "znuny.CustomerCompanyObject.CustomerCompanyGet": {
         "body": [
-            "${1:my %CustomerCompany = \$CustomerCompanyObject->CustomerCompanyGet(",
-            "    CustomerID => \$CustomerID,",
+            "${1:my %CustomerCompany = \\$CustomerCompanyObject->CustomerCompanyGet(",
+            "    CustomerID => \\$CustomerID,",
             ");}",
         ],
         "prefix": "znuny.CustomerCompanyObject.CustomerCompanyGet",

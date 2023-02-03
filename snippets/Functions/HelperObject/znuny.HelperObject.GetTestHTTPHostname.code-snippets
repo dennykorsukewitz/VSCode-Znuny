@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.GetTestHTTPHostname": {
         "body": [
-            "${1:my \$Hostname = \$HelperObject->GetTestHTTPHostname();}",
+            "${1:my \\$Hostname = \\$HelperObject->GetTestHTTPHostname();}",
         ],
         "prefix": "znuny.HelperObject.GetTestHTTPHostname",
         "description": "6.4, 6.5",

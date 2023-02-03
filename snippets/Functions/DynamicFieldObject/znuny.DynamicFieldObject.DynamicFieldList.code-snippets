@@ -1,7 +1,7 @@
 {
     "znuny.DynamicFieldObject.DynamicFieldList": {
         "body": [
-            "${1:my \$List = \$DynamicFieldObject->DynamicFieldList(",
+            "${1:my \\$List = \\$DynamicFieldObject->DynamicFieldList(",
             "    Valid => 0,             # optional, defaults to 1",
             "",
             "    # object  type (optional) as STRING or as ARRAYREF",
@@ -19,7 +19,7 @@
             "    \\},",
             "",
             ");}",
-            "${2:my \$List = \$DynamicFieldObject->DynamicFieldList();}",
+            "${2:my \\$List = \\$DynamicFieldObject->DynamicFieldList();}",
         ],
         "prefix": "znuny.DynamicFieldObject.DynamicFieldList",
         "description": "6.0, 6.4, 6.5",

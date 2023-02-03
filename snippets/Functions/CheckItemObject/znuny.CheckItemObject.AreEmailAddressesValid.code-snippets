@@ -1,7 +1,7 @@
 {
     "znuny.CheckItemObject.AreEmailAddressesValid": {
         "body": [
-            "${1:my \$EmailAddressesAreValid = \$CheckItemObject->AreEmailAddressesValid(",
+            "${1:my \\$EmailAddressesAreValid = \\$CheckItemObject->AreEmailAddressesValid(",
             "    EmailAddresses => 'test@example.org, test2@example.org',",
             "",
             "    # or as array ref",

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.UserObject": {
         "body": [
-            "my \$UserObject = \$Kernel::OM->Get('Kernel::System::User');",
+            "my \\$UserObject = \\$Kernel::OM->Get('Kernel::System::User');",
         ],
         "prefix": "znuny.ObjectManager.UserObject",
         "description": "6.0, 6.4, 6.5",

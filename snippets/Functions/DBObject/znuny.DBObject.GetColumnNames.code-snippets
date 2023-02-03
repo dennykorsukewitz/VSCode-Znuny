@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.GetColumnNames": {
         "body": [
-            "${1:my @Names = \$DBObject->GetColumnNames();}",
+            "${1:my @Names = \\$DBObject->GetColumnNames();}",
         ],
         "prefix": "znuny.DBObject.GetColumnNames",
         "description": "6.0, 6.4, 6.5",

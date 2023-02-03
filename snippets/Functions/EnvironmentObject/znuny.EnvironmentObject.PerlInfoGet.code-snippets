@@ -1,10 +1,10 @@
 {
     "znuny.EnvironmentObject.PerlInfoGet": {
         "body": [
-            "${1:my %PerlInfo = \$EnvironmentObject->PerlInfoGet(",
+            "${1:my %PerlInfo = \\$EnvironmentObject->PerlInfoGet(",
             "    BundledModules => 1,",
             ");}",
-            "${2:my %PerlInfo = \$EnvironmentObject->PerlInfoGet();}",
+            "${2:my %PerlInfo = \\$EnvironmentObject->PerlInfoGet();}",
         ],
         "prefix": "znuny.EnvironmentObject.PerlInfoGet",
         "description": "6.0, 6.4, 6.5",

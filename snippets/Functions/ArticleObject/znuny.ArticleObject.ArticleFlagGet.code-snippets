@@ -1,9 +1,9 @@
 {
     "znuny.ArticleObject.ArticleFlagGet": {
         "body": [
-            "${1:my %Flags = \$ArticleObject->ArticleFlagGet(",
-            "    ArticleID => \$ArticleID,",
-            "    UserID    => \$UserID,",
+            "${1:my %Flags = \\$ArticleObject->ArticleFlagGet(",
+            "    ArticleID => \\$ArticleID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleFlagGet",

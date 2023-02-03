@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.PackageReinstall": {
         "body": [
-            "${1:\$PackageObject->PackageReinstall( String => \$FileString );}",
+            "${1:\\$PackageObject->PackageReinstall( String => \\$FileString );}",
         ],
         "prefix": "znuny.PackageObject.PackageReinstall",
         "description": "6.0, 6.4, 6.5",

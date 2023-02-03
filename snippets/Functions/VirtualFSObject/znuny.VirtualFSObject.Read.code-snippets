@@ -1,7 +1,7 @@
 {
     "znuny.VirtualFSObject.Read": {
         "body": [
-            "${1:my %File = \$VirtualFSObject->Read(",
+            "${1:my %File = \\$VirtualFSObject->Read(",
             "    Filename => '/Object/some/name.txt',",
             "    Mode     => 'utf8',",
             "",

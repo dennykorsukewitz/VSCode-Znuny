@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.TimeObject": {
         "body": [
-            "my \$TimeObject = \$Kernel::OM->Get('Kernel::System::DateTime');",
+            "my \\$TimeObject = \\$Kernel::OM->Get('Kernel::System::DateTime');",
         ],
         "prefix": "znuny.ObjectManager.TimeObject",
         "description": "6.0, 6.4, 6.5",

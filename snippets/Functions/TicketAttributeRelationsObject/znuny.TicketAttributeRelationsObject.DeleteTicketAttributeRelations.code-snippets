@@ -1,9 +1,9 @@
 {
     "znuny.TicketAttributeRelationsObject.DeleteTicketAttributeRelations": {
         "body": [
-            "${1:my \$Success = \$TicketAttributeRelationsObject->DeleteTicketAttributeRelations(",
+            "${1:my \\$Success = \\$TicketAttributeRelationsObject->DeleteTicketAttributeRelations(",
             "    ID     => 123,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.DeleteTicketAttributeRelations",

@@ -1,8 +1,8 @@
 {
     "znuny.SeleniumObject.get": {
         "body": [
-            "${1:\$SeleniumObject->get(",
-            "    \$URL,",
+            "${1:\\$SeleniumObject->get(",
+            "    \\$URL,",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.get",

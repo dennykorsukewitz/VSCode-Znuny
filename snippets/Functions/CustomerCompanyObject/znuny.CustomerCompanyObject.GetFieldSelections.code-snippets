@@ -1,7 +1,7 @@
 {
     "znuny.CustomerCompanyObject.GetFieldSelections": {
         "body": [
-            "${1:my %SelectionsData = \$CustomerCompanyObject->GetFieldSelections(",
+            "${1:my %SelectionsData = \\$CustomerCompanyObject->GetFieldSelections(",
             "    FieldName => 'CustomerCompanyCountry',",
             ");}",
         ],

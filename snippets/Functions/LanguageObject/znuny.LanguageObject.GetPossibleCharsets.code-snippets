@@ -1,7 +1,7 @@
 {
     "znuny.LanguageObject.GetPossibleCharsets": {
         "body": [
-            "${1:my @Charsets = \$LanguageObject->GetPossibleCharsets();}",
+            "${1:my @Charsets = \\$LanguageObject->GetPossibleCharsets();}",
         ],
         "prefix": "znuny.LanguageObject.GetPossibleCharsets",
         "description": "6.4, 6.5",

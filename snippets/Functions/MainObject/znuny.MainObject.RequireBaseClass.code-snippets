@@ -1,7 +1,7 @@
 {
     "znuny.MainObject.RequireBaseClass": {
         "body": [
-            "${1:my \$Loaded = \$MainObject->RequireBaseClass(",
+            "${1:my \\$Loaded = \\$MainObject->RequireBaseClass(",
             "    'Kernel::System::Example',",
             ");}",
         ],

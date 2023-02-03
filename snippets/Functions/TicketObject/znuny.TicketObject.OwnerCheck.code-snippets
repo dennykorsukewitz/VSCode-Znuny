@@ -1,12 +1,12 @@
 {
     "znuny.TicketObject.OwnerCheck": {
         "body": [
-            "${1:my \$AccessOk = \$TicketObject->OwnerCheck(",
-            "    TicketID => \$TicketID,",
-            "    OwnerID  => \$OwnerID,",
+            "${1:my \\$AccessOk = \\$TicketObject->OwnerCheck(",
+            "    TicketID => \\$TicketID,",
+            "    OwnerID  => \\$OwnerID,",
             ");}",
-            "${2:my (\$OwnerID, \$Owner) = \$TicketObject->OwnerCheck(",
-            "    TicketID => \$TicketID,",
+            "${2:my (\\$OwnerID, \\$Owner) = \\$TicketObject->OwnerCheck(",
+            "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.OwnerCheck",

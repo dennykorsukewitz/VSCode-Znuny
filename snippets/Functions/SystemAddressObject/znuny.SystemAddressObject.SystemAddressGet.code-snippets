@@ -1,7 +1,7 @@
 {
     "znuny.SystemAddressObject.SystemAddressGet": {
         "body": [
-            "${1:my %SystemAddress = \$SystemAddressObject->SystemAddressGet(",
+            "${1:my %SystemAddress = \\$SystemAddressObject->SystemAddressGet(",
             "    ID => 1,",
             ");}",
         ],

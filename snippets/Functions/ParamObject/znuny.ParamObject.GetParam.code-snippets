@@ -1,7 +1,7 @@
 {
     "znuny.ParamObject.GetParam": {
         "body": [
-            "${1:my \$Param = \$ParamObject->GetParam(",
+            "${1:my \\$Param = \\$ParamObject->GetParam(",
             "    Param => 'ID',",
             "    Raw   => 1,       # optional, input data is not changed",
             ");}",

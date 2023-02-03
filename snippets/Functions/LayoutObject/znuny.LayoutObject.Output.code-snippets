@@ -1,16 +1,16 @@
 {
     "znuny.LayoutObject.Output": {
         "body": [
-            "${1:my \$HTML = \$LayoutObject->Output(",
+            "${1:my \\$HTML = \\$LayoutObject->Output(",
             "    Template => '<b>[% Data.SomeKey | html %]</b>',",
             "    Data     => \%Param,",
             ");}",
-            "${2:my \$HTML = \$LayoutObject->Output(",
+            "${2:my \\$HTML = \\$LayoutObject->Output(",
             "    TemplateFile   => 'AdminLog.tt',",
             "    Data           => \%Param,",
             "    AJAX           => 1,",
             ");}",
-            "${3:my \$HTML = \$LayoutObject->Output(",
+            "${3:my \\$HTML = \\$LayoutObject->Output(",
             "    TemplateFile => 'AdminLog.tt',",
             "    Data         => \%Param,",
             ");}",

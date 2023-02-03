@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.UnitTestParamObject": {
         "body": [
-            "my \$UnitTestParamObject = \$Kernel::OM->Get('Kernel::System::UnitTest::Param');",
+            "my \\$UnitTestParamObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::Param');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestParamObject",
         "description": "6.4, 6.5",

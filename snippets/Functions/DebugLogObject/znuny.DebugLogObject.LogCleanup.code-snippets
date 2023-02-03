@@ -1,7 +1,7 @@
 {
     "znuny.DebugLogObject.LogCleanup": {
         "body": [
-            "${1:my \$Success = \$DebugLogObject->LogCleanup(",
+            "${1:my \\$Success = \\$DebugLogObject->LogCleanup(",
             "    CreatedAtOrBefore => '2011-12-31 23:59:59',",
             ");}",
         ],

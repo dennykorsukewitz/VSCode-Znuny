@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.ToString": {
         "body": [
-            "${1:my \$DateTimeString = \$DateTimeObject->ToString();}",
+            "${1:my \\$DateTimeString = \\$DateTimeObject->ToString();}",
         ],
         "prefix": "znuny.DateTimeObject.ToString",
         "description": "6.0, 6.4, 6.5",

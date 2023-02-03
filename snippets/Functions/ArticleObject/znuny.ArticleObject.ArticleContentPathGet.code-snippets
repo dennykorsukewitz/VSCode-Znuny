@@ -1,8 +1,8 @@
 {
     "znuny.ArticleObject.ArticleContentPathGet": {
         "body": [
-            "${1:my \$Path = \$ArticleObject->ArticleContentPathGet(",
-            "    ArticleID => \$ArticleID,",
+            "${1:my \\$Path = \\$ArticleObject->ArticleContentPathGet(",
+            "    ArticleID => \\$ArticleID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleContentPathGet",

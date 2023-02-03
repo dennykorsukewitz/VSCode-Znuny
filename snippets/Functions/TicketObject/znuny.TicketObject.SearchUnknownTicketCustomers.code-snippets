@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.SearchUnknownTicketCustomers": {
         "body": [
-            "${1:my \$UnknownTicketCustomerList = \$TicketObject->SearchUnknownTicketCustomers(",
+            "${1:my \\$UnknownTicketCustomerList = \\$TicketObject->SearchUnknownTicketCustomers(",
             "    SearchTerm => 'SomeSearchTerm',",
             ");}",
         ],

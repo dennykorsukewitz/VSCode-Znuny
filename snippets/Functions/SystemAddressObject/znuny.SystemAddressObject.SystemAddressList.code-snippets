@@ -1,7 +1,7 @@
 {
     "znuny.SystemAddressObject.SystemAddressList": {
         "body": [
-            "${1:my %List = \$SystemAddressObject->SystemAddressList(",
+            "${1:my %List = \\$SystemAddressObject->SystemAddressList(",
             "    Valid => 0,  # optional, defaults to 1",
             ");}",
         ],

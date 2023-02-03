@@ -1,11 +1,11 @@
 {
     "znuny.QueueObject.QueuePreferencesSet": {
         "body": [
-            "${1:\$QueueObject->QueuePreferencesSet(",
-            "    QueueID => \$QueueID,",
+            "${1:\\$QueueObject->QueuePreferencesSet(",
+            "    QueueID => \\$QueueID,",
             "    Key     => 'UserComment',",
             "    Value   => 'some comment',",
-            "    UserID  => \$UserID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.QueueObject.QueuePreferencesSet",

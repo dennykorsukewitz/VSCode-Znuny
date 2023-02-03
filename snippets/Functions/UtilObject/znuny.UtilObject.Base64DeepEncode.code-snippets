@@ -1,7 +1,7 @@
 {
     "znuny.UtilObject.Base64DeepEncode": {
         "body": [
-            "${1:my \$Base64EncodedData = \$UtilObject->Base64DeepEncode(",
+            "${1:my \\$Base64EncodedData = \\$UtilObject->Base64DeepEncode(",
             "    # Data can be a scalar, hash or array",
             "    Data => {",
             "        Article => {",
@@ -10,8 +10,8 @@
             "        # ...",
             "    \\},",
             "    HashKeys => [",
-            "        # All 'Body' elements of array \$Hash->{Articles\\} will be base-64 encoded.",
-            "        # Also can mean: \$Hash->{Articles\\}->{Body\\}, if 'Articles' is a hash.",
+            "        # All 'Body' elements of array \\$Hash->{Articles\\} will be base-64 encoded.",
+            "        # Also can mean: \\$Hash->{Articles\\}->{Body\\}, if 'Articles' is a hash.",
             "        # Will encode nothing if last key ('Body') cannot be reached or is not a scalar/string.",
             "        'Articles->Body',",
             "",

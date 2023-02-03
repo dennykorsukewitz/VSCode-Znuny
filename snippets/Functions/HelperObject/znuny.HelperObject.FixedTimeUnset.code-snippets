@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.FixedTimeUnset": {
         "body": [
-            "${1:\$HelperObject->FixedTimeUnset();}",
+            "${1:\\$HelperObject->FixedTimeUnset();}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeUnset",
         "description": "6.4, 6.5",

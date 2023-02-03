@@ -1,8 +1,8 @@
 {
     "znuny.LastViewsObject.Get": {
         "body": [
-            "${1:my %LastView = \$LastViewsObject->Get(",
-            "    %{ \$Param{Request\\} \\},",
+            "${1:my %LastView = \\$LastViewsObject->Get(",
+            "    %{ \\$Param{Request\\} \\},",
             ");}",
         ],
         "prefix": "znuny.LastViewsObject.Get",

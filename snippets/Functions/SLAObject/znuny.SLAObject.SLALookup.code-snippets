@@ -1,11 +1,11 @@
 {
     "znuny.SLAObject.SLALookup": {
         "body": [
-            "${1:my \$SLAID = \$SLAObject->SLALookup(",
+            "${1:my \\$SLAID = \\$SLAObject->SLALookup(",
             "    Name => 'SLA Name',",
             ");}",
-            "${2:my \$SLAName = \$SLAObject->SLALookup(",
-            "    SLAID => \$SLAID,",
+            "${2:my \\$SLAName = \\$SLAObject->SLALookup(",
+            "    SLAID => \\$SLAID,",
             ");}",
         ],
         "prefix": "znuny.SLAObject.SLALookup",

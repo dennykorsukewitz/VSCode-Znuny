@@ -1,14 +1,14 @@
 {
     "znuny.CommunicationChannelObject.ChannelUpdate": {
         "body": [
-            "${1:my \$Success = \$CommunicationChannelObject->ChannelUpdate(",
-            "    ChannelID   => \$ChannelID,                                              # (required) ChannelID that will be updated",
+            "${1:my \\$Success = \\$CommunicationChannelObject->ChannelUpdate(",
+            "    ChannelID   => \\$ChannelID,                                              # (required) ChannelID that will be updated",
             "    ChannelName => 'Email',                                          # (required) New channel name",
             "    Module      => 'Kernel::System::CommunicationChannel::Internal', # (optional) Module",
             "    PackageName => 'Framework',                                      # (optional) Package name",
             "    ChannelData => {...\\},                                            # (optional) Additional channel data (can be array, hash, scalar)",
-            "    ValidID     => \$ValidID,                                                # (optional) ValidID",
-            "    UserID      => \$UserID,                                                # (required) UserID",
+            "    ValidID     => \\$ValidID,                                                # (optional) ValidID",
+            "    UserID      => \\$UserID,                                                # (required) UserID",
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelUpdate",

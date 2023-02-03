@@ -1,7 +1,7 @@
 {
     "znuny.SupportDataCollectorObject.CleanupAsynchronous": {
         "body": [
-            "${1:my \$Success = \$SupportDataCollectorObject->CleanupAsynchronous();}",
+            "${1:my \\$Success = \\$SupportDataCollectorObject->CleanupAsynchronous();}",
         ],
         "prefix": "znuny.SupportDataCollectorObject.CleanupAsynchronous",
         "description": "6.0, 6.4, 6.5",

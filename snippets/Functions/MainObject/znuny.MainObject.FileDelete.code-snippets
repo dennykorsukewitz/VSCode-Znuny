@@ -1,7 +1,7 @@
 {
     "znuny.MainObject.FileDelete": {
         "body": [
-            "${1:my \$Success = \$MainObject->FileDelete(",
+            "${1:my \\$Success = \\$MainObject->FileDelete(",
             "    Directory       => 'c:\some\location',",
             "    Filename        => 'me_to/alal.xml',",
             "    # or Location",

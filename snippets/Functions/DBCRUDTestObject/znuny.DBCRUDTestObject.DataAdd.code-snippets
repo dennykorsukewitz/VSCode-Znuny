@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDTestObject.DataAdd": {
         "body": [
-            "${1:my \$Success = \$DBCRUDTestObject->DataAdd(",
+            "${1:my \\$Success = \\$DBCRUDTestObject->DataAdd(",
             "    ID          => '...',",
             "    Name        => '...', # optional",
             "    Age         => '...', # optional",

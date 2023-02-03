@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.SwitchToMainWindow": {
         "body": [
-            "${1:\$SeleniumObject->SwitchToMainWindow(",
+            "${1:\\$SeleniumObject->SwitchToMainWindow(",
             "    WaitForAJAX => 0, # optional, default 1",
             ");}",
         ],

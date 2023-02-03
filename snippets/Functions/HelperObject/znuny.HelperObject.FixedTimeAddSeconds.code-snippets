@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.FixedTimeAddSeconds": {
         "body": [
-            "${1:\$HelperObject->FixedTimeAddSeconds(5);}",
+            "${1:\\$HelperObject->FixedTimeAddSeconds(5);}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeAddSeconds",
         "description": "6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.EnvironmentObject.ModuleVersionGet": {
         "body": [
-            "${1:my \$Version = \$EnvironmentObject->ModuleVersionGet(",
+            "${1:my \\$Version = \\$EnvironmentObject->ModuleVersionGet(",
             "    Module => 'MIME::Parser',",
             ");}",
         ],

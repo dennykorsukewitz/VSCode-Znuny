@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestEmailObject.MailObjectDiscard": {
         "body": [
-            "${1:my \$Success = \$UnitTestEmailObject->MailObjectDiscard();}",
+            "${1:my \\$Success = \\$UnitTestEmailObject->MailObjectDiscard();}",
         ],
         "prefix": "znuny.UnitTestEmailObject.MailObjectDiscard",
         "description": "6.4, 6.5",

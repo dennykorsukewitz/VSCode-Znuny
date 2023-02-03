@@ -1,7 +1,7 @@
 {
     "znuny.TicketToUnitTestObject.GetHeader": {
         "body": [
-            "${1:my \$Output = \$TicketToUnitTestObject->GetHeader();}",
+            "${1:my \\$Output = \\$TicketToUnitTestObject->GetHeader();}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetHeader",
         "description": "6.4, 6.5",

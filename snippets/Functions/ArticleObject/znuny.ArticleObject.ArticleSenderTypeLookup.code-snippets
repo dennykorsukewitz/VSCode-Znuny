@@ -1,10 +1,10 @@
 {
     "znuny.ArticleObject.ArticleSenderTypeLookup": {
         "body": [
-            "${1:my \$SenderType = \$ArticleObject->ArticleSenderTypeLookup(",
-            "    SenderTypeID => \$SenderTypeID,",
+            "${1:my \\$SenderType = \\$ArticleObject->ArticleSenderTypeLookup(",
+            "    SenderTypeID => \\$SenderTypeID,",
             ");}",
-            "${2:my \$SenderTypeID = \$ArticleObject->ArticleSenderTypeLookup(",
+            "${2:my \\$SenderTypeID = \\$ArticleObject->ArticleSenderTypeLookup(",
             "    SenderType => 'customer', # customer|system|agent",
             ");}",
         ],

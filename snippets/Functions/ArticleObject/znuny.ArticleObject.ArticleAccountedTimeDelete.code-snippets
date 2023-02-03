@@ -1,8 +1,8 @@
 {
     "znuny.ArticleObject.ArticleAccountedTimeDelete": {
         "body": [
-            "${1:my \$Success = \$ArticleObject->ArticleAccountedTimeDelete(",
-            "    ArticleID => \$ArticleID,",
+            "${1:my \\$Success = \\$ArticleObject->ArticleAccountedTimeDelete(",
+            "    ArticleID => \\$ArticleID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleAccountedTimeDelete",

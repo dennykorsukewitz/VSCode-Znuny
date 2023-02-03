@@ -1,7 +1,7 @@
 {
     "znuny.LinkObject.PossibleType": {
         "body": [
-            "${1:my \$True = \$LinkObject->PossibleType(",
+            "${1:my \\$True = \\$LinkObject->PossibleType(",
             "    Type1 => 'Normal',",
             "    Type2 => 'ParentChild',",
             ");}",

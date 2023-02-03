@@ -1,7 +1,7 @@
 {
     "znuny.CalendarEventsObject.BuildString": {
         "body": [
-            "${1:my \$OutputString = \$CalendarEventsObject->BuildString(",
+            "${1:my \\$OutputString = \\$CalendarEventsObject->BuildString(",
             "    Data => {",
             "      'Type'      => 'Recurrent', # required",
             "      'Interval'  => '5',",

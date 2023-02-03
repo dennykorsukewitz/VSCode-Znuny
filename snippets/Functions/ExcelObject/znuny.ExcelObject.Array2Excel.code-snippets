@@ -1,7 +1,7 @@
 {
     "znuny.ExcelObject.Array2Excel": {
         "body": [
-            "${1:my \$ExcelFileContent = \$ExcelObject->Array2Excel(",
+            "${1:my \\$ExcelFileContent = \\$ExcelObject->Array2Excel(",
             "    Data => [",
             "        {",
             "            Name        => 'Overview',",

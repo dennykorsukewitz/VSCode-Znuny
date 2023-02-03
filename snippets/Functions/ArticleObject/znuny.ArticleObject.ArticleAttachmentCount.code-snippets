@@ -1,9 +1,9 @@
 {
     "znuny.ArticleObject.ArticleAttachmentCount": {
         "body": [
-            "${1:my \$Count = \$ArticleObject->ArticleAttachmentCount(",
-            "    TicketID  => \$TicketID,",
-            "    ArticleID => \$ArticleID,",
+            "${1:my \\$Count = \\$ArticleObject->ArticleAttachmentCount(",
+            "    TicketID  => \\$TicketID,",
+            "    ArticleID => \\$ArticleID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleAttachmentCount",

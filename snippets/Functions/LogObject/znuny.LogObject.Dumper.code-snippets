@@ -1,8 +1,8 @@
 {
     "znuny.LogObject.Dumper": {
         "body": [
-            "${1:\$LogObject->Dumper(%Hash);}",
-            "${2:\$LogObject->Dumper(@Array);}",
+            "${1:\\$LogObject->Dumper(%Hash);}",
+            "${2:\\$LogObject->Dumper(@Array);}",
         ],
         "prefix": "znuny.LogObject.Dumper",
         "description": "6.0, 6.4, 6.5",

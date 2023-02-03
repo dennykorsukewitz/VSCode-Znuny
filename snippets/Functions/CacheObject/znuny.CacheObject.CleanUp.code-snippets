@@ -1,16 +1,16 @@
 {
     "znuny.CacheObject.CleanUp": {
         "body": [
-            "${1:\$CacheObject->CleanUp(",
+            "${1:\\$CacheObject->CleanUp(",
             "    Expired => 1,   # optional, defaults to 0",
             ");}",
-            "${2:\$CacheObject->CleanUp(",
+            "${2:\\$CacheObject->CleanUp(",
             "    KeepTypes => ['Object1', 'Object2'],",
             ");}",
-            "${3:\$CacheObject->CleanUp(",
+            "${3:\\$CacheObject->CleanUp(",
             "    Type => 'ObjectName',   # only [a-zA-Z0-9_] chars usable",
             ");}",
-            "${4:\$CacheObject->CleanUp();}",
+            "${4:\\$CacheObject->CleanUp();}",
         ],
         "prefix": "znuny.CacheObject.CleanUp",
         "description": "6.0, 6.4, 6.5",

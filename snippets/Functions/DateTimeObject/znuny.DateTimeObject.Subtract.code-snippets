@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.Subtract": {
         "body": [
-            "${1:my \$Success = \$DateTimeObject->Subtract(",
+            "${1:my \\$Success = \\$DateTimeObject->Subtract(",
             "    Years     => 1,",
             "    Months    => 2,",
             "    Weeks     => 4,",

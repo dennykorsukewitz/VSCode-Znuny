@@ -1,14 +1,14 @@
 {
     "znuny.TimeObject.WorkingTime": {
         "body": [
-            "${1:my \$WorkingTime = \$TimeObject->WorkingTime(",
-            "    StartTime => \$Created,",
-            "    StopTime  => \$TimeObject->SystemTime(),",
+            "${1:my \\$WorkingTime = \\$TimeObject->WorkingTime(",
+            "    StartTime => \\$Created,",
+            "    StopTime  => \\$TimeObject->SystemTime(),",
             "    Calendar  => 3, # '' is default",
             ");}",
-            "${2:my \$WorkingTime = \$TimeObject->WorkingTime(",
-            "    StartTime => \$Created,",
-            "    StopTime  => \$TimeObject->SystemTime(),",
+            "${2:my \\$WorkingTime = \\$TimeObject->WorkingTime(",
+            "    StartTime => \\$Created,",
+            "    StopTime  => \\$TimeObject->SystemTime(),",
             ");}",
         ],
         "prefix": "znuny.TimeObject.WorkingTime",

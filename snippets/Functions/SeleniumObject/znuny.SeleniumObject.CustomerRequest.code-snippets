@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.CustomerRequest": {
         "body": [
-            "${1:\$SeleniumObject->CustomerRequest(",
+            "${1:\\$SeleniumObject->CustomerRequest(",
             "    Action      => 'CustomerUserSearch',",
             "    Param       => {",
             "        Term => 'test-customer-user'",

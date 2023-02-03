@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestParamObject.ParamSet": {
         "body": [
-            "${1:my \$Success = \$UnitTestParamObject->ParamSet(",
+            "${1:my \\$Success = \\$UnitTestParamObject->ParamSet(",
             "    Name  => 'Upload',",
             "    Value => '...',",
             ");}",

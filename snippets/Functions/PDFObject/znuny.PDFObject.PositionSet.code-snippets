@@ -1,7 +1,7 @@
 {
     "znuny.PDFObject.PositionSet": {
         "body": [
-            "${1:\$True = \$PDFObject->PositionSet(",
+            "${1:\\$True = \\$PDFObject->PositionSet(",
             "    Move => 'absolut',  # (optional) default absolut (absolut|relativ)",
             "    X    => 10,         # (optional) (<integer>|left|center|right)",
             "    Y    => 20,         # (optional) (<integer>|top|middle|bottom)",

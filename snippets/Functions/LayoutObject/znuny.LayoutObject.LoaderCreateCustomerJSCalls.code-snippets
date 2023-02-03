@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.LoaderCreateCustomerJSCalls": {
         "body": [
-            "${1:\$LayoutObject->LoaderCreateCustomerJSCalls();}",
+            "${1:\\$LayoutObject->LoaderCreateCustomerJSCalls();}",
         ],
         "prefix": "znuny.LayoutObject.LoaderCreateCustomerJSCalls",
         "description": "6.0, 6.4, 6.5",

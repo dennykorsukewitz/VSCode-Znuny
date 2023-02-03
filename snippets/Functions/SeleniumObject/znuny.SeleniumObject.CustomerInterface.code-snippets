@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.CustomerInterface": {
         "body": [
-            "${1:\$SeleniumObject->CustomerInterface(",
+            "${1:\\$SeleniumObject->CustomerInterface(",
             "    Action      => 'CustomerTicketMessage',",
             "    WaitForAJAX => 0,                      # optional, default 1",
             ");}",

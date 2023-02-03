@@ -1,7 +1,7 @@
 {
     "znuny.SessionObject.CheckAgentSessionLimitPriorWarning": {
         "body": [
-            "${1:my \$PriorMessage = \$SessionObject->CheckAgentSessionLimitPriorWarning();}",
+            "${1:my \\$PriorMessage = \\$SessionObject->CheckAgentSessionLimitPriorWarning();}",
         ],
         "prefix": "znuny.SessionObject.CheckAgentSessionLimitPriorWarning",
         "description": "6.0, 6.4, 6.5",

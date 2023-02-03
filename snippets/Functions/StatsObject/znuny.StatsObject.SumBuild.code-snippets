@@ -1,7 +1,7 @@
 {
     "znuny.StatsObject.SumBuild": {
         "body": [
-            "${1:\$StatArray = \$StatsObject->SumBuild(",
+            "${1:\\$StatArray = \\$StatsObject->SumBuild(",
             "    Array  => \@Result,",
             "    SumRow => 1,",
             "    SumCol => 0,",

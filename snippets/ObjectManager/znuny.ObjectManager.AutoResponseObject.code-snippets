@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.AutoResponseObject": {
         "body": [
-            "my \$AutoResponseObject = \$Kernel::OM->Get('Kernel::System::AutoResponse');",
+            "my \\$AutoResponseObject = \\$Kernel::OM->Get('Kernel::System::AutoResponse');",
         ],
         "prefix": "znuny.ObjectManager.AutoResponseObject",
         "description": "6.0, 6.4, 6.5",

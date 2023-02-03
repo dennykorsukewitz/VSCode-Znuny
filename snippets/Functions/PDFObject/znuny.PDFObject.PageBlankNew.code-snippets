@@ -1,7 +1,7 @@
 {
     "znuny.PDFObject.PageBlankNew": {
         "body": [
-            "${1:\$True = \$PDFObject->PageBlankNew(",
+            "${1:\\$True = \\$PDFObject->PageBlankNew(",
             "    Width           => 200,          # (optional) default 595 (Din A4) - _ both or nothing",
             "    Height          => 300,          # (optional) default 842 (Din A4) -",
             "    PageOrientation => 'landscape',  # (optional) default normal (normal|landscape)",

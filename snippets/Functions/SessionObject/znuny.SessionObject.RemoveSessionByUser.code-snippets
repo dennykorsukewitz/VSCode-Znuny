@@ -1,7 +1,7 @@
 {
     "znuny.SessionObject.RemoveSessionByUser": {
         "body": [
-            "${1:\$SessionObject->RemoveSessionByUser(",
+            "${1:\\$SessionObject->RemoveSessionByUser(",
             "    UserLogin => 'some_user_login'",
             ");}",
         ],

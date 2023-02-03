@@ -1,10 +1,10 @@
 {
     "znuny.StandardTemplateObject.StandardTemplateList": {
         "body": [
-            "${1:my %StandardTemplates = \$StandardTemplateObject->StandardTemplateList(",
+            "${1:my %StandardTemplates = \\$StandardTemplateObject->StandardTemplateList(",
             "    Valid => 0,",
             ");}",
-            "${2:my %StandardTemplates = \$StandardTemplateObject->StandardTemplateList();}",
+            "${2:my %StandardTemplates = \\$StandardTemplateObject->StandardTemplateList();}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateList",
         "description": "6.0, 6.4, 6.5",

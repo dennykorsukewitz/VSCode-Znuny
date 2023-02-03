@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.JWTObject": {
         "body": [
-            "my \$JWTObject = \$Kernel::OM->Get('Kernel::System::JSONWebToken');",
+            "my \\$JWTObject = \\$Kernel::OM->Get('Kernel::System::JSONWebToken');",
         ],
         "prefix": "znuny.ObjectManager.JWTObject",
         "description": "6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.CommunicationLogObject": {
         "body": [
-            "my \$CommunicationLogObject = \$Kernel::OM->Create(",
+            "my \\$CommunicationLogObject = \\$Kernel::OM->Create(",
             "        'Kernel::System::CommunicationLog',",
             "        ObjectParams => {",
             "            CommunicationID => 123,",

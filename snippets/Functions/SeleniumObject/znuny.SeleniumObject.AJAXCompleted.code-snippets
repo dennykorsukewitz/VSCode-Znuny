@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.AJAXCompleted": {
         "body": [
-            "${1:\$SeleniumObject->AJAXCompleted();}",
+            "${1:\\$SeleniumObject->AJAXCompleted();}",
         ],
         "prefix": "znuny.SeleniumObject.AJAXCompleted",
         "description": "6.4, 6.5",

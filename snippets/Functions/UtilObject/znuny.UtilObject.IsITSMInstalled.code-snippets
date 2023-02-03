@@ -1,7 +1,7 @@
 {
     "znuny.UtilObject.IsITSMInstalled": {
         "body": [
-            "${1:my \$IsITSMInstalled = \$UtilObject->IsITSMInstalled();}",
+            "${1:my \\$IsITSMInstalled = \\$UtilObject->IsITSMInstalled();}",
         ],
         "prefix": "znuny.UtilObject.IsITSMInstalled",
         "description": "6.4, 6.5",

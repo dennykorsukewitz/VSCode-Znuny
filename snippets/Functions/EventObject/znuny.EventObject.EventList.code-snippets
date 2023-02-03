@@ -1,7 +1,7 @@
 {
     "znuny.EventObject.EventList": {
         "body": [
-            "${1:my %Events = \$EventObject->EventList(",
+            "${1:my %Events = \\$EventObject->EventList(",
             "    ObjectTypes => ['Ticket', 'Article'],    # optional filter",
             ");}",
         ],

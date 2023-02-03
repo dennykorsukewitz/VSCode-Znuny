@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.SQLProcessor": {
         "body": [
-            "${1:my @SQL = \$DBObject->SQLProcessor(",
+            "${1:my @SQL = \\$DBObject->SQLProcessor(",
             "    Database =>",
             "        [",
             "            Tag  => 'TableCreate',",

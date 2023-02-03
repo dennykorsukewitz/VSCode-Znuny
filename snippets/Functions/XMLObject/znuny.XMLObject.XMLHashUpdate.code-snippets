@@ -1,7 +1,7 @@
 {
     "znuny.XMLObject.XMLHashUpdate": {
         "body": [
-            "${1:\$XMLObject->XMLHashUpdate(",
+            "${1:\\$XMLObject->XMLHashUpdate(",
             "    Type    => 'SomeType',",
             "    Key     => '123',",
             "    XMLHash => \@XMLHash,",

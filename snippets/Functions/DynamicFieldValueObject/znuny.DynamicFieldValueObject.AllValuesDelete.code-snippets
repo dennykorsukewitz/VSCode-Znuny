@@ -1,9 +1,9 @@
 {
     "znuny.DynamicFieldValueObject.AllValuesDelete": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldValueObject->AllValuesDelete(",
-            "    FieldID            => \$FieldID,                 # ID of the dynamic field",
-            "    UserID  => \$UserID,",
+            "${1:my \\$Success = \\$DynamicFieldValueObject->AllValuesDelete(",
+            "    FieldID            => \\$FieldID,                 # ID of the dynamic field",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.AllValuesDelete",

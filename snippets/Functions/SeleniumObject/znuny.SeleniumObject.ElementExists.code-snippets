@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.ElementExists": {
         "body": [
-            "${1:\$SeleniumObject->ElementExists(",
+            "${1:\\$SeleniumObject->ElementExists(",
             "    Selector     => '#GroupID',",
             "    SelectorType => 'css',        # optional",
             ");}",

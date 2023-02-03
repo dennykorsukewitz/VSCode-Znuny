@@ -1,11 +1,11 @@
 {
     "znuny.TemplateGeneratorObject.GenericAgentArticle": {
         "body": [
-            "${1:my \$GenericAgentArticle = \$TemplateGeneratorObject->GenericAgentArticle(",
-            "    Notification    => \$NotificationDataHashRef,",
-            "    TicketID        => \$TicketID,",
-            "    UserID          => \$UserID,",
-            "    Data            => \$ArticleHashRef,             # Optional",
+            "${1:my \\$GenericAgentArticle = \\$TemplateGeneratorObject->GenericAgentArticle(",
+            "    Notification    => \\$NotificationDataHashRef,",
+            "    TicketID        => \\$TicketID,",
+            "    UserID          => \\$UserID,",
+            "    Data            => \\$ArticleHashRef,             # Optional",
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.GenericAgentArticle",

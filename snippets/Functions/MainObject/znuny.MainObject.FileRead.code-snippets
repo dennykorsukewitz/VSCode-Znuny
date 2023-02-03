@@ -1,7 +1,7 @@
 {
     "znuny.MainObject.FileRead": {
         "body": [
-            "${1:my \$ContentARRAYRef = \$MainObject->FileRead(",
+            "${1:my \\$ContentARRAYRef = \\$MainObject->FileRead(",
             "    Directory => 'c:\some\location',",
             "    Filename  => 'file2read.txt',",
             "    # or Location",
@@ -9,7 +9,7 @@
             "",
             "    Result    => 'ARRAY', # optional - SCALAR|ARRAY",
             ");}",
-            "${2:my \$ContentSCALARRef = \$MainObject->FileRead(",
+            "${2:my \\$ContentSCALARRef = \\$MainObject->FileRead(",
             "    Directory       => 'c:\some\location',",
             "    Filename        => 'file2read.txt',",
             "    # or Location",
@@ -20,7 +20,7 @@
             "    Result          => 'SCALAR',  # optional - SCALAR|ARRAY",
             "    DisableWarnings => 1,         # optional",
             ");}",
-            "${3:my \$ContentSCALARRef = \$MainObject->FileRead(",
+            "${3:my \\$ContentSCALARRef = \\$MainObject->FileRead(",
             "    Directory => 'c:\some\location',",
             "    Filename  => 'file2read.txt',",
             "    # or Location",

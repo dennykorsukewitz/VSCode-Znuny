@@ -1,7 +1,7 @@
 {
     "znuny.MailAccountObject.MailAccountGetAll": {
         "body": [
-            "${1:my @MailAccounts = \$MailAccountObject->MailAccountGetAll();}",
+            "${1:my @MailAccounts = \\$MailAccountObject->MailAccountGetAll();}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountGetAll",
         "description": "6.0, 6.4, 6.5",

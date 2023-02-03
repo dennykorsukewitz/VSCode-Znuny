@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestWebserviceObject.InvokerFunctionCall": {
         "body": [
-            "${1:my \$Success = \$UnitTestWebserviceObject->InvokerFunctionCall(",
+            "${1:my \\$Success = \\$UnitTestWebserviceObject->InvokerFunctionCall(",
             "    Webservice => 'webservice-name',",
             "    Invoker    => 'invoker-name',",
             "    Function   => 'function',",
@@ -9,12 +9,12 @@
             "    ObjectModifyFunction => sub {",
             "        my (%Params) = @_;",
             "",
-            "        \$Params{Object\\}->{BackendObject\\}->{MessageName\\} = 'SEND_UPDATE';",
+            "        \\$Params{Object\\}->{BackendObject\\}->{MessageName\\} = 'SEND_UPDATE';",
             "",
             "        return 1;",
             "    \\},",
             ");}",
-            "${2:my \$Success = \$UnitTestWebserviceObject->InvokerFunctionCall(",
+            "${2:my \\$Success = \\$UnitTestWebserviceObject->InvokerFunctionCall(",
             "    Webservice => 'webservice-name',",
             "    Invoker    => 'invoker-name',",
             "    Function   => 'function',",

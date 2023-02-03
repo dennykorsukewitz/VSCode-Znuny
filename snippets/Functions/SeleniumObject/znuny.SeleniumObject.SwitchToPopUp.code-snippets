@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.SwitchToPopUp": {
         "body": [
-            "${1:\$SeleniumObject->SwitchToPopUp(",
+            "${1:\\$SeleniumObject->SwitchToPopUp(",
             "    WaitForAJAX => 0, # optional, default 1",
             ");}",
         ],

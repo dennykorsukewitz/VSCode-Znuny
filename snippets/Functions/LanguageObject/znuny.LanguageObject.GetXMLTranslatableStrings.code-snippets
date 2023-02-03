@@ -1,8 +1,8 @@
 {
     "znuny.LanguageObject.GetXMLTranslatableStrings": {
         "body": [
-            "${1:my @TranslationStrings = \$LanguageObject->GetXMLTranslatableStrings(",
-            "    ModuleDirectory  => "\$Home/...",  # optional, translates the Znuny module in the given directory",
+            "${1:my @TranslationStrings = \\$LanguageObject->GetXMLTranslatableStrings(",
+            "    ModuleDirectory  => \\"\\$Home/...\\",  # optional, translates the Znuny module in the given directory",
             ");}",
         ],
         "prefix": "znuny.LanguageObject.GetXMLTranslatableStrings",

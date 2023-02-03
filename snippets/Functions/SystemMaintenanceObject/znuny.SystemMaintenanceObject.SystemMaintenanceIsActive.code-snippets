@@ -1,7 +1,7 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceIsActive": {
         "body": [
-            "${1:my \$ActiveMaintenance = \$SystemMaintenanceObject->SystemMaintenanceIsActive();}",
+            "${1:my \\$ActiveMaintenance = \\$SystemMaintenanceObject->SystemMaintenanceIsActive();}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceIsActive",
         "description": "6.0, 6.4, 6.5",

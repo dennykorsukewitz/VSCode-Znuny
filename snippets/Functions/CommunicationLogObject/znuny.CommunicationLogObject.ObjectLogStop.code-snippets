@@ -1,9 +1,9 @@
 {
     "znuny.CommunicationLogObject.ObjectLogStop": {
         "body": [
-            "${1:my \$Success = \$CommunicationLogObject->ObjectLogStop(",
+            "${1:my \\$Success = \\$CommunicationLogObject->ObjectLogStop(",
             "    ObjectLogType => 'Connection'                        # (required) Can be 'Connection' or 'Message'",
-            "    ObjectLogID   => \$ObjectLogID, # (required) The ObjectID of the started object type",
+            "    ObjectLogID   => \\$ObjectLogID, # (required) The ObjectID of the started object type",
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.ObjectLogStop",

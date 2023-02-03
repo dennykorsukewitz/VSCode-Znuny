@@ -1,10 +1,10 @@
 {
     "znuny.LinkObject.ObjectLookup": {
         "body": [
-            "${1:\$Name = \$LinkObject->ObjectLookup(",
-            "    ObjectID => \$ObjectID,",
+            "${1:\\$Name = \\$LinkObject->ObjectLookup(",
+            "    ObjectID => \\$ObjectID,",
             ");}",
-            "${2:\$ObjectID = \$LinkObject->ObjectLookup(",
+            "${2:\\$ObjectID = \\$LinkObject->ObjectLookup(",
             "    Name => 'Ticket',",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.GetFieldConfig": {
         "body": [
-            "${1:my %FieldConfig = \$CustomerUserObject->GetFieldConfig(",
+            "${1:my %FieldConfig = \\$CustomerUserObject->GetFieldConfig(",
             "    FieldName => 'UserEmail',",
             "    Source    => 'CustomerUser', # optional",
             ");}",

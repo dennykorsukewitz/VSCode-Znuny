@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.get_alert_text": {
         "body": [
-            "${1:my \$AlertText = \$SeleniumObject->get_alert_text();}",
+            "${1:my \\$AlertText = \\$SeleniumObject->get_alert_text();}",
         ],
         "prefix": "znuny.SeleniumObject.get_alert_text",
         "description": "6.0, 6.4, 6.5",

@@ -1,9 +1,9 @@
 {
     "znuny.OAuth2TokenObject.GetTokenErrorMessage": {
         "body": [
-            "${1:my \$TokenErrorMessage = \$OAuth2TokenObject->GetTokenErrorMessage(",
-            "    TokenConfigID => \$TokenConfigID,",
-            "    UserID        => \$UserID,",
+            "${1:my \\$TokenErrorMessage = \\$OAuth2TokenObject->GetTokenErrorMessage(",
+            "    TokenConfigID => \\$TokenConfigID,",
+            "    UserID        => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.GetTokenErrorMessage",

@@ -1,7 +1,7 @@
 {
     "znuny.ExcelObject.GetColumnIdentifierByNumber": {
         "body": [
-            "${1:my \$ColumnIdentifier = \$ExcelObject->GetColumnIdentifierByNumber(",
+            "${1:my \\$ColumnIdentifier = \\$ExcelObject->GetColumnIdentifierByNumber(",
             "    ColumnNumber => 27,",
             ");}",
         ],

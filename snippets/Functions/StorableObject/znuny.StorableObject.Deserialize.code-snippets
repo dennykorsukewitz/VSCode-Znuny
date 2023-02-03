@@ -1,8 +1,8 @@
 {
     "znuny.StorableObject.Deserialize": {
         "body": [
-            "${1:my \$PerlStructureScalar = \$StorableObject->Deserialize(",
-            "    Data => \$StorableString,",
+            "${1:my \\$PerlStructureScalar = \\$StorableObject->Deserialize(",
+            "    Data => \\$StorableString,",
             ");}",
         ],
         "prefix": "znuny.StorableObject.Deserialize",

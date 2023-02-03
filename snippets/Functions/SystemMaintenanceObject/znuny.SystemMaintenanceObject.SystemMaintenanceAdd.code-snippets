@@ -1,15 +1,15 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceAdd": {
         "body": [
-            "${1:my \$ID = \$SystemMaintenanceObject->SystemMaintenanceAdd(",
+            "${1:my \\$ID = \\$SystemMaintenanceObject->SystemMaintenanceAdd(",
             "    StartDate        => 1485346000               # mandatory",
             "    StopDate         => 1485349600               # mandatory",
             "    Comment          => 'Comment',               # mandatory",
             "    LoginMessage     => 'A login message.',      # optional",
             "    ShowLoginMessage => 1,                       # optional",
             "    NotifyMessage    => 'Notification message.', # optional",
-            "    ValidID          => \$ValidID,                       # mandatory",
-            "    UserID           => \$UserID,                     # mandatory",
+            "    ValidID          => \\$ValidID,                       # mandatory",
+            "    UserID           => \\$UserID,                     # mandatory",
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceAdd",

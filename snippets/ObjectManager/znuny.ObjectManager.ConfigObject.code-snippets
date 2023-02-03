@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.ConfigObject": {
         "body": [
-            "my \$ConfigObject = \$Kernel::OM->Get('Kernel::Config');",
+            "my \\$ConfigObject = \\$Kernel::OM->Get('Kernel::Config');",
         ],
         "prefix": "znuny.ObjectManager.ConfigObject",
         "description": "6.0, 6.4, 6.5",

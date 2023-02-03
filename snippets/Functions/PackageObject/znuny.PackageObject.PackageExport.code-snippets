@@ -1,8 +1,8 @@
 {
     "znuny.PackageObject.PackageExport": {
         "body": [
-            "${1:\$PackageObject->PackageExport(",
-            "    String => \$FileString,",
+            "${1:\\$PackageObject->PackageExport(",
+            "    String => \\$FileString,",
             "    Home   => '/path/to/export'",
             ");}",
         ],

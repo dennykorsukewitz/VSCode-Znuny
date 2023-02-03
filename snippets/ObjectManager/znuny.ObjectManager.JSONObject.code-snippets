@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.JSONObject": {
         "body": [
-            "my \$JSONObject = \$Kernel::OM->Get('Kernel::System::JSON');",
+            "my \\$JSONObject = \\$Kernel::OM->Get('Kernel::System::JSON');",
         ],
         "prefix": "znuny.ObjectManager.JSONObject",
         "description": "6.0, 6.4, 6.5",

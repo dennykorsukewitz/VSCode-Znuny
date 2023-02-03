@@ -1,7 +1,7 @@
 {
     "znuny.ParserObject.GetMessageBody": {
         "body": [
-            "${1:my \$Body = \$ParserObject->GetMessageBody();}",
+            "${1:my \\$Body = \\$ParserObject->GetMessageBody();}",
         ],
         "prefix": "znuny.ParserObject.GetMessageBody",
         "description": "6.0, 6.4, 6.5",

@@ -1,8 +1,8 @@
 {
     "znuny.CommunicationChannelObject.ChannelSync": {
         "body": [
-            "${1:my %Result = \$CommunicationChannelObject->ChannelSync(",
-            "    UserID => \$UserID,",
+            "${1:my %Result = \\$CommunicationChannelObject->ChannelSync(",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelSync",

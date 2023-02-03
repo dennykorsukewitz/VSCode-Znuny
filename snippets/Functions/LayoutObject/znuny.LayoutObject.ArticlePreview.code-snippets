@@ -1,9 +1,9 @@
 {
     "znuny.LayoutObject.ArticlePreview": {
         "body": [
-            "${1:my \$ArticlePreview = \$LayoutObject->ArticlePreview(",
-            "    TicketID   => \$TicketID,     # (required)",
-            "    ArticleID  => \$ArticleID,     # (required)",
+            "${1:my \\$ArticlePreview = \\$LayoutObject->ArticlePreview(",
+            "    TicketID   => \\$TicketID,     # (required)",
+            "    ArticleID  => \\$ArticleID,     # (required)",
             "    ResultType => 'plain', # (optional) plain|HTML, default: HTML",
             "    MaxLength  => 50,      # (optional) performs trimming (for plain result only)",
             ");}",

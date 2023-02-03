@@ -1,7 +1,7 @@
 {
     "znuny.TimeObject.TimeStamp2SystemTime": {
         "body": [
-            "${1:my \$SystemTime = \$TimeObject->TimeStamp2SystemTime(",
+            "${1:my \\$SystemTime = \\$TimeObject->TimeStamp2SystemTime(",
             "    String => '2004-08-14 22:45:00',",
             ");}",
         ],

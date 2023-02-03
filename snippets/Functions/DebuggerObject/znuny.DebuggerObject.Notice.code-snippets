@@ -1,9 +1,9 @@
 {
     "znuny.DebuggerObject.Notice": {
         "body": [
-            "${1:\$DebuggerObject->Notice(",
+            "${1:\\$DebuggerObject->Notice(",
             "    Summary => 'Short summary, one line',",
-            "    Data    => \$Data, # optional, \$Data can be a string or a scalar reference",
+            "    Data    => \\$Data, # optional, \\$Data can be a string or a scalar reference",
             ");}",
         ],
         "prefix": "znuny.DebuggerObject.Notice",

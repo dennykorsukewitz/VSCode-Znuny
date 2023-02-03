@@ -1,9 +1,9 @@
 {
     "znuny.StatsObject.GetStaticFiles": {
         "body": [
-            "${1:my \$FileHash = \$StatsObject->GetStaticFiles(",
+            "${1:my \\$FileHash = \\$StatsObject->GetStaticFiles(",
             "    OnlyUnusedFiles => 1 | 0, # optional default 0",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.GetStaticFiles",

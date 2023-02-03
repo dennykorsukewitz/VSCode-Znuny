@@ -1,8 +1,8 @@
 {
     "znuny.ActivityDialogObject.ActivityDialogCompletedCheck": {
         "body": [
-            "${1:my \$Completed = \$ActivityDialogObject->ActivityDialogCompletedCheck(",
-            "    ActivityDialogEntityID => \$ActivityDialogEntityID,",
+            "${1:my \\$Completed = \\$ActivityDialogObject->ActivityDialogCompletedCheck(",
+            "    ActivityDialogEntityID => \\$ActivityDialogEntityID,",
             "    Data                   => {",
             "        Queue         => 'Raw',",
             "        DynamicField1 => 'Value',",

@@ -1,7 +1,7 @@
 {
     "znuny.LanguageObject.GetSysConfigTranslatableStrings": {
         "body": [
-            "${1:my @TranslationStrings = \$LanguageObject->GetSysConfigTranslatableStrings();}",
+            "${1:my @TranslationStrings = \\$LanguageObject->GetSysConfigTranslatableStrings();}",
         ],
         "prefix": "znuny.LanguageObject.GetSysConfigTranslatableStrings",
         "description": "6.4, 6.5",

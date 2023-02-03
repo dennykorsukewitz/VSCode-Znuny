@@ -1,9 +1,9 @@
 {
     "znuny.TicketObject.TicketEscalationPreferences": {
         "body": [
-            "${1:my %Escalation = \$TicketObject->TicketEscalationPreferences(",
-            "    Ticket => \$Param{Ticket\\},",
-            "    UserID => \$Param{UserID\\},",
+            "${1:my %Escalation = \\$TicketObject->TicketEscalationPreferences(",
+            "    Ticket => \\$Param{Ticket\\},",
+            "    UserID => \\$Param{UserID\\},",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationPreferences",

@@ -1,8 +1,8 @@
 {
     "znuny.ActivityObject.ActivityGet": {
         "body": [
-            "${1:my \$Activity = \$ActivityObject->ActivityGet(",
-            "    ActivityEntityID => \$ActivityEntityID,",
+            "${1:my \\$Activity = \\$ActivityObject->ActivityGet(",
+            "    ActivityEntityID => \\$ActivityEntityID,",
             "    Interface        => ['AgentInterface'],   # ['AgentInterface'] or ['CustomerInterface'] or ['AgentInterface', 'CustomerInterface'] or 'all'",
             ");}",
         ],

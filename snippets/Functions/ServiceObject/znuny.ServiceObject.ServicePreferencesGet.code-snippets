@@ -1,9 +1,9 @@
 {
     "znuny.ServiceObject.ServicePreferencesGet": {
         "body": [
-            "${1:my %Preferences = \$ServiceObject->ServicePreferencesGet(",
-            "    ServiceID => \$ServiceID,",
-            "    UserID    => \$UserID,",
+            "${1:my %Preferences = \\$ServiceObject->ServicePreferencesGet(",
+            "    ServiceID => \\$ServiceID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServicePreferencesGet",

@@ -1,11 +1,11 @@
 {
     "znuny.StatsObject.GetStatsList": {
         "body": [
-            "${1:my \$ArrayRef = \$StatsObject->GetStatsList(",
+            "${1:my \\$ArrayRef = \\$StatsObject->GetStatsList(",
             "    AccessRw  => 1, # Optional, indicates that user may see all statistics",
             "    OrderBy   => 'ID' || 'Title' || 'Object', # optional",
             "    Direction => 'ASC' || 'DESC',             # optional",
-            "    UserID    => \$UserID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.GetStatsList",

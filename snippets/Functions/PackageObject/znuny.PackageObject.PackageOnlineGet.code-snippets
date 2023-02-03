@@ -1,11 +1,11 @@
 {
     "znuny.PackageObject.PackageOnlineGet": {
         "body": [
-            "${1:\$PackageObject->PackageOnlineGet(",
+            "${1:\\$PackageObject->PackageOnlineGet(",
             "    Source => 'http://host.example.com/',",
             "    File   => 'SomePackage-1.0.opm',",
             ");}",
-            "${2:\$PackageObject->PackageOnlineGet(",
+            "${2:\\$PackageObject->PackageOnlineGet(",
             "    Source => 'http://host.example.com/', # or the name of a configured repository in Package::RepositoryList",
             "    File   => 'SomePackage-1.0.opm',",
             ");}",

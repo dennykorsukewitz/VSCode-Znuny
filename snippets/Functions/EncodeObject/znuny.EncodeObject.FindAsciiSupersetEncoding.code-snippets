@@ -1,7 +1,7 @@
 {
     "znuny.EncodeObject.FindAsciiSupersetEncoding": {
         "body": [
-            "${1:my \$Encoding = \$EncodeObject->FindAsciiSupersetEncoding(",
+            "${1:my \\$Encoding = \\$EncodeObject->FindAsciiSupersetEncoding(",
             "    Encodings   => [ 'UTF-16LE', 'UTF-8' ],",
             ");}",
         ],

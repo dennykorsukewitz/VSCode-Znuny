@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.SupportBundleGeneratorObject": {
         "body": [
-            "my \$SupportBundleGeneratorObject = \$Kernel::OM->Get('Kernel::System::SupportBundleGenerator');",
+            "my \\$SupportBundleGeneratorObject = \\$Kernel::OM->Get('Kernel::System::SupportBundleGenerator');",
         ],
         "prefix": "znuny.ObjectManager.SupportBundleGeneratorObject",
         "description": "6.0, 6.4, 6.5",

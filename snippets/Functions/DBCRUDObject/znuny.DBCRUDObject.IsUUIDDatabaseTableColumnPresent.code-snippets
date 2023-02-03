@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.IsUUIDDatabaseTableColumnPresent": {
         "body": [
-            "${1:my \$UUIDColumnPresent = \$DBCRUDObject->IsUUIDDatabaseTableColumnPresent();}",
+            "${1:my \\$UUIDColumnPresent = \\$DBCRUDObject->IsUUIDDatabaseTableColumnPresent();}",
         ],
         "prefix": "znuny.DBCRUDObject.IsUUIDDatabaseTableColumnPresent",
         "description": "6.4, 6.5",

@@ -1,9 +1,9 @@
 {
     "znuny.PackageObject.PackageIsInstalled": {
         "body": [
-            "${1:\$PackageObject->PackageIsInstalled(",
-            "    String => \$PackageString,    # Attribute String or Name is required",
-            "    Name   => \$NameOfThePackage,",
+            "${1:\\$PackageObject->PackageIsInstalled(",
+            "    String => \\$PackageString,    # Attribute String or Name is required",
+            "    Name   => \\$NameOfThePackage,",
             ");}",
         ],
         "prefix": "znuny.PackageObject.PackageIsInstalled",

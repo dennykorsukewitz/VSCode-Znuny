@@ -1,7 +1,7 @@
 {
     "znuny.StandardTemplateObject.StandardTemplateDelete": {
         "body": [
-            "${1:\$StandardTemplateObject->StandardTemplateDelete(",
+            "${1:\\$StandardTemplateObject->StandardTemplateDelete(",
             "    ID => 123,",
             ");}",
         ],

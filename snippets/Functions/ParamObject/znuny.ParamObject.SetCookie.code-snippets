@@ -1,7 +1,7 @@
 {
     "znuny.ParamObject.SetCookie": {
         "body": [
-            "${1:\$ParamObject->SetCookie(",
+            "${1:\\$ParamObject->SetCookie(",
             "    Key     => ID,",
             "    Value   => 123456,",
             "    Expires => '+3660s',",

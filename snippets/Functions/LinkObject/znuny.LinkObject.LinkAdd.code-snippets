@@ -1,14 +1,14 @@
 {
     "znuny.LinkObject.LinkAdd": {
         "body": [
-            "${1:\$True = \$LinkObject->LinkAdd(",
+            "${1:\\$True = \\$LinkObject->LinkAdd(",
             "    SourceObject => 'Ticket',",
             "    SourceKey    => '321',",
             "    TargetObject => 'FAQ',",
             "    TargetKey    => '5',",
             "    Type         => 'ParentChild',",
             "    State        => 'Valid',",
-            "    UserID       => \$UserID,",
+            "    UserID       => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.LinkAdd",

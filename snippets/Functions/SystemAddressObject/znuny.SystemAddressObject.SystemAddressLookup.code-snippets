@@ -1,12 +1,12 @@
 {
     "znuny.SystemAddressObject.SystemAddressLookup": {
         "body": [
-            "${1:my \$Name = \$SystemAddressObject->SystemAddressLookup(",
+            "${1:my \\$Name = \\$SystemAddressObject->SystemAddressLookup(",
             "    ID              => 2,",
             "    # or",
-            "    SystemAddressID => \$SystemAddressID,",
+            "    SystemAddressID => \\$SystemAddressID,",
             ");}",
-            "${2:my \$SystemAddressID = \$SystemAddressObject->SystemAddressLookup(",
+            "${2:my \\$SystemAddressID = \\$SystemAddressObject->SystemAddressLookup(",
             "    Name          => 'info@znuny.com',",
             "    # or",
             "    SystemAddress => 'info@znuny.com',",

@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.UserInitialsGet": {
         "body": [
-            "${1:my \$UserInitials = \$LayoutObject->UserInitialsGet(",
+            "${1:my \\$UserInitials = \\$LayoutObject->UserInitialsGet(",
             "    Fullname => 'John Doe',",
             ");}",
         ],

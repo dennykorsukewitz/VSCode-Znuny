@@ -1,7 +1,7 @@
 {
     "znuny.LoaderObject.IsJavaScriptMinifierXSAvailable": {
         "body": [
-            "${1:my \$IsJavaScriptMinifierXSAvailable = \$LoaderObject->IsJavaScriptMinifierXSAvailable();}",
+            "${1:my \\$IsJavaScriptMinifierXSAvailable = \\$LoaderObject->IsJavaScriptMinifierXSAvailable();}",
         ],
         "prefix": "znuny.LoaderObject.IsJavaScriptMinifierXSAvailable",
         "description": "6.4, 6.5",

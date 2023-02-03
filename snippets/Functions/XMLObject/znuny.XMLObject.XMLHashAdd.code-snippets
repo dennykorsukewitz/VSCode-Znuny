@@ -1,12 +1,12 @@
 {
     "znuny.XMLObject.XMLHashAdd": {
         "body": [
-            "${1:my \$AutoKey = \$XMLObject->XMLHashAdd(",
+            "${1:my \\$AutoKey = \\$XMLObject->XMLHashAdd(",
             "    Type             => 'SomeType',",
             "    KeyAutoIncrement => 1,",
             "    XMLHash          => \@XMLHash,",
             ");}",
-            "${2:my \$Key = \$XMLObject->XMLHashAdd(",
+            "${2:my \\$Key = \\$XMLObject->XMLHashAdd(",
             "    Type    => 'SomeType',",
             "    Key     => '123',",
             "    XMLHash => \@XMLHash,",

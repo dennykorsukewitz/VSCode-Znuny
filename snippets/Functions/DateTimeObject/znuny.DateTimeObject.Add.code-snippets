@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.Add": {
         "body": [
-            "${1:my \$Success = \$DateTimeObject->Add(",
+            "${1:my \\$Success = \\$DateTimeObject->Add(",
             "    Years         => 1,",
             "    Months        => 2,",
             "    Weeks         => 4,",
@@ -10,7 +10,7 @@
             "    Minutes       => 5,",
             "    Seconds       => 459,",
             "",
-            "    # Calculate "destination date" by adding given time values as",
+            "    # Calculate \\"destination date\\" by adding given time values as",
             "    # working time. Note that for adding working time,",
             "    # only parameters Seconds, Minutes, Hours and Days are allowed.",
             "    AsWorkingTime => 0, # set to 1 to add given values as working time",

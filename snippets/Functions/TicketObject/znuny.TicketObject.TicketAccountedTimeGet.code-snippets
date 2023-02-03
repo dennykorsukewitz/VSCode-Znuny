@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.TicketAccountedTimeGet": {
         "body": [
-            "${1:my \$AccountedTime = \$TicketObject->TicketAccountedTimeGet(TicketID => 1234);}",
+            "${1:my \\$AccountedTime = \\$TicketObject->TicketAccountedTimeGet(TicketID => 1234);}",
         ],
         "prefix": "znuny.TicketObject.TicketAccountedTimeGet",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.ExcelObject.GetColumnContentFormat": {
         "body": [
-            "${1:my \$ColumnContentFormat = \$ExcelObject->GetColumnContentFormat(",
+            "${1:my \\$ColumnContentFormat = \\$ExcelObject->GetColumnContentFormat(",
             "    Value  => '123',",
             "    Format => {\\},",
             ");}",

@@ -1,11 +1,11 @@
 {
     "znuny.FormDraftObject.FormDraftListGet": {
         "body": [
-            "${1:my \$FormDraftList = \$FormDraftObject->FormDraftListGet(",
+            "${1:my \\$FormDraftList = \\$FormDraftObject->FormDraftListGet(",
             "    ObjectType => 'Ticket',             # optional",
-            "    ObjectID   => \$ObjectID,                  # optional",
+            "    ObjectID   => \\$ObjectID,                  # optional",
             "    Action     => 'AgentTicketCompose', # optional",
-            "    UserID     => \$UserID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftListGet",

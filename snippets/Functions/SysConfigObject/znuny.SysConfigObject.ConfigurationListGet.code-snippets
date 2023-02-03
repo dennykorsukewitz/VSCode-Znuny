@@ -1,16 +1,16 @@
 {
     "znuny.SysConfigObject.ConfigurationListGet": {
         "body": [
-            "${1:my @List = \$SysConfigObject->ConfigurationListGet(",
+            "${1:my @List = \\$SysConfigObject->ConfigurationListGet(",
             "    Navigation           => 'SomeNavigationGroup',  # (optional) limit to the settings that have provided navigation",
-            "    TargetUserID         => \$TargetUserID,                      # (optional) if provided, system returns setting for particular user only,",
+            "    TargetUserID         => \\$TargetUserID,                      # (optional) if provided, system returns setting for particular user only,",
             "                                                    #       otherwise, returns global setting list",
             "    IsValid              => 1,                      # (optional) by default returns valid and invalid settings.",
             "    Invisible            => 0,                      # (optional) Include Invisible settings. By default, not included.",
             "    UserPreferencesGroup => 'Advanced',             # (optional) filter list by group.",
             "    Translate            => 0,                      # (optional) Translate translatable string in EffectiveValue. Default 0.",
             "    OverriddenInXML      => 1,                      # (optional) Consider changes made in Perl files. Default 0. Use it in modules only!",
-            "    UserID               => \$UserID,                      # Required if OverriddenInXML is set.",
+            "    UserID               => \\$UserID,                      # Required if OverriddenInXML is set.",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationListGet",

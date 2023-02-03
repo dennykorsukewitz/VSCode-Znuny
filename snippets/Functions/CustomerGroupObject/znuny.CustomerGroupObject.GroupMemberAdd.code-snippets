@@ -1,9 +1,9 @@
 {
     "znuny.CustomerGroupObject.GroupMemberAdd": {
         "body": [
-            "${1:my \$Success = \$CustomerGroupObject->GroupMemberAdd(",
-            "    GID => \$GID,",
-            "    UID => \$UID,",
+            "${1:my \\$Success = \\$CustomerGroupObject->GroupMemberAdd(",
+            "    GID => \\$GID,",
+            "    UID => \\$UID,",
             "    Permission => {",
             "        ro        => 1,",
             "        move_into => 1,",
@@ -12,7 +12,7 @@
             "        priority  => 0,",
             "        rw        => 0,",
             "    \\},",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupMemberAdd",

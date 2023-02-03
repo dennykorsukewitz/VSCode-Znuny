@@ -1,11 +1,11 @@
 {
     "znuny.PIDObject.PIDDelete": {
         "body": [
-            "${1:my \$Success = \$PIDObject->PIDDelete(",
+            "${1:my \\$Success = \\$PIDObject->PIDDelete(",
             "    Name  => 'PostMasterPOP3',",
             ");}",
             "${2:or to force delete even if the PID is registered by another host",
-            "my \$Success = \$PIDObject->PIDDelete(",
+            "my \\$Success = \\$PIDObject->PIDDelete(",
             "    Name  => 'PostMasterPOP3',",
             "    Force => 1,",
             ");}",

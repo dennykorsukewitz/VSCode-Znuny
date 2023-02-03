@@ -1,7 +1,7 @@
 {
     "znuny.EmailObject.Check": {
         "body": [
-            "${1:my %Check = \$EmailObject->Check();}",
+            "${1:my %Check = \\$EmailObject->Check();}",
         ],
         "prefix": "znuny.EmailObject.Check",
         "description": "6.0, 6.4, 6.5",

@@ -1,12 +1,12 @@
 {
     "znuny.UnitTestObject.IsNot": {
         "body": [
-            "${1:\$Self->IsNot(",
-            "    \$ValueFromFunction,      # test data",
+            "${1:\\$Self->IsNot(",
+            "    \\$ValueFromFunction,      # test data",
             "    1,                       # expected value",
             "    'Test Name',",
             ");}",
-            "${2:\$Self->IsNot(\$A, \$B, 'Test Name');}",
+            "${2:\\$Self->IsNot(\\$A, \\$B, 'Test Name');}",
         ],
         "prefix": "znuny.UnitTestObject.IsNot",
         "description": "6.4, 6.5",

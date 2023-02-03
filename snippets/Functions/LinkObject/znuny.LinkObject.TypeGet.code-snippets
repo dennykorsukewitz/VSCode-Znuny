@@ -1,8 +1,8 @@
 {
     "znuny.LinkObject.TypeGet": {
         "body": [
-            "${1:%TypeData = \$LinkObject->TypeGet(",
-            "    TypeID => \$TypeID,",
+            "${1:%TypeData = \\$LinkObject->TypeGet(",
+            "    TypeID => \\$TypeID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.TypeGet",

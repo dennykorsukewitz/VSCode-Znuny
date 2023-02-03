@@ -1,7 +1,7 @@
 {
     "znuny.StatsObject.GetObjectBehaviours": {
         "body": [
-            "${1:my \$Behaviours = \$StatsObject->GetObjectBehaviours(",
+            "${1:my \\$Behaviours = \\$StatsObject->GetObjectBehaviours(",
             "    ObjectModule => 'Kernel::System::Stats::Dynamic::TicketList',",
             ");}",
         ],

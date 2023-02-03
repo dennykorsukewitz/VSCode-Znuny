@@ -1,7 +1,7 @@
 {
     "znuny.CommunicationLogObject.IsObjectLogOpen": {
         "body": [
-            "${1:my \$Result = \$CommunicationLogObject->IsObjectLogOpen(",
+            "${1:my \\$Result = \\$CommunicationLogObject->IsObjectLogOpen(",
             "    ObjectLogType => '...',     # Required",
             ");}",
         ],

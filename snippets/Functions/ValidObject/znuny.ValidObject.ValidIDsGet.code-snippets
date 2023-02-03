@@ -1,7 +1,7 @@
 {
     "znuny.ValidObject.ValidIDsGet": {
         "body": [
-            "${1:my @List = \$ValidObject->ValidIDsGet();}",
+            "${1:my @List = \\$ValidObject->ValidIDsGet();}",
         ],
         "prefix": "znuny.ValidObject.ValidIDsGet",
         "description": "6.0, 6.4, 6.5",

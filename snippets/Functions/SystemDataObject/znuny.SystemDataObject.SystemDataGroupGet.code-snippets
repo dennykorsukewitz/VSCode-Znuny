@@ -1,7 +1,7 @@
 {
     "znuny.SystemDataObject.SystemDataGroupGet": {
         "body": [
-            "${1:my %SystemData = \$SystemDataObject->SystemDataGroupGet(",
+            "${1:my %SystemData = \\$SystemDataObject->SystemDataGroupGet(",
             "    Group => 'SystemRegistration',",
             ");}",
         ],

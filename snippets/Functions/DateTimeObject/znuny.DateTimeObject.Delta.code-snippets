@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.Delta": {
         "body": [
-            "${1:my \$Delta = \$DateTimeObject->Delta( DateTimeObject => \$AnotherDateTimeObject );}",
+            "${1:my \\$Delta = \\$DateTimeObject->Delta( DateTimeObject => \\$AnotherDateTimeObject );}",
         ],
         "prefix": "znuny.DateTimeObject.Delta",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.Ping": {
         "body": [
-            "${1:my \$Success = \$DBObject->Ping(",
+            "${1:my \\$Success = \\$DBObject->Ping(",
             "    AutoConnect => 0,  # default 1",
             ");}",
         ],

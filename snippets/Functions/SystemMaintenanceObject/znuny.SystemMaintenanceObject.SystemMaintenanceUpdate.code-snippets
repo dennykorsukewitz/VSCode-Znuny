@@ -1,7 +1,7 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceUpdate": {
         "body": [
-            "${1:my \$Success = \$SystemMaintenanceObject->SystemMaintenanceUpdate(",
+            "${1:my \\$Success = \\$SystemMaintenanceObject->SystemMaintenanceUpdate(",
             "    ID               => 123,                        # mandatory",
             "    StartDate        => 1485346000,                 # mandatory",
             "    StopDate         => 1485349600,                 # mandatory",
@@ -9,8 +9,8 @@
             "    LoginMessage     => 'Description',              # optional",
             "    ShowLoginMessage => 1,                          # optional",
             "    NotifyMessage    => 'Notification for showing', # optional",
-            "    ValidID          => \$ValidID,                  # mandatory",
-            "    UserID           => \$UserID,                        # mandatory",
+            "    ValidID          => \\$ValidID,                  # mandatory",
+            "    UserID           => \\$UserID,                        # mandatory",
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceUpdate",

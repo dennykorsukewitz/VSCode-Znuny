@@ -2,8 +2,8 @@
     "znuny.DateTimeObject.IsTimeZoneValid": {
         "body": [
             "${1:# You can also call this function without an object:",
-            "my \$Valid = Kernel::System::DateTime->IsTimeZoneValid( TimeZone => 'Europe/Berlin' );}",
-            "${2:my \$Valid = \$DateTimeObject->IsTimeZoneValid( TimeZone => 'Europe/Berlin' );}",
+            "my \\$Valid = Kernel::System::DateTime->IsTimeZoneValid( TimeZone => 'Europe/Berlin' );}",
+            "${2:my \\$Valid = \\$DateTimeObject->IsTimeZoneValid( TimeZone => 'Europe/Berlin' );}",
         ],
         "prefix": "znuny.DateTimeObject.IsTimeZoneValid",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.InputShow": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputShow(",
+            "${1:my \\$Result = \\$SeleniumObject->InputShow(",
             "    Attribute => 'QueueID',",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.UseTmpArticleDir": {
         "body": [
-            "${1:\$HelperObject->UseTmpArticleDir();}",
+            "${1:\\$HelperObject->UseTmpArticleDir();}",
         ],
         "prefix": "znuny.HelperObject.UseTmpArticleDir",
         "description": "6.4, 6.5",

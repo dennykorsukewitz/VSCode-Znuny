@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.PublicRequest": {
         "body": [
-            "${1:\$SeleniumObject->PublicRequest(",
+            "${1:\\$SeleniumObject->PublicRequest(",
             "    Action      => 'PublicUserSearch',",
             "    Param       => {",
             "        Term => 'test-customer-user'",

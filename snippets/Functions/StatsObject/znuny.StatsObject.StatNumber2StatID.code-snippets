@@ -1,7 +1,7 @@
 {
     "znuny.StatsObject.StatNumber2StatID": {
         "body": [
-            "${1:my \$StatID = \$StatsObject->StatNumber2StatID(",
+            "${1:my \\$StatID = \\$StatsObject->StatNumber2StatID(",
             "    StatNumber => 11212,",
             ");}",
         ],

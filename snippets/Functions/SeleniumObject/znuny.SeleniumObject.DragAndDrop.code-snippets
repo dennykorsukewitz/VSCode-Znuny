@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.DragAndDrop": {
         "body": [
-            "${1:\$SeleniumObject->DragAndDrop(",
+            "${1:\\$SeleniumObject->DragAndDrop(",
             "    Element         => '.Element', # (required) css selector of element which should be dragged",
             "    Target          => '.Target',  # (required) css selector of element on which the dragged element should be dropped",
             "    TargetOffset    => {           # (optional) Offset for target. If not specified, the mouse will move to the middle of the element.",

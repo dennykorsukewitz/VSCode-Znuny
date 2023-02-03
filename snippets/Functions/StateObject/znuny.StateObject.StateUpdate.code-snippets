@@ -1,13 +1,13 @@
 {
     "znuny.StateObject.StateUpdate": {
         "body": [
-            "${1:\$StateObject->StateUpdate(",
+            "${1:\\$StateObject->StateUpdate(",
             "    ID             => 123,",
             "    Name           => 'New State',",
             "    Comment        => 'some comment',",
-            "    ValidID        => \$ValidID,",
-            "    TypeID         => \$TypeID,",
-            "    UserID         => \$UserID,",
+            "    ValidID        => \\$ValidID,",
+            "    TypeID         => \\$TypeID,",
+            "    UserID         => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StateObject.StateUpdate",

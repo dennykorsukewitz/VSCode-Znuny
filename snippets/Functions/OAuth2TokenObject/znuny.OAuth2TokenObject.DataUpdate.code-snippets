@@ -1,12 +1,12 @@
 {
     "znuny.OAuth2TokenObject.DataUpdate": {
         "body": [
-            "${1:my \$Success = \$OAuth2TokenObject->DataUpdate(",
+            "${1:my \\$Success = \\$OAuth2TokenObject->DataUpdate(",
             "    ID                         => 1234,",
-            "    UserID                     => \$UserID,",
+            "    UserID                     => \\$UserID,",
             "",
             "    # all other attributes are optional",
-            "    TokenConfigID              => \$TokenConfigID,",
+            "    TokenConfigID              => \\$TokenConfigID,",
             "    AuthorizationCode          => '...',",
             "    Token                      => '...',",
             "    TokenExpirationDate        => '...',",

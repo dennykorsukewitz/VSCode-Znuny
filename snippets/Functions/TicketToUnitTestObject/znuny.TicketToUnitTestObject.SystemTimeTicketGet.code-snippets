@@ -1,9 +1,9 @@
 {
     "znuny.TicketToUnitTestObject.SystemTimeTicketGet": {
         "body": [
-            "${1:my %HistoryData = \$TicketToUnitTestObject->SystemTimeTicketGet(",
+            "${1:my %HistoryData = \\$TicketToUnitTestObject->SystemTimeTicketGet(",
             "    SystemTime => 19435456436,",
-            "    TicketID   => \$TicketID,",
+            "    TicketID   => \\$TicketID,",
             "    Force      => 0, # cache",
             ");}",
         ],

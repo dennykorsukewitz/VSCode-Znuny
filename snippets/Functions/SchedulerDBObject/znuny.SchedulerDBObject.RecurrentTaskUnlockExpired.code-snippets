@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerDBObject.RecurrentTaskUnlockExpired": {
         "body": [
-            "${1:my \$Success = \$SchedulerDBObject->RecurrentTaskUnlockExpired(",
+            "${1:my \\$Success = \\$SchedulerDBObject->RecurrentTaskUnlockExpired(",
             "    Type => 'some_type',",
             ");}",
         ],

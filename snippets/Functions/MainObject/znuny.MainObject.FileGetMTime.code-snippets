@@ -1,7 +1,7 @@
 {
     "znuny.MainObject.FileGetMTime": {
         "body": [
-            "${1:my \$FileMTime = \$MainObject->FileGetMTime(",
+            "${1:my \\$FileMTime = \\$MainObject->FileGetMTime(",
             "    Directory => 'c:\some\location',",
             "    Filename  => 'me_to/alal.xml',",
             "    # or Location",

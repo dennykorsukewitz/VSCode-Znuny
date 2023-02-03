@@ -1,7 +1,7 @@
 {
     "znuny.TicketToUnitTestObject.GetFooter": {
         "body": [
-            "${1:my \$Output = \$TicketToUnitTestObject->GetFooter();}",
+            "${1:my \\$Output = \\$TicketToUnitTestObject->GetFooter();}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetFooter",
         "description": "6.4, 6.5",

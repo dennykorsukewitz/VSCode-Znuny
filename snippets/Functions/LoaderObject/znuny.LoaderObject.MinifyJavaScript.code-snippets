@@ -1,7 +1,7 @@
 {
     "znuny.LoaderObject.MinifyJavaScript": {
         "body": [
-            "${1:my \$MinifiedJS = \$LoaderObject->MinifyJavaScript( Code => \$JavaScript );}",
+            "${1:my \\$MinifiedJS = \\$LoaderObject->MinifyJavaScript( Code => \\$JavaScript );}",
         ],
         "prefix": "znuny.LoaderObject.MinifyJavaScript",
         "description": "6.0, 6.4, 6.5",

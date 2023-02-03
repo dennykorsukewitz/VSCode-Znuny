@@ -1,13 +1,13 @@
 {
     "znuny.LinkObject.LinkDelete": {
         "body": [
-            "${1:\$True = \$LinkObject->LinkDelete(",
+            "${1:\\$True = \\$LinkObject->LinkDelete(",
             "    Object1 => 'Ticket',",
             "    Key1    => '321',",
             "    Object2 => 'FAQ',",
             "    Key2    => '5',",
             "    Type    => 'Normal',",
-            "    UserID  => \$UserID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.LinkDelete",

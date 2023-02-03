@@ -1,7 +1,7 @@
 {
     "znuny.DebuggerObject.ProviderGenerateResponse": {
         "body": [
-            "${1:my \$Result = \$DebuggerObject->ProviderGenerateResponse(",
+            "${1:my \\$Result = \\$DebuggerObject->ProviderGenerateResponse(",
             "    Success         => 1,       # 1 or 0",
             "    ErrorMessage    => '',      # in case of an error, optional",
             "    Data            => {        # data payload for response, optional",

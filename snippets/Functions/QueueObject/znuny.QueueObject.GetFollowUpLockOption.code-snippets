@@ -1,7 +1,7 @@
 {
     "znuny.QueueObject.GetFollowUpLockOption": {
         "body": [
-            "${1:my \$FollowUpLockOption = \$QueueObject->GetFollowUpLockOption( QueueID => \$QueueID );}",
+            "${1:my \\$FollowUpLockOption = \\$QueueObject->GetFollowUpLockOption( QueueID => \\$QueueID );}",
         ],
         "prefix": "znuny.QueueObject.GetFollowUpLockOption",
         "description": "6.0, 6.4, 6.5",

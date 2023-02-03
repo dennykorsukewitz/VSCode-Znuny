@@ -1,8 +1,8 @@
 {
     "znuny.CalendarObject.TicketAppointmentTicketID": {
         "body": [
-            "${1:my \$TicketID = \$CalendarObject->TicketAppointmentTicketID(",
-            "    AppointmentID => \$AppointmentID,",
+            "${1:my \\$TicketID = \\$CalendarObject->TicketAppointmentTicketID(",
+            "    AppointmentID => \\$AppointmentID,",
             ");}",
         ],
         "prefix": "znuny.CalendarObject.TicketAppointmentTicketID",

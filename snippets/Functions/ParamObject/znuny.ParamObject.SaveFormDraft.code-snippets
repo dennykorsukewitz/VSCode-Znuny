@@ -1,13 +1,13 @@
 {
     "znuny.ParamObject.SaveFormDraft": {
         "body": [
-            "${1:my \$FormDraftID = \$ParamObject->SaveFormDraft(",
-            "    UserID         => \$UserID",
+            "${1:my \\$FormDraftID = \\$ParamObject->SaveFormDraft(",
+            "    UserID         => \\$UserID",
             "    ObjectType     => 'Ticket',",
-            "    ObjectID       => \$ObjectID,",
+            "    ObjectID       => \\$ObjectID,",
             "    OverrideParams => {               # optional, can contain strings and array references",
             "        Subaction   => undef,",
-            "        UserID      => \$UserID,",
+            "        UserID      => \\$UserID,",
             "        CustomParam => [ 1, 2, 3, ],",
             "        ...",
             "    \\},",

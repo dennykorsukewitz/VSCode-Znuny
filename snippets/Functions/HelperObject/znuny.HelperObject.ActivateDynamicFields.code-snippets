@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.ActivateDynamicFields": {
         "body": [
-            "${1:\$HelperObject->ActivateDynamicFields(",
+            "${1:\\$HelperObject->ActivateDynamicFields(",
             "    'UnitTestDropdown',",
             "    'UnitTestCheckbox',",
             "    'UnitTestText',",

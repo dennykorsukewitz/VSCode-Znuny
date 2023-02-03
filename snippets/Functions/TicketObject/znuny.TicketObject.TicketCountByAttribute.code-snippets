@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.TicketCountByAttribute": {
         "body": [
-            "${1:my \$TicketCount = \$TicketObject->TicketCountByAttribute(",
+            "${1:my \\$TicketCount = \\$TicketObject->TicketCountByAttribute(",
             "    Attribute => 'ServiceID',",
             "    TicketIDs => [ 1, 2, 3 ],",
             ");}",

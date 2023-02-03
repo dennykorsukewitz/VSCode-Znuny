@@ -1,18 +1,18 @@
 {
     "znuny.LayoutObject.Ascii2Html": {
         "body": [
-            "${1:my \$HTML = \$LayoutObject->Ascii2Html(",
-            "    Text            => 'Some <> Test <font color="red">Test</font>',",
+            "${1:my \\$HTML = \\$LayoutObject->Ascii2Html(",
+            "    Text            => 'Some <> Test <font color=\\"red\\">Test</font>',",
             "    Max             => 20,       # max 20 chars flowed by [..]",
             "    VMax            => 15,       # first 15 lines",
             "    NewLine         => 0,        # move \r to \n",
-            "    HTMLResultMode  => 0,        # replace " " with C<&nbsp;>",
+            "    HTMLResultMode  => 0,        # replace \\" \\" with C<&nbsp;>",
             "    StripEmptyLines => 0,",
             "    Type            => 'Normal', # JSText or Normal text",
             "    LinkFeature     => 0,        # do some URL detections",
             ");}",
-            "${2:my \$HTMLStringRef = \$LayoutObject->Ascii2Html(",
-            "    Text => \\$String,",
+            "${2:my \\$HTMLStringRef = \\$LayoutObject->Ascii2Html(",
+            "    Text => \\\$String,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Ascii2Html",

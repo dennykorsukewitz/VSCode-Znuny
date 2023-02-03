@@ -1,7 +1,7 @@
 {
     "znuny.UserObject.UserList": {
         "body": [
-            "${1:my %List = \$UserObject->UserList(",
+            "${1:my %List = \\$UserObject->UserList(",
             "    Type          => 'Short', # Short|Long, default Short",
             "    Valid         => 1,       # default 1",
             "    NoOutOfOffice => 1,       # (optional) default 0",

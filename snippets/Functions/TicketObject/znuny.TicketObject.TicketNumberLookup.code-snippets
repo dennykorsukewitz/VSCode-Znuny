@@ -1,8 +1,8 @@
 {
     "znuny.TicketObject.TicketNumberLookup": {
         "body": [
-            "${1:my \$TicketNumber = \$TicketObject->TicketNumberLookup(",
-            "    TicketID => \$TicketID,",
+            "${1:my \\$TicketNumber = \\$TicketObject->TicketNumberLookup(",
+            "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketNumberLookup",

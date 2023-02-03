@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.UnitTestEmailObject": {
         "body": [
-            "my \$UnitTestEmailObject = \$Kernel::OM->Get('Kernel::System::UnitTest::Email');",
+            "my \\$UnitTestEmailObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::Email');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestEmailObject",
         "description": "6.4, 6.5",

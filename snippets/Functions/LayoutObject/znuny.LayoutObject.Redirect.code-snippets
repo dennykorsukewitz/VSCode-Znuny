@@ -1,11 +1,11 @@
 {
     "znuny.LayoutObject.Redirect": {
         "body": [
-            "${1:my \$HTML = \$LayoutObject->Redirect(",
-            "    ExtURL => "http://some.example.com/",",
+            "${1:my \\$HTML = \\$LayoutObject->Redirect(",
+            "    ExtURL => \\"http://some.example.com/\\",",
             ");}",
-            "${2:my \$HTML = \$LayoutObject->Redirect(",
-            "    OP => "Action=AdminUserGroup;Subaction=User;ID=\$UserID",",
+            "${2:my \\$HTML = \\$LayoutObject->Redirect(",
+            "    OP => \\"Action=AdminUserGroup;Subaction=User;ID=\\$UserID\\",",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Redirect",

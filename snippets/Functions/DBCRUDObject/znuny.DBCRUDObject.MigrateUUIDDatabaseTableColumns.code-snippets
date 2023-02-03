@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.MigrateUUIDDatabaseTableColumns": {
         "body": [
-            "${1:my \$Success = \$DBCRUDObject->MigrateUUIDDatabaseTableColumns();}",
+            "${1:my \\$Success = \\$DBCRUDObject->MigrateUUIDDatabaseTableColumns();}",
         ],
         "prefix": "znuny.DBCRUDObject.MigrateUUIDDatabaseTableColumns",
         "description": "6.4, 6.5",

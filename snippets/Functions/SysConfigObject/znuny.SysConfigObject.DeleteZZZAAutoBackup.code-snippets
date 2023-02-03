@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.DeleteZZZAAutoBackup": {
         "body": [
-            "${1:my \$Success = \$SysConfigObject->DeleteZZZAAutoBackup();}",
+            "${1:my \\$Success = \\$SysConfigObject->DeleteZZZAAutoBackup();}",
         ],
         "prefix": "znuny.SysConfigObject.DeleteZZZAAutoBackup",
         "description": "6.4, 6.5",

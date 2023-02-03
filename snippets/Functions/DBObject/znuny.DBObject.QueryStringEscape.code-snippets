@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.QueryStringEscape": {
         "body": [
-            "${1:my \$QueryStringEscaped = \$DBObject->QueryStringEscape(",
+            "${1:my \\$QueryStringEscaped = \\$DBObject->QueryStringEscape(",
             "    QueryString => 'customer with (brackets) and & and -',",
             ");}",
         ],

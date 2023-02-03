@@ -1,7 +1,7 @@
 {
     "znuny.GroupObject.GroupDataList": {
         "body": [
-            "${1:my %GroupDataList = \$GroupObject->GroupDataList();}",
+            "${1:my %GroupDataList = \\$GroupObject->GroupDataList();}",
         ],
         "prefix": "znuny.GroupObject.GroupDataList",
         "description": "6.0, 6.4, 6.5",

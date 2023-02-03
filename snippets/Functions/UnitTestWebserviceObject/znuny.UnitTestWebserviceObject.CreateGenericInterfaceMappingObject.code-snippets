@@ -1,8 +1,8 @@
 {
     "znuny.UnitTestWebserviceObject.CreateGenericInterfaceMappingObject": {
         "body": [
-            "${1:my \$MappingObject = \$UnitTestWebserviceObject->CreateGenericInterfaceMappingObject(",
-            "    UnitTestObject    => \$Self,",
+            "${1:my \\$MappingObject = \\$UnitTestWebserviceObject->CreateGenericInterfaceMappingObject(",
+            "    UnitTestObject    => \\$Self,",
             "    WebserviceName    => 'MyWebservice',",
             "    CommunicationType => 'Provider',",
             "    MappingConfig     => {",

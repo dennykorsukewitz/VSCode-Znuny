@@ -1,7 +1,7 @@
 {
     "znuny.TypeObject.NameExistsCheck": {
         "body": [
-            "${1:\$Exist = \$TypeObject->NameExistsCheck(",
+            "${1:\\$Exist = \\$TypeObject->NameExistsCheck(",
             "    Name => 'Some::Template',",
             "    ID => 1, # optional",
             ");}",

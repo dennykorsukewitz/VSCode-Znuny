@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.InputModule": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputModule(",
+            "${1:my \\$Result = \\$SeleniumObject->InputModule(",
             "    Action => 'QueueID',",
             ");}",
         ],

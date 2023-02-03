@@ -1,9 +1,9 @@
 {
     "znuny.DynamicFieldValueObject.ValueSet": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldValueObject->ValueSet(",
-            "    FieldID  => \$FieldID,                 # ID of the dynamic field",
-            "    ObjectID => \$ObjectID,                # ID of the current object that the field",
+            "${1:my \\$Success = \\$DynamicFieldValueObject->ValueSet(",
+            "    FieldID  => \\$FieldID,                 # ID of the dynamic field",
+            "    ObjectID => \\$ObjectID,                # ID of the current object that the field",
             "                                          #   must be linked to, e. g. TicketID",
             "    Value    => [",
             "        {",
@@ -13,7 +13,7 @@
             "        \\},",
             "        ...",
             "    ],",
-            "    UserID   => \$UserID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueSet",

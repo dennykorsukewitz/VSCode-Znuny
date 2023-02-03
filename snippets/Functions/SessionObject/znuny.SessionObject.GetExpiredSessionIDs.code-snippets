@@ -1,7 +1,7 @@
 {
     "znuny.SessionObject.GetExpiredSessionIDs": {
         "body": [
-            "${1:my @Sessions = \$SessionObject->GetExpiredSessionIDs();}",
+            "${1:my @Sessions = \\$SessionObject->GetExpiredSessionIDs();}",
         ],
         "prefix": "znuny.SessionObject.GetExpiredSessionIDs",
         "description": "6.0, 6.4, 6.5",

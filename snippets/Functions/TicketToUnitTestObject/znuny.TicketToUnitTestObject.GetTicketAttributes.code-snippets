@@ -1,7 +1,7 @@
 {
     "znuny.TicketToUnitTestObject.GetTicketAttributes": {
         "body": [
-            "${1:my %TicketAttributes = \$TicketToUnitTestObject->GetTicketAttributes(",
+            "${1:my %TicketAttributes = \\$TicketToUnitTestObject->GetTicketAttributes(",
             "    TicketAttributes => \%TicketAttributes,",
             "    HistoryTicket    => \%HistoryTicket,",
             ");}",

@@ -1,8 +1,8 @@
 {
     "znuny.HTMLUtilsObject.DocumentCleanup": {
         "body": [
-            "${1:\$HTMLBody = \$HTMLUtilsObject->DocumentCleanup(",
-            "    String => \$HTMLBody,",
+            "${1:\\$HTMLBody = \\$HTMLUtilsObject->DocumentCleanup(",
+            "    String => \\$HTMLBody,",
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.DocumentCleanup",

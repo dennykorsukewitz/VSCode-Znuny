@@ -1,8 +1,8 @@
 {
     "znuny.TicketAttributeRelationsObject.GetAllTicketAttributeRelations": {
         "body": [
-            "${1:my \$TicketAttributeRelations = \$TicketAttributeRelationsObject->GetAllTicketAttributeRelations(",
-            "    UserID => \$UserID,",
+            "${1:my \\$TicketAttributeRelations = \\$TicketAttributeRelationsObject->GetAllTicketAttributeRelations(",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.GetAllTicketAttributeRelations",

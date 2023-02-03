@@ -1,7 +1,7 @@
 {
     "znuny.StatsObject.GetObjectName": {
         "body": [
-            "${1:my \$ObjectName = \$StatsObject->GetObjectName(",
+            "${1:my \\$ObjectName = \\$StatsObject->GetObjectName(",
             "    ObjectModule => 'Kernel::System::Stats::Dynamic::TicketList',",
             ");}",
         ],

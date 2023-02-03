@@ -1,7 +1,7 @@
 {
     "znuny.ParserObject.GetParam": {
         "body": [
-            "${1:my \$To = \$ParserObject->GetParam( WHAT => 'To' );}",
+            "${1:my \\$To = \\$ParserObject->GetParam( WHAT => 'To' );}",
         ],
         "prefix": "znuny.ParserObject.GetParam",
         "description": "6.0, 6.4, 6.5",

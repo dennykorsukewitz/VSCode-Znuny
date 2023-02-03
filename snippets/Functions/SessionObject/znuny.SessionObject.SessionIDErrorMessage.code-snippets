@@ -1,7 +1,7 @@
 {
     "znuny.SessionObject.SessionIDErrorMessage": {
         "body": [
-            "${1:my \$Message = \$SessionObject->SessionIDErrorMessage();}",
+            "${1:my \\$Message = \\$SessionObject->SessionIDErrorMessage();}",
         ],
         "prefix": "znuny.SessionObject.SessionIDErrorMessage",
         "description": "6.0, 6.4, 6.5",

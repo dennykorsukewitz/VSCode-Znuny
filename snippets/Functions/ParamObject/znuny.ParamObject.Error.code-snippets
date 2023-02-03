@@ -1,8 +1,8 @@
 {
     "znuny.ParamObject.Error": {
         "body": [
-            "${1:if ( \$ParamObject->Error() ) {",
-            "    print STDERR \$ParamObject->Error() . "\n";",
+            "${1:if ( \\$ParamObject->Error() ) {",
+            "    print STDERR \\$ParamObject->Error() . \\"\n\\";",
             "\\}}",
         ],
         "prefix": "znuny.ParamObject.Error",

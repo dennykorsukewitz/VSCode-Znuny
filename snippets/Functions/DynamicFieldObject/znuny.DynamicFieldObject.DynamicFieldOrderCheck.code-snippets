@@ -1,7 +1,7 @@
 {
     "znuny.DynamicFieldObject.DynamicFieldOrderCheck": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldObject->DynamicFieldOrderCheck();}",
+            "${1:my \\$Success = \\$DynamicFieldObject->DynamicFieldOrderCheck();}",
         ],
         "prefix": "znuny.DynamicFieldObject.DynamicFieldOrderCheck",
         "description": "6.0, 6.4, 6.5",

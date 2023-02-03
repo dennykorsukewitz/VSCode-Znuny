@@ -1,8 +1,8 @@
 {
     "znuny.CommunicationChannelObject.ChannelDelete": {
         "body": [
-            "${1:my \$Success = \$CommunicationChannelObject->ChannelDelete(",
-            "    ChannelID   => \$ChannelID,       # (optional) Delete by ChannelID",
+            "${1:my \\$Success = \\$CommunicationChannelObject->ChannelDelete(",
+            "    ChannelID   => \\$ChannelID,       # (optional) Delete by ChannelID",
             "                            # or",
             "    ChannelName => 'Email', # (optional) Delete by Channel name",
             ");}",

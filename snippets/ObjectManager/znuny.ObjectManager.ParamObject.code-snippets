@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.ParamObject": {
         "body": [
-            "my \$ParamObject = \$Kernel::OM->Get('Kernel::System::Web::Request');",
+            "my \\$ParamObject = \\$Kernel::OM->Get('Kernel::System::Web::Request');",
         ],
         "prefix": "znuny.ObjectManager.ParamObject",
         "description": "6.0, 6.4, 6.5",

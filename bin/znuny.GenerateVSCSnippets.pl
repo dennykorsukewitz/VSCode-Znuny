@@ -936,15 +936,23 @@ Escape, replace and tidy up some special chars.
 
 Returns:
 
-    my $Content = "\$Function;
+    my $Content = "\$Function";
 
 =cut
 
 sub _PrepareContent {
     my ( $Content ) = @_;
 
-    $Content =~ s{\$}{\\\$}g;
+    # $      => \\$ (in json) => \$ (in VSC)
+    $Content =~ s{\$}{\\\\\$}g;
+
+    # }      => \\} (in json) => \} (in VSC)
     $Content =~ s{\}}{\\\\\}}g;
+
+    # "      => \\" (in json) => \" (in VSC)
+    $Content =~ s{\"}{\\\\\"}g;
+
+    # remove all \n and \z
     $Content =~ s{\n+\z}{}g;
 
     return $Content;
@@ -977,6 +985,7 @@ sub _WriteSnippets {
 
         next NEEDED if defined $Snippet{ $Needed };
         Print("<red>ERROR: Snippet value '$Needed' is needed for '$Snippet{Trigger}'.</red> Skipping...\n");
+        print STDERR Dumper(\%Snippet) . "\n";
 
         return;
     }

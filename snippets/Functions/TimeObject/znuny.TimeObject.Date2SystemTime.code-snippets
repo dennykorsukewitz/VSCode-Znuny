@@ -1,7 +1,7 @@
 {
     "znuny.TimeObject.Date2SystemTime": {
         "body": [
-            "${1:my \$SystemTime = \$TimeObject->Date2SystemTime(",
+            "${1:my \\$SystemTime = \\$TimeObject->Date2SystemTime(",
             "    Year   => 2004,",
             "    Month  => 8,",
             "    Day    => 14,",

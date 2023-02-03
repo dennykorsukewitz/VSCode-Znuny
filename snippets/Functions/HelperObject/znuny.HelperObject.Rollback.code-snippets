@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.Rollback": {
         "body": [
-            "${1:\$HelperObject->Rollback();}",
+            "${1:\\$HelperObject->Rollback();}",
         ],
         "prefix": "znuny.HelperObject.Rollback",
         "description": "6.4, 6.5",

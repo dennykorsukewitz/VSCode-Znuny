@@ -1,11 +1,11 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentLookup": {
         "body": [
-            "${1:my \$ID = \$StdAttachmentObject->StdAttachmentLookup(",
+            "${1:my \\$ID = \\$StdAttachmentObject->StdAttachmentLookup(",
             "    StdAttachment => 'Some Name',",
             ");}",
-            "${2:my \$Name = \$StdAttachmentObject->StdAttachmentLookup(",
-            "    StdAttachmentID => \$StdAttachmentID,",
+            "${2:my \\$Name = \\$StdAttachmentObject->StdAttachmentLookup(",
+            "    StdAttachmentID => \\$StdAttachmentID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentLookup",

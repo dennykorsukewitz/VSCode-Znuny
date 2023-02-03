@@ -1,11 +1,11 @@
 {
     "znuny.TicketObject.TicketArticleStorageSwitch": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketArticleStorageSwitch(",
-            "    TicketID    => \$TicketID,",
+            "${1:my \\$Success = \\$TicketObject->TicketArticleStorageSwitch(",
+            "    TicketID    => \\$TicketID,",
             "    Source      => 'ArticleStorageDB',",
             "    Destination => 'ArticleStorageFS',",
-            "    UserID      => \$UserID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketArticleStorageSwitch",

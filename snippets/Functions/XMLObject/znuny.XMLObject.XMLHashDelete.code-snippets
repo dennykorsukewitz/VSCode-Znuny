@@ -1,7 +1,7 @@
 {
     "znuny.XMLObject.XMLHashDelete": {
         "body": [
-            "${1:\$XMLObject->XMLHashDelete(",
+            "${1:\\$XMLObject->XMLHashDelete(",
             "    Type => 'SomeType',",
             "    Key  => '123',",
             ");}",

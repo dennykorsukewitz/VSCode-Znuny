@@ -1,8 +1,8 @@
 {
     "znuny.SysConfigObject.ConfigurationXML2DB": {
         "body": [
-            "${1:my \$Success = \$SysConfigObject->ConfigurationXML2DB(",
-            "    UserID    => \$UserID,                  # UserID",
+            "${1:my \\$Success = \\$SysConfigObject->ConfigurationXML2DB(",
+            "    UserID    => \\$UserID,                  # UserID",
             "    Directory => '/some/folder',     # (optional) Provide directory where XML files are stored (default: Kernel/Config/Files/XML).",
             "    Force     => 1,                  # (optional) Force Setting update, even if it's locked by another user. Default: 0.",
             "    CleanUp   => 1,                  # (optional) Remove all settings that are not present in XML files. Default: 0.",

@@ -1,7 +1,7 @@
 {
     "znuny.LinkObject.StateList": {
         "body": [
-            "${1:my %StateList = \$LinkObject->StateList(",
+            "${1:my %StateList = \\$LinkObject->StateList(",
             "    Valid => 0,   # (optional) default 1 (0|1)",
             ");}",
         ],

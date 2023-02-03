@@ -1,8 +1,8 @@
 {
     "znuny.CustomerAuthObject.GetOption": {
         "body": [
-            "${1:if (\$CustomerAuthObject->GetOption(What => 'PreAuth')) {",
-            "    print "No login screen is needed. Authentication is based on other options. E. g. \$ENV{REMOTE_USER\\}\n";",
+            "${1:if (\\$CustomerAuthObject->GetOption(What => 'PreAuth')) {",
+            "    print \\"No login screen is needed. Authentication is based on other options. E. g. \\$ENV{REMOTE_USER\\}\n\\";",
             "\\}}",
         ],
         "prefix": "znuny.CustomerAuthObject.GetOption",

@@ -1,11 +1,11 @@
 {
     "znuny.ServiceObject.ServiceLookup": {
         "body": [
-            "${1:my \$ServiceID = \$ServiceObject->ServiceLookup(",
+            "${1:my \\$ServiceID = \\$ServiceObject->ServiceLookup(",
             "    Name => 'Service::SubService',",
             ");}",
-            "${2:my \$ServiceName = \$ServiceObject->ServiceLookup(",
-            "    ServiceID => \$ServiceID,",
+            "${2:my \\$ServiceName = \\$ServiceObject->ServiceLookup(",
+            "    ServiceID => \\$ServiceID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceLookup",

@@ -1,8 +1,8 @@
 {
     "znuny.UnitTestEmailObject.EmailValidate": {
         "body": [
-            "${1:my \$Success = \$UnitTestEmailObject->EmailValidate(",
-            "    UnitTestObject => \$Self,",
+            "${1:my \\$Success = \\$UnitTestEmailObject->EmailValidate(",
+            "    UnitTestObject => \\$Self,",
             "    UnitTestFalse  => 1,                                         # optional, validation should get negated",
             "    Message        => 'Sent emails must contain expected data.', # Message printed for unit test",
             "    Email          => \@Emails,                                  # optional, result of EmailGet() will be used by default",

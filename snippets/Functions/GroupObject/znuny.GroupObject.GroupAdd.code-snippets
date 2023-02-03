@@ -1,11 +1,11 @@
 {
     "znuny.GroupObject.GroupAdd": {
         "body": [
-            "${1:my \$ID = \$GroupObject->GroupAdd(",
+            "${1:my \\$ID = \\$GroupObject->GroupAdd(",
             "    Name    => 'example-group',",
             "    Comment => 'comment describing the group',   # optional",
-            "    ValidID => \$ValidID,",
-            "    UserID  => \$UserID,",
+            "    ValidID => \\$ValidID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.GroupAdd",

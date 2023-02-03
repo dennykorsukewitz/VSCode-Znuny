@@ -1,13 +1,13 @@
 {
     "znuny.ServiceObject.CustomerUserServiceMemberList": {
         "body": [
-            "${1:\$ServiceObject->CustomerUserServiceMemberList(",
+            "${1:\\$ServiceObject->CustomerUserServiceMemberList(",
             "    CustomerUserLogin => 'Test',",
             "    Result            => 'HASH',",
             "    DefaultServices   => 0,",
             ");}",
-            "${2:\$ServiceObject->CustomerUserServiceMemberList(",
-            "    ServiceID => \$ServiceID,",
+            "${2:\\$ServiceObject->CustomerUserServiceMemberList(",
+            "    ServiceID => \\$ServiceID,",
             "    Result    => 'HASH',",
             ");}",
         ],

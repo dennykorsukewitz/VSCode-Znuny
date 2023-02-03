@@ -1,11 +1,11 @@
 {
     "znuny.ServiceObject.CustomerUserServiceMemberAdd": {
         "body": [
-            "${1:\$ServiceObject->CustomerUserServiceMemberAdd(",
+            "${1:\\$ServiceObject->CustomerUserServiceMemberAdd(",
             "    CustomerUserLogin => 'Test1',",
-            "    ServiceID         => \$ServiceID,",
+            "    ServiceID         => \\$ServiceID,",
             "    Active            => 1,",
-            "    UserID            => \$UserID,",
+            "    UserID            => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.CustomerUserServiceMemberAdd",

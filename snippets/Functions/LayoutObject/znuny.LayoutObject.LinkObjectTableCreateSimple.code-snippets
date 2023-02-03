@@ -1,8 +1,8 @@
 {
     "znuny.LayoutObject.LinkObjectTableCreateSimple": {
         "body": [
-            "${1:my \$String = \$LayoutObject->LinkObjectTableCreateSimple(",
-            "    LinkListWithData => \$LinkListWithDataRef,",
+            "${1:my \\$String = \\$LayoutObject->LinkObjectTableCreateSimple(",
+            "    LinkListWithData => \\$LinkListWithDataRef,",
             "    ViewMode         => 'SimpleRaw',            # (optional) (Simple|SimpleRaw)",
             ");}",
         ],

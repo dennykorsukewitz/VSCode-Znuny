@@ -1,10 +1,10 @@
 {
     "znuny.AutoResponseObject.AutoResponseQueue": {
         "body": [
-            "${1:my \$Success = \$AutoResponseObject->AutoResponseQueue(",
-            "    QueueID         => \$QueueID,",
+            "${1:my \\$Success = \\$AutoResponseObject->AutoResponseQueue(",
+            "    QueueID         => \\$QueueID,",
             "    AutoResponseIDs => [1,2,3],",
-            "    UserID          => \$UserID,",
+            "    UserID          => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseQueue",

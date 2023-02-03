@@ -1,7 +1,7 @@
 {
     "znuny.OperationObject.HandleError": {
         "body": [
-            "${1:my \$Result = \$OperationObject->HandleError(",
+            "${1:my \\$Result = \\$OperationObject->HandleError(",
             "    Data => {                               # data payload",
             "        ...",
             "    \\},",

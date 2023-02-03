@@ -1,12 +1,12 @@
 {
     "znuny.UnitTestWebserviceObject.SchedulerRunAll": {
         "body": [
-            "${1:my \$Success = \$UnitTestWebserviceObject->SchedulerRunAll(",
-            "    UnitTestObject => \$Self,",
+            "${1:my \\$Success = \\$UnitTestWebserviceObject->SchedulerRunAll(",
+            "    UnitTestObject => \\$Self,",
             "    Type           => 'AsynchronousExecutor', # optional, default is 'GenericInterface'",
             ");}",
-            "${2:my \$Success = \$UnitTestWebserviceObject->SchedulerRunAll(",
-            "    UnitTestObject => \$Self,",
+            "${2:my \\$Success = \\$UnitTestWebserviceObject->SchedulerRunAll(",
+            "    UnitTestObject => \\$Self,",
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.SchedulerRunAll",

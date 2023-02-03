@@ -1,9 +1,9 @@
 {
     "znuny.ServiceObject.ServiceParentsGet": {
         "body": [
-            "${1:my \$ServiceParentsList = \$ServiceObject->ServiceParentsGet(",
-            "    ServiceID => \$ServiceID,",
-            "    UserID    => \$UserID,",
+            "${1:my \\$ServiceParentsList = \\$ServiceObject->ServiceParentsGet(",
+            "    ServiceID => \\$ServiceID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceParentsGet",

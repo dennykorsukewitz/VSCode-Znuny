@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerDBObject.RecurrentTaskList": {
         "body": [
-            "${1:my @List = \$SchedulerDBObject->RecurrentTaskList(",
+            "${1:my @List = \\$SchedulerDBObject->RecurrentTaskList(",
             "    Type => 'some type',  # optional",
             ");}",
         ],

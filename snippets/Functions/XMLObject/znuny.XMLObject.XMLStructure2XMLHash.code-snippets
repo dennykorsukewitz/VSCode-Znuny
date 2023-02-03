@@ -1,7 +1,7 @@
 {
     "znuny.XMLObject.XMLStructure2XMLHash": {
         "body": [
-            "${1:my @XMLHash = \$XMLObject->XMLStructure2XMLHash( XMLStructure => \@XMLStructure );}",
+            "${1:my @XMLHash = \\$XMLObject->XMLStructure2XMLHash( XMLStructure => \@XMLStructure );}",
         ],
         "prefix": "znuny.XMLObject.XMLStructure2XMLHash",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.NotificationEventObject.NotificationUpdate": {
         "body": [
-            "${1:my \$Ok = \$NotificationEventObject->NotificationUpdate(",
+            "${1:my \\$Ok = \\$NotificationEventObject->NotificationUpdate(",
             "    ID      => 123,",
             "    Name    => 'Agent::OwnerUpdate',",
             "    Data => {",
@@ -22,8 +22,8 @@
             "        \\},",
             "    \\},",
             "    Comment => 'An optional comment',  # (optional)",
-            "    ValidID => \$ValidID,",
-            "    UserID  => \$UserID,",
+            "    ValidID => \\$ValidID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationUpdate",

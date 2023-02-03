@@ -1,16 +1,16 @@
 {
     "znuny.TicketObject.TicketCustomerPermission": {
         "body": [
-            "${1:my \$Access = \$TicketObject->TicketCustomerPermission(",
+            "${1:my \\$Access = \\$TicketObject->TicketCustomerPermission(",
             "    Type     => 'ro',",
-            "    TicketID => \$TicketID,",
+            "    TicketID => \\$TicketID,",
             "    LogNo    => 1,",
-            "    UserID   => \$UserID,",
+            "    UserID   => \\$UserID,",
             ");}",
-            "${2:my \$Access = \$TicketObject->TicketCustomerPermission(",
+            "${2:my \\$Access = \\$TicketObject->TicketCustomerPermission(",
             "    Type     => 'ro',",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketCustomerPermission",

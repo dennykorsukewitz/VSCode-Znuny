@@ -1,10 +1,10 @@
 {
     "znuny.WebserviceObject.WebserviceList": {
         "body": [
-            "${1:my \$List = \$WebserviceObject->WebserviceList(",
+            "${1:my \\$List = \\$WebserviceObject->WebserviceList(",
             "    Valid => 0, # optional, defaults to 1",
             ");}",
-            "${2:my \$List = \$WebserviceObject->WebserviceList();}",
+            "${2:my \\$List = \\$WebserviceObject->WebserviceList();}",
         ],
         "prefix": "znuny.WebserviceObject.WebserviceList",
         "description": "6.0, 6.4, 6.5",

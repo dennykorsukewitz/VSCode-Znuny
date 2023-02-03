@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.TicketCreateNumber": {
         "body": [
-            "${1:my \$TicketNumber = \$TicketObject->TicketCreateNumber();}",
+            "${1:my \\$TicketNumber = \\$TicketObject->TicketCreateNumber();}",
         ],
         "prefix": "znuny.TicketObject.TicketCreateNumber",
         "description": "6.0, 6.4, 6.5",

@@ -1,15 +1,15 @@
 {
     "znuny.AuthObject.Auth": {
         "body": [
-            "${1:if ( \$AuthObject->Auth( User => \$User, Pw => \$Pw ) ) {",
-            "    print "Auth ok!\n";",
+            "${1:if ( \\$AuthObject->Auth( User => \\$User, Pw => \\$Pw ) ) {",
+            "    print \\"Auth ok!\n\\";",
             "\\}",
             "else {",
-            "    print "Auth invalid!\n";",
+            "    print \\"Auth invalid!\n\\";",
             "\\}}",
-            "${2:my \$User = \$AuthObject->Auth(",
-            "    User => \$User,",
-            "    Pw   => \$Pw,",
+            "${2:my \\$User = \\$AuthObject->Auth(",
+            "    User => \\$User,",
+            "    Pw   => \\$Pw,",
             ");}",
         ],
         "prefix": "znuny.AuthObject.Auth",

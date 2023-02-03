@@ -1,9 +1,9 @@
 {
     "znuny.FormDraftObject.FormDraftAdd": {
         "body": [
-            "${1:my \$Success = \$FormDraftObject->FormDraftAdd(",
+            "${1:my \\$Success = \\$FormDraftObject->FormDraftAdd(",
             "    FormData => {",
-            "        InformUserID => [ \$InformUserID, 124, ],",
+            "        InformUserID => [ \\$InformUserID, 124, ],",
             "        Subject      => 'Request for information',",
             "        ...",
             "    \\},",
@@ -20,10 +20,10 @@
             "        ...",
             "    ],",
             "    ObjectType => 'Ticket',",
-            "    ObjectID   => \$ObjectID,",
+            "    ObjectID   => \\$ObjectID,",
             "    Action     => 'AgentTicketCompose',",
             "    Title      => 'my draft',                               # optional",
-            "    UserID     => \$UserID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftAdd",

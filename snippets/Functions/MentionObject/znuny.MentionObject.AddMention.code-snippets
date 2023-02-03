@@ -1,11 +1,11 @@
 {
     "znuny.MentionObject.AddMention": {
         "body": [
-            "${1:my \$Success = \$MentionObject->AddMention(",
-            "    TicketID        => \$TicketID,",
-            "    ArticleID       => \$ArticleID,",
-            "    MentionedUserID => \$MentionedUserID,",
-            "    UserID          => \$UserID,",
+            "${1:my \\$Success = \\$MentionObject->AddMention(",
+            "    TicketID        => \\$TicketID,",
+            "    ArticleID       => \\$ArticleID,",
+            "    MentionedUserID => \\$MentionedUserID,",
+            "    UserID          => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.MentionObject.AddMention",

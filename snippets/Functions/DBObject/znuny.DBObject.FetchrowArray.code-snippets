@@ -1,8 +1,8 @@
 {
     "znuny.DBObject.FetchrowArray": {
         "body": [
-            "${1:while (my @Row = \$DBObject->FetchrowArray()) {",
-            "    print "\$Row[0]:\$Row[1]\n";",
+            "${1:while (my @Row = \\$DBObject->FetchrowArray()) {",
+            "    print \\"\\$Row[0]:\\$Row[1]\n\\";",
             "\\}}",
         ],
         "prefix": "znuny.DBObject.FetchrowArray",

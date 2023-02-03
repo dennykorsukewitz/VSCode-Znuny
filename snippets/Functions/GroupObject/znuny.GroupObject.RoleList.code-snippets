@@ -1,7 +1,7 @@
 {
     "znuny.GroupObject.RoleList": {
         "body": [
-            "${1:my %Roles = \$GroupObject->RoleList(",
+            "${1:my %Roles = \\$GroupObject->RoleList(",
             "    Valid => 1,",
             ");}",
         ],

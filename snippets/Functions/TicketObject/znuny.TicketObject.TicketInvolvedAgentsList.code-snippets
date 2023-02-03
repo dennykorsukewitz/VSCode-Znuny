@@ -1,8 +1,8 @@
 {
     "znuny.TicketObject.TicketInvolvedAgentsList": {
         "body": [
-            "${1:my @InvolvedAgents = \$TicketObject->TicketInvolvedAgentsList(",
-            "    TicketID => \$TicketID,",
+            "${1:my @InvolvedAgents = \\$TicketObject->TicketInvolvedAgentsList(",
+            "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketInvolvedAgentsList",

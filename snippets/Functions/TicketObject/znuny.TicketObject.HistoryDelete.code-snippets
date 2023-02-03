@@ -1,9 +1,9 @@
 {
     "znuny.TicketObject.HistoryDelete": {
         "body": [
-            "${1:my \$Success = \$TicketObject->HistoryDelete(",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "${1:my \\$Success = \\$TicketObject->HistoryDelete(",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.HistoryDelete",

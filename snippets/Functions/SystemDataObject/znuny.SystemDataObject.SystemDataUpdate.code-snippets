@@ -1,10 +1,10 @@
 {
     "znuny.SystemDataObject.SystemDataUpdate": {
         "body": [
-            "${1:my \$Result = \$SystemDataObject->SystemDataUpdate(",
+            "${1:my \\$Result = \\$SystemDataObject->SystemDataUpdate(",
             "    Key    => 'OTRS Version',",
             "    Value  => 'Some New Value',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SystemDataObject.SystemDataUpdate",

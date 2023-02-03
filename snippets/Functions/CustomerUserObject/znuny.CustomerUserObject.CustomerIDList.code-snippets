@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.CustomerIDList": {
         "body": [
-            "${1:my @CustomerIDs = \$CustomerUserObject->CustomerIDList(",
+            "${1:my @CustomerIDs = \\$CustomerUserObject->CustomerIDList(",
             "    SearchTerm  => 'somecustomer',    # optional",
             "    Valid       => 1,                 # optional",
             ");}",

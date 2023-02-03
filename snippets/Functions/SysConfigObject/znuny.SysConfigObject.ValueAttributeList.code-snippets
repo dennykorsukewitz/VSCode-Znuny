@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.ValueAttributeList": {
         "body": [
-            "${1:my @ValueAttributeList = \$SysConfigObject->ValueAttributeList();}",
+            "${1:my @ValueAttributeList = \\$SysConfigObject->ValueAttributeList();}",
         ],
         "prefix": "znuny.SysConfigObject.ValueAttributeList",
         "description": "6.0, 6.4, 6.5",

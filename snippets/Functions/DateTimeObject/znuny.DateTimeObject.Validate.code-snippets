@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.Validate": {
         "body": [
-            "${1:my \$IsValid = \$DateTimeObject->Validate(",
+            "${1:my \\$IsValid = \\$DateTimeObject->Validate(",
             "    Year     => 2016,",
             "    Month    => 1,",
             "    Day      => 22,",

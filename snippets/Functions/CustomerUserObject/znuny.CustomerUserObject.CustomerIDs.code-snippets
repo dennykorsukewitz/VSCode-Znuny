@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.CustomerIDs": {
         "body": [
-            "${1:my @CustomerIDs = \$CustomerUserObject->CustomerIDs(",
+            "${1:my @CustomerIDs = \\$CustomerUserObject->CustomerIDs(",
             "    User => 'some-login',",
             ");}",
         ],

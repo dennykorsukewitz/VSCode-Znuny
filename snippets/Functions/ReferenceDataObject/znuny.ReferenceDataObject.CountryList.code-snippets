@@ -1,7 +1,7 @@
 {
     "znuny.ReferenceDataObject.CountryList": {
         "body": [
-            "${1:my \$CountryList = \$ReferenceDataObject->CountryList(",
+            "${1:my \\$CountryList = \\$ReferenceDataObject->CountryList(",
             "   Result => 'CODE', # optional: returns CODE => Country pairs conform ISO 3166-2.",
             ");}",
         ],

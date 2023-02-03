@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.SwitchToFrame": {
         "body": [
-            "${1:my \$Success = \$SeleniumObject->SwitchToFrame(",
+            "${1:my \\$Success = \\$SeleniumObject->SwitchToFrame(",
             "    FrameSelector => '.Iframe',     # (required) CSS selector of the frame element",
             "    WaitForLoad   => 1,             # (optional) Wait until the frame has loaded, if necessary",
             "    Time          => 20,            # (optional) Wait time in seconds (default 20)",

@@ -1,10 +1,10 @@
 {
     "znuny.FormDraftObject.FormDraftGet": {
         "body": [
-            "${1:my \$FormDraft = \$FormDraftObject->FormDraftGet(",
-            "    FormDraftID    => \$FormDraftID,",
+            "${1:my \\$FormDraft = \\$FormDraftObject->FormDraftGet(",
+            "    FormDraftID    => \\$FormDraftID,",
             "    GetContent => 1,                # optional, default 1",
-            "    UserID     => \$UserID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftGet",

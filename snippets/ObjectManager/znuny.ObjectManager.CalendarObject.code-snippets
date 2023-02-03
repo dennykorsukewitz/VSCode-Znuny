@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.CalendarObject": {
         "body": [
-            "my \$CalendarObject = \$Kernel::OM->Get('Kernel::System::Calendar');",
+            "my \\$CalendarObject = \\$Kernel::OM->Get('Kernel::System::Calendar');",
         ],
         "prefix": "znuny.ObjectManager.CalendarObject",
         "description": "6.0, 6.4, 6.5",

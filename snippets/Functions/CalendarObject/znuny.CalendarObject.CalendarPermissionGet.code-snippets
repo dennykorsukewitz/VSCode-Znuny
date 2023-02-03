@@ -1,9 +1,9 @@
 {
     "znuny.CalendarObject.CalendarPermissionGet": {
         "body": [
-            "${1:my \$Permission = \$CalendarObject->CalendarPermissionGet(",
-            "    CalendarID  => \$CalendarID,                   # (required) CalendarID",
-            "    UserID      => \$UserID,                   # (required) UserID",
+            "${1:my \\$Permission = \\$CalendarObject->CalendarPermissionGet(",
+            "    CalendarID  => \\$CalendarID,                   # (required) CalendarID",
+            "    UserID      => \\$UserID,                   # (required) UserID",
             ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarPermissionGet",

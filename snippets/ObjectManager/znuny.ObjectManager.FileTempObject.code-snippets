@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.FileTempObject": {
         "body": [
-            "my \$FileTempObject = \$Kernel::OM->Get('Kernel::System::FileTemp');",
+            "my \\$FileTempObject = \\$Kernel::OM->Get('Kernel::System::FileTemp');",
         ],
         "prefix": "znuny.ObjectManager.FileTempObject",
         "description": "6.0, 6.4, 6.5",

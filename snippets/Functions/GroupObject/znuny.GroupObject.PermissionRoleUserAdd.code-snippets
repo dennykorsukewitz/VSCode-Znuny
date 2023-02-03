@@ -1,11 +1,11 @@
 {
     "znuny.GroupObject.PermissionRoleUserAdd": {
         "body": [
-            "${1:my \$Success = \$GroupObject->PermissionRoleUserAdd(",
-            "    UID    => \$UID,",
-            "    RID    => \$RID,",
+            "${1:my \\$Success = \\$GroupObject->PermissionRoleUserAdd(",
+            "    UID    => \\$UID,",
+            "    RID    => \\$RID,",
             "    Active => 1,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.PermissionRoleUserAdd",

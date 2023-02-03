@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.TicketAttributeRelationsObject": {
         "body": [
-            "my \$TicketAttributeRelationsObject = \$Kernel::OM->Get('Kernel::System::TicketAttributeRelations');",
+            "my \\$TicketAttributeRelationsObject = \\$Kernel::OM->Get('Kernel::System::TicketAttributeRelations');",
         ],
         "prefix": "znuny.ObjectManager.TicketAttributeRelationsObject",
         "description": "6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestWebUserAgentObject.LastResponseGet": {
         "body": [
-            "${1:my %Response = \$UnitTestWebUserAgentObject->LastResponseGet();}",
+            "${1:my %Response = \\$UnitTestWebUserAgentObject->LastResponseGet();}",
         ],
         "prefix": "znuny.UnitTestWebUserAgentObject.LastResponseGet",
         "description": "6.4, 6.5",

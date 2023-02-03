@@ -1,9 +1,9 @@
 {
     "znuny.SLAObject.SLAGet": {
         "body": [
-            "${1:my %SLAData = \$SLAObject->SLAGet(",
-            "    SLAID  => \$SLAID,",
-            "    UserID => \$UserID,",
+            "${1:my %SLAData = \\$SLAObject->SLAGet(",
+            "    SLAID  => \\$SLAID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SLAObject.SLAGet",

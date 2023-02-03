@@ -1,10 +1,10 @@
 {
     "znuny.TemplateGeneratorObject.Salutation": {
         "body": [
-            "${1:my \$Salutation = \$TemplateGeneratorObject->Salutation(",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
-            "    Data     => \$ArticleHashRef,",
+            "${1:my \\$Salutation = \\$TemplateGeneratorObject->Salutation(",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
+            "    Data     => \\$ArticleHashRef,",
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.Salutation",

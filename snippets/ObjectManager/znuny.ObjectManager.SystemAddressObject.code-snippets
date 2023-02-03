@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.SystemAddressObject": {
         "body": [
-            "my \$SystemAddressObject = \$Kernel::OM->Get('Kernel::System::SystemAddress');",
+            "my \\$SystemAddressObject = \\$Kernel::OM->Get('Kernel::System::SystemAddress');",
         ],
         "prefix": "znuny.ObjectManager.SystemAddressObject",
         "description": "6.0, 6.4, 6.5",

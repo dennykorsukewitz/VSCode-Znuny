@@ -1,7 +1,7 @@
 {
     "znuny.SessionObject.CreateSessionID": {
         "body": [
-            "${1:my \$SessionID = \$SessionObject->CreateSessionID(",
+            "${1:my \\$SessionID = \\$SessionObject->CreateSessionID(",
             "    UserLogin => 'root',",
             "    UserEmail => 'root@example.com',",
             ");}",

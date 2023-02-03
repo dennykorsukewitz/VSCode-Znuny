@@ -1,9 +1,9 @@
 {
     "znuny.LayoutObject.LinkObjectSelectableObjectList": {
         "body": [
-            "${1:my \$String = \$LayoutObject->LinkObjectSelectableObjectList(",
+            "${1:my \\$String = \\$LayoutObject->LinkObjectSelectableObjectList(",
             "    Object   => 'Ticket',",
-            "    Selected => \$Identifier,  # (optional)",
+            "    Selected => \\$Identifier,  # (optional)",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.LinkObjectSelectableObjectList",

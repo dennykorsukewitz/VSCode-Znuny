@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.ToCTimeString": {
         "body": [
-            "${1:my \$CTimeString = \$DateTimeObject->ToCTimeString();}",
+            "${1:my \\$CTimeString = \\$DateTimeObject->ToCTimeString();}",
         ],
         "prefix": "znuny.DateTimeObject.ToCTimeString",
         "description": "6.0, 6.4, 6.5",

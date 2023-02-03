@@ -1,9 +1,9 @@
 {
     "znuny.WebUploadCacheObject.FormIDRemoveFile": {
         "body": [
-            "${1:\$WebUploadCacheObject->FormIDRemoveFile(",
-            "    FormID => \$FormID,",
-            "    FileID => \$FileID,",
+            "${1:\\$WebUploadCacheObject->FormIDRemoveFile(",
+            "    FormID => \\$FormID,",
+            "    FileID => \\$FileID,",
             ");}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDRemoveFile",

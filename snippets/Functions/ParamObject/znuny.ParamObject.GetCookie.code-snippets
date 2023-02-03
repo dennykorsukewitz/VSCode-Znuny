@@ -1,7 +1,7 @@
 {
     "znuny.ParamObject.GetCookie": {
         "body": [
-            "${1:my \$String = \$ParamObject->GetCookie(",
+            "${1:my \\$String = \\$ParamObject->GetCookie(",
             "    Key => ID,",
             ");}",
         ],

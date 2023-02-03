@@ -1,9 +1,9 @@
 {
     "znuny.SysConfigObject.OverriddenFileNameGet": {
         "body": [
-            "${1:my \$FileName = \$SysConfigObject->OverriddenFileNameGet(",
+            "${1:my \\$FileName = \\$SysConfigObject->OverriddenFileNameGet(",
             "    SettingName    => 'Setting::Name',  # (required)",
-            "    UserID         => \$UserID,                # (required)",
+            "    UserID         => \\$UserID,                # (required)",
             "    EffectiveValue => '3',              # (optional) EffectiveValue stored in the DB.",
             ");}",
         ],

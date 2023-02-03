@@ -1,13 +1,13 @@
 {
     "znuny.TicketAttributeRelationsObject.UpdateTicketAttributeRelations": {
         "body": [
-            "${1:my \$Success = \$TicketAttributeRelationsObject->UpdateTicketAttributeRelations(",
+            "${1:my \\$Success = \\$TicketAttributeRelationsObject->UpdateTicketAttributeRelations(",
             "    ID                       => 123,",
             "    Filename                 => 'csv-filename.csv',",
             "    Data                     => 'Data from CSV or Excel file',",
             "    DynamicFieldConfigUpdate => 1, # optional, this option will create dynamic field values for the csv file",
             "    Priority                 => 123,",
-            "    UserID                   => \$UserID,",
+            "    UserID                   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.UpdateTicketAttributeRelations",

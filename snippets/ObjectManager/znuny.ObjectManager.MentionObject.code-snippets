@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.MentionObject": {
         "body": [
-            "my \$MentionObject = \$Kernel::OM->Get('Kernel::System::Mention');",
+            "my \\$MentionObject = \\$Kernel::OM->Get('Kernel::System::Mention');",
         ],
         "prefix": "znuny.ObjectManager.MentionObject",
         "description": "6.4, 6.5",

@@ -1,8 +1,8 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentGet": {
         "body": [
-            "${1:my %Data = \$StdAttachmentObject->StdAttachmentGet(",
-            "    ID => \$ID,",
+            "${1:my %Data = \\$StdAttachmentObject->StdAttachmentGet(",
+            "    ID => \\$ID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentGet",

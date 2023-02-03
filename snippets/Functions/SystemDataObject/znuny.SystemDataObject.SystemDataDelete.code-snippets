@@ -1,9 +1,9 @@
 {
     "znuny.SystemDataObject.SystemDataDelete": {
         "body": [
-            "${1:\$SystemDataObject->SystemDataDelete(",
+            "${1:\\$SystemDataObject->SystemDataDelete(",
             "    Key    => 'OTRS Version',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SystemDataObject.SystemDataDelete",

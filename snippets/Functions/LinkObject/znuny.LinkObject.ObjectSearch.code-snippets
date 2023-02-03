@@ -1,11 +1,11 @@
 {
     "znuny.LinkObject.ObjectSearch": {
         "body": [
-            "${1:\$ObjectList = \$LinkObject->ObjectSearch(",
+            "${1:\\$ObjectList = \\$LinkObject->ObjectSearch(",
             "    Object       => 'ITSMConfigItem',",
             "    SubObject    => 'Computer'         # (optional)",
-            "    SearchParams => \$HashRef,          # (optional)",
-            "    UserID       => \$UserID,",
+            "    SearchParams => \\$HashRef,          # (optional)",
+            "    UserID       => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectSearch",

@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.CustomerName": {
         "body": [
-            "${1:my \$Name = \$CustomerUserObject->CustomerName(",
+            "${1:my \\$Name = \\$CustomerUserObject->CustomerName(",
             "    UserLogin => 'some-login',",
             ");}",
         ],

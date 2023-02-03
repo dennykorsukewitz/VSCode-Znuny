@@ -1,7 +1,7 @@
 {
     "znuny.JWTObject.Decode": {
         "body": [
-            "${1:my \$JWT = \$JWTObject->Decode(",
+            "${1:my \\$JWT = \\$JWTObject->Decode(",
             "    Token       => '...',",
             "",
             "    # Key or KeyFilePath",

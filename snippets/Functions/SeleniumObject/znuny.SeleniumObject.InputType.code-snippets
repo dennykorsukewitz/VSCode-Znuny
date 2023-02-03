@@ -1,8 +1,8 @@
 {
     "znuny.SeleniumObject.InputType": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputType(",
-            "    FieldID => \$FieldID,",
+            "${1:my \\$Result = \\$SeleniumObject->InputType(",
+            "    FieldID => \\$FieldID,",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.InputType",

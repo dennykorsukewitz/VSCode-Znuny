@@ -1,10 +1,10 @@
 {
     "znuny.ProcessObject.ProcessTicketProcessSet": {
         "body": [
-            "${1:my \$Success = \$ProcessObject->ProcessTicketProcessSet(",
-            "    ProcessEntityID => \$ProcessEntityID,",
-            "    TicketID        => \$TicketID,",
-            "    UserID          => \$UserID,",
+            "${1:my \\$Success = \\$ProcessObject->ProcessTicketProcessSet(",
+            "    ProcessEntityID => \\$ProcessEntityID,",
+            "    TicketID        => \\$TicketID,",
+            "    UserID          => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessTicketProcessSet",

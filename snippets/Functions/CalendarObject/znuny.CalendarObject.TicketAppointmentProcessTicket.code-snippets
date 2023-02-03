@@ -1,8 +1,8 @@
 {
     "znuny.CalendarObject.TicketAppointmentProcessTicket": {
         "body": [
-            "${1:\$CalendarObject->TicketAppointmentProcessTicket(",
-            "    TicketID => \$TicketID,",
+            "${1:\\$CalendarObject->TicketAppointmentProcessTicket(",
+            "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.CalendarObject.TicketAppointmentProcessTicket",

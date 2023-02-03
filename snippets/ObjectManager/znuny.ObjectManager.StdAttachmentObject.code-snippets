@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.StdAttachmentObject": {
         "body": [
-            "my \$StdAttachmentObject = \$Kernel::OM->Get('Kernel::System::StdAttachment');",
+            "my \\$StdAttachmentObject = \\$Kernel::OM->Get('Kernel::System::StdAttachment');",
         ],
         "prefix": "znuny.ObjectManager.StdAttachmentObject",
         "description": "6.0, 6.4, 6.5",

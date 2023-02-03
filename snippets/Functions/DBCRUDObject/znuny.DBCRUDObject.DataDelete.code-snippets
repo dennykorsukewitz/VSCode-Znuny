@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.DataDelete": {
         "body": [
-            "${1:my \$Success = \$DBCRUDObject->DataDelete(",
+            "${1:my \\$Success = \\$DBCRUDObject->DataDelete(",
             "    ID          => '...', # optional",
             "    CreateTime  => '...', # optional",
             "    ChangeTime  => '...', # optional",

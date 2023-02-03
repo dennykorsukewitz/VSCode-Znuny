@@ -1,8 +1,8 @@
 {
     "znuny.SeleniumObject.VerifiedClick": {
         "body": [
-            "${1:\$SeleniumObject->VerifiedClick(",
-            "    \$Button             # optional, see Selenium docs",
+            "${1:\\$SeleniumObject->VerifiedClick(",
+            "    \\$Button             # optional, see Selenium docs",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.VerifiedClick",

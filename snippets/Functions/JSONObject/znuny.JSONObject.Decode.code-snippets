@@ -1,8 +1,8 @@
 {
     "znuny.JSONObject.Decode": {
         "body": [
-            "${1:my \$PerlStructureScalar = \$JSONObject->Decode(",
-            "    Data => \$JSONString,",
+            "${1:my \\$PerlStructureScalar = \\$JSONObject->Decode(",
+            "    Data => \\$JSONString,",
             ");}",
         ],
         "prefix": "znuny.JSONObject.Decode",

@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.FullFeature": {
         "body": [
-            "${1:\$HelperObject->FullFeature();}",
+            "${1:\\$HelperObject->FullFeature();}",
         ],
         "prefix": "znuny.HelperObject.FullFeature",
         "description": "6.4, 6.5",

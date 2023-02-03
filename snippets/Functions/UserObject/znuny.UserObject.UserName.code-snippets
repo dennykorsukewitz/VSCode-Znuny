@@ -1,11 +1,11 @@
 {
     "znuny.UserObject.UserName": {
         "body": [
-            "${1:my \$Name = \$UserObject->UserName(",
+            "${1:my \\$Name = \\$UserObject->UserName(",
             "    User => 'some-login',",
             ");}",
-            "${2:my \$Name = \$UserObject->UserName(",
-            "    UserID => \$UserID,",
+            "${2:my \\$Name = \\$UserObject->UserName(",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.UserObject.UserName",

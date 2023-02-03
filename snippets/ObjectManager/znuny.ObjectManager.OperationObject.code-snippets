@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.OperationObject": {
         "body": [
-            "my \$OperationObject = Kernel::GenericInterface::Operation",
+            "my \\$OperationObject = Kernel::GenericInterface::Operation",
         ],
         "prefix": "znuny.ObjectManager.OperationObject",
         "description": "6.0, 6.4, 6.5",

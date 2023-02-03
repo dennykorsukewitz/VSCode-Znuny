@@ -1,11 +1,11 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberAdd": {
         "body": [
-            "${1:my \$Success = \$StdAttachmentObject->StdAttachmentStandardTemplateMemberAdd(",
-            "    AttachmentID       => \$AttachmentID,",
-            "    StandardTemplateID => \$StandardTemplateID,",
+            "${1:my \\$Success = \\$StdAttachmentObject->StdAttachmentStandardTemplateMemberAdd(",
+            "    AttachmentID       => \\$AttachmentID,",
+            "    StandardTemplateID => \\$StandardTemplateID,",
             "    Active             => 1,        # optional",
-            "    UserID             => \$UserID,",
+            "    UserID             => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberAdd",

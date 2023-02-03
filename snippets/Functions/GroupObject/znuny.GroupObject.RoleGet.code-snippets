@@ -1,7 +1,7 @@
 {
     "znuny.GroupObject.RoleGet": {
         "body": [
-            "${1:my %RoleData = \$GroupObject->RoleGet(",
+            "${1:my %RoleData = \\$GroupObject->RoleGet(",
             "    ID => 2,",
             ");}",
         ],

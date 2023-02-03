@@ -1,7 +1,7 @@
 {
     "znuny.ParamObject.IsAJAXRequest": {
         "body": [
-            "${1:my \$IsAJAXRequest = \$ParamObject->IsAJAXRequest();}",
+            "${1:my \\$IsAJAXRequest = \\$ParamObject->IsAJAXRequest();}",
         ],
         "prefix": "znuny.ParamObject.IsAJAXRequest",
         "description": "6.0, 6.4, 6.5",

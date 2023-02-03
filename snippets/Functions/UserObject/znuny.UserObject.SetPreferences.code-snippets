@@ -1,10 +1,10 @@
 {
     "znuny.UserObject.SetPreferences": {
         "body": [
-            "${1:\$UserObject->SetPreferences(",
+            "${1:\\$UserObject->SetPreferences(",
             "    Key    => 'UserComment',",
             "    Value  => 'some comment',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.UserObject.SetPreferences",

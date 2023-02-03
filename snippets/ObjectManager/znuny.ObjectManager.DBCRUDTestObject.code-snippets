@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.DBCRUDTestObject": {
         "body": [
-            "my \$DBCRUDTestObject = \$Kernel::OM->Get('Kernel::System::UnitTest::DBCRUD');",
+            "my \\$DBCRUDTestObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::DBCRUD');",
         ],
         "prefix": "znuny.ObjectManager.DBCRUDTestObject",
         "description": "6.4, 6.5",

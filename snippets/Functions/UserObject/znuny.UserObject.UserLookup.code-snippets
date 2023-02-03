@@ -1,12 +1,12 @@
 {
     "znuny.UserObject.UserLookup": {
         "body": [
-            "${1:my \$UserID = \$UserObject->UserLookup(",
+            "${1:my \\$UserID = \\$UserObject->UserLookup(",
             "    UserLogin => 'some_user_login',",
             "    Silent    => 1, # optional, don't generate log entry if user was not found",
             ");}",
-            "${2:my \$UserLogin = \$UserObject->UserLookup(",
-            "    UserID => \$UserID,",
+            "${2:my \\$UserLogin = \\$UserObject->UserLookup(",
+            "    UserID => \\$UserID,",
             "    Silent => 1, # optional, don't generate log entry if user was not found",
             ");}",
         ],

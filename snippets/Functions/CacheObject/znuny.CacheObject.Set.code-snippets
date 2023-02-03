@@ -1,7 +1,7 @@
 {
     "znuny.CacheObject.Set": {
         "body": [
-            "${1:\$CacheObject->Set(",
+            "${1:\\$CacheObject->Set(",
             "    Type  => 'ObjectName',",
             "    Key   => 'SomeKey',",
             "    Value => { ... complex data ... \\},",
@@ -10,7 +10,7 @@
             "    CacheInMemory  => 0,                 # optional, defaults to 1",
             "    CacheInBackend => 1,                 # optional, defaults to 1",
             ");}",
-            "${2:\$CacheObject->Set(",
+            "${2:\\$CacheObject->Set(",
             "    Type  => 'ObjectName',      # only [a-zA-Z0-9_] chars usable",
             "    Key   => 'SomeKey',",
             "    Value => 'Some Value',",

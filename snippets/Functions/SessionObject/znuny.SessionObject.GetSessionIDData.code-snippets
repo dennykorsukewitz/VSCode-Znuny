@@ -1,8 +1,8 @@
 {
     "znuny.SessionObject.GetSessionIDData": {
         "body": [
-            "${1:my %Data = \$SessionObject->GetSessionIDData(",
-            "    SessionID => \$SessionID,",
+            "${1:my %Data = \\$SessionObject->GetSessionIDData(",
+            "    SessionID => \\$SessionID,",
             ");}",
         ],
         "prefix": "znuny.SessionObject.GetSessionIDData",

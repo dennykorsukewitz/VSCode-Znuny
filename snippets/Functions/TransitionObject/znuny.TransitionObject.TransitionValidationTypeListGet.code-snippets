@@ -1,7 +1,7 @@
 {
     "znuny.TransitionObject.TransitionValidationTypeListGet": {
         "body": [
-            "${1:my %TransitionValidationTypeListGet = \$TransitionObject->TransitionValidationTypeListGet();}",
+            "${1:my %TransitionValidationTypeListGet = \\$TransitionObject->TransitionValidationTypeListGet();}",
         ],
         "prefix": "znuny.TransitionObject.TransitionValidationTypeListGet",
         "description": "6.4, 6.5",

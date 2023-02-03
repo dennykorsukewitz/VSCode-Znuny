@@ -1,7 +1,7 @@
 {
     "znuny.PDFObject.DocumentNew": {
         "body": [
-            "${1:\$True = \$PDFObject->DocumentNew(",
+            "${1:\\$True = \\$PDFObject->DocumentNew(",
             "    Title     => 'The Document Title',  # Title of PDF Document",
             "    Encode    => 'utf-8',               # Charset of Document",
             "    Testfonts => 1,                     # (optional) default 0",

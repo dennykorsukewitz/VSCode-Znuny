@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.NotifyNonUpdatedTickets": {
         "body": [
-            "${1:my \$Output = \$LayoutObject->NotifyNonUpdatedTickets();}",
+            "${1:my \\$Output = \\$LayoutObject->NotifyNonUpdatedTickets();}",
         ],
         "prefix": "znuny.LayoutObject.NotifyNonUpdatedTickets",
         "description": "6.0, 6.4, 6.5",

@@ -1,14 +1,14 @@
 {
     "znuny.UnitTestObject.True": {
         "body": [
-            "${1:\$Self->True(",
-            "    \$TestValue,",
+            "${1:\\$Self->True(",
+            "    \\$TestValue,",
             "    'Test Name',",
             ");}",
-            "${2:\$Self->True(\$ParamA, 'Test Name');}",
-            "${3:\$Self->True(1, 'Test Name');}",
-            "${4:my \$TrueResult = \$Self->True(",
-            "    \$TestValue,",
+            "${2:\\$Self->True(\\$ParamA, 'Test Name');}",
+            "${3:\\$Self->True(1, 'Test Name');}",
+            "${4:my \\$TrueResult = \\$Self->True(",
+            "    \\$TestValue,",
             "    'Test Name',",
             ");}",
         ],

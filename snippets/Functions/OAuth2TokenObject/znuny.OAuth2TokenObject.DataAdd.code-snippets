@@ -1,9 +1,9 @@
 {
     "znuny.OAuth2TokenObject.DataAdd": {
         "body": [
-            "${1:my \$Success = \$OAuth2TokenObject->DataAdd(",
+            "${1:my \\$Success = \\$OAuth2TokenObject->DataAdd(",
             "    ID                         => '...',",
-            "    TokenConfigID              => \$TokenConfigID,",
+            "    TokenConfigID              => \\$TokenConfigID,",
             "    AuthorizationCode          => '...',",
             "    Token                      => '...',",
             "    TokenExpirationDate        => '...',",

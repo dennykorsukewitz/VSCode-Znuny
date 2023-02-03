@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.NotificationEventObject": {
         "body": [
-            "my \$NotificationEventObject = \$Kernel::OM->Get('Kernel::System::NotificationEvent');",
+            "my \\$NotificationEventObject = \\$Kernel::OM->Get('Kernel::System::NotificationEvent');",
         ],
         "prefix": "znuny.ObjectManager.NotificationEventObject",
         "description": "6.0, 6.4, 6.5",

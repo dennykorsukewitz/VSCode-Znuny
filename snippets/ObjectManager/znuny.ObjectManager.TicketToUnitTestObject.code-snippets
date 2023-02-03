@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.TicketToUnitTestObject": {
         "body": [
-            "my \$TicketToUnitTestObject = \$Kernel::OM->Get('Kernel::System::UnitTest::TicketToUnitTest');",
+            "my \\$TicketToUnitTestObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::TicketToUnitTest');",
         ],
         "prefix": "znuny.ObjectManager.TicketToUnitTestObject",
         "description": "6.4, 6.5",

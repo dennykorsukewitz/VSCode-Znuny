@@ -1,9 +1,9 @@
 {
     "znuny.SchedulerDBObject.CronTaskToExecute": {
         "body": [
-            "${1:my \$Success = \$SchedulerDBObject->CronTaskToExecute(",
-            "    NodeID => \$NodeID,    # the ID of the node in a cluster environment",
-            "    PID    => \$PID,  # the process ID of the daemon that is creating the tasks to execution",
+            "${1:my \\$Success = \\$SchedulerDBObject->CronTaskToExecute(",
+            "    NodeID => \\$NodeID,    # the ID of the node in a cluster environment",
+            "    PID    => \\$PID,  # the process ID of the daemon that is creating the tasks to execution",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.CronTaskToExecute",

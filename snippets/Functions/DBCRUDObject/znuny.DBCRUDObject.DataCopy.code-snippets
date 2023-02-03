@@ -1,9 +1,9 @@
 {
     "znuny.DBCRUDObject.DataCopy": {
         "body": [
-            "${1:my \$ObjectID = \$DBCRUDObject->DataCopy(",
+            "${1:my \\$ObjectID = \\$DBCRUDObject->DataCopy(",
             "    ID     => 123,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataCopy",

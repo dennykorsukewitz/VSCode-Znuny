@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.SQLProcessorPost": {
         "body": [
-            "${1:my @SQL = \$DBObject->SQLProcessorPost();}",
+            "${1:my @SQL = \\$DBObject->SQLProcessorPost();}",
         ],
         "prefix": "znuny.DBObject.SQLProcessorPost",
         "description": "6.0, 6.4, 6.5",

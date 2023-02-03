@@ -1,7 +1,7 @@
 {
     "znuny.LastViewsObject.IsValidRequest": {
         "body": [
-            "${1:my \$IsValidRequest = \$LastViewsObject->IsValidRequest(",
+            "${1:my \\$IsValidRequest = \\$LastViewsObject->IsValidRequest(",
             "    %Request",
             ");}",
         ],

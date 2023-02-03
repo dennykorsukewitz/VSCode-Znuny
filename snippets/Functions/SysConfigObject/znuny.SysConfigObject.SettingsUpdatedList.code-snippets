@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.SettingsUpdatedList": {
         "body": [
-            "${1:my @List = \$SysConfigObject->SettingsUpdatedList(",
+            "${1:my @List = \\$SysConfigObject->SettingsUpdatedList(",
             "    Settings => [                                               # (required) List of settings that needs to be checked",
             "        {",
             "            SettingName           => 'SettingName',",
@@ -10,7 +10,7 @@
             "        \\},",
             "        ...",
             "    ],",
-            "    UserID => \$UserID,                                                # (required) Current user id",
+            "    UserID => \\$UserID,                                                # (required) Current user id",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingsUpdatedList",

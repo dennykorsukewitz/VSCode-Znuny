@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.SystemDataObject": {
         "body": [
-            "my \$SystemDataObject = \$Kernel::OM->Get('Kernel::System::SystemData');",
+            "my \\$SystemDataObject = \\$Kernel::OM->Get('Kernel::System::SystemData');",
         ],
         "prefix": "znuny.ObjectManager.SystemDataObject",
         "description": "6.0, 6.4, 6.5",

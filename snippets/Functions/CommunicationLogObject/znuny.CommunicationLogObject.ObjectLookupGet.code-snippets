@@ -1,8 +1,8 @@
 {
     "znuny.CommunicationLogObject.ObjectLookupGet": {
         "body": [
-            "${1:my \$Result = \$CommunicationLogObject->ObjectLookupGet(",
-            "    TargetObjectID   => \$TargetObjectID,",
+            "${1:my \\$Result = \\$CommunicationLogObject->ObjectLookupGet(",
+            "    TargetObjectID   => \\$TargetObjectID,",
             "    TargetObjectType => '...',",
             ");}",
         ],

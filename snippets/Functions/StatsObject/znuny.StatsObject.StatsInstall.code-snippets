@@ -1,9 +1,9 @@
 {
     "znuny.StatsObject.StatsInstall": {
         "body": [
-            "${1:my \$Result = \$StatsObject->StatsInstall(",
+            "${1:my \\$Result = \\$StatsObject->StatsInstall(",
             "    FilePrefix => 'FAQ',  # (optional)",
-            "    UserID     => \$UserID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsInstall",

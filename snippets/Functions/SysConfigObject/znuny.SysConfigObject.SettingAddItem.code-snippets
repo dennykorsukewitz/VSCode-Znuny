@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.SettingAddItem": {
         "body": [
-            "${1:my %Result = \$SysConfigObject->SettingAddItem(",
+            "${1:my %Result = \\$SysConfigObject->SettingAddItem(",
             "    SettingStructure  => [],         # (required) array that contains structure",
             "                                     #  where a new item should be inserted (can be empty)",
             "    Setting           => {           # (required) Setting hash (from SettingGet())",
@@ -26,7 +26,7 @@
             "            ],",
             "        \\},",
             "    ],",
-            "    AddSettingContent => 0,          # (optional) if enabled, result will be inside of div with class "SettingContent"",
+            "    AddSettingContent => 0,          # (optional) if enabled, result will be inside of div with class \\"SettingContent\\"",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingAddItem",

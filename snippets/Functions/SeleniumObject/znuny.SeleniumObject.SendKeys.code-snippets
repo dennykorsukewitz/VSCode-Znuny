@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.SendKeys": {
         "body": [
-            "${1:my \$Success = \$SeleniumObject->SendKeys(",
+            "${1:my \\$Success = \\$SeleniumObject->SendKeys(",
             "    Selector     => '#DynamicField_Test',",
             "    SelectorType => 'css',                  # optional",
             "    Content      => 'ABCDEFG',",

@@ -1,12 +1,12 @@
 {
     "znuny.UnitTestWebUserAgentObject.Mock": {
         "body": [
-            "${1:my \$Success = \$UnitTestWebUserAgentObject->Mock(",
+            "${1:my \\$Success = \\$UnitTestWebUserAgentObject->Mock(",
             "    URL            => qr/testserver\/success/,",
             "    Status         => 'OK',",
             "    StatusCode     => '200',",
             "    Header         => [ 'Content-Type' => 'application/json' ],",
-            "    Body           => '{ "access_token": "123", "token_type": "ABC" \\}',",
+            "    Body           => '{ \\"access_token\\": \\"123\\", \\"token_type\\": \\"ABC\\" \\}',",
             ");}",
         ],
         "prefix": "znuny.UnitTestWebUserAgentObject.Mock",

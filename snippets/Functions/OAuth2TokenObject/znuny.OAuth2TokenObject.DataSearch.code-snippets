@@ -1,10 +1,10 @@
 {
     "znuny.OAuth2TokenObject.DataSearch": {
         "body": [
-            "${1:my %Data = \$OAuth2TokenObject->DataSearch(",
+            "${1:my %Data = \\$OAuth2TokenObject->DataSearch(",
             "    Search                     => 'test*test',",
             "    ID                         => '...', # optional",
-            "    TokenConfigID              => \$TokenConfigID, # optional",
+            "    TokenConfigID              => \\$TokenConfigID, # optional",
             "    AuthorizationCode          => '...', # optional",
             "    Token                      => '...', # optional",
             "    TokenExpirationDate        => '...', # optional",

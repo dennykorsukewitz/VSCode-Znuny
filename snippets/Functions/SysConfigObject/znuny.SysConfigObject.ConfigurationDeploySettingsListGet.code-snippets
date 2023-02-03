@@ -1,8 +1,8 @@
 {
     "znuny.SysConfigObject.ConfigurationDeploySettingsListGet": {
         "body": [
-            "${1:my @List = \$SysConfigObject->ConfigurationDeploySettingsListGet(",
-            "    DeploymentID => \$DeploymentID,",
+            "${1:my @List = \\$SysConfigObject->ConfigurationDeploySettingsListGet(",
+            "    DeploymentID => \\$DeploymentID,",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDeploySettingsListGet",

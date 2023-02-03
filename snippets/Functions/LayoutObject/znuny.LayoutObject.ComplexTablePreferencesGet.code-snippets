@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.ComplexTablePreferencesGet": {
         "body": [
-            "${1:my %Preferences = \$LayoutObject->ComplexTablePreferencesGet(",
+            "${1:my %Preferences = \\$LayoutObject->ComplexTablePreferencesGet(",
             "    Config  => {",
             "        'DefaultColumns' => {",
             "            'Age' => 1,",
@@ -14,7 +14,7 @@
             "            ...",
             "        \\}",
             "    \\}.",
-            "    PrefKey => "LinkObject::ComplexTable-Ticket",",
+            "    PrefKey => \\"LinkObject::ComplexTable-Ticket\\",",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.ComplexTablePreferencesGet",

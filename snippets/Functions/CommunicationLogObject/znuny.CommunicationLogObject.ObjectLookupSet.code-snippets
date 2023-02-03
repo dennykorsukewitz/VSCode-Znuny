@@ -1,10 +1,10 @@
 {
     "znuny.CommunicationLogObject.ObjectLookupSet": {
         "body": [
-            "${1:my \$Result = \$CommunicationLogObject->ObjectLookupSet(",
-            "    ObjectID         => \$ObjectID,       # (required)",
+            "${1:my \\$Result = \\$CommunicationLogObject->ObjectLookupSet(",
+            "    ObjectID         => \\$ObjectID,       # (required)",
             "    TargetObjectType => 'Article', # (required)",
-            "    TargetObjectID   => \$TargetObjectID,       # (required)",
+            "    TargetObjectID   => \\$TargetObjectID,       # (required)",
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.ObjectLookupSet",

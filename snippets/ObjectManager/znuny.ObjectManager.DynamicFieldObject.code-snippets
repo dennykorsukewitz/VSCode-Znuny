@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.DynamicFieldObject": {
         "body": [
-            "my \$DynamicFieldObject = \$Kernel::OM->Get('Kernel::System::DynamicField');",
+            "my \\$DynamicFieldObject = \\$Kernel::OM->Get('Kernel::System::DynamicField');",
         ],
         "prefix": "znuny.ObjectManager.DynamicFieldObject",
         "description": "6.0, 6.4, 6.5",

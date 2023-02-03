@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.CreateUUIDDatabaseTableColumn": {
         "body": [
-            "${1:my \$UUIDColumnCreated = \$DBCRUDObject->CreateUUIDDatabaseTableColumn();}",
+            "${1:my \\$UUIDColumnCreated = \\$DBCRUDObject->CreateUUIDDatabaseTableColumn();}",
         ],
         "prefix": "znuny.DBCRUDObject.CreateUUIDDatabaseTableColumn",
         "description": "6.4, 6.5",

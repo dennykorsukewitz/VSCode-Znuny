@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.FetchMailObject": {
         "body": [
-            "my \$FetchMailObject = \$Kernel::OM->Get('Kernel::System::FetchMail');",
+            "my \\$FetchMailObject = \\$Kernel::OM->Get('Kernel::System::FetchMail');",
         ],
         "prefix": "znuny.ObjectManager.FetchMailObject",
         "description": "6.0, 6.4, 6.5",

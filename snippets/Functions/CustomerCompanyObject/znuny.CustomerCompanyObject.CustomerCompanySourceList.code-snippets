@@ -1,7 +1,7 @@
 {
     "znuny.CustomerCompanyObject.CustomerCompanySourceList": {
         "body": [
-            "${1:my %List = \$CustomerCompanyObject->CustomerCompanySourceList(",
+            "${1:my %List = \\$CustomerCompanyObject->CustomerCompanySourceList(",
             "    ReadOnly => 0 # optional, 1 returns only RO backends, 0 returns writable, if not passed returns all backends",
             ");}",
         ],

@@ -1,8 +1,8 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceListGet": {
         "body": [
-            "${1:my \$List = \$SystemMaintenanceObject->SystemMaintenanceListGet(",
-            "    UserID   => \$UserID,",
+            "${1:my \\$List = \\$SystemMaintenanceObject->SystemMaintenanceListGet(",
+            "    UserID   => \\$UserID,",
             "    ValidIDs => ['1','2'], # optional, to filter SystemMaintenances that match listed valid IDs",
             ");}",
         ],

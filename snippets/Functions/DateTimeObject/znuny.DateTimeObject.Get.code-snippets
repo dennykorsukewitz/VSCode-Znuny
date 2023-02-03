@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.Get": {
         "body": [
-            "${1:my \$DateTimeSettings = \$DateTimeObject->Get();}",
+            "${1:my \\$DateTimeSettings = \\$DateTimeObject->Get();}",
         ],
         "prefix": "znuny.DateTimeObject.Get",
         "description": "6.0, 6.4, 6.5",

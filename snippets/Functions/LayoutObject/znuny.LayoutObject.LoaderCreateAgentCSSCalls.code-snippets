@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.LoaderCreateAgentCSSCalls": {
         "body": [
-            "${1:\$LayoutObject->LoaderCreateAgentCSSCalls(",
+            "${1:\\$LayoutObject->LoaderCreateAgentCSSCalls(",
             "    Skin => 'MySkin', # optional, if not provided skin is the configured by default",
             ");}",
         ],

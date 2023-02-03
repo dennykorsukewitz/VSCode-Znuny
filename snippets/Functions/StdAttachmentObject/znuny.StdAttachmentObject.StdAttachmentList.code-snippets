@@ -1,7 +1,7 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentList": {
         "body": [
-            "${1:my %List = \$StdAttachmentObject->StdAttachmentList(",
+            "${1:my %List = \\$StdAttachmentObject->StdAttachmentList(",
             "    Valid => 0,  # optional, defaults to 1",
             ");}",
         ],

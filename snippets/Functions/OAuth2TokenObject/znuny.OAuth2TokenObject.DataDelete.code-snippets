@@ -1,9 +1,9 @@
 {
     "znuny.OAuth2TokenObject.DataDelete": {
         "body": [
-            "${1:my \$Success = \$OAuth2TokenObject->DataDelete(",
+            "${1:my \\$Success = \\$OAuth2TokenObject->DataDelete(",
             "    ID                         => '...', # optional",
-            "    TokenConfigID              => \$TokenConfigID, # optional",
+            "    TokenConfigID              => \\$TokenConfigID, # optional",
             "    AuthorizationCode          => '...', # optional",
             "    Token                      => '...', # optional",
             "    TokenExpirationDate        => '...', # optional",

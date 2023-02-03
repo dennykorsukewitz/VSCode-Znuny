@@ -1,9 +1,9 @@
 {
     "znuny.AutoResponseObject.AutoResponseList": {
         "body": [
-            "${1:my %AutoResponse = \$AutoResponseObject->AutoResponseList(",
+            "${1:my %AutoResponse = \\$AutoResponseObject->AutoResponseList(",
             "    Valid   => 1,                 # (optional) default 1",
-            "    TypeID  => \$TypeID,                 # (optional) Auto Response type ID",
+            "    TypeID  => \\$TypeID,                 # (optional) Auto Response type ID",
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseList",

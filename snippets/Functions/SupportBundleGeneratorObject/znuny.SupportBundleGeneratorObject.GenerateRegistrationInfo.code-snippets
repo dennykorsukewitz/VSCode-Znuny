@@ -1,7 +1,7 @@
 {
     "znuny.SupportBundleGeneratorObject.GenerateRegistrationInfo": {
         "body": [
-            "${1:my ( \$Content, \$Filename ) = \$SupportBundleGeneratorObject->GenerateRegistrationInfo();}",
+            "${1:my ( \\$Content, \\$Filename ) = \\$SupportBundleGeneratorObject->GenerateRegistrationInfo();}",
         ],
         "prefix": "znuny.SupportBundleGeneratorObject.GenerateRegistrationInfo",
         "description": "6.0, 6.4, 6.5",

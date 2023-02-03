@@ -1,8 +1,8 @@
 {
     "znuny.UnitTestWebserviceObject.ValidateResult": {
         "body": [
-            "${1:my \$Result = \$UnitTestWebserviceObject->ValidateResult(",
-            "    UnitTestObject => \$Self,",
+            "${1:my \\$Result = \\$UnitTestWebserviceObject->ValidateResult(",
+            "    UnitTestObject => \\$Self,",
             "    RequestCount   => 1, # default, defines the number of requests that should have been processed",
             ");}",
         ],

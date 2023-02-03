@@ -1,7 +1,7 @@
 {
     "znuny.PostMasterObject.GetEmailParams": {
         "body": [
-            "${1:my %Header = \$PostMasterObject->GetEmailParams();}",
+            "${1:my %Header = \\$PostMasterObject->GetEmailParams();}",
         ],
         "prefix": "znuny.PostMasterObject.GetEmailParams",
         "description": "6.0, 6.4, 6.5",

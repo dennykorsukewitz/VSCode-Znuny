@@ -1,7 +1,7 @@
 {
     "znuny.PIDObject.PIDGet": {
         "body": [
-            "${1:my %PID = \$PIDObject->PIDGet(",
+            "${1:my %PID = \\$PIDObject->PIDGet(",
             "    Name => 'PostMasterPOP3',",
             ");}",
         ],

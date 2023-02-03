@@ -1,7 +1,7 @@
 {
     "znuny.OAuth2TokenConfigObject.IsOAuth2TokenConfigInUse": {
         "body": [
-            "${1:my \$IsInUse = \$OAuth2TokenConfigObject->IsOAuth2TokenConfigInUse(",
+            "${1:my \\$IsInUse = \\$OAuth2TokenConfigObject->IsOAuth2TokenConfigInUse(",
             "    ID => 3,",
             ");}",
         ],

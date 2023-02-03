@@ -1,11 +1,11 @@
 {
     "znuny.TypeObject.TypeUpdate": {
         "body": [
-            "${1:\$TypeObject->TypeUpdate(",
+            "${1:\\$TypeObject->TypeUpdate(",
             "    ID      => 123,",
             "    Name    => 'New Type',",
-            "    ValidID => \$ValidID,",
-            "    UserID  => \$UserID,",
+            "    ValidID => \\$ValidID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TypeObject.TypeUpdate",

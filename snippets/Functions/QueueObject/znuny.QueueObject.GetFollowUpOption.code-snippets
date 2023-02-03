@@ -1,7 +1,7 @@
 {
     "znuny.QueueObject.GetFollowUpOption": {
         "body": [
-            "${1:my \$FollowUpOption = \$QueueObject->GetFollowUpOption( QueueID => \$QueueID );}",
+            "${1:my \\$FollowUpOption = \\$QueueObject->GetFollowUpOption( QueueID => \\$QueueID );}",
         ],
         "prefix": "znuny.QueueObject.GetFollowUpOption",
         "description": "6.0, 6.4, 6.5",

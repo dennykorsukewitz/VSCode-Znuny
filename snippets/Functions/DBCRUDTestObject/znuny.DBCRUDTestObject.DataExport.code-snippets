@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDTestObject.DataExport": {
         "body": [
-            "${1:my \$Export = \$DBCRUDTestObject->DataExport(",
+            "${1:my \\$Export = \\$DBCRUDTestObject->DataExport(",
             "    Format => 'yml',",
             "    Cache  => 0,",
             ");}",

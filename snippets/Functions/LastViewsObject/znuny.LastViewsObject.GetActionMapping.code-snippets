@@ -1,7 +1,7 @@
 {
     "znuny.LastViewsObject.GetActionMapping": {
         "body": [
-            "${1:my %ActionMapping = \$LastViewsObject->GetActionMapping();}",
+            "${1:my %ActionMapping = \\$LastViewsObject->GetActionMapping();}",
         ],
         "prefix": "znuny.LastViewsObject.GetActionMapping",
         "description": "6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.ArticleObject.ArticleSearchIndexStatus": {
         "body": [
-            "${1:my %Status = \$ArticleObject->ArticleSearchIndexStatus();}",
+            "${1:my %Status = \\$ArticleObject->ArticleSearchIndexStatus();}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexStatus",
         "description": "6.0, 6.4, 6.5",

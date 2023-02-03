@@ -1,10 +1,10 @@
 {
     "znuny.EmailObject.Bounce": {
         "body": [
-            "${1:\$EmailObject->Bounce(",
+            "${1:\\$EmailObject->Bounce(",
             "    From  => 'me@example.com',",
             "    To    => 'friend@example.com',",
-            "    Email => \$Email,",
+            "    Email => \\$Email,",
             ");}",
         ],
         "prefix": "znuny.EmailObject.Bounce",

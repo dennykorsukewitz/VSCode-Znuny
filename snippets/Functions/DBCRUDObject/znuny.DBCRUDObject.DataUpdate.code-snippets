@@ -1,9 +1,9 @@
 {
     "znuny.DBCRUDObject.DataUpdate": {
         "body": [
-            "${1:my \$Success = \$DBCRUDObject->DataUpdate(",
+            "${1:my \\$Success = \\$DBCRUDObject->DataUpdate(",
             "    ID => 1234,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             "    # all other attributes are optional",
             ");}",
         ],

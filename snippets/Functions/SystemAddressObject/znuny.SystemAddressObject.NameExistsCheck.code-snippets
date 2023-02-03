@@ -1,7 +1,7 @@
 {
     "znuny.SystemAddressObject.NameExistsCheck": {
         "body": [
-            "${1:my \$Exists = \$SystemAddressObject->NameExistsCheck(",
+            "${1:my \\$Exists = \\$SystemAddressObject->NameExistsCheck(",
             "    Name => 'Some Address',",
             "    ID   => 1,                  # optional",
             ");}",

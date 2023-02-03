@@ -1,11 +1,11 @@
 {
     "znuny.TemplateGeneratorObject.AutoResponse": {
         "body": [
-            "${1:my %AutoResponse = \$TemplateGeneratorObject->AutoResponse(",
-            "    TicketID         => \$TicketID,",
+            "${1:my %AutoResponse = \\$TemplateGeneratorObject->AutoResponse(",
+            "    TicketID         => \\$TicketID,",
             "    OrigHeader       => {\\},",
             "    AutoResponseType => 'auto reply',",
-            "    UserID           => \$UserID,",
+            "    UserID           => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.AutoResponse",

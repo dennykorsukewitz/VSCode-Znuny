@@ -1,8 +1,8 @@
 {
     "znuny.HTMLUtilsObject.Safety": {
         "body": [
-            "${1:my %Safe = \$HTMLUtilsObject->Safety(",
-            "    String         => \$HTMLString,",
+            "${1:my %Safe = \\$HTMLUtilsObject->Safety(",
+            "    String         => \\$HTMLString,",
             "    NoApplet       => 1,",
             "    NoObject       => 1,",
             "    NoEmbed        => 1,",
@@ -13,8 +13,8 @@
             "    NoJavaScript   => 1,",
             "    ReplacementStr => 'string',          # optional, string to show instead of applet, object, embed, svg and img tags",
             ");}",
-            "${2:my %Safe = \$HTMLUtilsObject->Safety(",
-            "    String       => \\$HTMLStringRef,",
+            "${2:my %Safe = \\$HTMLUtilsObject->Safety(",
+            "    String       => \\\$HTMLStringRef,",
             "    NoApplet     => 1,",
             "    NoObject     => 1,",
             "    NoEmbed      => 1,",

@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestSchedulerObject.Execute": {
         "body": [
-            "${1:my \$Success = \$UnitTestSchedulerObject->Execute(",
+            "${1:my \\$Success = \\$UnitTestSchedulerObject->Execute(",
             "    Type => 'AsynchronousExecutor', # optional",
             ");}",
         ],

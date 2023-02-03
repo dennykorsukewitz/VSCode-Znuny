@@ -1,9 +1,9 @@
 {
     "znuny.TicketObject.TicketEscalationIndexBuild": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketEscalationIndexBuild(",
-            "    TicketID => \$Param{TicketID\\},",
-            "    UserID   => \$Param{UserID\\},",
+            "${1:my \\$Success = \\$TicketObject->TicketEscalationIndexBuild(",
+            "    TicketID => \\$Param{TicketID\\},",
+            "    UserID   => \\$Param{UserID\\},",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationIndexBuild",

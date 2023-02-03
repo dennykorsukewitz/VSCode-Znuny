@@ -1,7 +1,7 @@
 {
     "znuny.TimeObject.MailTimeStamp": {
         "body": [
-            "${1:my \$MailTimeStamp = \$TimeObject->MailTimeStamp();}",
+            "${1:my \\$MailTimeStamp = \\$TimeObject->MailTimeStamp();}",
         ],
         "prefix": "znuny.TimeObject.MailTimeStamp",
         "description": "6.0, 6.4, 6.5",

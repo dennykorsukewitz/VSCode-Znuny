@@ -1,16 +1,16 @@
 {
     "znuny.StateObject.StateList": {
         "body": [
-            "${1:my %List = \$StateObject->StateList(",
-            "    UserID => \$UserID,",
+            "${1:my %List = \\$StateObject->StateList(",
+            "    UserID => \\$UserID,",
             "    Valid  => 0,",
             ");}",
-            "${2:my %List = \$StateObject->StateList(",
-            "    UserID => \$UserID,",
+            "${2:my %List = \\$StateObject->StateList(",
+            "    UserID => \\$UserID,",
             "    Valid  => 1, # is default",
             ");}",
-            "${3:my %List = \$StateObject->StateList(",
-            "    UserID => \$UserID,",
+            "${3:my %List = \\$StateObject->StateList(",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StateObject.StateList",

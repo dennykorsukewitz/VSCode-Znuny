@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.AgentRequest": {
         "body": [
-            "${1:\$SeleniumObject->AgentRequest(",
+            "${1:\\$SeleniumObject->AgentRequest(",
             "    Action      => 'CustomerUserSearch',",
             "    Param       => {",
             "        Term => 'test-customer-user'",

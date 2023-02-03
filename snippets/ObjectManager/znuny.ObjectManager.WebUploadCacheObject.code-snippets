@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.WebUploadCacheObject": {
         "body": [
-            "my \$WebUploadCacheObject = \$Kernel::OM->Get('Kernel::System::Web::UploadCache');",
+            "my \\$WebUploadCacheObject = \\$Kernel::OM->Get('Kernel::System::Web::UploadCache');",
         ],
         "prefix": "znuny.ObjectManager.WebUploadCacheObject",
         "description": "6.0, 6.4, 6.5",

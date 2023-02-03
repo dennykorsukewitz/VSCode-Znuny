@@ -1,7 +1,7 @@
 {
     "znuny.SearchProfileObject.SearchProfileUpdateUserLogin": {
         "body": [
-            "${1:my \$Result = \$SearchProfileObject->SearchProfileUpdateUserLogin(",
+            "${1:my \\$Result = \\$SearchProfileObject->SearchProfileUpdateUserLogin(",
             "    Base         => 'TicketSearch',",
             "    UserLogin    => 'me',",
             "    NewUserLogin => 'newme',",

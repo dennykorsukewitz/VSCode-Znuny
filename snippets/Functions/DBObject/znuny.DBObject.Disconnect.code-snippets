@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.Disconnect": {
         "body": [
-            "${1:\$DBObject->Disconnect();}",
+            "${1:\\$DBObject->Disconnect();}",
         ],
         "prefix": "znuny.DBObject.Disconnect",
         "description": "6.0, 6.4, 6.5",

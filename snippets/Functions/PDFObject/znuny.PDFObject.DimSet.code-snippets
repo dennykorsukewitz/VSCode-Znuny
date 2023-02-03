@@ -1,7 +1,7 @@
 {
     "znuny.PDFObject.DimSet": {
         "body": [
-            "${1:\$Dim = \$PDFObject->DimSet(",
+            "${1:\\$Dim = \\$PDFObject->DimSet(",
             "    Dim => 'printable',  # (optional) default content (content|printable)",
             ");}",
         ],

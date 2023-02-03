@@ -1,15 +1,15 @@
 {
     "znuny.TicketObject.TicketSLASet": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketSLASet(",
+            "${1:my \\$Success = \\$TicketObject->TicketSLASet(",
             "    SLA      => 'SLA A',",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
-            "${2:my \$Success = \$TicketObject->TicketSLASet(",
-            "    SLAID    => \$SLAID,",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "${2:my \\$Success = \\$TicketObject->TicketSLASet(",
+            "    SLAID    => \\$SLAID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketSLASet",

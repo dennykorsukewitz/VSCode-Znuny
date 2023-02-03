@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.ToEpoch": {
         "body": [
-            "${1:my \$Epoch = \$DateTimeObject->ToEpoch();}",
+            "${1:my \\$Epoch = \\$DateTimeObject->ToEpoch();}",
         ],
         "prefix": "znuny.DateTimeObject.ToEpoch",
         "description": "6.0, 6.4, 6.5",

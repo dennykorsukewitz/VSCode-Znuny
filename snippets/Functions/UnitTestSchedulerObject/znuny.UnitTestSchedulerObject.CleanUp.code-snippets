@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestSchedulerObject.CleanUp": {
         "body": [
-            "${1:my \$Success = \$UnitTestSchedulerObject->CleanUp(",
+            "${1:my \\$Success = \\$UnitTestSchedulerObject->CleanUp(",
             "    Type => 'AsynchronousExecutor', # optional",
             ");}",
         ],

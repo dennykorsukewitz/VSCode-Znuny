@@ -1,7 +1,7 @@
 {
     "znuny.ParserObject.GetContentDisposition": {
         "body": [
-            "${1:my \$ContentDisposition = \$ParserObject->GetContentDisposition();}",
+            "${1:my \\$ContentDisposition = \\$ParserObject->GetContentDisposition();}",
         ],
         "prefix": "znuny.ParserObject.GetContentDisposition",
         "description": "6.0, 6.4, 6.5",

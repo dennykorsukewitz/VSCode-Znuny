@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.CustomerGroupObject": {
         "body": [
-            "my \$CustomerGroupObject = \$Kernel::OM->Get('Kernel::System::CustomerGroup');",
+            "my \\$CustomerGroupObject = \\$Kernel::OM->Get('Kernel::System::CustomerGroup');",
         ],
         "prefix": "znuny.ObjectManager.CustomerGroupObject",
         "description": "6.0, 6.4, 6.5",

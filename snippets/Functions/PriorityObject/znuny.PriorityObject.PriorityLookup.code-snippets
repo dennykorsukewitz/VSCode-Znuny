@@ -1,10 +1,10 @@
 {
     "znuny.PriorityObject.PriorityLookup": {
         "body": [
-            "${1:my \$Priority = \$PriorityObject->PriorityLookup(",
-            "    PriorityID => \$PriorityID,",
+            "${1:my \\$Priority = \\$PriorityObject->PriorityLookup(",
+            "    PriorityID => \\$PriorityID,",
             ");}",
-            "${2:my \$PriorityID = \$PriorityObject->PriorityLookup(",
+            "${2:my \\$PriorityID = \\$PriorityObject->PriorityLookup(",
             "    Priority => '3 normal',",
             ");}",
         ],

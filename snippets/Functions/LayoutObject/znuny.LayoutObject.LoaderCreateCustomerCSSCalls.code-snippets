@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.LoaderCreateCustomerCSSCalls": {
         "body": [
-            "${1:\$LayoutObject->LoaderCreateCustomerCSSCalls();}",
+            "${1:\\$LayoutObject->LoaderCreateCustomerCSSCalls();}",
         ],
         "prefix": "znuny.LayoutObject.LoaderCreateCustomerCSSCalls",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.OAuth2TokenConfigObject.InitConfig": {
         "body": [
-            "${1:my \$Success = \$OAuth2TokenConfigObject->InitConfig();}",
+            "${1:my \\$Success = \\$OAuth2TokenConfigObject->InitConfig();}",
         ],
         "prefix": "znuny.OAuth2TokenConfigObject.InitConfig",
         "description": "6.4, 6.5",

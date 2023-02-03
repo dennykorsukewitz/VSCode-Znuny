@@ -1,7 +1,7 @@
 {
     "znuny.DebuggerObject.ProviderProcessRequest": {
         "body": [
-            "${1:my \$Result = \$DebuggerObject->ProviderProcessRequest();}",
+            "${1:my \\$Result = \\$DebuggerObject->ProviderProcessRequest();}",
         ],
         "prefix": "znuny.DebuggerObject.ProviderProcessRequest",
         "description": "6.0, 6.4, 6.5",

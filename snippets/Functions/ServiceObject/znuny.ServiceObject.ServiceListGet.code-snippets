@@ -1,9 +1,9 @@
 {
     "znuny.ServiceObject.ServiceListGet": {
         "body": [
-            "${1:my \$ServiceList = \$ServiceObject->ServiceListGet(",
+            "${1:my \\$ServiceList = \\$ServiceObject->ServiceListGet(",
             "    Valid  => 0,   # (optional) default 1 (0|1)",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceListGet",

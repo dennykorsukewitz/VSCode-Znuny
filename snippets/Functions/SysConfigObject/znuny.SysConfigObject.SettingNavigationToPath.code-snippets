@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.SettingNavigationToPath": {
         "body": [
-            "${1:my @Path = \$SysConfigObject->SettingNavigationToPath(",
+            "${1:my @Path = \\$SysConfigObject->SettingNavigationToPath(",
             "    Navigation => 'Frontend::Agent::ToolBarModule',  # (optional)",
             ");}",
         ],

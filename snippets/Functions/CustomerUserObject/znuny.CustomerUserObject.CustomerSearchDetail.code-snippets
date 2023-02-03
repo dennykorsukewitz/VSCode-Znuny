@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.CustomerSearchDetail": {
         "body": [
-            "${1:my \$CustomerUserIDsRef = \$CustomerUserObject->CustomerSearchDetail(",
+            "${1:my \\$CustomerUserIDsRef = \\$CustomerUserObject->CustomerSearchDetail(",
             "",
             "    # all search fields possible which are defined in CustomerUser::EnhancedSearchFields",
             "    UserLogin     => 'example*',                                    # (optional)",
@@ -21,7 +21,7 @@
             "    #   You can also pass more than one argument to an operator: ['value1', 'value2']",
             "    DynamicField_FieldNameX => {",
             "        Equals            => 123,",
-            "        Like              => 'value*',                # "equals" operator with wildcard support",
+            "        Like              => 'value*',                # \\"equals\\" operator with wildcard support",
             "        GreaterThan       => '2001-01-01 01:01:01',",
             "        GreaterThanEquals => '2001-01-01 01:01:01',",
             "        SmallerThan       => '2002-02-02 02:02:02',",

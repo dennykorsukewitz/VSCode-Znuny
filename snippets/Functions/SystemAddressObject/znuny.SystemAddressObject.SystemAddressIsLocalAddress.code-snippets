@@ -1,7 +1,7 @@
 {
     "znuny.SystemAddressObject.SystemAddressIsLocalAddress": {
         "body": [
-            "${1:if ( \$SystemAddressObject->SystemAddressIsLocalAddress( Address => 'info@example.com' ) ) {",
+            "${1:if ( \\$SystemAddressObject->SystemAddressIsLocalAddress( Address => 'info@example.com' ) ) {",
             "    # is local",
             "\\}",
             "else {",

@@ -1,7 +1,7 @@
 {
     "znuny.AutoResponseObject.AutoResponseGet": {
         "body": [
-            "${1:my %Data = \$AutoResponseObject->AutoResponseGet(",
+            "${1:my %Data = \\$AutoResponseObject->AutoResponseGet(",
             "    ID => 123,",
             ");}",
         ],

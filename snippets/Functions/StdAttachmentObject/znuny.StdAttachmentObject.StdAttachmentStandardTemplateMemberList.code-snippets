@@ -1,12 +1,12 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberList": {
         "body": [
-            "${1:my %List = \$StdAttachmentObject->StdAttachmentStandardTemplateMemberList(",
-            "    AttachmentID => \$AttachmentID,",
+            "${1:my %List = \\$StdAttachmentObject->StdAttachmentStandardTemplateMemberList(",
+            "    AttachmentID => \\$AttachmentID,",
             ");}",
             "${2:or",
-            "my %List = \$StdAttachmentObject->StdAttachmentStandardTemplateMemberList(",
-            "    StandardTemplateID => \$StandardTemplateID,",
+            "my %List = \\$StdAttachmentObject->StdAttachmentStandardTemplateMemberList(",
+            "    StandardTemplateID => \\$StandardTemplateID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberList",

@@ -1,7 +1,7 @@
 {
     "znuny.WebserviceHistoryObject.WebserviceHistoryGet": {
         "body": [
-            "${1:my \$WebserviceHistory = \$WebserviceHistoryObject->WebserviceHistoryGet(",
+            "${1:my \\$WebserviceHistory = \\$WebserviceHistoryObject->WebserviceHistoryGet(",
             "    ID => 123,",
             ");}",
         ],

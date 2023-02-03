@@ -113,8 +113,7 @@
       ],
       "_CheckVersion" : [
          "6.0",
-         "6.4",
-         "6.5"
+         "6.4"
       ],
       "_Color" : [
          "6.0",
@@ -509,7 +508,6 @@
          "6.5"
       ],
       "_LastViewParameters" : [
-         "6.4",
          "6.5"
       ],
       "_LinkObjectContentStringCreate" : [
@@ -762,7 +760,6 @@
          "6.5"
       ],
       "_ServiceGetCurrentIncidentState" : [
-         "6.4",
          "6.5"
       ],
       "_SetArticleTransmissionError" : [

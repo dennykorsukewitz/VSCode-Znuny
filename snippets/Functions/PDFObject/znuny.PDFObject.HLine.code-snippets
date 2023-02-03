@@ -1,7 +1,7 @@
 {
     "znuny.PDFObject.HLine": {
         "body": [
-            "${1:\$True = \$PDFObject->HLine(",
+            "${1:\\$True = \\$PDFObject->HLine(",
             "    Width     => 300,           # (optional) default 'end of printable dimension'",
             "    Type      => 'ReturnFalse'  # (optional) default Cut (ReturnFalse|Cut)",
             "    Color     => '#101010',     # (optional) default black",

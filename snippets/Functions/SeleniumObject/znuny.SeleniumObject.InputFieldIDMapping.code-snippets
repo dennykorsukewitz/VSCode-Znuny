@@ -1,15 +1,15 @@
 {
     "znuny.SeleniumObject.InputFieldIDMapping": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputFieldIDMapping(",
+            "${1:my \\$Result = \\$SeleniumObject->InputFieldIDMapping(",
             "    Action  => 'AgentTicketZoom',",
             "    Mapping => {",
             "        ...",
-            "        QueueID => \$QueueID,",
+            "        QueueID => \\$QueueID,",
             "        ...",
             "    \\},",
             ");}",
-            "${2:my \$Result = \$SeleniumObject->InputFieldIDMapping(",
+            "${2:my \\$Result = \\$SeleniumObject->InputFieldIDMapping(",
             "    Action  => 'AgentTicketZoom',",
             ");}",
         ],

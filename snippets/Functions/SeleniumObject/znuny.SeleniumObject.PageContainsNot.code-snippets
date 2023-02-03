@@ -1,9 +1,9 @@
 {
     "znuny.SeleniumObject.PageContainsNot": {
         "body": [
-            "${1:\$SeleniumObject->PageContainsNot(",
+            "${1:\\$SeleniumObject->PageContainsNot(",
             "    String  => 'Ticked locked.',",
-            "    Message => "Page does not contain 'Ticket locked.'" # optional - default",
+            "    Message => \\"Page does not contain 'Ticket locked.'\\" # optional - default",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.PageContainsNot",

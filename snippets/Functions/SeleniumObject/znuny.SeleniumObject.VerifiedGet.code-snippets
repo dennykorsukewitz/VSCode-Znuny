@@ -1,8 +1,8 @@
 {
     "znuny.SeleniumObject.VerifiedGet": {
         "body": [
-            "${1:\$SeleniumObject->VerifiedGet(",
-            "    \$URL,",
+            "${1:\\$SeleniumObject->VerifiedGet(",
+            "    \\$URL,",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.VerifiedGet",

@@ -1,15 +1,15 @@
 {
     "znuny.VirtualFSObject.Write": {
         "body": [
-            "${1:my \$Success = \$VirtualFSObject->Write(",
-            "    Content  => \\$Content,",
+            "${1:my \\$Success = \\$VirtualFSObject->Write(",
+            "    Content  => \\\$Content,",
             "    Filename => '/Object/SomeFileName.txt',",
             "    Mode     => 'binary'            # (binary|utf8)",
             "",
             "    # optional, preferences data",
             "    Preferences => {",
             "        ContentType        => 'text/plain',",
-            "        ContentID          => \$ContentID,",
+            "        ContentID          => \\$ContentID,",
             "        ContentAlternative => 1,",
             "        SomeCustomParams   => 'with our own value',",
             "    \\},",

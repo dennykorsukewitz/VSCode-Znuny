@@ -1,9 +1,9 @@
 {
     "znuny.MailQueueObject.List": {
         "body": [
-            "${1:my \$List = \$MailQueueObject->List(",
+            "${1:my \\$List = \\$MailQueueObject->List(",
             "    ID              => '...' # optional",
-            "    ArticleID       => \$ArticleID # optional",
+            "    ArticleID       => \\$ArticleID # optional",
             "    Sender          => '...' # optional",
             "    Recipient       => '...' # optional",
             "    Attempts        => '...' # optional",

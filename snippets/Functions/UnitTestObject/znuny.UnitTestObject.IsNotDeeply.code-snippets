@@ -1,12 +1,12 @@
 {
     "znuny.UnitTestObject.IsNotDeeply": {
         "body": [
-            "${1:\$Self->IsNotDeeply(",
+            "${1:\\$Self->IsNotDeeply(",
             "    \%ResultHash,           # test data",
             "    \%ExpectedHash,         # expected value",
             "    'Dummy Test Name',",
             ");}",
-            "${2:\$Self->IsNotDeeply(\$ParamA, \$ParamB, 'Test Name');}",
+            "${2:\\$Self->IsNotDeeply(\\$ParamA, \\$ParamB, 'Test Name');}",
         ],
         "prefix": "znuny.UnitTestObject.IsNotDeeply",
         "description": "6.4, 6.5",

@@ -1,10 +1,10 @@
 {
     "znuny.LockObject.LockViewableLock": {
         "body": [
-            "${1:my @List = \$LockObject->LockViewableLock(",
+            "${1:my @List = \\$LockObject->LockViewableLock(",
             "    Type => 'Name', # ID|Name",
             ");}",
-            "${2:my @ListID = \$LockObject->LockViewableLock(",
+            "${2:my @ListID = \\$LockObject->LockViewableLock(",
             "    Type => 'ID', # ID|Name",
             ");}",
         ],

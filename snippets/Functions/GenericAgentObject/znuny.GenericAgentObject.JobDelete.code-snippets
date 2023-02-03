@@ -1,9 +1,9 @@
 {
     "znuny.GenericAgentObject.JobDelete": {
         "body": [
-            "${1:my \$Success = \$GenericAgentObject->JobDelete(",
+            "${1:my \\$Success = \\$GenericAgentObject->JobDelete(",
             "    Name   => 'JobName',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobDelete",

@@ -1,7 +1,7 @@
 {
     "znuny.CommunicationLogObject.ObjectLogStart": {
         "body": [
-            "${1:my \$ObjectID = \$CommunicationLogObject->ObjectLogStart(",
+            "${1:my \\$ObjectID = \\$CommunicationLogObject->ObjectLogStart(",
             "    ObjectType => 'Connection' # (required) Can be 'Connection' or 'Message'",
             ");}",
         ],

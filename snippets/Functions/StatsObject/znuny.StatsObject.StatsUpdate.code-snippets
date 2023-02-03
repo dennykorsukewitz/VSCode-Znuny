@@ -1,10 +1,10 @@
 {
     "znuny.StatsObject.StatsUpdate": {
         "body": [
-            "${1:\$StatsObject->StatsUpdate(",
-            "    StatID => \$StatID,",
+            "${1:\\$StatsObject->StatsUpdate(",
+            "    StatID => \\$StatID,",
             "    Hash   => \%Hash,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsUpdate",

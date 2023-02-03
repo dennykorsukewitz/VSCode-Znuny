@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestEmailObject.MailCleanup": {
         "body": [
-            "${1:my \$Success = \$UnitTestEmailObject->MailCleanup();}",
+            "${1:my \\$Success = \\$UnitTestEmailObject->MailCleanup();}",
         ],
         "prefix": "znuny.UnitTestEmailObject.MailCleanup",
         "description": "6.4, 6.5",

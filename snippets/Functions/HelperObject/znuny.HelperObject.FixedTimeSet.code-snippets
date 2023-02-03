@@ -2,11 +2,11 @@
     "znuny.HelperObject.FixedTimeSet": {
         "body": [
             "${1:# set to current date and time",
-            "my \$Timestamp = \$HelperObject->FixedTimeSet();}",
+            "my \\$Timestamp = \\$HelperObject->FixedTimeSet();}",
             "${2:# with Timestamp",
-            "my \$Timestamp = \$HelperObject->FixedTimeSet(366475757);}",
+            "my \\$Timestamp = \\$HelperObject->FixedTimeSet(366475757);}",
             "${3:# with previously created DateTime object",
-            "my \$Timestamp = \$HelperObject->FixedTimeSet(\$DateTimeObject);}",
+            "my \\$Timestamp = \\$HelperObject->FixedTimeSet(\\$DateTimeObject);}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeSet",
         "description": "6.4, 6.5",

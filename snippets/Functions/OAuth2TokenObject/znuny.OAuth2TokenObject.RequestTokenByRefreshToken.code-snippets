@@ -1,9 +1,9 @@
 {
     "znuny.OAuth2TokenObject.RequestTokenByRefreshToken": {
         "body": [
-            "${1:my %Token = \$OAuth2TokenObject->RequestTokenByRefreshToken(",
-            "    TokenConfigID => \$TokenConfigID,",
-            "    UserID        => \$UserID,",
+            "${1:my %Token = \\$OAuth2TokenObject->RequestTokenByRefreshToken(",
+            "    TokenConfigID => \\$TokenConfigID,",
+            "    UserID        => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.RequestTokenByRefreshToken",

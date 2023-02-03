@@ -1,9 +1,9 @@
 {
     "znuny.WebserviceHistoryObject.WebserviceHistoryDelete": {
         "body": [
-            "${1:my \$Success = \$WebserviceHistoryObject->WebserviceHistoryDelete(",
-            "    WebserviceID => \$WebserviceID,",
-            "    UserID       => \$UserID,",
+            "${1:my \\$Success = \\$WebserviceHistoryObject->WebserviceHistoryDelete(",
+            "    WebserviceID => \\$WebserviceID,",
+            "    UserID       => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.WebserviceHistoryObject.WebserviceHistoryDelete",

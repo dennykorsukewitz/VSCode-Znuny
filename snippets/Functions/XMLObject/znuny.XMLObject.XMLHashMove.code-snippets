@@ -1,7 +1,7 @@
 {
     "znuny.XMLObject.XMLHashMove": {
         "body": [
-            "${1:\$XMLObject->XMLHashMove(",
+            "${1:\\$XMLObject->XMLHashMove(",
             "    OldType => 'SomeType',",
             "    OldKey  => '123',",
             "    NewType => 'NewType',",

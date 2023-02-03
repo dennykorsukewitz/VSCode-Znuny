@@ -1,12 +1,12 @@
 {
     "znuny.StateObject.StateAdd": {
         "body": [
-            "${1:my \$ID = \$StateObject->StateAdd(",
+            "${1:my \\$ID = \\$StateObject->StateAdd(",
             "    Name    => 'New State',",
             "    Comment => 'some comment',",
-            "    ValidID => \$ValidID,",
-            "    TypeID  => \$TypeID,",
-            "    UserID  => \$UserID,",
+            "    ValidID => \\$ValidID,",
+            "    TypeID  => \\$TypeID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StateObject.StateAdd",

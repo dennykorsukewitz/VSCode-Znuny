@@ -1,7 +1,7 @@
 {
     "znuny.QueueObject.GetQueueGroupID": {
         "body": [
-            "${1:my \$GroupID = \$QueueObject->GetQueueGroupID( QueueID => \$QueueID );}",
+            "${1:my \\$GroupID = \\$QueueObject->GetQueueGroupID( QueueID => \\$QueueID );}",
         ],
         "prefix": "znuny.QueueObject.GetQueueGroupID",
         "description": "6.0, 6.4, 6.5",

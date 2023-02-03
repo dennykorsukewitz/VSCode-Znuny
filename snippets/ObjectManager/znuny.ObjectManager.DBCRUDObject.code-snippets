@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.DBCRUDObject": {
         "body": [
-            "my \$DBCRUDObject = \$Kernel::OM->Get('Kernel::System::DBCRUD');",
+            "my \\$DBCRUDObject = \\$Kernel::OM->Get('Kernel::System::DBCRUD');",
         ],
         "prefix": "znuny.ObjectManager.DBCRUDObject",
         "description": "6.4, 6.5",

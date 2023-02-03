@@ -1,7 +1,7 @@
 {
     "znuny.LogObject.CleanUp": {
         "body": [
-            "${1:\$LogObject->CleanUp();}",
+            "${1:\\$LogObject->CleanUp();}",
         ],
         "prefix": "znuny.LogObject.CleanUp",
         "description": "6.0, 6.4, 6.5",

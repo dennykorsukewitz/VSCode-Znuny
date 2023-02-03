@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestWebserviceObject.Mock": {
         "body": [
-            "${1:my \$Result = \$UnitTestWebserviceObject->Mock(",
+            "${1:my \\$Result = \\$UnitTestWebserviceObject->Mock(",
             "    InvokerName123 => [",
             "        {",
             "            Data => {",

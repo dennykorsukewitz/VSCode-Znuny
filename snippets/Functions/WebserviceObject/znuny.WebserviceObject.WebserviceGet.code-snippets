@@ -1,7 +1,7 @@
 {
     "znuny.WebserviceObject.WebserviceGet": {
         "body": [
-            "${1:my \$Webservice = \$WebserviceObject->WebserviceGet(",
+            "${1:my \\$Webservice = \\$WebserviceObject->WebserviceGet(",
             "    ID   => 123,            # ID or Name must be provided",
             "    Name => 'MyWebservice',",
             ");}",

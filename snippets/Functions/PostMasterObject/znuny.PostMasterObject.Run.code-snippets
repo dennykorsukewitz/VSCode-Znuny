@@ -1,9 +1,9 @@
 {
     "znuny.PostMasterObject.Run": {
         "body": [
-            "${1:\$PostMasterObject->Run(",
+            "${1:\\$PostMasterObject->Run(",
             "    Queue   => 'Junk',  # optional, specify target queue for new tickets",
-            "    QueueID => \$QueueID,       # optional, specify target queue for new tickets",
+            "    QueueID => \\$QueueID,       # optional, specify target queue for new tickets",
             ");}",
         ],
         "prefix": "znuny.PostMasterObject.Run",

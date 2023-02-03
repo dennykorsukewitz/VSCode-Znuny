@@ -1,12 +1,12 @@
 {
     "znuny.WebserviceHistoryObject.WebserviceHistoryAdd": {
         "body": [
-            "${1:my \$ID = \$WebserviceHistoryObject->WebserviceHistoryAdd(",
-            "    WebserviceID => \$WebserviceID,",
+            "${1:my \\$ID = \\$WebserviceHistoryObject->WebserviceHistoryAdd(",
+            "    WebserviceID => \\$WebserviceID,",
             "    Config       => {",
             "        ...",
             "    \\},",
-            "    UserID  => \$UserID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.WebserviceHistoryObject.WebserviceHistoryAdd",

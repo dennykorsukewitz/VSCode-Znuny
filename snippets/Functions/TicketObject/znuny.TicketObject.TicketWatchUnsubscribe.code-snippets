@@ -1,10 +1,10 @@
 {
     "znuny.TicketObject.TicketWatchUnsubscribe": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketWatchUnsubscribe(",
-            "    TicketID    => \$TicketID,",
-            "    WatchUserID => \$WatchUserID,",
-            "    UserID      => \$UserID,",
+            "${1:my \\$Success = \\$TicketObject->TicketWatchUnsubscribe(",
+            "    TicketID    => \\$TicketID,",
+            "    WatchUserID => \\$WatchUserID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketWatchUnsubscribe",

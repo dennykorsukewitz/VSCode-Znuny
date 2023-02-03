@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.Block": {
         "body": [
-            "${1:\$LayoutObject->Block(",
+            "${1:\\$LayoutObject->Block(",
             "    Name => 'Row',",
             "    Data => {",
             "        Time => ...,",

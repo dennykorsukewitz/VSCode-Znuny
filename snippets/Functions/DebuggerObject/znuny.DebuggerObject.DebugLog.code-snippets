@@ -1,10 +1,10 @@
 {
     "znuny.DebuggerObject.DebugLog": {
         "body": [
-            "${1:\$DebuggerObject->DebugLog(",
+            "${1:\\$DebuggerObject->DebugLog(",
             "    DebugLevel => 'debug',",
             "    Summary    => 'Short summary, one line',",
-            "    Data       => \$Data, # optional, \$Data can be a string or a scalar reference",
+            "    Data       => \\$Data, # optional, \\$Data can be a string or a scalar reference",
             ");}",
         ],
         "prefix": "znuny.DebuggerObject.DebugLog",

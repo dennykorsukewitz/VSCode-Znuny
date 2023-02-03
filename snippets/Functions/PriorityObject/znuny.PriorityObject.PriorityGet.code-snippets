@@ -1,9 +1,9 @@
 {
     "znuny.PriorityObject.PriorityGet": {
         "body": [
-            "${1:my %PriorityData = \$PriorityObject->PriorityGet(",
-            "    PriorityID => \$PriorityID,",
-            "    UserID     => \$UserID,",
+            "${1:my %PriorityData = \\$PriorityObject->PriorityGet(",
+            "    PriorityID => \\$PriorityID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.PriorityObject.PriorityGet",

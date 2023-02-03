@@ -1,8 +1,8 @@
 {
     "znuny.TypeObject.TypeLookup": {
         "body": [
-            "${1:my \$Type = \$TypeObject->TypeLookup( TypeID => \$TypeID );}",
-            "${2:my \$TypeID = \$TypeObject->TypeLookup( Type => \$Type );}",
+            "${1:my \\$Type = \\$TypeObject->TypeLookup( TypeID => \\$TypeID );}",
+            "${2:my \\$TypeID = \\$TypeObject->TypeLookup( Type => \\$Type );}",
         ],
         "prefix": "znuny.TypeObject.TypeLookup",
         "description": "6.0, 6.4, 6.5",

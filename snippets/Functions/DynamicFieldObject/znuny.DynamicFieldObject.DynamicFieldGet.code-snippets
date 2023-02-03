@@ -1,7 +1,7 @@
 {
     "znuny.DynamicFieldObject.DynamicFieldGet": {
         "body": [
-            "${1:my \$DynamicField = \$DynamicFieldObject->DynamicFieldGet(",
+            "${1:my \\$DynamicField = \\$DynamicFieldObject->DynamicFieldGet(",
             "    ID   => 123,             # ID or Name must be provided",
             "    Name => 'DynamicField',",
             ");}",

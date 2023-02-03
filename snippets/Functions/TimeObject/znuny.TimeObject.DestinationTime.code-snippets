@@ -1,13 +1,13 @@
 {
     "znuny.TimeObject.DestinationTime": {
         "body": [
-            "${1:my \$DestinationTime = \$TimeObject->DestinationTime(",
-            "    StartTime => \$Created,",
+            "${1:my \\$DestinationTime = \\$TimeObject->DestinationTime(",
+            "    StartTime => \\$Created,",
             "    Time      => 60*60*24*2,",
             "    Calendar  => 3, # '' is default",
             ");}",
-            "${2:my \$DestinationTime = \$TimeObject->DestinationTime(",
-            "    StartTime => \$Created,",
+            "${2:my \\$DestinationTime = \\$TimeObject->DestinationTime(",
+            "    StartTime => \\$Created,",
             "    Time      => 60*60*24*2,",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerDBObject.RecurrentTaskSummary": {
         "body": [
-            "${1:my @Summary = \$SchedulerDBObject->RecurrentTaskSummary(",
+            "${1:my @Summary = \\$SchedulerDBObject->RecurrentTaskSummary(",
             "    Type         => 'some_type',",
             "    DisplayType  => 'some type',",
             "    TaskLookup   => {                       # only tasks with names in this table will be shown",

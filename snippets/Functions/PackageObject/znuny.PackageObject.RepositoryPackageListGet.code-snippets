@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.RepositoryPackageListGet": {
         "body": [
-            "${1:my @List = \$PackageObject->RepositoryPackageListGet(",
+            "${1:my @List = \\$PackageObject->RepositoryPackageListGet(",
             "    Source             => 'Example repository 1', # the value of key 'Name' in item of SysConfig option Package::RepositoryList or a direct download URL",
             "    Lang               => 'en',",
             "    Cache              => 0,    # (optional) use cached data",

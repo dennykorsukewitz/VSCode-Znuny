@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.VerifiedRefresh": {
         "body": [
-            "${1:\$SeleniumObject->VerifiedRefresh();}",
+            "${1:\\$SeleniumObject->VerifiedRefresh();}",
         ],
         "prefix": "znuny.SeleniumObject.VerifiedRefresh",
         "description": "6.0, 6.4, 6.5",

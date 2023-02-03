@@ -1,8 +1,8 @@
 {
     "znuny.StatsObject.StatsGet": {
         "body": [
-            "${1:my \$HashRef = \$StatsObject->StatsGet(",
-            "    StatID             => \$StatID,",
+            "${1:my \\$HashRef = \\$StatsObject->StatsGet(",
+            "    StatID             => \\$StatID,",
             "    NoObjectAttributes => 1,       # optional",
             ");}",
         ],

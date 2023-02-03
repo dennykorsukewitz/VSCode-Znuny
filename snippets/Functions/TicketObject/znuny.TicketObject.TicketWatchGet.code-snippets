@@ -1,15 +1,15 @@
 {
     "znuny.TicketObject.TicketWatchGet": {
         "body": [
-            "${1:my %Watch = \$TicketObject->TicketWatchGet(",
-            "    TicketID => \$TicketID,",
+            "${1:my %Watch = \\$TicketObject->TicketWatchGet(",
+            "    TicketID => \\$TicketID,",
             "    Notify   => 1,",
             ");}",
-            "${2:my %Watch = \$TicketObject->TicketWatchGet(",
-            "    TicketID => \$TicketID,",
+            "${2:my %Watch = \\$TicketObject->TicketWatchGet(",
+            "    TicketID => \\$TicketID,",
             ");}",
-            "${3:my @Watch = \$TicketObject->TicketWatchGet(",
-            "    TicketID => \$TicketID,",
+            "${3:my @Watch = \\$TicketObject->TicketWatchGet(",
+            "    TicketID => \\$TicketID,",
             "    Result   => 'ARRAY',",
             ");}",
         ],

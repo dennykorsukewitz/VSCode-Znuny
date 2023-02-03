@@ -1,7 +1,7 @@
 {
     "znuny.CheckItemObject.CheckEmail": {
         "body": [
-            "${1:my \$Valid = \$CheckItemObject->CheckEmail(",
+            "${1:my \\$Valid = \\$CheckItemObject->CheckEmail(",
             "    Address => 'info@example.com',",
             ");}",
         ],

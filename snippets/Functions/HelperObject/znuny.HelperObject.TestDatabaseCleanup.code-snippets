@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.TestDatabaseCleanup": {
         "body": [
-            "${1:\$HelperObject->TestDatabaseCleanup();}",
+            "${1:\\$HelperObject->TestDatabaseCleanup();}",
         ],
         "prefix": "znuny.HelperObject.TestDatabaseCleanup",
         "description": "6.0, 6.4, 6.5",

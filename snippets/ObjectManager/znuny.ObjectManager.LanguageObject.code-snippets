@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.LanguageObject": {
         "body": [
-            "my \$LanguageObject = \$Kernel::OM->Get('Kernel::Language');",
+            "my \\$LanguageObject = \\$Kernel::OM->Get('Kernel::Language');",
         ],
         "prefix": "znuny.ObjectManager.LanguageObject",
         "description": "6.0, 6.4, 6.5",

@@ -1,9 +1,9 @@
 {
     "znuny.LayoutObject.ArticleFields": {
         "body": [
-            "${1:my %ArticleFields = \$LayoutObject->ArticleFields(",
-            "    TicketID  => \$TicketID,   # (required)",
-            "    ArticleID => \$ArticleID,   # (required)",
+            "${1:my %ArticleFields = \\$LayoutObject->ArticleFields(",
+            "    TicketID  => \\$TicketID,   # (required)",
+            "    ArticleID => \\$ArticleID,   # (required)",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.ArticleFields",

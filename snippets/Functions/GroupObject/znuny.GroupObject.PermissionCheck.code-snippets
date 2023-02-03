@@ -1,9 +1,9 @@
 {
     "znuny.GroupObject.PermissionCheck": {
         "body": [
-            "${1:my \$HasPermission = \$GroupObject->PermissionCheck(",
-            "    UserID    => \$UserID,",
-            "    GroupName => \$GroupName,",
+            "${1:my \\$HasPermission = \\$GroupObject->PermissionCheck(",
+            "    UserID    => \\$UserID,",
+            "    GroupName => \\$GroupName,",
             "    Type      => 'move_into', # ro|move_into|create|note|owner|priority|rw",
             ");}",
         ],

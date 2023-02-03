@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.AutocompletionObject": {
         "body": [
-            "my \$AutocompletionObject = \$Kernel::OM->Get('Kernel::System::Autocompletion');",
+            "my \\$AutocompletionObject = \\$Kernel::OM->Get('Kernel::System::Autocompletion');",
         ],
         "prefix": "znuny.ObjectManager.AutocompletionObject",
         "description": "6.4, 6.5",

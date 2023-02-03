@@ -1,8 +1,8 @@
 {
     "znuny.SchedulerDBObject.RecurrentTaskGet": {
         "body": [
-            "${1:my %Task = \$SchedulerDBObject->RecurrentTaskGet(",
-            "    TaskID => \$TaskID,",
+            "${1:my %Task = \\$SchedulerDBObject->RecurrentTaskGet(",
+            "    TaskID => \\$TaskID,",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.RecurrentTaskGet",

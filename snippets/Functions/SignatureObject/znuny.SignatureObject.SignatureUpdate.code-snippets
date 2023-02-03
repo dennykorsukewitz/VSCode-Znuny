@@ -1,14 +1,14 @@
 {
     "znuny.SignatureObject.SignatureUpdate": {
         "body": [
-            "${1:\$SignatureObject->SignatureUpdate(",
+            "${1:\\$SignatureObject->SignatureUpdate(",
             "    ID          => 123,",
             "    Name        => 'New Signature',",
-            "    Text        => "--\nSome Signature Infos",",
+            "    Text        => \\"--\nSome Signature Infos\\",",
             "    ContentType => 'text/plain; charset=utf-8',",
             "    Comment     => 'some comment',",
-            "    ValidID     => \$ValidID,",
-            "    UserID      => \$UserID,",
+            "    ValidID     => \\$ValidID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureUpdate",

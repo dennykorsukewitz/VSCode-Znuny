@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.ComplexTablePreferencesSet": {
         "body": [
-            "${1:my \$Success = \$LayoutObject->ComplexTablePreferencesSet(",
+            "${1:my \\$Success = \\$LayoutObject->ComplexTablePreferencesSet(",
             "    DestinationObject => 'Ticket',",
             ");}",
         ],

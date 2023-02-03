@@ -1,8 +1,8 @@
 {
     "znuny.AutoResponseObject.AutoResponseGetByTypeQueueID": {
         "body": [
-            "${1:my %QueueAddressData = \$AutoResponseObject->AutoResponseGetByTypeQueueID(",
-            "    QueueID => \$QueueID,",
+            "${1:my %QueueAddressData = \\$AutoResponseObject->AutoResponseGetByTypeQueueID(",
+            "    QueueID => \\$QueueID,",
             "    Type    => 'auto reply/new ticket',",
             ");}",
         ],

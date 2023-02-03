@@ -25,31 +25,30 @@ Znuny code snippets for fast, consistent and error free coding.
 
 Statically created snippets.
 
-  - CodePolicy
-  - ConfigXML
-  - Customizing
-  - Debugging
-  - DynamicFields
-  - GitLab
-  - Language
-  - Licensing
-  - Needed
-  - Perl
-  - POD
-  - Selenium
-  - VariableCheck
+- CodePolicy
+- ConfigXML
+- Customizing
+- Debugging
+- DynamicFields
+- GitLab
+- Language
+- Licensing
+- Needed
+- Perl
+- POD
+- Selenium
+- VariableCheck
 
 #### Generated
 
 Snippets created generically using the existing perl POD.
 
-  - Functions
-    - Kernel/System/**
-  - Modules
-    - Kernel/Modules/**
-  - ObjectManager
-    - Kernel/System/**
-
+- Functions
+  - Kernel/System/**
+- Modules
+  - Kernel/Modules/**
+- ObjectManager
+  - Kernel/System/**
 
 ## Installation
 

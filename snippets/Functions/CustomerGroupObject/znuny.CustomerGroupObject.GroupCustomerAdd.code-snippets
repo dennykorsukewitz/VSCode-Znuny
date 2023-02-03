@@ -1,9 +1,9 @@
 {
     "znuny.CustomerGroupObject.GroupCustomerAdd": {
         "body": [
-            "${1:my \$Success = \$CustomerGroupObject->GroupCustomerAdd(",
-            "    GID        => \$GID,",
-            "    CustomerID => \$CustomerID,",
+            "${1:my \\$Success = \\$CustomerGroupObject->GroupCustomerAdd(",
+            "    GID        => \\$GID,",
+            "    CustomerID => \\$CustomerID,",
             "    Permission => {",
             "        'Ticket::CustomerID::Same' => {",
             "            ro            => 1,",
@@ -23,7 +23,7 @@
             "        \\},",
             "        ...",
             "    \\},",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupCustomerAdd",

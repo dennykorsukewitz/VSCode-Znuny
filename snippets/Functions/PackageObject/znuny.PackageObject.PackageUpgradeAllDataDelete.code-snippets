@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.PackageUpgradeAllDataDelete": {
         "body": [
-            "${1:my \$Success = \$PackageObject->PackageUpgradeAllDataDelete();}",
+            "${1:my \\$Success = \\$PackageObject->PackageUpgradeAllDataDelete();}",
         ],
         "prefix": "znuny.PackageObject.PackageUpgradeAllDataDelete",
         "description": "6.0, 6.4, 6.5",

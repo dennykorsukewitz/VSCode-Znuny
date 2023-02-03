@@ -1,9 +1,9 @@
 {
     "znuny.CustomerUserObject.TokenCheck": {
         "body": [
-            "${1:my \$Valid = \$CustomerUserObject>TokenCheck(",
-            "    Token  => \$Token,",
-            "    UserID => \$UserID,",
+            "${1:my \\$Valid = \\$CustomerUserObject>TokenCheck(",
+            "    Token  => \\$Token,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.TokenCheck",

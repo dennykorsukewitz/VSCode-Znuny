@@ -1,10 +1,10 @@
 {
     "znuny.HelperObject.DatabaseXML": {
         "body": [
-            "${1:my \$Success = \$HelperObject->DatabaseXML(",
-            "    Location => \$ConfigObject->Get('Home') . '/scripts/development/db/schema.xml',",
+            "${1:my \\$Success = \\$HelperObject->DatabaseXML(",
+            "    Location => \\$ConfigObject->Get('Home') . '/scripts/development/db/schema.xml',",
             ");}",
-            "${2:my \$Success = \$HelperObject->DatabaseXML(",
+            "${2:my \\$Success = \\$HelperObject->DatabaseXML(",
             "    String => '...',",
             ");}",
         ],

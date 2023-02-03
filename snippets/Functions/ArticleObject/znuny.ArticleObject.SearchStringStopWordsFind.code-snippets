@@ -1,7 +1,7 @@
 {
     "znuny.ArticleObject.SearchStringStopWordsFind": {
         "body": [
-            "${1:my \$StopWords = \$ArticleObject->SearchStringStopWordsFind(",
+            "${1:my \\$StopWords = \\$ArticleObject->SearchStringStopWordsFind(",
             "    SearchStrings => {",
             "        'Fulltext'      => '(this AND is) OR test',",
             "        'MIMEBase_From' => 'myself',",

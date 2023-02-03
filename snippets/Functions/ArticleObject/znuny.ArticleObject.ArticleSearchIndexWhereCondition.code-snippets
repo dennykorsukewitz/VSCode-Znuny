@@ -1,7 +1,7 @@
 {
     "znuny.ArticleObject.ArticleSearchIndexWhereCondition": {
         "body": [
-            "${1:my \$SQLExtenion = \$ArticleObject->ArticleSearchIndexWhereCondition(",
+            "${1:my \\$SQLExtenion = \\$ArticleObject->ArticleSearchIndexWhereCondition(",
             "    SearchParams => {",
             "        ...",
             "        ConditionInline         => 1,",

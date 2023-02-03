@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.SysConfigObject": {
         "body": [
-            "my \$SysConfigObject = \$Kernel::OM->Get('Kernel::System::SysConfig');",
+            "my \\$SysConfigObject = \\$Kernel::OM->Get('Kernel::System::SysConfig');",
         ],
         "prefix": "znuny.ObjectManager.SysConfigObject",
         "description": "6.0, 6.4, 6.5",

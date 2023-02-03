@@ -1,12 +1,12 @@
 {
     "znuny.WebserviceObject.WebserviceUpdate": {
         "body": [
-            "${1:my \$Success = \$WebserviceObject->WebserviceUpdate(",
+            "${1:my \\$Success = \\$WebserviceObject->WebserviceUpdate(",
             "    ID      => 123,",
             "    Name    => 'some name',",
-            "    Config  => \$ConfigHashRef,",
-            "    ValidID => \$ValidID,",
-            "    UserID  => \$UserID,",
+            "    Config  => \\$ConfigHashRef,",
+            "    ValidID => \\$ValidID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.WebserviceObject.WebserviceUpdate",

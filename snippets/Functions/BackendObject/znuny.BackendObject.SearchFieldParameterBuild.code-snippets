@@ -1,10 +1,10 @@
 {
     "znuny.BackendObject.SearchFieldParameterBuild": {
         "body": [
-            "${1:my \$DynamicFieldSearchParameter = \$BackendObject->SearchFieldParameterBuild(",
-            "    DynamicFieldConfig   => \$DynamicFieldConfig,    # complete config of the DynamicField",
-            "    LayoutObject         => \$LayoutObject,          # optional",
-            "    Profile              => \$ProfileData,           # the search profile",
+            "${1:my \\$DynamicFieldSearchParameter = \\$BackendObject->SearchFieldParameterBuild(",
+            "    DynamicFieldConfig   => \\$DynamicFieldConfig,    # complete config of the DynamicField",
+            "    LayoutObject         => \\$LayoutObject,          # optional",
+            "    Profile              => \\$ProfileData,           # the search profile",
             "    Type                 => 'some type',            # search preference type",
             ");}",
         ],

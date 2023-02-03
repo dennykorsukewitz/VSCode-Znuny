@@ -1,7 +1,7 @@
 {
     "znuny.CalendarObject.TicketAppointmentTypesGet": {
         "body": [
-            "${1:my %TicketAppointmentTypes = \$CalendarObject->TicketAppointmentTypesGet();}",
+            "${1:my %TicketAppointmentTypes = \\$CalendarObject->TicketAppointmentTypesGet();}",
         ],
         "prefix": "znuny.CalendarObject.TicketAppointmentTypesGet",
         "description": "6.0, 6.4, 6.5",

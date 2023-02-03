@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDTestObject.DataGet": {
         "body": [
-            "${1:my %Data = \$DBCRUDTestObject->DataGet(",
+            "${1:my %Data = \\$DBCRUDTestObject->DataGet(",
             "    ID          => '...', # optional",
             "    Name        => '...', # optional",
             "    Age         => '...', # optional",

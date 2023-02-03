@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestITSMConfigItemObject.ConfigItemCreate": {
         "body": [
-            "${1:my \$VersionRef = \$UnitTestITSMConfigItemObject->ConfigItemCreate(",
+            "${1:my \\$VersionRef = \\$UnitTestITSMConfigItemObject->ConfigItemCreate(",
             "    Name          => 'Znuny Rack 42',",
             "    ClassName     => 'Server',",
             "    DeplStateName => 'Production',",

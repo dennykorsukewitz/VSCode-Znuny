@@ -1,7 +1,7 @@
 {
     "znuny.DebuggerObject.RequesterPerformRequest": {
         "body": [
-            "${1:my \$Result = \$DebuggerObject->RequesterPerformRequest(",
+            "${1:my \\$Result = \\$DebuggerObject->RequesterPerformRequest(",
             "    Operation       => 'remote_op', # name of remote operation to perform",
             "    Data            => {            # data payload for request",
             "        ...",

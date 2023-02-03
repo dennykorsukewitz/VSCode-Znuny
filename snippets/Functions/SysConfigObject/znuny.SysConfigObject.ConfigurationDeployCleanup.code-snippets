@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.ConfigurationDeployCleanup": {
         "body": [
-            "${1:my \$Success = \$SysConfigObject->ConfigurationDeployCleanup();}",
+            "${1:my \\$Success = \\$SysConfigObject->ConfigurationDeployCleanup();}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDeployCleanup",
         "description": "6.0, 6.4, 6.5",

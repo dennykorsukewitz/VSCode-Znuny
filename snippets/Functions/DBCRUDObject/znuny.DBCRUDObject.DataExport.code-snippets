@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.DataExport": {
         "body": [
-            "${1:my \$Export = \$DBCRUDObject->DataExport(",
+            "${1:my \\$Export = \\$DBCRUDObject->DataExport(",
             "    Format => 'yml',",
             "    Cache  => 0,",
             "    Filter => {",

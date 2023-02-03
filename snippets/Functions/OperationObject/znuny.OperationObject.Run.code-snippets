@@ -1,7 +1,7 @@
 {
     "znuny.OperationObject.Run": {
         "body": [
-            "${1:my \$Result = \$OperationObject->Run(",
+            "${1:my \\$Result = \\$OperationObject->Run(",
             "    Data => {                               # data payload before Operation",
             "        ...",
             "    \\},",

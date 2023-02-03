@@ -1,7 +1,7 @@
 {
     "znuny.UnitTestEmailObject.MailBackendSetup": {
         "body": [
-            "${1:my \$Success = \$UnitTestEmailObject->MailBackendSetup();}",
+            "${1:my \\$Success = \\$UnitTestEmailObject->MailBackendSetup();}",
         ],
         "prefix": "znuny.UnitTestEmailObject.MailBackendSetup",
         "description": "6.4, 6.5",

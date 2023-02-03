@@ -1,9 +1,9 @@
 {
     "znuny.StatsObject.StatsResultCacheCompute": {
         "body": [
-            "${1:my \$StatArray = \$StatsObject->StatsResultCacheCompute(",
-            "    StatID       => \$StatID,",
-            "    UserID       => \$UserID,        # target UserID",
+            "${1:my \\$StatArray = \\$StatsObject->StatsResultCacheCompute(",
+            "    StatID       => \\$StatID,",
+            "    UserID       => \\$UserID,        # target UserID",
             "    UserGetParam => \%UserGetParam, # user settings of non-fixed fields",
             ");}",
         ],

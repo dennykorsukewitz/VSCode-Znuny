@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.GetRandomID": {
         "body": [
-            "${1:my \$RandomID = \$HelperObject->GetRandomID();}",
+            "${1:my \\$RandomID = \\$HelperObject->GetRandomID();}",
         ],
         "prefix": "znuny.HelperObject.GetRandomID",
         "description": "6.4, 6.5",

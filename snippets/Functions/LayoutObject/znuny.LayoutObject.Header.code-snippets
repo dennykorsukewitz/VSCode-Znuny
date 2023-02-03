@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.Header": {
         "body": [
-            "${1:my \$Output = \$LayoutObject->Header(",
+            "${1:my \\$Output = \\$LayoutObject->Header(",
             "    Type              => 'Small',                # (optional) '' (Default, full header) or 'Small' (blank header)",
             "    ShowToolbarItems  => 0,                      # (optional) default 1 (0|1)",
             "    ShowPrefLink      => 0,                      # (optional) default 1 (0|1)",

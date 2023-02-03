@@ -1,8 +1,8 @@
 {
     "znuny.SystemAddressObject.SystemAddressIsUsed": {
         "body": [
-            "${1:my \$SytemAddressIsUsed = \$SystemAddressObject->SystemAddressIsUsed(",
-            "    SystemAddressID => \$SystemAddressID,",
+            "${1:my \\$SytemAddressIsUsed = \\$SystemAddressObject->SystemAddressIsUsed(",
+            "    SystemAddressID => \\$SystemAddressID,",
             ");}",
         ],
         "prefix": "znuny.SystemAddressObject.SystemAddressIsUsed",

@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.ConfigurationEntitiesGet": {
         "body": [
-            "${1:my %Result = \$SysConfigObject->ConfigurationEntitiesGet();}",
+            "${1:my %Result = \\$SysConfigObject->ConfigurationEntitiesGet();}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationEntitiesGet",
         "description": "6.0, 6.4, 6.5",

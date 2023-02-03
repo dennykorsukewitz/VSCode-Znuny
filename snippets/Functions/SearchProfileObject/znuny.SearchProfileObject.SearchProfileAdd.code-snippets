@@ -1,11 +1,11 @@
 {
     "znuny.SearchProfileObject.SearchProfileAdd": {
         "body": [
-            "${1:\$SearchProfileObject->SearchProfileAdd(",
+            "${1:\\$SearchProfileObject->SearchProfileAdd(",
             "    Base      => 'TicketSearch',",
             "    Name      => 'last-search',",
             "    Key       => 'Body',",
-            "    Value     => \$String,    # SCALAR|ARRAYREF",
+            "    Value     => \\$String,    # SCALAR|ARRAYREF",
             "    UserLogin => 123,",
             ");}",
         ],

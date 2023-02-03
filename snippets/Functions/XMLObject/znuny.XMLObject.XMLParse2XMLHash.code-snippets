@@ -1,7 +1,7 @@
 {
     "znuny.XMLObject.XMLParse2XMLHash": {
         "body": [
-            "${1:my @XMLHash = \$XMLObject->XMLParse2XMLHash( String => \$FileString );}",
+            "${1:my @XMLHash = \\$XMLObject->XMLParse2XMLHash( String => \\$FileString );}",
         ],
         "prefix": "znuny.XMLObject.XMLParse2XMLHash",
         "description": "6.0, 6.4, 6.5",

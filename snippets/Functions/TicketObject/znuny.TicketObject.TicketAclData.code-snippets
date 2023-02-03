@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.TicketAclData": {
         "body": [
-            "${1:my %Acl = \$TicketObject->TicketAclData();}",
+            "${1:my %Acl = \\$TicketObject->TicketAclData();}",
         ],
         "prefix": "znuny.TicketObject.TicketAclData",
         "description": "6.0, 6.4, 6.5",

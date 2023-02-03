@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.GenericAgentObject": {
         "body": [
-            "my \$GenericAgentObject = \$Kernel::OM->Get('Kernel::System::GenericAgent');",
+            "my \\$GenericAgentObject = \\$Kernel::OM->Get('Kernel::System::GenericAgent');",
         ],
         "prefix": "znuny.ObjectManager.GenericAgentObject",
         "description": "6.0, 6.4, 6.5",

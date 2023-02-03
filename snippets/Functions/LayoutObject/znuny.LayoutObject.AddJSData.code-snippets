@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.AddJSData": {
         "body": [
-            "${1:\$LayoutObject->AddJSData(",
+            "${1:\\$LayoutObject->AddJSData(",
             "    Key   => 'Key1',  # the key to store this data",
             "    Value => { ... \\}  # simple or complex data",
             ");}",

@@ -1,9 +1,9 @@
 {
     "znuny.ArticleObject.ArticleAttachmentIndex": {
         "body": [
-            "${1:my %AttachmentIndex = \$ArticleObject->ArticleAttachmentIndex(",
-            "    TicketID         => \$TicketID,",
-            "    ArticleID        => \$ArticleID,",
+            "${1:my %AttachmentIndex = \\$ArticleObject->ArticleAttachmentIndex(",
+            "    TicketID         => \\$TicketID,",
+            "    ArticleID        => \\$ArticleID,",
             "    ExcludePlainText => 1,       # (optional) Exclude plain text attachment",
             "    ExcludeHTMLBody  => 1,       # (optional) Exclude HTML body attachment",
             "    ExcludeInline    => 1,       # (optional) Exclude inline attachments",

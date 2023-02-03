@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.PIDObject": {
         "body": [
-            "my \$PIDObject = \$Kernel::OM->Get('Kernel::System::PID');",
+            "my \\$PIDObject = \\$Kernel::OM->Get('Kernel::System::PID');",
         ],
         "prefix": "znuny.ObjectManager.PIDObject",
         "description": "6.0, 6.4, 6.5",

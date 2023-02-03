@@ -1,8 +1,8 @@
 {
     "znuny.ArticleObject.BackendForArticle": {
         "body": [
-            "${1:my \$ArticleBackendObject = \$ArticleObject->BackendForArticle( %BaseArticle );}",
-            "${2:my \$ArticleBackendObject = \$ArticleObject->BackendForArticle( TicketID => \$TicketID, ArticleID => 123 );}",
+            "${1:my \\$ArticleBackendObject = \\$ArticleObject->BackendForArticle( %BaseArticle );}",
+            "${2:my \\$ArticleBackendObject = \\$ArticleObject->BackendForArticle( TicketID => \\$TicketID, ArticleID => 123 );}",
         ],
         "prefix": "znuny.ArticleObject.BackendForArticle",
         "description": "6.0, 6.4, 6.5",

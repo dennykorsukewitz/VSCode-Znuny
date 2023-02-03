@@ -1,11 +1,11 @@
 {
     "znuny.ObjectManager.UnitTestObject": {
         "body": [
-            "my \$DriverObject = \$Kernel::OM->Create(",
+            "my \\$DriverObject = \\$Kernel::OM->Create(",
             "        'Kernel::System::UnitTest::Driver',",
             "        ObjectParams => {",
-            "            Verbose => \$Self->{Verbose\\},",
-            "            ANSI    => \$Self->{ANSI\\},",
+            "            Verbose => \\$Self->{Verbose\\},",
+            "            ANSI    => \\$Self->{ANSI\\},",
             "        \\},",
             "    );",
         ],

@@ -1,9 +1,9 @@
 {
     "znuny.BackendObject.ColumnFilterValuesGet": {
         "body": [
-            "${1:my \$ColumnFilterValues = \$BackendObject->ColumnFilterValuesGet(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,      #DynamicField configuraction",
-            "    LayoutObject       => \$LayoutObject,",
+            "${1:my \\$ColumnFilterValues = \\$BackendObject->ColumnFilterValuesGet(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,      #DynamicField configuraction",
+            "    LayoutObject       => \\$LayoutObject,",
             "    TicketIDs          => [23, 1, 56, 74],          # array ref list of ticket IDs",
             ");}",
         ],

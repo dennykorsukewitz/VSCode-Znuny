@@ -1,10 +1,10 @@
 {
     "znuny.BackendObject.ObjectMatch": {
         "body": [
-            "${1:my \$Match = \$BackendObject->ObjectMatch(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,       # complete config of the DynamicField",
-            "    Value              => \$Value,                    # single value to match",
-            "    ObjectAttributes   => \$ObjectAttributes,         # the complete set of attributes from an object",
+            "${1:my \\$Match = \\$BackendObject->ObjectMatch(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
+            "    Value              => \\$Value,                    # single value to match",
+            "    ObjectAttributes   => \\$ObjectAttributes,         # the complete set of attributes from an object",
             "                                                     #      ( i.e. the result of a TicketGet() )",
             ");}",
         ],

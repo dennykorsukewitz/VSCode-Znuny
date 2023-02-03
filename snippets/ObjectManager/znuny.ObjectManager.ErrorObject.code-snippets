@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.ErrorObject": {
         "body": [
-            "my \$ErrorObject = \$Kernel::OM->Get('Kernel::GenericInterface::ErrorHandling');",
+            "my \\$ErrorObject = \\$Kernel::OM->Get('Kernel::GenericInterface::ErrorHandling');",
         ],
         "prefix": "znuny.ObjectManager.ErrorObject",
         "description": "6.0, 6.4, 6.5",

@@ -1,8 +1,8 @@
 {
     "znuny.SchedulerDBObject.TaskDelete": {
         "body": [
-            "${1:my \$Success = \$SchedulerDBObject->TaskDelete(",
-            "    TaskID => \$TaskID,",
+            "${1:my \\$Success = \\$SchedulerDBObject->TaskDelete(",
+            "    TaskID => \\$TaskID,",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskDelete",

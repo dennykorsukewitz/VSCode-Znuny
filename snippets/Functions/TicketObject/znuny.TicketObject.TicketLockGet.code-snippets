@@ -1,11 +1,11 @@
 {
     "znuny.TicketObject.TicketLockGet": {
         "body": [
-            "${1:if (\$TicketObject->TicketLockGet(TicketID => 123)) {",
-            "    print "Ticket is locked!\n";",
+            "${1:if (\\$TicketObject->TicketLockGet(TicketID => 123)) {",
+            "    print \\"Ticket is locked!\n\\";",
             "\\}",
             "else {",
-            "    print "Ticket is not locked!\n";",
+            "    print \\"Ticket is not locked!\n\\";",
             "\\}}",
         ],
         "prefix": "znuny.TicketObject.TicketLockGet",

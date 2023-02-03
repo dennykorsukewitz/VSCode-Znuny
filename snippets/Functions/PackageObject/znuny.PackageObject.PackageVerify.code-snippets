@@ -1,12 +1,12 @@
 {
     "znuny.PackageObject.PackageVerify": {
         "body": [
-            "${1:\$PackageObject->PackageVerify(",
-            "    Package   => \$Package,",
+            "${1:\\$PackageObject->PackageVerify(",
+            "    Package   => \\$Package,",
             "    Structure => \%Structure,",
             ");}",
-            "${2:\$PackageObject->PackageVerify(",
-            "    Package => \$Package,",
+            "${2:\\$PackageObject->PackageVerify(",
+            "    Package => \\$Package,",
             "    Name    => 'FAQ',",
             ");}",
         ],

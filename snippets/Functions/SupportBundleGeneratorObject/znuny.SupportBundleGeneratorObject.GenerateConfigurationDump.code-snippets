@@ -1,7 +1,7 @@
 {
     "znuny.SupportBundleGeneratorObject.GenerateConfigurationDump": {
         "body": [
-            "${1:my ( \$Content, \$Filename ) = \$SupportBundleGeneratorObject->GenerateConfigurationDump();}",
+            "${1:my ( \\$Content, \\$Filename ) = \\$SupportBundleGeneratorObject->GenerateConfigurationDump();}",
         ],
         "prefix": "znuny.SupportBundleGeneratorObject.GenerateConfigurationDump",
         "description": "6.0, 6.4, 6.5",

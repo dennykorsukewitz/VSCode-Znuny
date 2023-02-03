@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.CustomerUserSearchFields": {
         "body": [
-            "${1:my @SeachFields = \$CustomerUserObject->CustomerUserSearchFields(",
+            "${1:my @SeachFields = \\$CustomerUserObject->CustomerUserSearchFields(",
             "    Source => 'CustomerUser', # optional, but important in the CustomerSearchDetail to get the right database fields",
             ");}",
         ],

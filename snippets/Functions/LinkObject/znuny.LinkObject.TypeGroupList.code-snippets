@@ -1,7 +1,7 @@
 {
     "znuny.LinkObject.TypeGroupList": {
         "body": [
-            "${1:my %TypeGroupList = \$LinkObject->TypeGroupList();}",
+            "${1:my %TypeGroupList = \\$LinkObject->TypeGroupList();}",
         ],
         "prefix": "znuny.LinkObject.TypeGroupList",
         "description": "6.0, 6.4, 6.5",

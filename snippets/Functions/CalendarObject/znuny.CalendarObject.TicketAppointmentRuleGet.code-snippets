@@ -1,9 +1,9 @@
 {
     "znuny.CalendarObject.TicketAppointmentRuleGet": {
         "body": [
-            "${1:my \$Rule = \$CalendarObject->TicketAppointmentRuleGet(",
-            "    CalendarID => \$CalendarID,",
-            "    RuleID     => \$RuleID,",
+            "${1:my \\$Rule = \\$CalendarObject->TicketAppointmentRuleGet(",
+            "    CalendarID => \\$CalendarID,",
+            "    RuleID     => \\$RuleID,",
             ");}",
         ],
         "prefix": "znuny.CalendarObject.TicketAppointmentRuleGet",

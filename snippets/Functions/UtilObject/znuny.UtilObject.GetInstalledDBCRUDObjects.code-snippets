@@ -1,7 +1,7 @@
 {
     "znuny.UtilObject.GetInstalledDBCRUDObjects": {
         "body": [
-            "${1:my \$DBCRUDObjects = \$UtilObject->GetInstalledDBCRUDObjects();}",
+            "${1:my \\$DBCRUDObjects = \\$UtilObject->GetInstalledDBCRUDObjects();}",
         ],
         "prefix": "znuny.UtilObject.GetInstalledDBCRUDObjects",
         "description": "6.4, 6.5",

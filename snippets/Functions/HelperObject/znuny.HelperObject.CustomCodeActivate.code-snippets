@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.CustomCodeActivate": {
         "body": [
-            "${1:\$HelperObject->CustomCodeActivate(",
+            "${1:\\$HelperObject->CustomCodeActivate(",
             "    Code => q^",
             "sub Kernel::Config::Files::ZZZZUnitTestIdentifier::Load {\\} # no-op, avoid warning logs",
             "use Kernel::System::WebUserAgent;",
@@ -11,9 +11,9 @@
             "{",
             "no warnings 'redefine';",
             "sub Request {",
-            "    my \$JSONString = '{"Results":{\\},"ErrorMessage":"","Success":1\\}';",
+            "    my \\$JSONString = '{\\"Results\\":{\\},\\"ErrorMessage\\":\\"\\",\\"Success\\":1\\}';",
             "    return (",
-            "        Content => \\$JSONString,",
+            "        Content => \\\$JSONString,",
             "        Status  => '200 OK',",
             "    );",
             "\\}",

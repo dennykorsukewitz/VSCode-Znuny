@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.InputExists": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputExists(",
+            "${1:my \\$Result = \\$SeleniumObject->InputExists(",
             "    Attribute => 'QueueID',",
             ");}",
         ],

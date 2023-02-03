@@ -1,7 +1,7 @@
 {
     "znuny.PostMasterObject.CheckFollowUp": {
         "body": [
-            "${1:my (\$TicketNumber, \$TicketID) = \$PostMasterObject->CheckFollowUp(",
+            "${1:my (\\$TicketNumber, \\$TicketID) = \\$PostMasterObject->CheckFollowUp(",
             "    Subject => 'Re: [Ticket:#123456] Some Subject',",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.CheckItemObject": {
         "body": [
-            "my \$CheckItemObject = \$Kernel::OM->Get('Kernel::System::CheckItem');",
+            "my \\$CheckItemObject = \\$Kernel::OM->Get('Kernel::System::CheckItem');",
         ],
         "prefix": "znuny.ObjectManager.CheckItemObject",
         "description": "6.0, 6.4, 6.5",

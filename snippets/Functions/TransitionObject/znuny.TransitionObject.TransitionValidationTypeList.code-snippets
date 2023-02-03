@@ -1,7 +1,7 @@
 {
     "znuny.TransitionObject.TransitionValidationTypeList": {
         "body": [
-            "${1:my %TransitionValidationTypeList = \$TransitionObject->TransitionValidationTypeList();}",
+            "${1:my %TransitionValidationTypeList = \\$TransitionObject->TransitionValidationTypeList();}",
             "${2:my %TransitionValidationTypeList = TransitionValidationTypeList(",
             "    'String' => 'String',",
             "    'Regexp' => 'Regular expression',",

@@ -1,7 +1,7 @@
 {
     "znuny.EncodeObject.EncodingIsAsciiSuperset": {
         "body": [
-            "${1:my \$IsSuperset = \$EncodeObject->EncodingIsAsciiSuperset(",
+            "${1:my \\$IsSuperset = \\$EncodeObject->EncodingIsAsciiSuperset(",
             "    Encoding    => 'UTF-8',",
             ");}",
         ],

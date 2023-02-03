@@ -1,12 +1,12 @@
 {
     "znuny.TicketObject.TicketMoveQueueList": {
         "body": [
-            "${1:my @QueueIDList = \$TicketObject->TicketMoveQueueList(",
-            "    TicketID => \$TicketID,",
+            "${1:my @QueueIDList = \\$TicketObject->TicketMoveQueueList(",
+            "    TicketID => \\$TicketID,",
             "    Type     => 'ID',",
             ");}",
-            "${2:my @QueueList = \$TicketObject->TicketMoveQueueList(",
-            "    TicketID => \$TicketID,",
+            "${2:my @QueueList = \\$TicketObject->TicketMoveQueueList(",
+            "    TicketID => \\$TicketID,",
             "    Type     => 'Name',",
             ");}",
         ],

@@ -1,8 +1,8 @@
 {
     "znuny.MentionObject.GetMentionedUserIDsFromString": {
         "body": [
-            "${1:my \$MentionedUserIDs = \$MentionObject->GetMentionedUserIDsFromString(",
-            "    HTMLString => '...<a class="Mention" href="..." target="...">@root@localhost<\/a>...',",
+            "${1:my \\$MentionedUserIDs = \\$MentionObject->GetMentionedUserIDsFromString(",
+            "    HTMLString => '...<a class=\\"Mention\\" href=\\"...\\" target=\\"...\\">@root@localhost<\/a>...',",
             "",
             "    # optional",
             "    # plain text string must be given if mentions in quoted text should be ignored.",

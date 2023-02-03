@@ -1,11 +1,11 @@
 {
     "znuny.TicketObject.TicketCustomerSet": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketCustomerSet(",
+            "${1:my \\$Success = \\$TicketObject->TicketCustomerSet(",
             "    No       => 'client123',",
             "    User     => 'client-user-123',",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketCustomerSet",

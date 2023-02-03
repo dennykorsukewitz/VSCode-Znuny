@@ -1,12 +1,12 @@
 {
     "znuny.AutocompletionObject.GetData": {
         "body": [
-            "${1:my \$Data = \$AutocompletionObject->GetData(",
+            "${1:my \\$Data = \\$AutocompletionObject->GetData(",
             "    Trigger          => '!EX', # !EX is from example autocompletion module Kernel::System::Autocompletion::Example",
             "    SearchString     => 'Raw',",
-            "    UserID           => \$UserID,",
+            "    UserID           => \\$UserID,",
             "    AdditionalParams => { # optional",
-            "        TicketID => \$TicketID, # this will only be passed if available (e.g. it's not available for AgentTicketPhone)",
+            "        TicketID => \\$TicketID, # this will only be passed if available (e.g. it's not available for AgentTicketPhone)",
             "    \\},",
             ");}",
         ],

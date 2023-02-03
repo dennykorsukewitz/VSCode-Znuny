@@ -1,7 +1,7 @@
 {
     "znuny.TicketAttributeRelationsObject.ExistsTicketAttributeRelationsFilename": {
         "body": [
-            "${1:my \$ID = \$TicketAttributeRelationsObject->ExistsTicketAttributeRelationsFilename(",
+            "${1:my \\$ID = \\$TicketAttributeRelationsObject->ExistsTicketAttributeRelationsFilename(",
             "    Filename => 'test1.csv',",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.LockObject": {
         "body": [
-            "my \$LockObject = \$Kernel::OM->Get('Kernel::System::Lock');",
+            "my \\$LockObject = \\$Kernel::OM->Get('Kernel::System::Lock');",
         ],
         "prefix": "znuny.ObjectManager.LockObject",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.LinkObject": {
         "body": [
-            "my \$LinkObject = \$Kernel::OM->Get('Kernel::System::LinkObject');",
+            "my \\$LinkObject = \\$Kernel::OM->Get('Kernel::System::LinkObject');",
         ],
         "prefix": "znuny.ObjectManager.LinkObject",
         "description": "6.0, 6.4, 6.5",

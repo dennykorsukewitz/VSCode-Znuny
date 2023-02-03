@@ -1,7 +1,7 @@
 {
     "znuny.PIDObject.PIDUpdate": {
         "body": [
-            "${1:my \$Success = \$PIDObject->PIDUpdate(",
+            "${1:my \\$Success = \\$PIDObject->PIDUpdate(",
             "    Name    => 'PostMasterPOP3',",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.InputSet": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputSet(",
+            "${1:my \\$Result = \\$SeleniumObject->InputSet(",
             "    Attribute   => 'DynamicField_ExampleCheckbox',",
             "    WaitForAJAX => 0,                       # optional, default 1",
             "    Content     => undef,                   # optional, none removes content",
@@ -9,7 +9,7 @@
             "        TriggerChange => 1,                 # default is 1",
             "    \\}",
             ");}",
-            "${2:my \$Result = \$SeleniumObject->InputSet(",
+            "${2:my \\$Result = \\$SeleniumObject->InputSet(",
             "    Attribute   => 'QueueID',",
             "    WaitForAJAX => 0,                       # optional, default 1",
             "    Content     => 'Misc',                  # optional, none removes content",
@@ -18,7 +18,7 @@
             "        TriggerChange => 0,                 # default is 1",
             "    \\}",
             ");}",
-            "${3:my \$Result = \$SeleniumObject->InputSet(",
+            "${3:my \\$Result = \\$SeleniumObject->InputSet(",
             "    Attribute => 'DynamicField_NameOfYourDateOrDateTimeField',",
             "    Content   => {",
             "        Year   => '2016',",

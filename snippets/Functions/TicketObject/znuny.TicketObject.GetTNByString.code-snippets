@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.GetTNByString": {
         "body": [
-            "${1:my \$TicketNumber = \$TicketObject->GetTNByString(\$Subject);}",
+            "${1:my \\$TicketNumber = \\$TicketObject->GetTNByString(\\$Subject);}",
         ],
         "prefix": "znuny.TicketObject.GetTNByString",
         "description": "6.0, 6.4, 6.5",

@@ -1,12 +1,12 @@
 {
     "znuny.ArticleObject.ArticleIndex": {
         "body": [
-            "${1:my @ArticleIDs = \$ArticleObject->ArticleIndex(",
+            "${1:my @ArticleIDs = \\$ArticleObject->ArticleIndex(",
             "    SenderType => 'customer',                   # optional, to limit to a certain sender type",
-            "    TicketID   => \$TicketID,",
+            "    TicketID   => \\$TicketID,",
             ");}",
-            "${2:my @ArticleIDs = \$ArticleObject->ArticleIndex(",
-            "    TicketID => \$TicketID,",
+            "${2:my @ArticleIDs = \\$ArticleObject->ArticleIndex(",
+            "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleIndex",

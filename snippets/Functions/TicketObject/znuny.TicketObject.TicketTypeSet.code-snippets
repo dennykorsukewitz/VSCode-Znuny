@@ -1,15 +1,15 @@
 {
     "znuny.TicketObject.TicketTypeSet": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketTypeSet(",
+            "${1:my \\$Success = \\$TicketObject->TicketTypeSet(",
             "    Type     => 'normal',",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
-            "${2:my \$Success = \$TicketObject->TicketTypeSet(",
-            "    TypeID   => \$TypeID,",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "${2:my \\$Success = \\$TicketObject->TicketTypeSet(",
+            "    TypeID   => \\$TypeID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketTypeSet",

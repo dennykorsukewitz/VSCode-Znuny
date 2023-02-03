@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.TicketCheckNumber": {
         "body": [
-            "${1:my \$TicketID = \$TicketObject->TicketCheckNumber(",
+            "${1:my \\$TicketID = \\$TicketObject->TicketCheckNumber(",
             "    Tn => '200404051004575',",
             ");}",
         ],

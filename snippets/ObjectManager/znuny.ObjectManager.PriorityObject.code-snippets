@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.PriorityObject": {
         "body": [
-            "my \$PriorityObject = \$Kernel::OM->Get('Kernel::System::Priority');",
+            "my \\$PriorityObject = \\$Kernel::OM->Get('Kernel::System::Priority');",
         ],
         "prefix": "znuny.ObjectManager.PriorityObject",
         "description": "6.0, 6.4, 6.5",

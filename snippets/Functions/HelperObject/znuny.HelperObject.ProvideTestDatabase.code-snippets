@@ -1,16 +1,16 @@
 {
     "znuny.HelperObject.ProvideTestDatabase": {
         "body": [
-            "${1:\$HelperObject->ProvideTestDatabase(",
-            "    DatabaseXMLString => \$XML,      # (optional) OTRS database XML schema to execute",
+            "${1:\\$HelperObject->ProvideTestDatabase(",
+            "    DatabaseXMLString => \\$XML,      # (optional) OTRS database XML schema to execute",
             "                                    # or",
             "    DatabaseXMLFiles => [           # (optional) List of XML files to load and execute",
             "        '/opt/otrs/scripts/database/otrs-schema.xml',",
             "        '/opt/otrs/scripts/database/otrs-initial_insert.xml',",
             "    ],",
             ");}",
-            "${2:\$HelperObject->ProvideTestDatabase(",
-            "    DatabaseXMLString => \$XML,      # (optional) database XML schema to execute",
+            "${2:\\$HelperObject->ProvideTestDatabase(",
+            "    DatabaseXMLString => \\$XML,      # (optional) database XML schema to execute",
             "                                    # or",
             "    DatabaseXMLFiles => [           # (optional) List of XML files to load and execute",
             "        '/opt/otrs/scripts/database/schema.xml',",

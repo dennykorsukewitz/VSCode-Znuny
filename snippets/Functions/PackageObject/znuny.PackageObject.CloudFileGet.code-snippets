@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.CloudFileGet": {
         "body": [
-            "${1:my \$List = \$PackageObject->CloudFileGet(",
+            "${1:my \\$List = \\$PackageObject->CloudFileGet(",
             "    Operation => 'OperationName', # used as operation name by the Cloud Service API",
             "                                  # Possible operation names:",
             "                                  # - RepositoryListAvailable",

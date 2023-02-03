@@ -1,15 +1,15 @@
 {
     "znuny.TicketObject.TicketLockSet": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketLockSet(",
+            "${1:my \\$Success = \\$TicketObject->TicketLockSet(",
             "    Lock     => 'lock',",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
-            "${2:my \$Success = \$TicketObject->TicketLockSet(",
-            "    LockID   => \$LockID,",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "${2:my \\$Success = \\$TicketObject->TicketLockSet(",
+            "    LockID   => \\$LockID,",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketLockSet",

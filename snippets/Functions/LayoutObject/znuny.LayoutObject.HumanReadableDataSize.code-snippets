@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.HumanReadableDataSize": {
         "body": [
-            "${1:my \$SizeStr = \$LayoutObject->HumanReadableDataSize(",
+            "${1:my \\$SizeStr = \\$LayoutObject->HumanReadableDataSize(",
             "    Size => 123,  # size in bytes",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.EmailObject": {
         "body": [
-            "my \$EmailObject = \$Kernel::OM->Get('Kernel::System::Email');",
+            "my \\$EmailObject = \\$Kernel::OM->Get('Kernel::System::Email');",
         ],
         "prefix": "znuny.ObjectManager.EmailObject",
         "description": "6.0, 6.4, 6.5",

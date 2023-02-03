@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.CustomerAuthObject": {
         "body": [
-            "my \$CustomerAuthObject = \$Kernel::OM->Get('Kernel::System::CustomerAuth');",
+            "my \\$CustomerAuthObject = \\$Kernel::OM->Get('Kernel::System::CustomerAuth');",
         ],
         "prefix": "znuny.ObjectManager.CustomerAuthObject",
         "description": "6.0, 6.4, 6.5",

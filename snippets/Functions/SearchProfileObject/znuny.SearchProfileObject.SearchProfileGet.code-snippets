@@ -1,7 +1,7 @@
 {
     "znuny.SearchProfileObject.SearchProfileGet": {
         "body": [
-            "${1:my %SearchProfileData = \$SearchProfileObject->SearchProfileGet(",
+            "${1:my %SearchProfileData = \\$SearchProfileObject->SearchProfileGet(",
             "    Base      => 'TicketSearch',",
             "    Name      => 'last-search',",
             "    UserLogin => 'me',",

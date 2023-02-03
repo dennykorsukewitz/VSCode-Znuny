@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.RepositoryRemove": {
         "body": [
-            "${1:\$PackageObject->RepositoryRemove(",
+            "${1:\\$PackageObject->RepositoryRemove(",
             "    Name    => 'Application A',",
             "    Version => '1.0',",
             ");}",

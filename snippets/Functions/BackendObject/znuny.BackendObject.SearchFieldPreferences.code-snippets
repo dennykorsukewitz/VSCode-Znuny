@@ -1,8 +1,8 @@
 {
     "znuny.BackendObject.SearchFieldPreferences": {
         "body": [
-            "${1:my \$SearchFieldPreferences = \$BackendObject->SearchFieldPreferences(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,       # complete config of the DynamicField",
+            "${1:my \\$SearchFieldPreferences = \\$BackendObject->SearchFieldPreferences(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
             ");}",
         ],
         "prefix": "znuny.BackendObject.SearchFieldPreferences",

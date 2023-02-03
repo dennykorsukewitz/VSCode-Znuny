@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.ProcessObject": {
         "body": [
-            "my \$ProcessObject = \$Kernel::OM->Get('Kernel::System::ProcessManagement::Process');",
+            "my \\$ProcessObject = \\$Kernel::OM->Get('Kernel::System::ProcessManagement::Process');",
         ],
         "prefix": "znuny.ObjectManager.ProcessObject",
         "description": "6.0, 6.4, 6.5",

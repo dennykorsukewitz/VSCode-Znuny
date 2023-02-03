@@ -1,9 +1,9 @@
 {
     "znuny.OAuth2TokenObject.DataGet": {
         "body": [
-            "${1:my %Data = \$OAuth2TokenObject->DataGet(",
+            "${1:my %Data = \\$OAuth2TokenObject->DataGet(",
             "    ID                         => '...', # optional",
-            "    TokenConfigID              => \$TokenConfigID, # optional",
+            "    TokenConfigID              => \\$TokenConfigID, # optional",
             "    AuthorizationCode          => '...', # optional",
             "    Token                      => '...', # optional",
             "    TokenExpirationDate        => '...', # optional",

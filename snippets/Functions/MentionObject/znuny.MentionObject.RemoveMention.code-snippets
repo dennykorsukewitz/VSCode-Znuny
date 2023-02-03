@@ -1,10 +1,10 @@
 {
     "znuny.MentionObject.RemoveMention": {
         "body": [
-            "${1:my \$Success = \$MentionObject->RemoveMention(",
-            "    TicketID        => \$TicketID,",
-            "    MentionedUserID => \$MentionedUserID,",
-            "    UserID          => \$UserID, # user who wants to remove the mention",
+            "${1:my \\$Success = \\$MentionObject->RemoveMention(",
+            "    TicketID        => \\$TicketID,",
+            "    MentionedUserID => \\$MentionedUserID,",
+            "    UserID          => \\$UserID, # user who wants to remove the mention",
             ");}",
         ],
         "prefix": "znuny.MentionObject.RemoveMention",

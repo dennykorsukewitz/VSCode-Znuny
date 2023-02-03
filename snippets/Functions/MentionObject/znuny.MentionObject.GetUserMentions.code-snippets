@@ -1,8 +1,8 @@
 {
     "znuny.MentionObject.GetUserMentions": {
         "body": [
-            "${1:my \$Mentions = \$MentionObject->GetUserMentions(",
-            "    UserID     => \$UserID,",
+            "${1:my \\$Mentions = \\$MentionObject->GetUserMentions(",
+            "    UserID     => \\$UserID,",
             "",
             "    # optional, defaults to 0 and then means that all mentions of all articles per ticket are",
             "    # counted as one combined mention;",

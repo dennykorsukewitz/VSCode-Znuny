@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerObject.FutureTaskList": {
         "body": [
-            "${1:my @List = \$SchedulerObject->FutureTaskList(",
+            "${1:my @List = \\$SchedulerObject->FutureTaskList(",
             "    Type => 'some type',  # optional",
             ");}",
         ],

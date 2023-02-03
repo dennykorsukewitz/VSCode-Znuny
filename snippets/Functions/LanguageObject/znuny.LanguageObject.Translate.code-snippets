@@ -1,7 +1,7 @@
 {
     "znuny.LanguageObject.Translate": {
         "body": [
-            "${1:my \$Text = \$LanguageObject->Translate('Hello %s!', 'world');}",
+            "${1:my \\$Text = \\$LanguageObject->Translate('Hello %s!', 'world');}",
         ],
         "prefix": "znuny.LanguageObject.Translate",
         "description": "6.0, 6.4, 6.5",

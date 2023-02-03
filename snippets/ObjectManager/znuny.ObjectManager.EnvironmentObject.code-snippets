@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.EnvironmentObject": {
         "body": [
-            "my \$EnvironmentObject = \$Kernel::OM->Get('Kernel::System::Environment');",
+            "my \\$EnvironmentObject = \\$Kernel::OM->Get('Kernel::System::Environment');",
         ],
         "prefix": "znuny.ObjectManager.EnvironmentObject",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.StatsObject.ObjectFileCheck": {
         "body": [
-            "${1:my \$ObjectFileCheck = \$StatsObject->ObjectFileCheck(",
+            "${1:my \\$ObjectFileCheck = \\$StatsObject->ObjectFileCheck(",
             "    Type => 'static',",
             "    Name => 'NewTickets',",
             ");}",

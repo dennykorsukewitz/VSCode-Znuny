@@ -1,7 +1,7 @@
 {
     "znuny.PriorityObject.PriorityList": {
         "body": [
-            "${1:my %PriorityList = \$PriorityObject->PriorityList(",
+            "${1:my %PriorityList = \\$PriorityObject->PriorityList(",
             "    Valid => 0,   # (optional) default 1 (0|1)",
             ");}",
         ],

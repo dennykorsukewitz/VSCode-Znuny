@@ -1,15 +1,15 @@
 {
     "znuny.BackendObject.HasBehavior": {
         "body": [
-            "${1:my \$Success = \$BackendObject->HasBehavior(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,       # complete config of the DynamicField",
+            "${1:my \\$Success = \\$BackendObject->HasBehavior(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
             "    Behavior           => 'Some Behavior',           # 'IsACLReducible' to be reduded by ACLs",
             "                                                     #    and updatable via AJAX",
             "                                                     # 'IsNotificationEventCondition' to be used",
             "                                                     #     in the notification events as a",
             "                                                     #     ticket condition",
             "                                                     # 'IsSortable' to sort by this field in",
-            "                                                     #     "Small" overviews",
+            "                                                     #     \\"Small\\" overviews",
             "                                                     # 'IsStatsCondition' to be used in",
             "                                                     #     Statistics as a condition",
             "                                                     # 'IsCustomerInterfaceCapable' to make",

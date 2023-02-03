@@ -1,13 +1,13 @@
 {
     "znuny.LinkObject.TypeLookup": {
         "body": [
-            "${1:\$Name = \$LinkObject->TypeLookup(",
-            "    TypeID => \$TypeID,",
-            "    UserID => \$UserID,",
+            "${1:\\$Name = \\$LinkObject->TypeLookup(",
+            "    TypeID => \\$TypeID,",
+            "    UserID => \\$UserID,",
             ");}",
-            "${2:\$TypeID = \$LinkObject->TypeLookup(",
+            "${2:\\$TypeID = \\$LinkObject->TypeLookup(",
             "    Name   => 'Normal',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.TypeLookup",

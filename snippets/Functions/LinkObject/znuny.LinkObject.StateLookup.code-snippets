@@ -1,10 +1,10 @@
 {
     "znuny.LinkObject.StateLookup": {
         "body": [
-            "${1:\$Name = \$LinkObject->StateLookup(",
-            "    StateID => \$StateID,",
+            "${1:\\$Name = \\$LinkObject->StateLookup(",
+            "    StateID => \\$StateID,",
             ");}",
-            "${2:\$StateID = \$LinkObject->StateLookup(",
+            "${2:\\$StateID = \\$LinkObject->StateLookup(",
             "    Name => 'Valid',",
             ");}",
         ],

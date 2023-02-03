@@ -1,7 +1,7 @@
 {
     "znuny.LastViewsObject.GetActionIgnore": {
         "body": [
-            "${1:my @ActionIgnore = \$LastViewsObject->GetActionIgnore();}",
+            "${1:my @ActionIgnore = \\$LastViewsObject->GetActionIgnore();}",
         ],
         "prefix": "znuny.LastViewsObject.GetActionIgnore",
         "description": "6.4, 6.5",

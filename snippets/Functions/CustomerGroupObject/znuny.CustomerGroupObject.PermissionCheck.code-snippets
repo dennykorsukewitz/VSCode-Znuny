@@ -1,9 +1,9 @@
 {
     "znuny.CustomerGroupObject.PermissionCheck": {
         "body": [
-            "${1:my \$HasPermission = \$CustomerGroupObject->PermissionCheck(",
-            "    UserID    => \$UserID,",
-            "    GroupName => \$GroupName,",
+            "${1:my \\$HasPermission = \\$CustomerGroupObject->PermissionCheck(",
+            "    UserID    => \\$UserID,",
+            "    GroupName => \\$GroupName,",
             "    Type      => 'move_into',",
             ");}",
         ],

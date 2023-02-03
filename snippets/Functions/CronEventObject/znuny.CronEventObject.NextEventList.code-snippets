@@ -1,10 +1,10 @@
 {
     "znuny.CronEventObject.NextEventList": {
         "body": [
-            "${1:my @NextEvents = \$CronEventObject->NextEventList(",
+            "${1:my @NextEvents = \\$CronEventObject->NextEventList(",
             "    Schedule      => '*/2 * * * *',         # recurrence parameters based in cron notation",
-            "    StartDateTime => \$StartDateTimeObject,  # optional, defaults to current date/time",
-            "    StopDateTime  => \$StopDateTimeObject,",
+            "    StartDateTime => \\$StartDateTimeObject,  # optional, defaults to current date/time",
+            "    StopDateTime  => \\$StopDateTimeObject,",
             ");}",
         ],
         "prefix": "znuny.CronEventObject.NextEventList",

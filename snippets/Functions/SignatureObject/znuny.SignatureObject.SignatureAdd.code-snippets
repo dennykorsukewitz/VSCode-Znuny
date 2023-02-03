@@ -1,13 +1,13 @@
 {
     "znuny.SignatureObject.SignatureAdd": {
         "body": [
-            "${1:my \$ID = \$SignatureObject->SignatureAdd(",
+            "${1:my \\$ID = \\$SignatureObject->SignatureAdd(",
             "    Name        => 'New Signature',",
-            "    Text        => "--\nSome Signature Infos",",
+            "    Text        => \\"--\nSome Signature Infos\\",",
             "    ContentType => 'text/plain; charset=utf-8',",
             "    Comment     => 'some comment',",
-            "    ValidID     => \$ValidID,",
-            "    UserID      => \$UserID,",
+            "    ValidID     => \\$ValidID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureAdd",

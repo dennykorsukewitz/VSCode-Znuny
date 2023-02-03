@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.YAMLObject": {
         "body": [
-            "my \$YAMLObject = \$Kernel::OM->Get('Kernel::System::YAML');",
+            "my \\$YAMLObject = \\$Kernel::OM->Get('Kernel::System::YAML');",
         ],
         "prefix": "znuny.ObjectManager.YAMLObject",
         "description": "6.0, 6.4, 6.5",

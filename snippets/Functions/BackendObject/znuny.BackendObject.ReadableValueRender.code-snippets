@@ -1,8 +1,8 @@
 {
     "znuny.BackendObject.ReadableValueRender": {
         "body": [
-            "${1:my \$ValueStrg = \$BackendObject->ReadableValueRender(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
+            "${1:my \\$ValueStrg = \\$BackendObject->ReadableValueRender(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
             "    Value              => 'Any value',              # Optional",
             "    ValueMaxChars      => 20,                       # Optional",
             "    TitleMaxChars      => 20,                       # Optional",

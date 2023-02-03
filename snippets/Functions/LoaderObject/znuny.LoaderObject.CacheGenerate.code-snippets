@@ -1,7 +1,7 @@
 {
     "znuny.LoaderObject.CacheGenerate": {
         "body": [
-            "${1:my %GeneratedFiles = \$LoaderObject->CacheGenerate();}",
+            "${1:my %GeneratedFiles = \\$LoaderObject->CacheGenerate();}",
         ],
         "prefix": "znuny.LoaderObject.CacheGenerate",
         "description": "6.0, 6.4, 6.5",

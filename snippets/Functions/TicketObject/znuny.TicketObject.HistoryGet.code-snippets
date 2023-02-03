@@ -1,9 +1,9 @@
 {
     "znuny.TicketObject.HistoryGet": {
         "body": [
-            "${1:my @HistoryLines = \$TicketObject->HistoryGet(",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,",
+            "${1:my @HistoryLines = \\$TicketObject->HistoryGet(",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.HistoryGet",

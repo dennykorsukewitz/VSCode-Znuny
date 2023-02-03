@@ -1,7 +1,7 @@
 {
     "znuny.LinkObject.PossibleObjectsList": {
         "body": [
-            "${1:my %PossibleObjectsList = \$LinkObject->PossibleObjectsList(",
+            "${1:my %PossibleObjectsList = \\$LinkObject->PossibleObjectsList(",
             "    Object => 'Ticket',",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.DynamicFieldObject.ObjectMappingNameChange": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldObject->ObjectMappingNameChange(",
+            "${1:my \\$Success = \\$DynamicFieldObject->ObjectMappingNameChange(",
             "    OldObjectName => 'customer-1',",
             "    NewObjectName => 'customer-2',",
             "    ObjectType    => 'CustomerUser', # Type of object to change name for",

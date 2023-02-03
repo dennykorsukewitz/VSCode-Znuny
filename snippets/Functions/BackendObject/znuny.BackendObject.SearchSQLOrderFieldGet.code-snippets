@@ -1,9 +1,9 @@
 {
     "znuny.BackendObject.SearchSQLOrderFieldGet": {
         "body": [
-            "${1:my \$SQL = \$BackendObject->SearchSQLOrderFieldGet(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,      # complete config of the DynamicField",
-            "    TableAlias         => \$TableAlias,              # the alias of the already joined dynamic_field_value table to use",
+            "${1:my \\$SQL = \\$BackendObject->SearchSQLOrderFieldGet(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
+            "    TableAlias         => \\$TableAlias,              # the alias of the already joined dynamic_field_value table to use",
             ");}",
         ],
         "prefix": "znuny.BackendObject.SearchSQLOrderFieldGet",

@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.LinkObjectSearchOptionList": {
         "body": [
-            "${1:my @SearchOptionList = \$LayoutObject->LinkObjectSearchOptionList(",
+            "${1:my @SearchOptionList = \\$LayoutObject->LinkObjectSearchOptionList(",
             "    Object    => 'Ticket',",
             "    SubObject => 'Bla',     # (optional)",
             ");}",

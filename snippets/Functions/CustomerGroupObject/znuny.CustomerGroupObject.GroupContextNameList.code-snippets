@@ -1,7 +1,7 @@
 {
     "znuny.CustomerGroupObject.GroupContextNameList": {
         "body": [
-            "${1:my @ContextNames = \$CustomerGroupObject->GroupContextNameList();}",
+            "${1:my @ContextNames = \\$CustomerGroupObject->GroupContextNameList();}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupContextNameList",
         "description": "6.0, 6.4, 6.5",

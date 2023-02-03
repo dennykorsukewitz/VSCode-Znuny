@@ -1,12 +1,12 @@
 {
     "znuny.TicketObject.TicketFlagGet": {
         "body": [
-            "${1:my %Flags = \$TicketObject->TicketFlagGet(",
-            "    TicketID => \$TicketID,",
-            "    UserID   => \$UserID,  # to get flags of one user",
+            "${1:my %Flags = \\$TicketObject->TicketFlagGet(",
+            "    TicketID => \\$TicketID,",
+            "    UserID   => \\$UserID,  # to get flags of one user",
             ");}",
-            "${2:my @Flags = \$TicketObject->TicketFlagGet(",
-            "    TicketID => \$TicketID,",
+            "${2:my @Flags = \\$TicketObject->TicketFlagGet(",
+            "    TicketID => \\$TicketID,",
             "    AllUsers => 1,    # to get flags of all users",
             ");}",
         ],

@@ -1,10 +1,10 @@
 {
     "znuny.HelperObject.DatabaseXMLExecute": {
         "body": [
-            "${1:\$HelperObject->DatabaseXMLExecute(",
-            "    XML => \$XML,                 # OTRS database XML schema to execute",
+            "${1:\\$HelperObject->DatabaseXMLExecute(",
+            "    XML => \\$XML,                 # OTRS database XML schema to execute",
             ");}",
-            "${2:\$HelperObject->DatabaseXMLExecute(",
+            "${2:\\$HelperObject->DatabaseXMLExecute(",
             "    XMLFile => '/path/to/file',  # OTRS database XML file to execute",
             ");}",
         ],

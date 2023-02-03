@@ -1,7 +1,7 @@
 {
     "znuny.CheckItemObject.StringClean": {
         "body": [
-            "${1:my \$StringRef = \$CheckItemObject->StringClean(",
+            "${1:my \\$StringRef = \\$CheckItemObject->StringClean(",
             "    StringRef               => \'String',",
             "    TrimLeft                => 0,  # (optional) default 1",
             "    TrimRight               => 0,  # (optional) default 1",

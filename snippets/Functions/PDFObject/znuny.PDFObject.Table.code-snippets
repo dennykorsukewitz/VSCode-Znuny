@@ -1,10 +1,10 @@
 {
     "znuny.PDFObject.Table": {
         "body": [
-            "${1:%Return = \$PDFObject->Table(",
-            "    CellData            => \$CellData,    # 2D arrayref (see example)",
-            "    ColumnData          => \$ColumnData,  # arrayref (see example)",
-            "    RowData             => \$RowData,     # arrayref (see example)",
+            "${1:%Return = \\$PDFObject->Table(",
+            "    CellData            => \\$CellData,    # 2D arrayref (see example)",
+            "    ColumnData          => \\$ColumnData,  # arrayref (see example)",
+            "    RowData             => \\$RowData,     # arrayref (see example)",
             "    Type                => 'Cut',        # (optional) default ReturnLeftOver (ReturnLeftOver|ReturnLeftOverHard|Cut)",
             "    Width               => 300,          # (optional) default maximal width",
             "    Height              => 400,          # (optional) default minimal height",

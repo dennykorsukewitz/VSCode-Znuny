@@ -1,11 +1,11 @@
 {
     "znuny.ServiceObject.ServicePreferencesSet": {
         "body": [
-            "${1:\$ServiceObject->ServicePreferencesSet(",
-            "    ServiceID => \$ServiceID,",
+            "${1:\\$ServiceObject->ServicePreferencesSet(",
+            "    ServiceID => \\$ServiceID,",
             "    Key       => 'UserComment',",
             "    Value     => 'some comment',",
-            "    UserID    => \$UserID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServicePreferencesSet",

@@ -1,8 +1,8 @@
 {
     "znuny.DateTimeObject.SystemTimeZoneGet": {
         "body": [
-            "${1:my \$SystemTimeZone = \$DateTimeObject->SystemTimeZoneGet();}",
-            "${2:my \$SystemTimeZone = Kernel::System::DateTime->SystemTimeZoneGet();}",
+            "${1:my \\$SystemTimeZone = \\$DateTimeObject->SystemTimeZoneGet();}",
+            "${2:my \\$SystemTimeZone = Kernel::System::DateTime->SystemTimeZoneGet();}",
         ],
         "prefix": "znuny.DateTimeObject.SystemTimeZoneGet",
         "description": "6.0, 6.4, 6.5",

@@ -1,11 +1,11 @@
 {
     "znuny.HelperObject.TestCustomerUserCreate": {
         "body": [
-            "${1:my \$TestCustomerUserLogin = \$HelperObject->TestCustomerUserCreate(",
+            "${1:my \\$TestCustomerUserLogin = \\$HelperObject->TestCustomerUserCreate(",
             "    Language  => 'de',   # optional, defaults to 'en' if not set",
             "    KeepValid => 1,      # optional, defaults to 0",
             ");}",
-            "${2:my \$TestUserLogin = \$HelperObject->TestCustomerUserCreate(",
+            "${2:my \\$TestUserLogin = \\$HelperObject->TestCustomerUserCreate(",
             "    Language => 'de',   # optional, defaults to 'en' if not set",
             ");}",
         ],

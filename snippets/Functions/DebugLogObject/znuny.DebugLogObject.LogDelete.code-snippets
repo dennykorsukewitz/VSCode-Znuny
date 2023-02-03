@@ -1,10 +1,10 @@
 {
     "znuny.DebugLogObject.LogDelete": {
         "body": [
-            "${1:my \$Success = \$DebugLogObject->LogDelete(",
+            "${1:my \\$Success = \\$DebugLogObject->LogDelete(",
             "    NoErrorIfEmpty  => 1,                                  # optional",
-            "    CommunicationID => \$CommunicationID, # optional",
-            "    WebserviceID    => \$WebserviceID,                                  # optional",
+            "    CommunicationID => \\$CommunicationID, # optional",
+            "    WebserviceID    => \\$WebserviceID,                                  # optional",
             "                                                           # exactly one id parameter required",
             ");}",
         ],

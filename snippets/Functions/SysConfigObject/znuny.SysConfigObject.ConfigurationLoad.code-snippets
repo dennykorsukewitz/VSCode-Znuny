@@ -1,9 +1,9 @@
 {
     "znuny.SysConfigObject.ConfigurationLoad": {
         "body": [
-            "${1:my \$Success = \$SysConfigObject->ConfigurationLoad(",
-            "    ConfigurationYAML   => \$YAMLString,     # a YAML string in the format of L<ConfigurationDump()>",
-            "    UserID              => \$UserID,",
+            "${1:my \\$Success = \\$SysConfigObject->ConfigurationLoad(",
+            "    ConfigurationYAML   => \\$YAMLString,     # a YAML string in the format of L<ConfigurationDump()>",
+            "    UserID              => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationLoad",

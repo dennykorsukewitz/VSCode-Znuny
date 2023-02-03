@@ -1,11 +1,11 @@
 {
     "znuny.GroupObject.RoleAdd": {
         "body": [
-            "${1:my \$RoleID = \$GroupObject->RoleAdd(",
+            "${1:my \\$RoleID = \\$GroupObject->RoleAdd(",
             "    Name    => 'example-role',",
             "    Comment => 'comment describing the role',   # optional",
-            "    ValidID => \$ValidID,",
-            "    UserID  => \$UserID,",
+            "    ValidID => \\$ValidID,",
+            "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.RoleAdd",

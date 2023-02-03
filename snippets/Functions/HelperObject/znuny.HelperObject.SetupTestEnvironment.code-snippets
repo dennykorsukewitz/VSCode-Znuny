@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.SetupTestEnvironment": {
         "body": [
-            "${1:my \$Result = \$HelperObject->SetupTestEnvironment(",
+            "${1:my \\$Result = \\$HelperObject->SetupTestEnvironment(",
             "    ... # Parameters get passed to the FillTestEnvironment and ConfigureViews function",
             ");}",
         ],

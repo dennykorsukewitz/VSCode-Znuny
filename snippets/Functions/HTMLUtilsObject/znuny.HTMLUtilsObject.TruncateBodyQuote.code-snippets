@@ -1,8 +1,8 @@
 {
     "znuny.HTMLUtilsObject.TruncateBodyQuote": {
         "body": [
-            "${1:\$Body = \$HTMLUtilsObject->TruncateBodyQuote(",
-            "    Body       => \$Body,",
+            "${1:\\$Body = \\$HTMLUtilsObject->TruncateBodyQuote(",
+            "    Body       => \\$Body,",
             "    Limit      => 10000,",
             "    HTMLOutput => 1|0,",
             ");}",

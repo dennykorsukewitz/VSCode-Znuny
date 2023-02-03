@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.LoaderObject": {
         "body": [
-            "my \$LoaderObject = \$Kernel::OM->Get('Kernel::System::Loader');",
+            "my \\$LoaderObject = \\$Kernel::OM->Get('Kernel::System::Loader');",
         ],
         "prefix": "znuny.ObjectManager.LoaderObject",
         "description": "6.0, 6.4, 6.5",

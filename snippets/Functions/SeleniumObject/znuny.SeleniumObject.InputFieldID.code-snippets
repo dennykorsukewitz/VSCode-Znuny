@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.InputFieldID": {
         "body": [
-            "${1:my \$Result = \$SeleniumObject->InputFieldID(",
+            "${1:my \\$Result = \\$SeleniumObject->InputFieldID(",
             "    Attribute => 'QueueID',",
             ");}",
         ],

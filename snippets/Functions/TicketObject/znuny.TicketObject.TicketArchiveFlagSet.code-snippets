@@ -1,10 +1,10 @@
 {
     "znuny.TicketObject.TicketArchiveFlagSet": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketArchiveFlagSet(",
+            "${1:my \\$Success = \\$TicketObject->TicketArchiveFlagSet(",
             "    ArchiveFlag => 'y',  # (y|n)",
-            "    TicketID    => \$TicketID,",
-            "    UserID      => \$UserID,",
+            "    TicketID    => \\$TicketID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketArchiveFlagSet",

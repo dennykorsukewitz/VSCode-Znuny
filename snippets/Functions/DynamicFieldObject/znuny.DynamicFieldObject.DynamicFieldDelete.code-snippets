@@ -1,9 +1,9 @@
 {
     "znuny.DynamicFieldObject.DynamicFieldDelete": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldObject->DynamicFieldDelete(",
+            "${1:my \\$Success = \\$DynamicFieldObject->DynamicFieldDelete(",
             "    ID      => 123,",
-            "    UserID  => \$UserID,",
+            "    UserID  => \\$UserID,",
             "    Reorder => 1,               # or 0, to trigger reorder function, default 1",
             ");}",
         ],

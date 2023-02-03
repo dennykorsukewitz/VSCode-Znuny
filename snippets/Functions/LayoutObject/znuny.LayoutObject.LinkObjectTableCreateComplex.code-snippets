@@ -1,8 +1,8 @@
 {
     "znuny.LayoutObject.LinkObjectTableCreateComplex": {
         "body": [
-            "${1:my \$String = \$LayoutObject->LinkObjectTableCreateComplex(",
-            "    LinkListWithData => \$LinkListRef,",
+            "${1:my \\$String = \\$LayoutObject->LinkObjectTableCreateComplex(",
+            "    LinkListWithData => \\$LinkListRef,",
             "    ViewMode         => 'Complex', # (Complex|ComplexAdd|ComplexDelete|ComplexRaw)",
             ");}",
         ],

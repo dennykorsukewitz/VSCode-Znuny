@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.LoaderCreateAgentJSCalls": {
         "body": [
-            "${1:\$LayoutObject->LoaderCreateAgentJSCalls();}",
+            "${1:\\$LayoutObject->LoaderCreateAgentJSCalls();}",
         ],
         "prefix": "znuny.LayoutObject.LoaderCreateAgentJSCalls",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.SkinValidate": {
         "body": [
-            "${1:my \$SkinIsValid = \$LayoutObject->SkinValidate(",
+            "${1:my \\$SkinIsValid = \\$LayoutObject->SkinValidate(",
             "    UserType => 'Agent'     #  Agent or Customer,",
             "    Skin => 'ExampleSkin',",
             ");}",

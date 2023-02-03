@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.GetFieldSelections": {
         "body": [
-            "${1:my %SelectionsData = \$CustomerUserObject->GetFieldSelections(",
+            "${1:my %SelectionsData = \\$CustomerUserObject->GetFieldSelections(",
             "    FieldName => 'UserTitle',",
             ");}",
         ],

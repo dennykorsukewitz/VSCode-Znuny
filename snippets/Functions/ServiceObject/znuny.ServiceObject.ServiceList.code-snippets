@@ -1,10 +1,10 @@
 {
     "znuny.ServiceObject.ServiceList": {
         "body": [
-            "${1:my %ServiceList = \$ServiceObject->ServiceList(",
+            "${1:my %ServiceList = \\$ServiceObject->ServiceList(",
             "    Valid        => 0,   # (optional) default 1 (0|1)",
             "    KeepChildren => 0,   # (optional) default 0 (0|1); when Valid=1 set to 1 if you want to include also valid child services of invalid services.",
-            "    UserID       => \$UserID,",
+            "    UserID       => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceList",

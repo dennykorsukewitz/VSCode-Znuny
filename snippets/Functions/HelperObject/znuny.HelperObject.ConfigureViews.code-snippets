@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.ConfigureViews": {
         "body": [
-            "${1:my \$Result = \$HelperObject->ConfigureViews(",
+            "${1:my \\$Result = \\$HelperObject->ConfigureViews(",
             "    AgentTicketNote => {",
             "        Note             => 1,",
             "        NoteMandatory    => 1,",

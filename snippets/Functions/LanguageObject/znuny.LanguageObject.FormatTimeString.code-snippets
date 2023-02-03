@@ -1,7 +1,7 @@
 {
     "znuny.LanguageObject.FormatTimeString": {
         "body": [
-            "${1:my \$Date = \$LanguageObject->FormatTimeString(",
+            "${1:my \\$Date = \\$LanguageObject->FormatTimeString(",
             "    '2009-12-12 12:12:12',  # timestamp",
             "    'DateFormat',           # which date format to use, e. g. DateFormatLong",
             "    0,                      # optional, hides the seconds from the time output",

@@ -1,7 +1,7 @@
 {
     "znuny.SearchProfileObject.SearchProfileList": {
         "body": [
-            "${1:my %SearchProfiles = \$SearchProfileObject->SearchProfileList(",
+            "${1:my %SearchProfiles = \\$SearchProfileObject->SearchProfileList(",
             "    Base      => 'TicketSearch',",
             "    UserLogin => 'me',",
             ");}",

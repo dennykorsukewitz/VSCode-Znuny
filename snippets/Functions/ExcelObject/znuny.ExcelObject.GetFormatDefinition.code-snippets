@@ -1,8 +1,8 @@
 {
     "znuny.ExcelObject.GetFormatDefinition": {
         "body": [
-            "${1:my \$GetFormatDefinition = \$ExcelObject->GetFormatDefinition(",
-            "    Stat => \$Stat,",
+            "${1:my \\$GetFormatDefinition = \\$ExcelObject->GetFormatDefinition(",
+            "    Stat => \\$Stat,",
             ");}",
         ],
         "prefix": "znuny.ExcelObject.GetFormatDefinition",

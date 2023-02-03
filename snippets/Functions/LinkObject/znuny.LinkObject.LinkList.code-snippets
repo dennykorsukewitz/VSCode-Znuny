@@ -1,14 +1,14 @@
 {
     "znuny.LinkObject.LinkList": {
         "body": [
-            "${1:my \$LinkList = \$LinkObject->LinkList(",
+            "${1:my \\$LinkList = \\$LinkObject->LinkList(",
             "    Object    => 'Ticket',",
             "    Key       => '321',",
             "    Object2   => 'FAQ',         # (optional)",
             "    State     => 'Valid',",
             "    Type      => 'ParentChild', # (optional)",
             "    Direction => 'Target',      # (optional) default Both (Source|Target|Both)",
-            "    UserID    => \$UserID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.LinkList",

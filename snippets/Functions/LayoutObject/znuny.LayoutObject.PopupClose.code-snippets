@@ -2,11 +2,11 @@
     "znuny.LayoutObject.PopupClose": {
         "body": [
             "${1:# load specific URL in main window",
-            "\$LayoutObject->PopupClose(",
-            "    URL => "Action=AgentTicketZoom;TicketID=\$TicketID"",
+            "\\$LayoutObject->PopupClose(",
+            "    URL => \\"Action=AgentTicketZoom;TicketID=\\$TicketID\\"",
             ");}",
             "${2:# reload main window",
-            "\$LayoutObject->PopupClose(",
+            "\\$LayoutObject->PopupClose(",
             "    Reload => 1,",
             ");}",
         ],

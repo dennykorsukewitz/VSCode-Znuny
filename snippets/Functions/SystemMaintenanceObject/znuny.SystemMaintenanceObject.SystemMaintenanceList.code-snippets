@@ -1,9 +1,9 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceList": {
         "body": [
-            "${1:my \$List = \$SystemMaintenanceObject->SystemMaintenanceList(",
+            "${1:my \\$List = \\$SystemMaintenanceObject->SystemMaintenanceList(",
             "    ValidIDs => ['1','2'],           # optional, to filter SystemMaintenances that match listed valid IDs",
-            "    UserID   => \$UserID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceList",

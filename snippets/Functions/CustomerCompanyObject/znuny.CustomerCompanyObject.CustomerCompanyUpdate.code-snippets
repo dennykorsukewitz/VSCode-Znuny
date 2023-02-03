@@ -1,9 +1,9 @@
 {
     "znuny.CustomerCompanyObject.CustomerCompanyUpdate": {
         "body": [
-            "${1:\$CustomerCompanyObject->CustomerCompanyUpdate(",
-            "    CustomerCompanyID       => \$CustomerCompanyID, # required for CustomerCompanyID-update",
-            "    CustomerID              => \$CustomerID,",
+            "${1:\\$CustomerCompanyObject->CustomerCompanyUpdate(",
+            "    CustomerCompanyID       => \\$CustomerCompanyID, # required for CustomerCompanyID-update",
+            "    CustomerID              => \\$CustomerID,",
             "    CustomerCompanyName     => 'New Customer Inc.',",
             "    CustomerCompanyStreet   => '5201 Blue Lagoon Drive',",
             "    CustomerCompanyZIP      => '33126',",
@@ -11,8 +11,8 @@
             "    CustomerCompanyCountry  => 'USA',",
             "    CustomerCompanyURL      => 'http://example.com',",
             "    CustomerCompanyComment  => 'some comment',",
-            "    ValidID                 => \$ValidID,",
-            "    UserID                  => \$UserID,",
+            "    ValidID                 => \\$ValidID,",
+            "    UserID                  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerCompanyObject.CustomerCompanyUpdate",

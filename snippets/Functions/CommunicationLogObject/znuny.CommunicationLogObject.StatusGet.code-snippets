@@ -1,7 +1,7 @@
 {
     "znuny.CommunicationLogObject.StatusGet": {
         "body": [
-            "${1:my \$Direction = \$CommunicationLogObject->StatusGet();}",
+            "${1:my \\$Direction = \\$CommunicationLogObject->StatusGet();}",
         ],
         "prefix": "znuny.CommunicationLogObject.StatusGet",
         "description": "6.0, 6.4, 6.5",

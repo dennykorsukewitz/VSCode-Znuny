@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.PackageInstallDefaultFiles": {
         "body": [
-            "${1:\$PackageObject->PackageInstallDefaultFiles();}",
+            "${1:\\$PackageObject->PackageInstallDefaultFiles();}",
         ],
         "prefix": "znuny.PackageObject.PackageInstallDefaultFiles",
         "description": "6.0, 6.4, 6.5",

@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerDBObject.TaskList": {
         "body": [
-            "${1:my @List = \$SchedulerDBObject->TaskList(",
+            "${1:my @List = \\$SchedulerDBObject->TaskList(",
             "    Type => 'some type',  # optional",
             ");}",
         ],

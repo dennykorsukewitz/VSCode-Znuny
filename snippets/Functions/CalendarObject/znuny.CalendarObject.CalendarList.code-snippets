@@ -1,10 +1,10 @@
 {
     "znuny.CalendarObject.CalendarList": {
         "body": [
-            "${1:my @Result = \$CalendarObject->CalendarList(",
-            "    UserID     => \$UserID,            # (optional) For permission check",
+            "${1:my @Result = \\$CalendarObject->CalendarList(",
+            "    UserID     => \\$UserID,            # (optional) For permission check",
             "    Permission => 'rw',         # (optional) Required permission (default ro)",
-            "    ValidID    => \$ValidID,            # (optional) Default 0.",
+            "    ValidID    => \\$ValidID,            # (optional) Default 0.",
             "                                # 0 - All states",
             "                                # 1 - All valid",
             "                                # 2 - All invalid",

@@ -1,10 +1,10 @@
 {
     "znuny.OAuth2TokenObject.RequestTokenByAuthorizationCode": {
         "body": [
-            "${1:my %Token = \$OAuth2TokenObject->RequestTokenByAuthorizationCode(",
-            "    TokenConfigID     => \$TokenConfigID,",
+            "${1:my %Token = \\$OAuth2TokenObject->RequestTokenByAuthorizationCode(",
+            "    TokenConfigID     => \\$TokenConfigID,",
             "    AuthorizationCode => '...',",
-            "    UserID            => \$UserID,",
+            "    UserID            => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.RequestTokenByAuthorizationCode",

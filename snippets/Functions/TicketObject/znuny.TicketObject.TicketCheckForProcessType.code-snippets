@@ -1,8 +1,8 @@
 {
     "znuny.TicketObject.TicketCheckForProcessType": {
         "body": [
-            "${1:\$TicketObject->TicketCheckForProcessType(",
-            "    TicketID => \$TicketID,",
+            "${1:\\$TicketObject->TicketCheckForProcessType(",
+            "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketCheckForProcessType",

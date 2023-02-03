@@ -1,8 +1,8 @@
 {
     "znuny.TicketObject.GetSubscribedUserIDsByServiceID": {
         "body": [
-            "${1:my @UserIDs = \$TicketObject->GetSubscribedUserIDsByServiceID(",
-            "    ServiceID => \$ServiceID,",
+            "${1:my @UserIDs = \\$TicketObject->GetSubscribedUserIDsByServiceID(",
+            "    ServiceID => \\$ServiceID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.GetSubscribedUserIDsByServiceID",

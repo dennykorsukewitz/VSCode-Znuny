@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.ToTimeZone": {
         "body": [
-            "${1:my \$Success = \$DateTimeObject->ToTimeZone(",
+            "${1:my \\$Success = \\$DateTimeObject->ToTimeZone(",
             "    TimeZone => 'Europe/Berlin',",
             ");}",
         ],

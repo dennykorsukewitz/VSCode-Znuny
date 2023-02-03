@@ -1,7 +1,7 @@
 {
     "znuny.ZnunyHelperObject.DynamicFieldFieldOrderAfterFieldGet": {
         "body": [
-            "${1:my \$FieldOrder = \$ZnunyHelperObject->DynamicFieldFieldOrderAfterFieldGet(",
+            "${1:my \\$FieldOrder = \\$ZnunyHelperObject->DynamicFieldFieldOrderAfterFieldGet(",
             "    Name => 'TestDynamicField1',",
             ");}",
         ],

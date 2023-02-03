@@ -1,9 +1,9 @@
 {
     "znuny.SchedulerDBObject.RecurrentTaskExecute": {
         "body": [
-            "${1:my \$Success = \$SchedulerDBObject->RecurrentTaskExecute(",
-            "    NodeID                   => \$NodeID,                 # the ID of the node in a cluster environment",
-            "    PID                      => \$PID,               # the process ID of the daemon that is creating",
+            "${1:my \\$Success = \\$SchedulerDBObject->RecurrentTaskExecute(",
+            "    NodeID                   => \\$NodeID,                 # the ID of the node in a cluster environment",
+            "    PID                      => \\$PID,               # the process ID of the daemon that is creating",
             "                                                   #    the tasks to execution",
             "    TaskName                 => 'UniqueTaskName',",
             "    TaskType                 => 'Cron',",

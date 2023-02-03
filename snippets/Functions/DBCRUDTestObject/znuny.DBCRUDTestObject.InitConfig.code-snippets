@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDTestObject.InitConfig": {
         "body": [
-            "${1:my \$Success = \$DBCRUDTestObject->InitConfig();}",
+            "${1:my \\$Success = \\$DBCRUDTestObject->InitConfig();}",
         ],
         "prefix": "znuny.DBCRUDTestObject.InitConfig",
         "description": "6.4, 6.5",

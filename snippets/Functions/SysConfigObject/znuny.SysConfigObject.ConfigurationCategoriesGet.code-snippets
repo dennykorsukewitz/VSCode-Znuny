@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.ConfigurationCategoriesGet": {
         "body": [
-            "${1:my %Categories = \$SysConfigObject->ConfigurationCategoriesGet();}",
+            "${1:my %Categories = \\$SysConfigObject->ConfigurationCategoriesGet();}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationCategoriesGet",
         "description": "6.0, 6.4, 6.5",

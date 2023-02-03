@@ -1,13 +1,13 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentAdd": {
         "body": [
-            "${1:my \$ID = \$StdAttachmentObject->StdAttachmentAdd(",
+            "${1:my \\$ID = \\$StdAttachmentObject->StdAttachmentAdd(",
             "    Name        => 'Some Name',",
-            "    ValidID     => \$ValidID,",
-            "    Content     => \$Content,",
+            "    ValidID     => \\$ValidID,",
+            "    Content     => \\$Content,",
             "    ContentType => 'text/xml',",
             "    Filename    => 'SomeFile.xml',",
-            "    UserID      => \$UserID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentAdd",

@@ -1,7 +1,7 @@
 {
     "znuny.CommunicationLogObject.CommunicationStop": {
         "body": [
-            "${1:my \$Success = \$CommunicationLogObject->CommunicationStop(",
+            "${1:my \\$Success = \\$CommunicationLogObject->CommunicationStop(",
             "    Status => 'Successful', # (required) Needs to be either 'Successful', 'Warning' or 'Failed'",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.TicketObject.HistoryTypeLookup": {
         "body": [
-            "${1:my \$ID = \$TicketObject->HistoryTypeLookup( Type => 'Move' );}",
+            "${1:my \\$ID = \\$TicketObject->HistoryTypeLookup( Type => 'Move' );}",
         ],
         "prefix": "znuny.TicketObject.HistoryTypeLookup",
         "description": "6.0, 6.4, 6.5",

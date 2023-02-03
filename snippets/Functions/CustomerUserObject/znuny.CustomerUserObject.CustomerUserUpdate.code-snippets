@@ -1,7 +1,7 @@
 {
     "znuny.CustomerUserObject.CustomerUserUpdate": {
         "body": [
-            "${1:\$CustomerUserObject->CustomerUserUpdate(",
+            "${1:\\$CustomerUserObject->CustomerUserUpdate(",
             "    Source        => 'CustomerUser', # CustomerUser source config",
             "    ID            => 'mh'            # current user login",
             "    UserLogin     => 'mhuber',       # new user login",
@@ -9,8 +9,8 @@
             "    UserLastname  => 'Manfred',",
             "    UserPassword  => 'some-pass',    # not required",
             "    UserEmail     => 'email@example.com',",
-            "    ValidID       => \$ValidID,",
-            "    UserID        => \$UserID,",
+            "    ValidID       => \\$ValidID,",
+            "    UserID        => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.CustomerUserUpdate",

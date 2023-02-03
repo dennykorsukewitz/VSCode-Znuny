@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.DeployCheckInfo": {
         "body": [
-            "${1:my %Hash = \$PackageObject->DeployCheckInfo();}",
+            "${1:my %Hash = \\$PackageObject->DeployCheckInfo();}",
         ],
         "prefix": "znuny.PackageObject.DeployCheckInfo",
         "description": "6.0, 6.4, 6.5",

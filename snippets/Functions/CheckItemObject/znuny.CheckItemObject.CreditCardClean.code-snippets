@@ -1,7 +1,7 @@
 {
     "znuny.CheckItemObject.CreditCardClean": {
         "body": [
-            "${1:my (\$StringRef, \$Found) = \$CheckItemObject->CreditCardClean(",
+            "${1:my (\\$StringRef, \\$Found) = \\$CheckItemObject->CreditCardClean(",
             "    StringRef => \'String',",
             ");}",
         ],

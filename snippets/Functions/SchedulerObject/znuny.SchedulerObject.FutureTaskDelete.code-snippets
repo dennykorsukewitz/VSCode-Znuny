@@ -1,8 +1,8 @@
 {
     "znuny.SchedulerObject.FutureTaskDelete": {
         "body": [
-            "${1:my \$Success = \$SchedulerObject->FutureTaskDelete(",
-            "    TaskID => \$TaskID,",
+            "${1:my \\$Success = \\$SchedulerObject->FutureTaskDelete(",
+            "    TaskID => \\$TaskID,",
             ");}",
         ],
         "prefix": "znuny.SchedulerObject.FutureTaskDelete",

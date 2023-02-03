@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.GlobalEffectiveValueGet": {
         "body": [
-            "${1:my \$EffectiveValue = \$SysConfigObject->GlobalEffectiveValueGet(",
+            "${1:my \\$EffectiveValue = \\$SysConfigObject->GlobalEffectiveValueGet(",
             "    SettingName    => 'Setting::Name',  # (required)",
             ");}",
         ],

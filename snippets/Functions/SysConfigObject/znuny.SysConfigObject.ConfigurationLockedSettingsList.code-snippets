@@ -1,8 +1,8 @@
 {
     "znuny.SysConfigObject.ConfigurationLockedSettingsList": {
         "body": [
-            "${1:my @Result = \$SysConfigObject->ConfigurationLockedSettingsList(",
-            "    ExclusiveLockUserID       => \$ExclusiveLockUserID, # Optional, ID of the user for which the default setting is locked",
+            "${1:my @Result = \\$SysConfigObject->ConfigurationLockedSettingsList(",
+            "    ExclusiveLockUserID       => \\$ExclusiveLockUserID, # Optional, ID of the user for which the default setting is locked",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationLockedSettingsList",

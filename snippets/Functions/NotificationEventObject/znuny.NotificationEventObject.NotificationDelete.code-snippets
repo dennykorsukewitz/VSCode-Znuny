@@ -1,9 +1,9 @@
 {
     "znuny.NotificationEventObject.NotificationDelete": {
         "body": [
-            "${1:\$NotificationEventObject->NotificationDelete(",
+            "${1:\\$NotificationEventObject->NotificationDelete(",
             "    ID     => 1,",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationDelete",

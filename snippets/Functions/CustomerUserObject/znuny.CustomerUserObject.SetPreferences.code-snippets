@@ -1,10 +1,10 @@
 {
     "znuny.CustomerUserObject.SetPreferences": {
         "body": [
-            "${1:\$CustomerUserObject->SetPreferences(",
+            "${1:\\$CustomerUserObject->SetPreferences(",
             "    Key    => 'UserComment',",
             "    Value  => 'some comment',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.SetPreferences",

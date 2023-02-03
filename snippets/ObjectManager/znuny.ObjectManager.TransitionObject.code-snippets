@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.TransitionObject": {
         "body": [
-            "my \$TransitionObject = \$Kernel::OM->Get('Kernel::System::ProcessManagement::Transition');",
+            "my \\$TransitionObject = \\$Kernel::OM->Get('Kernel::System::ProcessManagement::Transition');",
         ],
         "prefix": "znuny.ObjectManager.TransitionObject",
         "description": "6.0, 6.4, 6.5",

@@ -1,8 +1,8 @@
 {
     "znuny.GroupObject.PermissionUserGroupGet": {
         "body": [
-            "${1:my %GroupList = \$GroupObject->PermissionUserGroupGet(",
-            "    UserID => \$UserID,",
+            "${1:my %GroupList = \\$GroupObject->PermissionUserGroupGet(",
+            "    UserID => \\$UserID,",
             "    Type   => 'move_into',  # ro|move_into|create|note|owner|priority|rw",
             ");}",
         ],

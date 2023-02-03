@@ -1,7 +1,7 @@
 {
     "znuny.HelperObject.GetRandomNumber": {
         "body": [
-            "${1:my \$RandomNumber = \$HelperObject->GetRandomNumber();}",
+            "${1:my \\$RandomNumber = \\$HelperObject->GetRandomNumber();}",
         ],
         "prefix": "znuny.HelperObject.GetRandomNumber",
         "description": "6.4, 6.5",

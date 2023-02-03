@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerDBObject.GenericAgentTaskCleanup": {
         "body": [
-            "${1:my \$Success = \$SchedulerDBObject->GenericAgentTaskCleanup();}",
+            "${1:my \\$Success = \\$SchedulerDBObject->GenericAgentTaskCleanup();}",
         ],
         "prefix": "znuny.SchedulerDBObject.GenericAgentTaskCleanup",
         "description": "6.0, 6.4, 6.5",

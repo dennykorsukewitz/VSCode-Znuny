@@ -1,10 +1,10 @@
 {
     "znuny.CustomerCompanyObject.CustomerCompanySearchDetail": {
         "body": [
-            "${1:my \$CustomerCompanyIDsRef = \$CustomerCompanyObject->CustomerCompanySearchDetail(",
+            "${1:my \\$CustomerCompanyIDsRef = \\$CustomerCompanyObject->CustomerCompanySearchDetail(",
             "",
             "    # all search fields possible which are defined in CustomerCompany::EnhancedSearchFields",
-            "    CustomerID          => \$CustomerID,                                  # (optional)",
+            "    CustomerID          => \\$CustomerID,                                  # (optional)",
             "    CustomerCompanyName => 'Name*',                                     # (optional)",
             "",
             "    # array parameters are used with logical OR operator (all values are possible which",
@@ -17,7 +17,7 @@
             "    #   You can also pass more than one argument to an operator: ['value1', 'value2']",
             "    DynamicField_FieldNameX => {",
             "        Equals            => 123,",
-            "        Like              => 'value*',                # "equals" operator with wildcard support",
+            "        Like              => 'value*',                # \\"equals\\" operator with wildcard support",
             "        GreaterThan       => '2001-01-01 01:01:01',",
             "        GreaterThanEquals => '2001-01-01 01:01:01',",
             "        SmallerThan       => '2002-02-02 02:02:02',",

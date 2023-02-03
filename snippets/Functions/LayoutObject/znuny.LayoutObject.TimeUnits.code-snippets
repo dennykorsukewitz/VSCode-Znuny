@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.TimeUnits": {
         "body": [
-            "${1:my \$TimeUnitsBlock = \$LayoutObject->TimeUnits(",
+            "${1:my \\$TimeUnitsBlock = \\$LayoutObject->TimeUnits(",
             "    ID                => 'TimeUnits',       # (optional) the HTML ID for this element, if not provided, the name will be used as ID as well",
             "    Name              => 'TimeUnits',       # name of element",
             "    TimeUnits         => '123',",

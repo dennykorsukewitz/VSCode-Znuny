@@ -1,7 +1,7 @@
 {
     "znuny.SessionObject.GetActiveSessions": {
         "body": [
-            "${1:my %Result = \$SessionObject->GetActiveSessions(",
+            "${1:my %Result = \\$SessionObject->GetActiveSessions(",
             "    UserType => '(User|Customer)',",
             ");}",
         ],

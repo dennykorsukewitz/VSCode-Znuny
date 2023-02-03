@@ -1,9 +1,9 @@
 {
     "znuny.SystemMaintenanceObject.SystemMaintenanceGet": {
         "body": [
-            "${1:my \$SystemMaintenance = \$SystemMaintenanceObject->SystemMaintenanceGet(",
+            "${1:my \\$SystemMaintenance = \\$SystemMaintenanceObject->SystemMaintenanceGet(",
             "    ID     => 123,          # mandatory",
-            "    UserID => \$UserID,          # mandatory",
+            "    UserID => \\$UserID,          # mandatory",
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceGet",

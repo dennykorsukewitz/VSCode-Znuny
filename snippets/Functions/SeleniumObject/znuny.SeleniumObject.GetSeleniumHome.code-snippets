@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.GetSeleniumHome": {
         "body": [
-            "${1:my \$SeleniumHome = \$SeleniumObject->GetSeleniumHome(",
+            "${1:my \\$SeleniumHome = \\$SeleniumObject->GetSeleniumHome(",
             "    Directory => '/opt/otrs',",
             ");}",
         ],

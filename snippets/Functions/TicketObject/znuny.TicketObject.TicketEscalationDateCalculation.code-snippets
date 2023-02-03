@@ -1,9 +1,9 @@
 {
     "znuny.TicketObject.TicketEscalationDateCalculation": {
         "body": [
-            "${1:my %Escalation = \$TicketObject->TicketEscalationDateCalculation(",
-            "    Ticket => \$Param{Ticket\\},",
-            "    UserID => \$Param{UserID\\},",
+            "${1:my %Escalation = \\$TicketObject->TicketEscalationDateCalculation(",
+            "    Ticket => \\$Param{Ticket\\},",
+            "    UserID => \\$Param{UserID\\},",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationDateCalculation",

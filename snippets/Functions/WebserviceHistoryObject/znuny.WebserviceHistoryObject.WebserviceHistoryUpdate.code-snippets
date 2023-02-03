@@ -1,11 +1,11 @@
 {
     "znuny.WebserviceHistoryObject.WebserviceHistoryUpdate": {
         "body": [
-            "${1:my \$Success = \$WebserviceHistoryObject->WebserviceHistoryUpdate(",
+            "${1:my \\$Success = \\$WebserviceHistoryObject->WebserviceHistoryUpdate(",
             "    ID           => 123,",
-            "    WebserviceID => \$WebserviceID",
-            "    Config       => \$ConfigHashRef,",
-            "    UserID       => \$UserID,",
+            "    WebserviceID => \\$WebserviceID",
+            "    Config       => \\$ConfigHashRef,",
+            "    UserID       => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.WebserviceHistoryObject.WebserviceHistoryUpdate",

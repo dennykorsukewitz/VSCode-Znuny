@@ -1,8 +1,8 @@
 {
     "znuny.LayoutObject.RichTextDocumentComplete": {
         "body": [
-            "${1:\$HTMLBody = \$LayoutObject->RichTextDocumentComplete(",
-            "    String => \$HTMLBody,",
+            "${1:\\$HTMLBody = \\$LayoutObject->RichTextDocumentComplete(",
+            "    String => \\$HTMLBody,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.RichTextDocumentComplete",

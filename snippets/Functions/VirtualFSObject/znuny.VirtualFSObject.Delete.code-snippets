@@ -1,7 +1,7 @@
 {
     "znuny.VirtualFSObject.Delete": {
         "body": [
-            "${1:my \$Success = \$VirtualFSObject->Delete(",
+            "${1:my \\$Success = \\$VirtualFSObject->Delete(",
             "    Filename => '/Object/SomeFileName.txt',",
             "",
             "    # optional",

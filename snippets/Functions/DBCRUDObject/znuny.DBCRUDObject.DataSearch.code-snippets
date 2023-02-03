@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.DataSearch": {
         "body": [
-            "${1:my %Data = \$DBCRUDObject->DataSearch(",
+            "${1:my %Data = \\$DBCRUDObject->DataSearch(",
             "    Search      => 'test*test',",
             "    ID          => '...', # optional",
             "    CreateTime  => '...', # optional",

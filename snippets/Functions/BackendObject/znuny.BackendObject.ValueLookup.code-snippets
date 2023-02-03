@@ -1,11 +1,11 @@
 {
     "znuny.BackendObject.ValueLookup": {
         "body": [
-            "${1:my \$Value = \$BackendObject->ValueLookup(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,       # complete config of the DynamicField",
+            "${1:my \\$Value = \\$BackendObject->ValueLookup(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
             "    Key                => 'sotred value',             # could also be an array ref for",
             "                                                     #    MultipleSelect fields",
-            "    LanguageObject     => \$LanguageObject,            # optional, used to get value translations",
+            "    LanguageObject     => \\$LanguageObject,            # optional, used to get value translations",
             ");}",
         ],
         "prefix": "znuny.BackendObject.ValueLookup",

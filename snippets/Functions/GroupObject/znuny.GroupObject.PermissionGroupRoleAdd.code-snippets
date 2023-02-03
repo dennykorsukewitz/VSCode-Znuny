@@ -1,9 +1,9 @@
 {
     "znuny.GroupObject.PermissionGroupRoleAdd": {
         "body": [
-            "${1:my \$Success = \$GroupObject->PermissionGroupRoleAdd(",
-            "    GID => \$GID,",
-            "    RID => \$RID,",
+            "${1:my \\$Success = \\$GroupObject->PermissionGroupRoleAdd(",
+            "    GID => \\$GID,",
+            "    RID => \\$RID,",
             "    Permission => {",
             "        ro        => 1,",
             "        move_into => 1,",
@@ -13,7 +13,7 @@
             "        priority  => 0,",
             "        rw        => 0,",
             "    \\},",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.PermissionGroupRoleAdd",

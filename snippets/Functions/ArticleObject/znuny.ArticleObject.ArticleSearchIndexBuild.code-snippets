@@ -1,10 +1,10 @@
 {
     "znuny.ArticleObject.ArticleSearchIndexBuild": {
         "body": [
-            "${1:my \$Success = \$ArticleObject->ArticleSearchIndexBuild(",
-            "    TicketID  => \$TicketID,",
-            "    ArticleID => \$ArticleID,",
-            "    UserID    => \$UserID,",
+            "${1:my \\$Success = \\$ArticleObject->ArticleSearchIndexBuild(",
+            "    TicketID  => \\$TicketID,",
+            "    ArticleID => \\$ArticleID,",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexBuild",

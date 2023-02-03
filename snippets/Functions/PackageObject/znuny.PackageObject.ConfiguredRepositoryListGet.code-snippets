@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.ConfiguredRepositoryListGet": {
         "body": [
-            "${1:my %RepositoryList = \$PackageObject->ConfiguredRepositoryListGet();}",
+            "${1:my %RepositoryList = \\$PackageObject->ConfiguredRepositoryListGet();}",
         ],
         "prefix": "znuny.PackageObject.ConfiguredRepositoryListGet",
         "description": "6.4, 6.5",

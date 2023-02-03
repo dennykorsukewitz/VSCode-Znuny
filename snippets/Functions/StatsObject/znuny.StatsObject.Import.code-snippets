@@ -1,9 +1,9 @@
 {
     "znuny.StatsObject.Import": {
         "body": [
-            "${1:my \$StatID = \$StatsObject->Import(",
-            "    UserID  => \$UserID,",
-            "    Content => \$UploadStuff{Content\\},",
+            "${1:my \\$StatID = \\$StatsObject->Import(",
+            "    UserID  => \\$UserID,",
+            "    Content => \\$UploadStuff{Content\\},",
             ");}",
         ],
         "prefix": "znuny.StatsObject.Import",

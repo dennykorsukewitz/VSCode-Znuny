@@ -1,7 +1,7 @@
 {
     "znuny.SchedulerDBObject.TaskLockUpdate": {
         "body": [
-            "${1:my \$Success = \$SchedulerDBObject->TaskLockUpdate(",
+            "${1:my \\$Success = \\$SchedulerDBObject->TaskLockUpdate(",
             "    TaskIDs => [123, 456],",
             ");}",
         ],

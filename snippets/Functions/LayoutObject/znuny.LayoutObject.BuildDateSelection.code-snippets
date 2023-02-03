@@ -1,7 +1,7 @@
 {
     "znuny.LayoutObject.BuildDateSelection": {
         "body": [
-            "${1:my \$HTML = \$LayoutObject->BuildDateSelection(",
+            "${1:my \\$HTML = \\$LayoutObject->BuildDateSelection(",
             "    Prefix           => 'some prefix',        # optional, (needed to specify other parameters)",
             "    <Prefix>Year     => 2015,                 # optional, defaults to current year, used to set the initial value",
             "    <Prefix>Month    => 6,                    # optional, defaults to current month, used to set the initial value",

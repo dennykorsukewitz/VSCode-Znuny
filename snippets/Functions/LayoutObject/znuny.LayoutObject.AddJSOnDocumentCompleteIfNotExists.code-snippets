@@ -1,9 +1,9 @@
 {
     "znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists": {
         "body": [
-            "${1:my \$Success = \$LayoutObject->AddJSOnDocumentCompleteIfNotExists(",
+            "${1:my \\$Success = \\$LayoutObject->AddJSOnDocumentCompleteIfNotExists(",
             "    Key  => 'identifier_key_of_your_js',",
-            "    Code => \$JSBlock,",
+            "    Code => \\$JSBlock,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists",

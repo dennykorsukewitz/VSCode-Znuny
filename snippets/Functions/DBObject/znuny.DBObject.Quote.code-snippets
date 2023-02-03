@@ -1,16 +1,16 @@
 {
     "znuny.DBObject.Quote": {
         "body": [
-            "${1:my \$DBString = \$DBObject->Quote( "2005-10-27 20:15:01" );}",
+            "${1:my \\$DBString = \\$DBObject->Quote( \\"2005-10-27 20:15:01\\" );}",
             "${2:quote integers:",
             "===============",
-            "my \$DBString = \$DBObject->Quote( 1234, 'Integer' );}",
+            "my \\$DBString = \\$DBObject->Quote( 1234, 'Integer' );}",
             "${3:quote numbers (e. g. 1, 1.4, 42342.23424):",
             "==========================================",
-            "my \$DBString = \$DBObject->Quote( 1234, 'Number' );}",
+            "my \\$DBString = \\$DBObject->Quote( 1234, 'Number' );}",
             "${4:quote strings, date and time:",
             "=============================",
-            "my \$DBString = \$DBObject->Quote( "This isn't a problem!" );}",
+            "my \\$DBString = \\$DBObject->Quote( \\"This isn't a problem!\\" );}",
         ],
         "prefix": "znuny.DBObject.Quote",
         "description": "6.0, 6.4, 6.5",

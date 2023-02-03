@@ -1,9 +1,9 @@
 {
     "znuny.DBCRUDObject.DataNameExists": {
         "body": [
-            "${1:my \$Success = \$DBCRUDObject->DataNameExists(",
+            "${1:my \\$Success = \\$DBCRUDObject->DataNameExists(",
             "    Name   => 'name',",
-            "    UserID => \$UserID,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataNameExists",

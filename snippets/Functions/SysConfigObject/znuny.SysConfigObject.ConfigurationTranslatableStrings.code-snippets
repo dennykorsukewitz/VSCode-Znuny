@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.ConfigurationTranslatableStrings": {
         "body": [
-            "${1:my @TranslatableStrings = \$SysConfigObject->ConfigurationTranslatableStrings();}",
+            "${1:my @TranslatableStrings = \\$SysConfigObject->ConfigurationTranslatableStrings();}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationTranslatableStrings",
         "description": "6.0, 6.4, 6.5",

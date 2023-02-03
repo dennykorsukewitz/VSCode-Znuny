@@ -1,7 +1,7 @@
 {
     "znuny.PDFObject.Text": {
         "body": [
-            "${1:%Return = \$PDFObject->Text(",
+            "${1:%Return = \\$PDFObject->Text(",
             "    Text     => 'Text',              # Text",
             "    Width    => 300,                 # (optional) available width of textblock",
             "    Height   => 200,                 # (optional) available height of textblock",

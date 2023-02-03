@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.PostMasterObject": {
         "body": [
-            "my \$PostMasterObject = \$Kernel::OM->Create(",
+            "my \\$PostMasterObject = \\$Kernel::OM->Create(",
             "        'Kernel::System::PostMaster',",
             "        ObjectParams => {",
             "            Email        => \@ArrayOfEmailContent,",

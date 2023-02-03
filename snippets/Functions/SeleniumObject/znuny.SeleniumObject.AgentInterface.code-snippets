@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.AgentInterface": {
         "body": [
-            "${1:\$SeleniumObject->AgentInterface(",
+            "${1:\\$SeleniumObject->AgentInterface(",
             "    Action      => 'AgentTicketZoom',",
             "    WaitForAJAX => 0,                     # optional, default 1",
             ");}",

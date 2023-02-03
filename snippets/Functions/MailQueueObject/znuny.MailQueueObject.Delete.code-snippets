@@ -1,7 +1,7 @@
 {
     "znuny.MailQueueObject.Delete": {
         "body": [
-            "${1:my \$Result = \$MailQueueObject->Delete(",
+            "${1:my \\$Result = \\$MailQueueObject->Delete(",
             "    %Filters,                       # See _FiltersSQLAndBinds",
             ");}",
         ],

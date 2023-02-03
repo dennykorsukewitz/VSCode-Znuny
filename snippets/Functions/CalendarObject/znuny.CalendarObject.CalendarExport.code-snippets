@@ -1,9 +1,9 @@
 {
     "znuny.CalendarObject.CalendarExport": {
         "body": [
-            "${1:my %Data = \$CalendarObject->CalendarExport(",
-            "    CalendarID => \$CalendarID,",
-            "    UserID     => \$UserID,",
+            "${1:my %Data = \\$CalendarObject->CalendarExport(",
+            "    CalendarID => \\$CalendarID,",
+            "    UserID     => \\$UserID,",
             "\\}}",
         ],
         "prefix": "znuny.CalendarObject.CalendarExport",

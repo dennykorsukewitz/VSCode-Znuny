@@ -1,9 +1,9 @@
 {
     "znuny.EncodeObject.Convert2CharsetInternal": {
         "body": [
-            "${1:my \$String = \$EncodeObject->Convert2CharsetInternal(",
-            "    Text => \$String,",
-            "    From => \$SourceCharset,",
+            "${1:my \\$String = \\$EncodeObject->Convert2CharsetInternal(",
+            "    Text => \\$String,",
+            "    From => \\$SourceCharset,",
             ");}",
         ],
         "prefix": "znuny.EncodeObject.Convert2CharsetInternal",

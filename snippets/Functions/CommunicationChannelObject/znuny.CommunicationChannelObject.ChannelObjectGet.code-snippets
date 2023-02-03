@@ -1,10 +1,10 @@
 {
     "znuny.CommunicationChannelObject.ChannelObjectGet": {
         "body": [
-            "${1:my \$Object = \$CommunicationChannelObject->ChannelObjectGet(",
-            "    ChannelID => \$ChannelID,             # ChannelName or ChannelID required",
+            "${1:my \\$Object = \\$CommunicationChannelObject->ChannelObjectGet(",
+            "    ChannelID => \\$ChannelID,             # ChannelName or ChannelID required",
             ");}",
-            "${2:my \$Object = \$CommunicationChannelObject->ChannelObjectGet(",
+            "${2:my \\$Object = \\$CommunicationChannelObject->ChannelObjectGet(",
             "    ChannelName => 'Email',     # ChannelName or ChannelID required",
             ");}",
         ],

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.WebserviceHistoryObject": {
         "body": [
-            "my \$WebserviceHistoryObject = \$Kernel::OM->Get('Kernel::System::GenericInterface::WebserviceHistory');",
+            "my \\$WebserviceHistoryObject = \\$Kernel::OM->Get('Kernel::System::GenericInterface::WebserviceHistory');",
         ],
         "prefix": "znuny.ObjectManager.WebserviceHistoryObject",
         "description": "6.0, 6.4, 6.5",

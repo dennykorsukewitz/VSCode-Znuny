@@ -1,8 +1,8 @@
 {
     "znuny.StdAttachmentObject.StdAttachmentDelete": {
         "body": [
-            "${1:\$StdAttachmentObject->StdAttachmentDelete(",
-            "    ID => \$ID,",
+            "${1:\\$StdAttachmentObject->StdAttachmentDelete(",
+            "    ID => \\$ID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentDelete",

@@ -1,16 +1,16 @@
 {
     "znuny.BackendObject.TemplateValueTypeGet": {
         "body": [
-            "${1:my \$ValueType = \$BackendObject->TemplateValueTypeGet(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,",
+            "${1:my \\$ValueType = \\$BackendObject->TemplateValueTypeGet(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,",
             "    FieldType => 'All',",
             ");}",
-            "${2:my \$ValueType = \$BackendObject->TemplateValueTypeGet(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,",
+            "${2:my \\$ValueType = \\$BackendObject->TemplateValueTypeGet(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,",
             "    FieldType => 'Search',",
             ");}",
-            "${3:my \$ValueType = \$BackendObject->TemplateValueTypeGet(",
-            "    DynamicFieldConfig => \$DynamicFieldConfig,       # complete config of the DynamicField",
+            "${3:my \\$ValueType = \\$BackendObject->TemplateValueTypeGet(",
+            "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
             "    FieldType => 'Edit',                             # or 'Search' or 'All'",
             ");}",
         ],

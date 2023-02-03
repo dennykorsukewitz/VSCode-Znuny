@@ -1,10 +1,10 @@
 {
     "znuny.TicketObject.TicketMergeLinkedObjects": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketMergeLinkedObjects(",
-            "    MainTicketID  => \$MainTicketID,",
-            "    MergeTicketID => \$MergeTicketID,",
-            "    UserID        => \$UserID,",
+            "${1:my \\$Success = \\$TicketObject->TicketMergeLinkedObjects(",
+            "    MainTicketID  => \\$MainTicketID,",
+            "    MergeTicketID => \\$MergeTicketID,",
+            "    UserID        => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketMergeLinkedObjects",

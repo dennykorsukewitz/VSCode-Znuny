@@ -1,7 +1,7 @@
 {
     "znuny.GroupObject.GroupGet": {
         "body": [
-            "${1:my %GroupData = \$GroupObject->GroupGet(",
+            "${1:my %GroupData = \\$GroupObject->GroupGet(",
             "    ID => 2,",
             ");}",
         ],

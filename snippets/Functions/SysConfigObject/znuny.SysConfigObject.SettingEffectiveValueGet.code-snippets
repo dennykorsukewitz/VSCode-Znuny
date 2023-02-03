@@ -1,7 +1,7 @@
 {
     "znuny.SysConfigObject.SettingEffectiveValueGet": {
         "body": [
-            "${1:my \$Result = \$SysConfigObject->SettingEffectiveValueGet(",
+            "${1:my \\$Result = \\$SysConfigObject->SettingEffectiveValueGet(",
             "    Translate => 1,                      # (optional) Translate translatable strings. Default 0.",
             "    Value  => [                          # (required) parsed XML structure",
             "        {",

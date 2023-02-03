@@ -1,16 +1,16 @@
 {
     "znuny.MainObject.Dump": {
         "body": [
-            "${1:my \$Dump = \$MainObject->Dump(",
-            "    \$SomeVariable,",
+            "${1:my \\$Dump = \\$MainObject->Dump(",
+            "    \\$SomeVariable,",
             "    'ascii', # ascii|binary - default is binary",
             ");}",
-            "${2:my \$Dump = \$MainObject->Dump(",
-            "    \$SomeVariable,",
+            "${2:my \\$Dump = \\$MainObject->Dump(",
+            "    \\$SomeVariable,",
             ");}",
-            "${3:my \$Dump = \$MainObject->Dump(",
+            "${3:my \\$Dump = \\$MainObject->Dump(",
             "    {",
-            "        Key1 => \$SomeVariable,",
+            "        Key1 => \\$SomeVariable,",
             "    \\},",
             ");}",
         ],

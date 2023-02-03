@@ -1,8 +1,8 @@
 {
     "znuny.QueueObject.QueueLookup": {
         "body": [
-            "${1:my \$Queue = \$QueueObject->QueueLookup( QueueID => \$QueueID );}",
-            "${2:my \$QueueID = \$QueueObject->QueueLookup( Queue => \$Queue );}",
+            "${1:my \\$Queue = \\$QueueObject->QueueLookup( QueueID => \\$QueueID );}",
+            "${2:my \\$QueueID = \\$QueueObject->QueueLookup( Queue => \\$Queue );}",
         ],
         "prefix": "znuny.QueueObject.QueueLookup",
         "description": "6.0, 6.4, 6.5",

@@ -1,13 +1,13 @@
 {
     "znuny.DynamicFieldValueObject.ValueValidate": {
         "body": [
-            "${1:my \$Success = \$DynamicFieldValueObject->ValueValidate(",
+            "${1:my \\$Success = \\$DynamicFieldValueObject->ValueValidate(",
             "    Value    =>  {",
             "            ValueText          => 'some text',            # optional, one of these fields must be provided",
             "            ValueDateTime      => '1977-12-12 12:00:00',  # optional",
             "            ValueInt           => 123,                    # optional",
             "        \\},",
-            "    UserID   => \$UserID,",
+            "    UserID   => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueValidate",

@@ -1,15 +1,15 @@
 {
     "znuny.UnitTestWebserviceObject.Process": {
         "body": [
-            "${1:my \$Response = \$UnitTestWebserviceObject->Process(",
-            "    UnitTestObject => \$Self,",
+            "${1:my \\$Response = \\$UnitTestWebserviceObject->Process(",
+            "    UnitTestObject => \\$Self,",
             "    Webservice     => 'Name123', # or",
-            "    WebserviceID   => \$WebserviceID,",
+            "    WebserviceID   => \\$WebserviceID,",
             "    Operation      => 'DesiredOperation',",
             "    Payload        => {",
             "        ...",
             "    \\},",
-            "    Response => {               # optional, you can validate the response manually in the unit test via \$Self->IsDeeply()",
+            "    Response => {               # optional, you can validate the response manually in the unit test via \\$Self->IsDeeply()",
             "        Success      => 1,",
             "        ErrorMessage => '',",
             "        Data         => {",

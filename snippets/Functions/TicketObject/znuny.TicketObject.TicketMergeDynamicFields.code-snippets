@@ -1,10 +1,10 @@
 {
     "znuny.TicketObject.TicketMergeDynamicFields": {
         "body": [
-            "${1:my \$Success = \$TicketObject->TicketMergeDynamicFields(",
-            "    MainTicketID  => \$MainTicketID,",
-            "    MergeTicketID => \$MergeTicketID,",
-            "    UserID        => \$UserID,",
+            "${1:my \\$Success = \\$TicketObject->TicketMergeDynamicFields(",
+            "    MainTicketID  => \\$MainTicketID,",
+            "    MergeTicketID => \\$MergeTicketID,",
+            "    UserID        => \\$UserID,",
             "    DynamicFields => ['DynamicField_TicketFreeText1'], # optional",
             ");}",
         ],

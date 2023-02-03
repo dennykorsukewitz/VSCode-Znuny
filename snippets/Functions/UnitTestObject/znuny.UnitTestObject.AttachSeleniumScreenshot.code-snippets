@@ -1,9 +1,9 @@
 {
     "znuny.UnitTestObject.AttachSeleniumScreenshot": {
         "body": [
-            "${1:\$Self->AttachSeleniumScreenshot(",
-            "    Filename => \$Filename,",
-            "    Content  => \$Data               # raw image data",
+            "${1:\\$Self->AttachSeleniumScreenshot(",
+            "    Filename => \\$Filename,",
+            "    Content  => \\$Data               # raw image data",
             ");}",
         ],
         "prefix": "znuny.UnitTestObject.AttachSeleniumScreenshot",

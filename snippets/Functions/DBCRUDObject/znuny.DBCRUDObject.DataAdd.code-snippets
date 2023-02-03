@@ -1,7 +1,7 @@
 {
     "znuny.DBCRUDObject.DataAdd": {
         "body": [
-            "${1:my \$Success = \$DBCRUDObject->DataAdd(",
+            "${1:my \\$Success = \\$DBCRUDObject->DataAdd(",
             "    ID          => '...',",
             "    '...',",
             "    CreateTime  => '...', # optional",

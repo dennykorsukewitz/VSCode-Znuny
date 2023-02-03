@@ -1,9 +1,9 @@
 {
     "znuny.OAuth2TokenObject.HasRefreshTokenExpired": {
         "body": [
-            "${1:my \$HasExpired = \$OAuth2TokenObject->HasRefreshTokenExpired(",
-            "    TokenConfigID => \$TokenConfigID,",
-            "    UserID        => \$UserID,",
+            "${1:my \\$HasExpired = \\$OAuth2TokenObject->HasRefreshTokenExpired(",
+            "    TokenConfigID => \\$TokenConfigID,",
+            "    UserID        => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.HasRefreshTokenExpired",

@@ -1,7 +1,7 @@
 {
     "znuny.ObjectManager.SalutationObject": {
         "body": [
-            "my \$SalutationObject = \$Kernel::OM->Get('Kernel::System::Salutation');",
+            "my \\$SalutationObject = \\$Kernel::OM->Get('Kernel::System::Salutation');",
         ],
         "prefix": "znuny.ObjectManager.SalutationObject",
         "description": "6.0, 6.4, 6.5",

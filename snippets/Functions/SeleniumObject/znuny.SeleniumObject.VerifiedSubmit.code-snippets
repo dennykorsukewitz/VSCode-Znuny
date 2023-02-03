@@ -1,7 +1,7 @@
 {
     "znuny.SeleniumObject.VerifiedSubmit": {
         "body": [
-            "${1:\$SeleniumObject->VerifiedSubmit();}",
+            "${1:\\$SeleniumObject->VerifiedSubmit();}",
         ],
         "prefix": "znuny.SeleniumObject.VerifiedSubmit",
         "description": "6.0, 6.4, 6.5",

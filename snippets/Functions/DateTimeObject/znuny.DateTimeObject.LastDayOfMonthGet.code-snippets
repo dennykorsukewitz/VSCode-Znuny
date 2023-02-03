@@ -1,7 +1,7 @@
 {
     "znuny.DateTimeObject.LastDayOfMonthGet": {
         "body": [
-            "${1:\$LastDayOfMonth = \$DateTimeObject->LastDayOfMonthGet();}",
+            "${1:\\$LastDayOfMonth = \\$DateTimeObject->LastDayOfMonthGet();}",
         ],
         "prefix": "znuny.DateTimeObject.LastDayOfMonthGet",
         "description": "6.0, 6.4, 6.5",

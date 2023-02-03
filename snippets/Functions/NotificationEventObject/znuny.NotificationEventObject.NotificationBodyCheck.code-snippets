@@ -1,9 +1,9 @@
 {
     "znuny.NotificationEventObject.NotificationBodyCheck": {
         "body": [
-            "${1:my \$Ok = \$NotificationEventObject->NotificationBodyCheck(",
-            "    Content => \$BodyContent, # mandatory",
-            "    UserID  => \$UserID,            # mandatory",
+            "${1:my \\$Ok = \\$NotificationEventObject->NotificationBodyCheck(",
+            "    Content => \\$BodyContent, # mandatory",
+            "    UserID  => \\$UserID,            # mandatory",
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationBodyCheck",

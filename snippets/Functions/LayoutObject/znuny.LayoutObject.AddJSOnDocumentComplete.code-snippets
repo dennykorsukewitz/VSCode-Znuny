@@ -1,8 +1,8 @@
 {
     "znuny.LayoutObject.AddJSOnDocumentComplete": {
         "body": [
-            "${1:\$LayoutObject->AddJSOnDocumentComplete(",
-            "    Code => \$MyCode,",
+            "${1:\\$LayoutObject->AddJSOnDocumentComplete(",
+            "    Code => \\$MyCode,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.AddJSOnDocumentComplete",

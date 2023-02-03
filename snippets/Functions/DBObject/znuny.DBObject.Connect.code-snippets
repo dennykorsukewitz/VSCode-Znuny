@@ -1,7 +1,7 @@
 {
     "znuny.DBObject.Connect": {
         "body": [
-            "${1:\$DBObject->Connect();}",
+            "${1:\\$DBObject->Connect();}",
         ],
         "prefix": "znuny.DBObject.Connect",
         "description": "6.0, 6.4, 6.5",

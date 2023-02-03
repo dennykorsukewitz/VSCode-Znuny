@@ -1,7 +1,7 @@
 {
     "znuny.SalutationObject.SalutationGet": {
         "body": [
-            "${1:my %Salutation = \$SalutationObject->SalutationGet(",
+            "${1:my %Salutation = \\$SalutationObject->SalutationGet(",
             "    ID => 123,",
             ");}",
         ],

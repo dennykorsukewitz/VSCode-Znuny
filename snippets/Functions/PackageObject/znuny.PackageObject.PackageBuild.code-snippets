@@ -1,7 +1,7 @@
 {
     "znuny.PackageObject.PackageBuild": {
         "body": [
-            "${1:my \$Package = \$PackageObject->PackageBuild(",
+            "${1:my \\$Package = \\$PackageObject->PackageBuild(",
             "    Name => {",
             "        Content => 'SomePackageName',",
             "    \\},",
@@ -31,12 +31,12 @@
             "        {",
             "            Location   => 'Kernel/System/Lala.pm'",
             "            Permission => '644',",
-            "            Content    => \$FileInString,",
+            "            Content    => \\$FileInString,",
             "        \\},",
             "        {",
             "            Location   => 'Kernel/System/Lulu.pm'",
             "            Permission => '644',",
-            "            Content    => \$FileInString,",
+            "            Content    => \\$FileInString,",
             "        \\},",
             "    ],",
             ");}",

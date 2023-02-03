@@ -1,7 +1,7 @@
 {
     "znuny.LoaderObject.IsCSSMinifierXSAvailable": {
         "body": [
-            "${1:my \$IsCSSMinifierXSAvailable = \$LoaderObject->IsCSSMinifierXSAvailable();}",
+            "${1:my \\$IsCSSMinifierXSAvailable = \\$LoaderObject->IsCSSMinifierXSAvailable();}",
         ],
         "prefix": "znuny.LoaderObject.IsCSSMinifierXSAvailable",
         "description": "6.4, 6.5",
