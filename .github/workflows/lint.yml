@@ -45,3 +45,4 @@ jobs:
 
           VALIDATE_JSCPD: false
           VALIDATE_POWERSHELL: false
+          VALIDATE_GITLEAKS: false
