@@ -1,13 +1,13 @@
-# DK4Znuny-VisualStudioCode
+# Znuny (DK4Znuny-VisualStudioCode)
 
-DK4Znuny-VisualStudioCode is an extension that helps you to make Znuny development less painful.
+Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development less painful.
 
-| GitHub | Repository |
-| ------ | ------ |
-| ![GitHub open issues](https://img.shields.io/github/issues/dennykorsukewitz/DK4Znuny-VisualStudioCode) | ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dennykorsukewitz/DK4Znuny-VisualStudioCode) |
-| ![GitHub closed issues](https://img.shields.io/github/issues-closed/dennykorsukewitz/DK4Znuny-VisualStudioCode?color=#44CC44) | ![GitHub license](https://img.shields.io/github/license/dennykorsukewitz/DK4Znuny-VisualStudioCode) |
-| ![GitHub contributors](https://img.shields.io/github/contributors/dennykorsukewitz/DK4Znuny-VisualStudioCode) | ![GitHub language count](https://img.shields.io/github/languages/count/dennykorsukewitz/DK4Znuny-VisualStudioCode?style=flat&label=language)  |
-| ![GitHub all releases](https://img.shields.io/github/downloads/dennykorsukewitz/DK4Znuny-VisualStudioCode/total?style=flat) | ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dennykorsukewitz/DK4Znuny-VisualStudioCode)  |
+| Repository | GitHub | Visual Studio Marketplace |
+| ------ | ------ | ------ |
+| ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dennykorsukewitz/DK4Znuny-VisualStudioCode) | ![GitHub open issues](https://img.shields.io/github/issues/dennykorsukewitz/DK4Znuny-VisualStudioCode) | ![Visual Studio Marketplace Version ](https://img.shields.io/visual-studio-marketplace/v/dennykorsukewitz.dk4znuny-visualstudiocode) ![Visual Studio Marketplace last-updated](https://img.shields.io/visual-studio-marketplace/last-updated/dennykorsukewitz.dk4znuny-visualstudiocode)  |
+| ![GitHub license](https://img.shields.io/github/license/dennykorsukewitz/DK4Znuny-VisualStudioCode) | ![GitHub closed issues](https://img.shields.io/github/issues-closed/dennykorsukewitz/DK4Znuny-VisualStudioCode?color=#44CC44) | ![Visual Studio Marketplace Rating release-date](https://img.shields.io/visual-studio-marketplace/release-date/dennykorsukewitz.dk4znuny-visualstudiocode) |
+| ![GitHub language count](https://img.shields.io/github/languages/count/dennykorsukewitz/DK4Znuny-VisualStudioCode?style=flat&label=language)  | ![GitHub contributors](https://img.shields.io/github/contributors/dennykorsukewitz/DK4Znuny-VisualStudioCode) | ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/dennykorsukewitz.dk4znuny-visualstudiocode) ![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/dennykorsukewitz.dk4znuny-visualstudiocode) |
+| ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dennykorsukewitz/DK4Znuny-VisualStudioCode)  | ![GitHub downloads](https://img.shields.io/github/downloads/dennykorsukewitz/DK4Znuny-VisualStudioCode/total?style=flat) | ![VSC marketplace download](https://img.shields.io/visual-studio-marketplace/d/dennykorsukewitz.dk4znuny-visualstudiocode) ![VSC marketplace install](https://img.shields.io/visual-studio-marketplace/i/dennykorsukewitz.dk4znuny-visualstudiocode) |
 
 | Versions | Status |
 | ------ | ------ |
@@ -43,12 +43,23 @@ Statically created snippets.
 
 Snippets created generically using the existing perl POD.
 
-- Functions
-  - Kernel/System/**
-- Modules
-  - Kernel/Modules/**
-- ObjectManager
-  - Kernel/System/**
+- **Functions**/*
+  - **ConfigObject**/*
+    - ``$ConfigObject->Get()``
+    - ``$ConfigObject->Set()``
+  - **TicketObject**/*
+    - ``$TicketObject->TicketGet()``
+    - ``$TicketObject->TicketSearch()``
+    - ...
+  - ...
+- **Modules**/*
+  - AgentTicketZoom
+  - CustomerTicketOverview
+  - ...
+- **ObjectManager**/*
+  - ConfigObject ``my $ConfigObject = $Kernel::OM->Get('Kernel::Config');``
+  - TicketObject ``my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');``
+  - ...
 
 ## Installation
 
