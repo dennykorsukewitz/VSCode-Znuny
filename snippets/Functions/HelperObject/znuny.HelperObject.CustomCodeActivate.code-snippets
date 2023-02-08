@@ -13,7 +13,7 @@
             "sub Request {",
             "    my \\$JSONString = '{\\"Results\\":{\\},\\"ErrorMessage\\":\\"\\",\\"Success\\":1\\}';",
             "    return (",
-            "        Content => \\\$JSONString,",
+            "        Content => \\\\\\$JSONString,",
             "        Status  => '200 OK',",
             "    );",
             "\\}",

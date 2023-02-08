@@ -43,7 +43,7 @@
             "        \\},",
             "        InvolvedAgents => {",
             "            Name   => 'Involved in this ticket',",
-            "            Values => \%HashWithData,",
+            "            Values => \\%HashWithData,",
             "        \\},",
             "    \\},",
             "    ExpandFilters  => 1,                 # (optional) default 0 (0|1) expand filters list by default",

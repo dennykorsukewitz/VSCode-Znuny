@@ -508,6 +508,7 @@
          "6.5"
       ],
       "_LastViewParameters" : [
+         "6.4",
          "6.5"
       ],
       "_LinkObjectContentStringCreate" : [
@@ -760,6 +761,7 @@
          "6.5"
       ],
       "_ServiceGetCurrentIncidentState" : [
+         "6.4",
          "6.5"
       ],
       "_SetArticleTransmissionError" : [

@@ -2,7 +2,7 @@
     "znuny.VirtualFSObject.Write": {
         "body": [
             "${1:my \\$Success = \\$VirtualFSObject->Write(",
-            "    Content  => \\\$Content,",
+            "    Content  => \\\\\\$Content,",
             "    Filename => '/Object/SomeFileName.txt',",
             "    Mode     => 'binary'            # (binary|utf8)",
             "",

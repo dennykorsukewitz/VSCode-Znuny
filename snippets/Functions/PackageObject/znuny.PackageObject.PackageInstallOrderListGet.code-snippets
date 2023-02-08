@@ -2,12 +2,12 @@
     "znuny.PackageObject.PackageInstallOrderListGet": {
         "body": [
             "${1:my %Result = \\$PackageObject->PackageInstallOrderListGet(",
-            "    InstalledPackages => \@PackageList,      # as returned from RepositoryList(Result => 'short')",
-            "    OnlinePackages    => \@PackageList,      # as returned from PackageOnlineList()",
+            "    InstalledPackages => \\@PackageList,      # as returned from RepositoryList(Result => 'short')",
+            "    OnlinePackages    => \\@PackageList,      # as returned from PackageOnlineList()",
             ");}",
             "${2:my %Result = \\$PackageObject->PackageInstallOrderListGet(",
-            "    InstalledPackages => \@PakageList,      # as returned from RepositoryList(Result => 'short')",
-            "    OnlinePackages    => \@PakageList,      # as returned from PackageOnlineList()",
+            "    InstalledPackages => \\@PakageList,      # as returned from RepositoryList(Result => 'short')",
+            "    OnlinePackages    => \\@PakageList,      # as returned from PackageOnlineList()",
             ");}",
         ],
         "prefix": "znuny.PackageObject.PackageInstallOrderListGet",

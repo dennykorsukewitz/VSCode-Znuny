@@ -14,7 +14,7 @@
             "    ReplacementStr => 'string',          # optional, string to show instead of applet, object, embed, svg and img tags",
             ");}",
             "${2:my %Safe = \\$HTMLUtilsObject->Safety(",
-            "    String       => \\\$HTMLStringRef,",
+            "    String       => \\\\\\$HTMLStringRef,",
             "    NoApplet     => 1,",
             "    NoObject     => 1,",
             "    NoEmbed      => 1,",

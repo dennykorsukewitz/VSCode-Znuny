@@ -3,7 +3,7 @@
         "body": [
             "${1:my \\$StatArray = \\$StatsObject->StatsRun(",
             "    StatID     => \\$StatID,",
-            "    GetParam   => \%GetParam,",
+            "    GetParam   => \\%GetParam,",
             "    Preview    => 1,        # optional, return fake data for preview (only for dynamic stats)",
             "    UserID     => \\$UserID,",
             ");}",

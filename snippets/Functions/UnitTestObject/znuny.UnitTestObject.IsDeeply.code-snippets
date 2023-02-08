@@ -2,14 +2,14 @@
     "znuny.UnitTestObject.IsDeeply": {
         "body": [
             "${1:\\$Self->IsDeeply(",
-            "    \%ResultHash,           # test data",
-            "    \%ExpectedHash,         # expected value",
+            "    \\%ResultHash,           # test data",
+            "    \\%ExpectedHash,         # expected value",
             "    'Dummy Test Name',",
             ");}",
             "${2:\\$Self->IsDeeply(\\$ParamA, \\$ParamB, 'Test Name');}",
             "${3:my \\$IsDeeplyResult = \\$Self->IsDeeply(",
-            "    \%ResultHash,           # test data",
-            "    \%ExpectedHash,         # expected value",
+            "    \\%ResultHash,           # test data",
+            "    \\%ExpectedHash,         # expected value",
             "    'Dummy Test Name',",
             ");}",
         ],

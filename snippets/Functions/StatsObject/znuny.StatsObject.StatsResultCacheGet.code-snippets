@@ -4,7 +4,7 @@
             "${1:my \\$StatArray = \\$StatsObject->StatsResultCacheGet(",
             "    StatID       => \\$StatID,",
             "    UserID       => \\$UserID,    # target UserID",
-            "    UserGetParam => \%GetParam,",
+            "    UserGetParam => \\%GetParam,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsResultCacheGet",

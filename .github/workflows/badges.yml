@@ -1,0 +1,65 @@
+---
+name: Badges
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  Badges:
+    name: Badges
+    runs-on: ubuntu-22.04 # ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        env:
+          fetch-depth: "1"
+        with:
+          path: repository
+
+      - name: Get Badge Data
+        run: |
+          SNIPPETS_TOTAL=$(find repository/snippets/ -type f | wc -l)
+          SNIPPETS_FUNCTIONS=$(find repository/snippets/Functions -type f | wc -l)
+          SNIPPETS_OBJECTMANAGER=$(find repository/snippets/ObjectManager -type f | wc -l)
+          SNIPPETS_MODULES=$(find repository/snippets/Modules -type f | wc -l)
+          SNIPPETS_GENERATED=$((SNIPPETS_FUNCTIONS + SNIPPETS_OBJECTMANAGER + SNIPPETS_MODULES))
+          SNIPPETS_STATIC=$((SNIPPETS_TOTAL - SNIPPETS_GENERATED))
+          {
+            echo "SNIPPETS_TOTAL=$SNIPPETS_TOTAL"
+            echo "SNIPPETS_GENERATED=$SNIPPETS_GENERATED"
+            echo "SNIPPETS_STATIC=$SNIPPETS_STATIC"
+          } >> "$GITHUB_ENV"
+
+      - name: Create Total Snippet Counter Badge
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST }}
+          gistID: e2729bfd9b81d9c032ded617a3f924e7
+          filename: ${{ github.event.repository.name }}:snippets-total.json
+          label: Snippets Total
+          message: ${{ env.SNIPPETS_TOTAL }}
+          color: blue
+
+      - name: Create Generated Snippet Counter Badge
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST }}
+          gistID: e2729bfd9b81d9c032ded617a3f924e7
+          filename: ${{ github.event.repository.name }}:snippets-generated.json
+          label: Snippets Generated
+          message: ${{ env.SNIPPETS_GENERATED }}
+          color: blue
+
+      - name: Create Static Snippet Counter Badge
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST }}
+          gistID: e2729bfd9b81d9c032ded617a3f924e7
+          filename: ${{ github.event.repository.name }}:snippets-static.json
+          label: Snippets Static
+          message: ${{ env.SNIPPETS_STATIC }}
+          color: blue

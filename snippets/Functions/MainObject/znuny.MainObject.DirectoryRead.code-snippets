@@ -21,7 +21,7 @@
             ");}",
             "${5:my @FilesInDirectory = \\$MainObject->DirectoryRead(",
             "    Directory => '/tmp',",
-            "    Filter    => \@MyFilters,",
+            "    Filter    => \\@MyFilters,",
             ");}",
         ],
         "prefix": "znuny.MainObject.DirectoryRead",

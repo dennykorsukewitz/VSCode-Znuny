@@ -9,7 +9,7 @@
             "    Filename => '/path/to/me_to_alal.xml',",
             ");}",
             "${3:my \\$MD5Sum = \\$MainObject->MD5sum(",
-            "    String => \\\$SomeString,",
+            "    String => \\\\\\$SomeString,",
             ");}",
         ],
         "prefix": "znuny.MainObject.MD5sum",

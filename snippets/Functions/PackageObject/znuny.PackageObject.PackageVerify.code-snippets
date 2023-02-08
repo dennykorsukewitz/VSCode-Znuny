@@ -3,7 +3,7 @@
         "body": [
             "${1:\\$PackageObject->PackageVerify(",
             "    Package   => \\$Package,",
-            "    Structure => \%Structure,",
+            "    Structure => \\%Structure,",
             ");}",
             "${2:\\$PackageObject->PackageVerify(",
             "    Package => \\$Package,",

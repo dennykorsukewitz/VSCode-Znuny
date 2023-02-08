@@ -12,7 +12,7 @@
             "    LinkFeature     => 0,        # do some URL detections",
             ");}",
             "${2:my \\$HTMLStringRef = \\$LayoutObject->Ascii2Html(",
-            "    Text => \\\$String,",
+            "    Text => \\\\\\$String,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Ascii2Html",

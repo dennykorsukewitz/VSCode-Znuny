@@ -2,20 +2,11 @@
     "znuny.PackageObject.GetRequiredPackages": {
         "body": [
             "${1:my \\$PackageRequired = \\$PackageObject->GetRequiredPackages(",
-            "    Structure => \%Structure,                       # return of PackageParse function",
-            ");}",
-            "${2:my \\$PackageRequired = \\$PackageObject->GetRequiredPackages(",
-            "    Structure => \%Structure,       # return of C<PackageParse()>",
-            ");}",
-            "${3:my \\$PackageRequired = \\$PackageObject->GetRequiredPackages(",
-            "    Structure => \%Structure,       # return of PackageParse function",
-            ");}",
-            "${4:my \\$PackageRequired = \\$PackageObject->GetRequiredPackages(",
-            "    Structure => \%Structure,       # return of PackageParse()",
+            "    Structure => \\%Structure,       # return of PackageParse()",
             ");}",
         ],
         "prefix": "znuny.PackageObject.GetRequiredPackages",
-        "description": "6.5",
+        "description": "6.4, 6.5",
         "scope": "perl"
     }
 }

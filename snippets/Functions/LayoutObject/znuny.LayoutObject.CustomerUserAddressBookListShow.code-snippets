@@ -6,7 +6,7 @@
             "    Total           => scalar @{ \\$CustomerUserIDsRef \\},          # total number of customer user ids",
             "    View            => \\$Self->{View\\},                            # optional, the default value is 'AddressBook'",
             "    Filter          => 'All',",
-            "    Filters         => \%NavBarFilter,",
+            "    Filters         => \\%NavBarFilter,",
             "    LinkFilter      => \\$LinkFilter,",
             "    TitleName       => 'Overview: CustomerUsers',",
             "    TitleValue      => \\$Self->{Filter\\},",

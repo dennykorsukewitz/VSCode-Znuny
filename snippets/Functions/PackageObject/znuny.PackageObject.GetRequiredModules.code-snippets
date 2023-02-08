@@ -1,0 +1,12 @@
+{
+    "znuny.PackageObject.GetRequiredModules": {
+        "body": [
+            "${1:my \\$ModuleRequired = \\$PackageObject->GetRequiredModules(",
+            "    Structure => \\%Structure,                       # return of PackageParse function",
+            ");}",
+        ],
+        "prefix": "znuny.PackageObject.GetRequiredModules",
+        "description": "6.5",
+        "scope": "perl"
+    }
+}

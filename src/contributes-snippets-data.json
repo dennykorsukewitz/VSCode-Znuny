@@ -2835,6 +2835,10 @@
          },
          {
             "language" : "perl",
+            "path" : "./snippets/Functions/PackageObject/znuny.PackageObject.GetRequiredModules.code-snippets"
+         },
+         {
+            "language" : "perl",
             "path" : "./snippets/Functions/PackageObject/znuny.PackageObject.GetRequiredPackages.code-snippets"
          },
          {

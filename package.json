@@ -2,7 +2,7 @@
   "name": "dk4znuny-visualstudiocode",
   "displayName": "Znuny",
   "description": "Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development less painful.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -20,7 +20,7 @@
     "url": "https://github.com/sponsors/dennykorsukewitz"
   },
   "keywords": [
-    "OTRS", "Znuny", "Snippets"
+    "OTRS", "Znuny", "Snippets", "Perl"
   ],
   "categories": [
     "Snippets"
@@ -30,7 +30,9 @@
   },
   "contributes": {
     "snippets": [
-
+      {
+        "path": "./snippets/_Test_/znuny.Test.Snippets.code-snippets"
+      },
 
       {
         "language": "xml",

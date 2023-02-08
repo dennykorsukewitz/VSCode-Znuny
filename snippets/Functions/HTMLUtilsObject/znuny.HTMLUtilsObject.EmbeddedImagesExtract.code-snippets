@@ -2,8 +2,8 @@
     "znuny.HTMLUtilsObject.EmbeddedImagesExtract": {
         "body": [
             "${1:\\$HTMLUtilsObject->EmbeddedImagesExtract(",
-            "    DocumentRef    => \\\$Body,",
-            "    AttachmentsRef => \@Attachments,",
+            "    DocumentRef    => \\\\\\$Body,",
+            "    AttachmentsRef => \\@Attachments,",
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.EmbeddedImagesExtract",

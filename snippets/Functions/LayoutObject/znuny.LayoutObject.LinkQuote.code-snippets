@@ -5,7 +5,7 @@
             "    Text => \\$HTMLWithOutLinks,",
             ");}",
             "${2:my \\$HTMLWithLinksRef = \\$LayoutObject->LinkQuote(",
-            "    Text => \\\$HTMLWithOutLinksRef,",
+            "    Text => \\\\\\$HTMLWithOutLinksRef,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.LinkQuote",

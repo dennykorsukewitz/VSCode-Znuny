@@ -4,7 +4,7 @@
             "${1:\\$XMLObject->XMLHashUpdate(",
             "    Type    => 'SomeType',",
             "    Key     => '123',",
-            "    XMLHash => \@XMLHash,",
+            "    XMLHash => \\@XMLHash,",
             ");}",
         ],
         "prefix": "znuny.XMLObject.XMLHashUpdate",

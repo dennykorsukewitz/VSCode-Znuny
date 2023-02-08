@@ -3,7 +3,7 @@
         "body": [
             "${1:\\$StatsObject->StatsUpdate(",
             "    StatID => \\$StatID,",
-            "    Hash   => \%Hash,",
+            "    Hash   => \\%Hash,",
             "    UserID => \\$UserID,",
             ");}",
         ],

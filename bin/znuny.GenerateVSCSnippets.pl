@@ -943,14 +943,32 @@ Returns:
 sub _PrepareContent {
     my ( $Content ) = @_;
 
-    # $      => \\$ (in json) => \$ (in VSC)
+    # $      => \\$     (in code-snippets json) => \$ (in VSC)
     $Content =~ s{\$}{\\\\\$}g;
 
-    # }      => \\} (in json) => \} (in VSC)
-    $Content =~ s{\}}{\\\\\}}g;
+    # \\\$   => \\\\$   (in code-snippets json) => \\$ (in VSC)
+    $Content =~ s{ \\\\\\\$}{ \\\\\\\\\\\\\$}g;
 
-    # "      => \\" (in json) => \" (in VSC)
+    # \@     => \\@     (in code-snippets json) => \@ (in VSC)
+    $Content =~ s{\\@}{\\\\\@}g;
+
+    # \%     => \\%     (in code-snippets json) => \% (in VSC)
+    $Content =~ s{\\%}{\\\\\%}g;
+
+    # \&     => \\&     (in code-snippets json) => \& (in VSC)
+    $Content =~ s{\\&}{\\\\\&}g;
+
+    # \*     => \\*     (in code-snippets json) => \* (in VSC)
+    $Content =~ s{\\\*}{\\\\\*}g;
+
+    # \:     => \\:     (in code-snippets json) => \* (in VSC)
+    $Content =~ s{\\\:}{\\\\\:}g;
+
+    # "      => \\"     (in code-snippets json) => \" (in VSC)
     $Content =~ s{\"}{\\\\\"}g;
+
+    # }      => \\}     (in code-snippets json) => \} (in VSC)
+    $Content =~ s{\}}{\\\\\}}g;
 
     # remove all \n and \z
     $Content =~ s{\n+\z}{}g;

@@ -5,7 +5,7 @@
             "    String => \\$HTMLString,",
             ");}",
             "${2:my \\$HTMLWithLinksRef = \\$LayoutObject->HTMLLinkQuote(",
-            "    String => \\\$HTMLString,",
+            "    String => \\\\\\$HTMLString,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.HTMLLinkQuote",

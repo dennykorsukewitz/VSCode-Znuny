@@ -4,7 +4,7 @@
             "${1:\\$DBObject->Prepare(",
             "    SQL    => \\"SELECT id, name, content FROM table WHERE name_a = ? AND name_b = ?\\",",
             "    Encode => [ 1, 1, 0 ],",
-            "    Bind   => [ \\\$Var1, \\\$Var2 ],",
+            "    Bind   => [ \\\\\\$Var1, \\\\\\$Var2 ],",
             ");}",
             "${2:\\$DBObject->Prepare(",
             "    SQL    => \\"SELECT id, name, content FROM table\\",",

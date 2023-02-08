@@ -2,8 +2,8 @@
     "znuny.TicketToUnitTestObject.GetTicketAttributes": {
         "body": [
             "${1:my %TicketAttributes = \\$TicketToUnitTestObject->GetTicketAttributes(",
-            "    TicketAttributes => \%TicketAttributes,",
-            "    HistoryTicket    => \%HistoryTicket,",
+            "    TicketAttributes => \\%TicketAttributes,",
+            "    HistoryTicket    => \\%HistoryTicket,",
             ");}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetTicketAttributes",

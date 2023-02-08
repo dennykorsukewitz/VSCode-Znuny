@@ -2,6 +2,16 @@
 
 All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be documented in this file.
 
+## [1.0.2]
+
+- Snippets
+  - Escaped '\$' to use scalarref (scalar reference)
+  - Escaped '\@' to use arrayref (array reference)
+  - Escaped '\%' to use hashref (hash reference)
+  - Escaped '\&' to use coderef (code reference)
+  - Escaped '\*' to use globref (glob reference)
+  - Applied new escaped strings to snippets
+
 ## [1.0.1]
 
 - Snippets
