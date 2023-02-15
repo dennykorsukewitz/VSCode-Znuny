@@ -2,47 +2,11 @@
 name: Lint
 on:
   push:
+    branches: ["dev", "dev-update"]
+    # branches: ["NEVER"]
   pull_request:
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
   Lint:
-    name: Lint Code Base
-    runs-on: ubuntu-22.04 # ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-        env:
-          fetch-depth: "1"
-        with:
-          path: repository
-
-      - name: Check out DK4
-        uses: actions/checkout@v3
-        env:
-          fetch-depth: "1"
-        with:
-          repository: dennykorsukewitz/DK4
-          ref: 'dev' # dev-update
-          path: DK4
-
-      - name: Prepare linters config
-        run: cp -R "${GITHUB_WORKSPACE}"/DK4/.github/linters "${GITHUB_WORKSPACE}"/repository/.github/
-
-      - name: Branch Name
-        run: echo running on branch "${GITHUB_REF##*/}"
-
-      - name: Show linters config
-        run: ls -alih "${GITHUB_WORKSPACE}/repository/.github/linters"
-
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          DEFAULT_BRANCH: "${GITHUB_REF##*/}"
-          GITHUB_TOKEN: "${secrets.GITHUB_TOKEN}"
-          LINTER_RULES_PATH: "./repository/.github/linters"
-          USE_FIND_ALGORITHM: true
-          FILTER_REGEX_EXCLUDE: "(.*.scss)"
-
-          VALIDATE_JSCPD: false
-          VALIDATE_POWERSHELL: false
-          VALIDATE_GITLEAKS: false
+    uses: dennykorsukewitz/DK4/.github/workflows/reusable.lint.yml@dev

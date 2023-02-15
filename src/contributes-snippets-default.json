@@ -1,0 +1,368 @@
+[
+  {
+    "path": "./snippets/_Test_/znuny.Test.Snippets.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.xml.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.pm.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.js.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/ConfigXML/znuny.Config.Array.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/ConfigXML/znuny.Config.Hash.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/ConfigXML/znuny.Config.Select.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/ConfigXML/znuny.Config.String.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/ConfigXML/znuny.Config.Textarea.code-snippets"
+  },
+  {
+    "language": "css",
+    "path": "./snippets/Customizing/znuny.Codemarker.css.code-snippets"
+  },
+  {
+    "language": "javascript",
+    "path": "./snippets/Customizing/znuny.Codemarker.js.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Customizing/znuny.Codemarker.pm.code-snippets"
+  },
+  {
+    "language": "javascript",
+    "path": "./snippets/Customizing/znuny.Origin.js.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Customizing/znuny.Origin.pm.code-snippets"
+  },
+  {
+    "language": "javascript",
+    "path": "./snippets/Debugging/console.log.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.Dumper.Log.ObjectManager.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.Dumper.Log.Self.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.ERLOG.Dumper.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.ERLOG.String.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.ERLOG.traceback.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.STDERR.Dumper.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.STDERR.HERE.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Debugging/znuny.STDERR.String.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.Checkbox.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.Date.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.DateTime.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.Dropdown.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.Multiselect.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.Text.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.TextArea.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceDropdown.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceMultiselect.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceText.code-snippets"
+  },
+  {
+    "language": "yaml",
+    "path": "./snippets/GitLab/znuny.GitLab.Default-DB.code-snippets"
+  },
+  {
+    "language": "yaml",
+    "path": "./snippets/GitLab/znuny.GitLab.Default.code-snippets"
+  },
+  {
+    "language": "yaml",
+    "path": "./snippets/GitLab/znuny.GitLab.Deploy.code-snippets"
+  },
+  {
+    "language": "yaml",
+    "path": "./snippets/GitLab/znuny.GitLab.Generic.code-snippets"
+  },
+  {
+    "language": "yaml",
+    "path": "./snippets/GitLab/znuny.GitLab.Oracle.code-snippets"
+  },
+  {
+    "language": "yaml",
+    "path": "./snippets/GitLab/znuny.GitLab.PostgreSQL.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Language/znuny.Language.Doubleqoute.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Language/znuny.Language.Singleqoute.code-snippets"
+  },
+  {
+    "path": "./snippets/Licensing/znuny.AGPL.code-snippets"
+  },
+  {
+    "language": "javascript",
+    "path": "./snippets/Licensing/znuny.AGPL.js.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Needed/znuny.Needed.ObjectManager.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Needed/znuny.Needed.Self.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Needed/znuny.Needed.Subelement.ObjectManager.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Needed/znuny.Needed.Subelement.Self.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/elsif.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/array.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/array.deref.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/array.ref.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/else.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/for.array.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/for.hash.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/grep.array.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/grep.hash.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/hash.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/hash.deref.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/hash.ref.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/if.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/map.array.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/map.hash.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/next.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/return.if.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/scalar.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/sub.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Perl/use_base.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/POD/znuny.POD.AGPL.footer.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/POD/znuny.POD.header.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.clear.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.click.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.execute_script.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.find_element.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.get_page_source.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.get_value.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.is_displayed.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.is_enabled.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.is_selected.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.send_keys.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Selenium/znuny.Selenium.submit.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/DataIsDifferent.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsArrayRefWithData.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsHashRefWithData.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsInteger.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsIPv4Address.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsIPv6Address.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsMD5Sum.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsNumber.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsPositiveInteger.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsString.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/IsStringWithData.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/VariableCheck/znuny.use.VariableCheck.code-snippets"
+  }
+]

@@ -1,0 +1,38 @@
+---
+name: UnitTest
+
+# Controls when the action will run.
+on:
+  push:
+    # branches: ["dev", "dev-update"]
+    branches: ["NEVER"]
+  # pull_request:
+  # workflow_dispatch:
+
+jobs:
+  UnitTest:
+    strategy:
+      matrix:
+        os: [ubuntu-22.04]
+        # os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16.x
+    - run: npm install
+
+    # - if: runner.os == 'MacOS'
+    #   run: |
+    #     npm i gulp gulp-cli -g
+    #     gulp
+
+    # - if: runner.os == 'Linux'
+    #   run: xvfb-run -a npm test
+
+    # - if: runner.os != 'Linux'
+    - run: npm run test
+

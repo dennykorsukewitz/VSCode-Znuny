@@ -4,9 +4,8 @@ name: Badges
 on:
   # Runs on pushes targeting the default branch
   push:
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches: ["dev", "dev-update"]
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
   Badges:

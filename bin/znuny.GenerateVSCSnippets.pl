@@ -58,7 +58,7 @@ $PackageDir =~ s{/bin}{}xms;
 
 $Version = ValidateVersion($Version);
 
-my ( $DryRun, $GetOptVersion, $Help, @ContributesSnippetsData, $ContributesSnippetsDataFile, %RawData, $RawDataFile, %SkippedRawData, $SkippedRawDataFile);
+my ( $DryRun, $GetOptVersion, $Help, @ContributesSnippetsData, @ContributesSnippetsDefaultFile, $ContributesSnippetsDataFile, $ContributesSnippetsDefaultFile, %RawData, $RawDataFile, %SkippedRawData, $SkippedRawDataFile);
 
 my @Modules = (
     'AgentTicket', 'CustomerTicket',
@@ -299,6 +299,7 @@ sub _ReadRawDataFile {
 
     $RawDataFile ||= $Home . '/src/snippets-raw-data.json';
     $SkippedRawDataFile ||= $Home . '/src/skipped-raw-data.json';
+    $ContributesSnippetsDefaultFile ||= $Home . '/src/contributes-snippets-default.json';
     $ContributesSnippetsDataFile ||= $Home . '/src/contributes-snippets-data.json';
 
     if ( -e $RawDataFile ) {
@@ -329,6 +330,21 @@ sub _ReadRawDataFile {
         );
 
         %SkippedRawData = %{$SkippedRawData};
+    }
+
+    if ( -e $ContributesSnippetsDefaultFile ) {
+
+        Print("<green>Read Contributes Snippets Default File...</green>\n\n");
+
+        my $ContentSCALARRef = $MainObject->FileRead(
+            Location => $ContributesSnippetsDefaultFile,
+        );
+
+        my $ContributesSnippetsDefaultFile = $JSONObject->Decode(
+            Data => ${$ContentSCALARRef},
+        );
+
+        @ContributesSnippetsDefaultFile = @{$ContributesSnippetsDefaultFile};
     }
 }
 
@@ -431,10 +447,10 @@ sub _WriteRawDataFile {
         Content  => \$SkippedRawDataString,
     );
 
+    @ContributesSnippetsData = (@ContributesSnippetsDefaultFile, @ContributesSnippetsData);
+
     my %ContributesSnippetsData = (
-        "contributes" => {
-            "snippets" => \@ContributesSnippetsData,
-        },
+        "snippets" => \@ContributesSnippetsData,
     );
 
     my $ContributesSnippetsDataString = $JSONObject->Encode(

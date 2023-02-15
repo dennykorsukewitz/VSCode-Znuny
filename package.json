@@ -20,7 +20,10 @@
     "url": "https://github.com/sponsors/dennykorsukewitz"
   },
   "keywords": [
-    "OTRS", "Znuny", "Snippets", "Perl"
+    "OTRS",
+    "Znuny",
+    "Snippets",
+    "Perl"
   ],
   "categories": [
     "Snippets"
@@ -28,12 +31,64 @@
   "engines": {
     "vscode": "^1.74.0"
   },
+  "activationEvents": [
+    "onCommand:znuny.quoteWithMarker",
+    "onCommand:znuny.showZnunyVersion",
+    "*"
+  ],
+  "main": "./src/extension",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
   "contributes": {
+    "commands": [
+      {
+        "command": "znuny.quoteWithMarker",
+        "title": "Quote with Marker"
+      },
+      {
+        "command": "znuny.showZnunyVersion",
+        "title": "Show Znuny Version"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Znuny",
+      "properties": {
+        "znuny.color.statusBar.background": {
+          "type": "string",
+          "description": "Znuny Status Bar background color.",
+          "default": "#ff9b00"
+        },
+        "znuny.color.statusBar.foreground": {
+          "type": "string",
+          "description": "Znuny Status Bar foreground color.",
+          "default": "#000000"
+        },
+        "znuny.color.statusBarItem.hoverBackground": {
+          "type": "string",
+          "description": "Znuny Status Bar hoverBackground color.",
+          "default": "#ffc062"
+        }
+      }
+    },
     "snippets": [
       {
         "path": "./snippets/_Test_/znuny.Test.Snippets.code-snippets"
       },
-
       {
         "language": "xml",
         "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.xml.code-snippets"
@@ -46,8 +101,6 @@
         "language": "xml",
         "path": "./snippets/CodePolicy/znuny.CodePolicy.nofilter.js.code-snippets"
       },
-
-
       {
         "language": "xml",
         "path": "./snippets/ConfigXML/znuny.Config.Array.code-snippets"
@@ -68,8 +121,6 @@
         "language": "xml",
         "path": "./snippets/ConfigXML/znuny.Config.Textarea.code-snippets"
       },
-
-
       {
         "language": "css",
         "path": "./snippets/Customizing/znuny.Codemarker.css.code-snippets"
@@ -90,8 +141,6 @@
         "language": "perl",
         "path": "./snippets/Customizing/znuny.Origin.pm.code-snippets"
       },
-
-
       {
         "language": "javascript",
         "path": "./snippets/Debugging/console.log.code-snippets"
@@ -128,8 +177,6 @@
         "language": "perl",
         "path": "./snippets/Debugging/znuny.STDERR.String.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/DynamicFields/znuny.DynamicField.Checkbox.code-snippets"
@@ -170,8 +217,6 @@
         "language": "perl",
         "path": "./snippets/DynamicFields/znuny.DynamicField.WebserviceText.code-snippets"
       },
-
-
       {
         "language": "yaml",
         "path": "./snippets/GitLab/znuny.GitLab.Default-DB.code-snippets"
@@ -196,8 +241,6 @@
         "language": "yaml",
         "path": "./snippets/GitLab/znuny.GitLab.PostgreSQL.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/Language/znuny.Language.Doubleqoute.code-snippets"
@@ -213,8 +256,6 @@
         "language": "javascript",
         "path": "./snippets/Licensing/znuny.AGPL.js.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/Needed/znuny.Needed.ObjectManager.code-snippets"
@@ -231,8 +272,6 @@
         "language": "perl",
         "path": "./snippets/Needed/znuny.Needed.Subelement.Self.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/Perl/elsif.code-snippets"
@@ -313,8 +352,6 @@
         "language": "perl",
         "path": "./snippets/Perl/use_base.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/POD/znuny.POD.AGPL.footer.code-snippets"
@@ -323,8 +360,6 @@
         "language": "perl",
         "path": "./snippets/POD/znuny.POD.header.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/Selenium/znuny.Selenium.clear.code-snippets"
@@ -369,8 +404,6 @@
         "language": "perl",
         "path": "./snippets/Selenium/znuny.Selenium.submit.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/VariableCheck/DataIsDifferent.code-snippets"
@@ -419,8 +452,6 @@
         "language": "perl",
         "path": "./snippets/VariableCheck/znuny.use.VariableCheck.code-snippets"
       },
-
-
       {
         "language": "perl",
         "path": "./snippets/Modules/znuny.Module.AgentTicketActionCommon.code-snippets"
@@ -5698,5 +5729,10 @@
         "path": "./snippets/Functions/ZnunyHelperObject/znuny.ZnunyHelperObject.DynamicFieldValueCreate.code-snippets"
       }
     ]
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.32"
   }
 }
