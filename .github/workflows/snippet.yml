@@ -107,7 +107,7 @@ jobs:
           git config --global user.name "Denny Korsukéwitz"
           git add . && git commit -m "Init"
 
-          ${GITHUB_WORKSPACE}/znuny/bin/znuny.GenerateVSCSnippets.pl
+          "${GITHUB_WORKSPACE}"/znuny/bin/znuny.GenerateVSCSnippets.pl
 
           git status
           if [ "$(git diff --exit-code)" ]; then echo 'The VSC Snippet list is not up to date.' && exit 1; else echo 'The VSC Snippet list is up to date.' && exit 0; fi

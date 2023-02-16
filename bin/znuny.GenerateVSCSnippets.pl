@@ -38,6 +38,7 @@ use Data::Dumper;
 use Getopt::Long();
 use List::MoreUtils qw(uniq);
 use File::Path qw( make_path );
+use JSON::PP;
 
 local $Kernel::OM = Kernel::System::ObjectManager->new(
     'Kernel::System::Log' => {
@@ -61,7 +62,7 @@ $Version = _ValidateVersion($Version);
 
 my ( $DryRun, $GetOptVersion, $Help, $Message, %Summary, %RawData, $RawDataFile, %SkippedRawData, $SkippedRawDataFile);
 
-my (  @ContributesSnippetsData, @ContributesSnippetsDefaultFile, $ContributesSnippetsDataFile, $ContributesSnippetsDefaultFile);
+my (  @ContributesSnippetsData, @ContributesSnippetsDefaultFile, $ContributesSnippetsDataFile, $ContributesSnippetsDefaultFile, $PackageJSONFile, $PackageJSON);
 
 my @Modules = (
     'AgentTicket', 'CustomerTicket',
@@ -351,6 +352,7 @@ sub _ReadRawDataFile {
     $SkippedRawDataFile ||= $Home . '/src/skipped-raw-data.json';
     $ContributesSnippetsDefaultFile ||= $Home . '/src/contributes-snippets-default.json';
     $ContributesSnippetsDataFile ||= $Home . '/src/contributes-snippets-data.json';
+    $PackageJSONFile ||= $Home . '/package.json';
 
     if ( -e $RawDataFile ) {
 
@@ -395,6 +397,15 @@ sub _ReadRawDataFile {
         );
 
         @ContributesSnippetsDefaultFile = @{$ContributesSnippetsDefaultFile};
+    }
+
+    if ( -e $PackageJSONFile ) {
+
+        Print("<green>Read Package.json File...</green>\n\n");
+
+        $PackageJSON = $MainObject->FileRead(
+            Location => $PackageJSONFile,
+        );
     }
 }
 
@@ -503,16 +514,28 @@ sub _WriteRawDataFile {
         "snippets" => \@ContributesSnippetsData,
     );
 
-    my $ContributesSnippetsDataString = $JSONObject->Encode(
-        Data     => \%ContributesSnippetsData,
-        SortKeys => 1,
-        Pretty   => 1,
-    );
+    # get encode json in utf-8, pretty, sorted by keys and with indentation of 2.
+    my $ContributesSnippetsDataString = JSON::PP->new->utf8->pretty->canonical->indent_length(2)->encode(\%ContributesSnippetsData);
 
     my $ContributesSnippetsDataFileLocation = $MainObject->FileWrite(
         Location => $ContributesSnippetsDataFile,
         Content  => \$ContributesSnippetsDataString,
     );
+
+    $ContributesSnippetsDataString =~ s{\{.*\n(.*"snippets")}{$1}s;
+    $ContributesSnippetsDataString =~ s{(\n\s+\].*)\}$}{$1}s;
+    $ContributesSnippetsDataString =~ s{ : }{: }g;
+    $ContributesSnippetsDataString =~ s{^\s\s}{    }mg;
+
+    # "snippets": \[.*\]
+    ${$PackageJSON} =~ s{(    "snippets": \[.*\])}{$ContributesSnippetsDataString}s;
+    ${$PackageJSON} =~ s{\n\s\n}{\n}mg;
+
+    my $PackageJSONFileLocation = $MainObject->FileWrite(
+        Location => $PackageJSONFile,
+        Content  => \${$PackageJSON},
+    );
+
 
     return 1;
 }
