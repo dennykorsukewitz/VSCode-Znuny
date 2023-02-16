@@ -23,10 +23,11 @@ use strict;
 use warnings;
 
 use File::Basename;
-use FindBin qw($RealBin);
-use lib dirname($RealBin);
-use lib dirname($RealBin) . '/Kernel/cpan-lib';
-use lib dirname($RealBin) . '/Custom';
+use FindBin qw($Bin $RealBin);
+
+use lib dirname($Bin);
+use lib dirname($Bin) . '/Kernel/cpan-lib';
+use lib dirname($Bin) . '/Custom';
 
 use Kernel::System::ObjectManager;
 use Kernel::System::VariableCheck qw(:all);
@@ -56,9 +57,11 @@ my $TemplateDir = $ConfigObject->Get('TemplateDir');
 my $PackageDir = dirname(readlink(__FILE__));
 $PackageDir =~ s{/bin}{}xms;
 
-$Version = ValidateVersion($Version);
+$Version = _ValidateVersion($Version);
 
-my ( $DryRun, $GetOptVersion, $Help, @ContributesSnippetsData, @ContributesSnippetsDefaultFile, $ContributesSnippetsDataFile, $ContributesSnippetsDefaultFile, %RawData, $RawDataFile, %SkippedRawData, $SkippedRawDataFile);
+my ( $DryRun, $GetOptVersion, $Help, $Message, %Summary, %RawData, $RawDataFile, %SkippedRawData, $SkippedRawDataFile);
+
+my (  @ContributesSnippetsData, @ContributesSnippetsDefaultFile, $ContributesSnippetsDataFile, $ContributesSnippetsDefaultFile);
 
 my @Modules = (
     'AgentTicket', 'CustomerTicket',
@@ -217,12 +220,15 @@ sub Run {
     }
 
     if (defined $GetOptVersion) {
-        $Version = ValidateVersion($GetOptVersion);
+        $Version = _ValidateVersion($GetOptVersion);
     }
 
     my $IsOnBlacklist = grep { $_ =~ m{$Version}xms } @VersionBlacklist;
     if ($IsOnBlacklist){
-        Print("<red>The version $Version is blacklisted.</red>\n\n");
+        $Message ="<red>The version $Version is blacklisted.</red>\n\n";
+        Print($Message);
+        push @{$Summary{Error}}, $Message;
+
         exit 1;
     }
 
@@ -237,25 +243,10 @@ sub Run {
         _WriteRawDataFile();
     }
 
+    PrintResults();
     Print("<green>Done</green>\n");
 
     exit 0;
-}
-
-=head2 ValidateVersion()
-
-Validates a version-string.
-
-    my $Version = ValidateVersion("6.4.1");
-
-=cut
-
-sub ValidateVersion {
-    my ( $Version ) = @_;
-
-    $Version =~ s{^(\d+\.\d+)\..+$}{$1}xms;
-
-    return $Version;
 }
 
 =head2 Print()
@@ -271,6 +262,65 @@ sub Print {
 
     $Text =~ s{<(green|yellow|red)>(.*?)</\1>}{_Color($1, $2)}gsmxe;
     print STDERR $Text;
+}
+
+=head2 PrintResults()
+
+Prints results.
+
+    PrintResults();
+
+=cut
+
+sub PrintResults {
+    my ( $Text ) = @_;
+
+    my %TypeColors = (
+        Error   => 'red',
+        Warning => 'yellow',
+        Tidied  => 'green',
+    );
+
+    Print("\n================================================================================\n");
+    Print("Summary\n");
+    Print("================================================================================\n");
+
+    TYPE:
+    for my $Type ( qw(Warning Error) ) {
+        next TYPE if !$Summary{$Type};
+
+        my $Entries = scalar @{ $Summary{$Type} };
+        Print("\n<$TypeColors{$Type}>[$Type] ($Entries)</$TypeColors{$Type}>\n");
+        for my $Entry ( @{ $Summary{$Type} } ) {
+            Print($Entry);
+        }
+    }
+
+    Print("================================================================================\n");
+    Print("Version:\t$Version\n");
+    TYPE:
+    for my $Type ( qw(Warning Error) ) {
+        next TYPE if !$Summary{$Type};
+        my $Entries = scalar @{ $Summary{$Type} };
+        Print("<$TypeColors{$Type}>$Type:  </$TypeColors{$Type}>\t$Entries\n");
+    }
+    Print("================================================================================\n");
+}
+
+=head2 _ValidateVersion()
+
+Validates a version-string.
+
+    my $Version = _ValidateVersion("6.4.1");
+
+=cut
+
+sub _ValidateVersion {
+    my ( $Version ) = @_;
+
+    $Version =~ s{^(\d+\.\d+)\..+$}{$1}xms;
+
+    return $Version;
 }
 
 =head2 _Color()
@@ -540,7 +590,9 @@ sub _GetModules {
 
         if (!grep { $File =~ m{\A$_}xms } @Modules){
 
-            Print("<yellow>File is not included in the module list..</yellow> Skipping...\n");
+            $Message ="<yellow>File is not included in the module list.</yellow> $File - Skipping...\n";
+            Print($Message);
+            push @{$Summary{Warning}}, $Message;
 
             $SkippedRawData{Modules}->{$File}||= [];
             my $Versions = $SkippedRawData{Modules}->{$File};
@@ -628,10 +680,12 @@ sub _GetObjects {
     DIRECTORY:
     for my $Directory (@Directories){
 
-        # return if directory not exists
+        # return if directory does not exists
         # multi framework version support
         if (!-e $Home . $Directory){
-            Print("<red>Directory not exists.</red> " . $Home . $Directory .  "\n");
+            $Message ="<red>Directory does not exists.</red> " . $Home . $Directory .  "\n";
+            Print($Message);
+            push @{$Summary{Error}}, $Message;
             next DIRECTORY;
         };
 
@@ -657,7 +711,9 @@ sub _GetObjects {
         # skip unwanted files
         if (grep { $File =~ m{$_\Z}xms  } @FileBlacklist){
 
-            Print("<yellow>File is on the FileBlacklist.</yellow> Skipping...\n");
+            $Message ="<yellow>File is on the FileBlacklist.</yellow> $File - Skipping...\n";
+            Print($Message);
+            push @{$Summary{Warning}}, $Message;
 
             # change path to relative framework
             my $SkippedFile = $File;
@@ -674,7 +730,9 @@ sub _GetObjects {
         # return if file not exists
         # multi framework version support
         if (!-e $File){
-            Print("<red>File not exists.</red>\n");
+            $Message ="<red>File not exists.</red>\n";
+            Print($Message);
+            push @{$Summary{Error}}, $Message;
             next FILE;
         };
 
@@ -682,7 +740,9 @@ sub _GetObjects {
         for my $Object (sort keys %ObjectFilesMapping){
             my $Exists = grep { $_ eq $File } @{ $ObjectFilesMapping{$Object} };
             if ($Exists){
-                Print("<yellow>File is used in ObjectFilesMapping.</yellow> Skipping...\n");
+                $Message ="<yellow>File is used in ObjectFilesMapping.</yellow> $File - Skipping...\n";
+                Print($Message);
+                push @{$Summary{Warning}}, $Message;
 
                 my $SkippedFile = $File;
                 $SkippedFile =~ s{($Home)}{}xms;
@@ -709,8 +769,9 @@ sub _GetObjects {
 
             next ATTRIBUTE if $ZnunyPODParserObject->{$RequiredAttribute};
 
-            Print("<red>Can't find $RequiredAttribute instruction.</red> Skipping...\n");
-            Print("<red>Maybe the file should be added to ObjectFilesMapping...</red>\n");
+            $Message ="<red>Can't find $RequiredAttribute instruction.</red> Skipping...\n<red>Maybe the file should be added to ObjectFilesMapping...</red>\n";
+            Print($Message);
+            push @{$Summary{Error}}, $Message;
             next FILE;
         }
 
@@ -718,7 +779,9 @@ sub _GetObjects {
         my $Exists = grep { $ZnunyPODParserObject->{ObjectName} =~ m{$_}xms } @ObjectBlacklist;
         if ($Exists){
 
-            Print("<yellow>Object $ZnunyPODParserObject->{ObjectName} is on the ObjectBlacklist.</yellow> Skipping...\n");
+            $Message ="<yellow>Object is on the ObjectBlacklist.</yellow> $ZnunyPODParserObject->{ObjectName} - Skipping...\n";
+            Print($Message);
+            push @{$Summary{Warning}}, $Message;
 
             $SkippedRawData{Objects}->{$ZnunyPODParserObject->{ObjectName}}||= [];
             my $Versions = $SkippedRawData{Objects}->{$ZnunyPODParserObject->{ObjectName}};
@@ -761,7 +824,9 @@ sub _GetObjects {
             # skip internal functions
             if (grep { $FunctionName =~ m{$_}xms } @FunctionBlacklist){
 
-                Print("<yellow>Function $FunctionName is on the FunctionBlacklist.</yellow> Skipping...\n");
+                $Message = "<yellow>Function is on the FunctionBlacklist.</yellow> $FunctionName - Skipping...\n";
+                Print($Message);
+                push @{$Summary{Warning}}, $Message;
 
                 $SkippedRawData{Functions}->{$FunctionName}||= [];
                 my $Versions = $SkippedRawData{Functions}->{$FunctionName};
@@ -1018,7 +1083,10 @@ sub _WriteSnippets {
     for my $Needed ( qw(Filename Trigger Content Description Scope Directory) ) {
 
         next NEEDED if defined $Snippet{ $Needed };
-        Print("<red>ERROR: Snippet value '$Needed' is needed for '$Snippet{Trigger}'.</red> Skipping...\n");
+
+        $Message ="<red>ERROR: Snippet value '$Needed' is needed for '$Snippet{Trigger}'.</red> Skipping...\n";
+        Print($Message);
+        push @{$Summary{Error}}, $Message;
         print STDERR Dumper(\%Snippet) . "\n";
 
         return;

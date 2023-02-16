@@ -1,0 +1,105 @@
+---
+name: Snippet
+
+on:
+  push:
+    # branches: ["dev", "dev-update"]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  Snippet:
+    name: Snippet
+    runs-on: ubuntu-22.04 # ubuntu-latest
+    container: debian:10-slim
+    strategy:
+      matrix:
+        tag: ['rel-6_4', 'rel-6_5', 'dev']
+    env:
+      DB: mysql
+      MYSQL_USER: "otrs"
+      MYSQL_ROOT_PASSWORD: "secret"
+      MYSQL_PASSWORD: "secret"
+      MYSQL_DATABASE: "otrs"
+    services:
+      mariadb:
+        image: mariadb:10
+        env:
+          MYSQL_USER: "otrs"
+          MYSQL_ROOT_PASSWORD: "secret"
+          MYSQL_PASSWORD: "secret"
+          MYSQL_DATABASE: "otrs"
+    steps:
+
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        env:
+          fetch-depth: "1"
+        with:
+          path: repository
+
+      - name: Check out module-tools
+        uses: actions/checkout@v3
+        env:
+          fetch-depth: "1"
+        with:
+          repository: znuny/module-tools
+          path: module-tools
+
+      - name: Check out Znuny
+        uses: actions/checkout@v3
+        env:
+          fetch-depth: "1"
+        with:
+          repository: znuny/Znuny
+          ref: ${{ matrix.tag }}
+          path: znuny
+
+      - name: Install dependencies
+        run: znuny/.github/workflows/ci/dependencies.sh
+
+      - name: Setup Znuny
+        run: |
+          cd znuny
+
+          a2dismod mpm_event mpm_worker
+          a2enmod perl deflate filter headers mpm_prefork
+          useradd -d /opt/otrs -c 'OTRS user' -g www-data -s /bin/bash -M otrs
+
+          # link and create files
+          ln -sf "$PWD" /opt/otrs
+          ln -s /opt/otrs/scripts/apache2-httpd.include.conf /etc/apache2/sites-enabled/zzz_otrs.conf
+          cp /opt/otrs/Kernel/Config.pm.dist /opt/otrs/Kernel/Config.pm
+          mkdir -p /opt/otrs/var/tmp
+
+          # start apache
+          apachectl start
+
+          # MySQL
+          .github/workflows/ci/config-mysql.sh
+
+          # run needed scripts
+          /opt/otrs/bin/otrs.SetPermissions.pl
+          su -c "bin/otrs.CheckSum.pl -a create" - otrs
+          touch /opt/otrs/installed
+
+          # prepare Selenium tests
+          .github/workflows/ci/config-selenium.sh
+
+          su -c "bin/otrs.Console.pl Maint::Config::Rebuild" - otrs
+          su -c "bin/otrs.Console.pl Admin::Config::Update --setting-name CheckEmailAddresses --value 0" - otrs
+
+      - name: Link repository
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          apt-get install -y libdatetime-perl libgetopt-complete-perl libio-interactive-perl libstring-similarity-perl libxmlrpc-lite-perl
+
+          su -c "$GITHUB_WORKSPACE/module-tools/bin/otrs.ModuleTools.pl Module::File::Link $GITHUB_WORKSPACE/repository $GITHUB_WORKSPACE/znuny" - otrs
+          cd znuny
+          su -c "bin/otrs.Console.pl Maint::Cache::Delete" - otrs
+          su -c "bin/otrs.Console.pl Maint::Config::Rebuild --cleanup" - otrs
+
+      - name: Run GenerateVSCSnippets
+        run: |
+          /opt/otrs/bin/znuny.GenerateVSCSnippets.pl
+          if [ "$(git diff --exit-code src/snippets-raw-data.json)" ]; then echo 'The VSC Snippet list is not up to date.' && exit 1; else echo 'The VSC Snippet list is up to date.' && exit 0; fi
