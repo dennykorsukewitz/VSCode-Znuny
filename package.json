@@ -543,6 +543,10 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Modules/znuny.Module.AgentTicketNoteToLinkedTicket.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Modules/znuny.Module.AgentTicketOwner.code-snippets"
       },
       {

@@ -104,6 +104,9 @@
          "6.4",
          "6.5"
       ],
+      "AgentTicketNoteToLinkedTicket" : [
+         "6.4"
+      ],
       "AgentTicketOwner" : [
          "6.0",
          "6.4",
