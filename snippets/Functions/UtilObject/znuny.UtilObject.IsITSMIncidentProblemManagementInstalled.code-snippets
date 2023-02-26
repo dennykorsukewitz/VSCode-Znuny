@@ -1,0 +1,10 @@
+{
+    "znuny.UtilObject.IsITSMIncidentProblemManagementInstalled": {
+        "body": [
+            "${1:my \\$IsITSMIncidentProblemManagementInstalled = \\$UtilObject->IsITSMIncidentProblemManagementInstalled();}",
+        ],
+        "prefix": "znuny.UtilObject.IsITSMIncidentProblemManagementInstalled",
+        "description": "6.5",
+        "scope": "perl"
+    }
+}

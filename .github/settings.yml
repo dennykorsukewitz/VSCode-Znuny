@@ -9,7 +9,7 @@ repository:
   homepage: https://dennykorsukewitz.github.io/DK4Znuny-VisualStudioCode/
 
   # A comma-separated list of topics to set on the repository
-  topics: znuny, znuny-package, package, DK4Znuny-VisualStudioCode, VisualStudioCode, VSC
+  topics: pages, otrs, znuny, package, extension, VisualStudioCode, VSC
 
   # Either `true` to make the repository private, or `false` to make it public.
   private: false

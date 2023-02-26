@@ -3,7 +3,8 @@ name: GitHub Pages
 
 on:
   push:
-    branches: ["dev", "dev-update"]
+    # branches: ["dev", "dev-update"]
+    branches: ["NEVER"]
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
