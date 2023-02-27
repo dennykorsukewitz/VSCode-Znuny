@@ -13,5 +13,5 @@ permissions: write-all
 jobs:
   Pages:
     uses: dennykorsukewitz/DK4/.github/workflows/reusable.pages.yml@dev
-    secrets:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
