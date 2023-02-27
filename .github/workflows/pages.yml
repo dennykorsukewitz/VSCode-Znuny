@@ -9,6 +9,8 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.PAT }}
+  GH_TOKEN: ${{ secrets.PAT }}
+
 
 jobs:
   Pages:
