@@ -10,9 +10,6 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions: write-all
 
-# env:
-#   GITHUB_TOKEN: ${{ secrets.PAT }}
-
 jobs:
   # Pages:
   #   uses: dennykorsukewitz/DK4/.github/workflows/reusable.pages.yml@dev
@@ -25,4 +22,5 @@ jobs:
       - run: |
           gh workflow run --repo dennykorsukewitz/dennykorsukewitz.github.io pages.yml --ref dev
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          # GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
