@@ -8,15 +8,15 @@ on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 jobs:
-  # Pages:
-  #   uses: dennykorsukewitz/DK4/.github/workflows/reusable.pages.yml@dev
+  Pages:
+    uses: dennykorsukewitz/DK4/.github/workflows/reusable.pages.yml@dev
 
-  Trigger-GitHub-Pages:
-    name: Trigger GitHub Pages
-    runs-on: ubuntu-latest
-    permissions: write-all
-    steps:
-      - run: |
-          gh workflow run --repo dennykorsukewitz/dennykorsukewitz.github.io pages.yml --ref dev
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+  # Trigger-GitHub-Pages:
+  #   name: Trigger GitHub Pages
+  #   runs-on: ubuntu-latest
+  #   permissions: write-all
+  #   steps:
+  #     - run: |
+  #         gh workflow run --repo dennykorsukewitz/dennykorsukewitz.github.io pages.yml --ref dev
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.PAT }}
