@@ -7,9 +7,6 @@ on:
     branches: ["NEVER" ,'dev-test-pages']
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions: write-all
-
 jobs:
   # Pages:
   #   uses: dennykorsukewitz/DK4/.github/workflows/reusable.pages.yml@dev
@@ -22,5 +19,4 @@ jobs:
       - run: |
           gh workflow run --repo dennykorsukewitz/dennykorsukewitz.github.io pages.yml --ref dev
         env:
-          # GITHUB_TOKEN: ${{ secrets.PAT }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
