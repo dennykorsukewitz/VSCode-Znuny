@@ -3,27 +3,11 @@ name: GitHub Pages
 
 on:
   push:
-    # branches: ["dev", "dev-update"]
-    branches: ["NEVER" ,'dev-test-pages']
+    branches: ["dev", "dev-update"]
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
-
-env:
-  GITHUB_TOKEN: ${{ secrets.PAT }}
-  GH_TOKEN: ${{ secrets.PAT }}
-
 
 jobs:
   Pages:
-    uses: dennykorsukewitz/DK4/.github/workflows/reusable.pages.yml@dev
+    uses: dennykorsukewitz/dennykorsukewitz/.github/workflows/reusable.pages.yml@dev
     secrets:
       PAT: ${{ secrets.PAT }}
-
-  # Trigger-GitHub-Pages:
-  #   name: Trigger GitHub Pages
-  #   runs-on: ubuntu-latest
-  #   permissions: write-all
-  #   steps:
-  #     - run: |
-  #         gh workflow run --repo dennykorsukewitz/dennykorsukewitz.github.io pages.yml --ref dev
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.PAT }}

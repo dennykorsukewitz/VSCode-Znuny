@@ -9,4 +9,4 @@ on:
 
 jobs:
   Lint:
-    uses: dennykorsukewitz/DK4/.github/workflows/reusable.lint.yml@dev
+    uses: dennykorsukewitz/dennykorsukewitz/.github/workflows/reusable.lint.yml@dev
