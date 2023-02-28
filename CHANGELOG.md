@@ -6,6 +6,7 @@ All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be
 
 ### Snippets
   - Added new Snippet `znuny.UtilObject.IsITSMIncidentProblemManagementInstalled.code-snippets`
+  - Updated Snippet `znuny.UnitTestObject.Run.code-snippets`
 
 ## [1.0.3]
 
