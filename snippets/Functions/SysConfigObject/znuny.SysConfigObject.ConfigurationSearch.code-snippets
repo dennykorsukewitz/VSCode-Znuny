@@ -3,7 +3,7 @@
         "body": [
             "${1:my @Result = \\$SysConfigObject->ConfigurationSearch(",
             "    Search           => 'The search string', # (optional)",
-            "    Category         => 'OTRS'               # (optional)",
+            "    Category         => 'OTRS',              # (optional)",
             "    IncludeInvisible => 1,                   # (optional) Default 0.",
             ");}",
         ],

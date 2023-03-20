@@ -5,7 +5,7 @@
             "    Key          => 'some_col',",
             "    Value        => '(ABC+DEF)',",
             "    SearchPrefix => '',",
-            "    SearchSuffix => '*'",
+            "    SearchSuffix => '*',",
             "    Extended     => 1, # use also \\" \\" as \\"&&\\", e.g. \\"bob smith\\" -> \\"bob&&smith\\"",
             ");}",
             "${2:my \\$SQL = \\$DBObject->QueryCondition(",

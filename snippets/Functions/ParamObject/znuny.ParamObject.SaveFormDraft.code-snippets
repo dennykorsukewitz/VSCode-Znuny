@@ -2,7 +2,7 @@
     "znuny.ParamObject.SaveFormDraft": {
         "body": [
             "${1:my \\$FormDraftID = \\$ParamObject->SaveFormDraft(",
-            "    UserID         => \\$UserID",
+            "    UserID         => \\$UserID,",
             "    ObjectType     => 'Ticket',",
             "    ObjectID       => \\$ObjectID,",
             "    OverrideParams => {               # optional, can contain strings and array references",

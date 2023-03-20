@@ -2,8 +2,8 @@
     "znuny.CommunicationLogObject.ObjectLog": {
         "body": [
             "${1:my \\$Success = \\$CommunicationLogObject->ObjectLog(",
-            "    ObjectLogType => '...' # (required) To be defined by the related LogObject",
-            "    ObjectLogID   => \\$ObjectLogID, # (required) The ObjectID of the started object type",
+            "    ObjectLogType => '...', # (required) To be defined by the related LogObject",
+            "    ObjectLogID   => \\$ObjectLogID,   # (required) The ObjectID of the started object type",
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.ObjectLog",
