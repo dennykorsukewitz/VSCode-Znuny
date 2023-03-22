@@ -13,20 +13,20 @@
 
 | Versions | Status |
 | ------ | ------ |
-| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4Znuny-VisualStudioCode/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4Znuny-VisualStudioCode/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4Znuny-VisualStudioCode/Znuny%206.5) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/DK4Znuny-VisualStudioCode/1.0.3/dev)](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/compare/1.0.3...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4Znuny-VisualStudioCode/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4Znuny-VisualStudioCode/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4Znuny-VisualStudioCode/Znuny%206.5) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/DK4Znuny-VisualStudioCode/1.0.4/dev)](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/compare/1.0.4...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ## Features
 
 - Snippets
 - StatusBar
 
-### Snippets ![Snippets Total Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2F5d77e9225ca53b6853ce4a5eda187b3edffc2426%2FDK4Znuny-VisualStudioCode%3Asnippets-total.json)
+### Snippets ![Snippets Total Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2Fe19742578a7aaf26231a0af31d219d1abe3abb11%2FDK4Znuny-VisualStudioCode%3Asnippets-total.json)
 
 Znuny code snippets for fast, consistent and error free coding.
 
 ![snippets](doc/images/snippets.gif)
 
-#### Static ![Snippets Static Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2F5d77e9225ca53b6853ce4a5eda187b3edffc2426%2FDK4Znuny-VisualStudioCode%3Asnippets-static.json)
+#### Static ![Snippets Static Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2Fe19742578a7aaf26231a0af31d219d1abe3abb11%2FDK4Znuny-VisualStudioCode%3Asnippets-static.json)
 
 Statically created snippets.
 
@@ -44,7 +44,7 @@ Statically created snippets.
 - Selenium
 - VariableCheck
 
-#### Generated ![Snippets Generated Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2F5d77e9225ca53b6853ce4a5eda187b3edffc2426%2FDK4Znuny-VisualStudioCode%3Asnippets-generated.json)
+#### Generated ![Snippets Generated Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2Fe19742578a7aaf26231a0af31d219d1abe3abb11%2FDK4Znuny-VisualStudioCode%3Asnippets-generated.json)
 
 Snippets created generically using the existing perl POD.
 

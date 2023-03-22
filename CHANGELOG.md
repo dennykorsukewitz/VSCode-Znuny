@@ -6,8 +6,39 @@ All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be
 
 ### Snippets
 
-  - Added new Snippet `znuny.UtilObject.IsITSMIncidentProblemManagementInstalled.code-snippets`
-  - Updated Snippet `znuny.UnitTestObject.Run.code-snippets`
+  - Added Snippets
+    - `znuny.UtilObject.IsITSMIncidentProblemManagementInstalled.code-snippets`
+  - Updated Snippets
+    - `znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet.code-snippets`
+    - `znuny.BackendObject.EditFieldRender.code-snippets`
+    - `znuny.BackendObject.EditFieldValueGet.code-snippets`
+    - `znuny.CommunicationLogObject.ObjectLog.code-snippets`
+    - `znuny.CommunicationLogObject.ObjectLogStop.code-snippets`
+    - `znuny.CustomerUserObject.CustomerUserUpdate.code-snippets`
+    - `znuny.DBObject.QueryCondition.code-snippets`
+    - `znuny.DebugLogObject.LogAdd.code-snippets`
+    - `znuny.GenericAgentObject.JobRun.code-snippets`
+    - `znuny.HelperObject.TestUserCreate.code-snippets`
+    - `znuny.LinkObject.ObjectSearch.code-snippets`
+    - `znuny.LoaderObject.MinifyFiles.code-snippets`
+    - `znuny.MailQueueObject.List.code-snippets`
+    - `znuny.MainObject.FileDelete.code-snippets`
+    - `znuny.Module.AgentTicketNoteToLinkedTicket.code-snippets`
+    - `znuny.PDFObject.HLine.code-snippets`
+    - `znuny.PDFObject.Image.code-snippets`
+    - `znuny.PackageObject.PackageBuild.code-snippets`
+    - `znuny.ParamObject.SaveFormDraft.code-snippets`
+    - `znuny.QueueObject.QueueUpdate.code-snippets`
+    - `znuny.SeleniumObject.WaitFor.code-snippets`
+    - `znuny.SysConfigObject.ConfigurationSearch.code-snippets`
+    - `znuny.SysConfigObject.SettingEffectiveValueCheck.code-snippets`
+    - `znuny.SystemMaintenanceObject.SystemMaintenanceAdd.code-snippets`
+    - `znuny.TemplateGeneratorObject.Attributes.code-snippets`
+    - `znuny.TemplateGeneratorObject.Template.code-snippets`
+    - `znuny.TicketObject.TicketAcl.code-snippets`
+    - `znuny.UnitTestObject.Run.code-snippets`
+    - `znuny.VirtualFSObject.Write.code-snippets`
+    - `znuny.WebserviceHistoryObject.WebserviceHistoryUpdate.code-snippets`
 
 ## [1.0.3]
 
