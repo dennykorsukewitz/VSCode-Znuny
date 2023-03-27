@@ -118,7 +118,7 @@ function updateStatusBarItem() {
     if (znunyData.product && znunyData.version && znunyData.source) {
         myStatusBarItem.text = `${znunyData.product} ${znunyData.version}`;
         myStatusBarItem.tooltip = `Get data from:\n${znunyData.source}`;
-        myStatusBarItem.color = '#2f00ff';
+        myStatusBarItem.color = znunyColors.statusBar.foregroundZnuny || '#ffffff';
         myStatusBarItem.show();
 
         // Overwrite entire parent setting.

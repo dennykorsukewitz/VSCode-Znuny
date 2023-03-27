@@ -93,6 +93,11 @@
           "description": "Znuny Status Bar foreground color.",
           "default": "#000000"
         },
+        "znuny.color.statusBar.foregroundZnuny": {
+          "type": "string",
+          "description": "Znuny Status Bar foreground color for Znuny Version Item.",
+          "default": "#ffffff"
+        },
         "znuny.color.statusBarItem.hoverBackground": {
           "type": "string",
           "description": "Znuny Status Bar hoverBackground color.",
