@@ -19,12 +19,13 @@
 
 - Snippets
 - StatusBar
+- QuoteWithMarker
 
 ### Snippets ![Snippets Total Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2Fe19742578a7aaf26231a0af31d219d1abe3abb11%2FDK4Znuny-VisualStudioCode%3Asnippets-total.json)
 
 Znuny code snippets for fast, consistent and error free coding.
 
-![snippets](doc/images/snippets.gif)
+![Snippets](doc/images/snippets.gif)
 
 #### Static ![Snippets Static Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2Fe19742578a7aaf26231a0af31d219d1abe3abb11%2FDK4Znuny-VisualStudioCode%3Asnippets-static.json)
 
@@ -84,7 +85,19 @@ if the active file is a "Znuny file".
 
 The status bar is updated with every active file change.
 
-![statusbar](doc/images/statusbar.gif)
+![StatusBar](doc/images/statusbar.gif)
+
+### QuoteWithMarker
+
+This function quotes the selected area and adds a custom marker to it.
+
+`QuoteWithMarker` can be very useful especially for custom files `Custom/**`.
+
+Default keyboard shortcut: ```strg+alt+z, q```
+
+Works with active Perl, JavaScript and HTML syntax.
+
+![QuoteWithMarker](doc/images/quotewithmarker.gif)
 
 ## Installation
 

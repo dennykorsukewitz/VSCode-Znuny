@@ -2,6 +2,12 @@
 
 All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be documented in this file.
 
+## [1.0.5]
+
+### QuoteWithMarker
+
+This function quotes the selected area and adds a custom marker to it.
+
 ## [1.0.4]
 
 ### Snippets

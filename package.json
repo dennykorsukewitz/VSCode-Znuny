@@ -2,7 +2,7 @@
   "name": "dk4znuny-visualstudiocode",
   "displayName": "Znuny",
   "description": "Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development less painful.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -69,6 +69,16 @@
         "title": "Show Znuny Version"
       }
     ],
+    "keybindings": [
+      {
+        "command": "znuny.quoteWithMarker",
+        "key": "ctrl+alt+z q"
+      },
+      {
+        "command": "znuny.showZnunyVersion",
+        "key": "ctrl+alt+z v"
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "Znuny",
@@ -87,6 +97,11 @@
           "type": "string",
           "description": "Znuny Status Bar hoverBackground color.",
           "default": "#ffc062"
+        },
+        "znuny.codeMarker": {
+          "type": "string",
+          "description": "Znuny Code Marker used in QuoteWithMarker function.",
+          "default": "Znuny"
         }
       }
     },

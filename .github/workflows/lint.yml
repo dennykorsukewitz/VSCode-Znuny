@@ -2,7 +2,6 @@
 name: Lint
 on:
   push:
-    branches: ["dev", "dev-update"]
     # branches: ["NEVER"]
   pull_request:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
