@@ -2,7 +2,7 @@
 
 # Znuny (DK4Znuny-VisualStudioCode)
 
-**Znuny** (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development less painful.
+**Znuny** (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development easier, faster and more error-free.
 
 | Repository | GitHub | Visual Studio Marketplace |
 | ------ | ------ | ------ |
@@ -98,6 +98,14 @@ Default keyboard shortcut: ```strg+alt+z, q```
 Works with active Perl, JavaScript and HTML syntax.
 
 ![QuoteWithMarker](doc/images/quotewithmarker.gif)
+
+### ObjectDependencies
+
+This function inserts the `@ObjectDependencies` array by parsing the file content. Only regular used OM (ObjectManager) calls are supported.
+
+Default keyboard shortcut: ```strg+alt+z, d```
+
+![ObjectDependencies](doc/images/objectdependencies.gif)
 
 ## Installation
 

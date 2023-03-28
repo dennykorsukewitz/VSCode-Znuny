@@ -3,7 +3,7 @@ repository:
   name: DK4Znuny-VisualStudioCode
 
   # A short description of the repository that will show up on GitHub
-  description: Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development less painful.
+  description: Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development easier, faster and more error-free.
 
   # A URL with more information about the repository
   homepage: https://dennykorsukewitz.github.io/DK4Znuny-VisualStudioCode/

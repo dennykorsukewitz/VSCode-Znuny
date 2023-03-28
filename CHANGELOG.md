@@ -8,6 +8,14 @@ All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be
 
 This function quotes the selected area and adds a custom marker to it.
 
+Default keyboard shortcut: ```strg+alt+z, q```
+
+### ObjectDependencies
+
+This function inserts the `@ObjectDependencies` array by parsing the file content. Only regular used OM (ObjectManager) calls are supported.
+
+Default keyboard shortcut: ```strg+alt+z, d```
+
 ## [1.0.4]
 
 ### Snippets

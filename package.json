@@ -1,7 +1,7 @@
 {
   "name": "dk4znuny-visualstudiocode",
   "displayName": "Znuny",
-  "description": "Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development less painful.",
+  "description": "Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development easier, faster and more error-free.",
   "version": "1.0.5",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
@@ -62,17 +62,25 @@
     "commands": [
       {
         "command": "znuny.quoteWithMarker",
-        "title": "Quote with Marker"
+        "title": "Znuny: Quote with Marker."
+      },
+      {
+        "command": "znuny.objectDependencies",
+        "title": "Znuny: Insert @ObjectDependencies."
       },
       {
         "command": "znuny.showZnunyVersion",
-        "title": "Show Znuny Version"
+        "title": "Znuny: Show Znuny Version."
       }
     ],
     "keybindings": [
       {
         "command": "znuny.quoteWithMarker",
         "key": "ctrl+alt+z q"
+      },
+      {
+        "command": "znuny.objectDependencies",
+        "key": "ctrl+alt+z d"
       },
       {
         "command": "znuny.showZnunyVersion",

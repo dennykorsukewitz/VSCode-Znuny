@@ -3,7 +3,7 @@
 const vscode = require('vscode');
 const helper = require('./utils/helper.js');
 
-// Create global var `myStatusBarItem`.s
+// Create global variable `myStatusBarItem`.
 let myStatusBarItem;
 
 /**
@@ -18,6 +18,9 @@ function activate(context) {
     // This function quotes the selected area and adds a custom marker to it.
     initQuoteWithMarker(context);
 
+    // This function inserts the @ObjectDependencies array by parsing the file content. Only regular used OM (ObjectManager) calls are supported.
+    initObjectDependencies(context);
+
     // The status bar gets an additional **Znuny** item and the entire status bar is displayed in the Znuny color if the active file is a "Znuny file".
     initStatusBarItem(context);
 }
@@ -25,28 +28,25 @@ function activate(context) {
 function initQuoteWithMarker(context) {
     const quoteWithMarkerId = 'znuny.quoteWithMarker';
     context.subscriptions.push(vscode.commands.registerCommand(quoteWithMarkerId, () => {
-        var editor = vscode.window.activeTextEditor;
-        if (!editor) {
-            return; // No open text editor.
-        }
 
-        var languageId = editor.document.languageId;
-        var selection = editor.selection;
-        var text = editor.document.getText(selection);
+        let editor = vscode.window.activeTextEditor;
+        if (!editor) return; // No open text editor.
 
-        if (!text) {
-            return;
-        }
+        let text = editor.document.getText();
+        if (!text) return; // No text.
 
-        var quoteChar,
+        let languageId = editor.document.languageId;
+        let selection = editor.selection;
+
+        let quoteChar,
             codeMarkerReplace,
             codeMarker = vscode.workspace.getConfiguration('znuny').get('codeMarker') || 'Znuny';
 
         if (languageId == 'perl' || languageId == 'html' || languageId == 'plaintext') {
-            quoteChar = '#'
+            quoteChar = '#';
         }
         else if (languageId == 'javascript') {
-            quoteChar = '//'
+            quoteChar = '//';
         }
 
         if (!quoteChar) {
@@ -73,11 +73,60 @@ function initQuoteWithMarker(context) {
     }))
 }
 
+function initObjectDependencies(context) {
+
+    const objectDependenciesId = 'znuny.objectDependencies';
+    context.subscriptions.push(vscode.commands.registerCommand(objectDependenciesId, () => {
+        let editor = vscode.window.activeTextEditor;
+        if (!editor) return; // No open text editor.
+
+        let text = editor.document.getText();
+        if (!text) return; // No text.
+
+        let languageId = editor.document.languageId;
+        if (languageId != 'perl') return; // No perl language (syntax).
+
+        // Search for current package name.
+        let packageNamePattern = /package (.*);/g;
+        let packageNameMatches = [...text.matchAll(packageNamePattern)];
+        let packageName        = packageNameMatches[0][1];
+
+        // Loop over all "$Kernel::OM->Get('...')"s via a RegExp and extract the used object
+        let objectDependencies = [];
+
+        // Search for all ObjectDependencies
+        let objectDependenciesPattern = /\$Kernel::OM\->(?:Get|Create)\(\s*(?:\'|\")([^\'\"]+)(?:\'|\")/g;
+        let objectDependenciesMatches = [...text.matchAll(objectDependenciesPattern)];
+
+        let objectDependenciesTemplate = "our @ObjectDependencies = (\n";
+        objectDependenciesMatches.forEach(match => {
+            let object = match[1];
+            let exists = objectDependencies.includes(object);
+
+            if (!object || object == packageName || exists) return false;
+
+            objectDependencies.push(match[1]);
+        })
+
+        // Sort object list and add to template.
+        objectDependencies.sort().forEach(object => {
+            objectDependenciesTemplate += `    '${object}',\n`;
+        })
+
+        objectDependenciesTemplate += ");";
+
+        // Add ObjectDependencies to current position (selection.active)
+        editor.edit(editBuilder => {
+            editBuilder.insert(editor.selection.active, objectDependenciesTemplate);
+        });
+    }))
+}
+
 function initStatusBarItem(context) {
 
     const showZnunyVersionId = 'znuny.showZnunyVersion';
     context.subscriptions.push(vscode.commands.registerCommand(showZnunyVersionId, () => {
-        var znunyData = helper.getZnunyData();
+        let znunyData = helper.getZnunyData();
         vscode.window.showInformationMessage(`You are developing with Znuny that is awesome. Keep going!`, { modal: false });
 
         // Open source file, when you click on status bar.
@@ -101,16 +150,16 @@ function initStatusBarItem(context) {
 
 function updateStatusBarItem() {
 
-    var znunyData = helper.getZnunyData();
+    let znunyData = helper.getZnunyData();
 
     // Get colorCustomizations configuration.
-    var znunyColorCustomizations = vscode.workspace.getConfiguration('workbench').get('colorCustomizations');
-    var znunyColors = vscode.workspace.getConfiguration('znuny').get('color');
+    let znunyColorCustomizations = vscode.workspace.getConfiguration('workbench').get('colorCustomizations');
+    let znunyColors = vscode.workspace.getConfiguration('znuny').get('color');
 
     Object.keys(znunyColors).forEach(item => {
-        var attributes = znunyColors[item];
+        let attributes = znunyColors[item];
         Object.keys(attributes).forEach(attribute => {
-            var value = attributes[attribute];
+            let value = attributes[attribute];
             znunyColorCustomizations[item + '.' + attribute] = value;
         })
     })
