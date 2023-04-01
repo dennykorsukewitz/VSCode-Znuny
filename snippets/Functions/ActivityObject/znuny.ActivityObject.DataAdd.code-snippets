@@ -1,0 +1,20 @@
+{
+    "znuny.ActivityObject.DataAdd": {
+        "body": [
+            "${1:my \\$CreatedID = \\$ActivityObject->DataAdd(",
+            "    ID               => '...',",
+            "    Type             => '...',",
+            "    Title            => '...',",
+            "    Text             => '...',",
+            "    State            => '...',",
+            "    Link             => '...',",
+            "    CreateTime       => '...',",
+            "    CreateBy         => '...',",
+            "    UserID           => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.DataAdd",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

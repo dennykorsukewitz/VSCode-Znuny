@@ -4,7 +4,7 @@
             "${1:my \\$Success = \\$SchedulerDBObject->TaskUnlockExpired();}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskUnlockExpired",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

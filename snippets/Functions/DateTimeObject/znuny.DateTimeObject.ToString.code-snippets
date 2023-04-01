@@ -4,7 +4,7 @@
             "${1:my \\$DateTimeString = \\$DateTimeObject->ToString();}",
         ],
         "prefix": "znuny.DateTimeObject.ToString",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

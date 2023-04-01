@@ -1,0 +1,20 @@
+{
+    "znuny.ActivityObject.ListGet": {
+        "body": [
+            "${1:my @Activities = \\$ActivityObject->ListGet(",
+            "    ID         => '...', # optional",
+            "    Type       => '...', # optional",
+            "    Title      => '...', # optional",
+            "    Text       => '...', # optional",
+            "    State      => '...', # optional",
+            "    Link       => '...', # optional",
+            "    CreateTime => '...', # optional",
+            "    CreateBy   => '...', # optional",
+            "    UserID     => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.ListGet",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

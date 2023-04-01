@@ -4,7 +4,7 @@
             "${1:\\$HelperObject->FixedTimeSetByTimeStamp('2004-08-14 22:45:00');}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeSetByTimeStamp",
-        "description": "6.4, 6.5",
+        "description": "6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

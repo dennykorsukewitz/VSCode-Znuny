@@ -4,7 +4,7 @@
             "${1:my %Job = \\$GenericAgentObject->JobGet(Name => 'JobName');}",
         ],
         "prefix": "znuny.GenericAgentObject.JobGet",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

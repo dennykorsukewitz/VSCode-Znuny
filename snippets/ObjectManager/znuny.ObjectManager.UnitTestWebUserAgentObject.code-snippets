@@ -4,7 +4,7 @@
             "my \\$UnitTestWebUserAgentObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::WebUserAgent');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestWebUserAgentObject",
-        "description": "6.4, 6.5",
+        "description": "6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

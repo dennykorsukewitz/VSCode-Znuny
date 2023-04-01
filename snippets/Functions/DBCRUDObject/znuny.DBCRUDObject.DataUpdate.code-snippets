@@ -2,13 +2,13 @@
     "znuny.DBCRUDObject.DataUpdate": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDObject->DataUpdate(",
-            "    ID => 1234,",
+            "    ID     => 1234,",
             "    UserID => \\$UserID,",
             "    # all other attributes are optional",
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataUpdate",
-        "description": "6.4, 6.5",
+        "description": "6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

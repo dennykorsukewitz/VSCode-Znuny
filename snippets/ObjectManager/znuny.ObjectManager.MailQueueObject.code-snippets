@@ -4,7 +4,7 @@
             "my \\$MailQueueObject = \\$Kernel::OM->Get('Kernel::System::MailQueue');",
         ],
         "prefix": "znuny.ObjectManager.MailQueueObject",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

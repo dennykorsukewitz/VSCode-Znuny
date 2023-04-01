@@ -1,0 +1,14 @@
+{
+    "znuny.ActivityObject.DataUpdate": {
+        "body": [
+            "${1:my \\$Success = \\$ActivityObject->DataUpdate(",
+            "    ID     => 1234,",
+            "    UserID => \\$UserID,",
+            "    # all other attributes are optional",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.DataUpdate",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

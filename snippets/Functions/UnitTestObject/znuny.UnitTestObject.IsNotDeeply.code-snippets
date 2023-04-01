@@ -9,7 +9,7 @@
             "${2:\\$Self->IsNotDeeply(\\$ParamA, \\$ParamB, 'Test Name');}",
         ],
         "prefix": "znuny.UnitTestObject.IsNotDeeply",
-        "description": "6.4, 6.5",
+        "description": "6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

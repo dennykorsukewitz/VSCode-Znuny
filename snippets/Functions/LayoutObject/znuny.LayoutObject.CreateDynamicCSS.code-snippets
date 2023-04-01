@@ -1,0 +1,10 @@
+{
+    "znuny.LayoutObject.CreateDynamicCSS": {
+        "body": [
+            "${1:my \\$CSS = \\$LayoutObject->CreateDynamicCSS();}",
+        ],
+        "prefix": "znuny.LayoutObject.CreateDynamicCSS",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

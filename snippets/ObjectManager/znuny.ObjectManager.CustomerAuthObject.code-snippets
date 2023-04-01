@@ -4,7 +4,7 @@
             "my \\$CustomerAuthObject = \\$Kernel::OM->Get('Kernel::System::CustomerAuth');",
         ],
         "prefix": "znuny.ObjectManager.CustomerAuthObject",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

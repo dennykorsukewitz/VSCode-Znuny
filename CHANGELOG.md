@@ -16,43 +16,87 @@ This function inserts the `@ObjectDependencies` array by parsing the file conten
 
 Default keyboard shortcut: ```strg+alt+z, d```
 
+### Snippets
+
+#### Added Snippets
+
+  - `znuny.ActivityObject.Add.code-snippets`
+  - `znuny.ActivityObject.DataAdd.code-snippets`
+  - `znuny.ActivityObject.DataDelete.code-snippets`
+  - `znuny.ActivityObject.DataGet.code-snippets`
+  - `znuny.ActivityObject.DataListGet.code-snippets`
+  - `znuny.ActivityObject.DataSearch.code-snippets`
+  - `znuny.ActivityObject.DataUpdate.code-snippets`
+  - `znuny.ActivityObject.Get.code-snippets`
+  - `znuny.ActivityObject.GetLink.code-snippets`
+  - `znuny.ActivityObject.InitConfig.code-snippets`
+  - `znuny.ActivityObject.ListGet.code-snippets`
+  - `znuny.LayoutObject.CleanUpCSSSelector.code-snippets`
+  - `znuny.LayoutObject.ColorPicker.code-snippets`
+  - `znuny.LayoutObject.ConvertToCSS.code-snippets`
+  - `znuny.LayoutObject.CreateDynamicCSS.code-snippets`
+  - `znuny.LayoutObject.LoaderCreateDynamicCSS.code-snippets`
+
+#### Updated Snippets
+
+  - `znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet`
+  - `znuny.ArticleObject.ArticleSearchIndexSQLJoin.code-snippets`
+  - `znuny.ArticleObject.ArticleSearchIndexSQLJoinNeeded.code-snippets`
+  - `znuny.ArticleObject.ArticleSearchIndexWhereCondition.code-snippets`
+  - `znuny.BackendObject.EditFieldRender`
+  - `znuny.BackendObject.EditFieldValueGet`
+  - `znuny.BackendObject.EditFieldValueGet`
+  - `znuny.CommunicationLogObject.ObjectLog`
+  - `znuny.CommunicationLogObject.ObjectLogStop`
+  - `znuny.CustomerUserObject.CustomerUserUpdate`
+  - `znuny.DBCRUDObject.DataUpdate.code-snippets`
+  - `znuny.HelperObject.ProvideTestDatabase.code-snippets`
+  - `znuny.PriorityObject.PriorityAdd`
+  - `znuny.PriorityObject.PriorityUpdate`
+  - `znuny.SeleniumObject.GetSeleniumHome`
+  - `znuny.StateObject.StateAdd`
+  - `znuny.StateObject.StateUpdate`
+
 ## [1.0.4]
 
 ### Snippets
 
-  - Added Snippets
-    - `znuny.UtilObject.IsITSMIncidentProblemManagementInstalled.code-snippets`
-  - Updated Snippets
-    - `znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet.code-snippets`
-    - `znuny.BackendObject.EditFieldRender.code-snippets`
-    - `znuny.BackendObject.EditFieldValueGet.code-snippets`
-    - `znuny.CommunicationLogObject.ObjectLog.code-snippets`
-    - `znuny.CommunicationLogObject.ObjectLogStop.code-snippets`
-    - `znuny.CustomerUserObject.CustomerUserUpdate.code-snippets`
-    - `znuny.DBObject.QueryCondition.code-snippets`
-    - `znuny.DebugLogObject.LogAdd.code-snippets`
-    - `znuny.GenericAgentObject.JobRun.code-snippets`
-    - `znuny.HelperObject.TestUserCreate.code-snippets`
-    - `znuny.LinkObject.ObjectSearch.code-snippets`
-    - `znuny.LoaderObject.MinifyFiles.code-snippets`
-    - `znuny.MailQueueObject.List.code-snippets`
-    - `znuny.MainObject.FileDelete.code-snippets`
-    - `znuny.Module.AgentTicketNoteToLinkedTicket.code-snippets`
-    - `znuny.PDFObject.HLine.code-snippets`
-    - `znuny.PDFObject.Image.code-snippets`
-    - `znuny.PackageObject.PackageBuild.code-snippets`
-    - `znuny.ParamObject.SaveFormDraft.code-snippets`
-    - `znuny.QueueObject.QueueUpdate.code-snippets`
-    - `znuny.SeleniumObject.WaitFor.code-snippets`
-    - `znuny.SysConfigObject.ConfigurationSearch.code-snippets`
-    - `znuny.SysConfigObject.SettingEffectiveValueCheck.code-snippets`
-    - `znuny.SystemMaintenanceObject.SystemMaintenanceAdd.code-snippets`
-    - `znuny.TemplateGeneratorObject.Attributes.code-snippets`
-    - `znuny.TemplateGeneratorObject.Template.code-snippets`
-    - `znuny.TicketObject.TicketAcl.code-snippets`
-    - `znuny.UnitTestObject.Run.code-snippets`
-    - `znuny.VirtualFSObject.Write.code-snippets`
-    - `znuny.WebserviceHistoryObject.WebserviceHistoryUpdate.code-snippets`
+#### Added Snippets
+
+  - `znuny.UtilObject.IsITSMIncidentProblemManagementInstalled.code-snippets`
+
+#### Updated Snippets
+
+  - `znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet.code-snippets`
+  - `znuny.BackendObject.EditFieldRender.code-snippets`
+  - `znuny.BackendObject.EditFieldValueGet.code-snippets`
+  - `znuny.CommunicationLogObject.ObjectLog.code-snippets`
+  - `znuny.CommunicationLogObject.ObjectLogStop.code-snippets`
+  - `znuny.CustomerUserObject.CustomerUserUpdate.code-snippets`
+  - `znuny.DBObject.QueryCondition.code-snippets`
+  - `znuny.DebugLogObject.LogAdd.code-snippets`
+  - `znuny.GenericAgentObject.JobRun.code-snippets`
+  - `znuny.HelperObject.TestUserCreate.code-snippets`
+  - `znuny.LinkObject.ObjectSearch.code-snippets`
+  - `znuny.LoaderObject.MinifyFiles.code-snippets`
+  - `znuny.MailQueueObject.List.code-snippets`
+  - `znuny.MainObject.FileDelete.code-snippets`
+  - `znuny.Module.AgentTicketNoteToLinkedTicket.code-snippets`
+  - `znuny.PDFObject.HLine.code-snippets`
+  - `znuny.PDFObject.Image.code-snippets`
+  - `znuny.PackageObject.PackageBuild.code-snippets`
+  - `znuny.ParamObject.SaveFormDraft.code-snippets`
+  - `znuny.QueueObject.QueueUpdate.code-snippets`
+  - `znuny.SeleniumObject.WaitFor.code-snippets`
+  - `znuny.SysConfigObject.ConfigurationSearch.code-snippets`
+  - `znuny.SysConfigObject.SettingEffectiveValueCheck.code-snippets`
+  - `znuny.SystemMaintenanceObject.SystemMaintenanceAdd.code-snippets`
+  - `znuny.TemplateGeneratorObject.Attributes.code-snippets`
+  - `znuny.TemplateGeneratorObject.Template.code-snippets`
+  - `znuny.TicketObject.TicketAcl.code-snippets`
+  - `znuny.UnitTestObject.Run.code-snippets`
+  - `znuny.VirtualFSObject.Write.code-snippets`
+  - `znuny.WebserviceHistoryObject.WebserviceHistoryUpdate.code-snippets`
 
 ## [1.0.3]
 

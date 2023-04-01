@@ -13,7 +13,7 @@
             "${4:\\$CacheObject->CleanUp();}",
         ],
         "prefix": "znuny.CacheObject.CleanUp",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

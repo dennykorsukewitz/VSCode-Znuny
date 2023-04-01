@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenConfigObject.DataDelete",
-        "description": "6.4, 6.5",
+        "description": "6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

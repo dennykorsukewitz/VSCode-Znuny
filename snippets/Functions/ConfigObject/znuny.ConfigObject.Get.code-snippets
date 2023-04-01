@@ -4,7 +4,7 @@
             "${1:my \\$Value = \\$ConfigObject->Get('My::Setting::Name');}",
         ],
         "prefix": "znuny.ConfigObject.Get",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

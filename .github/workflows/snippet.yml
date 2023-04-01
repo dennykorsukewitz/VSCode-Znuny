@@ -12,22 +12,23 @@ jobs:
     runs-on: ubuntu-22.04 # ubuntu-latest
     container: debian:10-slim
     strategy:
+      fail-fast: false
       matrix:
-        tag: ['rel-6_5-dev', 'dev']
+        tag: ['rel-7_0-dev', 'dev']
     env:
       DB: mysql
-      MYSQL_USER: "otrs"
+      MYSQL_USER: "znuny"
       MYSQL_ROOT_PASSWORD: "secret"
       MYSQL_PASSWORD: "secret"
-      MYSQL_DATABASE: "otrs"
+      MYSQL_DATABASE: "znuny"
     services:
       mariadb:
         image: mariadb:10
         env:
-          MYSQL_USER: "otrs"
+          MYSQL_USER: "znuny"
           MYSQL_ROOT_PASSWORD: "secret"
           MYSQL_PASSWORD: "secret"
-          MYSQL_DATABASE: "otrs"
+          MYSQL_DATABASE: "znuny"
     steps:
 
       - name: Check out repository code
@@ -54,22 +55,41 @@ jobs:
           ref: ${{ matrix.tag }}
           path: znuny
 
+      - name: Set GITHUB_ENV
+        run: |
+
+          FRAMEWORK_VERSION=$(grep VERSION znuny/RELEASE | sed -e 's/VERSION = //')
+          FRAMEWORK_MAJOR=$(echo "$FRAMEWORK_VERSION" | cut -d. -f1)
+
+          if [ "$FRAMEWORK_MAJOR" -lt 7 ]; then
+              FRAMEWORK='otrs'
+          else
+              FRAMEWORK='znuny'
+          fi
+
+          echo "FRAMEWORK=$FRAMEWORK" >> "$GITHUB_ENV"
+
+      - name: Echo GITHUB_ENV
+        run: echo "$GITHUB_ENV"
+
       - name: Install dependencies
         run: znuny/.github/workflows/ci/dependencies.sh
 
       - name: Setup Znuny
         run: |
+          echo ${{ env.FRAMEWORK }}
           cd znuny
 
           a2dismod mpm_event mpm_worker
           a2enmod perl deflate filter headers mpm_prefork
-          useradd -d /opt/otrs -c 'OTRS user' -g www-data -s /bin/bash -M otrs
+          useradd -d /opt/"${{ env.FRAMEWORK }}" -c 'Znuny user' -g www-data -s /bin/bash -M "${{ env.FRAMEWORK }}"
 
           # link and create files
-          ln -sf "$PWD" /opt/otrs
-          ln -s /opt/otrs/scripts/apache2-httpd.include.conf /etc/apache2/sites-enabled/zzz_otrs.conf
-          cp /opt/otrs/Kernel/Config.pm.dist /opt/otrs/Kernel/Config.pm
-          mkdir -p /opt/otrs/var/tmp
+          ln -sf "$PWD" /opt/"${{ env.FRAMEWORK }}"
+          ln -s /opt/"${{ env.FRAMEWORK }}"/scripts/apache2-httpd.include.conf /etc/apache2/sites-enabled/zzz_"${{ env.FRAMEWORK }}".conf
+
+          cp /opt/"${{ env.FRAMEWORK }}"/Kernel/Config.pm.dist /opt/"${{ env.FRAMEWORK }}"/Kernel/Config.pm
+          mkdir -p /opt/"${{ env.FRAMEWORK }}"/var/tmp
 
           # start apache
           apachectl start
@@ -78,25 +98,25 @@ jobs:
           .github/workflows/ci/config-mysql.sh
 
           # run needed scripts
-          /opt/otrs/bin/otrs.SetPermissions.pl
-          su -c "bin/otrs.CheckSum.pl -a create" - otrs
-          touch /opt/otrs/installed
+          /opt/"${{ env.FRAMEWORK }}/bin/${{ env.FRAMEWORK }}".SetPermissions.pl
+          su -c "bin/${{ env.FRAMEWORK }}.CheckSum.pl -a create" - znuny
+          touch /opt/"${{ env.FRAMEWORK }}"/installed
 
           # prepare Selenium tests
           .github/workflows/ci/config-selenium.sh
 
-          su -c "bin/otrs.Console.pl Maint::Config::Rebuild" - otrs
-          su -c "bin/otrs.Console.pl Admin::Config::Update --setting-name CheckEmailAddresses --value 0" - otrs
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Maint::Config::Rebuild" - znuny
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Admin::Config::Update --setting-name CheckEmailAddresses --value 0" - znuny
 
       - name: Link repository
         run: |
           cd "$GITHUB_WORKSPACE"
           apt-get install -y libdatetime-perl libgetopt-complete-perl libio-interactive-perl libstring-similarity-perl libxmlrpc-lite-perl
 
-          su -c "$GITHUB_WORKSPACE/module-tools/bin/otrs.ModuleTools.pl Module::File::Link $GITHUB_WORKSPACE/repository $GITHUB_WORKSPACE/znuny" - otrs
+          su -c "$GITHUB_WORKSPACE/module-tools/bin/otrs.ModuleTools.pl Module::File::Link $GITHUB_WORKSPACE/repository $GITHUB_WORKSPACE/znuny" - znuny
           cd znuny
-          su -c "bin/otrs.Console.pl Maint::Cache::Delete" - otrs
-          su -c "bin/otrs.Console.pl Maint::Config::Rebuild --cleanup" - otrs
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Maint::Cache::Delete" - znuny
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Maint::Config::Rebuild --cleanup" - znuny
 
       - name: Run GenerateVSCSnippets
         run: |

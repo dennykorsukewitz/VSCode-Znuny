@@ -4,7 +4,7 @@
             "my \\$StdAttachmentObject = \\$Kernel::OM->Get('Kernel::System::StdAttachment');",
         ],
         "prefix": "znuny.ObjectManager.StdAttachmentObject",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

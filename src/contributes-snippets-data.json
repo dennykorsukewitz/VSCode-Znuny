@@ -596,6 +596,50 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.Add.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataAdd.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataDelete.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataListGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataSearch.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataUpdate.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.Get.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.GetLink.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.InitConfig.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.ListGet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/ObjectManager/znuny.ObjectManager.ArticleObject.code-snippets"
     },
     {
@@ -2484,11 +2528,27 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.CleanUpCSSSelector.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.ColorPicker.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.ComplexTablePreferencesGet.code-snippets"
     },
     {
       "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.ComplexTablePreferencesSet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.ConvertToCSS.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.CreateDynamicCSS.code-snippets"
     },
     {
       "language" : "perl",
@@ -2557,6 +2617,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.LoaderCreateCustomerJSCalls.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.LoaderCreateDynamicCSS.code-snippets"
     },
     {
       "language" : "perl",

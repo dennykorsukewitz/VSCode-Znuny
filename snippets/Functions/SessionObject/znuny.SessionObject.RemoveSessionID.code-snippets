@@ -4,7 +4,7 @@
             "${1:\\$SessionObject->RemoveSessionID(SessionID => '1234567890123456');}",
         ],
         "prefix": "znuny.SessionObject.RemoveSessionID",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

@@ -1,0 +1,20 @@
+{
+    "znuny.ActivityObject.Get": {
+        "body": [
+            "${1:my \\$Success = \\$ActivityObject->Get();",
+            "    ID         => 1,",
+            "    Type       => '...', # optional",
+            "    Title      => '...', # optional",
+            "    Text       => '...', # optional",
+            "    State      => '...', # optional",
+            "    Link       => '...', # optional",
+            "    CreateTime => '...', # optional",
+            "    CreateBy   => '...', # optional",
+            "    UserID     => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.Get",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

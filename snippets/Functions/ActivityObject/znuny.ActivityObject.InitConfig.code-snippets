@@ -1,0 +1,10 @@
+{
+    "znuny.ActivityObject.InitConfig": {
+        "body": [
+            "${1:my \\$Success = \\$ActivityObject->InitConfig();}",
+        ],
+        "prefix": "znuny.ActivityObject.InitConfig",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

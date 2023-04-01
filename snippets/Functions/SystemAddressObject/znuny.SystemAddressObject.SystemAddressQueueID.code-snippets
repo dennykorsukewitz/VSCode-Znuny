@@ -4,7 +4,7 @@
             "${1:my \\$QueueID = \\$SystemAddressObject->SystemAddressQueueID( Address => 'info@example.com' );}",
         ],
         "prefix": "znuny.SystemAddressObject.SystemAddressQueueID",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

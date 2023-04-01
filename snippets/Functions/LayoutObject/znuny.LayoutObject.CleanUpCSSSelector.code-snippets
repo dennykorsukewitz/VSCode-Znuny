@@ -1,0 +1,12 @@
+{
+    "znuny.LayoutObject.CleanUpCSSSelector": {
+        "body": [
+            "${1:my \\$CSSSelector = \\$LayoutObject->CleanUpCSSSelector(",
+            "    CSSSelector => 'pending-auto-close+',",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.CleanUpCSSSelector",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

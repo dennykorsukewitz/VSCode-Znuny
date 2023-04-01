@@ -9,7 +9,7 @@
             "${2:\\$Self->IsNot(\\$A, \\$B, 'Test Name');}",
         ],
         "prefix": "znuny.UnitTestObject.IsNot",
-        "description": "6.4, 6.5",
+        "description": "6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

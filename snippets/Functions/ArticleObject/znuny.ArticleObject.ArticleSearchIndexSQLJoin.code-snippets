@@ -13,14 +13,12 @@
             "        MIMEBase_Subject        => '%VIRUS 32%',",
             "        MIMEBase_Body           => '%VIRUS 32%',",
             "        MIMEBase_AttachmentName => '%anyfile.txt%',",
-            "        Chat_ChatterName        => '%Some Chatter Name%',",
-            "        Chat_MessageText        => '%Some Message Text%'",
             "        ...",
             "    \\},",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexSQLJoin",
-        "description": "6.0, 6.4, 6.5",
+        "description": "6.0, 6.4, 6.5, 7.0",
         "scope": "perl"
     }
 }

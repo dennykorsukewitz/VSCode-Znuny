@@ -1,0 +1,15 @@
+{
+    "znuny.ActivityObject.GetLink": {
+        "body": [
+            "${1:my \\$String = \\$ActivityObject->GetLink(",
+            "    TicketID => \\$TicketID,",
+            "",
+            "    # OR:",
+            "    ApointmentID => \\$ApointmentID,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.GetLink",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

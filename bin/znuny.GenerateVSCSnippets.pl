@@ -74,8 +74,8 @@ my @Directories  = (
     '/Kernel/System',
     '/Kernel/System/GenericInterface',
     '/Kernel/System/ProcessManagement',
-    '/Kernel/System/Scheduler',
     '/Kernel/System/UnitTest',
+#     '/Kernel/System/Scheduler',         # up to rel-4_0
 );
 
 # add these single files instead of whole directories

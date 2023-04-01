@@ -1,0 +1,20 @@
+{
+    "znuny.ActivityObject.DataDelete": {
+        "body": [
+            "${1:my \\$Success = \\$ActivityObject->DataDelete(",
+            "    ID         => '...', # optional",
+            "    Type       => '...', # optional",
+            "    Title      => '...', # optional",
+            "    Text       => '...', # optional",
+            "    State      => '...', # optional",
+            "    Link       => '...', # optional",
+            "    CreateTime => '...', # optional",
+            "    CreateBy   => '...', # optional",
+            "    UserID     => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.DataDelete",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}
