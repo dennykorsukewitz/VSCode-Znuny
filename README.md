@@ -46,7 +46,7 @@ Statically created snippets.
 
 #### Generated ![Snippets Generated Counter](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fdennykorsukewitz%2Fe2729bfd9b81d9c032ded617a3f924e7%2Fraw%2Fe19742578a7aaf26231a0af31d219d1abe3abb11%2FDK4Znuny-VisualStudioCode%3Asnippets-generated.json)
 
-Snippets created generically using the existing perl POD.
+Snippets created generically using the existing Perl POD.
 
 ```md
 snippets
@@ -85,7 +85,6 @@ if the active file is a "Znuny file".
 The status bar is updated with every active file change.
 
 ![StatusBar](doc/images/statusbar.gif)
-
 
 ## Installation
 
