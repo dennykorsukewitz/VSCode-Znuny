@@ -32,7 +32,6 @@
     "vscode": "^1.74.0"
   },
   "activationEvents": [
-    "onCommand:znuny.quoteWithMarker",
     "onCommand:znuny.showZnunyVersion",
     "*"
   ],
@@ -61,27 +60,11 @@
   "contributes": {
     "commands": [
       {
-        "command": "znuny.quoteWithMarker",
-        "title": "Znuny: Quote with Marker."
-      },
-      {
-        "command": "znuny.objectDependencies",
-        "title": "Znuny: Insert @ObjectDependencies."
-      },
-      {
         "command": "znuny.showZnunyVersion",
         "title": "Znuny: Show Znuny Version."
       }
     ],
     "keybindings": [
-      {
-        "command": "znuny.quoteWithMarker",
-        "key": "ctrl+alt+z q"
-      },
-      {
-        "command": "znuny.objectDependencies",
-        "key": "ctrl+alt+z d"
-      },
       {
         "command": "znuny.showZnunyVersion",
         "key": "ctrl+alt+z v"
@@ -110,11 +93,6 @@
           "type": "string",
           "description": "Znuny Status Bar hoverBackground color.",
           "default": "#ffc062"
-        },
-        "znuny.codeMarker": {
-          "type": "string",
-          "description": "Znuny Code Marker used in QuoteWithMarker function.",
-          "default": "Znuny"
         }
       }
     },
