@@ -2,6 +2,17 @@
 
 All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be documented in this file.
 
+## [1.0.6]
+
+## VSCode - Unique Identifier Change
+
+[Deprecated] Znuny (DK4Znuny-VisualStudioCode).
+`dennykorsukewitz.dk4znuny-visualstudiocode` is deprecate in favor of the new extension `dennykorsukewitz.znuny`.
+
+Please install the new Znuny extension instead and uninstall the old version.
+
+[Znuny](https://marketplace.visualstudio.com/items?itemName=dennykorsukewitz.znuny)
+
 ## [1.0.5]
 
 ### Snippets
