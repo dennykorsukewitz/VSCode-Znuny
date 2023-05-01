@@ -1,12 +1,12 @@
 repository:
   # The name of the repository. Changing this will rename the repository
-  name: DK4Znuny-VisualStudioCode
+  name: VSCode-Znuny
 
   # A short description of the repository that will show up on GitHub
-  description: Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development easier, faster and more error-free.
+  description: Znuny is an extension that helps you to make Znuny development easier, faster and more error-free.
 
   # A URL with more information about the repository
-  homepage: https://dennykorsukewitz.github.io/DK4Znuny-VisualStudioCode/
+  homepage: https://dennykorsukewitz.github.io/VSCode-Znuny/
 
   # A comma-separated list of topics to set on the repository
   topics: pages, otrs, znuny, package, extension, VisualStudioCode, VSC
