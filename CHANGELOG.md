@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be documented in this file.
+All notable changes to the "Znuny" extension will be documented in this file.
 
 ## [1.0.5]
 
@@ -96,7 +96,7 @@ All notable changes to the "Znuny (DK4Znuny-VisualStudioCode)" extension will be
 
 ### Snippets
 
-- Fixed - Broken snippet - Functions/TicketObject/znuny.TicketObject.TicketSearch.code-snippets [#2](https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/issues/2)
+- Fixed - Broken snippet - Functions/TicketObject/znuny.TicketObject.TicketSearch.code-snippets [#2](https://github.com/dennykorsukewitz/VSCode-Znuny/issues/2)
 - Added missing DiffObject snippet for 6.0
 - Tidied Snippets
 

@@ -1,20 +1,20 @@
 {
-  "name": "dk4znuny-visualstudiocode",
+  "name": "znuny",
   "displayName": "Znuny",
-  "description": "Znuny (DK4Znuny-VisualStudioCode) is an extension that helps you to make Znuny development easier, faster and more error-free.",
+  "description": "Znuny is an extension that helps you to make Znuny development easier, faster and more error-free.",
   "version": "1.0.5",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
-  "homepage": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/blob/dev/README.md",
+  "homepage": "https://github.com/dennykorsukewitz/VSCode-Znuny/blob/dev/README.md",
   "pricing": "Free",
   "bugs": {
-    "url": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode/issues",
+    "url": "https://github.com/dennykorsukewitz/VSCode-Znuny/issues",
     "email": "dennykorsukewitz@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dennykorsukewitz/DK4Znuny-VisualStudioCode"
+    "url": "https://github.com/dennykorsukewitz/VSCode-Znuny"
   },
   "sponsor": {
     "url": "https://github.com/sponsors/dennykorsukewitz"
