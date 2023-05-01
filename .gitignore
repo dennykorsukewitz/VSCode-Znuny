@@ -5,3 +5,4 @@ node_modules
 **/*.map
 package-lock.json
 TODO.md
+*.vsix
