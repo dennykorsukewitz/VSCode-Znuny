@@ -1,7 +1,7 @@
 <img align="right" width="150" height="150" src="doc/images/icon.png">
 
-
 # [Deprecated] DK4Znuny-VisualStudioCode
+
 `dennykorsukewitz.dk4znuny-visualstudiocode` is deprecate in favor of the new extension `dennykorsukewitz.znuny`.
 
 Please install the new Znuny extension instead and uninstall the old version.

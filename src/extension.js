@@ -15,6 +15,10 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     // console.log('Congratulations, your extension "Znuny" is now active!');
 
+    // This function shows that this extension `dennykorsukewitz.dk4znuny-visualstudiocode` is deprecate in favor of the new extension `dennykorsukewitz.znuny`.
+    // Please install the new Znuny extension instead and uninstall the old version.
+    initShowDeprecated(context);
+
     // This function quotes the selected area and adds a custom marker to it.
     initQuoteWithMarker(context);
 
@@ -23,6 +27,13 @@ function activate(context) {
 
     // The status bar gets an additional **Znuny** item and the entire status bar is displayed in the Znuny color if the active file is a "Znuny file".
     initStatusBarItem(context);
+}
+
+function initShowDeprecated(context) {
+    vscode.window.showWarningMessage(`[Deprecated] Znuny (DK4Znuny-VisualStudioCode).`, {
+        detail: '"dennykorsukewitz.dk4znuny-visualstudiocode" is deprecate in favor of the new extension "dennykorsukewitz.znuny". Please install the new Znuny extension instead and uninstall the old version.', modal: true
+    });
+    return;
 }
 
 function initQuoteWithMarker(context) {
