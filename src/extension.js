@@ -89,7 +89,7 @@ function initObjectDependencies(context) {
         // Search for current package name.
         let packageNamePattern = /package (.*);/g;
         let packageNameMatches = [...text.matchAll(packageNamePattern)];
-        let packageName        = packageNameMatches[0][1];
+        let packageName = packageNameMatches[0][1];
 
         // Loop over all "$Kernel::OM->Get('...')"s via a RegExp and extract the used object
         let objectDependencies = [];
