@@ -2,6 +2,10 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.1]
+
+Added missing glob node_module in package.json and vsix file.
+
 ## [1.1.0]
 
 ### AddFolderToWorkspace
