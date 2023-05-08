@@ -2,7 +2,7 @@
   "name": "znuny",
   "displayName": "Znuny",
   "description": "Znuny is an extension that helps you to make Znuny development easier, faster and more error-free.",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -32,8 +32,8 @@
     "vscode": "^1.74.0"
   },
   "activationEvents": [
-    "onCommand:znuny.showZnunyVersion",
-    "*"
+    "workspaceContains:**.sopm",
+    "workspaceContains:RELEASE"
   ],
   "main": "./src/extension",
   "scripts": {
@@ -53,18 +53,78 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
+    "node-fetch": "^2.6.9",
     "path": "^0.12.7",
+    "vscode-uri": "^3.0.7",
     "xmldom": "^0.6.0",
     "xpath": "^0.0.32"
+  },
+  "vsce": {
+    "dependencies": true
   },
   "contributes": {
     "commands": [
       {
+        "command": "znuny.addFolderToWorkspace",
+        "title": "Add Folder to Workspace.",
+        "category": "Znuny",
+        "icon": "$(accounts-view-bar-icon)"
+      },
+      {
+        "command": "znuny.customizer",
+        "title": "Fetch Znuny files from GitHub.",
+        "category": "Znuny"
+      },
+      {
+        "command": "znuny.generateFilelist",
+        "title": "Insert Filelist to SOPM.",
+        "category": "Znuny"
+      },
+      {
+        "command": "znuny.objectDependencies",
+        "title": "Insert @ObjectDependencies.",
+        "category": "Znuny"
+      },
+      {
+        "command": "znuny.quoteWithMarker",
+        "title": "Quote with Marker.",
+        "category": "Znuny"
+      },
+      {
         "command": "znuny.showZnunyVersion",
-        "title": "Znuny: Show Znuny Version."
+        "title": "Show Znuny Version.",
+        "category": "Znuny"
       }
     ],
     "keybindings": [
+      {
+        "command": "workbench.action.openSettings",
+        "key": "ctrl+alt+z z"
+      },
+      {
+        "command": "workbench.action.addRootFolder",
+        "key": "ctrl+alt+z w"
+      },
+      {
+        "command": "znuny.addFolderToWorkspace",
+        "key": "ctrl+alt+z p"
+      },
+      {
+        "command": "znuny.customizer",
+        "key": "ctrl+alt+z c"
+      },
+      {
+        "command": "znuny.generateFilelist",
+        "key": "ctrl+alt+z f"
+      },
+      {
+        "command": "znuny.objectDependencies",
+        "key": "ctrl+alt+z d"
+      },
+      {
+        "command": "znuny.quoteWithMarker",
+        "key": "ctrl+alt+z q"
+      },
       {
         "command": "znuny.showZnunyVersion",
         "key": "ctrl+alt+z v"
@@ -74,22 +134,96 @@
       "type": "object",
       "title": "Znuny",
       "properties": {
-        "znuny.color.statusBar.background": {
+        "znuny.quoteWithMarker.codeMarker": {
+          "type": "string",
+          "description": "Znuny Code Marker used in QuoteWithMarker function.",
+          "default": "Znuny"
+        },
+        "znuny.generateFilelist.mode": {
+          "type": "string",
+          "description": "Znuny Generate Filelist Mode is used in GenerateFilelist function. It defines how the file list should be generated.",
+          "default": "File",
+          "enum": [
+            "File",
+            "Filelist"
+          ],
+          "enumDescriptions": [
+            "Adds only every single file without <Filelist>.",
+            "Adds the complete filelist with <Filelist>."
+          ]
+        },
+        "znuny.customizer.copyright": {
+          "type": "string",
+          "description": "Znuny Customizer Copyright. This Copyright will be added to the Customizer file under the Znuny Copyright."
+        },
+        "znuny.customizer.repositories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of possible GitHub repositories.",
+          "default": [
+            "Znuny",
+            "FAQ",
+            "GeneralCatalog",
+            "ImportExport",
+            "ITSMChangeManagement",
+            "ITSMConfigurationManagement",
+            "ITSMCore",
+            "ITSMIncidentProblemManagement",
+            "ITSMServiceLevelManagement",
+            "OTRSMasterSlave",
+            "Survey",
+            "TimeAccounting"
+          ]
+        },
+        "znuny.addFolderToWorkspace.workspaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Provides a searchable list of folders (Workspaces) that can be added to the current VSC Workspace.",
+          "default": []
+        },
+        "znuny.statusBar.enabled": {
+          "type": "string",
+          "description": "Defines when the StatusBar should be updated.",
+          "default": "On",
+          "enum": [
+            "On",
+            "OnCommand",
+            "OnChangeActiveTextEditor",
+            "Off"
+          ],
+          "enumItemLabels": [
+            "On",
+            "On Command",
+            "On ChangeActiveTextEditor",
+            "Off"
+          ],
+          "enumDescriptions": [
+            "Always active.",
+            "Activated only by a command.",
+            "Activated only by change of active TextEditor.",
+            "Not active."
+          ]
+        },
+        "znuny.statusBar.statusBar.background": {
           "type": "string",
           "description": "Znuny Status Bar background color.",
           "default": "#ff9b00"
         },
-        "znuny.color.statusBar.foreground": {
+        "znuny.statusBar.statusBar.foreground": {
           "type": "string",
           "description": "Znuny Status Bar foreground color.",
           "default": "#000000"
         },
-        "znuny.color.statusBar.foregroundZnuny": {
+        "znuny.statusBar.statusBar.foregroundZnuny": {
           "type": "string",
           "description": "Znuny Status Bar foreground color for Znuny Version Item.",
           "default": "#ffffff"
         },
-        "znuny.color.statusBarItem.hoverBackground": {
+        "znuny.statusBar.statusBarItem.hoverBackground": {
           "type": "string",
           "description": "Znuny Status Bar hoverBackground color.",
           "default": "#ffc062"

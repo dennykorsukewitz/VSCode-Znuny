@@ -1,7 +1,8 @@
-const vscode  = require('vscode');
-const fs      = require('fs');
-const path    = require('path');
-const sopm    = require('./sopm.js');
+const vscode = require('vscode');
+const fs = require('fs');
+const path = require('path');
+const glob = require('glob');
+const sopm = require('./sopm.js');
 const release = require('./release.js');
 
 // get Znuny data from RELEASE or sopm file
@@ -10,7 +11,7 @@ function getZnunyData() {
     let data = {};
 
     // return if no workspaceFolders is available
-    if (!vscode.workspace.workspaceFolders){
+    if (!vscode.workspace.workspaceFolders) {
         return data;
     }
 
@@ -27,7 +28,7 @@ function getZnunyData() {
             }
         );
 
-        if (!matchingWorkspace || !matchingWorkspace.uri){
+        if (!matchingWorkspace || !matchingWorkspace.uri) {
             return data;
         }
         workspace = matchingWorkspace.uri.path;
@@ -40,7 +41,7 @@ function getZnunyData() {
         return data;
     }
 
-    const dir   = fs.readdirSync(workspace);
+    const dir = fs.readdirSync(workspace);
     const files = dir.filter((elm) => elm.match(/.*\.(sopm)/ig));
 
     if (!files[0]) {
@@ -48,7 +49,7 @@ function getZnunyData() {
     }
 
     const sopm_name = files[0];
-    filePath        = workspace + '/' + sopm_name;
+    filePath = workspace + '/' + sopm_name;
 
     if (fs.existsSync(filePath)) {
         data = sopm.getData(filePath);
@@ -57,6 +58,15 @@ function getZnunyData() {
     return data;
 }
 
+async function getFileList(path) {
+
+    const files = await glob.sync(path + '/**/*.*');
+    let fileList = files.map(file => file.replace(path, '')).filter((file) => file.match(/.*\.(pm|tt|t|xml|js|html\.tmpl)$/ig));
+
+    return fileList;
+}
+
 module.exports = {
-    getZnunyData
+    getZnunyData,
+    getFileList
 }

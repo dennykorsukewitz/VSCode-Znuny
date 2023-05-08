@@ -2,6 +2,46 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.0]
+
+### AddFolderToWorkspace
+
+This Function provides a searchable list of folders (Workspaces) that can be added to the current VSC Workspace. All configured folders will be displayed.
+
+**Shortcut:** ```strg + alt + z, p``` \
+**Command:**  ```Znuny: Add Folder to Workspace.```
+
+### Customizer
+
+This function fetches Znuny files from GitHub and adds origin to header.
+
+**Shortcut:** ```strg + alt + z, c``` \
+**Command:**  ```Znuny: Fetch Znuny files from GitHub.```
+
+### GenerateFilelist
+
+Inserts the SOPM Filelist content containing all files of a selectable project.
+The following file types will be added: `pm | tt | t | xml | js | html.tmpl`
+
+**Shortcut:** ```strg + alt + z, f``` \
+**Command:**  ```Znuny: Insert Filelist to SOPM.```
+
+### ObjectDependencies
+
+This function inserts the `@ObjectDependencies` array by parsing the file content. Only regular used OM (ObjectManager) calls are supported.
+
+**Shortcut:** ```strg + alt + z, d``` \
+**Command:**  ```Znuny: Insert @ObjectDependencies.```
+
+### QuoteWithMarker
+
+This function quotes the selected area and adds a custom marker to it.
+
+`QuoteWithMarker` can be very useful especially for custom files `Custom/**`.
+
+**Shortcut:** ```strg + alt + z, q``` \
+**Command:**  ```Znuny: Quote with Marker.```
+
 ## [1.0.5]
 
 ### Snippets
