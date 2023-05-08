@@ -4,5 +4,6 @@ node_modules
 .vscode-test/**
 **/*.map
 package-lock.json
-TODO.md
+.vscode/settings.json
 *.vsix
+TODO.md
