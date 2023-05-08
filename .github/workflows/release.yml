@@ -10,7 +10,7 @@ jobs:
   Release:
     environment:
       name: Release
-      url: "https://marketplace.visualstudio.com/items?itemName=dennykorsukewitz.dk4znuny-visualstudiocode"
+      url: "https://marketplace.visualstudio.com/items?itemName=dennykorsukewitz.znuny"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
