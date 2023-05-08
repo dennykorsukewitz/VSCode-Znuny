@@ -32,6 +32,12 @@
     "vscode": "^1.74.0"
   },
   "activationEvents": [
+    "onCommand:znuny.addFolderToWorkspace",
+    "onCommand:znuny.customizer",
+    "onCommand:znuny.generateFilelist",
+    "onCommand:znuny.objectDependencies",
+    "onCommand:znuny.quoteWithMarker",
+    "onCommand:znuny.showZnunyVersion",
     "workspaceContains:**.sopm",
     "workspaceContains:RELEASE"
   ],
@@ -42,17 +48,16 @@
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "@types/glob": "^8.0.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
     "@types/vscode": "^1.74.0",
     "@vscode/test-electron": "^2.2.0",
     "eslint": "^8.28.0",
-    "glob": "^8.0.3",
     "mocha": "^10.1.0",
     "typescript": "^4.9.3"
   },
   "dependencies": {
+    "glob": "^8.1.0",
     "node-fetch": "^2.6.9",
     "path": "^0.12.7",
     "vscode-uri": "^3.0.7",
@@ -67,8 +72,7 @@
       {
         "command": "znuny.addFolderToWorkspace",
         "title": "Add Folder to Workspace.",
-        "category": "Znuny",
-        "icon": "$(accounts-view-bar-icon)"
+        "category": "Znuny"
       },
       {
         "command": "znuny.customizer",
