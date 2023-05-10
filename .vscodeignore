@@ -7,7 +7,9 @@ vsc-extension-quickstart.md
 **/jsconfig.json
 **/*.map
 **/.eslintrc.json
+
 .env
 coverage
 *.vsix
 TODO.md
+snippets/_Test_/**
