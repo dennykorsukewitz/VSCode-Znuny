@@ -9,7 +9,7 @@
             "        Queue         => 'Raw',",
             "        DynamicField1 => 'Value',",
             "        Subject       => 'Testsubject',",
-            "        ...",
+            "        # ...",
             "    \\},",
             ");}",
         ],

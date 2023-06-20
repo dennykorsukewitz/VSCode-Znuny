@@ -9,7 +9,7 @@
             "        Subaction   => undef,",
             "        UserID      => \\$UserID,",
             "        CustomParam => [ 1, 2, 3, ],",
-            "        ...",
+            "        # ...",
             "    \\},",
             ");}",
         ],

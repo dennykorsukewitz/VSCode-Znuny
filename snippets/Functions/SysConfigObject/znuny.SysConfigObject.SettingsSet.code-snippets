@@ -11,7 +11,7 @@
             "            IsValid                => 1,                # (optional)",
             "            UserModificationActive => 1,                # (optional)",
             "        \\},",
-            "        ...",
+            "        # ...",
             "    ],",
             ");}",
         ],

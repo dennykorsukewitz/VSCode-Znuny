@@ -3,7 +3,7 @@
         "body": [
             "${1:my \\$Needed = \\$ArticleObject->ArticleSearchIndexSQLJoinNeeded(",
             "    SearchParams => {",
-            "        ...",
+            "        # ...",
             "        ConditionInline         => 1,",
             "        ContentSearchPrefix     => '*',",
             "        ContentSearchSuffix     => '*',",
@@ -13,7 +13,7 @@
             "        MIMEBase_Subject        => '%VIRUS 32%',",
             "        MIMEBase_Body           => '%VIRUS 32%',",
             "        MIMEBase_AttachmentName => '%anyfile.txt%',",
-            "        ...",
+            "        # ...",
             "    \\},",
             ");}",
         ],

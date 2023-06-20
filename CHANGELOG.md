@@ -2,6 +2,44 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.2]
+
+### Snippets
+
+#### Updated Snippets
+
+- `znuny.ArticleObject.ArticleSearchIndexSQLJoin.code-snippets`
+- `znuny.ArticleObject.ArticleSearchIndexSQLJoinNeeded.code-snippets`
+- `znuny.ArticleObject.ArticleSearchIndexWhereCondition.code-snippets`
+- `znuny.BackendObject.EditFieldRender.code-snippets`
+- `znuny.CalendarObject.CalendarImport.code-snippets`
+- `znuny.CalendarObject.TicketAppointmentProcessRule.code-snippets`
+- `znuny.CustomerGroupObject.GroupCustomerAdd.code-snippets`
+- `znuny.DBCRUDObject.DataAdd.code-snippets`
+- `znuny.DynamicFieldValueObject.ValueSet.code-snippets`
+- `znuny.ExcelObject.Array2Excel.code-snippets`
+- `znuny.FormDraftObject.FormDraftAdd.code-snippets`
+- `znuny.FormDraftObject.FormDraftUpdate.code-snippets`
+- `znuny.GenericAgentObject.JobAdd.code-snippets`
+- `znuny.HelperObject.FillTestEnvironment.code-snippets`
+- `znuny.HelperObject.SetupTestEnvironment.code-snippets`
+- `znuny.JWTObject.Decode.code-snippets`
+- `znuny.NotificationEventObject.NotificationAdd.code-snippets`
+- `znuny.NotificationEventObject.NotificationUpdate.code-snippets`
+- `znuny.ParamObject.SaveFormDraft.code-snippets`
+- `znuny.SchedulerDBObject.FutureTaskAdd.code-snippets`
+- `znuny.SchedulerDBObject.RecurrentTaskExecute.code-snippets`
+- `znuny.SchedulerDBObject.TaskAdd.code-snippets`
+- `znuny.SchedulerObject.TaskAdd.code-snippets`
+- `znuny.SeleniumObject.InputFieldIDMapping.code-snippets`
+- `znuny.SysConfigObject.SettingAddItem.code-snippets`
+- `znuny.SysConfigObject.SettingsSet.code-snippets`
+- `znuny.SysConfigObject.SettingsUpdatedList.code-snippets`
+- `znuny.TransitionObject.TransitionCheck.code-snippets`
+- `znuny.UnitTestWebserviceObject.Mock.code-snippets`
+- `znuny.UnitTestWebserviceObject.Process.code-snippets`
+- `znuny.WebserviceHistoryObject.WebserviceHistoryAdd.code-snippets`
+
 ## [1.1.1]
 
 Added missing glob node_module in package.json and vsix file.

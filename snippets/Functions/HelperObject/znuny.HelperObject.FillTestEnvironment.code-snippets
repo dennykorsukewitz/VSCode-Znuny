@@ -9,7 +9,7 @@
             "my \\$Result = \\$HelperObject->FillTestEnvironment(",
             "    Type => {",
             "        'Type 1::Sub Type' => 1,",
-            "        ...",
+            "        # ...",
             "    \\}",
             ");}",
             "${3:# would do nothing -> return an empty HashRef",
