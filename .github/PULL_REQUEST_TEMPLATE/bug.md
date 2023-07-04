@@ -1,7 +1,7 @@
 ---
 name: Bug report
-about: Fix a bug.
-title: 'Fixes #ISSUE - <Name of Bug>'
+about: Create a report to help us improve
+title: 'Bug report'
 labels: 'Bug'
 assignees: 'dennykorsukewitz'
 ---
@@ -32,8 +32,7 @@ If applicable, add screenshots to help explain your problem.
 ## Environment
 
 - OS: [e.g. Windows, macOS, Linux]
-- Browser: [e. g. Chrome, Firefox, Safari]
-- OTRS version [e. g. 6.0.15]
+- VSC Version: [1.78.1]
 
 ## Additional information
 
