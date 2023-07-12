@@ -6,7 +6,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 
 ### Snippets
 
-#### Updated Snippets
+#### Added Snippets
 
 - `znuny.LayoutObject.AddPopupProfiles.code-snippets`
 - `znuny.MentionObject.RemoveAllMentions.code-snippets`
