@@ -2,6 +2,15 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.3]
+
+### Snippets
+
+#### Updated Snippets
+
+- `znuny.LayoutObject.AddPopupProfiles.code-snippets`
+- `znuny.MentionObject.RemoveAllMentions.code-snippets`
+
 ## [1.1.2]
 
 ### Snippets
