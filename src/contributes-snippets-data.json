@@ -2480,6 +2480,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.AddPopupProfiles.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.ArticleActions.code-snippets"
     },
     {
@@ -3001,6 +3005,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/MentionObject/znuny.MentionObject.IsGroupBlocked.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/MentionObject/znuny.MentionObject.RemoveAllMentions.code-snippets"
     },
     {
       "language" : "perl",
