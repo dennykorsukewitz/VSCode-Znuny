@@ -2,10 +2,10 @@
     "znuny.PackageObject.RepositoryPackageListGet": {
         "body": [
             "${1:my @List = \\$PackageObject->RepositoryPackageListGet(",
-            "    Source             => 'Example repository 1', # the value of key 'Name' in item of SysConfig option Package::RepositoryList or a direct download URL",
+            "    Source             => 'Example repository 1',   # the value of key 'Name' in item of SysConfig option Package::RepositoryList or a direct download URL",
             "    Lang               => 'en',",
-            "    Cache              => 0,    # (optional) use cached data",
-            "    IncludeSameVersion => 1,    # (optional) also get packages already installed and with the same version",
+            "    Cache              => 0,                        # (optional) use cached data",
+            "    IncludeSameVersion => 1,                        # (optional) also get packages already installed and with the same version",
             ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryPackageListGet",

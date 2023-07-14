@@ -2,7 +2,7 @@
     "znuny.SystemDataObject.SystemDataUpdate": {
         "body": [
             "${1:my \\$Result = \\$SystemDataObject->SystemDataUpdate(",
-            "    Key    => 'OTRS Version',",
+            "    Key    => 'Znuny Version',",
             "    Value  => 'Some New Value',",
             "    UserID => \\$UserID,",
             ");}",

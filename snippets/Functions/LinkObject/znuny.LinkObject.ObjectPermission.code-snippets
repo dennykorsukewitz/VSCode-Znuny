@@ -2,9 +2,9 @@
     "znuny.LinkObject.ObjectPermission": {
         "body": [
             "${1:\\$Permission = \\$LinkObject->ObjectPermission(",
-            "    Object  => 'Ticket',",
-            "    Key     => 123,",
-            "    UserID  => \\$UserID,",
+            "    Object => 'Ticket',",
+            "    Key    => 123,",
+            "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectPermission",

@@ -3,7 +3,7 @@
         "body": [
             "${1:\\$Exist = \\$QueueObject->NameExistsCheck(",
             "    Name => 'Some::Queue',",
-            "    ID => 1, # optional",
+            "    ID   => 1,              # optional",
             ");}",
         ],
         "prefix": "znuny.QueueObject.NameExistsCheck",

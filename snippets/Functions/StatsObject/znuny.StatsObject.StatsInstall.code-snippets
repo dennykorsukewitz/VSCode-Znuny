@@ -2,7 +2,7 @@
     "znuny.StatsObject.StatsInstall": {
         "body": [
             "${1:my \\$Result = \\$StatsObject->StatsInstall(",
-            "    FilePrefix => 'FAQ',  # (optional)",
+            "    FilePrefix => 'FAQ',    # (optional)",
             "    UserID     => \\$UserID,",
             ");}",
         ],

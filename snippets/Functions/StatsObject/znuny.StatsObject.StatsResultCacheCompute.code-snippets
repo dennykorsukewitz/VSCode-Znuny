@@ -3,8 +3,8 @@
         "body": [
             "${1:my \\$StatArray = \\$StatsObject->StatsResultCacheCompute(",
             "    StatID       => \\$StatID,",
-            "    UserID       => \\$UserID,        # target UserID",
-            "    UserGetParam => \\%UserGetParam, # user settings of non-fixed fields",
+            "    UserID       => \\$UserID,            # target UserID",
+            "    UserGetParam => \\%UserGetParam,     # user settings of non-fixed fields",
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsResultCacheCompute",

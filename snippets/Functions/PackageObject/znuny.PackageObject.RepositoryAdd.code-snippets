@@ -6,7 +6,7 @@
             "    FromCloud => 0,             # optional 1 or 0, it indicates if package came from Cloud or not",
             ");}",
             "${2:\\$PackageObject->RepositoryAdd(",
-            "    String    => \\$FileString,",
+            "    String => \\$FileString,",
             ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryAdd",

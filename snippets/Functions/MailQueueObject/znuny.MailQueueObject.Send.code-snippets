@@ -2,11 +2,11 @@
     "znuny.MailQueueObject.Send": {
         "body": [
             "${1:my \\$List = \\$MailQueueObject->Send(",
-            "    ID              => '...',",
-            "    Sender          => '...',",
-            "    Recipient       => '...',",
-            "    Message         => '...',",
-            "    Force           => '...' # optional, to force the sending even if isn't time",
+            "    ID        => '...',",
+            "    Sender    => '...',",
+            "    Recipient => '...',",
+            "    Message   => '...',",
+            "    Force     => '...',     # optional, to force the sending even if isn't time",
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.Send",

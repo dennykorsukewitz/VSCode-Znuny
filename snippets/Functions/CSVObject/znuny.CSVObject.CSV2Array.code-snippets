@@ -3,8 +3,8 @@
         "body": [
             "${1:my \\$RefArray = \\$CSVObject->CSV2Array(",
             "    String    => \\$CSVString,",
-            "    Separator => ';', # optional separator (default is ;)",
-            "    Quote     => '\\"', # optional quote (default is \\")",
+            "    Separator => ';',           # optional separator (default is ;)",
+            "    Quote     => '\\"',           # optional quote (default is \\")",
             ");}",
         ],
         "prefix": "znuny.CSVObject.CSV2Array",

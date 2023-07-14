@@ -5,7 +5,7 @@
             "    Directory => 'c:\some\location',",
             "    Filename  => 'me_to/alal.xml',",
             "    # or Location",
-            "    Location  => 'c:\some\location\me_to\alal.xml'",
+            "    Location  => 'c:\some\location\me_to\alal.xml',",
             ");}",
         ],
         "prefix": "znuny.MainObject.FileGetMTime",

@@ -2,11 +2,11 @@
     "znuny.SysConfigObject.SettingReset": {
         "body": [
             "${1:my \\$Result = \\$SysConfigObject->SettingReset(",
-            "    Name                  => 'Setting Name',                # (required) Setting name",
-            "    TargetUserID          => \\$TargetUserID,                             # (optional) UserID for settings in AgentPreferences",
-            "                                                            # or",
-            "    ExclusiveLockGUID     => \\$LockingString,                # (optional) the GUID used to locking the setting",
-            "    UserID                => \\$UserID,                             # (required) UserID that creates modification",
+            "    Name              => 'Setting Name',                # (required) Setting name",
+            "    TargetUserID      => \\$TargetUserID,                             # (optional) UserID for settings in AgentPreferences",
+            "                                                        # or",
+            "    ExclusiveLockGUID => \\$LockingString,                # (optional) the GUID used to locking the setting",
+            "    UserID            => \\$UserID,                             # (required) UserID that creates modification",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingReset",

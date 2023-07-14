@@ -6,7 +6,6 @@
             "    RuleID        => \\$RuleID,    # (required) RuleID",
             "                                                            # or",
             "    TicketID      => \\$TicketID,                                     # (required) Ticket ID",
-            "",
             "    AppointmentID => \\$AppointmentID,                                     # (optional) Appointment ID is known",
             ");}",
         ],

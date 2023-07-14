@@ -2,11 +2,10 @@
     "znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations": {
         "body": [
             "${1:my \\$TicketAttributeRelations = \\$TicketAttributeRelationsObject->GetTicketAttributeRelations(",
-            "    ID => 123,",
+            "    ID         => 123,",
             "    # or",
             "    # Filename => 'test.csv',",
-            "",
-            "    UserID  => \\$UserID,",
+            "    UserID     => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations",

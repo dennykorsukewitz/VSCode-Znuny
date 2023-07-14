@@ -2,7 +2,7 @@
     "znuny.QueueObject.QueueGet": {
         "body": [
             "${1:my %Queue = \\$QueueObject->QueueGet(",
-            "    ID    => 123,",
+            "    ID => 123,",
             ");}",
             "${2:my %Queue = \\$QueueObject->QueueGet(",
             "    Name  => 'Some::Queue',",

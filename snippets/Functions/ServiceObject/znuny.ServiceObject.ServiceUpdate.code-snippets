@@ -3,10 +3,10 @@
         "body": [
             "${1:my \\$True = \\$ServiceObject->ServiceUpdate(",
             "    ServiceID => \\$ServiceID,",
-            "    ParentID  => \\$ParentID,           # (optional)",
+            "    ParentID  => \\$ParentID,                 # (optional)",
             "    Name      => 'Service Name',",
             "    ValidID   => \\$ValidID,",
-            "    Comment   => 'Comment',    # (optional)",
+            "    Comment   => 'Comment',         # (optional)",
             "    UserID    => \\$UserID,",
             "",
             "    # ITSMCore (if installed)",

@@ -3,7 +3,7 @@
         "body": [
             "${1:my \\$Success = \\$FormDraftObject->FormDraftDelete(",
             "    FormDraftID => \\$FormDraftID,",
-            "    UserID  => \\$UserID,",
+            "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftDelete",

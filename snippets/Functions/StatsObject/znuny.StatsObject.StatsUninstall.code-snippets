@@ -2,7 +2,7 @@
     "znuny.StatsObject.StatsUninstall": {
         "body": [
             "${1:my \\$Result = \\$StatsObject->StatsUninstall(",
-            "    FilePrefix => 'FAQ',  # (optional)",
+            "    FilePrefix => 'FAQ',    # (optional)",
             "    UserID     => \\$UserID,",
             ");}",
         ],

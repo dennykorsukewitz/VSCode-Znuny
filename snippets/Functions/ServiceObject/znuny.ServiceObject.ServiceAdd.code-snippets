@@ -3,9 +3,9 @@
         "body": [
             "${1:my \\$ServiceID = \\$ServiceObject->ServiceAdd(",
             "    Name     => 'Service Name',",
-            "    ParentID => \\$ParentID,           # (optional)",
+            "    ParentID => \\$ParentID,              # (optional)",
             "    ValidID  => \\$ValidID,",
-            "    Comment  => 'Comment',    # (optional)",
+            "    Comment  => 'Comment',      # (optional)",
             "    UserID   => \\$UserID,",
             "",
             "    # ITSMCore (if installed)",

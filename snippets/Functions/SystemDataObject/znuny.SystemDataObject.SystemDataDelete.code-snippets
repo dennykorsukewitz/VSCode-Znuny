@@ -2,7 +2,7 @@
     "znuny.SystemDataObject.SystemDataDelete": {
         "body": [
             "${1:\\$SystemDataObject->SystemDataDelete(",
-            "    Key    => 'OTRS Version',",
+            "    Key    => 'Znuny Version',",
             "    UserID => \\$UserID,",
             ");}",
         ],
