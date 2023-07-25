@@ -1,0 +1,10 @@
+{
+    "znuny.SessionObject.GetOrphanedSessionIDs": {
+        "body": [
+            "${1:my @Sessions = \\$SessionObject->GetOrphanedSessionIDs();}",
+        ],
+        "prefix": "znuny.SessionObject.GetOrphanedSessionIDs",
+        "description": "7.0",
+        "scope": "perl"
+    }
+}

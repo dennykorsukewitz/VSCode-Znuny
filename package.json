@@ -4399,6 +4399,10 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/SessionObject/znuny.SessionObject.GetOrphanedSessionIDs.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Functions/SessionObject/znuny.SessionObject.GetSessionIDData.code-snippets"
       },
       {

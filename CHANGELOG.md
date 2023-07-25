@@ -10,6 +10,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 
 - `znuny.LayoutObject.AddPopupProfiles.code-snippets`
 - `znuny.MentionObject.RemoveAllMentions.code-snippets`
+- `znuny.SessionObject.GetOrphanedSessionIDs.code-snippets`
 
 #### Updated Snippets
 
