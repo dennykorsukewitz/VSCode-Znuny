@@ -2,6 +2,13 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.4]
+
+### QuoteWithMarker
+
+LanguageID detection has been added to support more languages.
+There is also a new configuration `znuny.quoteWithMarker.lineComment` that can be customized.
+
 ## [1.1.3]
 
 ### Snippets

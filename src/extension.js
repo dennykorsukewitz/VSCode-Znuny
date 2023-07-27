@@ -2,6 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
 const fs = require('fs');
+const path = require('path');
 const helper = require('./utils/helper.js');
 const { default: fetch } = require('node-fetch');
 require('buffer');
@@ -254,14 +255,14 @@ function initGenerateFilelist(context) {
     const generateFilelistId = 'znuny.generateFilelist';
     context.subscriptions.push(vscode.commands.registerCommand(generateFilelistId, async () => {
 
-        let editor = vscode.window.activeTextEditor;
+        let activeEditor = vscode.window.activeTextEditor;
 
-        if (!editor) return; // No open text editor.
-        if (!editor.document.fileName.endsWith('.sopm')) return; // No SOPM file.
+        if (!activeEditor) return; // No open text editor.
+        if (!activeEditor.document.fileName.endsWith('.sopm')) return; // No SOPM file.
 
         let config = vscode.workspace.getConfiguration('znuny').get('generateFilelist');
 
-        let fileName = editor.document.fileName;
+        let fileName = activeEditor.document.fileName;
         var workspace = fileName.substr(0, fileName.lastIndexOf("/") + 1);
         let filesList = await helper.getFileList(workspace);
 
@@ -292,8 +293,8 @@ function initGenerateFilelist(context) {
         }
 
         // Add FileList to current position (selection.active)
-        editor.edit(editBuilder => {
-            editBuilder.insert(editor.selection.active, fileListTemplate);
+        activeEditor.edit(editBuilder => {
+            editBuilder.insert(activeEditor.selection.active, fileListTemplate);
         });
     }))
 }
@@ -303,13 +304,13 @@ function initObjectDependencies(context) {
     const objectDependenciesId = 'znuny.objectDependencies';
     context.subscriptions.push(vscode.commands.registerCommand(objectDependenciesId, () => {
 
-        let editor = vscode.window.activeTextEditor;
-        if (!editor) return; // No open text editor.
+        let activeEditor = vscode.window.activeTextEditor;
+        if (!activeEditor) return; // No open text editor.
 
-        let text = editor.document.getText();
+        let text = activeEditor.document.getText();
         if (!text) return; // No text.
 
-        let languageId = editor.document.languageId;
+        let languageId = activeEditor.document.languageId;
         if (languageId != 'perl') return; // No perl language (syntax).
 
         // Search for current package name.
@@ -342,8 +343,8 @@ function initObjectDependencies(context) {
         objectDependenciesTemplate += ");";
 
         // Add ObjectDependencies to current position (selection.active)
-        editor.edit(editBuilder => {
-            editBuilder.insert(editor.selection.active, objectDependenciesTemplate);
+        activeEditor.edit(editBuilder => {
+            editBuilder.insert(activeEditor.selection.active, objectDependenciesTemplate);
         });
     }))
 }
@@ -352,50 +353,76 @@ function initQuoteWithMarker(context) {
     const quoteWithMarkerId = 'znuny.quoteWithMarker';
     context.subscriptions.push(vscode.commands.registerCommand(quoteWithMarkerId, () => {
 
-        let editor = vscode.window.activeTextEditor;
-        if (!editor) return; // No open text editor.
+        let activeEditor = vscode.window.activeTextEditor;
+        if (!activeEditor) return; // No open text editor.
 
-        let selection = editor.selection;
-        let text = editor.document.getText(selection) || '';
+        // Get current selection
+        let selection = activeEditor.selection;
+
+        // Select current line if nothing is selected
+        if (selection.isEmpty == true) {
+            activeEditor.selection = new vscode.Selection(selection.active.line, 0 ,selection.active.line, 99)
+            selection = activeEditor.selection;
+        }
+
+        let text = activeEditor.document.getText(selection) || '';
 
         let quoteChar,
             codeMarkerReplace,
-            codeMarker = vscode.workspace.getConfiguration('znuny').get('codeMarker') || 'Znuny',
-            languageId = editor.document.languageId;
+            codeMarker  = vscode.workspace.getConfiguration('znuny').get('codeMarker') || 'Znuny',
+            lineComment = vscode.workspace.getConfiguration('znuny').get('lineComment') || '',
+            languageId  = activeEditor.document.languageId;
 
-        if (languageId == 'perl' || languageId == 'html' || languageId == 'plaintext') {
-            quoteChar = '#';
+        // Get quoteChar from config
+        if (lineComment[languageId] && lineComment[languageId].length){
+            quoteChar = lineComment[languageId];
         }
-        else if (languageId == 'javascript') {
-            quoteChar = '//';
+
+        // If no quoteChar is set, try to use the default value of lineComment of the current language config
+        if (quoteChar.length === 0 && languageId){
+            let extensions    = vscode.extensions.all;
+            let languagesData = extensions.filter((extension) => extension.packageJSON.name === languageId);
+
+            let languageExtensionPath = languagesData[0].extensionPath;
+            let languageConfiguration = languagesData[0].packageJSON.contributes.languages[0].configuration;
+
+            const configPath = path.join(languageExtensionPath, languageConfiguration);
+            const content = fs.readFileSync(configPath, { encoding: 'utf8' });
+
+            try {
+                const config = JSON.parse(content);
+                quoteChar = config.comments.lineComment;
+            } catch (error) {
+                console.log(error);
+            }
         }
 
         if (!quoteChar) return;
 
         codeMarkerReplace = `${quoteChar} ---\n`;
-        codeMarkerReplace += `${quoteChar} ${codeMarker} \n`;
+        codeMarkerReplace += `${quoteChar} ${codeMarker}\n`;
         codeMarkerReplace += `${quoteChar} ---\n`;
 
         // Add QuoteChar to every single line.
         text.split(/\r?\n/).forEach(line => {
-            codeMarkerReplace += `${quoteChar} ${line} \n`;
+            codeMarkerReplace += `${quoteChar} ${line}\n`;
         })
 
-        codeMarkerReplace += `\n${text} `;
+        codeMarkerReplace += `\n${text}`;
         codeMarkerReplace += `\n\n${quoteChar} ---\n`;
         text.replace(text, codeMarkerReplace);
 
         // Replace the selection in the editor with CodeMarker.
-        if (selection) {
-            editor.edit(editBuilder => {
+        if (selection.isEmpty == false) {
+            activeEditor.edit(editBuilder => {
                 editBuilder.replace(selection, codeMarkerReplace);
             });
         }
 
-        // Add CodeMarker to current position if nothing is selected.
+        // Add CodeMarker to current position if nothing is selected and could also not be selected.
         else {
-            editor.edit(editBuilder => {
-                editBuilder.insert(editor.selection.active, codeMarkerReplace);
+            activeEditor.edit(editBuilder => {
+                editBuilder.insert(activeEditor.selection.active, codeMarkerReplace);
             });
         }
     }))

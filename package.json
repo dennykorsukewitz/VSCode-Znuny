@@ -139,9 +139,335 @@
       "title": "Znuny",
       "properties": {
         "znuny.quoteWithMarker.codeMarker": {
+          "order": 1,
           "type": "string",
           "description": "Znuny Code Marker used in QuoteWithMarker function.",
           "default": "Znuny"
+        },
+        "znuny.quoteWithMarker.lineComment": {
+          "order": 2,
+          "type": "object",
+          "description": "This is a mapping between LanguageID and lineComment characters.",
+          "properties": {
+            "bat": {
+              "type": "string",
+              "description": "bat"
+            },
+            "clojure": {
+              "type": "string",
+              "description": "clojure"
+            },
+            "coffeescript": {
+              "type": "string",
+              "description": "coffeescript"
+            },
+            "c": {
+              "type": "string",
+              "description": "c"
+            },
+            "cpp": {
+              "type": "string",
+              "description": "cpp"
+            },
+            "cuda-cpp": {
+              "type": "string",
+              "description": "cuda-cpp"
+            },
+            "csharp": {
+              "type": "string",
+              "description": "csharp"
+            },
+            "css": {
+              "type": "string",
+              "description": "css"
+            },
+            "dart": {
+              "type": "string",
+              "description": "dart"
+            },
+            "diff": {
+              "type": "string",
+              "description": "diff"
+            },
+            "dockerfile": {
+              "type": "string",
+              "description": "dockerfile"
+            },
+            "fsharp": {
+              "type": "string",
+              "description": "fsharp"
+            },
+            "git-commit": {
+              "type": "string",
+              "description": "git-commit"
+            },
+            "git-rebase": {
+              "type": "string",
+              "description": "git-rebase"
+            },
+            "ignore": {
+              "type": "string",
+              "description": "ignore"
+            },
+            "go": {
+              "type": "string",
+              "description": "go"
+            },
+            "groovy": {
+              "type": "string",
+              "description": "groovy"
+            },
+            "handlebars": {
+              "type": "string",
+              "description": "handlebars"
+            },
+            "hlsl": {
+              "type": "string",
+              "description": "hlsl"
+            },
+            "html": {
+              "type": "string",
+              "description": "html"
+            },
+            "ini": {
+              "type": "string",
+              "description": "ini"
+            },
+            "plaintext": {
+              "type": "string",
+              "description": "plaintext"
+            },
+            "java": {
+              "type": "string",
+              "description": "java"
+            },
+            "javascriptreact": {
+              "type": "string",
+              "description": "javascriptreact"
+            },
+            "javascript": {
+              "type": "string",
+              "description": "javascript"
+            },
+            "jsx-tags": {
+              "type": "string",
+              "description": "jsx-tags"
+            },
+            "json": {
+              "type": "string",
+              "description": "json"
+            },
+            "jsonc": {
+              "type": "string",
+              "description": "jsonc"
+            },
+            "jsonl": {
+              "type": "string",
+              "description": "jsonl"
+            },
+            "julia": {
+              "type": "string",
+              "description": "julia"
+            },
+            "tex": {
+              "type": "string",
+              "description": "tex"
+            },
+            "latex": {
+              "type": "string",
+              "description": "latex"
+            },
+            "cpp_embedded_latex": {
+              "type": "string",
+              "description": "cpp_embedded_latex"
+            },
+            "markdown_latex_combined": {
+              "type": "string",
+              "description": "markdown_latex_combined"
+            },
+            "less": {
+              "type": "string",
+              "description": "less"
+            },
+            "lua": {
+              "type": "string",
+              "description": "lua"
+            },
+            "makefile": {
+              "type": "string",
+              "description": "makefile"
+            },
+            "markdown": {
+              "type": "string",
+              "description": "markdown"
+            },
+            "objective-c": {
+              "type": "string",
+              "description": "objective-c"
+            },
+            "objective-cpp": {
+              "type": "string",
+              "description": "objective-cpp"
+            },
+            "perl": {
+              "type": "string",
+              "description": "perl"
+            },
+            "perl6": {
+              "type": "string",
+              "description": "perl6"
+            },
+            "php": {
+              "type": "string",
+              "description": "php"
+            },
+            "powershell": {
+              "type": "string",
+              "description": "powershell"
+            },
+            "jade": {
+              "type": "string",
+              "description": "jade"
+            },
+            "python": {
+              "type": "string",
+              "description": "python"
+            },
+            "r": {
+              "type": "string",
+              "description": "r"
+            },
+            "razor": {
+              "type": "string",
+              "description": "razor"
+            },
+            "restructuredtext": {
+              "type": "string",
+              "description": "restructuredtext"
+            },
+            "ruby": {
+              "type": "string",
+              "description": "ruby"
+            },
+            "rust": {
+              "type": "string",
+              "description": "rust"
+            },
+            "scss": {
+              "type": "string",
+              "description": "scss"
+            },
+            "shaderlab": {
+              "type": "string",
+              "description": "shaderlab"
+            },
+            "shellscript": {
+              "type": "string",
+              "description": "shellscript"
+            },
+            "sql": {
+              "type": "string",
+              "description": "sql"
+            },
+            "swift": {
+              "type": "string",
+              "description": "swift"
+            },
+            "typescript": {
+              "type": "string",
+              "description": "typescript"
+            },
+            "typescriptreact": {
+              "type": "string",
+              "description": "typescriptreact"
+            },
+            "vb": {
+              "type": "string",
+              "description": "vb"
+            },
+            "xml": {
+              "type": "string",
+              "description": "xml"
+            },
+            "xsl": {
+              "type": "string",
+              "description": "xsl"
+            },
+            "dockercompose": {
+              "type": "string",
+              "description": "dockercompose"
+            },
+            "yaml": {
+              "type": "string",
+              "description": "yaml"
+            }
+          },
+          "additionalProperties": false,
+          "default": {
+            "bat": "@REM",
+            "clojure": ";;",
+            "coffeescript": "#",
+            "c": "//",
+            "cpp": "//",
+            "cuda-cpp": "//",
+            "csharp": "//",
+            "css": "undefined",
+            "dart": "//",
+            "diff": "#",
+            "dockerfile": "#",
+            "fsharp": "//",
+            "git-commit": "#",
+            "git-rebase": "#",
+            "ignore": "#",
+            "go": "//",
+            "groovy": "//",
+            "handlebars": "undefined",
+            "hlsl": "//",
+            "html": "undefined",
+            "ini": ";",
+            "plaintext": "#",
+            "java": "//",
+            "javascriptreact": "//",
+            "javascript": "//",
+            "jsx-tags": "undefined",
+            "json": "//",
+            "jsonc": "//",
+            "jsonl": "//",
+            "julia": "#",
+            "tex": "%",
+            "latex": "%",
+            "cpp_embedded_latex": "//",
+            "markdown_latex_combined": "undefined",
+            "less": "//",
+            "lua": "--",
+            "makefile": "#",
+            "markdown": "undefined",
+            "objective-c": "//",
+            "objective-cpp": "//",
+            "perl": "#",
+            "perl6": "#",
+            "php": "//",
+            "powershell": "#",
+            "jade": "//-",
+            "python": "#",
+            "r": "#",
+            "razor": "undefined",
+            "restructuredtext": "..",
+            "ruby": "#",
+            "rust": "//",
+            "scss": "//",
+            "shaderlab": "//",
+            "shellscript": "#",
+            "sql": "--",
+            "swift": "//",
+            "typescript": "//",
+            "typescriptreact": "//",
+            "vb": "'",
+            "xml": "undefined",
+            "xsl": "",
+            "dockercompose": "#",
+            "yaml": "#"
+          }
         },
         "znuny.generateFilelist.mode": {
           "type": "string",

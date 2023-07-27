@@ -180,7 +180,76 @@ This function quotes the selected area and adds a custom marker to it.
 **Shortcut:** ```strg + alt + z, q```<br>
 **Command:**  ```Znuny: Quote with Marker.```
 
-Works with active Perl, JavaScript and HTML syntax.
+<details>
+  <summary>Works for the following languages:</summary>
+
+| LanguageID              | LineComment |
+| ----------------------- | ----------- |
+| bat                     | @REM        |
+| clojure                 | ;;          |
+| coffeescript            | #           |
+| c                       | //          |
+| cpp                     | //          |
+| cuda-cpp                | //          |
+| csharp                  | //          |
+| CSS                     |             |
+| dart                    | //          |
+| diff                    | #           |
+| dockerfile              | #           |
+| fsharp                  | //          |
+| git-commit              | #           |
+| git-rebase              | #           |
+| ignore                  | #           |
+| go                      | //          |
+| groovy                  | //          |
+| handlebars              |             |
+| hlsl                    | //          |
+| HTML                    |             |
+| ini                     | ;           |
+| plaintext               | #           |
+| java                    | //          |
+| javascriptreact         | //          |
+| JavaScript              | //          |
+| jsx-tags                |             |
+| json                    | //          |
+| jsonc                   | //          |
+| jsonl                   | //          |
+| julia                   | #           |
+| tex                     | %           |
+| latex                   | %           |
+| cpp_embedded_latex      | //          |
+| markdown_latex_combined |             |
+| less                    | //          |
+| lua                     | --          |
+| makefile                | #           |
+| Markdown                |             |
+| objective-c             | //          |
+| objective-cpp           | //          |
+| perl                    | #           |
+| perl6                   | #           |
+| php                     | //          |
+| powershell              | #           |
+| jade                    | //-         |
+| python                  | #           |
+| r                       | #           |
+| razor                   |             |
+| restructuredtext        | ..          |
+| ruby                    | #           |
+| rust                    | //          |
+| SCSS                    | //          |
+| shaderlab               | //          |
+| shellscript             | #           |
+| sql                     | --          |
+| swift                   | //          |
+| TypeScript              | //          |
+| typescriptreact         | //          |
+| vb                      | '           |
+| xml                     |             |
+| xsl                     |             |
+| dockercompose           | #           |
+| yaml                    | #           |
+
+</details>
 
 #### Settings
 
