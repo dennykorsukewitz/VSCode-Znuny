@@ -1,5 +1,5 @@
 {
-    "znuny.TypeObject.TypeUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.TypeObject.TypeUpdate": {
         "body": [
             "${1:\\$TypeObject->TypeUpdate(",
             "    ID      => 123,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TypeObject.TypeUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

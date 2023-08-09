@@ -1,5 +1,5 @@
 {
-    "znuny.CSVObject.Array2CSV": {
+    "6.0|6.4|6.5|7.0 - znuny.CSVObject.Array2CSV": {
         "body": [
             "${1:\\$CSV = \\$CSVObject->Array2CSV(",
             "    WithHeader => [ 'RowA', 'RowB', ],   # optional",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.CSVObject.Array2CSV",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

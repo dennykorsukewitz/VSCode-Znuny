@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.PackageVerify": {
+    "6.0 - znuny.PackageObject.PackageVerify": {
         "body": [
             "${1:\\$PackageObject->PackageVerify(",
             "    Package   => \\$Package,",

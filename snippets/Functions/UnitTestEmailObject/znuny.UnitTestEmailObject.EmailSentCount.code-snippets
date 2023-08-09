@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestEmailObject.EmailSentCount": {
+    "6.4|6.5|7.0 - znuny.UnitTestEmailObject.EmailSentCount": {
         "body": [
             "${1:\\$UnitTestEmailObject->EmailSentCount(",
             "    UnitTestObject => \\$Self,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestEmailObject.EmailSentCount",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.HelperObject.TestDatabaseCleanup": {
+    "6.0|6.4|6.5|7.0 - znuny.HelperObject.TestDatabaseCleanup": {
         "body": [
             "${1:\\$HelperObject->TestDatabaseCleanup();}",
         ],
         "prefix": "znuny.HelperObject.TestDatabaseCleanup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

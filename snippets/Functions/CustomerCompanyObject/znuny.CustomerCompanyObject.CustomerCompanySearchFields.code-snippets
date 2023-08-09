@@ -1,12 +1,12 @@
 {
-    "znuny.CustomerCompanyObject.CustomerCompanySearchFields": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerCompanyObject.CustomerCompanySearchFields": {
         "body": [
             "${1:my @SeachFields = \\$CustomerCompanyObject->CustomerCompanySearchFields(",
             "    Source => 'CustomerCompany', # optional, but important in the CustomerCompanySearchDetail to get the right database fields",
             ");}",
         ],
         "prefix": "znuny.CustomerCompanyObject.CustomerCompanySearchFields",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

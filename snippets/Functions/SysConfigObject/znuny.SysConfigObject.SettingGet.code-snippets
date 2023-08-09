@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingGet": {
         "body": [
             "${1:my %Setting = \\$SysConfigObject->SettingGet(",
             "    Name            => 'Setting::Name',  # (required) Setting name",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

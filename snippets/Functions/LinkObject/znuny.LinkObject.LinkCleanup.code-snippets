@@ -1,5 +1,5 @@
 {
-    "znuny.LinkObject.LinkCleanup": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.LinkCleanup": {
         "body": [
             "${1:\\$True = \\$LinkObject->LinkCleanup(",
             "    State => 'Temporary',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LinkObject.LinkCleanup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

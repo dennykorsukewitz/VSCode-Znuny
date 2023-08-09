@@ -1,5 +1,5 @@
 {
-    "znuny.StorableObject.Serialize": {
+    "6.0|6.4|6.5|7.0 - znuny.StorableObject.Serialize": {
         "body": [
             "${1:my \\$StoableString = \\$StorableObject->Serialize(",
             "    Data => \\$Data,          # must be a reference,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.StorableObject.Serialize",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.ArticleQuote": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.ArticleQuote": {
         "body": [
             "${1:my \\$HTMLBody = \\$LayoutObject->ArticleQuote(",
             "    TicketID           => \\$TicketID,",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.ArticleQuote",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

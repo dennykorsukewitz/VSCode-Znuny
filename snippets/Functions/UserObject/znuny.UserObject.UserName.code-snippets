@@ -1,5 +1,5 @@
 {
-    "znuny.UserObject.UserName": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.UserName": {
         "body": [
             "${1:my \\$Name = \\$UserObject->UserName(",
             "    User => 'some-login',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.UserName",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

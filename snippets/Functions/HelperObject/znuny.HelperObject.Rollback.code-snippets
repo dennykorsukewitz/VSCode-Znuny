@@ -1,10 +1,10 @@
 {
-    "znuny.HelperObject.Rollback": {
+    "6.4|6.5|7.0 - znuny.HelperObject.Rollback": {
         "body": [
             "${1:\\$HelperObject->Rollback();}",
         ],
         "prefix": "znuny.HelperObject.Rollback",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

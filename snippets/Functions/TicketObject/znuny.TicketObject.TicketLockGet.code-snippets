@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketLockGet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketLockGet": {
         "body": [
             "${1:if (\\$TicketObject->TicketLockGet(TicketID => 123)) {",
             "    print \\"Ticket is locked!\n\\";",
@@ -9,7 +9,7 @@
             "\\}}",
         ],
         "prefix": "znuny.TicketObject.TicketLockGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

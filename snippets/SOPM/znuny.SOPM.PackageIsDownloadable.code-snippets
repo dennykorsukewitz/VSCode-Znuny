@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.PackageIsDownloadable":{
+        "body": [
+            "<PackageIsDownloadable>${1:1}</PackageIsDownloadable>"
+        ],
+        "prefix": "znuny.SOPM.PackageIsDownloadable",
+        "description": "znuny.SOPM.PackageIsDownloadable",
+        "scope": "xml"
+    }
+}

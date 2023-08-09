@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.ElementExists": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.ElementExists": {
         "body": [
             "${1:\\$SeleniumObject->ElementExists(",
             "    Selector     => '#GroupID',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.ElementExists",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.DatabaseXML": {
+    "6.4|6.5|7.0 - znuny.HelperObject.DatabaseXML": {
         "body": [
             "${1:my \\$Success = \\$HelperObject->DatabaseXML(",
             "    Location => \\$ConfigObject->Get('Home') . '/scripts/development/db/schema.xml',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.DatabaseXML",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

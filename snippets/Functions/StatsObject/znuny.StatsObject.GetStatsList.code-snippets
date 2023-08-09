@@ -1,5 +1,5 @@
 {
-    "znuny.StatsObject.GetStatsList": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.GetStatsList": {
         "body": [
             "${1:my \\$ArrayRef = \\$StatsObject->GetStatsList(",
             "    AccessRw  => 1,                             # optional, indicates that user may see all statistics",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.GetStatsList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

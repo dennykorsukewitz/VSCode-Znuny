@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketEscalationPreferences": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketEscalationPreferences": {
         "body": [
             "${1:my %Escalation = \\$TicketObject->TicketEscalationPreferences(",
             "    Ticket => \\$Param{Ticket\\},",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationPreferences",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

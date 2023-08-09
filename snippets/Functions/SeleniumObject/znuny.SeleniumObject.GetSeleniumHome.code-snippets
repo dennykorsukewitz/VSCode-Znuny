@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.GetSeleniumHome": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.GetSeleniumHome": {
         "body": [
             "${1:my \\$SeleniumHome = \\$SeleniumObject->GetSeleniumHome(",
             "    Directory => '/opt/otrs',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.GetSeleniumHome",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

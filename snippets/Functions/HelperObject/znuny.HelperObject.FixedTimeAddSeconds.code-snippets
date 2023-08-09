@@ -1,10 +1,10 @@
 {
-    "znuny.HelperObject.FixedTimeAddSeconds": {
+    "6.4|6.5|7.0 - znuny.HelperObject.FixedTimeAddSeconds": {
         "body": [
             "${1:\\$HelperObject->FixedTimeAddSeconds(5);}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeAddSeconds",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

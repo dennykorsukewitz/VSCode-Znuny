@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingUpdate": {
         "body": [
             "${1:my %Result = \\$SysConfigObject->SettingUpdate(",
             "    Name                   => 'Setting::Name',          # (required) setting name",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

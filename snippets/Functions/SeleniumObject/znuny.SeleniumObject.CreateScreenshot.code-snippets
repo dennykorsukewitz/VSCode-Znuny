@@ -1,10 +1,10 @@
 {
-    "znuny.SeleniumObject.CreateScreenshot": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.CreateScreenshot": {
         "body": [
             "${1:my \\$Success = \\$SeleniumObject->CreateScreenshot();}",
         ],
         "prefix": "znuny.SeleniumObject.CreateScreenshot",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

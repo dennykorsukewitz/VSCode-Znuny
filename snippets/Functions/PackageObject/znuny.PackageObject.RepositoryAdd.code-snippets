@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.RepositoryAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.PackageObject.RepositoryAdd": {
         "body": [
             "${1:\\$PackageObject->RepositoryAdd(",
             "    String    => \\$FileString,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

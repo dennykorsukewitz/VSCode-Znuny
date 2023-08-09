@@ -1,5 +1,5 @@
 {
-    "znuny.DateTimeObject.Add": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.Add": {
         "body": [
             "${1:my \\$Success = \\$DateTimeObject->Add(",
             "    Years         => 1,",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.DateTimeObject.Add",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.EnvironmentObject.OSInfoGet": {
+    "6.0|6.4|6.5|7.0 - znuny.EnvironmentObject.OSInfoGet": {
         "body": [
             "${1:my %OSInfo = \\$EnvironmentObject->OSInfoGet();}",
         ],
         "prefix": "znuny.EnvironmentObject.OSInfoGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

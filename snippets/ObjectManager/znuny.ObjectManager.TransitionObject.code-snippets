@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.TransitionObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.TransitionObject": {
         "body": [
             "my \\$TransitionObject = \\$Kernel::OM->Get('Kernel::System::ProcessManagement::Transition');",
         ],
         "prefix": "znuny.ObjectManager.TransitionObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

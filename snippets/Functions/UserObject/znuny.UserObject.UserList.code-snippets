@@ -1,5 +1,5 @@
 {
-    "znuny.UserObject.UserList": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.UserList": {
         "body": [
             "${1:my %List = \\$UserObject->UserList(",
             "    Type          => 'Short', # Short|Long, default Short",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.UserList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

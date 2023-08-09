@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.GetLink": {
+    "7.0 - znuny.ActivityObject.GetLink": {
         "body": [
             "${1:my \\$String = \\$ActivityObject->GetLink(",
             "    TicketID => \\$TicketID,",

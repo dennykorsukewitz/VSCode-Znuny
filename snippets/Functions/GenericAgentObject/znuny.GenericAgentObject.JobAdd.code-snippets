@@ -1,5 +1,5 @@
 {
-    "znuny.GenericAgentObject.JobAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.GenericAgentObject.JobAdd": {
         "body": [
             "${1:\\$GenericAgentObject->JobAdd(",
             "    Name => 'JobName',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

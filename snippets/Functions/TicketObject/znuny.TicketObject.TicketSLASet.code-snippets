@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketSLASet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketSLASet": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketSLASet(",
             "    SLA      => 'SLA A',",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketSLASet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

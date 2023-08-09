@@ -1,5 +1,5 @@
 {
-    "znuny.DynamicFieldObject.ObjectMappingGet": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldObject.ObjectMappingGet": {
         "body": [
             "${1:my \\$ObjectMapping = \\$DynamicFieldObject->ObjectMappingGet(",
             "    ObjectName => \\$ObjectName,    # Name or array ref of names of the object(s) to get the ID(s) for",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldObject.ObjectMappingGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

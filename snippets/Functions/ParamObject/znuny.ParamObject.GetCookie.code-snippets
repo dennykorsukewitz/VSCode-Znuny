@@ -1,12 +1,12 @@
 {
-    "znuny.ParamObject.GetCookie": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.GetCookie": {
         "body": [
             "${1:my \\$String = \\$ParamObject->GetCookie(",
             "    Key => ID,",
             ");}",
         ],
         "prefix": "znuny.ParamObject.GetCookie",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

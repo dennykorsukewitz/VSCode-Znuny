@@ -1,5 +1,5 @@
 {
-    "znuny.LanguageObject.FormatTimeString": {
+    "6.0|6.4|6.5|7.0 - znuny.LanguageObject.FormatTimeString": {
         "body": [
             "${1:my \\$Date = \\$LanguageObject->FormatTimeString(",
             "    '2009-12-12 12:12:12',  # timestamp",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.LanguageObject.FormatTimeString",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

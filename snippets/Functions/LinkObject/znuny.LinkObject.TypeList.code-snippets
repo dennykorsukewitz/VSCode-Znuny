@@ -1,10 +1,10 @@
 {
-    "znuny.LinkObject.TypeList": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.TypeList": {
         "body": [
             "${1:my %TypeList = \\$LinkObject->TypeList();}",
         ],
         "prefix": "znuny.LinkObject.TypeList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.StateObject.StateTypeList": {
+    "6.0|6.4|6.5|7.0 - znuny.StateObject.StateTypeList": {
         "body": [
             "${1:my %ListType = \\$StateObject->StateTypeList(",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StateObject.StateTypeList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

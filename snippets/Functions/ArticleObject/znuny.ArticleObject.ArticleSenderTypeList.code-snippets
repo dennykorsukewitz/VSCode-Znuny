@@ -1,10 +1,10 @@
 {
-    "znuny.ArticleObject.ArticleSenderTypeList": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSenderTypeList": {
         "body": [
             "${1:my %ArticleSenderTypeList = \\$ArticleObject->ArticleSenderTypeList();}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSenderTypeList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

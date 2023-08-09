@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketFlagSet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketFlagSet": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketFlagSet(",
             "    TicketID => \\$TicketID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketFlagSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

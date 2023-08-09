@@ -1,5 +1,5 @@
 {
-    "znuny.StateObject.StateList": {
+    "6.0|6.4|6.5|7.0 - znuny.StateObject.StateList": {
         "body": [
             "${1:my %List = \\$StateObject->StateList(",
             "    UserID => \\$UserID,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.StateObject.StateList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

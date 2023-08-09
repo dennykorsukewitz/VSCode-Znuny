@@ -1,5 +1,5 @@
 {
-    "znuny.StateObject.StateGetStatesByType": {
+    "6.0|6.4|6.5|7.0 - znuny.StateObject.StateGetStatesByType": {
         "body": [
             "${1:my %List = \\$StateObject->StateGetStatesByType(",
             "    Type   => 'Viewable',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.StateObject.StateGetStatesByType",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

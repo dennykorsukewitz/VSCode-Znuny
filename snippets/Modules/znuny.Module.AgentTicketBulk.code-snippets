@@ -1,10 +1,10 @@
 {
-    "AgentTicketBulk": {
+    "6.0|6.4|6.5|7.0 - AgentTicketBulk": {
         "body": [
             "AgentTicketBulk",
         ],
         "prefix": "AgentTicketBulk",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

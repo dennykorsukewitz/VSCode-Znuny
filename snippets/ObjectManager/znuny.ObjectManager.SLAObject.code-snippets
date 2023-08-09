@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.SLAObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.SLAObject": {
         "body": [
             "my \\$SLAObject = \\$Kernel::OM->Get('Kernel::System::SLA');",
         ],
         "prefix": "znuny.ObjectManager.SLAObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

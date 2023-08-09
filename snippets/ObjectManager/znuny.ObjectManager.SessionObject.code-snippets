@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.SessionObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.SessionObject": {
         "body": [
             "my \\$SessionObject = \\$Kernel::OM->Get('Kernel::System::AuthSession');",
         ],
         "prefix": "znuny.ObjectManager.SessionObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

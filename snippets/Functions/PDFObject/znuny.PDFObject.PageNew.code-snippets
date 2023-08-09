@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.PageNew": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.PageNew": {
         "body": [
             "${1:\\$PDFObject->PageNew(",
             "    Width           => 200,                 # (optional) default 595 (Din A4)",
@@ -19,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.PageNew",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

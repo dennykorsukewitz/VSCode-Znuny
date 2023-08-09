@@ -1,12 +1,12 @@
 {
-    "znuny.MailAccountObject.MailAccountList": {
+    "6.0|6.4|6.5|7.0 - znuny.MailAccountObject.MailAccountList": {
         "body": [
             "${1:my %List = \\$MailAccountObject->MailAccountList(",
             "    Valid => 0, # just valid/all accounts",
             ");}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.GroupObject.PermissionGroupRoleAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.PermissionGroupRoleAdd": {
         "body": [
             "${1:my \\$Success = \\$GroupObject->PermissionGroupRoleAdd(",
             "    GID => \\$GID,",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.GroupObject.PermissionGroupRoleAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

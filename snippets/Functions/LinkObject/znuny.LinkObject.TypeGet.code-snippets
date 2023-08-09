@@ -1,12 +1,12 @@
 {
-    "znuny.LinkObject.TypeGet": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.TypeGet": {
         "body": [
             "${1:%TypeData = \\$LinkObject->TypeGet(",
             "    TypeID => \\$TypeID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.TypeGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

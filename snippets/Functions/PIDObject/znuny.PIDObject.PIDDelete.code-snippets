@@ -1,5 +1,5 @@
 {
-    "znuny.PIDObject.PIDDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.PIDObject.PIDDelete": {
         "body": [
             "${1:my \\$Success = \\$PIDObject->PIDDelete(",
             "    Name  => 'PostMasterPOP3',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.PIDObject.PIDDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

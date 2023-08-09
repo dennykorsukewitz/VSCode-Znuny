@@ -1,5 +1,5 @@
 {
-    "znuny.WebUploadCacheObject.FormIDAddFile": {
+    "6.0|6.4|6.5|7.0 - znuny.WebUploadCacheObject.FormIDAddFile": {
         "body": [
             "${1:\\$WebUploadCacheObject->FormIDAddFile(",
             "    FormID      => \\$FormID,",
@@ -18,7 +18,7 @@
             ");}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDAddFile",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

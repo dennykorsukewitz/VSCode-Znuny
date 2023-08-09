@@ -1,10 +1,10 @@
 {
-    "znuny.AutoResponseObject.AutoResponseWithoutQueue": {
+    "6.0|6.4|6.5|7.0 - znuny.AutoResponseObject.AutoResponseWithoutQueue": {
         "body": [
             "${1:my %AutoResponseWithoutQueue = \\$AutoResponseObject->AutoResponseWithoutQueue();}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseWithoutQueue",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.SystemAddressObject.SystemAddressList": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemAddressObject.SystemAddressList": {
         "body": [
             "${1:my %List = \\$SystemAddressObject->SystemAddressList(",
             "    Valid => 0,  # optional, defaults to 1",
             ");}",
         ],
         "prefix": "znuny.SystemAddressObject.SystemAddressList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.DynamicFieldObject.DynamicFieldList": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldObject.DynamicFieldList": {
         "body": [
             "${1:my \\$List = \\$DynamicFieldObject->DynamicFieldList(",
             "    Valid => 0,             # optional, defaults to 1",
@@ -22,7 +22,7 @@
             "${2:my \\$List = \\$DynamicFieldObject->DynamicFieldList();}",
         ],
         "prefix": "znuny.DynamicFieldObject.DynamicFieldList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

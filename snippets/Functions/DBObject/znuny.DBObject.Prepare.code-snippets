@@ -1,5 +1,5 @@
 {
-    "znuny.DBObject.Prepare": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.Prepare": {
         "body": [
             "${1:\\$DBObject->Prepare(",
             "    SQL    => \\"SELECT id, name, content FROM table WHERE name_a = ? AND name_b = ?\\",",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.DBObject.Prepare",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

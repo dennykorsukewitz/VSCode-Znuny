@@ -1,10 +1,10 @@
 {
-    "znuny.SchedulerDBObject.GenericAgentTaskSummary": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.GenericAgentTaskSummary": {
         "body": [
             "${1:my @Summary = \\$SchedulerDBObject->GenericAgentTaskSummary();}",
         ],
         "prefix": "znuny.SchedulerDBObject.GenericAgentTaskSummary",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

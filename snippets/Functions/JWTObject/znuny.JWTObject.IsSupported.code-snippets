@@ -1,10 +1,10 @@
 {
-    "znuny.JWTObject.IsSupported": {
+    "6.4|6.5|7.0 - znuny.JWTObject.IsSupported": {
         "body": [
             "${1:my \\$JWTObjectIsSupported = \\$JWTObject->IsSupported();}",
         ],
         "prefix": "znuny.JWTObject.IsSupported",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

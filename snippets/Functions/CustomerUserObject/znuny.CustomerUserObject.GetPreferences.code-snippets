@@ -1,12 +1,12 @@
 {
-    "znuny.CustomerUserObject.GetPreferences": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.GetPreferences": {
         "body": [
             "${1:my %Preferences = \\$CustomerUserObject->GetPreferences(",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.GetPreferences",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

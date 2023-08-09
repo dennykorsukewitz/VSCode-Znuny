@@ -1,10 +1,10 @@
 {
-    "znuny.HelperObject.GetTestHTTPHostname": {
+    "6.4|6.5|7.0 - znuny.HelperObject.GetTestHTTPHostname": {
         "body": [
             "${1:my \\$Hostname = \\$HelperObject->GetTestHTTPHostname();}",
         ],
         "prefix": "znuny.HelperObject.GetTestHTTPHostname",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

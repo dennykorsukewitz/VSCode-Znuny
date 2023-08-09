@@ -1,5 +1,5 @@
 {
-    "znuny.SchedulerDBObject.TaskAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.TaskAdd": {
         "body": [
             "${1:my \\$TaskID = \\$SchedulerDBObject->TaskAdd(",
             "    Type                     => 'GenericInterface',     # e. g. GenericInterface, Test",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

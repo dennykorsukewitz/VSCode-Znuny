@@ -1,11 +1,11 @@
 {
-    "znuny.LockObject.LockLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.LockObject.LockLookup": {
         "body": [
             "${1:my \\$Lock = \\$LockObject->LockLookup( LockID => \\$LockID );}",
             "${2:my \\$LockID = \\$LockObject->LockLookup( Lock => 'lock' );}",
         ],
         "prefix": "znuny.LockObject.LockLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

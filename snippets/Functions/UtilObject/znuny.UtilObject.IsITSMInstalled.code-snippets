@@ -1,10 +1,10 @@
 {
-    "znuny.UtilObject.IsITSMInstalled": {
+    "6.4|6.5|7.0 - znuny.UtilObject.IsITSMInstalled": {
         "body": [
             "${1:my \\$IsITSMInstalled = \\$UtilObject->IsITSMInstalled();}",
         ],
         "prefix": "znuny.UtilObject.IsITSMInstalled",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

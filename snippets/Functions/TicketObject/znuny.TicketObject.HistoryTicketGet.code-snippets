@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.HistoryTicketGet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.HistoryTicketGet": {
         "body": [
             "${1:my %HistoryData = \\$TicketObject->HistoryTicketGet(",
             "    StopYear   => 2003,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.HistoryTicketGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

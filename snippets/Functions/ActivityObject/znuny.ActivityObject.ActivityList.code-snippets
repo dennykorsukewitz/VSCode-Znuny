@@ -1,10 +1,10 @@
 {
-    "znuny.ActivityObject.ActivityList": {
+    "6.0|6.4|6.5|7.0 - znuny.ActivityObject.ActivityList": {
         "body": [
             "${1:my \\$Activities = \\$ActivityObject->ActivityList();}",
         ],
         "prefix": "znuny.ActivityObject.ActivityList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

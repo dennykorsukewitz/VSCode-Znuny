@@ -1,5 +1,5 @@
 {
-    "znuny.LinkObject.ObjectPermission": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.ObjectPermission": {
         "body": [
             "${1:\\$Permission = \\$LinkObject->ObjectPermission(",
             "    Object => 'Ticket',",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectPermission",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

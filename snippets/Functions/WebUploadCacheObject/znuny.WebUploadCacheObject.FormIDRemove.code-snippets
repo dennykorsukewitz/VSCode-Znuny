@@ -1,10 +1,10 @@
 {
-    "znuny.WebUploadCacheObject.FormIDRemove": {
+    "6.0|6.4|6.5|7.0 - znuny.WebUploadCacheObject.FormIDRemove": {
         "body": [
             "${1:\\$WebUploadCacheObject->FormIDRemove( FormID => \\$FormID );}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDRemove",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.LayoutObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.LayoutObject": {
         "body": [
             "my \\$LayoutObject = \\$Kernel::OM->Get('Kernel::Output::HTML::Layout');",
         ],
         "prefix": "znuny.ObjectManager.LayoutObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

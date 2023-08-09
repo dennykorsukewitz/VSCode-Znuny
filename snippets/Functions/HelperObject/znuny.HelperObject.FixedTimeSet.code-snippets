@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.FixedTimeSet": {
+    "6.4|6.5|7.0 - znuny.HelperObject.FixedTimeSet": {
         "body": [
             "${1:# set to current date and time",
             "my \\$Timestamp = \\$HelperObject->FixedTimeSet();}",
@@ -9,7 +9,7 @@
             "my \\$Timestamp = \\$HelperObject->FixedTimeSet(\\$DateTimeObject);}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeSet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

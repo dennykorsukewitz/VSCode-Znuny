@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.UnitTestEmailObject": {
+    "6.4|6.5|7.0 - znuny.ObjectManager.UnitTestEmailObject": {
         "body": [
             "my \\$UnitTestEmailObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::Email');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestEmailObject",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

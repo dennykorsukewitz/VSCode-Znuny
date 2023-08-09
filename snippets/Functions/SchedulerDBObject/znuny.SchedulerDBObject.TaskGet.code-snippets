@@ -1,12 +1,12 @@
 {
-    "znuny.SchedulerDBObject.TaskGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.TaskGet": {
         "body": [
             "${1:my %Task = \\$SchedulerDBObject->TaskGet(",
             "    TaskID => \\$TaskID,",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

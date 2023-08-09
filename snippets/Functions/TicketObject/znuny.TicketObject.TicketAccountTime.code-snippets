@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketAccountTime": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketAccountTime": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketAccountTime(",
             "    TicketID  => \\$TicketID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketAccountTime",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

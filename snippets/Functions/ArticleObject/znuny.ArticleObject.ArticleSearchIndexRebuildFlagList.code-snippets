@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleSearchIndexRebuildFlagList": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSearchIndexRebuildFlagList": {
         "body": [
             "${1:my %ArticleTicketIDs = \\$ArticleObject->ArticleSearchIndexRebuildFlagList(",
             "    Value => 1,     # (optional) 0/1 default 0",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexRebuildFlagList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

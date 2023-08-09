@@ -1,10 +1,10 @@
 {
-    "znuny.QueueObject.GetQueueGroupID": {
+    "6.0|6.4|6.5|7.0 - znuny.QueueObject.GetQueueGroupID": {
         "body": [
             "${1:my \\$GroupID = \\$QueueObject->GetQueueGroupID( QueueID => \\$QueueID );}",
         ],
         "prefix": "znuny.QueueObject.GetQueueGroupID",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

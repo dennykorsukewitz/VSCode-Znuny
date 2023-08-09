@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDTestObject.DataExport": {
+    "6.4|6.5|7.0 - znuny.DBCRUDTestObject.DataExport": {
         "body": [
             "${1:my \\$Export = \\$DBCRUDTestObject->DataExport(",
             "    Format => 'yml',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDTestObject.DataExport",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ObjectManager.DateTimeObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.DateTimeObject": {
         "body": [
             "my \\$DateTimeObject = \\$Kernel::OM->Create(",
             "        'Kernel::System::DateTime',",
@@ -10,7 +10,7 @@
             "    );",
         ],
         "prefix": "znuny.ObjectManager.DateTimeObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

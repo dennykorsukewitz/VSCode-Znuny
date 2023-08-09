@@ -1,5 +1,5 @@
 {
-    "znuny.LastViewsObject.GetList": {
+    "6.4|6.5|7.0 - znuny.LastViewsObject.GetList": {
         "body": [
             "${1:my @LastViews = \\$LastViewsObject->GetList(",
             "    SessionID => \\$SessionID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LastViewsObject.GetList",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

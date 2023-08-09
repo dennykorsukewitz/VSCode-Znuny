@@ -1,0 +1,42 @@
+{
+    "znuny.SOPM.CodeInstall":{
+        "body": [
+            "<CodeInstall Type=\"post\"><![CDATA[",
+            "    \\$Kernel::OM->Get('var::packagesetup::Znuny')->CodeInstall();",
+            "]]></CodeInstall>"
+        ],
+        "prefix": "znuny.SOPM.CodeInstall",
+        "description": "znuny.SOPM.CodeInstall",
+        "scope": "xml"
+    },
+    "znuny.SOPM.CodeReinstall":{
+        "body": [
+            "<CodeReinstall Type=\"post\"><![CDATA[",
+            "    \\$Kernel::OM->Get('var::packagesetup::Znuny')->CodeReinstall();",
+            "]]></CodeReinstall>"
+        ],
+        "prefix": "znuny.SOPM.CodeReinstall",
+        "description": "znuny.SOPM.CodeReinstall",
+        "scope": "xml"
+    },
+    "znuny.SOPM.CodeUpgrade":{
+        "body": [
+            "<CodeUpgrade Type=\"post\"><![CDATA[",
+            "    \\$Kernel::OM->Get('var::packagesetup::Znuny')->CodeUpgrade();",
+            "]]></CodeUpgrade>"
+        ],
+        "prefix": "znuny.SOPM.CodeUpgrade",
+        "description": "znuny.SOPM.CodeUpgrade",
+        "scope": "xml"
+    },
+    "znuny.SOPM.CodeUninstall":{
+        "body": [
+            "<CodeUninstall Type=\"post\"><![CDATA[",
+            "    \\$Kernel::OM->Get('var::packagesetup::Znuny')->CodeUninstall();",
+            "]]></CodeUninstall>"
+        ],
+        "prefix": "znuny.SOPM.CodeUninstall",
+        "description": "znuny.SOPM.CodeUninstall",
+        "scope": "xml"
+    },
+}

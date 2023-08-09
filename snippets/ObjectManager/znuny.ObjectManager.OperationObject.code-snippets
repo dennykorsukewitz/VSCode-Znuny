@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.OperationObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.OperationObject": {
         "body": [
             "my \\$OperationObject = Kernel::GenericInterface::Operation",
         ],
         "prefix": "znuny.ObjectManager.OperationObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

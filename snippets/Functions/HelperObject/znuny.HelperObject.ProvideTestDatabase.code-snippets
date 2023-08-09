@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.ProvideTestDatabase": {
+    "6.0|6.4|6.5|7.0 - znuny.HelperObject.ProvideTestDatabase": {
         "body": [
             "${1:\\$HelperObject->ProvideTestDatabase(",
             "    DatabaseXMLString => \\$XML,      # (optional) database XML schema to execute",
@@ -19,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.ProvideTestDatabase",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

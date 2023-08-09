@@ -1,5 +1,5 @@
 {
-    "znuny.SchedulerDBObject.CronTaskToExecute": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.CronTaskToExecute": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->CronTaskToExecute(",
             "    NodeID => \\$NodeID,    # the ID of the node in a cluster environment",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.CronTaskToExecute",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

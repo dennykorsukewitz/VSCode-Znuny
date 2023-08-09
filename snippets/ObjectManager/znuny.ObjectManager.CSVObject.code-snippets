@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.CSVObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.CSVObject": {
         "body": [
             "my \\$CSVObject = \\$Kernel::OM->Get('Kernel::System::CSV');",
         ],
         "prefix": "znuny.ObjectManager.CSVObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

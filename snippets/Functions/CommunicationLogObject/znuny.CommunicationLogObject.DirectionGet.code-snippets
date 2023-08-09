@@ -1,10 +1,10 @@
 {
-    "znuny.CommunicationLogObject.DirectionGet": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationLogObject.DirectionGet": {
         "body": [
             "${1:my \\$Direction = \\$CommunicationLogObject->DirectionGet();}",
         ],
         "prefix": "znuny.CommunicationLogObject.DirectionGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

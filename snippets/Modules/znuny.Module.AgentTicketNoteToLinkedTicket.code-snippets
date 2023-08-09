@@ -1,10 +1,10 @@
 {
-    "AgentTicketNoteToLinkedTicket": {
+    "6.5|7.0 - AgentTicketNoteToLinkedTicket": {
         "body": [
             "AgentTicketNoteToLinkedTicket",
         ],
         "prefix": "AgentTicketNoteToLinkedTicket",
-        "description": "6.5, 7.0",
+        "description": "6.5|7.0",
         "scope": "perl"
     }
 }

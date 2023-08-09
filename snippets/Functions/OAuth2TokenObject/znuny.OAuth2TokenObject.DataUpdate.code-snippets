@@ -1,5 +1,5 @@
 {
-    "znuny.OAuth2TokenObject.DataUpdate": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.DataUpdate": {
         "body": [
             "${1:my \\$Success = \\$OAuth2TokenObject->DataUpdate(",
             "    ID                         => 1234,",
@@ -22,7 +22,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.DataUpdate",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.SkinValidate": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.SkinValidate": {
         "body": [
             "${1:my \\$SkinIsValid = \\$LayoutObject->SkinValidate(",
             "    UserType => 'Agent'     #  Agent or Customer,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.SkinValidate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

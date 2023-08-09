@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationListGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationListGet": {
         "body": [
             "${1:my @List = \\$SysConfigObject->ConfigurationListGet(",
             "    Navigation           => 'SomeNavigationGroup',  # (optional) limit to the settings that have provided navigation",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationListGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

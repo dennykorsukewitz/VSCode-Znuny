@@ -1,5 +1,5 @@
 {
-    "znuny.FormDraftObject.FormDraftListGet": {
+    "6.0|6.4|6.5|7.0 - znuny.FormDraftObject.FormDraftListGet": {
         "body": [
             "${1:my \\$FormDraftList = \\$FormDraftObject->FormDraftListGet(",
             "    ObjectType => 'Ticket',             # optional",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftListGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.CheckItemObject.AreEmailAddressesValid": {
+    "6.4|6.5|7.0 - znuny.CheckItemObject.AreEmailAddressesValid": {
         "body": [
             "${1:my \\$EmailAddressesAreValid = \\$CheckItemObject->AreEmailAddressesValid(",
             "    EmailAddresses => 'test@example.org, test2@example.org',",
@@ -18,7 +18,7 @@
             ");}",
         ],
         "prefix": "znuny.CheckItemObject.AreEmailAddressesValid",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

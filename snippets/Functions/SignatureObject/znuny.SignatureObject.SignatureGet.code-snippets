@@ -1,12 +1,12 @@
 {
-    "znuny.SignatureObject.SignatureGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SignatureObject.SignatureGet": {
         "body": [
             "${1:my %Signature = \\$SignatureObject->SignatureGet(",
             "    ID => 123,",
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

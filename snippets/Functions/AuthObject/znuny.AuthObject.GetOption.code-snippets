@@ -1,5 +1,5 @@
 {
-    "znuny.AuthObject.GetOption": {
+    "6.0|6.4|6.5|7.0 - znuny.AuthObject.GetOption": {
         "body": [
             "${1:if ( \\$AuthObject->GetOption( What => 'PreAuth' ) ) {",
             "    print \\"No login screen is needed. Authentication is based on some other options. E. g. \\$ENV{REMOTE_USER\\}\n\\";",
@@ -10,7 +10,7 @@
             "${3:my \\$AuthOption = \\$AuthObject->GetOption(What => 'PreAuth');}",
         ],
         "prefix": "znuny.AuthObject.GetOption",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.BackendObject.PossibleValuesGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.PossibleValuesGet": {
         "body": [
             "${1:my \\$PossibleValues = \\$BackendObject->PossibleValuesGet(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
             ");}",
         ],
         "prefix": "znuny.BackendObject.PossibleValuesGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

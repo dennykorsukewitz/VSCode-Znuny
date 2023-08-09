@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.GetRequiredModules": {
+    "6.5 - znuny.PackageObject.GetRequiredModules": {
         "body": [
             "${1:my \\$ModuleRequired = \\$PackageObject->GetRequiredModules(",
             "    Structure => \\%Structure,                       # return of PackageParse function",

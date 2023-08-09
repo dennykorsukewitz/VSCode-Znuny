@@ -1,10 +1,10 @@
 {
-    "znuny.OAuth2TokenObject.GetAuthorizationCodeRequestRedirectURL": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.GetAuthorizationCodeRequestRedirectURL": {
         "body": [
             "${1:my \\$RedirectURL = \\$OAuth2TokenObject->GetAuthorizationCodeRequestRedirectURL();}",
         ],
         "prefix": "znuny.OAuth2TokenObject.GetAuthorizationCodeRequestRedirectURL",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

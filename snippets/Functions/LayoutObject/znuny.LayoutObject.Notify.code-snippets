@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Notify": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Notify": {
         "body": [
             "${1:my \\$Output = \\$LayoutObject->Notify(",
             "    Priority  => 'Warning',",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Notify",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

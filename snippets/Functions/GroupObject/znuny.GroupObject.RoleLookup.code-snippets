@@ -1,5 +1,5 @@
 {
-    "znuny.GroupObject.RoleLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.RoleLookup": {
         "body": [
             "${1:my \\$Role = \\$GroupObject->RoleLookup(",
             "    RoleID => \\$RoleID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.GroupObject.RoleLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

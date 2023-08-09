@@ -1,5 +1,5 @@
 {
-    "znuny.LockObject.LockViewableLock": {
+    "6.0|6.4|6.5|7.0 - znuny.LockObject.LockViewableLock": {
         "body": [
             "${1:my @List = \\$LockObject->LockViewableLock(",
             "    Type => 'Name', # ID|Name",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LockObject.LockViewableLock",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

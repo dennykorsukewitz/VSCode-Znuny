@@ -1,5 +1,5 @@
 {
-    "znuny.CronEventObject.NextEventGet": {
+    "6.0|6.4|6.5|7.0 - znuny.CronEventObject.NextEventGet": {
         "body": [
             "${1:my \\$EventSystemTime = \\$CronEventObject->NextEventGet(",
             "    Schedule      => '*/2 * * * *',    # recurrence parameters based in cron notation",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CronEventObject.NextEventGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

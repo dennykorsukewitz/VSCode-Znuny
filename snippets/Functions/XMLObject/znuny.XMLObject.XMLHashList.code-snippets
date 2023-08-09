@@ -1,12 +1,12 @@
 {
-    "znuny.XMLObject.XMLHashList": {
+    "6.0|6.4|6.5|7.0 - znuny.XMLObject.XMLHashList": {
         "body": [
             "${1:my @Keys = \\$XMLObject->XMLHashList(",
             "    Type => 'SomeType',",
             ");}",
         ],
         "prefix": "znuny.XMLObject.XMLHashList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

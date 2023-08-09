@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.ServicePreferencesSet": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.ServicePreferencesSet": {
         "body": [
             "${1:\\$ServiceObject->ServicePreferencesSet(",
             "    ServiceID => \\$ServiceID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServicePreferencesSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

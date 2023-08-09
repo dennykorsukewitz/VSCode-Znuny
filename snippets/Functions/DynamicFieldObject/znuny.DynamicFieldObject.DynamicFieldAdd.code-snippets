@@ -1,5 +1,5 @@
 {
-    "znuny.DynamicFieldObject.DynamicFieldAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldObject.DynamicFieldAdd": {
         "body": [
             "${1:my \\$ID = \\$DynamicFieldObject->DynamicFieldAdd(",
             "    InternalField => 0,             # optional, 0 or 1, internal fields are protected",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldObject.DynamicFieldAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

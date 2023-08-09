@@ -1,5 +1,5 @@
 {
-    "znuny.NotificationEventObject.NotificationUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.NotificationEventObject.NotificationUpdate": {
         "body": [
             "${1:my \\$Ok = \\$NotificationEventObject->NotificationUpdate(",
             "    ID      => 123,",
@@ -27,7 +27,7 @@
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

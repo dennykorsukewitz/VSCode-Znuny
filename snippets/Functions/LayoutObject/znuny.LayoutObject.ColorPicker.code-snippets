@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.ColorPicker": {
+    "7.0 - znuny.LayoutObject.ColorPicker": {
         "body": [
             "${1:my \\$HTML = \\$LayoutObject->ColorPicker(",
             "    Type => 'InputField',           # Input         returns only a single input field",

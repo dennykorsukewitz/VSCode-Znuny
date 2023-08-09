@@ -1,5 +1,5 @@
 {
-    "znuny.SystemMaintenanceObject.SystemMaintenanceList": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemMaintenanceObject.SystemMaintenanceList": {
         "body": [
             "${1:my \\$List = \\$SystemMaintenanceObject->SystemMaintenanceList(",
             "    ValidIDs => ['1','2'],           # optional, to filter SystemMaintenances that match listed valid IDs",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

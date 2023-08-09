@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.LinkQuote": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.LinkQuote": {
         "body": [
             "${1:my \\$HTMLWithLinks = \\$LayoutObject->LinkQuote(",
             "    Text => \\$HTMLWithOutLinks,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.LinkQuote",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

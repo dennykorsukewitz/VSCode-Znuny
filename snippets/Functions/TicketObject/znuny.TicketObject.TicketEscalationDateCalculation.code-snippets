@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketEscalationDateCalculation": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketEscalationDateCalculation": {
         "body": [
             "${1:my %Escalation = \\$TicketObject->TicketEscalationDateCalculation(",
             "    Ticket => \\$Param{Ticket\\},",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationDateCalculation",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

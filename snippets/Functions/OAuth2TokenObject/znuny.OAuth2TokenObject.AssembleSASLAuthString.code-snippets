@@ -1,5 +1,5 @@
 {
-    "znuny.OAuth2TokenObject.AssembleSASLAuthString": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.AssembleSASLAuthString": {
         "body": [
             "${1:my \\$SASLAuthString = \\$OAuth2TokenObject->AssembleSASLAuthString(",
             "    Username    => 'user2',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.AssembleSASLAuthString",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

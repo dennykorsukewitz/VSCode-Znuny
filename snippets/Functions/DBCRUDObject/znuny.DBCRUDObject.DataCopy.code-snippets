@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDObject.DataCopy": {
+    "6.4|6.5|7.0 - znuny.DBCRUDObject.DataCopy": {
         "body": [
             "${1:my \\$ObjectID = \\$DBCRUDObject->DataCopy(",
             "    ID     => 123,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataCopy",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

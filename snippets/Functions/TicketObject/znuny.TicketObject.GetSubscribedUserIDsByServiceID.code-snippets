@@ -1,12 +1,12 @@
 {
-    "znuny.TicketObject.GetSubscribedUserIDsByServiceID": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.GetSubscribedUserIDsByServiceID": {
         "body": [
             "${1:my @UserIDs = \\$TicketObject->GetSubscribedUserIDsByServiceID(",
             "    ServiceID => \\$ServiceID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.GetSubscribedUserIDsByServiceID",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

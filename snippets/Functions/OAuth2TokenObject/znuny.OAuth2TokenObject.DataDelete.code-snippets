@@ -1,5 +1,5 @@
 {
-    "znuny.OAuth2TokenObject.DataDelete": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.DataDelete": {
         "body": [
             "${1:my \\$Success = \\$OAuth2TokenObject->DataDelete(",
             "    ID                         => '...', # optional",
@@ -19,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.DataDelete",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

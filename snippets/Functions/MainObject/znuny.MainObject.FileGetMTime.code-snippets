@@ -1,5 +1,5 @@
 {
-    "znuny.MainObject.FileGetMTime": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.FileGetMTime": {
         "body": [
             "${1:my \\$FileMTime = \\$MainObject->FileGetMTime(",
             "    Directory => 'c:\some\location',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.FileGetMTime",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

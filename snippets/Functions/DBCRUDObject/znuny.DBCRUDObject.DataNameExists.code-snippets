@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDObject.DataNameExists": {
+    "6.4|6.5|7.0 - znuny.DBCRUDObject.DataNameExists": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDObject->DataNameExists(",
             "    Name   => 'name',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataNameExists",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

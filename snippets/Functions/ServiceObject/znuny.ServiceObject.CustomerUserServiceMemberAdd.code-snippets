@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.CustomerUserServiceMemberAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.CustomerUserServiceMemberAdd": {
         "body": [
             "${1:\\$ServiceObject->CustomerUserServiceMemberAdd(",
             "    CustomerUserLogin => 'Test1',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.CustomerUserServiceMemberAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

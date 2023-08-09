@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleList": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleList": {
         "body": [
             "${1:my @Articles = \\$ArticleObject->ArticleList(",
             "",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.CustomerUserAddressBookListShow": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.CustomerUserAddressBookListShow": {
         "body": [
             "${1:my \\$Output = \\$LayoutObject->CustomerUserAddressBookListShow(",
             "    CustomerUserIDs => \\$CustomerUserIDsRef,                      # total list of customer user ids, that can be listed",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.CustomerUserAddressBookListShow",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

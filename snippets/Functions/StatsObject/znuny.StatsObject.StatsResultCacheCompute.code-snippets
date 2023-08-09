@@ -1,5 +1,5 @@
 {
-    "znuny.StatsObject.StatsResultCacheCompute": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.StatsResultCacheCompute": {
         "body": [
             "${1:my \\$StatArray = \\$StatsObject->StatsResultCacheCompute(",
             "    StatID       => \\$StatID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsResultCacheCompute",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

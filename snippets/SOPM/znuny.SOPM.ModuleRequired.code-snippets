@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.ModuleRequired":{
+        "body": [
+            "<ModuleRequired Version=\"${1:1.0}\">${2:Perl\:\:Critic}</ModuleRequired>"
+        ],
+        "prefix": "znuny.SOPM.ModuleRequired",
+        "description": "znuny.SOPM.ModuleRequired",
+        "scope": "xml"
+    }
+}

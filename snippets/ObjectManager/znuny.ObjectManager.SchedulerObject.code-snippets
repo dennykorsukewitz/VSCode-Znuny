@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.SchedulerObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.SchedulerObject": {
         "body": [
             "my \\$SchedulerObject = \\$Kernel::OM->Get('Kernel::System::Scheduler');",
         ],
         "prefix": "znuny.ObjectManager.SchedulerObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

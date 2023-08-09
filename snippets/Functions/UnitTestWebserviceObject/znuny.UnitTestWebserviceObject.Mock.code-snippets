@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestWebserviceObject.Mock": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebserviceObject.Mock": {
         "body": [
             "${1:my \\$Result = \\$UnitTestWebserviceObject->Mock(",
             "    InvokerName123 => [",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.Mock",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

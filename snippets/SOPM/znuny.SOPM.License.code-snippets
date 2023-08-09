@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.License":{
+        "body": [
+            "<License>${1:GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007}</License>"
+        ],
+        "prefix": "znuny.SOPM.License",
+        "description": "znuny.SOPM.License",
+        "scope": "xml"
+    }
+}

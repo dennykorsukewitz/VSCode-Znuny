@@ -1,12 +1,12 @@
 {
-    "znuny.SeleniumObject.InputModule": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.InputModule": {
         "body": [
             "${1:my \\$Result = \\$SeleniumObject->InputModule(",
             "    Action => 'QueueID',",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.InputModule",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

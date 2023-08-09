@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.ErrorObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.ErrorObject": {
         "body": [
             "my \\$ErrorObject = \\$Kernel::OM->Get('Kernel::GenericInterface::ErrorHandling');",
         ],
         "prefix": "znuny.ObjectManager.ErrorObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

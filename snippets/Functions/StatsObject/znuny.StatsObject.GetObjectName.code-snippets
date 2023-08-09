@@ -1,12 +1,12 @@
 {
-    "znuny.StatsObject.GetObjectName": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.GetObjectName": {
         "body": [
             "${1:my \\$ObjectName = \\$StatsObject->GetObjectName(",
             "    ObjectModule => 'Kernel::System::Stats::Dynamic::TicketList',",
             ");}",
         ],
         "prefix": "znuny.StatsObject.GetObjectName",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

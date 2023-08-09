@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.CustomerUserObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.CustomerUserObject": {
         "body": [
             "my \\$CustomerUserObject = \\$Kernel::OM->Get('Kernel::System::CustomerUser');",
         ],
         "prefix": "znuny.ObjectManager.CustomerUserObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

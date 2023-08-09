@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarObject.GetAccessToken": {
+    "6.0|6.4|6.5|7.0 - znuny.CalendarObject.GetAccessToken": {
         "body": [
             "${1:my \\$Token = \\$CalendarObject->GetAccessToken(",
             "    CalendarID => \\$CalendarID,              # (required) CalendarID",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.GetAccessToken",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

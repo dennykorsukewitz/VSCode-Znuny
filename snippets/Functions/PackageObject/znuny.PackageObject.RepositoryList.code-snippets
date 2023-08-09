@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.RepositoryList": {
+    "6.0|6.4|6.5|7.0 - znuny.PackageObject.RepositoryList": {
         "body": [
             "${1:my @List = \\$PackageObject->RepositoryList(",
             "    Result => 'short',  # will only return name, version, install_status md5sum, vendor and build commit ID",
@@ -8,7 +8,7 @@
             "${2:my @List = \\$PackageObject->RepositoryList();}",
         ],
         "prefix": "znuny.PackageObject.RepositoryList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

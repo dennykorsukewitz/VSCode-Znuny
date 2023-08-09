@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.HistoryGet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.HistoryGet": {
         "body": [
             "${1:my @HistoryLines = \\$TicketObject->HistoryGet(",
             "    TicketID => \\$TicketID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.HistoryGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

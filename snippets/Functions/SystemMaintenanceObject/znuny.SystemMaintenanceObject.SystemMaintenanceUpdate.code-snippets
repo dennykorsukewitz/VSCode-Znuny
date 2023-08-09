@@ -1,5 +1,5 @@
 {
-    "znuny.SystemMaintenanceObject.SystemMaintenanceUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemMaintenanceObject.SystemMaintenanceUpdate": {
         "body": [
             "${1:my \\$Success = \\$SystemMaintenanceObject->SystemMaintenanceUpdate(",
             "    ID               => 123,                        # mandatory",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

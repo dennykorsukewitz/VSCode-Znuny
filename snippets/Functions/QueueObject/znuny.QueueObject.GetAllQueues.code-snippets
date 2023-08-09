@@ -1,11 +1,11 @@
 {
-    "znuny.QueueObject.GetAllQueues": {
+    "6.0|6.4|6.5|7.0 - znuny.QueueObject.GetAllQueues": {
         "body": [
             "${1:my %Queues = \\$QueueObject->GetAllQueues( UserID => \\$UserID, Type => 'ro' );}",
             "${2:my %Queues = \\$QueueObject->GetAllQueues();}",
         ],
         "prefix": "znuny.QueueObject.GetAllQueues",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "AgentTicketEscalationView": {
+    "6.0|6.4|6.5|7.0 - AgentTicketEscalationView": {
         "body": [
             "AgentTicketEscalationView",
         ],
         "prefix": "AgentTicketEscalationView",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

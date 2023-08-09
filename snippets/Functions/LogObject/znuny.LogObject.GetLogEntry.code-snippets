@@ -1,5 +1,5 @@
 {
-    "znuny.LogObject.GetLogEntry": {
+    "6.0|6.4|6.5|7.0 - znuny.LogObject.GetLogEntry": {
         "body": [
             "${1:my \\$Message = \\$LogObject->GetLogEntry(",
             "    Type => 'error',    # error|info|notice",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LogObject.GetLogEntry",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

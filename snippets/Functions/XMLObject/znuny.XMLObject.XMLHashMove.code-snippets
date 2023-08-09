@@ -1,5 +1,5 @@
 {
-    "znuny.XMLObject.XMLHashMove": {
+    "6.0|6.4|6.5|7.0 - znuny.XMLObject.XMLHashMove": {
         "body": [
             "${1:\\$XMLObject->XMLHashMove(",
             "    OldType => 'SomeType',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.XMLObject.XMLHashMove",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

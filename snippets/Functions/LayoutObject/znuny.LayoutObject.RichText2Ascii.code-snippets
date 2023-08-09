@@ -1,12 +1,12 @@
 {
-    "znuny.LayoutObject.RichText2Ascii": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.RichText2Ascii": {
         "body": [
             "${1:my \\$TextString = \\$LayoutObject->RichText2Ascii(",
             "    String => \\$HTMLString,",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.RichText2Ascii",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.SysConfigObject.ConfigurationCategoriesGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationCategoriesGet": {
         "body": [
             "${1:my %Categories = \\$SysConfigObject->ConfigurationCategoriesGet();}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationCategoriesGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

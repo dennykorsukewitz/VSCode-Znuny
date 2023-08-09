@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.PageBlankNew": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.PageBlankNew": {
         "body": [
             "${1:\\$True = \\$PDFObject->PageBlankNew(",
             "    Width           => 200,          # (optional) default 595 (Din A4) - _ both or nothing",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.PageBlankNew",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

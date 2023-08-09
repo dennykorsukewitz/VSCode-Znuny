@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.PackageIsBuildable":{
+        "body": [
+            "<PackageIsBuildable>${1:1}</PackageIsBuildable>"
+        ],
+        "prefix": "znuny.SOPM.PackageIsBuildable",
+        "description": "znuny.SOPM.PackageIsBuildable",
+        "scope": "xml"
+    }
+}

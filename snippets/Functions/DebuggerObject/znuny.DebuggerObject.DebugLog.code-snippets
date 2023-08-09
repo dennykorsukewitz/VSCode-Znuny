@@ -1,5 +1,5 @@
 {
-    "znuny.DebuggerObject.DebugLog": {
+    "6.0|6.4|6.5|7.0 - znuny.DebuggerObject.DebugLog": {
         "body": [
             "${1:\\$DebuggerObject->DebugLog(",
             "    DebugLevel => 'debug',",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.DebuggerObject.DebugLog",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

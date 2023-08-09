@@ -1,10 +1,10 @@
 {
-    "znuny.ParserObject.GetReturnContentType": {
+    "6.0|6.4|6.5|7.0 - znuny.ParserObject.GetReturnContentType": {
         "body": [
             "${1:my \\$ContentType = \\$ParserObject->GetReturnContentType();}",
         ],
         "prefix": "znuny.ParserObject.GetReturnContentType",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

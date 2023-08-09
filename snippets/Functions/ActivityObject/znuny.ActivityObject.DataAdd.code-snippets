@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.DataAdd": {
+    "7.0 - znuny.ActivityObject.DataAdd": {
         "body": [
             "${1:my \\$CreatedID = \\$ActivityObject->DataAdd(",
             "    ID         => '...',",

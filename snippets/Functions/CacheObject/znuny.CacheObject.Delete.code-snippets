@@ -1,5 +1,5 @@
 {
-    "znuny.CacheObject.Delete": {
+    "6.0|6.4|6.5|7.0 - znuny.CacheObject.Delete": {
         "body": [
             "${1:\\$CacheObject->Delete(",
             "    Type => 'ObjectName',       # only [a-zA-Z0-9_] chars usable",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CacheObject.Delete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

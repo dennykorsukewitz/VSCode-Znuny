@@ -1,5 +1,5 @@
 {
-    "znuny.PriorityObject.PriorityUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.PriorityObject.PriorityUpdate": {
         "body": [
             "${1:my \\$True = \\$PriorityObject->PriorityUpdate(",
             "    PriorityID     => \\$PriorityID,",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.PriorityObject.PriorityUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

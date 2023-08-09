@@ -1,5 +1,5 @@
 {
-    "znuny.CacheObject.CleanUp": {
+    "6.0|6.4|6.5|7.0 - znuny.CacheObject.CleanUp": {
         "body": [
             "${1:\\$CacheObject->CleanUp(",
             "    Expired => 1,   # optional, defaults to 0",
@@ -13,7 +13,7 @@
             "${4:\\$CacheObject->CleanUp();}",
         ],
         "prefix": "znuny.CacheObject.CleanUp",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

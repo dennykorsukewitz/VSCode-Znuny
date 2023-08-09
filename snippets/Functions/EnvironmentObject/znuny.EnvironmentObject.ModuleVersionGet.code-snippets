@@ -1,12 +1,12 @@
 {
-    "znuny.EnvironmentObject.ModuleVersionGet": {
+    "6.0|6.4|6.5|7.0 - znuny.EnvironmentObject.ModuleVersionGet": {
         "body": [
             "${1:my \\$Version = \\$EnvironmentObject->ModuleVersionGet(",
             "    Module => 'MIME::Parser',",
             ");}",
         ],
         "prefix": "znuny.EnvironmentObject.ModuleVersionGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketEscalationIndexBuild": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketEscalationIndexBuild": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketEscalationIndexBuild(",
             "    TicketID => \\$Param{TicketID\\},",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketEscalationIndexBuild",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

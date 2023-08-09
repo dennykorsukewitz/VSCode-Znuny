@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.ActivateDynamicFields": {
+    "6.4|6.5|7.0 - znuny.HelperObject.ActivateDynamicFields": {
         "body": [
             "${1:\\$HelperObject->ActivateDynamicFields(",
             "    'UnitTestDropdown',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.ActivateDynamicFields",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.StatsObject.StatsRun": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.StatsRun": {
         "body": [
             "${1:my \\$StatArray = \\$StatsObject->StatsRun(",
             "    StatID     => \\$StatID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsRun",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

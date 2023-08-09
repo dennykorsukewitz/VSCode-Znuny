@@ -1,10 +1,10 @@
 {
-    "znuny.LoaderObject.IsJavaScriptMinifierXSAvailable": {
+    "6.4|6.5|7.0 - znuny.LoaderObject.IsJavaScriptMinifierXSAvailable": {
         "body": [
             "${1:my \\$IsJavaScriptMinifierXSAvailable = \\$LoaderObject->IsJavaScriptMinifierXSAvailable();}",
         ],
         "prefix": "znuny.LoaderObject.IsJavaScriptMinifierXSAvailable",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketArchiveFlagGet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketArchiveFlagGet": {
         "body": [
             "${1:if ( \\$TicketObject->TicketArchiveFlagGet( TicketID => \\$TicketID ) ) {",
             "    print \\"Ticket is archived!\n\\";",
@@ -9,7 +9,7 @@
             "\\}}",
         ],
         "prefix": "znuny.TicketObject.TicketArchiveFlagGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

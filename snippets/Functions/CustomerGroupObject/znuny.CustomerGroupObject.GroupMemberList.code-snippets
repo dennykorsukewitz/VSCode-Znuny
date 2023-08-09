@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerGroupObject.GroupMemberList": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerGroupObject.GroupMemberList": {
         "body": [
             "${1:my %Groups = \\$CustomerGroupObject->GroupMemberList(",
             "    UserID         => \\$UserID,",
@@ -45,7 +45,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupMemberList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.ACLValuesGet": {
+    "6.4|6.5|7.0 - znuny.HelperObject.ACLValuesGet": {
         "body": [
             "${1:my %Result = \\$HelperObject->ACLValuesGet(",
             "    Check    => 'Action',",
@@ -43,7 +43,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.ACLValuesGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

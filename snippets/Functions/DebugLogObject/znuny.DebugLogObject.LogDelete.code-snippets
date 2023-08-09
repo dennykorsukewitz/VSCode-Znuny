@@ -1,5 +1,5 @@
 {
-    "znuny.DebugLogObject.LogDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.DebugLogObject.LogDelete": {
         "body": [
             "${1:my \\$Success = \\$DebugLogObject->LogDelete(",
             "    NoErrorIfEmpty  => 1,                                  # optional",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.DebugLogObject.LogDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

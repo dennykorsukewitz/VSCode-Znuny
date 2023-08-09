@@ -1,11 +1,11 @@
 {
-    "znuny.DateTimeObject.UserDefaultTimeZoneGet": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.UserDefaultTimeZoneGet": {
         "body": [
             "${1:my \\$UserDefaultTimeZoneGet = \\$DateTimeObject->UserDefaultTimeZoneGet();}",
             "${2:my \\$UserDefaultTimeZoneGet = Kernel::System::DateTime->UserDefaultTimeZoneGet();}",
         ],
         "prefix": "znuny.DateTimeObject.UserDefaultTimeZoneGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ConfigObject.Set": {
+    "6.0|6.4|6.5|7.0 - znuny.ConfigObject.Set": {
         "body": [
             "${1:\\$ConfigObject->Set(",
             "    Key   => 'My::Setting::Name',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ConfigObject.Set",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

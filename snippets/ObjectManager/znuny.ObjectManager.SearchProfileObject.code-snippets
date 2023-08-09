@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.SearchProfileObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.SearchProfileObject": {
         "body": [
             "my \\$SearchProfileObject = \\$Kernel::OM->Get('Kernel::System::SearchProfile');",
         ],
         "prefix": "znuny.ObjectManager.SearchProfileObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

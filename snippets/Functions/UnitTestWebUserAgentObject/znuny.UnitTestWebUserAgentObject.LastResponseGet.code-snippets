@@ -1,10 +1,10 @@
 {
-    "znuny.UnitTestWebUserAgentObject.LastResponseGet": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebUserAgentObject.LastResponseGet": {
         "body": [
             "${1:my %Response = \\$UnitTestWebUserAgentObject->LastResponseGet();}",
         ],
         "prefix": "znuny.UnitTestWebUserAgentObject.LastResponseGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

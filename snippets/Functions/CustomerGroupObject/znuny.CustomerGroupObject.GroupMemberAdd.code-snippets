@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerGroupObject.GroupMemberAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerGroupObject.GroupMemberAdd": {
         "body": [
             "${1:my \\$Success = \\$CustomerGroupObject->GroupMemberAdd(",
             "    GID => \\$GID,",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupMemberAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

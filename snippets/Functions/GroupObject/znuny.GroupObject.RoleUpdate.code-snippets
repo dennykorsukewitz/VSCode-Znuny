@@ -1,5 +1,5 @@
 {
-    "znuny.GroupObject.RoleUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.RoleUpdate": {
         "body": [
             "${1:my \\$Success = \\$GroupObject->RoleUpdate(",
             "    ID      => 123,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.GroupObject.RoleUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

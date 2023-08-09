@@ -1,12 +1,12 @@
 {
-    "znuny.SchedulerDBObject.RecurrentTaskUnlockExpired": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.RecurrentTaskUnlockExpired": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->RecurrentTaskUnlockExpired(",
             "    Type => 'some_type',",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.RecurrentTaskUnlockExpired",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

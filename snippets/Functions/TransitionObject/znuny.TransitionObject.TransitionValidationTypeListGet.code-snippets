@@ -1,10 +1,10 @@
 {
-    "znuny.TransitionObject.TransitionValidationTypeListGet": {
+    "6.4|6.5|7.0 - znuny.TransitionObject.TransitionValidationTypeListGet": {
         "body": [
             "${1:my %TransitionValidationTypeListGet = \\$TransitionObject->TransitionValidationTypeListGet();}",
         ],
         "prefix": "znuny.TransitionObject.TransitionValidationTypeListGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.TicketObject.TicketOwnerList": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketOwnerList": {
         "body": [
             "${1:my @Owner = \\$TicketObject->TicketOwnerList(",
             "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketOwnerList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.ServiceSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.ServiceSearch": {
         "body": [
             "${1:my @ServiceList = \\$ServiceObject->ServiceSearch(",
             "    Name   => 'Service Name', # (optional)",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

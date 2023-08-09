@@ -1,10 +1,10 @@
 {
-    "znuny.DateTimeObject.LastDayOfMonthGet": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.LastDayOfMonthGet": {
         "body": [
             "${1:\\$LastDayOfMonth = \\$DateTimeObject->LastDayOfMonthGet();}",
         ],
         "prefix": "znuny.DateTimeObject.LastDayOfMonthGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

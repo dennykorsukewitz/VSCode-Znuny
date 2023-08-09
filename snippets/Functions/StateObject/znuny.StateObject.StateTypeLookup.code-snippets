@@ -1,5 +1,5 @@
 {
-    "znuny.StateObject.StateTypeLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.StateObject.StateTypeLookup": {
         "body": [
             "${1:my \\$StateType = \\$StateObject->StateTypeLookup(",
             "    StateTypeID => \\$StateTypeID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.StateObject.StateTypeLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

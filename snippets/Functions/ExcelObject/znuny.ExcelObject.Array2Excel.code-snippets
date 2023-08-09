@@ -1,5 +1,5 @@
 {
-    "znuny.ExcelObject.Array2Excel": {
+    "6.4|6.5|7.0 - znuny.ExcelObject.Array2Excel": {
         "body": [
             "${1:my \\$ExcelFileContent = \\$ExcelObject->Array2Excel(",
             "    Data => [",
@@ -149,7 +149,7 @@
             ");}",
         ],
         "prefix": "znuny.ExcelObject.Array2Excel",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.ServiceUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.ServiceUpdate": {
         "body": [
             "${1:my \\$True = \\$ServiceObject->ServiceUpdate(",
             "    ServiceID => \\$ServiceID,",
@@ -23,7 +23,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ExcelObject.GetColumnContentFormat": {
+    "6.4|6.5|7.0 - znuny.ExcelObject.GetColumnContentFormat": {
         "body": [
             "${1:my \\$ColumnContentFormat = \\$ExcelObject->GetColumnContentFormat(",
             "    Value  => '123',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ExcelObject.GetColumnContentFormat",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

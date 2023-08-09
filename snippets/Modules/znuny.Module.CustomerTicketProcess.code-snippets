@@ -1,10 +1,10 @@
 {
-    "CustomerTicketProcess": {
+    "6.0|6.4|6.5|7.0 - CustomerTicketProcess": {
         "body": [
             "CustomerTicketProcess",
         ],
         "prefix": "CustomerTicketProcess",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

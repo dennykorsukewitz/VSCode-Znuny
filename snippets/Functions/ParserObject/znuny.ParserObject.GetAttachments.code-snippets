@@ -1,5 +1,5 @@
 {
-    "znuny.ParserObject.GetAttachments": {
+    "6.0|6.4|6.5|7.0 - znuny.ParserObject.GetAttachments": {
         "body": [
             "${1:my @Attachments = \\$ParserObject->GetAttachments();",
             "for my \\$Attachment (@Attachments) {",
@@ -16,7 +16,7 @@
             "\\}}",
         ],
         "prefix": "znuny.ParserObject.GetAttachments",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

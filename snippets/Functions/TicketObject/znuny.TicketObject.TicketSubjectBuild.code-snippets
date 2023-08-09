@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketSubjectBuild": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketSubjectBuild": {
         "body": [
             "${1:my \\$NewSubject = \\$TicketObject->TicketSubjectBuild(",
             "    TicketNumber => \\$TicketNumber,",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketSubjectBuild",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

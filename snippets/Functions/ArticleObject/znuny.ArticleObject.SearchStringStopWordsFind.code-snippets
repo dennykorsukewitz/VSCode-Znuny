@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.SearchStringStopWordsFind": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.SearchStringStopWordsFind": {
         "body": [
             "${1:my \\$StopWords = \\$ArticleObject->SearchStringStopWordsFind(",
             "    SearchStrings => {",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.SearchStringStopWordsFind",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

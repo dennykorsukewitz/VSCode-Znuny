@@ -1,5 +1,5 @@
 {
-    "znuny.DebuggerObject.Map": {
+    "6.0|6.4|6.5|7.0 - znuny.DebuggerObject.Map": {
         "body": [
             "${1:my \\$Result = \\$DebuggerObject->Map(",
             "    Data => {              # data payload before mapping",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.DebuggerObject.Map",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

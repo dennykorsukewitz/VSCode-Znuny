@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.ValueValidate": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.ValueValidate": {
         "body": [
             "${1:my \\$Success = \\$BackendObject->ValueValidate(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.ValueValidate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

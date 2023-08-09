@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.DataUpdate": {
+    "7.0 - znuny.ActivityObject.DataUpdate": {
         "body": [
             "${1:my \\$Success = \\$ActivityObject->DataUpdate(",
             "    ID     => 1234,",

@@ -1,10 +1,10 @@
 {
-    "znuny.StatsObject.GetDynamicFiles": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.GetDynamicFiles": {
         "body": [
             "${1:my \\$FileHash = \\$StatsObject->GetDynamicFiles();}",
         ],
         "prefix": "znuny.StatsObject.GetDynamicFiles",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

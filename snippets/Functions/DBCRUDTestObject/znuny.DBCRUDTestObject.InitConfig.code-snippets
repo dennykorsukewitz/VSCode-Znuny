@@ -1,10 +1,10 @@
 {
-    "znuny.DBCRUDTestObject.InitConfig": {
+    "6.4|6.5|7.0 - znuny.DBCRUDTestObject.InitConfig": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDTestObject->InitConfig();}",
         ],
         "prefix": "znuny.DBCRUDTestObject.InitConfig",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

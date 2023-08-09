@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarObject.TicketAppointmentRuleIDsGet": {
+    "6.0|6.4|6.5|7.0 - znuny.CalendarObject.TicketAppointmentRuleIDsGet": {
         "body": [
             "${1:my @RuleIDs = \\$CalendarObject->TicketAppointmentRuleIDsGet(",
             "    CalendarID => \\$CalendarID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.TicketAppointmentRuleIDsGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

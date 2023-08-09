@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketUnlockTimeoutUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketUnlockTimeoutUpdate": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketUnlockTimeoutUpdate(",
             "    UnlockTimeout => \\$Epoch,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketUnlockTimeoutUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

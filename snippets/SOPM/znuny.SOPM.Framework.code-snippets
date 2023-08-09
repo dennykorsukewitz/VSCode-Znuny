@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.Framework":{
+        "body": [
+            "<Framework>${1:7.0.x}</Framework>"
+        ],
+        "prefix": "znuny.SOPM.Framework",
+        "description": "znuny.SOPM.Framework",
+        "scope": "xml"
+    }
+}

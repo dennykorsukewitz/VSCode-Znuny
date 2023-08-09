@@ -1,5 +1,5 @@
 {
-    "znuny.SystemMaintenanceObject.SystemMaintenanceGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemMaintenanceObject.SystemMaintenanceGet": {
         "body": [
             "${1:my \\$SystemMaintenance = \\$SystemMaintenanceObject->SystemMaintenanceGet(",
             "    ID     => 123,          # mandatory",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

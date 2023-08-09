@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.EditFieldValueGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.EditFieldValueGet": {
         "body": [
             "${1:my \\$Value = \\$BackendObject->EditFieldValueGet(",
             "    DynamicFieldConfig      => \\$DynamicFieldConfig, # complete config of the DynamicField",
@@ -29,7 +29,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.EditFieldValueGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.MainObject.DirectoryRead": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.DirectoryRead": {
         "body": [
             "${1:my @FilesInDirectory = \\$MainObject->DirectoryRead(",
             "    Directory => \\$Path,",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.DirectoryRead",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

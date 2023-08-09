@@ -1,10 +1,10 @@
 {
-    "znuny.LanguageObject.GetSysConfigTranslatableStrings": {
+    "6.4|6.5|7.0 - znuny.LanguageObject.GetSysConfigTranslatableStrings": {
         "body": [
             "${1:my @TranslationStrings = \\$LanguageObject->GetSysConfigTranslatableStrings();}",
         ],
         "prefix": "znuny.LanguageObject.GetSysConfigTranslatableStrings",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

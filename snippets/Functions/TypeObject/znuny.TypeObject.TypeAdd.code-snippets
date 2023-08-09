@@ -1,5 +1,5 @@
 {
-    "znuny.TypeObject.TypeAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.TypeObject.TypeAdd": {
         "body": [
             "${1:my \\$ID = \\$TypeObject->TypeAdd(",
             "    Name    => 'New Type',",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.TypeObject.TypeAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

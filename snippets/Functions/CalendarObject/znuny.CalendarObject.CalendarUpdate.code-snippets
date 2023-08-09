@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarObject.CalendarUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.CalendarObject.CalendarUpdate": {
         "body": [
             "${1:my \\$Success = \\$CalendarObject->CalendarUpdate(",
             "    CalendarID         => \\$CalendarID,                   # (required) CalendarID",
@@ -22,7 +22,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

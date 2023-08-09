@@ -1,12 +1,12 @@
 {
-    "znuny.DebugLogObject.LogCleanup": {
+    "6.0|6.4|6.5|7.0 - znuny.DebugLogObject.LogCleanup": {
         "body": [
             "${1:my \\$Success = \\$DebugLogObject->LogCleanup(",
             "    CreatedAtOrBefore => '2011-12-31 23:59:59',",
             ");}",
         ],
         "prefix": "znuny.DebugLogObject.LogCleanup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

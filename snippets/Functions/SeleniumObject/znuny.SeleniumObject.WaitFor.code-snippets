@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.WaitFor": {
+    "6.0|6.4|6.5|7.0 - znuny.SeleniumObject.WaitFor": {
         "body": [
             "${1:my \\$Success = \\$SeleniumObject->WaitFor(",
             "    AlertPresent   => 1,                                 # Wait until an alert, confirm or prompt dialog is present",
@@ -26,7 +26,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.WaitFor",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

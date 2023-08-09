@@ -1,5 +1,5 @@
 {
-    "znuny.DateTimeObject.Validate": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.Validate": {
         "body": [
             "${1:my \\$IsValid = \\$DateTimeObject->Validate(",
             "    Year     => 2016,",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.DateTimeObject.Validate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

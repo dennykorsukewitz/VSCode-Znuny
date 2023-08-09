@@ -1,12 +1,12 @@
 {
-    "znuny.TicketObject.TicketNumberLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketNumberLookup": {
         "body": [
             "${1:my \\$TicketNumber = \\$TicketObject->TicketNumberLookup(",
             "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketNumberLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

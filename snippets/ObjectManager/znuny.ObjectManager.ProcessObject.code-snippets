@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.ProcessObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.ProcessObject": {
         "body": [
             "my \\$ProcessObject = \\$Kernel::OM->Get('Kernel::System::ProcessManagement::Process');",
         ],
         "prefix": "znuny.ObjectManager.ProcessObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

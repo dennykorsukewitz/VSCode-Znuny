@@ -1,12 +1,12 @@
 {
-    "znuny.WebUploadCacheObject.FormIDGetAllFilesMeta": {
+    "6.0|6.4|6.5|7.0 - znuny.WebUploadCacheObject.FormIDGetAllFilesMeta": {
         "body": [
             "${1:my @Data = \\$WebUploadCacheObject->FormIDGetAllFilesMeta(",
             "    FormID => \\$FormID,",
             ");}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDGetAllFilesMeta",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

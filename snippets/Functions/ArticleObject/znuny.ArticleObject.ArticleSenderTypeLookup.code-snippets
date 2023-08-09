@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleSenderTypeLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSenderTypeLookup": {
         "body": [
             "${1:my \\$SenderType = \\$ArticleObject->ArticleSenderTypeLookup(",
             "    SenderTypeID => \\$SenderTypeID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSenderTypeLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

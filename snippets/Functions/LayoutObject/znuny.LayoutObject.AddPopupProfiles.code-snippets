@@ -1,11 +1,11 @@
 {
-    "znuny.LayoutObject.AddPopupProfiles": {
+    "6.5|7.0 - znuny.LayoutObject.AddPopupProfiles": {
         "body": [
             "${1:\\$LayoutObject->AddPopupProfiles();}",
             "${2:my \\$Success = \\$LayoutObject->AddPopupProfiles();}",
         ],
         "prefix": "znuny.LayoutObject.AddPopupProfiles",
-        "description": "6.5, 7.0",
+        "description": "6.5|7.0",
         "scope": "perl"
     }
 }

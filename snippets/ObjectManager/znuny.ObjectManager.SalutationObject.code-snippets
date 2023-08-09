@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.SalutationObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.SalutationObject": {
         "body": [
             "my \\$SalutationObject = \\$Kernel::OM->Get('Kernel::System::Salutation');",
         ],
         "prefix": "znuny.ObjectManager.SalutationObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

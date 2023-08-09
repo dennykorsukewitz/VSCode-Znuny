@@ -1,12 +1,12 @@
 {
-    "znuny.UserObject.TokenGenerate": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.TokenGenerate": {
         "body": [
             "${1:my \\$Token = \\$UserObject->TokenGenerate(",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.UserObject.TokenGenerate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.LastViewsObject.GetActionMapping": {
+    "6.4|6.5|7.0 - znuny.LastViewsObject.GetActionMapping": {
         "body": [
             "${1:my %ActionMapping = \\$LastViewsObject->GetActionMapping();}",
         ],
         "prefix": "znuny.LastViewsObject.GetActionMapping",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

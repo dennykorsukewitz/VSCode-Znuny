@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Redirect": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Redirect": {
         "body": [
             "${1:my \\$HTML = \\$LayoutObject->Redirect(",
             "    ExtURL => \\"http://some.example.com/\\",",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Redirect",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

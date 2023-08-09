@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingEffectiveValueGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingEffectiveValueGet": {
         "body": [
             "${1:my \\$Result = \\$SysConfigObject->SettingEffectiveValueGet(",
             "    Translate => 1,                      # (optional) Translate translatable strings. Default 0.",
@@ -22,7 +22,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingEffectiveValueGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

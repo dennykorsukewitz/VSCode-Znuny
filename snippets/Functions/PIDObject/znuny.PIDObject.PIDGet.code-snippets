@@ -1,12 +1,12 @@
 {
-    "znuny.PIDObject.PIDGet": {
+    "6.0|6.4|6.5|7.0 - znuny.PIDObject.PIDGet": {
         "body": [
             "${1:my %PID = \\$PIDObject->PIDGet(",
             "    Name => 'PostMasterPOP3',",
             ");}",
         ],
         "prefix": "znuny.PIDObject.PIDGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

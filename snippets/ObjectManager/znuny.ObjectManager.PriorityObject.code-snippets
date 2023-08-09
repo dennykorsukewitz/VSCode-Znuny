@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.PriorityObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.PriorityObject": {
         "body": [
             "my \\$PriorityObject = \\$Kernel::OM->Get('Kernel::System::Priority');",
         ],
         "prefix": "znuny.ObjectManager.PriorityObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

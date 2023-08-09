@@ -1,10 +1,10 @@
 {
-    "znuny.SupportBundleGeneratorObject.GenerateCustomFilesArchive": {
+    "6.0|6.4|6.5|7.0 - znuny.SupportBundleGeneratorObject.GenerateCustomFilesArchive": {
         "body": [
             "${1:my ( \\$Content, \\$Filename ) = \\$SupportBundleGeneratorObject->GenerateCustomFilesArchive();}",
         ],
         "prefix": "znuny.SupportBundleGeneratorObject.GenerateCustomFilesArchive",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

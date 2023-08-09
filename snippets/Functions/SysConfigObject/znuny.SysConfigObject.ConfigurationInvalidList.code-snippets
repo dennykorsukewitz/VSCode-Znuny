@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationInvalidList": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationInvalidList": {
         "body": [
             "${1:my @List = \\$SysConfigObject->ConfigurationInvalidList(",
             "    CachedOnly  => 0,   # (optional) Default 0. If enabled, system will return cached value.",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationInvalidList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

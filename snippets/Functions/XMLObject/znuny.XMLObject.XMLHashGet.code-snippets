@@ -1,5 +1,5 @@
 {
-    "znuny.XMLObject.XMLHashGet": {
+    "6.0|6.4|6.5|7.0 - znuny.XMLObject.XMLHashGet": {
         "body": [
             "${1:my @XMLHash = \\$XMLObject->XMLHashGet(",
             "    Type  => 'SomeType',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.XMLObject.XMLHashGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

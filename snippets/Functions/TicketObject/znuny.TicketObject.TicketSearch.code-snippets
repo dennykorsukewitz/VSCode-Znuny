@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketSearch": {
         "body": [
             "${1:my @TicketIDs = \\$TicketObject->TicketSearch(",
             "    # result (optional, default is 'HASH')",
@@ -285,7 +285,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

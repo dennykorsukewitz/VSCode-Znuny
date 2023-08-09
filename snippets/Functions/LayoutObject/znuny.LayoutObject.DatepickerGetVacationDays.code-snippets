@@ -1,10 +1,10 @@
 {
-    "znuny.LayoutObject.DatepickerGetVacationDays": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.DatepickerGetVacationDays": {
         "body": [
             "${1:\\$LayoutObject->DatepickerGetVacationDays();}",
         ],
         "prefix": "znuny.LayoutObject.DatepickerGetVacationDays",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

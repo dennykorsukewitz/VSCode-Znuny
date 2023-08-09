@@ -1,5 +1,5 @@
 {
-    "znuny.UtilObject.Base64DeepEncode": {
+    "6.4|6.5|7.0 - znuny.UtilObject.Base64DeepEncode": {
         "body": [
             "${1:my \\$Base64EncodedData = \\$UtilObject->Base64DeepEncode(",
             "    # Data can be a scalar, hash or array",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.UtilObject.Base64DeepEncode",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

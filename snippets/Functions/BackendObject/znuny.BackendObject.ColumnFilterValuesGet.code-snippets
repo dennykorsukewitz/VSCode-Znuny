@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.ColumnFilterValuesGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.ColumnFilterValuesGet": {
         "body": [
             "${1:my \\$ColumnFilterValues = \\$BackendObject->ColumnFilterValuesGet(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,      #DynamicField configuraction",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.ColumnFilterValuesGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

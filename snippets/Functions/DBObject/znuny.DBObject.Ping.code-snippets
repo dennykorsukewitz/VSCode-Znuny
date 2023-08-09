@@ -1,12 +1,12 @@
 {
-    "znuny.DBObject.Ping": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.Ping": {
         "body": [
             "${1:my \\$Success = \\$DBObject->Ping(",
             "    AutoConnect => 0,  # default 1",
             ");}",
         ],
         "prefix": "znuny.DBObject.Ping",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Attachment": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Attachment": {
         "body": [
             "${1:\\$HTML = \\$LayoutObject->Attachment(",
             "    Type             => 'inline',          # optional, default: attachment, possible: inline|attachment",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Attachment",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

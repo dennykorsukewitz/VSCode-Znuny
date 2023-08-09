@@ -1,12 +1,12 @@
 {
-    "znuny.YAMLObject.Dump": {
+    "6.0|6.4|6.5|7.0 - znuny.YAMLObject.Dump": {
         "body": [
             "${1:my \\$YAMLString = \\$YAMLObject->Dump(",
             "    Data     => \\$Data,",
             ");}",
         ],
         "prefix": "znuny.YAMLObject.Dump",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

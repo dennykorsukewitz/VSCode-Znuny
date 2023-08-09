@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.CacheObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.CacheObject": {
         "body": [
             "my \\$CacheObject = \\$Kernel::OM->Get('Kernel::System::Cache');",
         ],
         "prefix": "znuny.ObjectManager.CacheObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

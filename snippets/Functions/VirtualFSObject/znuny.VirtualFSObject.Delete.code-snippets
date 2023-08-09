@@ -1,5 +1,5 @@
 {
-    "znuny.VirtualFSObject.Delete": {
+    "6.0|6.4|6.5|7.0 - znuny.VirtualFSObject.Delete": {
         "body": [
             "${1:my \\$Success = \\$VirtualFSObject->Delete(",
             "    Filename => '/Object/SomeFileName.txt',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.VirtualFSObject.Delete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

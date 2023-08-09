@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.OS":{
+        "body": [
+            "<OS>${1:linux}</OS>"
+        ],
+        "prefix": "znuny.SOPM.OS",
+        "description": "znuny.SOPM.OS",
+        "scope": "xml"
+    }
+}

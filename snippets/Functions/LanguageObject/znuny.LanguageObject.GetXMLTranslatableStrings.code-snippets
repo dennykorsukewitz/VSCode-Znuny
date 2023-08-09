@@ -1,12 +1,12 @@
 {
-    "znuny.LanguageObject.GetXMLTranslatableStrings": {
+    "6.4|6.5|7.0 - znuny.LanguageObject.GetXMLTranslatableStrings": {
         "body": [
             "${1:my @TranslationStrings = \\$LanguageObject->GetXMLTranslatableStrings(",
             "    ModuleDirectory  => \\"\\$Home/...\\",  # optional, translates the Znuny module in the given directory",
             ");}",
         ],
         "prefix": "znuny.LanguageObject.GetXMLTranslatableStrings",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

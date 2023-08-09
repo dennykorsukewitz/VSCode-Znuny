@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDObject.DataExport": {
+    "6.4|6.5|7.0 - znuny.DBCRUDObject.DataExport": {
         "body": [
             "${1:my \\$Export = \\$DBCRUDObject->DataExport(",
             "    Format => 'yml',",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataExport",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

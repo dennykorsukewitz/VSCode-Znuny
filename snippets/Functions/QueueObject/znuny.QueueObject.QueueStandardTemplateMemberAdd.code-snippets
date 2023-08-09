@@ -1,5 +1,5 @@
 {
-    "znuny.QueueObject.QueueStandardTemplateMemberAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.QueueObject.QueueStandardTemplateMemberAdd": {
         "body": [
             "${1:my \\$Success = \\$QueueObject->QueueStandardTemplateMemberAdd(",
             "    QueueID            => \\$QueueID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.QueueObject.QueueStandardTemplateMemberAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

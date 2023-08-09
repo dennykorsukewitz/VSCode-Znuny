@@ -1,5 +1,5 @@
 {
-    "znuny.GenericAgentObject.JobDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.GenericAgentObject.JobDelete": {
         "body": [
             "${1:my \\$Success = \\$GenericAgentObject->JobDelete(",
             "    Name   => 'JobName',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LoaderObject.MinifyFiles": {
+    "6.0|6.4|6.5|7.0 - znuny.LoaderObject.MinifyFiles": {
         "body": [
             "${1:my \\$TargetFilename = \\$LoaderObject->MinifyFiles(",
             "    List  => [                          # optional,  minify list of files",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.LoaderObject.MinifyFiles",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

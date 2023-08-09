@@ -1,5 +1,5 @@
 {
-    "znuny.ParamObject.SetCookie": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.SetCookie": {
         "body": [
             "${1:\\$ParamObject->SetCookie(",
             "    Key     => ID,",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.ParamObject.SetCookie",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

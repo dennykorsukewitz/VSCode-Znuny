@@ -1,5 +1,5 @@
 {
-    "znuny.DBObject.QueryInCondition": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.QueryInCondition": {
         "body": [
             "${1:my \\$SQL = \\$DBObject->QueryInCondition(",
             "    Key       => 'table.column',",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.DBObject.QueryInCondition",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

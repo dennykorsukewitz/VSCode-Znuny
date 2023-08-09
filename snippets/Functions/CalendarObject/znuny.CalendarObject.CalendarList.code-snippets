@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarObject.CalendarList": {
+    "6.0|6.4|6.5|7.0 - znuny.CalendarObject.CalendarList": {
         "body": [
             "${1:my @Result = \\$CalendarObject->CalendarList(",
             "    UserID     => \\$UserID,            # (optional) For permission check",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

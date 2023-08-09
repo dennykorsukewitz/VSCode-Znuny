@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.RichTextDocumentServe": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.RichTextDocumentServe": {
         "body": [
             "${1:my %HTMLFile = \\$LayoutObject->RichTextDocumentServe(",
             "    Data => {",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.RichTextDocumentServe",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

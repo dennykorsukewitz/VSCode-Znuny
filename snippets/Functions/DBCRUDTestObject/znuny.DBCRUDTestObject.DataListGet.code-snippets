@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDTestObject.DataListGet": {
+    "6.4|6.5|7.0 - znuny.DBCRUDTestObject.DataListGet": {
         "body": [
             "${1:my @Data = \\$DBCRUDTestObject->DataListGet(",
             "    ID          => '...', # optional",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDTestObject.DataListGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

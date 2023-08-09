@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.BuildSelectionJSON": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.BuildSelectionJSON": {
         "body": [
             "${1:my \\$JSON = \\$LayoutObject->BuildSelectionJSON(",
             "    [",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.BuildSelectionJSON",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.UnitTestEmailObject.MailBackendSetup": {
+    "6.4|6.5|7.0 - znuny.UnitTestEmailObject.MailBackendSetup": {
         "body": [
             "${1:my \\$Success = \\$UnitTestEmailObject->MailBackendSetup();}",
         ],
         "prefix": "znuny.UnitTestEmailObject.MailBackendSetup",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

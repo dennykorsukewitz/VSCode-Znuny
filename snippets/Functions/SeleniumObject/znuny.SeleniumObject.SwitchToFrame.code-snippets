@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.SwitchToFrame": {
+    "6.0|6.4|6.5|7.0 - znuny.SeleniumObject.SwitchToFrame": {
         "body": [
             "${1:my \\$Success = \\$SeleniumObject->SwitchToFrame(",
             "    FrameSelector => '.Iframe',     # (required) CSS selector of the frame element",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.SwitchToFrame",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

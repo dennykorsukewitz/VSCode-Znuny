@@ -1,12 +1,12 @@
 {
-    "znuny.CustomerUserObject.CustomerUserDataGet": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.CustomerUserDataGet": {
         "body": [
             "${1:my %User = \\$CustomerUserObject->CustomerUserDataGet(",
             "    User => 'franz',",
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.CustomerUserDataGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

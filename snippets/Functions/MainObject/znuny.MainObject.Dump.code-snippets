@@ -1,5 +1,5 @@
 {
-    "znuny.MainObject.Dump": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.Dump": {
         "body": [
             "${1:my \\$Dump = \\$MainObject->Dump(",
             "    \\$SomeVariable,",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.Dump",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

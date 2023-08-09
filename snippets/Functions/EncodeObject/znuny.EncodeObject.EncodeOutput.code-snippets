@@ -1,11 +1,11 @@
 {
-    "znuny.EncodeObject.EncodeOutput": {
+    "6.0|6.4|6.5|7.0 - znuny.EncodeObject.EncodeOutput": {
         "body": [
             "${1:\\$EncodeObject->EncodeOutput( \\\\\\$String );}",
             "${2:\\$EncodeObject->EncodeOutput( \\@Array );}",
         ],
         "prefix": "znuny.EncodeObject.EncodeOutput",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

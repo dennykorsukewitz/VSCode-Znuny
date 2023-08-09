@@ -1,10 +1,10 @@
 {
-    "znuny.LastViewsObject.GetPopUpActions": {
+    "6.4|6.5|7.0 - znuny.LastViewsObject.GetPopUpActions": {
         "body": [
             "${1:my %PopUpActions = \\$LastViewsObject->GetPopUpActions();}",
         ],
         "prefix": "znuny.LastViewsObject.GetPopUpActions",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

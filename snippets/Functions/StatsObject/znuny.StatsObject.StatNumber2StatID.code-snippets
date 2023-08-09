@@ -1,12 +1,12 @@
 {
-    "znuny.StatsObject.StatNumber2StatID": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.StatNumber2StatID": {
         "body": [
             "${1:my \\$StatID = \\$StatsObject->StatNumber2StatID(",
             "    StatNumber => 11212,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatNumber2StatID",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

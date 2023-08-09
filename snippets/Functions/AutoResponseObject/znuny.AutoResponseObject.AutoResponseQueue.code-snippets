@@ -1,5 +1,5 @@
 {
-    "znuny.AutoResponseObject.AutoResponseQueue": {
+    "6.4|6.5|7.0 - znuny.AutoResponseObject.AutoResponseQueue": {
         "body": [
             "${1:my \\$Success = \\$AutoResponseObject->AutoResponseQueue(",
             "    QueueID         => \\$QueueID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseQueue",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestWebserviceObject.SchedulerCleanUp": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebserviceObject.SchedulerCleanUp": {
         "body": [
             "${1:my \\$Success = \\$UnitTestWebserviceObject->SchedulerCleanUp(",
             "    UnitTestObject => \\$Self,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.SchedulerCleanUp",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

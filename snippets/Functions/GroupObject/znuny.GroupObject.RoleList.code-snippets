@@ -1,12 +1,12 @@
 {
-    "znuny.GroupObject.RoleList": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.RoleList": {
         "body": [
             "${1:my %Roles = \\$GroupObject->RoleList(",
             "    Valid => 1,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.RoleList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

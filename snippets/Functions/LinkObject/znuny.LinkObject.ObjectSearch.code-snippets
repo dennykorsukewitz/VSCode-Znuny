@@ -1,5 +1,5 @@
 {
-    "znuny.LinkObject.ObjectSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.ObjectSearch": {
         "body": [
             "${1:\\$ObjectList = \\$LinkObject->ObjectSearch(",
             "    Object       => 'ITSMConfigItem',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

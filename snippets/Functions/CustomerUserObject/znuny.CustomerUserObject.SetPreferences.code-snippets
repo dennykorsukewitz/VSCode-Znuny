@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerUserObject.SetPreferences": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.SetPreferences": {
         "body": [
             "${1:\\$CustomerUserObject->SetPreferences(",
             "    Key    => 'UserComment',",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.SetPreferences",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

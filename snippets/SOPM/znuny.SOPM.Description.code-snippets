@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.Description":{
+        "body": [
+            "<Description Lang=\"${1:en}\">${2:This package contains the functionality to...}</Description>"
+        ],
+        "prefix": "znuny.SOPM.Description",
+        "description": "znuny.SOPM.Description",
+        "scope": "xml"
+    }
+}

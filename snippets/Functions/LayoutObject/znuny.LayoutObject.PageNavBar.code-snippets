@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.PageNavBar": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.PageNavBar": {
         "body": [
             "${1:my %PageNavBar = \\$LayoutObject->PageNavBar(",
             "    Limit       => 100,         # marks result of TotalHits red if Limit is gerater then AllHits",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.PageNavBar",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

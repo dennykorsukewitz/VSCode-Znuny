@@ -1,5 +1,5 @@
 {
-    "znuny.CommunicationLogObject.ObjectLogStop": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationLogObject.ObjectLogStop": {
         "body": [
             "${1:my \\$Success = \\$CommunicationLogObject->ObjectLogStop(",
             "    ObjectLogType => 'Connection',                       # (required) Can be 'Connection' or 'Message'",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.ObjectLogStop",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

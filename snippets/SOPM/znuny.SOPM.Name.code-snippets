@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.Name":{
+        "body": [
+            "<Name>${1:ZnunyCodePolicy}</Name>"
+        ],
+        "prefix": "znuny.SOPM.Name",
+        "description": "znuny.SOPM.Name",
+        "scope": "xml"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestWebserviceObject.InvokerFunctionCall": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebserviceObject.InvokerFunctionCall": {
         "body": [
             "${1:my \\$Success = \\$UnitTestWebserviceObject->InvokerFunctionCall(",
             "    Webservice => 'webservice-name',",
@@ -22,7 +22,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.InvokerFunctionCall",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.BuildDateSelection": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.BuildDateSelection": {
         "body": [
             "${1:my \\$HTML = \\$LayoutObject->BuildDateSelection(",
             "    Prefix           => 'some prefix',        # optional, (needed to specify other parameters)",
@@ -49,7 +49,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.BuildDateSelection",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketSubjectClean": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketSubjectClean": {
         "body": [
             "${1:my \\$NewSubject = \\$TicketObject->TicketSubjectClean(",
             "    TicketNumber => \\$TicketNumber,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketSubjectClean",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

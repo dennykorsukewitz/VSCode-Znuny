@@ -1,5 +1,5 @@
 {
-    "znuny.SLAObject.SLAList": {
+    "6.0|6.4|6.5|7.0 - znuny.SLAObject.SLAList": {
         "body": [
             "${1:my %SLAList = \\$SLAObject->SLAList(",
             "    ServiceID => \\$ServiceID,  # (optional)",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SLAObject.SLAList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

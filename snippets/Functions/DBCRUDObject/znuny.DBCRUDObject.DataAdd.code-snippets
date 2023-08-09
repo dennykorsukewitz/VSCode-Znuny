@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDObject.DataAdd": {
+    "6.4|6.5|7.0 - znuny.DBCRUDObject.DataAdd": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDObject->DataAdd(",
             "    ID          => '...',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDObject.DataAdd",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarEventsObject.BuildString": {
+    "6.4|6.5|7.0 - znuny.CalendarEventsObject.BuildString": {
         "body": [
             "${1:my \\$OutputString = \\$CalendarEventsObject->BuildString(",
             "    Data => {",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarEventsObject.BuildString",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.ActivityDialogObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.ActivityDialogObject": {
         "body": [
             "my \\$ActivityDialogObject = \\$Kernel::OM->Get('Kernel::System::ProcessManagement::ActivityDialog');",
         ],
         "prefix": "znuny.ObjectManager.ActivityDialogObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

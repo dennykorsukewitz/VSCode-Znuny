@@ -1,10 +1,10 @@
 {
-    "znuny.DynamicFieldObject.DynamicFieldOrderCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldObject.DynamicFieldOrderCheck": {
         "body": [
             "${1:my \\$Success = \\$DynamicFieldObject->DynamicFieldOrderCheck();}",
         ],
         "prefix": "znuny.DynamicFieldObject.DynamicFieldOrderCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingReset": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingReset": {
         "body": [
             "${1:my \\$Result = \\$SysConfigObject->SettingReset(",
             "    Name              => 'Setting Name',                # (required) Setting name",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingReset",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

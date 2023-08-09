@@ -1,5 +1,5 @@
 {
-    "znuny.MailAccountObject.MailAccountAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.MailAccountObject.MailAccountAdd": {
         "body": [
             "${1:\\$MailAccountObject->MailAccountAdd(",
             "    Login         => 'mail',",
@@ -29,7 +29,7 @@
             ");}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

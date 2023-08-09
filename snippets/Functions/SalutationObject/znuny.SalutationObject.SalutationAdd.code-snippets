@@ -1,5 +1,5 @@
 {
-    "znuny.SalutationObject.SalutationAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.SalutationObject.SalutationAdd": {
         "body": [
             "${1:my \\$ID = \\$SalutationObject->SalutationAdd(",
             "    Name        => 'New Salutation',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

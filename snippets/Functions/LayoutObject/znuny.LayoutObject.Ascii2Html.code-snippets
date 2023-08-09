@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Ascii2Html": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Ascii2Html": {
         "body": [
             "${1:my \\$HTML = \\$LayoutObject->Ascii2Html(",
             "    Text            => 'Some <> Test <font color=\\"red\\">Test</font>',",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Ascii2Html",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.ArticleObject.ArticleSearchIndexStatus": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSearchIndexStatus": {
         "body": [
             "${1:my %Status = \\$ArticleObject->ArticleSearchIndexStatus();}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexStatus",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

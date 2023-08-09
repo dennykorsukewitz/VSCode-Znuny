@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.ListGet": {
+    "7.0 - znuny.ActivityObject.ListGet": {
         "body": [
             "${1:my @Activities = \\$ActivityObject->ListGet(",
             "    ID         => '...', # optional",

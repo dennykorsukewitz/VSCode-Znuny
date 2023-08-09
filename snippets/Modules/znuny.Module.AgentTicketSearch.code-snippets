@@ -1,10 +1,10 @@
 {
-    "AgentTicketSearch": {
+    "6.0|6.4|6.5|7.0 - AgentTicketSearch": {
         "body": [
             "AgentTicketSearch",
         ],
         "prefix": "AgentTicketSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

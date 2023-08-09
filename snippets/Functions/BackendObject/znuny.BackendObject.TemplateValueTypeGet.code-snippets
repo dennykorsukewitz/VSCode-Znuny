@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.TemplateValueTypeGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.TemplateValueTypeGet": {
         "body": [
             "${1:my \\$ValueType = \\$BackendObject->TemplateValueTypeGet(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.TemplateValueTypeGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

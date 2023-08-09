@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.InputMandatory": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.InputMandatory": {
         "body": [
             "${1:my \\$Result = \\$SeleniumObject->InputMandatory(",
             "    Attribute => 'QueueID',",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.InputMandatory",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

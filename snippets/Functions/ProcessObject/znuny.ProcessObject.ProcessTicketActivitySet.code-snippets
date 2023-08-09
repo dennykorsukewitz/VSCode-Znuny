@@ -1,5 +1,5 @@
 {
-    "znuny.ProcessObject.ProcessTicketActivitySet": {
+    "6.0|6.4|6.5|7.0 - znuny.ProcessObject.ProcessTicketActivitySet": {
         "body": [
             "${1:my \\$Success = \\$ProcessObject->ProcessTicketActivitySet(",
             "    ProcessEntityID  => \\$ProcessEntityID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessTicketActivitySet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

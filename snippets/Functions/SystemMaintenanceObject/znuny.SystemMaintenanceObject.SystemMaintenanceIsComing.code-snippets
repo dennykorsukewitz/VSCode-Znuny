@@ -1,10 +1,10 @@
 {
-    "znuny.SystemMaintenanceObject.SystemMaintenanceIsComing": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemMaintenanceObject.SystemMaintenanceIsComing": {
         "body": [
             "${1:my %SystemMaintenanceIsComing = \\$SystemMaintenanceObject->SystemMaintenanceIsComing();}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceIsComing",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationXML2DB": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationXML2DB": {
         "body": [
             "${1:my \\$Success = \\$SysConfigObject->ConfigurationXML2DB(",
             "    UserID    => \\$UserID,                  # UserID",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationXML2DB",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

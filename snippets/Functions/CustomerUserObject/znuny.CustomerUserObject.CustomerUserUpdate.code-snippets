@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerUserObject.CustomerUserUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.CustomerUserUpdate": {
         "body": [
             "${1:\\$CustomerUserObject->CustomerUserUpdate(",
             "    Source        => 'CustomerUser',        # CustomerUser source config",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.CustomerUserUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

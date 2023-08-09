@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.BuildSelection": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.BuildSelection": {
         "body": [
             "${1:my \\$HTML = \\$LayoutObject->BuildSelection(",
             "    Data            => \\$ArrayRef,        # use \\$HashRef, \\$ArrayRef or \\$ArrayHashRef (see below)",
@@ -53,7 +53,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.BuildSelection",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

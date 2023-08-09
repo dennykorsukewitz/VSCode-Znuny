@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.JSONEncode": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.JSONEncode": {
         "body": [
             "${1:my \\$JSON = \\$LayoutObject->JSONEncode(",
             "    Data        => \\$Data,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.JSONEncode",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

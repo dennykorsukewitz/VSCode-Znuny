@@ -1,5 +1,5 @@
 {
-    "znuny.TicketToUnitTestObject.GetTicketAttributes": {
+    "6.4|6.5|7.0 - znuny.TicketToUnitTestObject.GetTicketAttributes": {
         "body": [
             "${1:my %TicketAttributes = \\$TicketToUnitTestObject->GetTicketAttributes(",
             "    TicketAttributes => \\%TicketAttributes,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetTicketAttributes",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

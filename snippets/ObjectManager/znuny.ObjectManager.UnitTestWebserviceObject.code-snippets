@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.UnitTestWebserviceObject": {
+    "6.4|6.5|7.0 - znuny.ObjectManager.UnitTestWebserviceObject": {
         "body": [
             "my \\$UnitTestWebserviceObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::Webservice');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestWebserviceObject",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

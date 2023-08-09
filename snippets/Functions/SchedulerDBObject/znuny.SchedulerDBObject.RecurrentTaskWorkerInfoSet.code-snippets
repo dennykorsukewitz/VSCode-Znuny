@@ -1,5 +1,5 @@
 {
-    "znuny.SchedulerDBObject.RecurrentTaskWorkerInfoSet": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.RecurrentTaskWorkerInfoSet": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->RecurrentTaskWorkerInfoSet(",
             "    LastWorkerTaskID      => \\$LastWorkerTaskID,        # the task ID from the worker table that is performing the",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.RecurrentTaskWorkerInfoSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

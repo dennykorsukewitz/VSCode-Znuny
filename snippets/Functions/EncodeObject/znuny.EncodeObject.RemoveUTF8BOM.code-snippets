@@ -1,12 +1,12 @@
 {
-    "znuny.EncodeObject.RemoveUTF8BOM": {
+    "6.4|6.5|7.0 - znuny.EncodeObject.RemoveUTF8BOM": {
         "body": [
             "${1:my \\$StringWithoutBOM = \\$EncodeObject->RemoveUTF8BOM(",
             "    String => '<BOM>....',",
             ");}",
         ],
         "prefix": "znuny.EncodeObject.RemoveUTF8BOM",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

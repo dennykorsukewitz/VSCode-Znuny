@@ -1,5 +1,5 @@
 {
-    "znuny.EmailObject.Send": {
+    "6.0|6.4|6.5|7.0 - znuny.EmailObject.Send": {
         "body": [
             "${1:my \\$Sent = \\$EmailObject->Send(",
             "    From          => 'me@example.com',",
@@ -60,7 +60,7 @@
             ");}",
         ],
         "prefix": "znuny.EmailObject.Send",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

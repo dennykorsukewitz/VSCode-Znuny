@@ -1,5 +1,5 @@
 {
-    "znuny.XMLObject.XMLHashDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.XMLObject.XMLHashDelete": {
         "body": [
             "${1:\\$XMLObject->XMLHashDelete(",
             "    Type => 'SomeType',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.XMLObject.XMLHashDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

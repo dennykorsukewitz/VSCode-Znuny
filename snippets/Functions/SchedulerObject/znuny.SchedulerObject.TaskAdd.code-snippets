@@ -1,5 +1,5 @@
 {
-    "znuny.SchedulerObject.TaskAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerObject.TaskAdd": {
         "body": [
             "${1:my \\$Success = \\$SchedulerObject->TaskAdd(",
             "    ExecutionTime            => '2015-01-01 00:00:00',  # task will be executed immediately if no execution",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerObject.TaskAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

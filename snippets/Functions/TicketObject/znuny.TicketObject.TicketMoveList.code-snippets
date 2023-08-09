@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketMoveList": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketMoveList": {
         "body": [
             "${1:my %Queues = \\$TicketObject->TicketMoveList(",
             "    QueueID => \\$QueueID,",
@@ -19,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketMoveList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

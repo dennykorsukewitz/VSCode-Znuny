@@ -1,10 +1,10 @@
 {
-    "znuny.MailAccountObject.GetAuthenticationTypes": {
+    "6.4|6.5|7.0 - znuny.MailAccountObject.GetAuthenticationTypes": {
         "body": [
             "${1:my %AuthenticationTypes = \\$MailAccountObject->GetAuthenticationTypes();}",
         ],
         "prefix": "znuny.MailAccountObject.GetAuthenticationTypes",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.TicketCreate": {
+    "6.4|6.5|7.0 - znuny.HelperObject.TicketCreate": {
         "body": [
             "${1:my \\$TicketID = \\$HelperObject->TicketCreate(",
             "    CustomerUser => 'another_customer@example.com',",
@@ -18,7 +18,7 @@
             "${3:my \\$TicketID = \\$HelperObject->TicketCreate();}",
         ],
         "prefix": "znuny.HelperObject.TicketCreate",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

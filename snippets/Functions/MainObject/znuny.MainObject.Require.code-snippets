@@ -1,5 +1,5 @@
 {
-    "znuny.MainObject.Require": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.Require": {
         "body": [
             "${1:my \\$Loaded = \\$MainObject->Require(",
             "    'Kernel::System::Example',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.Require",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

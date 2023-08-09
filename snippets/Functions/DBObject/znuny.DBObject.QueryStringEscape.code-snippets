@@ -1,12 +1,12 @@
 {
-    "znuny.DBObject.QueryStringEscape": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.QueryStringEscape": {
         "body": [
             "${1:my \\$QueryStringEscaped = \\$DBObject->QueryStringEscape(",
             "    QueryString => 'customer with (brackets) and & and -',",
             ");}",
         ],
         "prefix": "znuny.DBObject.QueryStringEscape",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

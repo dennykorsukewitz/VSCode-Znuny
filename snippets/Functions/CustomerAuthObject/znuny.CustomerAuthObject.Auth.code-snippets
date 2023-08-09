@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerAuthObject.Auth": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerAuthObject.Auth": {
         "body": [
             "${1:if (\\$CustomerAuthObject->Auth(User => \\$User, Pw => \\$Pw)) {",
             "    print \\"Auth ok!\n\\";",
@@ -9,7 +9,7 @@
             "\\}}",
         ],
         "prefix": "znuny.CustomerAuthObject.Auth",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

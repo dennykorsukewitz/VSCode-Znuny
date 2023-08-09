@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.DynamicFieldObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.DynamicFieldObject": {
         "body": [
             "my \\$DynamicFieldObject = \\$Kernel::OM->Get('Kernel::System::DynamicField');",
         ],
         "prefix": "znuny.ObjectManager.DynamicFieldObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

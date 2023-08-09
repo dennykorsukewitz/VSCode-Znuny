@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingRender": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingRender": {
         "body": [
             "${1:my \\$HTMLStr = \\$SysConfigObject->SettingRender(",
             "    Setting   => {",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingRender",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

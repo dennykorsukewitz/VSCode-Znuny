@@ -1,10 +1,10 @@
 {
-    "znuny.DebuggerObject.ProviderProcessRequest": {
+    "6.0|6.4|6.5|7.0 - znuny.DebuggerObject.ProviderProcessRequest": {
         "body": [
             "${1:my \\$Result = \\$DebuggerObject->ProviderProcessRequest();}",
         ],
         "prefix": "znuny.DebuggerObject.ProviderProcessRequest",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

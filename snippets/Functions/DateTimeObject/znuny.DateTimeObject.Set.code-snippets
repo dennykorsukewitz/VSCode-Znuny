@@ -1,5 +1,5 @@
 {
-    "znuny.DateTimeObject.Set": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.Set": {
         "body": [
             "${1:# Setting values by hash:",
             "my \\$Success = \\$DateTimeObject->Set(",
@@ -14,7 +14,7 @@
             "my \\$Success = \\$DateTimeObject->Set( String => '2016-02-25 20:34:01' );}",
         ],
         "prefix": "znuny.DateTimeObject.Set",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

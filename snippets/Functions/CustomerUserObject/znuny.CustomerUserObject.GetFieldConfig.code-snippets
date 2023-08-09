@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerUserObject.GetFieldConfig": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.GetFieldConfig": {
         "body": [
             "${1:my %FieldConfig = \\$CustomerUserObject->GetFieldConfig(",
             "    FieldName => 'UserEmail',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.GetFieldConfig",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

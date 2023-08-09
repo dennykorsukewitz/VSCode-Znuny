@@ -1,5 +1,5 @@
 {
-    "znuny.OAuth2TokenObject.GetAuthorizationCodeParameters": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.GetAuthorizationCodeParameters": {
         "body": [
             "${1:my %AuthorizationCodeParameters = \\$OAuth2TokenObject->GetAuthorizationCodeParameters(",
             "    ParamObject => \\$ParamObject,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.GetAuthorizationCodeParameters",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

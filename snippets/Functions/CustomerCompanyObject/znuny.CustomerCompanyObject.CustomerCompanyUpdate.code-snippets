@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerCompanyObject.CustomerCompanyUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerCompanyObject.CustomerCompanyUpdate": {
         "body": [
             "${1:\\$CustomerCompanyObject->CustomerCompanyUpdate(",
             "    CustomerCompanyID       => \\$CustomerCompanyID, # required for CustomerCompanyID-update",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerCompanyObject.CustomerCompanyUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

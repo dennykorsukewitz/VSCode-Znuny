@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.Text": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.Text": {
         "body": [
             "${1:%Return = \\$PDFObject->Text(",
             "    Text     => 'Text',              # Text",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.Text",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

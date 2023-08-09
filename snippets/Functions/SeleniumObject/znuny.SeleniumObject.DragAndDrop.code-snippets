@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.DragAndDrop": {
+    "6.0|6.4|6.5|7.0 - znuny.SeleniumObject.DragAndDrop": {
         "body": [
             "${1:\\$SeleniumObject->DragAndDrop(",
             "    Element         => '.Element', # (required) css selector of element which should be dragged",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.DragAndDrop",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

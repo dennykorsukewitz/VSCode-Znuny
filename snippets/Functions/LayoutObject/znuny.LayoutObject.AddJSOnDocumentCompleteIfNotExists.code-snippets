@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists": {
+    "6.4|6.5|7.0 - znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists": {
         "body": [
             "${1:my \\$Success = \\$LayoutObject->AddJSOnDocumentCompleteIfNotExists(",
             "    Key  => 'identifier_key_of_your_js',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.AddJSOnDocumentCompleteIfNotExists",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

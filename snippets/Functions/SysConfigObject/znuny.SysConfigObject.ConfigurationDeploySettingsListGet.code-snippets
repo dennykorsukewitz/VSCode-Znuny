@@ -1,12 +1,12 @@
 {
-    "znuny.SysConfigObject.ConfigurationDeploySettingsListGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationDeploySettingsListGet": {
         "body": [
             "${1:my @List = \\$SysConfigObject->ConfigurationDeploySettingsListGet(",
             "    DeploymentID => \\$DeploymentID,",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDeploySettingsListGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

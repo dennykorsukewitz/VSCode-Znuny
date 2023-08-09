@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.BuildSelectionDataGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.BuildSelectionDataGet": {
         "body": [
             "${1:my \\$DataValues = \\$BackendObject->BuildSelectionDataGet(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.BuildSelectionDataGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

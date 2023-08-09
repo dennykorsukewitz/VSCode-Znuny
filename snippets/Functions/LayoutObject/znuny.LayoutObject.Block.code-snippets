@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Block": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Block": {
         "body": [
             "${1:\\$LayoutObject->Block(",
             "    Name => 'Row',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Block",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

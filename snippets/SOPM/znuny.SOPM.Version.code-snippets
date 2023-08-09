@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.Version":{
+        "body": [
+            "<Version>${1:7.0.0}</Version>"
+        ],
+        "prefix": "znuny.SOPM.Version",
+        "description": "znuny.SOPM.Version",
+        "scope": "xml"
+    }
+}

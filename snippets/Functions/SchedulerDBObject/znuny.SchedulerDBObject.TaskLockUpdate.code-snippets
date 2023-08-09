@@ -1,12 +1,12 @@
 {
-    "znuny.SchedulerDBObject.TaskLockUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.TaskLockUpdate": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->TaskLockUpdate(",
             "    TaskIDs => [123, 456],",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskLockUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

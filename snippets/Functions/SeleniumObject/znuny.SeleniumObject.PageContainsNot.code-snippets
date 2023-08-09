@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.PageContainsNot": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.PageContainsNot": {
         "body": [
             "${1:\\$SeleniumObject->PageContainsNot(",
             "    String  => 'Ticked locked.',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.PageContainsNot",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

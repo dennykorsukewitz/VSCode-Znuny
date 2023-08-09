@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.HistoryAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.HistoryAdd": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->HistoryAdd(",
             "    Name         => 'Some Comment',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.HistoryAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

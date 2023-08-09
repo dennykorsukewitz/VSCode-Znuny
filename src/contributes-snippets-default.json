@@ -274,6 +274,22 @@
     "path": "./snippets/POD/znuny.POD.header.code-snippets"
   },
   {
+    "language": "xml",
+    "path": "./snippets/Scaffolding/znuny.Scaffolding.ConfigFile.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/Scaffolding/znuny.Scaffolding.SOPM.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Scaffolding/znuny.Scaffolding.System.code-snippets"
+  },
+  {
+    "language": "perl",
+    "path": "./snippets/Scaffolding/znuny.Scaffolding.UnitTest.code-snippets"
+  },
+  {
     "language": "perl",
     "path": "./snippets/Selenium/znuny.Selenium.clear.code-snippets"
   },
@@ -316,6 +332,86 @@
   {
     "language": "perl",
     "path": "./snippets/Selenium/znuny.Selenium.submit.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Intro.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.ChangeLog.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Code.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Database.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Description.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Filelist.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Framework.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.License.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.ModuleRequired.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Name.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.OS.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.PackageAllowDirectUpdate.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.PackageIsBuildable.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.PackageIsDownloadable.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.PackageIsRemovable.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.PackageIsVisible.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.PackageRequired.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.URL.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Vendor.code-snippets"
+  },
+  {
+    "language": "xml",
+    "path": "./snippets/SOPM/znuny.SOPM.Version.code-snippets"
   },
   {
     "language": "perl",

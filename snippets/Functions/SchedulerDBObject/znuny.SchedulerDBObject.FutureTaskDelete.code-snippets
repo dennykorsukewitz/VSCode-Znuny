@@ -1,12 +1,12 @@
 {
-    "znuny.SchedulerDBObject.FutureTaskDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.FutureTaskDelete": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->FutureTaskDelete(",
             "    TaskID => \\$TaskID,",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.FutureTaskDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,11 +1,11 @@
 {
-    "znuny.CustomerGroupObject.GroupLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerGroupObject.GroupLookup": {
         "body": [
             "${1:my \\$Group = \\$CustomerGroupObject->GroupLookup(GroupID => \\$GroupID);}",
             "${2:my \\$GroupID = \\$CustomerGroupObject->GroupLookup(Group => \\$Group);}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.UnitTestSchedulerObject.Execute": {
+    "6.4|6.5|7.0 - znuny.UnitTestSchedulerObject.Execute": {
         "body": [
             "${1:my \\$Success = \\$UnitTestSchedulerObject->Execute(",
             "    Type => 'AsynchronousExecutor', # optional",
             ");}",
         ],
         "prefix": "znuny.UnitTestSchedulerObject.Execute",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

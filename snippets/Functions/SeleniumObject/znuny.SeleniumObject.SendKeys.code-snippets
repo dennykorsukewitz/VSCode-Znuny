@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.SendKeys": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.SendKeys": {
         "body": [
             "${1:my \\$Success = \\$SeleniumObject->SendKeys(",
             "    Selector     => '#DynamicField_Test',",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.SendKeys",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

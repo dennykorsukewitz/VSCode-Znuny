@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestWebserviceObject.CreateGenericInterfaceMappingObject": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebserviceObject.CreateGenericInterfaceMappingObject": {
         "body": [
             "${1:my \\$MappingObject = \\$UnitTestWebserviceObject->CreateGenericInterfaceMappingObject(",
             "    UnitTestObject    => \\$Self,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.CreateGenericInterfaceMappingObject",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

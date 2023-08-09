@@ -1,12 +1,12 @@
 {
-    "znuny.BackendObject.HistoricalValuesGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.HistoricalValuesGet": {
         "body": [
             "${1:my \\$HistorialValues = \\$BackendObject->HistoricalValuesGet(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
             ");}",
         ],
         "prefix": "znuny.BackendObject.HistoricalValuesGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

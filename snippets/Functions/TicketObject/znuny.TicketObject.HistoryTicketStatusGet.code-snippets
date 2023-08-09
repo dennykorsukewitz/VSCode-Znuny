@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.HistoryTicketStatusGet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.HistoryTicketStatusGet": {
         "body": [
             "${1:my %Tickets = \\$TicketObject->HistoryTicketStatusGet(",
             "    StartDay   => 12,",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.HistoryTicketStatusGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

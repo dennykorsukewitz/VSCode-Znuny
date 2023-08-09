@@ -1,10 +1,10 @@
 {
-    "znuny.HelperObject.FullFeature": {
+    "6.4|6.5|7.0 - znuny.HelperObject.FullFeature": {
         "body": [
             "${1:\\$HelperObject->FullFeature();}",
         ],
         "prefix": "znuny.HelperObject.FullFeature",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

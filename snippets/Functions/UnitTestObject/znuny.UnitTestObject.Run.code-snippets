@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestObject.Run": {
+    "6.0|6.4|6.5|7.0 - znuny.UnitTestObject.Run": {
         "body": [
             "${1:\\$Self->Run(",
             "    Tests                  => ['JSON', 'User'],             # optional, execute certain test files",
@@ -38,7 +38,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestObject.Run",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

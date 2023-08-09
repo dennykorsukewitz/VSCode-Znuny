@@ -1,12 +1,12 @@
 {
-    "znuny.CustomerUserObject.CustomerName": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.CustomerName": {
         "body": [
             "${1:my \\$Name = \\$CustomerUserObject->CustomerName(",
             "    UserLogin => 'some-login',",
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.CustomerName",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

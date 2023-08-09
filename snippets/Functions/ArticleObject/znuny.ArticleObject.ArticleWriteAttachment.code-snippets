@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleWriteAttachment": {
+    "6.4|6.5|7.0 - znuny.ArticleObject.ArticleWriteAttachment": {
         "body": [
             "${1:my \\$Success = \\$ArticleObject->ArticleWriteAttachment(",
             "    TicketID           => \\$TicketID,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleWriteAttachment",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

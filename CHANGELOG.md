@@ -9,6 +9,37 @@ All notable changes to the "Znuny" extension will be documented in this file.
 LanguageID detection has been added to support more languages.
 There is also a new configuration `znuny.quoteWithMarker.lineComment` that can be customized.
 
+#### Added Snippets
+
+- `znuny.Scaffolding.ConfigFile.code-snippets`
+- `znuny.Scaffolding.SOPM.code-snippets`
+- `znuny.Scaffolding.System.code-snippets`
+- `znuny.Scaffolding.UnitTest.code-snippets`
+- `znuny.SOPM.Framework.code-snippets`
+- `znuny.SOPM.ChangeLog.code-snippets`
+- `znuny.SOPM.Code.code-snippets`
+- `znuny.SOPM.Database.code-snippets`
+- `znuny.SOPM.Description.code-snippets`
+- `znuny.SOPM.Filelist.code-snippets`
+- `znuny.SOPM.Intro.code-snippets`
+- `znuny.SOPM.License.code-snippets`
+- `znuny.SOPM.ModuleRequired.code-snippets`
+- `znuny.SOPM.Name.code-snippets`
+- `znuny.SOPM.OS.code-snippets`
+- `znuny.SOPM.PackageAllowDirectUpdate.code-snippets`
+- `znuny.SOPM.PackageIsBuildable.code-snippets`
+- `znuny.SOPM.PackageIsDownloadable.code-snippets`
+- `znuny.SOPM.PackageIsRemovable.code-snippets`
+- `znuny.SOPM.PackageIsVisible.code-snippets`
+- `znuny.SOPM.PackageRequired.code-snippets`
+- `znuny.SOPM.URL.code-snippets`
+- `znuny.SOPM.Vendor.code-snippets`
+- `znuny.SOPM.Version.code-snippets`
+
+#### Updated all Snippets
+
+Added available versions to each generated snippet (name).
+
 ## [1.1.3]
 
 ### Snippets

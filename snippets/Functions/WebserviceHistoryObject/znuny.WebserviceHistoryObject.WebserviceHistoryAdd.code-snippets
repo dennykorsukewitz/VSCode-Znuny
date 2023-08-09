@@ -1,5 +1,5 @@
 {
-    "znuny.WebserviceHistoryObject.WebserviceHistoryAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.WebserviceHistoryObject.WebserviceHistoryAdd": {
         "body": [
             "${1:my \\$ID = \\$WebserviceHistoryObject->WebserviceHistoryAdd(",
             "    WebserviceID => \\$WebserviceID,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.WebserviceHistoryObject.WebserviceHistoryAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

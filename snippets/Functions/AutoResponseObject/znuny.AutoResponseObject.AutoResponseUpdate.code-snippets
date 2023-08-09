@@ -1,5 +1,5 @@
 {
-    "znuny.AutoResponseObject.AutoResponseUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.AutoResponseObject.AutoResponseUpdate": {
         "body": [
             "${1:\\$AutoResponseObject->AutoResponseUpdate(",
             "    ID          => 123,",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

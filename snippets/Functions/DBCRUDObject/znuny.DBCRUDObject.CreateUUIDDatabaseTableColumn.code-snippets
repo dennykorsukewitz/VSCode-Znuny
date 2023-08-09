@@ -1,10 +1,10 @@
 {
-    "znuny.DBCRUDObject.CreateUUIDDatabaseTableColumn": {
+    "6.4|6.5|7.0 - znuny.DBCRUDObject.CreateUUIDDatabaseTableColumn": {
         "body": [
             "${1:my \\$UUIDColumnCreated = \\$DBCRUDObject->CreateUUIDDatabaseTableColumn();}",
         ],
         "prefix": "znuny.DBCRUDObject.CreateUUIDDatabaseTableColumn",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

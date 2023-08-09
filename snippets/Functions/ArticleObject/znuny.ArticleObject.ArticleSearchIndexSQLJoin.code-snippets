@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleSearchIndexSQLJoin": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSearchIndexSQLJoin": {
         "body": [
             "${1:my \\$SQLExtenion = \\$ArticleObject->ArticleSearchIndexSQLJoin(",
             "    SearchParams => {",
@@ -18,7 +18,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexSQLJoin",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

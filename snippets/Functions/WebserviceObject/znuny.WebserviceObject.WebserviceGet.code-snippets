@@ -1,5 +1,5 @@
 {
-    "znuny.WebserviceObject.WebserviceGet": {
+    "6.0|6.4|6.5|7.0 - znuny.WebserviceObject.WebserviceGet": {
         "body": [
             "${1:my \\$Webservice = \\$WebserviceObject->WebserviceGet(",
             "    ID   => 123,            # ID or Name must be provided",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.WebserviceObject.WebserviceGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.EncodeObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.EncodeObject": {
         "body": [
             "my \\$EncodeObject = \\$Kernel::OM->Get('Kernel::System::Encode');",
         ],
         "prefix": "znuny.ObjectManager.EncodeObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketPriorityList": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketPriorityList": {
         "body": [
             "${1:my %Priorities = \\$TicketObject->TicketPriorityList(",
             "    QueueID => \\$QueueID,",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketPriorityList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

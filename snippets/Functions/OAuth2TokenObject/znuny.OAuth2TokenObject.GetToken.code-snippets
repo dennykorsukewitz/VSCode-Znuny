@@ -1,5 +1,5 @@
 {
-    "znuny.OAuth2TokenObject.GetToken": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.GetToken": {
         "body": [
             "${1:my \\$Token = \\$OAuth2TokenObject->GetToken(",
             "    TokenConfigID => \\$TokenConfigID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.GetToken",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

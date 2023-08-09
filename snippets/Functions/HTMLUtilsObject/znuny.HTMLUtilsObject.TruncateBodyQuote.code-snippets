@@ -1,5 +1,5 @@
 {
-    "znuny.HTMLUtilsObject.TruncateBodyQuote": {
+    "6.4|6.5|7.0 - znuny.HTMLUtilsObject.TruncateBodyQuote": {
         "body": [
             "${1:\\$Body = \\$HTMLUtilsObject->TruncateBodyQuote(",
             "    Body       => \\$Body,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.TruncateBodyQuote",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

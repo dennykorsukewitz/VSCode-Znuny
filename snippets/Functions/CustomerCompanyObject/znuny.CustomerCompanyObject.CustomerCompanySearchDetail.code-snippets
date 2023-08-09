@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerCompanyObject.CustomerCompanySearchDetail": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerCompanyObject.CustomerCompanySearchDetail": {
         "body": [
             "${1:my \\$CustomerCompanyIDsRef = \\$CustomerCompanyObject->CustomerCompanySearchDetail(",
             "",
@@ -25,7 +25,7 @@
             "    \\}}",
         ],
         "prefix": "znuny.CustomerCompanyObject.CustomerCompanySearchDetail",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

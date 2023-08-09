@@ -1,5 +1,5 @@
 {
-    "znuny.UserObject.SearchPreferences": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.SearchPreferences": {
         "body": [
             "${1:my %UserList = \\$UserObject->SearchPreferences(",
             "    Key   => 'UserEmail',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.SearchPreferences",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

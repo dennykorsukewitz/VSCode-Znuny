@@ -1,5 +1,5 @@
 {
-    "znuny.HTMLUtilsObject.ToHTML": {
+    "6.0|6.4|6.5|7.0 - znuny.HTMLUtilsObject.ToHTML": {
         "body": [
             "${1:my \\$HTMLString = \\$HTMLUtilsObject->ToHTML(",
             "    String             => \\$String,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.ToHTML",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

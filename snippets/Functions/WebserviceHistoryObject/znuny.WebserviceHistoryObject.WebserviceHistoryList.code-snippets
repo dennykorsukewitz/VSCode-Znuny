@@ -1,12 +1,12 @@
 {
-    "znuny.WebserviceHistoryObject.WebserviceHistoryList": {
+    "6.0|6.4|6.5|7.0 - znuny.WebserviceHistoryObject.WebserviceHistoryList": {
         "body": [
             "${1:my @List = \\$WebserviceHistoryObject->WebserviceHistoryList(",
             "    WebserviceID => \\$WebserviceID,",
             ");}",
         ],
         "prefix": "znuny.WebserviceHistoryObject.WebserviceHistoryList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.MentionObject.CanUserRemoveMention": {
+    "6.4|6.5|7.0 - znuny.MentionObject.CanUserRemoveMention": {
         "body": [
             "${1:my \\$UserCanRemoveMention = \\$MentionObject->CanUserRemoveMention(",
             "    TicketID        => \\$TicketID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.MentionObject.CanUserRemoveMention",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

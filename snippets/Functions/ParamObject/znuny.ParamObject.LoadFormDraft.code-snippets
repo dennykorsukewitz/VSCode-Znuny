@@ -1,5 +1,5 @@
 {
-    "znuny.ParamObject.LoadFormDraft": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.LoadFormDraft": {
         "body": [
             "${1:my \\$FormDraftID = \\$ParamObject->LoadFormDraft(",
             "    FormDraftID => \\$FormDraftID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ParamObject.LoadFormDraft",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

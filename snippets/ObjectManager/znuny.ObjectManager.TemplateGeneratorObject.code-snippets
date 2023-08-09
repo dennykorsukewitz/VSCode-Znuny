@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.TemplateGeneratorObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.TemplateGeneratorObject": {
         "body": [
             "my \\$TemplateGeneratorObject = \\$Kernel::OM->Get('Kernel::System::TemplateGenerator');",
         ],
         "prefix": "znuny.ObjectManager.TemplateGeneratorObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

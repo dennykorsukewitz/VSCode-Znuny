@@ -1,5 +1,5 @@
 {
-    "znuny.RequesterObject.Run": {
+    "6.0|6.4|6.5|7.0 - znuny.RequesterObject.Run": {
         "body": [
             "${1:my \\$Result = \\$RequesterObject->Run(",
             "    WebserviceID => \\$WebserviceID,                      # ID of the configured remote web service to use OR",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.RequesterObject.Run",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

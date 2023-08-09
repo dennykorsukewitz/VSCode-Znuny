@@ -1,5 +1,5 @@
 {
-    "znuny.TemplateGeneratorObject.AutoResponse": {
+    "6.0|6.4|6.5|7.0 - znuny.TemplateGeneratorObject.AutoResponse": {
         "body": [
             "${1:my %AutoResponse = \\$TemplateGeneratorObject->AutoResponse(",
             "    TicketID         => \\$TicketID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.AutoResponse",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.ArticleObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.ArticleObject": {
         "body": [
             "my \\$ArticleObject = \\$Kernel::OM->Get('Kernel::System::Ticket::Article');",
         ],
         "prefix": "znuny.ObjectManager.ArticleObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

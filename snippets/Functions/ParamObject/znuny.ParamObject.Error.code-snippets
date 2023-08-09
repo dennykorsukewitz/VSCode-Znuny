@@ -1,12 +1,12 @@
 {
-    "znuny.ParamObject.Error": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.Error": {
         "body": [
             "${1:if ( \\$ParamObject->Error() ) {",
             "    print STDERR \\$ParamObject->Error() . \\"\n\\";",
             "\\}}",
         ],
         "prefix": "znuny.ParamObject.Error",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,0 +1,42 @@
+{
+    "znuny.SOPM.IntroInstall":{
+        "body": [
+            "<IntroInstall Type=\"${1|pre,post|}\" Lang=\"${2:en}\" Title=\"${3:Dependencies}!\"><![CDATA[",
+            "${4:Some Info formatted in html....}",
+            "]]></IntroInstall>"
+        ],
+        "prefix": "znuny.SOPM.IntroInstall",
+        "description": "znuny.SOPM.IntroInstall",
+        "scope": "xml"
+    },
+    "znuny.SOPM.IntroUninstall":{
+        "body": [
+            "<IntroUninstall Type=\"${1|pre,post|}\" Lang=\"${2:en}\" Title=\"${3:Dependencies}!\"><![CDATA[",
+            "${4:Some Info formatted in html....}",
+            "]]></IntroUninstall>"
+        ],
+        "prefix": "znuny.SOPM.IntroUninstall",
+        "description": "znuny.SOPM.IntroUninstall",
+        "scope": "xml"
+    },
+    "znuny.SOPM.IntroReinstall":{
+        "body": [
+            "<IntroReinstall Type=\"${1|pre,post|}\" Lang=\"${2:en}\" Title=\"${3:Dependencies}!\"><![CDATA[",
+            "${4:Some Info formatted in html....}",
+            "]]></IntroReinstall>"
+        ],
+        "prefix": "znuny.SOPM.IntroReinstall",
+        "description": "znuny.SOPM.IntroReinstall",
+        "scope": "xml"
+    },
+    "znuny.SOPM.IntroUpgrade":{
+        "body": [
+            "<IntroUpgrade Type=\"${1|pre,post|}\" Lang=\"${2:en}\" Title=\"${3:Dependencies}!\"><![CDATA[",
+            "${4:Some Info formatted in html....}",
+            "]]></IntroUpgrade>"
+        ],
+        "prefix": "znuny.SOPM.IntroUpgrade",
+        "description": "znuny.SOPM.IntroUpgrade",
+        "scope": "xml"
+    },
+}

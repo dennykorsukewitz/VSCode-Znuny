@@ -1,12 +1,12 @@
 {
-    "znuny.GroupObject.RoleGet": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.RoleGet": {
         "body": [
             "${1:my %RoleData = \\$GroupObject->RoleGet(",
             "    ID => 2,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.RoleGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

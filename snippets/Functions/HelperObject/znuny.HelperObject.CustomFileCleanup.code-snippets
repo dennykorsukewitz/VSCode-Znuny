@@ -1,10 +1,10 @@
 {
-    "znuny.HelperObject.CustomFileCleanup": {
+    "6.4|6.5|7.0 - znuny.HelperObject.CustomFileCleanup": {
         "body": [
             "${1:\\$HelperObject->CustomFileCleanup();}",
         ],
         "prefix": "znuny.HelperObject.CustomFileCleanup",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

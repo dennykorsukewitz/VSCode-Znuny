@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationDeploy": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationDeploy": {
         "body": [
             "${1:my %Result = \\$SysConfigObject->ConfigurationDeploy(",
             "    Comments      => \\"Some comments\\",     # (optional)",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDeploy",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

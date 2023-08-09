@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketFlagDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketFlagDelete": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketFlagDelete(",
             "    TicketID => \\$TicketID,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketFlagDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.SchedulerDBObject.GenericAgentTaskCleanup": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.GenericAgentTaskCleanup": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->GenericAgentTaskCleanup();}",
         ],
         "prefix": "znuny.SchedulerDBObject.GenericAgentTaskCleanup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

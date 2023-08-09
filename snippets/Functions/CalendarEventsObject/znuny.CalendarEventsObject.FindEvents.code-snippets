@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarEventsObject.FindEvents": {
+    "6.4|6.5|7.0 - znuny.CalendarEventsObject.FindEvents": {
         "body": [
             "${1:my \\$Result = \\$CalendarEventsObject->FindEvents(",
             "    String => [",
@@ -31,7 +31,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarEventsObject.FindEvents",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

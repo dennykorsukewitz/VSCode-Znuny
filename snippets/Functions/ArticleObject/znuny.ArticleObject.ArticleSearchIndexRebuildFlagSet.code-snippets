@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet": {
         "body": [
             "${1:my \\$Success = \\$ArticleObject->ArticleSearchIndexRebuildFlagSet(",
             "    ArticleIDs => [ 123, 234, 345 ]   # (Either 'ArticleIDs' or 'All' must be provided) The ArticleIDs to be updated.",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexRebuildFlagSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

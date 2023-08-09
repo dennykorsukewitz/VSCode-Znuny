@@ -1,11 +1,11 @@
 {
-    "znuny.QueueObject.QueueLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.QueueObject.QueueLookup": {
         "body": [
             "${1:my \\$Queue = \\$QueueObject->QueueLookup( QueueID => \\$QueueID );}",
             "${2:my \\$QueueID = \\$QueueObject->QueueLookup( Queue => \\$Queue );}",
         ],
         "prefix": "znuny.QueueObject.QueueLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

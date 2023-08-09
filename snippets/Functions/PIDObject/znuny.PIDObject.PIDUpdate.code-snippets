@@ -1,12 +1,12 @@
 {
-    "znuny.PIDObject.PIDUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.PIDObject.PIDUpdate": {
         "body": [
             "${1:my \\$Success = \\$PIDObject->PIDUpdate(",
             "    Name => 'PostMasterPOP3',",
             ");}",
         ],
         "prefix": "znuny.PIDObject.PIDUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

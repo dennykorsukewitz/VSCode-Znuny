@@ -1,5 +1,5 @@
 {
-    "znuny.StatsObject.ObjectFileCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.ObjectFileCheck": {
         "body": [
             "${1:my \\$ObjectFileCheck = \\$StatsObject->ObjectFileCheck(",
             "    Type => 'static',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.ObjectFileCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

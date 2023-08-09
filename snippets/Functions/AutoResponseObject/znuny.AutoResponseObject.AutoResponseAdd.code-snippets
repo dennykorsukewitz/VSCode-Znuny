@@ -1,5 +1,5 @@
 {
-    "znuny.AutoResponseObject.AutoResponseAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.AutoResponseObject.AutoResponseAdd": {
         "body": [
             "${1:\\$AutoResponseObject->AutoResponseAdd(",
             "    Name        => 'Some::AutoResponse',",
@@ -23,7 +23,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

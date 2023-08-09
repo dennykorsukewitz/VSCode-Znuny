@@ -1,5 +1,5 @@
 {
-    "znuny.JSONObject.Encode": {
+    "6.0|6.4|6.5|7.0 - znuny.JSONObject.Encode": {
         "body": [
             "${1:my \\$JSONString = \\$JSONObject->Encode(",
             "    Data     => \\$Data,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.JSONObject.Encode",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

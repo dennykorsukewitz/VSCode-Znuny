@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.DisableSysConfigs": {
+    "6.4|6.5|7.0 - znuny.HelperObject.DisableSysConfigs": {
         "body": [
             "${1:\\$HelperObject->DisableSysConfigs(",
             "    DisableSysConfigs => [",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.DisableSysConfigs",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

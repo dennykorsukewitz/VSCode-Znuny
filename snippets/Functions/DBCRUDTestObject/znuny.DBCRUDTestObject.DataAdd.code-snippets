@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDTestObject.DataAdd": {
+    "6.4|6.5|7.0 - znuny.DBCRUDTestObject.DataAdd": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDTestObject->DataAdd(",
             "    ID          => '...',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDTestObject.DataAdd",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

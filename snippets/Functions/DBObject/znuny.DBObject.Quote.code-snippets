@@ -1,5 +1,5 @@
 {
-    "znuny.DBObject.Quote": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.Quote": {
         "body": [
             "${1:my \\$DBString = \\$DBObject->Quote( \\"2005-10-27 20:15:01\\" );}",
             "${2:quote integers:",
@@ -13,7 +13,7 @@
             "my \\$DBString = \\$DBObject->Quote( \\"This isn't a problem!\\" );}",
         ],
         "prefix": "znuny.DBObject.Quote",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

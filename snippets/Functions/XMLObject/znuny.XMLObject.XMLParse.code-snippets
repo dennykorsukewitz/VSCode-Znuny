@@ -1,11 +1,11 @@
 {
-    "znuny.XMLObject.XMLParse": {
+    "6.0|6.4|6.5|7.0 - znuny.XMLObject.XMLParse": {
         "body": [
             "${1:my @XMLStructure = \\$XMLObject->XMLParse( String => \\$FileString );}",
             "${2:my @XMLStructure = \\$XMLObject->XMLParse( String => \\\\\\$FileStringScalar );}",
         ],
         "prefix": "znuny.XMLObject.XMLParse",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleFlagGet": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleFlagGet": {
         "body": [
             "${1:my %Flags = \\$ArticleObject->ArticleFlagGet(",
             "    ArticleID => \\$ArticleID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleFlagGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

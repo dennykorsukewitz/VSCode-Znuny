@@ -1,5 +1,5 @@
 {
-    "znuny.DebuggerObject.RequesterPerformRequest": {
+    "6.0|6.4|6.5|7.0 - znuny.DebuggerObject.RequesterPerformRequest": {
         "body": [
             "${1:my \\$Result = \\$DebuggerObject->RequesterPerformRequest(",
             "    Operation       => 'remote_op', # name of remote operation to perform",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.DebuggerObject.RequesterPerformRequest",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

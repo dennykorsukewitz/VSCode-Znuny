@@ -1,10 +1,10 @@
 {
-    "znuny.LanguageObject.Translate": {
+    "6.0|6.4|6.5|7.0 - znuny.LanguageObject.Translate": {
         "body": [
             "${1:my \\$Text = \\$LanguageObject->Translate('Hello %s!', 'world');}",
         ],
         "prefix": "znuny.LanguageObject.Translate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

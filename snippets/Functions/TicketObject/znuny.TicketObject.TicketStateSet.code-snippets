@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketStateSet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketStateSet": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketStateSet(",
             "    State     => 'open',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketStateSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

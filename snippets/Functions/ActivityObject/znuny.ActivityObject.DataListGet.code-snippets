@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.DataListGet": {
+    "7.0 - znuny.ActivityObject.DataListGet": {
         "body": [
             "${1:my @Data = \\$ActivityObject->DataListGet(",
             "    ID         => '...', # optional",

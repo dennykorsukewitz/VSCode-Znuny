@@ -1,5 +1,5 @@
 {
-    "znuny.ErrorObject.HandleError": {
+    "6.0|6.4|6.5|7.0 - znuny.ErrorObject.HandleError": {
         "body": [
             "${1:my \\$Result =  \\$ErrorObject->HandleError(",
             "    WebserviceID      => \\$WebserviceID,                     # ID of the configured remote web service to use",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ErrorObject.HandleError",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

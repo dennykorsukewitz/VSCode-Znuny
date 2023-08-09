@@ -1,12 +1,12 @@
 {
-    "znuny.SysConfigObject.SettingNavigationToPath": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingNavigationToPath": {
         "body": [
             "${1:my @Path = \\$SysConfigObject->SettingNavigationToPath(",
             "    Navigation => 'Frontend::Agent::ToolBarModule',  # (optional)",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingNavigationToPath",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

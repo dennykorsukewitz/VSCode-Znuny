@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.StatsSearchFieldParameterBuild": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.StatsSearchFieldParameterBuild": {
         "body": [
             "${1:my \\$DynamicFieldStatsSearchParameter = \\$BackendObject->StatsSearchFieldParameterBuild(",
             "    DynamicFieldConfig   => \\$DynamicFieldConfig,    # complete config of the DynamicField",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.StatsSearchFieldParameterBuild",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

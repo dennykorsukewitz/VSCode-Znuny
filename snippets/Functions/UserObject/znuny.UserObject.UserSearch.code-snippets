@@ -1,5 +1,5 @@
 {
-    "znuny.UserObject.UserSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.UserSearch": {
         "body": [
             "${1:my %List = \\$UserObject->UserSearch(",
             "    PostMasterSearch => 'email@example.com',",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.UserSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

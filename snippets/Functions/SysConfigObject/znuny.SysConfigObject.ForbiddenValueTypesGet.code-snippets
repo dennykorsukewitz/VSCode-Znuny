@@ -1,10 +1,10 @@
 {
-    "znuny.SysConfigObject.ForbiddenValueTypesGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ForbiddenValueTypesGet": {
         "body": [
             "${1:my %ForbiddenValueTypes = \\$SysConfigObject->ForbiddenValueTypesGet();}",
         ],
         "prefix": "znuny.SysConfigObject.ForbiddenValueTypesGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

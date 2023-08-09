@@ -1,12 +1,12 @@
 {
-    "znuny.CommunicationChannelObject.ChannelList": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationChannelObject.ChannelList": {
         "body": [
             "${1:my @CommunicationChannels = \\$CommunicationChannelObject->ChannelList(",
             "    ValidID => \\$ValidID,           # (optional) filter by ValidID",
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

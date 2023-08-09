@@ -1,5 +1,5 @@
 {
-    "znuny.NotificationEventObject.NotificationGet": {
+    "6.0|6.4|6.5|7.0 - znuny.NotificationEventObject.NotificationGet": {
         "body": [
             "${1:my %Notification = \\$NotificationEventObject->NotificationGet(",
             "    ID => 1,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.LinkObject.ObjectLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.ObjectLookup": {
         "body": [
             "${1:\\$Name = \\$LinkObject->ObjectLookup(",
             "    ObjectID => \\$ObjectID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.CustomerInterface": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.CustomerInterface": {
         "body": [
             "${1:\\$SeleniumObject->CustomerInterface(",
             "    Action      => 'CustomerTicketMessage',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.CustomerInterface",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

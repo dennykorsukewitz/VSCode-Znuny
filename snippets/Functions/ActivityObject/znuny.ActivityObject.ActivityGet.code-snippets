@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.ActivityGet": {
+    "6.0|6.4|6.5|7.0 - znuny.ActivityObject.ActivityGet": {
         "body": [
             "${1:my \\$Activity = \\$ActivityObject->ActivityGet(",
             "    ActivityEntityID => \\$ActivityEntityID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.ActivityGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

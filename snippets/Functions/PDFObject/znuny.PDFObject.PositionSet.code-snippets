@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.PositionSet": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.PositionSet": {
         "body": [
             "${1:\\$True = \\$PDFObject->PositionSet(",
             "    Move => 'absolut',  # (optional) default absolut (absolut|relativ)",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.PositionSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

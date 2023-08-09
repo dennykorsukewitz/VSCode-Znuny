@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationSearch": {
         "body": [
             "${1:my @Result = \\$SysConfigObject->ConfigurationSearch(",
             "    Search           => 'The search string', # (optional)",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

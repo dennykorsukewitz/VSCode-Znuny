@@ -1,12 +1,12 @@
 {
-    "znuny.ParamObject.GetUploadAll": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.GetUploadAll": {
         "body": [
             "${1:my %File = \\$ParamObject->GetUploadAll(",
             "    Param  => 'FileParam',  # the name of the request parameter containing the file data",
             ");}",
         ],
         "prefix": "znuny.ParamObject.GetUploadAll",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

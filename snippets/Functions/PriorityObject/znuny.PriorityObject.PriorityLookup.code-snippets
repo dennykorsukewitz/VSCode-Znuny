@@ -1,5 +1,5 @@
 {
-    "znuny.PriorityObject.PriorityLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.PriorityObject.PriorityLookup": {
         "body": [
             "${1:my \\$Priority = \\$PriorityObject->PriorityLookup(",
             "    PriorityID => \\$PriorityID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.PriorityObject.PriorityLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

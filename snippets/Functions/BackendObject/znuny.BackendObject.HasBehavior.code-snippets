@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.HasBehavior": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.HasBehavior": {
         "body": [
             "${1:my \\$Success = \\$BackendObject->HasBehavior(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.HasBehavior",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingsSet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingsSet": {
         "body": [
             "${1:my \\$Success = \\$SysConfigObject->SettingsSet(",
             "    UserID   => \\$UserID,                                      # (required) UserID",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingsSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "znuny.EnvironmentObject.OTRSInfoGet": {
+    "6.0|6.4|6.5|7.0 - znuny.EnvironmentObject.OTRSInfoGet": {
         "body": [
             "${1:my %OTRSInfo = \\$EnvironmentObject->OTRSInfoGet();}",
         ],
         "prefix": "znuny.EnvironmentObject.OTRSInfoGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

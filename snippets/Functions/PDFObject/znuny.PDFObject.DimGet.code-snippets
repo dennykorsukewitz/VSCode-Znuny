@@ -1,10 +1,10 @@
 {
-    "znuny.PDFObject.DimGet": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.DimGet": {
         "body": [
             "${1:\\$Dim = \\$PDFObject->DimGet();}",
         ],
         "prefix": "znuny.PDFObject.DimGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

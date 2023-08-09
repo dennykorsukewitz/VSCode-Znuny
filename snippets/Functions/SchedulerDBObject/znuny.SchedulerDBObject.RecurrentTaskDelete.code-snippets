@@ -1,12 +1,12 @@
 {
-    "znuny.SchedulerDBObject.RecurrentTaskDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.RecurrentTaskDelete": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->RecurrentTaskDelete(",
             "    TaskID => \\$TaskID,",
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.RecurrentTaskDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

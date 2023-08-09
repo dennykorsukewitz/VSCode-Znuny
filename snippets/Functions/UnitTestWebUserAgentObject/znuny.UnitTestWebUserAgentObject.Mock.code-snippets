@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestWebUserAgentObject.Mock": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebUserAgentObject.Mock": {
         "body": [
             "${1:my \\$Success = \\$UnitTestWebUserAgentObject->Mock(",
             "    URL            => qr/testserver\/success/,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebUserAgentObject.Mock",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

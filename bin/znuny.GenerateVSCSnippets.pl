@@ -952,11 +952,10 @@ sub _GenerateModuleSnippets {
             Filename    => 'znuny.Module.' . $Module . '.code-snippets',
             Trigger     => $Module,
             Content     => $Module,
-            Description => join(', ',@{$RawData{Modules}->{$Module}}),
+            Description => join('|',@{$RawData{Modules}->{$Module}}),
             Scope       => 'perl',
             Directory   => '/snippets/Modules/',
         );
-
         _WriteSnippets(%Snippet);
     }
 
@@ -988,7 +987,7 @@ sub _GenerateObjectSnippets {
             Filename    => 'znuny.ObjectManager.' . $Object . '.code-snippets',
             Trigger     => 'znuny.ObjectManager.' . $Object,
             Content     => $ObjectManagerContent,
-            Description => join(', ',@{$Object{FrameworkVersion}}),
+            Description => join('|',@{$Object{FrameworkVersion}}),
             Scope       => 'perl',
             Directory   => '/snippets/ObjectManager/',
         );
@@ -1015,7 +1014,7 @@ sub _GenerateObjectSnippets {
             }
 
             my %Versions = map { $_ => 1 } @Versions;
-            my $Versions = join(", ", map { $_ } sort keys %Versions);
+            my $Versions = join("|", map { $_ } sort keys %Versions);
 
             my %Snippet = (
                 Filename    => 'znuny.' . $Object . '.' . $Function . '.code-snippets',
@@ -1122,7 +1121,7 @@ sub _WriteSnippets {
 
     my $Snippet = <<SNIPPET;
 {
-    "$Snippet{Trigger}": {
+    "$Snippet{Description} - $Snippet{Trigger}": {
         "body": [$ModifiedContent        ],
         "prefix": "$Snippet{Trigger}",
         "description": "$Snippet{Description}",

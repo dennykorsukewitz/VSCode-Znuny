@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.RepositoryPackageListGet": {
+    "6.4|6.5|7.0 - znuny.PackageObject.RepositoryPackageListGet": {
         "body": [
             "${1:my @List = \\$PackageObject->RepositoryPackageListGet(",
             "    Source             => 'Example repository 1',   # the value of key 'Name' in item of SysConfig option Package::RepositoryList or a direct download URL",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryPackageListGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

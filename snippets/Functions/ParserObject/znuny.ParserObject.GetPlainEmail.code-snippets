@@ -1,10 +1,10 @@
 {
-    "znuny.ParserObject.GetPlainEmail": {
+    "6.0|6.4|6.5|7.0 - znuny.ParserObject.GetPlainEmail": {
         "body": [
             "${1:my \\$Email = \\$ParserObject->GetPlainEmail();}",
         ],
         "prefix": "znuny.ParserObject.GetPlainEmail",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SystemAddressObject.SystemAddressLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemAddressObject.SystemAddressLookup": {
         "body": [
             "${1:my \\$Name = \\$SystemAddressObject->SystemAddressLookup(",
             "    ID              => 2,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemAddressObject.SystemAddressLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

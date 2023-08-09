@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityDialogObject.ActivityDialogGet": {
+    "6.0|6.4|6.5|7.0 - znuny.ActivityDialogObject.ActivityDialogGet": {
         "body": [
             "${1:my \\$ActivityDialog = \\$ActivityDialogObject->ActivityDialogGet(",
             "    ActivityDialogEntityID => \\$ActivityDialogEntityID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityDialogObject.ActivityDialogGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

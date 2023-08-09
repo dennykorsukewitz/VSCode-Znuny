@@ -1,10 +1,10 @@
 {
-    "znuny.TimeObject.SystemTime": {
+    "6.0|6.4|6.5|7.0 - znuny.TimeObject.SystemTime": {
         "body": [
             "${1:my \\$SystemTime = \\$TimeObject->SystemTime();}",
         ],
         "prefix": "znuny.TimeObject.SystemTime",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

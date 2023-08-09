@@ -1,12 +1,12 @@
 {
-    "znuny.StandardTemplateObject.StandardTemplateGet": {
+    "6.0|6.4|6.5|7.0 - znuny.StandardTemplateObject.StandardTemplateGet": {
         "body": [
             "${1:my %StandardTemplate = \\$StandardTemplateObject->StandardTemplateGet(",
             "    ID => 123,",
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

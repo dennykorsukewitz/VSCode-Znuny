@@ -1,5 +1,5 @@
 {
-    "znuny.SystemMaintenanceObject.SystemMaintenanceListGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemMaintenanceObject.SystemMaintenanceListGet": {
         "body": [
             "${1:my \\$List = \\$SystemMaintenanceObject->SystemMaintenanceListGet(",
             "    UserID   => \\$UserID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceListGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "CustomerTicketPrint": {
+    "6.0|6.4|6.5|7.0 - CustomerTicketPrint": {
         "body": [
             "CustomerTicketPrint",
         ],
         "prefix": "CustomerTicketPrint",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

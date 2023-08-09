@@ -1,5 +1,5 @@
 {
-    "znuny.DBObject.SelectAll": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.SelectAll": {
         "body": [
             "${1:my \\$ResultAsArrayRef = \\$DBObject->SelectAll(",
             "    SQL   => \\"SELECT id, name FROM table\\",",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.DBObject.SelectAll",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

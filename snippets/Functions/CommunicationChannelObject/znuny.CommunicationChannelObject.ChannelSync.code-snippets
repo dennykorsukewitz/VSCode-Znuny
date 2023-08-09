@@ -1,12 +1,12 @@
 {
-    "znuny.CommunicationChannelObject.ChannelSync": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationChannelObject.ChannelSync": {
         "body": [
             "${1:my %Result = \\$CommunicationChannelObject->ChannelSync(",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelSync",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

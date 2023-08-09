@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.StandardTemplateObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.StandardTemplateObject": {
         "body": [
             "my \\$StandardTemplateObject = \\$Kernel::OM->Get('Kernel::System::StandardTemplate');",
         ],
         "prefix": "znuny.ObjectManager.StandardTemplateObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

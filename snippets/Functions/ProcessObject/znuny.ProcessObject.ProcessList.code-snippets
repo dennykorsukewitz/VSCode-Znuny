@@ -1,5 +1,5 @@
 {
-    "znuny.ProcessObject.ProcessList": {
+    "6.0|6.4|6.5|7.0 - znuny.ProcessObject.ProcessList": {
         "body": [
             "${1:my \\$ProcessList = \\$ProcessObject->ProcessList(",
             "    ProcessState => ['Active'],           # Active, FadeAway, Inactive",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

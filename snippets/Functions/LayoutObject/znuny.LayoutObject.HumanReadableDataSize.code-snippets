@@ -1,12 +1,12 @@
 {
-    "znuny.LayoutObject.HumanReadableDataSize": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.HumanReadableDataSize": {
         "body": [
             "${1:my \\$SizeStr = \\$LayoutObject->HumanReadableDataSize(",
             "    Size => 123,  # size in bytes",
             ");}",
         ],
         "prefix": "znuny.LayoutObject.HumanReadableDataSize",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

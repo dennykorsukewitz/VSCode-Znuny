@@ -1,12 +1,12 @@
 {
-    "znuny.TicketObject.TicketQueueID": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketQueueID": {
         "body": [
             "${1:my \\$QueueID = \\$TicketObject->TicketQueueID(",
             "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketQueueID",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

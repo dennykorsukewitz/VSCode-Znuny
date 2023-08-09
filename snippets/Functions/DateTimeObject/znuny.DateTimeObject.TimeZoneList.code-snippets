@@ -1,5 +1,5 @@
 {
-    "znuny.DateTimeObject.TimeZoneList": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.TimeZoneList": {
         "body": [
             "${1:# You can add an obsolete time zone to the list if the time zone is valid.",
             "# This is useful to keep the obsolete time zone from a stored setting",
@@ -22,7 +22,7 @@
             "${4:my \\$TimeZones = Kernel::System::DateTime->TimeZoneList();}",
         ],
         "prefix": "znuny.DateTimeObject.TimeZoneList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

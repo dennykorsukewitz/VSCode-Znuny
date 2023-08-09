@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleSearchIndexBuild": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSearchIndexBuild": {
         "body": [
             "${1:my \\$Success = \\$ArticleObject->ArticleSearchIndexBuild(",
             "    TicketID  => \\$TicketID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexBuild",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

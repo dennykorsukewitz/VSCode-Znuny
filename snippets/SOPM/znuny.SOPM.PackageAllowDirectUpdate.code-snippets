@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.PackageAllowDirectUpdate":{
+        "body": [
+            "<PackageAllowDirectUpdate>${1:1}</PackageAllowDirectUpdate>"
+        ],
+        "prefix": "znuny.SOPM.PackageAllowDirectUpdate",
+        "description": "znuny.SOPM.PackageAllowDirectUpdate",
+        "scope": "xml"
+    }
+}

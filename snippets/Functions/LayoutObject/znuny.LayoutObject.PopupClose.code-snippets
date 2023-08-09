@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.PopupClose": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.PopupClose": {
         "body": [
             "${1:# load specific URL in main window",
             "\\$LayoutObject->PopupClose(",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.PopupClose",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.GetScreenshotFileName": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.GetScreenshotFileName": {
         "body": [
             "${1:my \\$ScreenshotFileName = \\$SeleniumObject->GetScreenshotFileName(",
             "    Filename => 'ZnunyRocks',",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.GetScreenshotFileName",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

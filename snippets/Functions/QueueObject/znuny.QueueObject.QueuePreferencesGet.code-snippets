@@ -1,5 +1,5 @@
 {
-    "znuny.QueueObject.QueuePreferencesGet": {
+    "6.0|6.4|6.5|7.0 - znuny.QueueObject.QueuePreferencesGet": {
         "body": [
             "${1:my %Preferences = \\$QueueObject->QueuePreferencesGet(",
             "    QueueID => \\$QueueID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.QueueObject.QueuePreferencesGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.OAuth2TokenObject.DataSearch": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.DataSearch": {
         "body": [
             "${1:my %Data = \\$OAuth2TokenObject->DataSearch(",
             "    Search                     => 'test*test',",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.DataSearch",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

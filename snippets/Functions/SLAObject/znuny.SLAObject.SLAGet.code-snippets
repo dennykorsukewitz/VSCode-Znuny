@@ -1,5 +1,5 @@
 {
-    "znuny.SLAObject.SLAGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SLAObject.SLAGet": {
         "body": [
             "${1:my %SLAData = \\$SLAObject->SLAGet(",
             "    SLAID  => \\$SLAID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SLAObject.SLAGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

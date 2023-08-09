@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.DataDelete": {
+    "7.0 - znuny.ActivityObject.DataDelete": {
         "body": [
             "${1:my \\$Success = \\$ActivityObject->DataDelete(",
             "    ID         => '...', # optional",

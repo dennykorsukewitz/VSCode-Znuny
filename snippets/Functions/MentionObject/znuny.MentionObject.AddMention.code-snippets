@@ -1,5 +1,5 @@
 {
-    "znuny.MentionObject.AddMention": {
+    "6.4|6.5|7.0 - znuny.MentionObject.AddMention": {
         "body": [
             "${1:my \\$Success = \\$MentionObject->AddMention(",
             "    TicketID        => \\$TicketID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.MentionObject.AddMention",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

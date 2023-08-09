@@ -1,5 +1,5 @@
 {
-    "znuny.CommunicationChannelObject.ChannelDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationChannelObject.ChannelDelete": {
         "body": [
             "${1:my \\$Success = \\$CommunicationChannelObject->ChannelDelete(",
             "    ChannelID   => \\$ChannelID,       # (optional) Delete by ChannelID",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

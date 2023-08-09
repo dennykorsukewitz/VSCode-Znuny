@@ -1,12 +1,12 @@
 {
-    "znuny.SysConfigObject.ConfigurationDirtySettingsList": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationDirtySettingsList": {
         "body": [
             "${1:my @Result = \\$SysConfigObject->ConfigurationDirtySettingsList(",
             "    ChangeBy => 123,",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDirtySettingsList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

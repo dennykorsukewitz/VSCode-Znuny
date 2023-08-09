@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketSLAList": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketSLAList": {
         "body": [
             "${1:my %SLAs = \\$TicketObject->TicketSLAList(",
             "    QueueID   => \\$QueueID,",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketSLAList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

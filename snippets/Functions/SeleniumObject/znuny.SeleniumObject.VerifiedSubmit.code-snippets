@@ -1,10 +1,10 @@
 {
-    "znuny.SeleniumObject.VerifiedSubmit": {
+    "6.0|6.4|6.5|7.0 - znuny.SeleniumObject.VerifiedSubmit": {
         "body": [
             "${1:\\$SeleniumObject->VerifiedSubmit();}",
         ],
         "prefix": "znuny.SeleniumObject.VerifiedSubmit",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

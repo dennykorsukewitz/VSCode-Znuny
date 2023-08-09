@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.ServiceGet": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.ServiceGet": {
         "body": [
             "${1:# With installed ITSM:",
             "my %ServiceData = \\$ServiceObject->ServiceGet(",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

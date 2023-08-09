@@ -1,5 +1,5 @@
 {
-    "znuny.SupportDataCollectorObject.Collect": {
+    "6.0|6.4|6.5|7.0 - znuny.SupportDataCollectorObject.Collect": {
         "body": [
             "${1:my %Result = \\$SupportDataCollectorObject->Collect(",
             "    UseCache   => 1,                    # (optional) to get data from cache if any",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SupportDataCollectorObject.Collect",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

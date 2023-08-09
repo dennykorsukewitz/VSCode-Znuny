@@ -1,5 +1,5 @@
 {
-    "znuny.MailQueueObject.List": {
+    "6.0|6.4|6.5|7.0 - znuny.MailQueueObject.List": {
         "body": [
             "${1:my \\$List = \\$MailQueueObject->List(",
             "    ID        => '...', # optional",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.List",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

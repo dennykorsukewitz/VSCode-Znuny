@@ -1,5 +1,5 @@
 {
-    "znuny.CacheObject.Configure": {
+    "6.0|6.4|6.5|7.0 - znuny.CacheObject.Configure": {
         "body": [
             "${1:\\$CacheObject->Configure(",
             "    CacheInMemory  => 1,    # optional",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CacheObject.Configure",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

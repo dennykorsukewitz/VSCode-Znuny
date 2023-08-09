@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationLoad": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationLoad": {
         "body": [
             "${1:my \\$Success = \\$SysConfigObject->ConfigurationLoad(",
             "    ConfigurationYAML   => \\$YAMLString,     # a YAML string in the format of L<ConfigurationDump()>",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationLoad",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

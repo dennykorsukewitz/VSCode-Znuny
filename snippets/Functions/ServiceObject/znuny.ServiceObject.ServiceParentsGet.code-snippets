@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.ServiceParentsGet": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.ServiceParentsGet": {
         "body": [
             "${1:my \\$ServiceParentsList = \\$ServiceObject->ServiceParentsGet(",
             "    ServiceID => \\$ServiceID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceParentsGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

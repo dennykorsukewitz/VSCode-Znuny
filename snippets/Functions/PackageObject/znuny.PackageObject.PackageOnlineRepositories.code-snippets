@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.PackageOnlineRepositories": {
+    "6.0 - znuny.PackageObject.PackageOnlineRepositories": {
         "body": [
             "${1:my %List = \\$PackageObject->PackageOnlineRepositories();}",
         ],

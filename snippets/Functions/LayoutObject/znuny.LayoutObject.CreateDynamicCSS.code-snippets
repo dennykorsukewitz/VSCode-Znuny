@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.CreateDynamicCSS": {
+    "7.0 - znuny.LayoutObject.CreateDynamicCSS": {
         "body": [
             "${1:my \\$CSS = \\$LayoutObject->CreateDynamicCSS();}",
         ],

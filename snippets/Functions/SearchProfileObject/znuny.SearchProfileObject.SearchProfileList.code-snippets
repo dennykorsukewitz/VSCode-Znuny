@@ -1,5 +1,5 @@
 {
-    "znuny.SearchProfileObject.SearchProfileList": {
+    "6.0|6.4|6.5|7.0 - znuny.SearchProfileObject.SearchProfileList": {
         "body": [
             "${1:my %SearchProfiles = \\$SearchProfileObject->SearchProfileList(",
             "    Base      => 'TicketSearch',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SearchProfileObject.SearchProfileList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

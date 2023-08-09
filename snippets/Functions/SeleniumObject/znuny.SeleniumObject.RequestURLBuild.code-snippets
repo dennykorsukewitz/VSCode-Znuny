@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.RequestURLBuild": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.RequestURLBuild": {
         "body": [
             "${1:my \\$RequestURL = \\$SeleniumObject->RequestURLBuild(",
             "    Interface   => 'Agent',           # or Customer or Public",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.RequestURLBuild",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

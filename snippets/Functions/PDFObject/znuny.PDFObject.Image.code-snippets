@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.Image": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.Image": {
         "body": [
             "${1:\\$True = \\$PDFObject->Image(",
             "    File   => '/path/image.gif',  # (gif|jpg|png)",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.Image",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

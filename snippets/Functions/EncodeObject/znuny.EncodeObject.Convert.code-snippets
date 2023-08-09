@@ -1,5 +1,5 @@
 {
-    "znuny.EncodeObject.Convert": {
+    "6.0|6.4|6.5|7.0 - znuny.EncodeObject.Convert": {
         "body": [
             "${1:my \\$iso_8859_1 = \\$EncodeObject->Convert(",
             "    Text => \\$utf-8_string,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.EncodeObject.Convert",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SessionObject.GetOrphanedSessionIDs": {
+    "7.0 - znuny.SessionObject.GetOrphanedSessionIDs": {
         "body": [
             "${1:my @Sessions = \\$SessionObject->GetOrphanedSessionIDs();}",
         ],

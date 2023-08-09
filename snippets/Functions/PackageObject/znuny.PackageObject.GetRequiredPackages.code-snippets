@@ -1,12 +1,12 @@
 {
-    "znuny.PackageObject.GetRequiredPackages": {
+    "6.4|6.5|7.0 - znuny.PackageObject.GetRequiredPackages": {
         "body": [
             "${1:my \\$PackageRequired = \\$PackageObject->GetRequiredPackages(",
             "    Structure => \\%Structure,       # return of PackageParse()",
             ");}",
         ],
         "prefix": "znuny.PackageObject.GetRequiredPackages",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

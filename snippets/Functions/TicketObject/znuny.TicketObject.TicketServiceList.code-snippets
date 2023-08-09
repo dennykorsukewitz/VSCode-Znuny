@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketServiceList": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketServiceList": {
         "body": [
             "${1:my %Services = \\$TicketObject->TicketServiceList(",
             "    CustomerUserID => \\$CustomerUserID,",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketServiceList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingLockCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingLockCheck": {
         "body": [
             "${1:my %Result = \\$SysConfigObject->SettingLockCheck(",
             "    DefaultID           => \\$DefaultID,                     # the ID of the setting that needs to be checked",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingLockCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

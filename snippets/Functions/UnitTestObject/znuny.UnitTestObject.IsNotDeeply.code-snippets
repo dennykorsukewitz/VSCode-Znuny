@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestObject.IsNotDeeply": {
+    "6.4|6.5|7.0 - znuny.UnitTestObject.IsNotDeeply": {
         "body": [
             "${1:\\$Self->IsNotDeeply(",
             "    \\%ResultHash,           # test data",
@@ -9,7 +9,7 @@
             "${2:\\$Self->IsNotDeeply(\\$ParamA, \\$ParamB, 'Test Name');}",
         ],
         "prefix": "znuny.UnitTestObject.IsNotDeeply",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

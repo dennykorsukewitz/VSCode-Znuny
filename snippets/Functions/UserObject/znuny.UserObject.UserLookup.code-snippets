@@ -1,5 +1,5 @@
 {
-    "znuny.UserObject.UserLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.UserLookup": {
         "body": [
             "${1:my \\$UserID = \\$UserObject->UserLookup(",
             "    UserLogin => 'some_user_login',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.UserLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

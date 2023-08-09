@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.TestCustomerUserCreate": {
+    "6.0|6.4|6.5|7.0 - znuny.HelperObject.TestCustomerUserCreate": {
         "body": [
             "${1:my \\$TestCustomerUserLogin = \\$HelperObject->TestCustomerUserCreate(",
             "    Language  => 'de',   # optional, defaults to 'en' if not set",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.TestCustomerUserCreate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

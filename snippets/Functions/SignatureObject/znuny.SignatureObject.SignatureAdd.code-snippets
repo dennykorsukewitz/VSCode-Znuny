@@ -1,5 +1,5 @@
 {
-    "znuny.SignatureObject.SignatureAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.SignatureObject.SignatureAdd": {
         "body": [
             "${1:my \\$ID = \\$SignatureObject->SignatureAdd(",
             "    Name        => 'New Signature',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

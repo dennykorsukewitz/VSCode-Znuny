@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.StatsObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.StatsObject": {
         "body": [
             "my \\$StatsObject = \\$Kernel::OM->Get('Kernel::System::Stats');",
         ],
         "prefix": "znuny.ObjectManager.StatsObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

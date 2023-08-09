@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.SeleniumObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.SeleniumObject": {
         "body": [
             "my \\$SeleniumObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::Selenium');",
         ],
         "prefix": "znuny.ObjectManager.SeleniumObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

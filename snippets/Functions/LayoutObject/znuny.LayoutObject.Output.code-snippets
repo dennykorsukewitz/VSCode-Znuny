@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Output": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Output": {
         "body": [
             "${1:my \\$HTML = \\$LayoutObject->Output(",
             "    Template => '<b>[% Data.SomeKey | html %]</b>',",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Output",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

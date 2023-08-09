@@ -1,10 +1,10 @@
 {
-    "znuny.DateTimeObject.ToOTRSTimeZone": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.ToOTRSTimeZone": {
         "body": [
             "${1:my \\$Success = \\$DateTimeObject->ToOTRSTimeZone();}",
         ],
         "prefix": "znuny.DateTimeObject.ToOTRSTimeZone",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

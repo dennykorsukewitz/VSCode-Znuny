@@ -1,10 +1,10 @@
 {
-    "znuny.LogObject.CleanUp": {
+    "6.0|6.4|6.5|7.0 - znuny.LogObject.CleanUp": {
         "body": [
             "${1:\\$LogObject->CleanUp();}",
         ],
         "prefix": "znuny.LogObject.CleanUp",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

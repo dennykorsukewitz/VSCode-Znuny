@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.LinkObjectTableCreate": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.LinkObjectTableCreate": {
         "body": [
             "${1:my \\$String = \\$LayoutObject->LinkObjectTableCreate(",
             "    LinkListWithData => \\$LinkListWithDataRef,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.LinkObjectTableCreate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

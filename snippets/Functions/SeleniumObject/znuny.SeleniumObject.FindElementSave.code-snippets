@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.FindElementSave": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.FindElementSave": {
         "body": [
             "${1:my \\$Element = \\$SeleniumObject->FindElementSave(",
             "    Selector     => '#GroupID',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.FindElementSave",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

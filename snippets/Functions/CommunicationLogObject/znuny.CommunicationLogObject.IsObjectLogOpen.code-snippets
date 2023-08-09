@@ -1,12 +1,12 @@
 {
-    "znuny.CommunicationLogObject.IsObjectLogOpen": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationLogObject.IsObjectLogOpen": {
         "body": [
             "${1:my \\$Result = \\$CommunicationLogObject->IsObjectLogOpen(",
             "    ObjectLogType => '...',     # Required",
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.IsObjectLogOpen",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

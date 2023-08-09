@@ -1,5 +1,5 @@
 {
-    "znuny.TimeObject.DestinationTime": {
+    "6.0|6.4|6.5|7.0 - znuny.TimeObject.DestinationTime": {
         "body": [
             "${1:my \\$DestinationTime = \\$TimeObject->DestinationTime(",
             "    StartTime => \\$Created,",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.TimeObject.DestinationTime",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

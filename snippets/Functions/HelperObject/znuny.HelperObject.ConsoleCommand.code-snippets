@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.ConsoleCommand": {
+    "6.4|6.5|7.0 - znuny.HelperObject.ConsoleCommand": {
         "body": [
             "${1:my \\$Result = \\$HelperObject->ConsoleCommand(",
             "    CommandModule => 'Kernel::System::Console::Command::Help',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.ConsoleCommand",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

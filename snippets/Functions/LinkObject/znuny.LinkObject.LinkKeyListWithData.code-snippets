@@ -1,5 +1,5 @@
 {
-    "znuny.LinkObject.LinkKeyListWithData": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.LinkKeyListWithData": {
         "body": [
             "${1:my %LinkKeyList = \\$LinkObject->LinkKeyListWithData(",
             "    Object1   => 'Ticket',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.LinkObject.LinkKeyListWithData",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

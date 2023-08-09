@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.TestUserDataGet": {
+    "6.4|6.5|7.0 - znuny.HelperObject.TestUserDataGet": {
         "body": [
             "${1:my %UserData = \\$HelperObject->TestUserDataGet(",
             "    Groups => ['admin', 'users'],           # optional, list of groups to add this user to (rw rights)",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.TestUserDataGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

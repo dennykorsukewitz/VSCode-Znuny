@@ -1,5 +1,5 @@
 {
-    "znuny.ServiceObject.ServiceListGet": {
+    "6.0|6.4|6.5|7.0 - znuny.ServiceObject.ServiceListGet": {
         "body": [
             "${1:my \\$ServiceList = \\$ServiceObject->ServiceListGet(",
             "    Valid  => 0,   # (optional) default 1 (0|1)",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceListGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

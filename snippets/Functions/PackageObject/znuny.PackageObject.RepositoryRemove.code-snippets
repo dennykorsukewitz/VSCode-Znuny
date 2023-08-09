@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.RepositoryRemove": {
+    "6.0|6.4|6.5|7.0 - znuny.PackageObject.RepositoryRemove": {
         "body": [
             "${1:\\$PackageObject->RepositoryRemove(",
             "    Name    => 'Application A',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryRemove",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

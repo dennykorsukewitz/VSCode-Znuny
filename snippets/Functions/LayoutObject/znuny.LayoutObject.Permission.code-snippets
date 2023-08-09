@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.Permission": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.Permission": {
         "body": [
             "${1:my \\$Access = \\$LayoutObject->Permission(",
             "    Action => 'AdminCustomerUser',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.Permission",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

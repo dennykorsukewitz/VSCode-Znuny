@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleFlagSet": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleFlagSet": {
         "body": [
             "${1:my \\$Success = \\$ArticleObject->ArticleFlagSet(",
             "    TicketID  => \\$TicketID,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleFlagSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

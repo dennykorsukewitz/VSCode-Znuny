@@ -1,12 +1,12 @@
 {
-    "znuny.HelperObject.PostMaster": {
+    "6.4|6.5|7.0 - znuny.HelperObject.PostMaster": {
         "body": [
             "${1:my @Result = \\$HelperObject->PostMaster(",
             "    Location => \\$ConfigObject->Get('Home') . '/scripts/test/sample/Sample-1.box',",
             ");}",
         ],
         "prefix": "znuny.HelperObject.PostMaster",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityDialogObject.ActivityDialogCompletedCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.ActivityDialogObject.ActivityDialogCompletedCheck": {
         "body": [
             "${1:my \\$Completed = \\$ActivityDialogObject->ActivityDialogCompletedCheck(",
             "    ActivityDialogEntityID => \\$ActivityDialogEntityID,",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityDialogObject.ActivityDialogCompletedCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

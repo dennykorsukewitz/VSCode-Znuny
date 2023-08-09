@@ -1,10 +1,10 @@
 {
-    "znuny.ArticleObject.BackendForChannel": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.BackendForChannel": {
         "body": [
             "${1:my \\$ArticleBackendObject = \\$ArticleObject->BackendForChannel( ChannelName => 'Email' );}",
         ],
         "prefix": "znuny.ArticleObject.BackendForChannel",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

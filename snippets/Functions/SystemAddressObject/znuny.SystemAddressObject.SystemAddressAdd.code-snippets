@@ -1,5 +1,5 @@
 {
-    "znuny.SystemAddressObject.SystemAddressAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemAddressObject.SystemAddressAdd": {
         "body": [
             "${1:my \\$ID = \\$SystemAddressObject->SystemAddressAdd(",
             "    Name     => 'info@example.com',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemAddressObject.SystemAddressAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

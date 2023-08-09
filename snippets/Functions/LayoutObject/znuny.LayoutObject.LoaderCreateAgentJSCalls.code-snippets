@@ -1,10 +1,10 @@
 {
-    "znuny.LayoutObject.LoaderCreateAgentJSCalls": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.LoaderCreateAgentJSCalls": {
         "body": [
             "${1:\\$LayoutObject->LoaderCreateAgentJSCalls();}",
         ],
         "prefix": "znuny.LayoutObject.LoaderCreateAgentJSCalls",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

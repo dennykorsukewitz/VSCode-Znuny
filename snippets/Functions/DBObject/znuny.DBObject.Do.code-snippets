@@ -1,5 +1,5 @@
 {
-    "znuny.DBObject.Do": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.Do": {
         "body": [
             "${1:\\$DBObject->Do(",
             "    SQL  => \\"INSERT INTO table (name1, name2) VALUES (?, ?)\\",",
@@ -9,7 +9,7 @@
             "${3:\\$DBObject->Do( SQL => \\"INSERT INTO table (name) VALUES ('dog')\\" );}",
         ],
         "prefix": "znuny.DBObject.Do",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

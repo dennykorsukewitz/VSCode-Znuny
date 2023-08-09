@@ -1,5 +1,5 @@
 {
-    "znuny.DynamicFieldValueObject.ValueSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldValueObject.ValueSearch": {
         "body": [
             "${1:my \\$Value = \\$DynamicFieldValueObject->ValueSearch(",
             "    FieldID   => \\$FieldID,             # ID of dynamic field to search",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

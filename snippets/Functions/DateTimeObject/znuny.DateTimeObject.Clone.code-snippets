@@ -1,10 +1,10 @@
 {
-    "znuny.DateTimeObject.Clone": {
+    "6.0|6.4|6.5|7.0 - znuny.DateTimeObject.Clone": {
         "body": [
             "${1:my \\$ClonedDateTimeObject = \\$DateTimeObject->Clone();}",
         ],
         "prefix": "znuny.DateTimeObject.Clone",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

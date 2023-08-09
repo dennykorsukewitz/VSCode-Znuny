@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.GenericAgentObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.GenericAgentObject": {
         "body": [
             "my \\$GenericAgentObject = \\$Kernel::OM->Get('Kernel::System::GenericAgent');",
         ],
         "prefix": "znuny.ObjectManager.GenericAgentObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

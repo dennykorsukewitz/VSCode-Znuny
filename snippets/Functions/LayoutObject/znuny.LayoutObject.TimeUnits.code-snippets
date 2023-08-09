@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.TimeUnits": {
+    "6.4|6.5|7.0 - znuny.LayoutObject.TimeUnits": {
         "body": [
             "${1:my \\$TimeUnitsBlock = \\$LayoutObject->TimeUnits(",
             "    ID                => 'TimeUnits',       # (optional) the HTML ID for this element, if not provided, the name will be used as ID as well",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.TimeUnits",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

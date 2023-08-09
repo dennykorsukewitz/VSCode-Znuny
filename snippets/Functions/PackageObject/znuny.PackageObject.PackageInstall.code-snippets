@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.PackageInstall": {
+    "6.0|6.4|6.5|7.0 - znuny.PackageObject.PackageInstall": {
         "body": [
             "${1:\\$PackageObject->PackageInstall(",
             "    String    => \\$FileString,",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.PackageInstall",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

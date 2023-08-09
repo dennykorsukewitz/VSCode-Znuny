@@ -1,10 +1,10 @@
 {
-    "znuny.OAuth2TokenObject.InitConfig": {
+    "6.4|6.5|7.0 - znuny.OAuth2TokenObject.InitConfig": {
         "body": [
             "${1:my \\$Success = \\$OAuth2TokenObject->InitConfig();}",
         ],
         "prefix": "znuny.OAuth2TokenObject.InitConfig",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

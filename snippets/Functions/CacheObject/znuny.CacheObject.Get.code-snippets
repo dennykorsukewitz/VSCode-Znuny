@@ -1,5 +1,5 @@
 {
-    "znuny.CacheObject.Get": {
+    "6.0|6.4|6.5|7.0 - znuny.CacheObject.Get": {
         "body": [
             "${1:my \\$Value = \\$CacheObject->Get(",
             "    Type => 'ObjectName',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.CacheObject.Get",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

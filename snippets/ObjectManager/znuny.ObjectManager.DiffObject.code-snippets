@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.DiffObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.DiffObject": {
         "body": [
             "my \\$DiffObject = \\$Kernel::OM->Get('Kernel::System::Diff');",
         ],
         "prefix": "znuny.ObjectManager.DiffObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

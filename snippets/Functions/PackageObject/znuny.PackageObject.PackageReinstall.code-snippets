@@ -1,10 +1,10 @@
 {
-    "znuny.PackageObject.PackageReinstall": {
+    "6.0|6.4|6.5|7.0 - znuny.PackageObject.PackageReinstall": {
         "body": [
             "${1:\\$PackageObject->PackageReinstall( String => \\$FileString );}",
         ],
         "prefix": "znuny.PackageObject.PackageReinstall",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

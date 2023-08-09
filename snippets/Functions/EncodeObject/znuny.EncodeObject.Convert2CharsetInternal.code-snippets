@@ -1,5 +1,5 @@
 {
-    "znuny.EncodeObject.Convert2CharsetInternal": {
+    "6.0|6.4|6.5|7.0 - znuny.EncodeObject.Convert2CharsetInternal": {
         "body": [
             "${1:my \\$String = \\$EncodeObject->Convert2CharsetInternal(",
             "    Text => \\$String,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.EncodeObject.Convert2CharsetInternal",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SchedulerDBObject.FutureTaskAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.FutureTaskAdd": {
         "body": [
             "${1:my \\$TaskID = \\$SchedulerDBObject->FutureTaskAdd(",
             "    ExecutionTime            => '2015-01-01 00:00:00',",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.FutureTaskAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

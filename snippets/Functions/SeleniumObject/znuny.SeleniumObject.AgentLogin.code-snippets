@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.AgentLogin": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.AgentLogin": {
         "body": [
             "${1:my %UserData = \\$SeleniumObject->AgentLogin(",
             "    Groups => ['admin', 'users'],           # optional, list of groups to add this user to (rw rights)",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.AgentLogin",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

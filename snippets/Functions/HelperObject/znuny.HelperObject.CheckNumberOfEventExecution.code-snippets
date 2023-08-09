@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.CheckNumberOfEventExecution": {
+    "6.4|6.5|7.0 - znuny.HelperObject.CheckNumberOfEventExecution": {
         "body": [
             "${1:my \\$Result = \\$HelperObject->CheckNumberOfEventExecution(",
             "    TicketID => \\$TicketID,",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.CheckNumberOfEventExecution",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

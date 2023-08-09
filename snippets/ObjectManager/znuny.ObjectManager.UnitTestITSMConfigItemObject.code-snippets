@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.UnitTestITSMConfigItemObject": {
+    "6.4|6.5|7.0 - znuny.ObjectManager.UnitTestITSMConfigItemObject": {
         "body": [
             "my \\$UnitTestITSMConfigItemObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::ITSMConfigItem');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestITSMConfigItemObject",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

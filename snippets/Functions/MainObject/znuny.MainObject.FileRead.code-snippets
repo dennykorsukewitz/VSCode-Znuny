@@ -1,5 +1,5 @@
 {
-    "znuny.MainObject.FileRead": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.FileRead": {
         "body": [
             "${1:my \\$ContentARRAYRef = \\$MainObject->FileRead(",
             "    Directory => 'c:\some\location',",
@@ -28,7 +28,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.FileRead",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

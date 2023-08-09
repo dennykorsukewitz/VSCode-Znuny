@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.ConfigurationDump": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.ConfigurationDump": {
         "body": [
             "${1:my \\$ConfigurationDumpYAML = \\$SysConfigObject->ConfigurationDump(",
             "    OnlyValues           => 0,  # optional, default 0, dumps only the setting effective value instead of the whole setting attributes.",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDump",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

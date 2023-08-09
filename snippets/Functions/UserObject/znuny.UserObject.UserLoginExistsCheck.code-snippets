@@ -1,5 +1,5 @@
 {
-    "znuny.UserObject.UserLoginExistsCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.UserObject.UserLoginExistsCheck": {
         "body": [
             "${1:\\$Exist = \\$UserObject->UserLoginExistsCheck(",
             "    UserLogin => 'Some::UserLogin',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.UserLoginExistsCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

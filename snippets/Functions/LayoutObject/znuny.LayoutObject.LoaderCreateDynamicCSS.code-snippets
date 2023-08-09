@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.LoaderCreateDynamicCSS": {
+    "7.0 - znuny.LayoutObject.LoaderCreateDynamicCSS": {
         "body": [
             "${1:my \\$Success = \\$LayoutObject->LoaderCreateDynamicCSS();}",
         ],

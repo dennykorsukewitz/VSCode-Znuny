@@ -1,5 +1,5 @@
 {
-    "znuny.GroupObject.PermissionUserInvolvedGet": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.PermissionUserInvolvedGet": {
         "body": [
             "${1:my %Users = \\$GroupObject->PermissionUserInvolvedGet(",
             "    UserID => \\$UserID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.GroupObject.PermissionUserInvolvedGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

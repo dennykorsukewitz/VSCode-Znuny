@@ -1,5 +1,5 @@
 {
-    "znuny.CommunicationChannelObject.ChannelDrop": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationChannelObject.ChannelDrop": {
         "body": [
             "${1:my \\$Success = \\$CommunicationChannelObject->ChannelDrop(",
             "    ChannelID   => \\$ChannelID,               # (required) Delete by channel ID",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelDrop",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

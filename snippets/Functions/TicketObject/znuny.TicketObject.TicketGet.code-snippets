@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketGet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketGet": {
         "body": [
             "${1:my %Ticket = \\$TicketObject->TicketGet(",
             "    TicketID      => \\$TicketID,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

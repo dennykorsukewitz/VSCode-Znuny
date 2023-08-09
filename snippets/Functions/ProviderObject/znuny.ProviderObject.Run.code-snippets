@@ -1,11 +1,11 @@
 {
-    "znuny.ProviderObject.Run": {
+    "6.0|6.4|6.5|7.0 - znuny.ProviderObject.Run": {
         "body": [
             "${1:# put this in the handler script",
             "\\$ProviderObject->Run();}",
         ],
         "prefix": "znuny.ProviderObject.Run",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

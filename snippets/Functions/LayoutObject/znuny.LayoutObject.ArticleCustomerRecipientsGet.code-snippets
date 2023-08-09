@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.ArticleCustomerRecipientsGet": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.ArticleCustomerRecipientsGet": {
         "body": [
             "${1:my @CustomerUserIDs = \\$LayoutObject->ArticleCustomerRecipientsGet(",
             "    TicketID  => \\$TicketID,     # (required)",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.ArticleCustomerRecipientsGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

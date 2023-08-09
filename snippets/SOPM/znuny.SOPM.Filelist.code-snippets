@@ -1,0 +1,20 @@
+{
+    "znuny.SOPM.Filelist":{
+        "body": [
+        "<Filelist>",
+        "    <File Permission=\"${1:660}\" Location=\"${2:Kernel/System/Ticket.pm}\"/>",
+        "<Filelist>"
+        ],
+        "prefix": "znuny.SOPM.Filelist",
+        "description": "znuny.SOPM.Filelist",
+        "scope": "xml"
+    },
+    "znuny.SOPM.File":{
+        "body": [
+            "<File Permission=\"${1:660}\" Location=\"${2:Kernel/System/Ticket.pm}\"/>"
+        ],
+        "prefix": "znuny.SOPM.File",
+        "description": "znuny.SOPM.File",
+        "scope": "xml"
+    }
+}

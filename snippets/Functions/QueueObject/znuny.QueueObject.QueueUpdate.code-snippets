@@ -1,5 +1,5 @@
 {
-    "znuny.QueueObject.QueueUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.QueueObject.QueueUpdate": {
         "body": [
             "${1:my \\$Success = \\$QueueObject->QueueUpdate(",
             "    QueueID             => \\$QueueID,",
@@ -26,7 +26,7 @@
             ");}",
         ],
         "prefix": "znuny.QueueObject.QueueUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

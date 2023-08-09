@@ -1,10 +1,10 @@
 {
-    "znuny.AuthObject.GetLastErrorMessage": {
+    "6.0|6.4|6.5|7.0 - znuny.AuthObject.GetLastErrorMessage": {
         "body": [
             "${1:my \\$AuthErrorMessage = \\$AuthObject->GetLastErrorMessage();}",
         ],
         "prefix": "znuny.AuthObject.GetLastErrorMessage",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

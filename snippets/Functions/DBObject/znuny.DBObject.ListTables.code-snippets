@@ -1,10 +1,10 @@
 {
-    "znuny.DBObject.ListTables": {
+    "6.0|6.4|6.5|7.0 - znuny.DBObject.ListTables": {
         "body": [
             "${1:my @Tables = \\$DBObject->ListTables();}",
         ],
         "prefix": "znuny.DBObject.ListTables",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

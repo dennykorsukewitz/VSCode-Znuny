@@ -1,12 +1,12 @@
 {
-    "znuny.CustomerCompanyObject.GetFieldSelections": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerCompanyObject.GetFieldSelections": {
         "body": [
             "${1:my %SelectionsData = \\$CustomerCompanyObject->GetFieldSelections(",
             "    FieldName => 'CustomerCompanyCountry',",
             ");}",
         ],
         "prefix": "znuny.CustomerCompanyObject.GetFieldSelections",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

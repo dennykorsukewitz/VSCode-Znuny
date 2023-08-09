@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketQueueSet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketQueueSet": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketQueueSet(",
             "    Queue    => 'Some Queue Name',",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketQueueSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

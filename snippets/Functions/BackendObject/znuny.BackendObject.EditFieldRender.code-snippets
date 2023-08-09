@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.EditFieldRender": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.EditFieldRender": {
         "body": [
             "${1:my \\$FieldHTML = \\$BackendObject->EditFieldRender(",
             "    DynamicFieldConfig   => \\$DynamicFieldConfig,      # complete config of the DynamicField",
@@ -37,7 +37,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.EditFieldRender",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

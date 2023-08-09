@@ -1,5 +1,5 @@
 {
-    "znuny.WebserviceObject.WebserviceDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.WebserviceObject.WebserviceDelete": {
         "body": [
             "${1:my \\$Success = \\$WebserviceObject->WebserviceDelete(",
             "    ID      => 123,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.WebserviceObject.WebserviceDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

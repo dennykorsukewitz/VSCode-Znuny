@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.AllValuesDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.AllValuesDelete": {
         "body": [
             "${1:my \\$Success = \\$BackendObject->AllValuesDelete(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.AllValuesDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

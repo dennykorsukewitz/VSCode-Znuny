@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.WaitForjQueryEventBound": {
+    "6.0|6.4|6.5|7.0 - znuny.SeleniumObject.WaitForjQueryEventBound": {
         "body": [
             "${1:\\$SeleniumObject->WaitForjQueryEventBound(",
             "    CSSSelector => 'li > a#Test',       # (required) css selector",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.WaitForjQueryEventBound",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.WebUploadCacheObject.FormIDGetAllFilesData": {
+    "6.0|6.4|6.5|7.0 - znuny.WebUploadCacheObject.FormIDGetAllFilesData": {
         "body": [
             "${1:my @Data = \\$WebUploadCacheObject->FormIDGetAllFilesData(",
             "    FormID => \\$FormID,",
             ");}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDGetAllFilesData",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

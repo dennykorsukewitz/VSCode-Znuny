@@ -1,12 +1,12 @@
 {
-    "znuny.TicketToUnitTestObject.CreateUnitTest": {
+    "6.4|6.5|7.0 - znuny.TicketToUnitTestObject.CreateUnitTest": {
         "body": [
             "${1:my \\$Output = \\$TicketToUnitTestObject->CreateUnitTest(",
             "    TicketID => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.CreateUnitTest",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.PackageRequired":{
+        "body": [
+            "<PackageRequired Version=\"${1:1.1.0}\">${2:ZnunyCodePolicy}</PackageRequired>"
+        ],
+        "prefix": "znuny.SOPM.PackageRequired",
+        "description": "znuny.SOPM.PackageRequired",
+        "scope": "xml"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "znuny.ObjectManager.CommunicationLogObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.CommunicationLogObject": {
         "body": [
             "my \\$CommunicationLogObject = \\$Kernel::OM->Create(",
             "        'Kernel::System::CommunicationLog',",
@@ -9,7 +9,7 @@
             "    );",
         ],
         "prefix": "znuny.ObjectManager.CommunicationLogObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

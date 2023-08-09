@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.RequesterObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.RequesterObject": {
         "body": [
             "my \\$RequesterObject = \\$Kernel::OM->Get('Kernel::GenericInterface::Requester');",
         ],
         "prefix": "znuny.ObjectManager.RequesterObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

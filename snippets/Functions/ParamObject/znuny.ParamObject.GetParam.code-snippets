@@ -1,5 +1,5 @@
 {
-    "znuny.ParamObject.GetParam": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.GetParam": {
         "body": [
             "${1:my \\$Param = \\$ParamObject->GetParam(",
             "    Param => 'ID',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.ParamObject.GetParam",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

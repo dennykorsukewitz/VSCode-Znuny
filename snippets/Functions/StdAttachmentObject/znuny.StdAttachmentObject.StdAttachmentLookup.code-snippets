@@ -1,5 +1,5 @@
 {
-    "znuny.StdAttachmentObject.StdAttachmentLookup": {
+    "6.0|6.4|6.5|7.0 - znuny.StdAttachmentObject.StdAttachmentLookup": {
         "body": [
             "${1:my \\$ID = \\$StdAttachmentObject->StdAttachmentLookup(",
             "    StdAttachment => 'Some Name',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentLookup",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.SysConfigObject.GlobalEffectiveValueGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.GlobalEffectiveValueGet": {
         "body": [
             "${1:my \\$EffectiveValue = \\$SysConfigObject->GlobalEffectiveValueGet(",
             "    SettingName    => 'Setting::Name',  # (required)",
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.GlobalEffectiveValueGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "znuny.MailAccountObject.MailAccountDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.MailAccountObject.MailAccountDelete": {
         "body": [
             "${1:\\$MailAccountObject->MailAccountDelete(",
             "    ID => 123,",
             ");}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.AgentInterface": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.AgentInterface": {
         "body": [
             "${1:\\$SeleniumObject->AgentInterface(",
             "    Action      => 'AgentTicketZoom',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.AgentInterface",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

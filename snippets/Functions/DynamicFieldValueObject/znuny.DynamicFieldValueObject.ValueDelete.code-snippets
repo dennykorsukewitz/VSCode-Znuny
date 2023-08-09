@@ -1,5 +1,5 @@
 {
-    "znuny.DynamicFieldValueObject.ValueDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldValueObject.ValueDelete": {
         "body": [
             "${1:my \\$Success = \\$DynamicFieldValueObject->ValueDelete(",
             "    FieldID  => \\$FieldID,   # ID of the dynamic field",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

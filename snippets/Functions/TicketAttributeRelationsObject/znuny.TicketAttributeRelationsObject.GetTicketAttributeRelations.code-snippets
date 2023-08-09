@@ -1,5 +1,5 @@
 {
-    "znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations": {
+    "6.4|6.5|7.0 - znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations": {
         "body": [
             "${1:my \\$TicketAttributeRelations = \\$TicketAttributeRelationsObject->GetTicketAttributeRelations(",
             "    ID         => 123,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

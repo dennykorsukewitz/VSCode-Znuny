@@ -1,12 +1,12 @@
 {
-    "znuny.TimeObject.ServerLocalTimeOffsetSeconds": {
+    "6.0|6.4|6.5|7.0 - znuny.TimeObject.ServerLocalTimeOffsetSeconds": {
         "body": [
             "${1:my \\$ServerLocalTimeOffsetSeconds = \\$TimeObject->ServerLocalTimeOffsetSeconds(",
             "    SystemTime => \\$SystemTime,  # optional, otherwise call time()",
             ");}",
         ],
         "prefix": "znuny.TimeObject.ServerLocalTimeOffsetSeconds",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

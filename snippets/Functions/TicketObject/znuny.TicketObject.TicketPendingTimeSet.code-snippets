@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketPendingTimeSet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketPendingTimeSet": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketPendingTimeSet(",
             "    Diff     => ( 7 * 24 * 60 ),  # minutes (here: 10080 minutes - 7 days)",
@@ -36,7 +36,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketPendingTimeSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

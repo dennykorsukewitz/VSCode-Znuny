@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.CleanUpCSSSelector": {
+    "7.0 - znuny.LayoutObject.CleanUpCSSSelector": {
         "body": [
             "${1:my \\$CSSSelector = \\$LayoutObject->CleanUpCSSSelector(",
             "    CSSSelector => 'pending-auto-close+',",

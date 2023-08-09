@@ -1,5 +1,5 @@
 {
-    "znuny.ParamObject.GetParamNames": {
+    "6.0|6.4|6.5|7.0 - znuny.ParamObject.GetParamNames": {
         "body": [
             "${1:    my @ParamNames = \\$ParamObject->GetParamNames();",
             "    print join \\" :: \\", @ParamNames;",
@@ -7,7 +7,7 @@
             "${2:my @ParamNames = \\$ParamObject->GetParamNames();}",
         ],
         "prefix": "znuny.ParamObject.GetParamNames",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

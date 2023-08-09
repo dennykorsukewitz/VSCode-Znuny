@@ -1,12 +1,12 @@
 {
-    "znuny.CommunicationLogObject.CommunicationStop": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationLogObject.CommunicationStop": {
         "body": [
             "${1:my \\$Success = \\$CommunicationLogObject->CommunicationStop(",
             "    Status => 'Successful', # (required) Needs to be either 'Successful', 'Warning' or 'Failed'",
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.CommunicationStop",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

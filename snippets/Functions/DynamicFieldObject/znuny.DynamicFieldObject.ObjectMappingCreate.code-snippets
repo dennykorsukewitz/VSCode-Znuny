@@ -1,5 +1,5 @@
 {
-    "znuny.DynamicFieldObject.ObjectMappingCreate": {
+    "6.0|6.4|6.5|7.0 - znuny.DynamicFieldObject.ObjectMappingCreate": {
         "body": [
             "${1:my \\$ObjectID = \\$DynamicFieldObject->ObjectMappingCreate(",
             "    ObjectName => 'customer-1',   # Name of the object to create the mapping for",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldObject.ObjectMappingCreate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

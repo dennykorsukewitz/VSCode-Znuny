@@ -1,12 +1,12 @@
 {
-    "znuny.SeleniumObject.SwitchToPopUp": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.SwitchToPopUp": {
         "body": [
             "${1:\\$SeleniumObject->SwitchToPopUp(",
             "    WaitForAJAX => 0, # optional, default 1",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.SwitchToPopUp",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

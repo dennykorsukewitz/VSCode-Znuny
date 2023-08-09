@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.LastViewsObject": {
+    "6.4|6.5|7.0 - znuny.ObjectManager.LastViewsObject": {
         "body": [
             "my \\$LastViewsObject = \\$Kernel::OM->Get('Kernel::System::LastViews');",
         ],
         "prefix": "znuny.ObjectManager.LastViewsObject",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

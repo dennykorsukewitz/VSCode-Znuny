@@ -1,5 +1,5 @@
 {
-    "znuny.SystemAddressObject.NameExistsCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.SystemAddressObject.NameExistsCheck": {
         "body": [
             "${1:my \\$Exists = \\$SystemAddressObject->NameExistsCheck(",
             "    Name => 'Some Address',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemAddressObject.NameExistsCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

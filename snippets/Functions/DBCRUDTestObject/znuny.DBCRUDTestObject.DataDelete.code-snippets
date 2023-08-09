@@ -1,5 +1,5 @@
 {
-    "znuny.DBCRUDTestObject.DataDelete": {
+    "6.4|6.5|7.0 - znuny.DBCRUDTestObject.DataDelete": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDTestObject->DataDelete(",
             "    ID          => '...', # optional",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.DBCRUDTestObject.DataDelete",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

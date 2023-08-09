@@ -1,10 +1,10 @@
 {
-    "znuny.SupportBundleGeneratorObject.GenerateSupportData": {
+    "6.0|6.4|6.5|7.0 - znuny.SupportBundleGeneratorObject.GenerateSupportData": {
         "body": [
             "${1:my ( \\$Content, \\$Filename ) = \\$SupportBundleGeneratorObject->GenerateSupportData();}",
         ],
         "prefix": "znuny.SupportBundleGeneratorObject.GenerateSupportData",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

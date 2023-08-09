@@ -1,5 +1,5 @@
 {
-    "znuny.WebserviceObject.WebserviceAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.WebserviceObject.WebserviceAdd": {
         "body": [
             "${1:my \\$ID = \\$WebserviceObject->WebserviceAdd(",
             "    Name    => 'some name',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.WebserviceObject.WebserviceAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

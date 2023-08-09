@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.URL":{
+        "body": [
+            "<URL>${1:https://znuny.com/}</URL>"
+        ],
+        "prefix": "znuny.SOPM.URL",
+        "description": "znuny.SOPM.URL",
+        "scope": "xml"
+    }
+}

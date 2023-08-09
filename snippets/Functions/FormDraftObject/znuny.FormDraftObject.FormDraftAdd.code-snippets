@@ -1,5 +1,5 @@
 {
-    "znuny.FormDraftObject.FormDraftAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.FormDraftObject.FormDraftAdd": {
         "body": [
             "${1:my \\$Success = \\$FormDraftObject->FormDraftAdd(",
             "    FormData => {",
@@ -27,7 +27,7 @@
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

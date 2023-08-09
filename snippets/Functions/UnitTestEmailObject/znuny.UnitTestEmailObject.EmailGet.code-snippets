@@ -1,10 +1,10 @@
 {
-    "znuny.UnitTestEmailObject.EmailGet": {
+    "6.4|6.5|7.0 - znuny.UnitTestEmailObject.EmailGet": {
         "body": [
             "${1:my @Emails = \\$UnitTestEmailObject->EmailGet();}",
         ],
         "prefix": "znuny.UnitTestEmailObject.EmailGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

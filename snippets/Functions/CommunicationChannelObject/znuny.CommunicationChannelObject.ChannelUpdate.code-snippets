@@ -1,5 +1,5 @@
 {
-    "znuny.CommunicationChannelObject.ChannelUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationChannelObject.ChannelUpdate": {
         "body": [
             "${1:my \\$Success = \\$CommunicationChannelObject->ChannelUpdate(",
             "    ChannelID   => \\$ChannelID,                                              # (required) ChannelID that will be updated",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.CommunicationChannelObject.ChannelUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

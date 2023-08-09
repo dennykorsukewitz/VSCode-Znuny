@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.PackageIsVisible":{
+        "body": [
+            "<PackageIsVisible>${1:1}</PackageIsVisible>"
+        ],
+        "prefix": "znuny.SOPM.PackageIsVisible",
+        "description": "znuny.SOPM.PackageIsVisible",
+        "scope": "xml"
+    }
+}

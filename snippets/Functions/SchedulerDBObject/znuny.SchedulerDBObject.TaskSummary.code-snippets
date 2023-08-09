@@ -1,10 +1,10 @@
 {
-    "znuny.SchedulerDBObject.TaskSummary": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.TaskSummary": {
         "body": [
             "${1:my @Summary = \\$SchedulerDBObject->TaskSummary();}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskSummary",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

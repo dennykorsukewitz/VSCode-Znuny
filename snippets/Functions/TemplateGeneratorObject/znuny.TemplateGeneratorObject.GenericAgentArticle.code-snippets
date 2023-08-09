@@ -1,5 +1,5 @@
 {
-    "znuny.TemplateGeneratorObject.GenericAgentArticle": {
+    "6.0|6.4|6.5|7.0 - znuny.TemplateGeneratorObject.GenericAgentArticle": {
         "body": [
             "${1:my \\$GenericAgentArticle = \\$TemplateGeneratorObject->GenericAgentArticle(",
             "    Notification => \\$NotificationDataHashRef,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.GenericAgentArticle",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

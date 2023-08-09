@@ -1,5 +1,5 @@
 {
-    "znuny.SchedulerDBObject.GenericAgentTaskToExecute": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerDBObject.GenericAgentTaskToExecute": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->GenericAgentTaskToExecute(",
             "    NodeID => \\$NodeID,    # the ID of the node in a cluster environment",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.GenericAgentTaskToExecute",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

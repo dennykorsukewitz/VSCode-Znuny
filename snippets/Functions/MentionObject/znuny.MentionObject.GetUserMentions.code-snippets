@@ -1,5 +1,5 @@
 {
-    "znuny.MentionObject.GetUserMentions": {
+    "6.4|6.5|7.0 - znuny.MentionObject.GetUserMentions": {
         "body": [
             "${1:my \\$Mentions = \\$MentionObject->GetUserMentions(",
             "    UserID     => \\$UserID,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.MentionObject.GetUserMentions",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

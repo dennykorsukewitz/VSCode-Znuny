@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestObject.True": {
+    "6.0|6.4|6.5|7.0 - znuny.UnitTestObject.True": {
         "body": [
             "${1:\\$Self->True(",
             "    \\$TestValue,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestObject.True",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.SearchProfileObject.SearchProfileGet": {
+    "6.0|6.4|6.5|7.0 - znuny.SearchProfileObject.SearchProfileGet": {
         "body": [
             "${1:my %SearchProfileData = \\$SearchProfileObject->SearchProfileGet(",
             "    Base      => 'TicketSearch',",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SearchProfileObject.SearchProfileGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

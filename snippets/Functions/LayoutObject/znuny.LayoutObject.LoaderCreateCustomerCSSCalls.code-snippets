@@ -1,10 +1,10 @@
 {
-    "znuny.LayoutObject.LoaderCreateCustomerCSSCalls": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.LoaderCreateCustomerCSSCalls": {
         "body": [
             "${1:\\$LayoutObject->LoaderCreateCustomerCSSCalls();}",
         ],
         "prefix": "znuny.LayoutObject.LoaderCreateCustomerCSSCalls",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

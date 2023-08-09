@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.ConfigObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.ConfigObject": {
         "body": [
             "my \\$ConfigObject = \\$Kernel::OM->Get('Kernel::Config');",
         ],
         "prefix": "znuny.ObjectManager.ConfigObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

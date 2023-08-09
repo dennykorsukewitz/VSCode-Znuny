@@ -1,10 +1,10 @@
 {
-    "znuny.MainObject.Die": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.Die": {
         "body": [
             "${1:\\$MainObject->Die('some message to die');}",
         ],
         "prefix": "znuny.MainObject.Die",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

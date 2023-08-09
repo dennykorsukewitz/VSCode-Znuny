@@ -1,12 +1,12 @@
 {
-    "znuny.HelperObject.SetupTestEnvironment": {
+    "6.4|6.5|7.0 - znuny.HelperObject.SetupTestEnvironment": {
         "body": [
             "${1:my \\$Result = \\$HelperObject->SetupTestEnvironment(",
             "    # ... # Parameters get passed to the FillTestEnvironment and ConfigureViews function",
             ");}",
         ],
         "prefix": "znuny.HelperObject.SetupTestEnvironment",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

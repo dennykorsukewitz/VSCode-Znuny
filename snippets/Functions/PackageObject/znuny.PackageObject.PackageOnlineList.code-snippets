@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.PackageOnlineList": {
+    "6.0 - znuny.PackageObject.PackageOnlineList": {
         "body": [
             "${1:my @List = \\$PackageObject->PackageOnlineList(",
             "    URL                => '',",

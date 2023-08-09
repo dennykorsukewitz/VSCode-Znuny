@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.InputSet": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.InputSet": {
         "body": [
             "${1:my \\$Result = \\$SeleniumObject->InputSet(",
             "    Attribute   => 'DynamicField_ExampleCheckbox',",
@@ -37,7 +37,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.InputSet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

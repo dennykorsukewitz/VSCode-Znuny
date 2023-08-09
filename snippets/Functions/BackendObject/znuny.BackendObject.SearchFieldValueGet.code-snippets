@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.SearchFieldValueGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.SearchFieldValueGet": {
         "body": [
             "${1:my \\$Value = \\$BackendObject->SearchFieldValueGet(",
             "    DynamicFieldConfig     => \\$DynamicFieldConfig,    # complete config of the DynamicField",
@@ -18,7 +18,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.SearchFieldValueGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

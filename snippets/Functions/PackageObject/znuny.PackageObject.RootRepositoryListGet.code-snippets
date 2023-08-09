@@ -1,10 +1,10 @@
 {
-    "znuny.PackageObject.RootRepositoryListGet": {
+    "6.4|6.5|7.0 - znuny.PackageObject.RootRepositoryListGet": {
         "body": [
             "${1:my %List = \\$PackageObject->RootRepositoryListGet();}",
         ],
         "prefix": "znuny.PackageObject.RootRepositoryListGet",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

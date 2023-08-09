@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.TestUserCreate": {
+    "6.0|6.4|6.5|7.0 - znuny.HelperObject.TestUserCreate": {
         "body": [
             "${1:my \\$TestUserLogin = \\$HelperObject->TestUserCreate(",
             "    Groups    => ['admin', 'users'],         # optional, list of groups to add this user to (rw rights)",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.TestUserCreate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

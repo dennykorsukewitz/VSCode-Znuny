@@ -1,12 +1,12 @@
 {
-    "znuny.HTMLUtilsObject.DocumentStrip": {
+    "6.0|6.4|6.5|7.0 - znuny.HTMLUtilsObject.DocumentStrip": {
         "body": [
             "${1:my \\$HTMLString = \\$HTMLUtilsObject->DocumentStrip(",
             "    String  => \\$String,",
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.DocumentStrip",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

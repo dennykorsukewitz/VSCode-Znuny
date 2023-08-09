@@ -1,12 +1,12 @@
 {
-    "znuny.StorableObject.Deserialize": {
+    "6.0|6.4|6.5|7.0 - znuny.StorableObject.Deserialize": {
         "body": [
             "${1:my \\$PerlStructureScalar = \\$StorableObject->Deserialize(",
             "    Data => \\$StorableString,",
             ");}",
         ],
         "prefix": "znuny.StorableObject.Deserialize",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

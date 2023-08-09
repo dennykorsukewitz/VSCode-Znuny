@@ -1,5 +1,5 @@
 {
-    "znuny.LoaderObject.GetMinifiedFile": {
+    "6.0|6.4|6.5|7.0 - znuny.LoaderObject.GetMinifiedFile": {
         "body": [
             "${1:my \\$MinifiedCSS = \\$LoaderObject->GetMinifiedFile(",
             "    Location => \\$Filename,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LoaderObject.GetMinifiedFile",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

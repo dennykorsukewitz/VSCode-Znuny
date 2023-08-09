@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.UnitTestParamObject": {
+    "6.4|6.5|7.0 - znuny.ObjectManager.UnitTestParamObject": {
         "body": [
             "my \\$UnitTestParamObject = \\$Kernel::OM->Get('Kernel::System::UnitTest::Param');",
         ],
         "prefix": "znuny.ObjectManager.UnitTestParamObject",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

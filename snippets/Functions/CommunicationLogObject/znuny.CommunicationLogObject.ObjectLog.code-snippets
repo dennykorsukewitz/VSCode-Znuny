@@ -1,5 +1,5 @@
 {
-    "znuny.CommunicationLogObject.ObjectLog": {
+    "6.0|6.4|6.5|7.0 - znuny.CommunicationLogObject.ObjectLog": {
         "body": [
             "${1:my \\$Success = \\$CommunicationLogObject->ObjectLog(",
             "    ObjectLogType => '...', # (required) To be defined by the related LogObject",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.CommunicationLogObject.ObjectLog",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

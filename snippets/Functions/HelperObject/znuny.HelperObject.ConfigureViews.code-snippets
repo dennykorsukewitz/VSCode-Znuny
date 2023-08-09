@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.ConfigureViews": {
+    "6.4|6.5|7.0 - znuny.HelperObject.ConfigureViews": {
         "body": [
             "${1:my \\$Result = \\$HelperObject->ConfigureViews(",
             "    AgentTicketNote => {",
@@ -31,7 +31,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.ConfigureViews",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

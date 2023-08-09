@@ -1,12 +1,12 @@
 {
-    "znuny.GroupObject.PermissionRoleUserGet": {
+    "6.0|6.4|6.5|7.0 - znuny.GroupObject.PermissionRoleUserGet": {
         "body": [
             "${1:my %UserList = \\$GroupObject->PermissionRoleUserGet(",
             "    RoleID => \\$RoleID,",
             ");}",
         ],
         "prefix": "znuny.GroupObject.PermissionRoleUserGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

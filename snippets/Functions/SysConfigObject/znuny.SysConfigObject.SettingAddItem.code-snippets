@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingAddItem": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingAddItem": {
         "body": [
             "${1:my %Result = \\$SysConfigObject->SettingAddItem(",
             "    SettingStructure  => [],         # (required) array that contains structure",
@@ -30,7 +30,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingAddItem",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.DocumentNew": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.DocumentNew": {
         "body": [
             "${1:\\$True = \\$PDFObject->DocumentNew(",
             "    Title     => 'The Document Title',  # Title of PDF Document",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.DocumentNew",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

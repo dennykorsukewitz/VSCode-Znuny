@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarObject.CalendarImport": {
+    "6.0|6.4|6.5|7.0 - znuny.CalendarObject.CalendarImport": {
         "body": [
             "${1:my \\$Success = \\$CalendarObject->CalendarImport(",
             "    Data => {",
@@ -28,7 +28,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarImport",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

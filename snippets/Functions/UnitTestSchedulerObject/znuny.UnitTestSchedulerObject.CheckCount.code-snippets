@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestSchedulerObject.CheckCount": {
+    "6.4|6.5|7.0 - znuny.UnitTestSchedulerObject.CheckCount": {
         "body": [
             "${1:my \\$Success = \\$UnitTestSchedulerObject->CheckCount(",
             "    UnitTestObject => \\$Self,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestSchedulerObject.CheckCount",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

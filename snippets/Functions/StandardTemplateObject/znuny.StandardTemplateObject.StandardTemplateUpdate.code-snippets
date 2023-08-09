@@ -1,5 +1,5 @@
 {
-    "znuny.StandardTemplateObject.StandardTemplateUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.StandardTemplateObject.StandardTemplateUpdate": {
         "body": [
             "${1:\\$StandardTemplateObject->StandardTemplateUpdate(",
             "    ID           => 123,",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

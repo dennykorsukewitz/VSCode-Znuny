@@ -1,5 +1,5 @@
 {
-    "znuny.TicketObject.TicketCustomerSet": {
+    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketCustomerSet": {
         "body": [
             "${1:my \\$Success = \\$TicketObject->TicketCustomerSet(",
             "    No       => 'client123',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketCustomerSet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

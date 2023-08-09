@@ -1,5 +1,5 @@
 {
-    "znuny.ActivityObject.DataGet": {
+    "7.0 - znuny.ActivityObject.DataGet": {
         "body": [
             "${1:my %Data = \\$ActivityObject->DataGet(",
             "    ID         => '...', # optional",

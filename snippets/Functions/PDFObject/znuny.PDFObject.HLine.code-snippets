@@ -1,5 +1,5 @@
 {
-    "znuny.PDFObject.HLine": {
+    "6.0|6.4|6.5|7.0 - znuny.PDFObject.HLine": {
         "body": [
             "${1:\\$True = \\$PDFObject->HLine(",
             "    Width     => 300,           # (optional) default 'end of printable dimension'",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.PDFObject.HLine",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

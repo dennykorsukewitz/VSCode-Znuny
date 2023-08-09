@@ -1,5 +1,5 @@
 {
-    "znuny.StatsObject.StatsUninstall": {
+    "6.0|6.4|6.5|7.0 - znuny.StatsObject.StatsUninstall": {
         "body": [
             "${1:my \\$Result = \\$StatsObject->StatsUninstall(",
             "    FilePrefix => 'FAQ',    # (optional)",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsUninstall",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

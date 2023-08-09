@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerCompanyObject.CustomerCompanyAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerCompanyObject.CustomerCompanyAdd": {
         "body": [
             "${1:my \\$ID = \\$CustomerCompanyObject->CustomerCompanyAdd(",
             "    CustomerID              => \\$CustomerID,",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerCompanyObject.CustomerCompanyAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

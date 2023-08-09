@@ -1,10 +1,10 @@
 {
-    "znuny.TicketToUnitTestObject.GetFooter": {
+    "6.4|6.5|7.0 - znuny.TicketToUnitTestObject.GetFooter": {
         "body": [
             "${1:my \\$Output = \\$TicketToUnitTestObject->GetFooter();}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetFooter",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

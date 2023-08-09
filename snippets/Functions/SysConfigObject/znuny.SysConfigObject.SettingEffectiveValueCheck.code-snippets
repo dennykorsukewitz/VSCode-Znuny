@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingEffectiveValueCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingEffectiveValueCheck": {
         "body": [
             "${1:my %Result = \\$SysConfigObject->SettingEffectiveValueCheck(",
             "    EffectiveValue   => 'open',     # (optional)",
@@ -23,7 +23,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingEffectiveValueCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

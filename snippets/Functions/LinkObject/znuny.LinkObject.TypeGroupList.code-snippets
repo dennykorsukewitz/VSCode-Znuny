@@ -1,10 +1,10 @@
 {
-    "znuny.LinkObject.TypeGroupList": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.TypeGroupList": {
         "body": [
             "${1:my %TypeGroupList = \\$LinkObject->TypeGroupList();}",
         ],
         "prefix": "znuny.LinkObject.TypeGroupList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.TemplateGeneratorObject.Sender": {
+    "6.0|6.4|6.5|7.0 - znuny.TemplateGeneratorObject.Sender": {
         "body": [
             "${1:my \\$Sender = \\$TemplateGeneratorObject->Sender(",
             "    QueueID => \\$QueueID,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.Sender",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

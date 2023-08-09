@@ -1,10 +1,10 @@
 {
-    "znuny.UnitTestWebUserAgentObject.Reset": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebUserAgentObject.Reset": {
         "body": [
             "${1:my \\$Success = \\$UnitTestWebUserAgentObject->Reset();}",
         ],
         "prefix": "znuny.UnitTestWebUserAgentObject.Reset",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

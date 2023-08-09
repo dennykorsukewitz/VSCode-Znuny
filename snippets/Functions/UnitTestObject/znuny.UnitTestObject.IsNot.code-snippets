@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestObject.IsNot": {
+    "6.4|6.5|7.0 - znuny.UnitTestObject.IsNot": {
         "body": [
             "${1:\\$Self->IsNot(",
             "    \\$ValueFromFunction,      # test data",
@@ -9,7 +9,7 @@
             "${2:\\$Self->IsNot(\\$A, \\$B, 'Test Name');}",
         ],
         "prefix": "znuny.UnitTestObject.IsNot",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

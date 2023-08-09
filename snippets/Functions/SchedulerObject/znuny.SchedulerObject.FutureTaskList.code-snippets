@@ -1,12 +1,12 @@
 {
-    "znuny.SchedulerObject.FutureTaskList": {
+    "6.0|6.4|6.5|7.0 - znuny.SchedulerObject.FutureTaskList": {
         "body": [
             "${1:my @List = \\$SchedulerObject->FutureTaskList(",
             "    Type => 'some type',  # optional",
             ");}",
         ],
         "prefix": "znuny.SchedulerObject.FutureTaskList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

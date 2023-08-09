@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.ConvertToCSS": {
+    "7.0 - znuny.LayoutObject.ConvertToCSS": {
         "body": [
             "${1:my \\$CSS = \\$LayoutObject->ConvertToCSS(",
             "    Data => {",

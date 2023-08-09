@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerUserObject.CustomerSearch": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerUserObject.CustomerSearch": {
         "body": [
             "${1:# email search",
             "my %List = \\$CustomerUserObject->CustomerSearch(",
@@ -24,7 +24,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerUserObject.CustomerSearch",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

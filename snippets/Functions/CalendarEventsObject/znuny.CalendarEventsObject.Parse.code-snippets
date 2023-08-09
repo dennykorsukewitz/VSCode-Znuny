@@ -1,5 +1,5 @@
 {
-    "znuny.CalendarEventsObject.Parse": {
+    "6.4|6.5|7.0 - znuny.CalendarEventsObject.Parse": {
         "body": [
             "${1:my \\$CalendarEventsData = \\$CalendarEventsObject->Parse(",
             "    TicketID    => \\$Param{TicketID\\},",
@@ -26,7 +26,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarEventsObject.Parse",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

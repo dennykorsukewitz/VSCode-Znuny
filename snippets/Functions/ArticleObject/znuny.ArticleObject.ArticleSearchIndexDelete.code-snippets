@@ -1,5 +1,5 @@
 {
-    "znuny.ArticleObject.ArticleSearchIndexDelete": {
+    "6.0|6.4|6.5|7.0 - znuny.ArticleObject.ArticleSearchIndexDelete": {
         "body": [
             "${1:my \\$Success = \\$ArticleObject->ArticleSearchIndexDelete(",
             "    ArticleID => \\$ArticleID,   # required, deletes search index for single article",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleSearchIndexDelete",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

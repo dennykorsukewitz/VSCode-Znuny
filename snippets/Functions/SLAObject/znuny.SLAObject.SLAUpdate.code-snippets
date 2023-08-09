@@ -1,5 +1,5 @@
 {
-    "znuny.SLAObject.SLAUpdate": {
+    "6.0|6.4|6.5|7.0 - znuny.SLAObject.SLAUpdate": {
         "body": [
             "${1:my \\$True = \\$SLAObject->SLAUpdate(",
             "    SLAID               => \\$SLAID,",
@@ -37,7 +37,7 @@
             ");}",
         ],
         "prefix": "znuny.SLAObject.SLAUpdate",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

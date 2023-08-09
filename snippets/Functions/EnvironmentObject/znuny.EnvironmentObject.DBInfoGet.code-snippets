@@ -1,10 +1,10 @@
 {
-    "znuny.EnvironmentObject.DBInfoGet": {
+    "6.0|6.4|6.5|7.0 - znuny.EnvironmentObject.DBInfoGet": {
         "body": [
             "${1:my %DBInfo = \\$EnvironmentObject->DBInfoGet();}",
         ],
         "prefix": "znuny.EnvironmentObject.DBInfoGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

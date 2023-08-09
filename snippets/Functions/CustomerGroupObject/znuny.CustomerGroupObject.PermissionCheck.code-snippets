@@ -1,5 +1,5 @@
 {
-    "znuny.CustomerGroupObject.PermissionCheck": {
+    "6.0|6.4|6.5|7.0 - znuny.CustomerGroupObject.PermissionCheck": {
         "body": [
             "${1:my \\$HasPermission = \\$CustomerGroupObject->PermissionCheck(",
             "    UserID    => \\$UserID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.PermissionCheck",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

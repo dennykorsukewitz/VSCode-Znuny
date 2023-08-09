@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.Vendor":{
+        "body": [
+            "<Vendor>${1:Znuny GmbH}</Vendor>"
+        ],
+        "prefix": "znuny.SOPM.Vendor",
+        "description": "znuny.SOPM.Vendor",
+        "scope": "xml"
+    }
+}

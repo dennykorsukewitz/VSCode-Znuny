@@ -1,12 +1,12 @@
 {
-    "znuny.LinkObject.StateList": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.StateList": {
         "body": [
             "${1:my %StateList = \\$LinkObject->StateList(",
             "    Valid => 0,   # (optional) default 1 (0|1)",
             ");}",
         ],
         "prefix": "znuny.LinkObject.StateList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.HelperObject.FixedTimeSetByDate": {
+    "6.4|6.5|7.0 - znuny.HelperObject.FixedTimeSetByDate": {
         "body": [
             "${1:\\$HelperObject->FixedTimeSetByDate(",
             "    Year   => 2016,",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.FixedTimeSetByDate",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

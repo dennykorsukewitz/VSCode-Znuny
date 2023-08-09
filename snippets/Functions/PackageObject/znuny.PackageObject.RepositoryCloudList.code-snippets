@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.RepositoryCloudList": {
+    "6.0 - znuny.PackageObject.RepositoryCloudList": {
         "body": [
             "${1:my \\$List = \\$PackageObject->RepositoryCloudList();}",
         ],

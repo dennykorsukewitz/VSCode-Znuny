@@ -1,5 +1,5 @@
 {
-    "znuny.MainObject.MD5sum": {
+    "6.0|6.4|6.5|7.0 - znuny.MainObject.MD5sum": {
         "body": [
             "${1:# note: needs more memory!",
             "my \\$MD5Sum = \\$MainObject->MD5sum(",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.MD5sum",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

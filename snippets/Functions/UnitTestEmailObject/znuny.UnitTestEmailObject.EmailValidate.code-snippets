@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestEmailObject.EmailValidate": {
+    "6.4|6.5|7.0 - znuny.UnitTestEmailObject.EmailValidate": {
         "body": [
             "${1:my \\$Success = \\$UnitTestEmailObject->EmailValidate(",
             "    UnitTestObject => \\$Self,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestEmailObject.EmailValidate",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

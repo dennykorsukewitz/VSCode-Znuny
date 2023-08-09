@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.TicketObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.TicketObject": {
         "body": [
             "my \\$TicketObject = \\$Kernel::OM->Get('Kernel::System::Ticket');",
         ],
         "prefix": "znuny.ObjectManager.TicketObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

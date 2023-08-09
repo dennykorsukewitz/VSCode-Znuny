@@ -1,5 +1,5 @@
 {
-    "znuny.SysConfigObject.SettingsUpdatedList": {
+    "6.0|6.4|6.5|7.0 - znuny.SysConfigObject.SettingsUpdatedList": {
         "body": [
             "${1:my @List = \\$SysConfigObject->SettingsUpdatedList(",
             "    Settings => [                                               # (required) List of settings that needs to be checked",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingsUpdatedList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

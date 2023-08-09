@@ -1,5 +1,5 @@
 {
-    "znuny.BackendObject.SearchSQLOrderFieldGet": {
+    "6.0|6.4|6.5|7.0 - znuny.BackendObject.SearchSQLOrderFieldGet": {
         "body": [
             "${1:my \\$SQL = \\$BackendObject->SearchSQLOrderFieldGet(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.SearchSQLOrderFieldGet",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,0 +1,10 @@
+{
+    "znuny.SOPM.PackageIsRemovable":{
+        "body": [
+            "<PackageIsRemovable>${1:1}</PackageIsRemovable>"
+        ],
+        "prefix": "znuny.SOPM.PackageIsRemovable",
+        "description": "znuny.SOPM.PackageIsRemovable",
+        "scope": "xml"
+    }
+}

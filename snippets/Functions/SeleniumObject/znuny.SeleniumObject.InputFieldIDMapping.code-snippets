@@ -1,5 +1,5 @@
 {
-    "znuny.SeleniumObject.InputFieldIDMapping": {
+    "6.4|6.5|7.0 - znuny.SeleniumObject.InputFieldIDMapping": {
         "body": [
             "${1:my \\$Result = \\$SeleniumObject->InputFieldIDMapping(",
             "    Action  => 'AgentTicketZoom',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.InputFieldIDMapping",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

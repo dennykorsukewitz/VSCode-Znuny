@@ -1,5 +1,5 @@
 {
-    "znuny.UnitTestWebserviceObject.Process": {
+    "6.4|6.5|7.0 - znuny.UnitTestWebserviceObject.Process": {
         "body": [
             "${1:my \\$Response = \\$UnitTestWebserviceObject->Process(",
             "    UnitTestObject => \\$Self,",
@@ -19,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.Process",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

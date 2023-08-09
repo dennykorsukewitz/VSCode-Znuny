@@ -1,5 +1,5 @@
 {
-    "znuny.SessionObject.UpdateSessionID": {
+    "6.0|6.4|6.5|7.0 - znuny.SessionObject.UpdateSessionID": {
         "body": [
             "${1:\\$SessionObject->UpdateSessionID(",
             "    SessionID => \\$SessionID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SessionObject.UpdateSessionID",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

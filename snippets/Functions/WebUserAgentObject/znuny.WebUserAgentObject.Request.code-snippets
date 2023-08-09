@@ -1,5 +1,5 @@
 {
-    "znuny.WebUserAgentObject.Request": {
+    "6.0|6.4|6.5|7.0 - znuny.WebUserAgentObject.Request": {
         "body": [
             "${1:my %Response = \\$WebUserAgentObject->Request(",
             "    URL          => 'http://example.com/someurl',",
@@ -109,7 +109,7 @@
             ");}",
         ],
         "prefix": "znuny.WebUserAgentObject.Request",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

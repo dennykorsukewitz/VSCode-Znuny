@@ -1,10 +1,10 @@
 {
-    "znuny.CheckItemObject.CheckError": {
+    "6.0|6.4|6.5|7.0 - znuny.CheckItemObject.CheckError": {
         "body": [
             "${1:my \\$Error = \\$CheckItemObject->CheckError();}",
         ],
         "prefix": "znuny.CheckItemObject.CheckError",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

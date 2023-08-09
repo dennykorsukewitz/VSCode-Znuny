@@ -1,5 +1,5 @@
 {
-    "znuny.HTMLUtilsObject.LinkQuote": {
+    "6.0|6.4|6.5|7.0 - znuny.HTMLUtilsObject.LinkQuote": {
         "body": [
             "${1:my \\$HTMLWithLinks = \\$HTMLUtilsObject->LinkQuote(",
             "    String    => \\$HTMLString,",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.LinkQuote",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

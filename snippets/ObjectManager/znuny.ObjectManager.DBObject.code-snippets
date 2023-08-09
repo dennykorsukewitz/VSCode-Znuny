@@ -1,10 +1,10 @@
 {
-    "znuny.ObjectManager.DBObject": {
+    "6.0|6.4|6.5|7.0 - znuny.ObjectManager.DBObject": {
         "body": [
             "my \\$DBObject = \\$Kernel::OM->Get('Kernel::System::DB');",
         ],
         "prefix": "znuny.ObjectManager.DBObject",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

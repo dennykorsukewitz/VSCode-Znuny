@@ -1,5 +1,5 @@
 {
-    "znuny.LayoutObject.AddJSData": {
+    "6.0|6.4|6.5|7.0 - znuny.LayoutObject.AddJSData": {
         "body": [
             "${1:\\$LayoutObject->AddJSData(",
             "    Key   => 'Key1',  # the key to store this data",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.AddJSData",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "znuny.UtilObject.DataStructureRemoveElements": {
+    "6.4|6.5|7.0 - znuny.UtilObject.DataStructureRemoveElements": {
         "body": [
             "${1:my \\$Data = \\$UtilObject->DataStructureRemoveElements(",
             "    # Data can be a scalar, hash or array",
@@ -21,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.UtilObject.DataStructureRemoveElements",
-        "description": "6.4, 6.5, 7.0",
+        "description": "6.4|6.5|7.0",
         "scope": "perl"
     }
 }

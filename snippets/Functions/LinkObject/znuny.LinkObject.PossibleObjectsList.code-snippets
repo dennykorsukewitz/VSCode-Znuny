@@ -1,12 +1,12 @@
 {
-    "znuny.LinkObject.PossibleObjectsList": {
+    "6.0|6.4|6.5|7.0 - znuny.LinkObject.PossibleObjectsList": {
         "body": [
             "${1:my %PossibleObjectsList = \\$LinkObject->PossibleObjectsList(",
             "    Object => 'Ticket',",
             ");}",
         ],
         "prefix": "znuny.LinkObject.PossibleObjectsList",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

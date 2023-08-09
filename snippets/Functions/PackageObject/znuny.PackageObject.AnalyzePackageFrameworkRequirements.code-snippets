@@ -1,5 +1,5 @@
 {
-    "znuny.PackageObject.AnalyzePackageFrameworkRequirements": {
+    "6.0|6.4|6.5|7.0 - znuny.PackageObject.AnalyzePackageFrameworkRequirements": {
         "body": [
             "${1:my %CheckOk = \\$PackageObject->AnalyzePackageFrameworkRequirements(",
             "    Framework => \\$Structure{Framework\\},     # [ { 'Content' => '4.0.x', 'Minimum' => '4.0.4'\\} ]",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.AnalyzePackageFrameworkRequirements",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }

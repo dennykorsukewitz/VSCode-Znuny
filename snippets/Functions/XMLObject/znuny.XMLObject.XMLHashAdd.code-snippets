@@ -1,5 +1,5 @@
 {
-    "znuny.XMLObject.XMLHashAdd": {
+    "6.0|6.4|6.5|7.0 - znuny.XMLObject.XMLHashAdd": {
         "body": [
             "${1:my \\$AutoKey = \\$XMLObject->XMLHashAdd(",
             "    Type             => 'SomeType',",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.XMLObject.XMLHashAdd",
-        "description": "6.0, 6.4, 6.5, 7.0",
+        "description": "6.0|6.4|6.5|7.0",
         "scope": "perl"
     }
 }
