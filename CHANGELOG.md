@@ -2,12 +2,29 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.5]
+
+### QuoteWithMarker
+
+#### Placeholder
+
+The following placeholders have been added for the `znuny.quoteWithMarker.codeMarker` setting:
+- `${year}`   => current year
+- `${month}`  => current month
+- `${day}`    => current day
+
+Example:
+
+`MyMarker - Copyright (C) 2012-${year} Denny Korsukéwitz, https://dennykorsukewitz.github.io/`
+
 ## [1.1.4]
 
 ### QuoteWithMarker
 
 LanguageID detection has been added to support more languages.
 There is also a new configuration `znuny.quoteWithMarker.lineComment` that can be customized.
+
+### Snippets
 
 #### Added Snippets
 
