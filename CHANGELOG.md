@@ -9,6 +9,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 #### Placeholder
 
 The following placeholders have been added for the `znuny.quoteWithMarker.codeMarker` setting:
+
 - `${year}`   => current year
 - `${month}`  => current month
 - `${day}`    => current day
