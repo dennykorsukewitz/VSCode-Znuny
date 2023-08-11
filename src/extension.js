@@ -373,6 +373,8 @@ function initQuoteWithMarker(context) {
             lineComment = vscode.workspace.getConfiguration('znuny').get('lineComment') || '',
             languageId  = activeEditor.document.languageId;
 
+        let currentTime = new Date()
+
         // returns the month (from 0 to 11)
         let month = currentTime.getMonth() + 1;
 
