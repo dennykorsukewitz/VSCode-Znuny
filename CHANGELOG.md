@@ -2,6 +2,13 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [1.1.6]
+
+### QuoteWithMarker
+
+- Updated README.md.
+- Tidied code.
+
 ## [1.1.5]
 
 ### QuoteWithMarker

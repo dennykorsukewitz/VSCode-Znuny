@@ -13,7 +13,7 @@
 
 | Versions | Status |
 | ------ | ------ |
-| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.5) <br> ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%207.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-Znuny/1.1.5/dev)](https://github.com/dennykorsukewitz/VSCode-Znuny/compare/1.1.5...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.5) <br> ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%207.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-Znuny/1.1.6/dev)](https://github.com/dennykorsukewitz/VSCode-Znuny/compare/1.1.6...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ## Features
 
@@ -52,7 +52,9 @@ Statically created snippets.
 - Needed
 - Perl
 - POD
+- Scaffolding
 - Selenium
+- SOPM
 - VariableCheck
 
 #### Generated

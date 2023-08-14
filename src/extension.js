@@ -361,25 +361,26 @@ function initQuoteWithMarker(context) {
 
         // Select current line if nothing is selected
         if (selection.isEmpty == true) {
-            activeEditor.selection = new vscode.Selection(selection.active.line, 0 ,selection.active.line, 99)
+            activeEditor.selection = new vscode.Selection(selection.active.line, 0, selection.active.line, 99);
             selection = activeEditor.selection;
         }
 
         let text = activeEditor.document.getText(selection) || '';
+        let config = vscode.workspace.getConfiguration('znuny').get('quoteWithMarker');
 
         let quoteChar,
             codeMarkerReplace,
-            codeMarker  = vscode.workspace.getConfiguration('znuny').get('codeMarker') || 'Znuny',
-            lineComment = vscode.workspace.getConfiguration('znuny').get('lineComment') || '',
-            languageId  = activeEditor.document.languageId;
+            codeMarker = config.codeMarker || 'Znuny',
+            lineComment = config.lineComment || {},
+            languageId = activeEditor.document.languageId;
 
-        let currentTime = new Date()
+        let currentTime = new Date();
 
         // returns the month (from 0 to 11)
         let month = currentTime.getMonth() + 1;
 
         // returns the day of the month (from 1 to 31);
-        let day = currentTime.getDate()
+        let day = currentTime.getDate();
 
         // returns the year (four digits)
         let year = currentTime.getFullYear();
@@ -389,13 +390,13 @@ function initQuoteWithMarker(context) {
         codeMarker = codeMarker.replace(/\${day}/g, day);
 
         // Get quoteChar from config
-        if (lineComment[languageId] && lineComment[languageId].length){
+        if (lineComment && lineComment[languageId] && lineComment[languageId].length) {
             quoteChar = lineComment[languageId];
         }
 
         // If no quoteChar is set, try to use the default value of lineComment of the current language config
-        if (quoteChar.length === 0 && languageId){
-            let extensions    = vscode.extensions.all;
+        if (quoteChar.length === 0 && languageId) {
+            let extensions = vscode.extensions.all;
             let languagesData = extensions.filter((extension) => extension.packageJSON.name === languageId);
 
             let languageExtensionPath = languagesData[0].extensionPath;
