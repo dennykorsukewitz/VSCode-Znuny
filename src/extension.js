@@ -93,23 +93,33 @@ function initCustomizer(context) {
 
         // Return if no workspaceFolder is available
         if (!vscode.workspace.workspaceFolders) {
-            vscode.window.showWarningMessage(`Znuny: No Workspace Folder is available. Please open a folder before."`)
+            vscode.window.showWarningMessage(`Znuny: No Workspace Folder is available. Please open a folder before.`)
+            vscode.commands.executeCommand('workbench.action.addRootFolder');
             return;
         }
         let config = vscode.workspace.getConfiguration('znuny').get('customizer');
 
         // Create Repository Selection.
-        vscode.window.showInformationMessage(`Znuny - Customizer (1/4): Fetching GitHub Repositories.`);
+        if (config.informationMessages != 'false' ) {
+            vscode.window.showInformationMessage(`Znuny - Customizer (1/5): Fetching GitHub repositories.`);
+        }
+
         const repository = await vscode.window.showQuickPick(config.repositories, {
-            title: 'Znuny - Customizer (1/4)',
-            placeHolder: 'Znuny: Select GitHub Repositories...',
+            title: 'Znuny - Customizer (1/5)',
+            placeHolder: 'Znuny - Customizer: Select GitHub Repositories...',
             canPickMany: false,
         });
         if (!repository) return;
 
         // Create Branch Selection.
         let url = `https://api.github.com/repos/znuny/${repository}/branches`;
-        vscode.window.showInformationMessage(`Znuny - Customizer (2/4): Fetching branches from "${url}".`);
+        if (config.informationMessages != 'false' ) {
+            let message = `Znuny - Customizer (2/5): Fetching branches.`;
+            if (config.informationMessages == 'verbose' ) {
+                message = `Znuny - Customizer (2/5): Fetching branches from "${url}".`;
+            }
+            vscode.window.showInformationMessage(message);
+        }
 
         let response = await fetch(url);
         let json = await response.json();
@@ -125,15 +135,22 @@ function initCustomizer(context) {
         });
 
         const branch = await vscode.window.showQuickPick(branches.reverse(), {
-            title: 'Znuny - Customizer (2/4)',
-            placeHolder: 'Znuny: Select Branch...',
+            title: 'Znuny - Customizer (2/5)',
+            placeHolder: 'Znuny - Customizer: Select Branch...',
             canPickMany: false,
         });
         if (!branch) return;
 
         // Get all possible files.
         url = `https://api.github.com/repos/znuny/${repository}/git/trees/${branch}?recursive=1`
-        vscode.window.showInformationMessage(`Znuny - Customizer (3/4): Fetching files from "${url}".`)
+
+        if (config.informationMessages != 'false' ) {
+            let message = `Znuny - Customizer (3/5): Fetching files.`;
+            if (config.informationMessages == 'verbose' ) {
+                message = `Znuny - Customizer (3/5): Fetching files from "${url}".`;
+            }
+            vscode.window.showInformationMessage(message)
+        }
 
         response = await fetch(url);
         json = await response.json();
@@ -150,8 +167,8 @@ function initCustomizer(context) {
         });
 
         let file = await vscode.window.showQuickPick(files, {
-            title: 'Znuny - Customizer (3/4)',
-            placeHolder: 'Znuny: Select File...',
+            title: 'Znuny - Customizer (3/5)',
+            placeHolder: 'Znuny - Customizer: Select File...',
             canPickMany: false,
         });
         if (!file) return;
@@ -161,11 +178,14 @@ function initCustomizer(context) {
         vscode.workspace.workspaceFolders.forEach(workspaceFolder => {
             workspaceFolders.push(workspaceFolder.uri.path)
         })
-        vscode.window.showInformationMessage(`Znuny - Customizer (4/4): Fetching destination folder.`);
+
+        if (config.informationMessages != 'false' ) {
+            vscode.window.showInformationMessage(`Znuny - Customizer (4/5): Fetching destination folder.`);
+        }
 
         let workspaceFolder = await vscode.window.showQuickPick(workspaceFolders, {
-            title: 'Znuny - Customizer (4/4)',
-            placeHolder: 'Znuny: Select destination folder...',
+            title: 'Znuny - Customizer (4/5)',
+            placeHolder: 'Znuny - Customizer: Select destination folder...',
             canPickMany: false,
         });
         if (!workspaceFolder) {
@@ -177,7 +197,9 @@ function initCustomizer(context) {
         url = `https://api.github.com/repos/znuny/${repository}/contents/${file}?ref=${branch}`;
 
         // Log.
-        // vscode.window.showInformationMessage(`Znuny - Customizer: Fetching file data for file: "${file}" from branch: "${branch}" from url: "${url}".`);
+        if (config.informationMessages == 'verbose' ) {
+            vscode.window.showInformationMessage(`Znuny - Customizer: Fetching file data for file: "${file}" from branch: "${branch}" from url: "${url}".`);
+        }
 
         response = await fetch(url);
         json = await response.json();
@@ -193,13 +215,17 @@ function initCustomizer(context) {
         }
 
         // Log.
-        // vscode.window.showInformationMessage(`Znuny - Customizer: Decoded file: "${file}" from branch: "${branch}".`);
+        if (config.informationMessages == 'verbose' ) {
+            vscode.window.showInformationMessage(`Znuny - Customizer: Decoded file: "${file}" from branch: "${branch}".`);
+        }
 
         // Get commits
         url = `https://api.github.com/repos/znuny/${repository}/commits?path=${file};sha=${branch}`;
 
         // Log.
-        // vscode.window.showInformationMessage(`Znuny - Customizer: Fetching commits for file: "${file}" from branch: "${branch}" from url: "${url}".`);
+        if (config.informationMessages == 'verbose' ) {
+            vscode.window.showInformationMessage(`Znuny - Customizer: Fetching commits for file: "${file}" from branch: "${branch}" from url: "${url}".`);
+        }
 
         response = await fetch(url);
         let commits = await response.json();
@@ -246,7 +272,9 @@ function initCustomizer(context) {
 
         // Apply all changes.
         vscode.workspace.applyEdit(wsEdit);
-        vscode.window.showInformationMessage(`Znuny - Customizer: Added file ${filePath.path} `);
+        if (config.informationMessages != 'false' ) {
+            vscode.window.showInformationMessage(`Znuny - Customizer (5/5): Added file ${filePath.path} `);
+        }
     }))
 }
 

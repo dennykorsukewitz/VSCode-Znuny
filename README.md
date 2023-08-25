@@ -127,6 +127,29 @@ If the copyright is set in the settings, it will be added as well.
 The GitHub API is limited to 60 requests per hour for non authorized requests.
 If you need more requests, please create an issue on the use of credentials.
 
+The following steps are performed one after the other.
+
+**1. Znuny - Customizer (1/5):** Fetching GitHub repositories.
+
+    function allows you to search for GitHub owners or GitHub repositories.
+    The search results (owner/repository) are then displayed.
+
+**2. Znuny - Customizer (2/5):** Fetching branches.
+
+    After selecting the repository, all possible branches are displayed.
+
+**3. Znuny - Customizer (3/5):** Fetching files.
+
+    After that, select the desired file.
+
+**4. Znuny - Customizer (4/5):** Fetching destination folder.
+
+    Finally, the destination folder must be selected.
+
+**5. Znuny - Customizer (5/5):** Added file.
+
+    `Hocus Pocus` - The file was created at the desired location.
+
 #### Settings
 
 `Preferences -> Settings -> Extensions -> Znuny`

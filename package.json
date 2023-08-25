@@ -486,6 +486,21 @@
           "type": "string",
           "description": "Znuny Customizer Copyright. This Copyright will be added to the Customizer file under the Znuny Copyright."
         },
+        "znuny.customizer.informationMessages": {
+          "type": "string",
+          "description": "Information messages will be displayed.",
+          "default": "true",
+          "enum": [
+            "false",
+            "true",
+            "verbose"
+          ],
+          "enumDescriptions": [
+            "No, nothing will be displayed.",
+            "Yes, the normal information will be displayed.",
+            "Yes, all the information will be displayed."
+          ]
+        },
         "znuny.customizer.repositories": {
           "type": "array",
           "items": {

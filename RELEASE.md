@@ -1,6 +1,5 @@
-# [1.1.6]
+# [1.1.7]
 
-## QuoteWithMarker
+## Customizer
 
-- Updated README.md.
-- Tidied code.
+- Added new Setting `znuny.customizer.informationMessages` - Information messages will be displayed.
