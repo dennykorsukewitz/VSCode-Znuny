@@ -131,24 +131,34 @@ The following steps are performed one after the other.
 
 **1. Znuny - Customizer (1/5):** Fetching GitHub repositories.
 
-    function allows you to search for GitHub owners or GitHub repositories.
+```markdown
+    This function allows you to search for GitHub owners or GitHub repositories.
     The search results (owner/repository) are then displayed.
+```
 
 **2. Znuny - Customizer (2/5):** Fetching branches.
 
+```markdown
     After selecting the repository, all possible branches are displayed.
+```
 
 **3. Znuny - Customizer (3/5):** Fetching files.
 
+```markdown
     After that, select the desired file.
+```
 
 **4. Znuny - Customizer (4/5):** Fetching destination folder.
 
+```markdown
     Finally, the destination folder must be selected.
+```
 
 **5. Znuny - Customizer (5/5):** Added file.
 
+```markdown
     `Hocus Pocus` - The file was created at the desired location.
+```
 
 #### Settings
 
