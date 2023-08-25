@@ -280,7 +280,7 @@ function initGenerateFilelist(context) {
             }
 
             // Add file to FileList
-            fileListTemplate += `        <File Permission = "${permission}" Location = "${file}" />`;
+            fileListTemplate += `        <File Permission="${permission}" Location="${file}" />`;
 
             // Add a new line as long as there is a next file.
             if (filesList.length - 1 != i) {
