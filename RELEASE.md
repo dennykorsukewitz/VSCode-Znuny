@@ -21,3 +21,7 @@ This Function provides a searchable list of folders (Workspaces) that can be rem
 
 **Shortcut:** ```strg + alt + k, shift + p```<br>
 **Command:**  ```AddFolderToWorkspace: Remove Folder from Workspace.```
+
+## QuoteWithMarker
+
+Added leading zeros to month and day to always get the same date format.

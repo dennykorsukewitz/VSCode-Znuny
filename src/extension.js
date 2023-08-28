@@ -469,6 +469,13 @@ function initQuoteWithMarker(context) {
         // returns the year (four digits)
         let year = currentTime.getFullYear();
 
+        if (month.toString().length <= 1){
+            month = month.toString().padStart(2, '0')
+        }
+        if (day.toString().length <= 1){
+            day = day.toString().padStart(2, '0')
+        }
+
         codeMarker = codeMarker.replace(/\${year}/g, year);
         codeMarker = codeMarker.replace(/\${month}/g, month);
         codeMarker = codeMarker.replace(/\${day}/g, day);
