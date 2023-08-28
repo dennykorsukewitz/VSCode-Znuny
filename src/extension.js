@@ -23,6 +23,9 @@ function activate(context) {
     // Also known as ZnunyAddToProject function.
     initAddFolderToWorkspace(context);
 
+    // This function removes the selected folder from workspace (VSC Workspace).
+    initRemoveFolderFromWorkspace(context);
+
     // This function fetches Znuny files from GitHub and adds origin to header.
     initCustomizer(context);
 
@@ -42,49 +45,99 @@ function activate(context) {
 function initAddFolderToWorkspace(context) {
 
     const addFolderToWorkspaceId = 'znuny.addFolderToWorkspace';
-    context.subscriptions.push(vscode.commands.registerCommand(addFolderToWorkspaceId, () => {
+    context.subscriptions.push(vscode.commands.registerCommand(addFolderToWorkspaceId, async () => {
 
         let workspaceDirectories = [];
-        let config = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
+        let config = vscode.workspace.getConfiguration('addFolderToWorkspace');
 
         // Check if workspaces are defined.
         if (!config.workspaces.length) {
-            vscode.commands.executeCommand('workbench.action.openSettings', 'znuny');
-            vscode.window.showWarningMessage(`Znuny: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/Znuny/workspace/"', modal: true });
+            vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
+            vscode.window.showWarningMessage(`AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
             return;
         }
 
         // Get all first level directories.
-        config.workspaces.forEach(znunyWorkspace => {
-            let workspaceDirectory = fs.readdirSync(znunyWorkspace, { withFileTypes: true })
+        config.workspaces.forEach(myWorkspace => {
+            let workspaceDirectory = fs.readdirSync(myWorkspace, { withFileTypes: true })
                 .filter(dir => dir.isDirectory())
-                .map(dir => znunyWorkspace + dir.name);
+                .map(dir => myWorkspace + dir.name);
 
             workspaceDirectories = workspaceDirectories.concat(workspaceDirectory);
         })
 
         // Check if directories are defined.
         if (!workspaceDirectories.length) {
-            vscode.commands.executeCommand('workbench.action.openSettings', 'znuny');
-            vscode.window.showWarningMessage(`Znuny: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/Znuny/workspace/"', modal: true });
+            vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
+            vscode.window.showWarningMessage(`AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
             return;
         }
 
         // Open QuickPick and add selected Folder (Directory to VSC Workspace).
-        vscode.window.showQuickPick(workspaceDirectories, {
-            placeHolder: 'Znuny: Add Folder to Workspace.',
-        }).then((Selected) => {
-            if (!Selected) return;
+        let workspaces = await vscode.window.showQuickPick(workspaceDirectories, {
+            title: 'AddFolderToWorkspace',
+            placeHolder: 'AddFolderToWorkspace: Select a folder...',
+            canPickMany: true,
+        })
+
+        if (!workspaces) return;
+
+        let workspaceURIs = [];
+        for await (const workspace of workspaces) {
 
             // Get URI of selected directory.
-            let URI = vscode.Uri.file(Selected);
+            let URI = vscode.Uri.file(workspace);
             if (!URI) return;
+            workspaceURIs.push({ uri: URI });
+        }
 
-            // Add selected Folder to Workspace.
-            vscode.workspace.updateWorkspaceFolders(vscode.workspace.workspaceFolders ? vscode.workspace.workspaceFolders.length : 0, null, { uri: URI });
-        });
+        // Add selected Folder to Workspace.
+        await updateWorkspaceAndWait(0, null, workspaceURIs);
+
     }))
 }
+
+function initRemoveFolderFromWorkspace(context) {
+
+    const removeFolderFromWorkspaceId = 'znuny.removeFolderFromWorkspace';
+    context.subscriptions.push(vscode.commands.registerCommand(removeFolderFromWorkspaceId, async () => {
+
+        // Check all current workspace folders.
+        let workspaceFolders = [];
+        vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
+            workspaceFolders.push(workspaceFolder.name)
+        })
+
+        if (!workspaceFolders.length) return;
+
+        // Create showQuickPick 'RemoveFolderFromWorkspace' selection.
+        let workspaces = await vscode.window.showQuickPick(workspaceFolders, {
+            title: 'RemoveFolderFromWorkspace',
+            placeHolder: 'RemoveFolderFromWorkspace: Select workspaces to be removed...',
+            canPickMany: true,
+        });
+
+        if (!workspaces) return;
+
+        let removeIndexes = [];
+
+        // Sort and reverse selected 'remove' Folder from Workspace.
+        vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
+            // workspaceFolders.push(workspaceFolder.name)
+            let removeWorkspace = workspaces.includes(workspaceFolder.name);
+
+            if (removeWorkspace){
+                removeIndexes.push(workspaceFolder.index)
+            }
+        })
+
+        // Remove selected Folder from Workspace.
+        for await (const removeIndex of removeIndexes.reverse()) {
+            await updateWorkspaceAndWait(removeIndex, 1, []);
+        }
+    }))
+}
+
 
 function initCustomizer(context) {
 
@@ -518,6 +571,26 @@ function initStatusBarItem(context) {
         // Update status bar item once at start.
         updateStatusBarItem();
     };
+}
+
+function updateWorkspaceAndWait(start, deleteCount, workspaceFoldersToAdd) {
+    const success = vscode.workspace.updateWorkspaceFolders(start, deleteCount, ...workspaceFoldersToAdd)
+
+    if (success) {
+        const disps = []
+        return new Promise(resolve => {
+
+            // Note: it is not valid to call updateWorkspaceFolders() multiple times
+            // without waiting for the onDidChangeWorkspaceFolders() to fire.
+            // So we have to always wait in case we want to add or remove multiple folders.
+            vscode.workspace.onDidChangeWorkspaceFolders(() => {
+                resolve();
+            }, null, disps);
+
+        }).finally(() => disps.forEach(disp => disp.dispose()));
+    } else {
+        return Promise.reject(new Error("Failed to update workspace"))
+    }
 }
 
 function updateStatusBarItem() {

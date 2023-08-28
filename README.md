@@ -13,11 +13,12 @@
 
 | Versions | Status |
 | ------ | ------ |
-| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.5) <br> ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%207.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-Znuny/1.1.6/dev)](https://github.com/dennykorsukewitz/VSCode-Znuny/compare/1.1.6...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.5) <br> ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%207.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-Znuny/1.2.0/dev)](https://github.com/dennykorsukewitz/VSCode-Znuny/compare/1.2.0...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ## Features
 
 - [AddFolderToWorkspace](#addfoldertoworkspace)
+- [RemoveFolderFromWorkspace](#removefolderfromworkspace)
 - [Customizer](#customizer)
 - [GenerateFilelist](#generatefilelist)
 - [ObjectDependencies](#objectdependencies)
@@ -95,8 +96,16 @@ snippets
 
 This Function provides a searchable list of folders (Workspaces) that can be added to the current VSC Workspace. All configured folders will be displayed.
 
+```markdown
+    Of course, you can use the already built-in function:
+    `Workspaces: Add Folder To Workspace...` (workbench.action.addRootFolder).
+    But then you have to click through all the folders again and again.
+```
+
 **Shortcut:** ```strg + alt + z, p```<br>
 **Command:**  ```Znuny: Add Folder to Workspace.```
+
+![AddFolderToWorkspace](doc/images/addfoldertoworkspace.gif)
 
 #### Settings
 
@@ -106,7 +115,16 @@ This Function provides a searchable list of folders (Workspaces) that can be add
 | - | - | - |
 | znuny.addFolderToWorkspace.workspaces | All searchable Workspaces. | /workspace/ |
 
-![AddFolderToWorkspace](doc/images/addfoldertoworkspace.gif)
+---
+
+### RemoveFolderFromWorkspace
+
+This Function provides a searchable list of folders (Workspaces) that can be removed **simultaneous** from the current VSC Workspace. All current open folders are displayed.
+
+**Shortcut:** ```strg + alt + z, shift + p```<br>
+**Command:**  ```AddFolderToWorkspace: Remove Folder from Workspace.```
+
+![RemoveFolderFromWorkspace](doc/images/removefolderfromworkspace.gif)
 
 ---
 

@@ -1,5 +1,23 @@
-# [1.1.7]
+# [1.2.0]
+
+## GenerateFilelist
+
+Fixed spacing in FileList GenerateFilelist. Thanks to Emin Yazi (@eyazi). [PR#4](https://github.com/dennykorsukewitz/VSCode-Znuny/pull/4)
 
 ## Customizer
 
-- Added new Setting `znuny.customizer.informationMessages` - Information messages will be displayed.
+Added new Setting `znuny.customizer.informationMessages` - Information messages will be displayed.
+
+## AddFolderToWorkspace
+
+This Function provides a searchable list of folders (Workspaces) that can be added **simultaneous** to the current VSC Workspace. All configured folders will be displayed.
+
+**Shortcut:** ```strg + alt + k, p```<br>
+**Command:**  ```AddFolderToWorkspace: Add Folder to Workspace.```
+
+## RemoveFolderFromWorkspace
+
+This Function provides a searchable list of folders (Workspaces) that can be removed **simultaneous** from the current VSC Workspace. All current open folders are displayed.
+
+**Shortcut:** ```strg + alt + k, shift + p```<br>
+**Command:**  ```AddFolderToWorkspace: Remove Folder from Workspace.```
