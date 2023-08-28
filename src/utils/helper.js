@@ -11,7 +11,7 @@ function getZnunyData() {
     let data = {};
 
     // return if no workspaceFolders is available
-    if (!vscode.workspace.workspaceFolders) {
+    if (!vscode.workspace.workspaceFolders.length) {
         return data;
     }
 

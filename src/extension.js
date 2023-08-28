@@ -91,6 +91,8 @@ function initAddFolderToWorkspace(context) {
             workspaceURIs.push({ uri: URI });
         }
 
+        if (!workspaceURIs.length) return;
+
         // Add selected Folder to Workspace.
         await updateWorkspaceAndWait(0, null, workspaceURIs);
 
@@ -225,8 +227,9 @@ function initCustomizer(context) {
             canPickMany: false,
         });
         if (!file) return;
+        if (!vscode.workspace.workspaceFolders.length) return;
 
-        // Get all workspace foldes.
+        // Get all workspace folders.
         let workspaceFolders = [];
         vscode.workspace.workspaceFolders.forEach(workspaceFolder => {
             workspaceFolders.push(workspaceFolder.uri.path)
