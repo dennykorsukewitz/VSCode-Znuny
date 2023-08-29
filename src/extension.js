@@ -452,7 +452,11 @@ function initQuoteWithMarker(context) {
         let text = activeEditor.document.getText(selection) || '';
         let config = vscode.workspace.getConfiguration('znuny').get('quoteWithMarker');
 
-        let quoteChar,
+        let quoteCharStart = '',
+            quoteCharEnd = '',
+            quoteCharStartOrigin = '',
+            quoteCharBlockStart = '',
+            isBlockComment = 0,
             codeMarkerReplace,
             codeMarker = config.codeMarker || 'Znuny',
             lineComment = config.lineComment || {},
@@ -460,13 +464,13 @@ function initQuoteWithMarker(context) {
 
         let currentTime = new Date();
 
-        // returns the month (from 0 to 11)
+        // returns the month (from 0 to 11).
         let month = currentTime.getMonth() + 1;
 
-        // returns the day of the month (from 1 to 31);
+        // returns the day of the month (from 1 to 31).
         let day = currentTime.getDate();
 
-        // returns the year (four digits)
+        // returns the year (four digits).
         let year = currentTime.getFullYear();
 
         if (month.toString().length <= 1){
@@ -480,14 +484,14 @@ function initQuoteWithMarker(context) {
         codeMarker = codeMarker.replace(/\${month}/g, month);
         codeMarker = codeMarker.replace(/\${day}/g, day);
 
-        // Get quoteChar from config
-        if (lineComment && lineComment[languageId] && lineComment[languageId].length) {
-            quoteChar = lineComment[languageId];
+        // Get quoteCharStart from config.
+        if (lineComment[languageId] && lineComment[languageId].length){
+            quoteCharStart = lineComment[languageId];
         }
 
-        // If no quoteChar is set, try to use the default value of lineComment of the current language config
-        if (quoteChar.length === 0 && languageId) {
-            let extensions = vscode.extensions.all;
+        // If no quoteCharStart is set, try to use the default value of lineComment of the current language config.
+        if (quoteCharStart.length === 0 && languageId || quoteCharStart === 'undefined'){
+            let extensions    = vscode.extensions.all;
             let languagesData = extensions.filter((extension) => extension.packageJSON.name === languageId);
 
             let languageExtensionPath = languagesData[0].extensionPath;
@@ -498,25 +502,52 @@ function initQuoteWithMarker(context) {
 
             try {
                 const config = JSON.parse(content);
-                quoteChar = config.comments.lineComment;
+                if (config.comments.lineComment){
+                    quoteCharStart = config.comments.lineComment;
+                }
+                else if (config.comments.blockComment){
+                    isBlockComment = 1;
+                    quoteCharStart      = config.comments.blockComment[0];
+                    quoteCharEnd        = ' ' + config.comments.blockComment[1];
+                    quoteCharBlockStart = ' ' + config.comments.blockComment[0].substring(1);
+                }
+
             } catch (error) {
                 console.log(error);
             }
         }
 
-        if (!quoteChar) return;
+        if (!quoteCharStart) return;
 
-        codeMarkerReplace = `${quoteChar} ---\n`;
-        codeMarkerReplace += `${quoteChar} ${codeMarker}\n`;
-        codeMarkerReplace += `${quoteChar} ---\n`;
-
-        // Add QuoteChar to every single line.
+        let lineLength = 0;
         text.split(/\r?\n/).forEach(line => {
-            codeMarkerReplace += `${quoteChar} ${line}\n`;
+            if (line.toString().length > lineLength){
+                lineLength = line.toString().length;
+            }
         })
 
+        codeMarkerReplace = `${quoteCharStart} ---${quoteCharEnd}\n`;
+        codeMarkerReplace += `${quoteCharStart} ${codeMarker}${quoteCharEnd}\n`;
+        codeMarkerReplace += `${quoteCharStart} ---${quoteCharEnd}\n`;
+
+        if (isBlockComment) {
+            codeMarkerReplace += `${quoteCharStart}\n`;
+            quoteCharStartOrigin = quoteCharStart;
+            quoteCharStart = quoteCharBlockStart;
+        }
+
+        // Add QuoteCharStart to every single line.
+        text.split(/\r?\n/).forEach(line => {
+            codeMarkerReplace += `${quoteCharStart} ${line}\n`;
+        })
+
+        if (isBlockComment) {
+            codeMarkerReplace += `${quoteCharEnd}\n`;
+            quoteCharStart = quoteCharStartOrigin;
+        }
+
         codeMarkerReplace += `\n${text}`;
-        codeMarkerReplace += `\n\n${quoteChar} ---\n`;
+        codeMarkerReplace += `\n\n${quoteCharStart} ---${quoteCharEnd}\n`;
         text.replace(text, codeMarkerReplace);
 
         // Replace the selection in the editor with CodeMarker.
