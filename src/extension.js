@@ -47,13 +47,17 @@ function initAddFolderToWorkspace(context) {
     const addFolderToWorkspaceId = 'znuny.addFolderToWorkspace';
     context.subscriptions.push(vscode.commands.registerCommand(addFolderToWorkspaceId, async () => {
 
-        let workspaceDirectories = [];
-        let config = vscode.workspace.getConfiguration('addFolderToWorkspace');
+        let workspaceDirectories = [],
+            newWorkspaceFound     = 0,
+            manualWorkspace       = '',
+            manualDirectoryString = '-- Add manually a directory --';
+
+        let config = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
 
         // Check if workspaces are defined.
         if (!config.workspaces.length) {
             vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
-            vscode.window.showWarningMessage(`AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
+            vscode.window.showWarningMessage(`Znuny - AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
             return;
         }
 
@@ -69,29 +73,83 @@ function initAddFolderToWorkspace(context) {
         // Check if directories are defined.
         if (!workspaceDirectories.length) {
             vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
-            vscode.window.showWarningMessage(`AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
+            vscode.window.showWarningMessage(`Znuny - AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
             return;
+        }
+
+        if (workspaceDirectories.length && !workspaceDirectories.includes(manualDirectoryString)) {
+            workspaceDirectories.unshift(manualDirectoryString);
         }
 
         // Open QuickPick and add selected Folder (Directory to VSC Workspace).
         let workspaces = await vscode.window.showQuickPick(workspaceDirectories, {
-            title: 'AddFolderToWorkspace',
-            placeHolder: 'AddFolderToWorkspace: Select a folder...',
+            title: 'Znuny - AddFolderToWorkspace',
+            placeHolder: 'Znuny - AddFolderToWorkspace: Select a folder...',
             canPickMany: true,
         })
 
+        if (!workspaces) return;
+
+        if (workspaces.length && workspaces.includes(manualDirectoryString)) {
+
+            workspaces.shift(manualDirectoryString);
+            newWorkspaceFound = 1;
+
+            manualWorkspace = await vscode.window.showInputBox({
+                title: 'Znuny - AddFolderToWorkspace',
+                placeHolder: 'Znuny - AddFolderToWorkspace: Add manually a directory...',
+            });
+
+            if (manualWorkspace){
+                workspaces.push(manualWorkspace);
+            }
+        }
         if (!workspaces) return;
 
         let workspaceURIs = [];
         for await (const workspace of workspaces) {
 
             // Get URI of selected directory.
-            let URI = vscode.Uri.file(workspace);
+            let URI = vscode.Uri.file(workspace),
+                URIexists = 0;
+
             if (!URI) return;
-            workspaceURIs.push({ uri: URI });
+
+            if (vscode.workspace.workspaceFolders){
+                vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
+
+                    if (URI.path == workspaceFolder.uri.path){
+                        URIexists = 1;
+                    }
+                })
+            }
+
+            if (!URIexists){
+                workspaceURIs.push({ uri: URI });
+            }
         }
 
         if (!workspaceURIs.length) return;
+
+        if (newWorkspaceFound) {
+            let addNewWorkspaceToConfig = await vscode.window.showQuickPick(['yes','no'], {
+                title: 'Znuny - AddFolderToWorkspace (New Workspace)',
+                placeHolder: 'Znuny - AddFolderToWorkspace: Should I save the new workspace in the settings?',
+                canPickMany: false,
+            });
+
+            if (addNewWorkspaceToConfig == 'yes'){
+
+                if (!manualWorkspace.endsWith("/")){
+                    manualWorkspace += '/';
+                }
+
+                let configWorkspaces = config.workspaces;
+                configWorkspaces.push(manualWorkspace);
+
+                await vscode.workspace.getConfiguration().update('znuny.addFolderToWorkspace.workspaces', configWorkspaces, true);
+            }
+        }
 
         // Add selected Folder to Workspace.
         await updateWorkspaceAndWait(0, null, workspaceURIs);
@@ -112,10 +170,10 @@ function initRemoveFolderFromWorkspace(context) {
 
         if (!workspaceFolders.length) return;
 
-        // Create showQuickPick 'RemoveFolderFromWorkspace' selection.
+        // Create showQuickPick 'Znuny - RemoveFolderFromWorkspace' selection.
         let workspaces = await vscode.window.showQuickPick(workspaceFolders, {
-            title: 'RemoveFolderFromWorkspace',
-            placeHolder: 'RemoveFolderFromWorkspace: Select workspaces to be removed...',
+            title: 'Znuny - RemoveFolderFromWorkspace',
+            placeHolder: 'Znuny - RemoveFolderFromWorkspace: Select workspaces to be removed...',
             canPickMany: true,
         });
 
