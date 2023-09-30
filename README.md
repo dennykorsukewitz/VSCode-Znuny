@@ -122,7 +122,7 @@ This Function provides a searchable list of folders (Workspaces) that can be add
 This Function provides a searchable list of folders (Workspaces) that can be removed **simultaneous** from the current VSC Workspace. All current open folders are displayed.
 
 **Shortcut:** ```strg + alt + z, shift + p```<br>
-**Command:**  ```AddFolderToWorkspace: Remove Folder from Workspace.```
+**Command:**  ```Znuny: Remove Folder from Workspace.```
 
 ![RemoveFolderFromWorkspace](doc/images/removefolderfromworkspace.gif)
 
