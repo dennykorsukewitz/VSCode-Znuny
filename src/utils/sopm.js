@@ -1,17 +1,17 @@
 const fs    = require('fs');
 const xpath = require('xpath');
 
-// get Znuny data from SOPM file
+// Get Znuny data from SOPM file
 function getData(filePath) {
 
     let data           = {};
-    let sopm_structure = getStructure(filePath);
-    data['product']    = sopm_structure['Vendor'];
+    let sopmStructure = getStructure(filePath);
+    data['product']    = sopmStructure['Vendor'];
     data['source']     = filePath;
 
-    if (sopm_structure['Framework']){
+    if (sopmStructure['Framework']){
         // use highest framework version
-        const sortedarr = sopm_structure['Framework'].map(ele => ele && ele.toUpperCase()).sort() ;
+        const sortedarr = sopmStructure['Framework'].map(ele => ele && ele.toUpperCase()).sort() ;
         data['version'] = sortedarr[sortedarr.length -1];
     }
 
@@ -20,14 +20,14 @@ function getData(filePath) {
 
 function getStructure(filePath) {
 
-    let sopm_structure = {};
+    let sopmStructure = {};
 
-    // load SOPM structure
+    // Load SOPM structure
     const xmldom = require('xmldom').DOMParser;
     const xml    = fs.readFileSync(filePath, 'utf8');
     const dom    = new xmldom().parseFromString(xml);
 
-    const single_tags = [
+    const singleTags = [
         'Name',
         'Version',
         'Vendor',
@@ -38,7 +38,7 @@ function getStructure(filePath) {
         'PackageIsRemovable',
     ];
 
-    single_tags.forEach(tag => {
+    singleTags.forEach(tag => {
         const nodes = xpath.select('//' + tag, dom);
 
         if (!nodes[0] || !nodes[0].firstChild || !nodes[0].firstChild.data) {
@@ -47,10 +47,10 @@ function getStructure(filePath) {
 
         const key = tag;
         const value = nodes[0].firstChild.data;
-        sopm_structure[key] = value;
+        sopmStructure[key] = value;
     });
 
-    const multiple_tags = [
+    const multipleTags = [
         'Framework',
 
         // version name
@@ -62,21 +62,21 @@ function getStructure(filePath) {
         'IntroInstall',
     ];
 
-    multiple_tags.forEach(tag => {
+    multipleTags.forEach(tag => {
         const nodes         = xpath.select('//' + tag, dom);
         const key           = tag;
-        sopm_structure[key] = [];
+        sopmStructure[key] = [];
 
         nodes.forEach(node => {
             if (!node || !node.firstChild || !node.firstChild.data) {
                 return;
             }
             const value = node.firstChild.data;
-            sopm_structure[key].push(value);
+            sopmStructure[key].push(value);
         });
     });
 
-    return sopm_structure;
+    return sopmStructure;
 }
 
 module.exports = {
