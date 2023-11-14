@@ -2,7 +2,7 @@
   "name": "znuny",
   "displayName": "Znuny",
   "description": "Znuny is an extension that helps you to make Znuny development easier, faster and more error-free.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -537,8 +537,18 @@
           "items": {
             "type": "string"
           },
-          "description": "Provides a searchable list of folders (Workspaces) that can be added to the current VSC Workspace.",
+          "description": "Provides a list of folders (Workspaces) that can be added to the current VSC Workspace.",
           "default": []
+        },
+        "znuny.addFolderToWorkspace.recursiveWorkspaces": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Provides a searchable (only first level) list of folders  (Workspaces) that can be added to the current VSC Workspace.",
+          "default": [
+            "/Users/"
+          ]
         },
         "znuny.statusBar.enabled": {
           "type": "string",

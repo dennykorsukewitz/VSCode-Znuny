@@ -13,7 +13,7 @@
 
 | Versions | Status |
 | ------ | ------ |
-| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.5) <br> ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%207.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-Znuny/1.2.0/dev)](https://github.com/dennykorsukewitz/VSCode-Znuny/compare/1.2.0...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
+| ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.4) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%206.5) <br> ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/dennykorsukewitz/Znuny%207.0) ![GitHub label version](https://img.shields.io/github/labels/dennykorsukewitz/DK4/dev) | [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-Znuny/1.3.0/dev)](https://github.com/dennykorsukewitz/VSCode-Znuny/compare/1.3.0...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) [![Snippet](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml/badge.svg)](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/snippet.yml) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-Znuny/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages) |
 
 ## Features
 
@@ -113,7 +113,8 @@ This Function provides a searchable list of folders (Workspaces) that can be add
 
 | Name | Description | Default Value |
 | - | - | - |
-| znuny.addFolderToWorkspace.workspaces | All searchable Workspaces. | /workspace/ |
+| znuny.addFolderToWorkspace.workspaces | Provides a list of folders (Workspaces) that can be added to the current VSC Workspace. | /Users/ |
+| znuny.addFolderToWorkspace.recursiveWorkspaces | Provides a searchable (only first level) list of folders  (Workspaces) that can be added to the current VSC Workspace. | /Users/ |
 
 ---
 

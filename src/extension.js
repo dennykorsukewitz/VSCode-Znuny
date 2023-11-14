@@ -55,14 +55,17 @@ function initAddFolderToWorkspace(context) {
         let config = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
 
         // Check if workspaces are defined.
-        if (!config.workspaces.length) {
+        if (!config.workspaces.length && !config.recursiveWorkspaces.length) {
             vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
             vscode.window.showWarningMessage(`Znuny - AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
             return;
         }
 
-        // Get all first level directories.
-        config.workspaces.forEach(myWorkspace => {
+        // Add all stored workspaces / directories.
+        workspaceDirectories = config.workspaces || [];
+
+        // Get all first level directories from given directories.
+        config.recursiveWorkspaces.forEach(myWorkspace => {
             let workspaceDirectory = fs.readdirSync(myWorkspace, { withFileTypes: true })
                 .filter(dir => dir.isDirectory())
                 .map(dir => myWorkspace + dir.name);
