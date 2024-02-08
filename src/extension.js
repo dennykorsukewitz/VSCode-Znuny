@@ -420,7 +420,7 @@ function initGenerateFilelist(context) {
         filesList.sort().forEach(function (file, i) {
 
             let permission = '660';
-            if (file.startsWith('scripts/') || file.endsWith('.sh')) {
+            if (file.startsWith('bin/') || file.endsWith('.sh')) {
                 permission = '770';
             }
 
