@@ -48,8 +48,8 @@ function initAddFolderToWorkspace(context) {
     context.subscriptions.push(vscode.commands.registerCommand(addFolderToWorkspaceId, async () => {
 
         let workspaceDirectories = [],
-            newWorkspaceFound     = 0,
-            manualWorkspace       = '',
+            newWorkspaceFound = 0,
+            manualWorkspace = '',
             manualDirectoryString = '-- Add manually a directory --';
 
         let config = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
@@ -103,7 +103,7 @@ function initAddFolderToWorkspace(context) {
                 placeHolder: 'Znuny - AddFolderToWorkspace: Add manually a directory...',
             });
 
-            if (manualWorkspace){
+            if (manualWorkspace) {
                 workspaces.push(manualWorkspace);
             }
         }
@@ -118,16 +118,16 @@ function initAddFolderToWorkspace(context) {
 
             if (!URI) return;
 
-            if (vscode.workspace.workspaceFolders){
+            if (vscode.workspace.workspaceFolders) {
                 vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
 
-                    if (URI.path == workspaceFolder.uri.path){
+                    if (URI.path == workspaceFolder.uri.path) {
                         URIexists = 1;
                     }
                 })
             }
 
-            if (!URIexists){
+            if (!URIexists) {
                 workspaceURIs.push({ uri: URI });
             }
         }
@@ -135,15 +135,15 @@ function initAddFolderToWorkspace(context) {
         if (!workspaceURIs.length) return;
 
         if (newWorkspaceFound) {
-            let addNewWorkspaceToConfig = await vscode.window.showQuickPick(['yes','no'], {
+            let addNewWorkspaceToConfig = await vscode.window.showQuickPick(['yes', 'no'], {
                 title: 'Znuny - AddFolderToWorkspace (New Workspace)',
                 placeHolder: 'Znuny - AddFolderToWorkspace: Should I save the new workspace in the settings?',
                 canPickMany: false,
             });
 
-            if (addNewWorkspaceToConfig == 'yes'){
+            if (addNewWorkspaceToConfig == 'yes') {
 
-                if (!manualWorkspace.endsWith("/")){
+                if (!manualWorkspace.endsWith("/")) {
                     manualWorkspace += '/';
                 }
 
@@ -189,7 +189,7 @@ function initRemoveFolderFromWorkspace(context) {
             // workspaceFolders.push(workspaceFolder.name)
             let removeWorkspace = workspaces.includes(workspaceFolder.name);
 
-            if (removeWorkspace){
+            if (removeWorkspace) {
                 removeIndexes.push(workspaceFolder.index)
             }
         })
@@ -216,7 +216,7 @@ function initCustomizer(context) {
         let config = vscode.workspace.getConfiguration('znuny').get('customizer');
 
         // Create Repository Selection.
-        if (config.informationMessages != 'false' ) {
+        if (config.informationMessages != 'false') {
             vscode.window.showInformationMessage(`Znuny - Customizer (1/5): Fetching GitHub repositories.`);
         }
 
@@ -229,9 +229,9 @@ function initCustomizer(context) {
 
         // Create Branch Selection.
         let url = `https://api.github.com/repos/znuny/${repository}/branches`;
-        if (config.informationMessages != 'false' ) {
+        if (config.informationMessages != 'false') {
             let message = `Znuny - Customizer (2/5): Fetching branches.`;
-            if (config.informationMessages == 'verbose' ) {
+            if (config.informationMessages == 'verbose') {
                 message = `Znuny - Customizer (2/5): Fetching branches from "${url}".`;
             }
             vscode.window.showInformationMessage(message);
@@ -260,9 +260,9 @@ function initCustomizer(context) {
         // Get all possible files.
         url = `https://api.github.com/repos/znuny/${repository}/git/trees/${branch}?recursive=1`
 
-        if (config.informationMessages != 'false' ) {
+        if (config.informationMessages != 'false') {
             let message = `Znuny - Customizer (3/5): Fetching files.`;
-            if (config.informationMessages == 'verbose' ) {
+            if (config.informationMessages == 'verbose') {
                 message = `Znuny - Customizer (3/5): Fetching files from "${url}".`;
             }
             vscode.window.showInformationMessage(message)
@@ -296,7 +296,7 @@ function initCustomizer(context) {
             workspaceFolders.push(workspaceFolder.uri.path)
         })
 
-        if (config.informationMessages != 'false' ) {
+        if (config.informationMessages != 'false') {
             vscode.window.showInformationMessage(`Znuny - Customizer (4/5): Fetching destination folder.`);
         }
 
@@ -314,7 +314,7 @@ function initCustomizer(context) {
         url = `https://api.github.com/repos/znuny/${repository}/contents/${file}?ref=${branch}`;
 
         // Log.
-        if (config.informationMessages == 'verbose' ) {
+        if (config.informationMessages == 'verbose') {
             vscode.window.showInformationMessage(`Znuny - Customizer: Fetching file data for file: "${file}" from branch: "${branch}" from url: "${url}".`);
         }
 
@@ -332,7 +332,7 @@ function initCustomizer(context) {
         }
 
         // Log.
-        if (config.informationMessages == 'verbose' ) {
+        if (config.informationMessages == 'verbose') {
             vscode.window.showInformationMessage(`Znuny - Customizer: Decoded file: "${file}" from branch: "${branch}".`);
         }
 
@@ -340,7 +340,7 @@ function initCustomizer(context) {
         url = `https://api.github.com/repos/znuny/${repository}/commits?path=${file};sha=${branch}`;
 
         // Log.
-        if (config.informationMessages == 'verbose' ) {
+        if (config.informationMessages == 'verbose') {
             vscode.window.showInformationMessage(`Znuny - Customizer: Fetching commits for file: "${file}" from branch: "${branch}" from url: "${url}".`);
         }
 
@@ -389,7 +389,7 @@ function initCustomizer(context) {
 
         // Apply all changes.
         vscode.workspace.applyEdit(wsEdit);
-        if (config.informationMessages != 'false' ) {
+        if (config.informationMessages != 'false') {
             vscode.window.showInformationMessage(`Znuny - Customizer (5/5): Added file ${filePath.path} `);
         }
     }))
@@ -534,10 +534,10 @@ function initQuoteWithMarker(context) {
         // returns the year (four digits).
         let year = currentTime.getFullYear();
 
-        if (month.toString().length <= 1){
+        if (month.toString().length <= 1) {
             month = month.toString().padStart(2, '0')
         }
-        if (day.toString().length <= 1){
+        if (day.toString().length <= 1) {
             day = day.toString().padStart(2, '0')
         }
 
@@ -546,13 +546,13 @@ function initQuoteWithMarker(context) {
         codeMarker = codeMarker.replace(/\${day}/g, day);
 
         // Get quoteCharStart from config.
-        if (lineComment[languageId] && lineComment[languageId].length){
+        if (lineComment[languageId] && lineComment[languageId].length) {
             quoteCharStart = lineComment[languageId];
         }
 
         // If no quoteCharStart is set, try to use the default value of lineComment of the current language config.
-        if (quoteCharStart.length === 0 && languageId || quoteCharStart === 'undefined'){
-            let extensions    = vscode.extensions.all;
+        if (quoteCharStart.length === 0 && languageId || quoteCharStart === 'undefined') {
+            let extensions = vscode.extensions.all;
             let languagesData = extensions.filter((extension) => extension.packageJSON.name === languageId);
 
             let languageExtensionPath = languagesData[0].extensionPath;
@@ -563,13 +563,13 @@ function initQuoteWithMarker(context) {
 
             try {
                 const config = JSON.parse(content);
-                if (config.comments.lineComment){
+                if (config.comments.lineComment) {
                     quoteCharStart = config.comments.lineComment;
                 }
-                else if (config.comments.blockComment){
+                else if (config.comments.blockComment) {
                     isBlockComment = 1;
-                    quoteCharStart      = config.comments.blockComment[0];
-                    quoteCharEnd        = ' ' + config.comments.blockComment[1];
+                    quoteCharStart = config.comments.blockComment[0];
+                    quoteCharEnd = ' ' + config.comments.blockComment[1];
                     quoteCharBlockStart = ' ' + config.comments.blockComment[0].substring(1);
                 }
 
@@ -582,7 +582,7 @@ function initQuoteWithMarker(context) {
 
         let lineLength = 0;
         text.split(/\r?\n/).forEach(line => {
-            if (line.toString().length > lineLength){
+            if (line.toString().length > lineLength) {
                 lineLength = line.toString().length;
             }
         })
