@@ -2,6 +2,25 @@
 
 All notable changes to the "Znuny" extension will be documented in this file.
 
+## [Unreleased]
+
+### Refactoring
+
+- Changed source language to TypeScript.
+- Added esbuild to get Browser Editor support.
+- Refactored code.
+
+## [1.3.1]
+
+### Fixed
+
+- Fixed permissions in filelist generator. Thanks to Niklas Schmitt (@NiklasSchmitt). [#5](https://github.com/dennykorsukewitz/VSCode-Znuny/pull/5)
+- Fixed spacing in generated filelist. Thanks to Niklas Schmitt (@NiklasSchmitt). [#6](https://github.com/dennykorsukewitz/VSCode-Znuny/pull/6)
+
+### Maintenance
+
+- Tidied Workflow and Code.
+
 ## [1.3.0]
 
 ### AddFolderToWorkspace
