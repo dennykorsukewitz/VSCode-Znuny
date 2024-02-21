@@ -1,12 +1,15 @@
-# [1.3.0]
+# [2.0.0]
 
-## AddFolderToWorkspace
+## Refactoring
 
-### Maintenance
+- Changed source language to TypeScript.
+- Added esbuild to get Browser Editor support.
+- Refactored code.
 
-- Added additional check if vscode.workspace.workspaceFolders exists.
-- Saves the new manually entered directory globally.
+## Added
 
-### Recursive Workspaces (only first level)
+The GitHub API is limited to 60 requests per hour for non authorized requests. You can provide your GitHub username and an access token to push this limit to 5000 requests per hour. Please see the [official GitHub doc](https://docs.github.com/en/free-pro-team@latest/rest/rate-limit/rate-limit?apiVersion=2022-11-28) for further information.
+You can generate the access token in your [GitHub settings](https://github.com/settings/tokens).
 
-- Added new setting `znuny.addFolderToWorkspace.recursiveWorkspaces` to use recursive Workspaces (only first level).
+- Added TODO.githubUsername setting.
+- Added TODO.githubToken setting.

@@ -2,7 +2,7 @@
   "name": "znuny",
   "displayName": "Znuny",
   "description": "Znuny is an extension that helps you to make Znuny development easier, faster and more error-free.",
-  "version": "1.3.1",
+  "version": "2.0.0",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -32,13 +32,6 @@
     "vscode": "^1.74.0"
   },
   "activationEvents": [
-    "onCommand:znuny.addFolderToWorkspace",
-    "onCommand:znuny.removeFolderFromWorkspace",
-    "onCommand:znuny.customizer",
-    "onCommand:znuny.generateFilelist",
-    "onCommand:znuny.objectDependencies",
-    "onCommand:znuny.quoteWithMarker",
-    "onCommand:znuny.showZnunyVersion",
     "workspaceContains:**.sopm",
     "workspaceContains:RELEASE"
   ],
