@@ -11,8 +11,8 @@ function getData(filePath) {
 
     if (sopm_structure['Framework']){
         // use highest framework version
-        const sortedarr = sopm_structure['Framework'].map(ele => ele && ele.toUpperCase()).sort() ;
-        data['version'] = sortedarr[sortedarr.length -1];
+        const sortedArray = sopm_structure['Framework'].map(ele => ele && ele.toUpperCase()).sort() ;
+        data['version'] = sortedArray[sortedArray.length -1];
     }
 
     return data;

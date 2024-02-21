@@ -1,19 +1,19 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-const vscode = require('vscode');
+import * as vscode from 'vscode';
+
+const toUint8Array = require('base64-to-uint8array');
+
+//  TODO
 const fs = require('fs');
 const path = require('path');
 const helper = require('./utils/helper.js');
-const { default: fetch } = require('node-fetch');
-require('buffer');
 
-// Create global variable `myStatusBarItem`.
-let myStatusBarItem;
+// Create global variables `myStatusBarItem`.
+let myStatusBarItem: vscode.StatusBarItem;
 
 /**
  * @param {vscode.ExtensionContext} context
  */
-function activate(context) {
+export function activate(context: vscode.ExtensionContext) {
 
     // Use the console to output diagnostic information (console.log) and errors (console.error)
     // This line of code will only be executed once when your extension is activated
@@ -42,17 +42,17 @@ function activate(context) {
     initStatusBarItem(context);
 }
 
-function initAddFolderToWorkspace(context) {
+function initAddFolderToWorkspace(context: vscode.ExtensionContext) {
 
     const addFolderToWorkspaceId = 'znuny.addFolderToWorkspace';
     context.subscriptions.push(vscode.commands.registerCommand(addFolderToWorkspaceId, async () => {
 
-        let workspaceDirectories = [],
+        let workspaceDirectories: string[] = [],
             newWorkspaceFound = 0,
             manualWorkspace = '',
             manualDirectoryString = '-- Add manually a directory --';
 
-        let config = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
+        let config: any = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
 
         // Check if workspaces are defined.
         if (!config.workspaces.length && !config.recursiveWorkspaces.length) {
@@ -160,7 +160,7 @@ function initAddFolderToWorkspace(context) {
     }))
 }
 
-function initRemoveFolderFromWorkspace(context) {
+function initRemoveFolderFromWorkspace(context: vscode.ExtensionContext) {
 
     const removeFolderFromWorkspaceId = 'znuny.removeFolderFromWorkspace';
     context.subscriptions.push(vscode.commands.registerCommand(removeFolderFromWorkspaceId, async () => {
@@ -201,8 +201,7 @@ function initRemoveFolderFromWorkspace(context) {
     }))
 }
 
-
-function initCustomizer(context) {
+function initCustomizer(context: vscode.ExtensionContext) {
 
     const customizerId = 'znuny.customizer';
     context.subscriptions.push(vscode.commands.registerCommand(customizerId, async () => {
@@ -213,14 +212,32 @@ function initCustomizer(context) {
             vscode.commands.executeCommand('workbench.action.addRootFolder');
             return;
         }
-        let config = vscode.workspace.getConfiguration('znuny').get('customizer');
+
+        let url,
+            response,
+            json: any,
+            options : any = {},
+            config: any = vscode.workspace.getConfiguration('znuny').get('customizer'),
+            repositories = Object.assign([], config.repositories);
+
+        if (
+            config.githubUsername
+            && config.githubToken
+            && config.githubUsername.length > 0
+            && config.githubToken.length > 0
+        ){
+            let credentials = btoa(`${config.githubUsername}:${config.githubToken}`);
+            options = {
+                headers: {'Authorization': `Basic ${credentials}`}
+            };
+        }
 
         // Create Repository Selection.
         if (config.informationMessages != 'false') {
             vscode.window.showInformationMessage(`Znuny - Customizer (1/5): Fetching GitHub repositories.`);
         }
 
-        const repository = await vscode.window.showQuickPick(config.repositories, {
+        const repository = await vscode.window.showQuickPick(repositories, {
             title: 'Znuny - Customizer (1/5)',
             placeHolder: 'Znuny - Customizer: Select GitHub Repositories...',
             canPickMany: false,
@@ -228,7 +245,7 @@ function initCustomizer(context) {
         if (!repository) return;
 
         // Create Branch Selection.
-        let url = `https://api.github.com/repos/znuny/${repository}/branches`;
+        url = `https://api.github.com/repos/znuny/${repository}/branches`;
         if (config.informationMessages != 'false') {
             let message = `Znuny - Customizer (2/5): Fetching branches.`;
             if (config.informationMessages == 'verbose') {
@@ -237,9 +254,9 @@ function initCustomizer(context) {
             vscode.window.showInformationMessage(message);
         }
 
-        let response = await fetch(url);
-        let json = await response.json();
-        let branches = [];
+        response = await fetch(url, options);
+        json = await response.json();
+        let branches: string[] = [];
 
         if (json.message) {
             vscode.window.showErrorMessage(`Znuny - Customizer: ${json.message}.`);
@@ -268,16 +285,16 @@ function initCustomizer(context) {
             vscode.window.showInformationMessage(message)
         }
 
-        response = await fetch(url);
+        response = await fetch(url, options);
         json = await response.json();
-        let files = [];
+        let files : string[] = [];
 
         if (json.message) {
             vscode.window.showErrorMessage(`Znuny - Customizer: ${json.message}.`);
             return;
         }
 
-        json.tree.forEach(function (file) {
+        json.tree.forEach(function (file: any) {
             if (file.type == 'tree') return false;
             files.push(file.path);
         });
@@ -291,7 +308,7 @@ function initCustomizer(context) {
         if (!vscode.workspace.workspaceFolders.length) return;
 
         // Get all workspace folders.
-        let workspaceFolders = [];
+        let workspaceFolders : string[] = [];
         vscode.workspace.workspaceFolders.forEach(workspaceFolder => {
             workspaceFolders.push(workspaceFolder.uri.path)
         })
@@ -318,14 +335,16 @@ function initCustomizer(context) {
             vscode.window.showInformationMessage(`Znuny - Customizer: Fetching file data for file: "${file}" from branch: "${branch}" from url: "${url}".`);
         }
 
-        response = await fetch(url);
+        response = await fetch(url, options);
         json = await response.json();
         if (json.message) {
             vscode.window.showErrorMessage(`Znuny - Customizer: ${json.message}.`);
             return;
         }
 
-        let content = Buffer.from(json['content'], 'base64').toString('utf-8');
+        const writeBytes = toUint8Array(json.content);
+        let content = new Uint8Array(writeBytes);
+
         if (!content) {
             vscode.window.showErrorMessage(`Znuny - Customizer: No file content exists.`);
             return;
@@ -344,7 +363,7 @@ function initCustomizer(context) {
             vscode.window.showInformationMessage(`Znuny - Customizer: Fetching commits for file: "${file}" from branch: "${branch}" from url: "${url}".`);
         }
 
-        response = await fetch(url);
+        response = await fetch(url, options);
         let commits = await response.json();
 
         // Add customer header.
@@ -376,7 +395,6 @@ function initCustomizer(context) {
             file = `Custom/${file}`;
         }
 
-        const wsEdit = new vscode.WorkspaceEdit();
         const filePath = vscode.Uri.file(workspaceFolder + '/' + file);
 
         if (!filePath) {
@@ -384,18 +402,21 @@ function initCustomizer(context) {
             return;
         }
 
-        wsEdit.createFile(filePath, { ignoreIfExists: true });
-        wsEdit.insert(filePath, new vscode.Position(0, 0), content);
+        try {
+            await vscode.workspace.fs.writeFile(filePath, content);
 
-        // Apply all changes.
-        vscode.workspace.applyEdit(wsEdit);
-        if (config.informationMessages != 'false') {
-            vscode.window.showInformationMessage(`Znuny - Customizer (5/5): Added file ${filePath.path} `);
+            if (config.informationMessages !== 'false') {
+                vscode.window.showInformationMessage(`Znuny - Customizer (5/5): Added file ${filePath.path}`);
+            }
+        } catch (err) {
+            console.error(err);
+            vscode.window.showErrorMessage(`GitHubFileFetcher: ${err}.`);
         }
+
     }))
 }
 
-function initGenerateFilelist(context) {
+function initGenerateFilelist(context: vscode.ExtensionContext) {
 
     const generateFilelistId = 'znuny.generateFilelist';
     context.subscriptions.push(vscode.commands.registerCommand(generateFilelistId, async () => {
@@ -405,7 +426,7 @@ function initGenerateFilelist(context) {
         if (!activeEditor) return; // No open text editor.
         if (!activeEditor.document.fileName.endsWith('.sopm')) return; // No SOPM file.
 
-        let config = vscode.workspace.getConfiguration('znuny').get('generateFilelist');
+        let config: any = vscode.workspace.getConfiguration('znuny').get('generateFilelist');
 
         let fileName = activeEditor.document.fileName;
         var workspace = fileName.substr(0, fileName.lastIndexOf("/") + 1);
@@ -444,7 +465,7 @@ function initGenerateFilelist(context) {
     }))
 }
 
-function initObjectDependencies(context) {
+function initObjectDependencies(context: vscode.ExtensionContext) {
 
     const objectDependenciesId = 'znuny.objectDependencies';
     context.subscriptions.push(vscode.commands.registerCommand(objectDependenciesId, () => {
@@ -494,7 +515,7 @@ function initObjectDependencies(context) {
     }))
 }
 
-function initQuoteWithMarker(context) {
+function initQuoteWithMarker(context: vscode.ExtensionContext) {
     const quoteWithMarkerId = 'znuny.quoteWithMarker';
     context.subscriptions.push(vscode.commands.registerCommand(quoteWithMarkerId, () => {
 
@@ -627,7 +648,7 @@ function initQuoteWithMarker(context) {
     }))
 }
 
-function initStatusBarItem(context) {
+function initStatusBarItem(context: vscode.ExtensionContext) {
 
     let config = vscode.workspace.getConfiguration('znuny').get('statusBar');
     const showZnunyVersionId = 'znuny.showZnunyVersion';
@@ -732,9 +753,4 @@ function updateStatusBarItem() {
 }
 
 // This method is called when your extension is deactivated.
-function deactivate() { }
-
-module.exports = {
-    activate,
-    deactivate
-}
+export function deactivate() { }
