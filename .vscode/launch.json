@@ -15,7 +15,7 @@
             "outFiles": [
                 "${workspaceFolder}/out/**/*.js"
             ],
-            "preLaunchTask": "npm: compile"
+            "preLaunchTask": "npm: build"
         },
         {
             "name": "Run Web Extension",
@@ -29,7 +29,7 @@
             "outFiles": [
                 "${workspaceFolder}/out/web/**/*.js"
             ],
-            "preLaunchTask": "npm: compile-web"
+            "preLaunchTask": "npm: build-web"
         },
         {
             "name": "Run Tests",

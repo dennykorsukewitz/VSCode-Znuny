@@ -29,26 +29,27 @@
     "Snippets"
   ],
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.85.0"
   },
   "activationEvents": [
     "workspaceContains:**.sopm",
     "workspaceContains:RELEASE"
   ],
-  "main": "./src/extension",
+  "main": "./dist/extension.js",
+  "browser": "./dist/extension.js",
   "scripts": {
     "vscode:prepublish": "npm run esbuild-base -- --minify",
     "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
     "watch": "tsc -watch -p ./",
-    "compile": "tsc -p ./",
-    "compile-web": "npm run esbuild-base -- --sourcemap",
+    "build": "tsc -p ./",
+    "build-web": "npm run esbuild-base -- --sourcemap",
     "lint": "eslint src --ext ts",
     "lint-fix": "eslint src --ext ts --fix",
-    "pretest": "rm -Rf .vscode-test && npm run compile && npm run lint",
+    "pretest": "rm -Rf .vscode-test && npm run build && npm run lint",
     "test": "node ./dist/test/runTest.js",
-    "open-in-browser": "npm run compile-web && npx @vscode/test-web --extensionDevelopmentPath=."
+    "open-in-browser": "npm run build-web && npx @vscode/test-web --extensionDevelopmentPath=."
   },
   "dependencies": {
     "base64-to-uint8array": "^1.0.0",
