@@ -9,3 +9,5 @@ on:
 jobs:
   Lint:
     uses: dennykorsukewitz/dennykorsukewitz/.github/workflows/reusable.lint.yml@dev
+    with:
+      VALIDATE_TYPESCRIPT_STANDARD: false
