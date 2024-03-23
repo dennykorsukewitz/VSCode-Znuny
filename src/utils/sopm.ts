@@ -82,4 +82,4 @@ function getStructure(filePath) {
 module.exports = {
     getData,
     getStructure,
-}
+};

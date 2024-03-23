@@ -22,4 +22,4 @@ function getData(filePath) {
 
 module.exports = {
     getData,
-}
+};
