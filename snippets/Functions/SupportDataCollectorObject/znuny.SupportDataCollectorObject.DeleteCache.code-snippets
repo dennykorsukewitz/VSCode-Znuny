@@ -1,0 +1,10 @@
+{
+    "7.1 - znuny.SupportDataCollectorObject.DeleteCache": {
+        "body": [
+            "${1:\\$SupportDataCollectorObject->DeleteCache();}",
+        ],
+        "prefix": "znuny.SupportDataCollectorObject.DeleteCache",
+        "description": "7.1",
+        "scope": "perl"
+    }
+}

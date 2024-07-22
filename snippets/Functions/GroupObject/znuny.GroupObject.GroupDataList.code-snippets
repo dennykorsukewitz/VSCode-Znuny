@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0 - znuny.GroupObject.GroupDataList": {
+    "6.0|6.4|6.5|7.0|7.1 - znuny.GroupObject.GroupDataList": {
         "body": [
             "${1:my %GroupDataList = \\$GroupObject->GroupDataList();}",
         ],
         "prefix": "znuny.GroupObject.GroupDataList",
-        "description": "6.0|6.4|6.5|7.0",
+        "description": "6.0|6.4|6.5|7.0|7.1",
         "scope": "perl"
     }
 }

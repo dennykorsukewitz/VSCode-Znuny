@@ -1,10 +1,10 @@
 {
-    "7.0 - znuny.ActivityObject.InitConfig": {
+    "7.0|7.1 - znuny.ActivityObject.InitConfig": {
         "body": [
             "${1:my \\$Success = \\$ActivityObject->InitConfig();}",
         ],
         "prefix": "znuny.ActivityObject.InitConfig",
-        "description": "7.0",
+        "description": "7.0|7.1",
         "scope": "perl"
     }
 }

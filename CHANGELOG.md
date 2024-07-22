@@ -10,6 +10,16 @@ All notable changes to the "Znuny" extension will be documented in this file.
 - Added esbuild to get Browser Editor support.
 - Refactored code.
 
+## [1.4.1]
+
+### Snippets
+
+- Updated Snippets
+- Added Snippets
+  - `znuny.Module.AgentTicketMarkSeenUnseen.code-snippets`
+  - `znuny.DBObject.CheckRequiredDatabaseVersion.code-snippets`
+  - `znuny.SupportDataCollectorObject.DeleteCache.code-snippets`
+
 ## [1.3.1]
 
 ### Fixed

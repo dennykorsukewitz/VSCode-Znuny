@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0 - znuny.StandardTemplateObject.StandardTemplateUpdate": {
+    "6.0|6.4|6.5|7.0|7.1 - znuny.StandardTemplateObject.StandardTemplateUpdate": {
         "body": [
             "${1:\\$StandardTemplateObject->StandardTemplateUpdate(",
             "    ID           => 123,",
@@ -10,9 +10,18 @@
             "    ValidID      => \\$ValidID,",
             "    UserID       => \\$UserID,",
             ");}",
+            "${2:\\$StandardTemplateObject->StandardTemplateUpdate(",
+            "    ID           => 123,",
+            "    Name         => 'New Standard Template',",
+            "    Template     => 'Thank you for your email.',",
+            "    ContentType  => 'text/plain; charset=utf-8',",
+            "    TemplateType => 'Answer,Forward',",
+            "    ValidID      => \\$ValidID,",
+            "    UserID       => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateUpdate",
-        "description": "6.0|6.4|6.5|7.0",
+        "description": "6.0|6.4|6.5|7.0|7.1",
         "scope": "perl"
     }
 }

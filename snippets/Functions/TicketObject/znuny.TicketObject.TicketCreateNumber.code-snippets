@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0 - znuny.TicketObject.TicketCreateNumber": {
+    "6.0|6.4|6.5|7.0|7.1 - znuny.TicketObject.TicketCreateNumber": {
         "body": [
             "${1:my \\$TicketNumber = \\$TicketObject->TicketCreateNumber();}",
         ],
         "prefix": "znuny.TicketObject.TicketCreateNumber",
-        "description": "6.0|6.4|6.5|7.0",
+        "description": "6.0|6.4|6.5|7.0|7.1",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0 - AgentTicketPhoneCommon": {
+    "6.0|6.4|6.5|7.0|7.1 - AgentTicketPhoneCommon": {
         "body": [
             "AgentTicketPhoneCommon",
         ],
         "prefix": "AgentTicketPhoneCommon",
-        "description": "6.0|6.4|6.5|7.0",
+        "description": "6.0|6.4|6.5|7.0|7.1",
         "scope": "perl"
     }
 }

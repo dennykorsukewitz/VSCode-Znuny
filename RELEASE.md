@@ -1,12 +1,9 @@
-# [1.3.0]
+# [1.4.1]
 
-## AddFolderToWorkspace
+## Snippets
 
-### Maintenance
-
-- Added additional check if vscode.workspace.workspaceFolders exists.
-- Saves the new manually entered directory globally.
-
-### Recursive Workspaces (only first level)
-
-- Added new setting `znuny.addFolderToWorkspace.recursiveWorkspaces` to use recursive Workspaces (only first level).
+- Updated Snippets
+- Added Snippets
+  - `znuny.Module.AgentTicketMarkSeenUnseen.code-snippets`
+  - `znuny.DBObject.CheckRequiredDatabaseVersion.code-snippets`
+  - `znuny.SupportDataCollectorObject.DeleteCache.code-snippets`
