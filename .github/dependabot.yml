@@ -5,8 +5,24 @@
 
 version: 2
 updates:
-  - package-ecosystem: "github-actions" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: daily
+      interval: "weekly"
+      day: "sunday"
       time: "06:00"
+    assignees:
+      - "dennykorsukewitz"
+    reviewers:
+      - "dennykorsukewitz"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "06:00"
+    assignees:
+      - "dennykorsukewitz"
+    reviewers:
+      - "dennykorsukewitz"
