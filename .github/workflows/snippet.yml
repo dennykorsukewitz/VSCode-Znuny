@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        tag: ['rel-7_0-dev', 'dev']
+        tag: ['rel-7_1-dev', 'rel-7_0', 'dev']
     env:
       DB: mysql
       MYSQL_USER: "znuny"
