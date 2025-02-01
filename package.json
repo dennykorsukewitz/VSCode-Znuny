@@ -59,7 +59,7 @@
   },
   "dependencies": {
     "glob": "^11.0.0",
-    "node-fetch": "^2.6.9",
+    "node-fetch": "^3.3.2",
     "path": "^0.12.7",
     "vscode-uri": "^3.0.7",
     "xmldom": "^0.6.0",
