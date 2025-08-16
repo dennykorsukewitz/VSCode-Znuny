@@ -6,8 +6,6 @@ All notable changes to the "Znuny" extension will be documented in this file.
 
 ### Changed
 
-- Added workflow_dispatch to snippet workflow.
-- Updated workflow snippet matrix.
 - Fixed lint errors.
 
 ### Dependencies
