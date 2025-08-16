@@ -4,11 +4,15 @@ All notable changes to the "Znuny" extension will be documented in this file.
 
 ## [Unreleased]
 
-### Refactoring
+### Changed
 
-- Changed source language to TypeScript.
-- Added esbuild to get Browser Editor support.
-- Refactored code.
+- Fixed lint errors.
+
+### Fixed
+
+- Updated Snippets.
+- Fixed wrong snippet filename -> Change to _old.
+- Fixed wrong snippet filename -> Change back.
 
 ## [1.4.1]
 
