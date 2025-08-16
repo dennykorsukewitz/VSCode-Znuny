@@ -61,7 +61,7 @@ function getZnunyData() {
 async function getFileList(path) {
 
     const files = await glob.sync(path + '/**/*.*');
-    let fileList = files.map(file => file.replace(path, '')).filter((file) => file.match(/.*\.(pm|tt|t|xml|js|html\.tmpl)$/ig));
+    let fileList = files.map(file => file.replace(path, '')).filter((file) => file.match(/.*\.(pm|tt|t|xml|js|html\.tmpl|png|jpg|svg|gif|ico)$/ig));
 
     return fileList;
 }
