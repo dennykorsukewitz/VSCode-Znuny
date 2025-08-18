@@ -1,4 +1,4 @@
-<img align="right" width="150" height="150" src="doc/images/icon.png">
+<img align="right" width="150" height="150" src="doc/images/icon.png" alt="Znuny Extension Icon">
 
 # Znuny
 
@@ -186,7 +186,7 @@ The following steps are performed one after the other.
 | Name | Description | Default Value |
 | - | - | - |
 | znuny.customizer.copyright | Znuny Customizer Copyright. This Copyright will be added to the Customizer file under the Znuny Copyright. |  |
-| znuny.customizer.repositories | List of possible GitHub repositories. | Znuny|FAQ|... |
+| znuny.customizer.repositories | List of possible GitHub repositories. | `Znuny\|FAQ\|...` |
 
 ![Customizer](doc/images/customizer.gif)
 
@@ -241,7 +241,7 @@ This function quotes the selected area and adds a custom marker to it.
 | ----------------------- | ----------- |
 | bat                     | @REM        |
 | clojure                 | ;;          |
-| coffeescript            | #           |
+| CoffeeScript            | #           |
 | c                       | //          |
 | cpp                     | //          |
 | cuda-cpp                | //          |
@@ -249,7 +249,7 @@ This function quotes the selected area and adds a custom marker to it.
 | CSS                     |             |
 | dart                    | //          |
 | diff                    | #           |
-| dockerfile              | #           |
+| Dockerfile              | #           |
 | fsharp                  | //          |
 | git-commit              | #           |
 | git-rebase              | #           |
@@ -261,28 +261,28 @@ This function quotes the selected area and adds a custom marker to it.
 | HTML                    |             |
 | ini                     | ;           |
 | plaintext               | #           |
-| java                    | //          |
+| Java                    | //          |
 | javascriptreact         | //          |
 | JavaScript              | //          |
 | jsx-tags                |             |
-| json                    | //          |
+| JSON                    | //          |
 | jsonc                   | //          |
 | jsonl                   | //          |
 | julia                   | #           |
 | tex                     | %           |
-| latex                   | %           |
+| LaTeX                   | %           |
 | cpp_embedded_latex      | //          |
 | markdown_latex_combined |             |
 | less                    | //          |
 | lua                     | --          |
-| makefile                | #           |
+| Makefile                | #           |
 | Markdown                |             |
 | objective-c             | //          |
 | objective-cpp           | //          |
 | perl                    | #           |
 | perl6                   | #           |
 | php                     | //          |
-| powershell              | #           |
+| PowerShell              | #           |
 | jade                    | //-         |
 | python                  | #           |
 | r                       | #           |
@@ -293,15 +293,15 @@ This function quotes the selected area and adds a custom marker to it.
 | SCSS                    | //          |
 | shaderlab               | //          |
 | shellscript             | #           |
-| sql                     | --          |
+| SQL                     | --          |
 | swift                   | //          |
 | TypeScript              | //          |
 | typescriptreact         | //          |
 | vb                      | '           |
-| xml                     |             |
+| XML                     |             |
 | xsl                     |             |
 | dockercompose           | #           |
-| yaml                    | #           |
+| YAML                    | #           |
 
 </details>
 
@@ -364,7 +364,7 @@ Download latest [vsix file](https://github.com/dennykorsukewitz/VSCode-Znuny/rel
 
 ### 3. Source code
 
-Download archive with the latest [release](https://github.com/dennykorsukewitz/VSCode-Znuny/releases) and unpack it to VisualStudioCode extensions folder
+Download archive with the latest [release](https://github.com/dennykorsukewitz/VSCode-Znuny/releases) and unpack it to Visual Studio Code extensions folder
 `$HOME/.vscode/extensions/`.
 
 ---

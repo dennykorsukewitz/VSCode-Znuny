@@ -467,7 +467,7 @@ function initObjectDependencies(context) {
         let objectDependencies = [];
 
         // Search for all ObjectDependencies
-        let objectDependenciesPattern = /\$Kernel::OM\->(?:Get|Create)\(\s*(?:\'|\")([^\'\"]+)(?:\'|\")/g;
+        let objectDependenciesPattern = /\$Kernel::OM->(?:Get|Create)\(\s*(?:['"])([^'"]+)(?:['"])/g;
         let objectDependenciesMatches = [...text.matchAll(objectDependenciesPattern)];
 
         let objectDependenciesTemplate = "our @ObjectDependencies = (\n";
