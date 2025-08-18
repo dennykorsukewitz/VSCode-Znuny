@@ -1,7 +1,22 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ParserObject.GetAttachments": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ParserObject.GetAttachments": {
         "body": [
-            "${1:my @Attachments = \\$ParserObject->GetAttachments();",
+            "${1:my @Attachments = \\$ParserObject->GetAttachments(",
+            "    UserType => 'Agent' # optional, but recommended",
+            ");",
+            "for my \\$Attachment (@Attachments) {",
+            "    print \\$Attachment->{Filename\\};",
+            "    print \\$Attachment->{Charset\\};",
+            "    print \\$Attachment->{MimeType\\};",
+            "    print \\$Attachment->{ContentType\\};",
+            "    print \\$Attachment->{Content\\};",
+            "",
+            "    # optional",
+            "    print \\$Attachment->{ContentID\\};",
+            "    print \\$Attachment->{ContentAlternative\\};",
+            "    print \\$Attachment->{ContentMixed\\};",
+            "\\}}",
+            "${2:my @Attachments = \\$ParserObject->GetAttachments();",
             "for my \\$Attachment (@Attachments) {",
             "    print \\$Attachment->{Filename\\};",
             "    print \\$Attachment->{Charset\\};",
@@ -16,7 +31,7 @@
             "\\}}",
         ],
         "prefix": "znuny.ParserObject.GetAttachments",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.CustomerGroupObject.GroupCustomerAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CustomerGroupObject.GroupCustomerAdd": {
         "body": [
             "${1:my \\$Success = \\$CustomerGroupObject->GroupCustomerAdd(",
             "    GID        => \\$GID,",
@@ -25,9 +25,33 @@
             "    \\},",
             "    UserID => \\$UserID,",
             ");}",
+            "${2:my \\$Success = \\$CustomerGroupObject->GroupCustomerAdd(",
+            "    GID        => \\$GID,",
+            "    CustomerID => \\$CustomerID,",
+            "    Permission => {",
+            "        'Ticket::CustomerID::Same' => {",
+            "            ro            => 1,",
+            "            move_into     => 1,",
+            "            create        => 1,",
+            "            owner         => 1,",
+            "            priority      => 0,",
+            "            rw            => 0,",
+            "        \\},",
+            "        'Ticket::CustomerID::Other' => {",
+            "            ro        => 1,",
+            "            move_into => 1,",
+            "            create    => 1,",
+            "            owner     => 1,",
+            "            priority  => 0,",
+            "            rw        => 0,",
+            "        \\},",
+            "        ...",
+            "    \\},",
+            "    UserID => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupCustomerAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

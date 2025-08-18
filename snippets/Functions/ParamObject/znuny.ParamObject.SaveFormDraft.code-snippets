@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ParamObject.SaveFormDraft": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ParamObject.SaveFormDraft": {
         "body": [
             "${1:my \\$FormDraftID = \\$ParamObject->SaveFormDraft(",
             "    UserID         => \\$UserID,",
@@ -12,9 +12,20 @@
             "        # ...",
             "    \\},",
             ");}",
+            "${2:my \\$FormDraftID = \\$ParamObject->SaveFormDraft(",
+            "    UserID         => \\$UserID,",
+            "    ObjectType     => 'Ticket',",
+            "    ObjectID       => \\$ObjectID,",
+            "    OverrideParams => {               # optional, can contain strings and array references",
+            "        Subaction   => undef,",
+            "        UserID      => \\$UserID,",
+            "        CustomParam => [ 1, 2, 3, ],",
+            "        ...",
+            "    \\},",
+            ");}",
         ],
         "prefix": "znuny.ParamObject.SaveFormDraft",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

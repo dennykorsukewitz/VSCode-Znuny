@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ServiceObject.ServiceUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ServiceObject.ServiceUpdate": {
         "body": [
             "${1:my \\$True = \\$ServiceObject->ServiceUpdate(",
             "    ServiceID => \\$ServiceID,",
@@ -20,10 +20,22 @@
             "    ValidID   => \\$ValidID,",
             "    Comment   => 'Comment',    # (optional)",
             "    UserID    => \\$UserID,",
+            "",
+            "    # ITSMCore (if installed)",
+            "    TypeID      => \\$TypeID,",
+            "    Criticality => '3 normal',",
+            ");}",
+            "${3:my \\$True = \\$ServiceObject->ServiceUpdate(",
+            "    ServiceID => \\$ServiceID,",
+            "    ParentID  => \\$ParentID,           # (optional)",
+            "    Name      => 'Service Name',",
+            "    ValidID   => \\$ValidID,",
+            "    Comment   => 'Comment',    # (optional)",
+            "    UserID    => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.ServiceObject.ServiceUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

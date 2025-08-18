@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.ExcelObject.MergeFormatDefinitions": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.ExcelObject.MergeFormatDefinitions": {
         "body": [
             "${1:my %Format = \\$ExcelObject->MergeFormatDefinitions(",
             "    Merge             => 1,                 # if 1, merges all format definitions from last to first in array 'FormatDefinitions'",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.ExcelObject.MergeFormatDefinitions",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

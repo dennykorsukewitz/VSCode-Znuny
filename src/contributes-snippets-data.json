@@ -600,6 +600,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Modules/znuny.Module.AgentTicketProcessCategory.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Modules/znuny.Module.AgentTicketQueue.code-snippets"
     },
     {
@@ -661,6 +665,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Modules/znuny.Module.CustomerTicketProcess.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Modules/znuny.Module.CustomerTicketProcessCategory.code-snippets"
     },
     {
       "language" : "perl",
@@ -761,6 +769,22 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleAttachmentIndex.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleColorGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleColorInit.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleColorList.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleColorSet.code-snippets"
     },
     {
       "language" : "perl",
@@ -888,6 +912,26 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseCopy.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseDelete.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseExport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseExportDataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseExportFilenameGet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseGet.code-snippets"
     },
     {
@@ -896,11 +940,23 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseImport.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseList.code-snippets"
     },
     {
       "language" : "perl",
       "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseQueue.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseQueueLinkByAutoResponse.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AutoResponseObject/znuny.AutoResponseObject.AutoResponseQueuesList.code-snippets"
     },
     {
       "language" : "perl",
@@ -1636,6 +1692,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/DBObject/znuny.DBObject.GetColumnMaxLengths.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/DBObject/znuny.DBObject.GetColumnNames.code-snippets"
     },
     {
@@ -2272,6 +2332,14 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/HTMLUtilsObject/znuny.HTMLUtilsObject.RTEContentCssDefaultFromSysconfigGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/HTMLUtilsObject/znuny.HTMLUtilsObject.RTEContentCssInternalGet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/HTMLUtilsObject/znuny.HTMLUtilsObject.Safety.code-snippets"
     },
     {
@@ -2281,6 +2349,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/HTMLUtilsObject/znuny.HTMLUtilsObject.ToHTML.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/HTMLUtilsObject/znuny.HTMLUtilsObject.ToHTMLReplaceWithParagraphs.code-snippets"
     },
     {
       "language" : "perl",
@@ -2660,6 +2732,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.CustomerSetRichTextParameters.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.CustomerUserAddressBookListShow.code-snippets"
     },
     {
@@ -2780,6 +2856,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.SetRichTextParameters.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.SkinValidate.code-snippets"
     },
     {
@@ -2789,6 +2869,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.UserInitialsGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.WrapPlainText.code-snippets"
     },
     {
       "language" : "perl",
@@ -2944,7 +3028,15 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/LogObject/znuny.LogObject.Debug.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/LogObject/znuny.LogObject.Dumper.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LogObject/znuny.LogObject.Error.code-snippets"
     },
     {
       "language" : "perl",
@@ -2953,6 +3045,14 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/LogObject/znuny.LogObject.GetLogEntry.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LogObject/znuny.LogObject.Info.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LogObject/znuny.LogObject.Notice.code-snippets"
     },
     {
       "language" : "perl",
@@ -3132,11 +3232,27 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/NotificationEventObject/znuny.NotificationEventObject.NotificationCopy.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/NotificationEventObject/znuny.NotificationEventObject.NotificationDelete.code-snippets"
     },
     {
       "language" : "perl",
       "path" : "./snippets/Functions/NotificationEventObject/znuny.NotificationEventObject.NotificationEventCheck.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/NotificationEventObject/znuny.NotificationEventObject.NotificationExport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/NotificationEventObject/znuny.NotificationEventObject.NotificationExportDataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/NotificationEventObject/znuny.NotificationEventObject.NotificationExportFilenameGet.code-snippets"
     },
     {
       "language" : "perl",
@@ -3652,6 +3768,18 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/ProcessObject/znuny.ProcessObject.ProcessPreferencesDelete.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ProcessObject/znuny.ProcessObject.ProcessPreferencesGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ProcessObject/znuny.ProcessObject.ProcessPreferencesSet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/ProcessObject/znuny.ProcessObject.ProcessStartpointGet.code-snippets"
     },
     {
@@ -3808,11 +3936,43 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationCopy.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationDelete.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationExport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationExportDataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationExportFilenameGet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationGet.code-snippets"
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationImport.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationList.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationQueueLinkBySalutation.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SalutationObject/znuny.SalutationObject.SalutationQueuesList.code-snippets"
     },
     {
       "language" : "perl",
@@ -4300,11 +4460,43 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureCopy.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureDelete.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureExport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureExportDataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureExportFilenameGet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureGet.code-snippets"
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureImport.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureList.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureQueueLinkBySignature.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/SignatureObject/znuny.SignatureObject.SignatureQueuesList.code-snippets"
     },
     {
       "language" : "perl",
@@ -4324,11 +4516,39 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateAttachmentLinkByTemplate.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateAttachmentsList.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateCopy.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateDelete.code-snippets"
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateExport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateExportDataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateExportFilenameGet.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateImport.code-snippets"
     },
     {
       "language" : "perl",
@@ -4337,6 +4557,14 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateLookup.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateQueueLinkByTemplate.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/StandardTemplateObject/znuny.StandardTemplateObject.StandardTemplateQueuesList.code-snippets"
     },
     {
       "language" : "perl",
@@ -5333,6 +5561,58 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/TransitionObject/znuny.TransitionObject.TransitionValidationTypeListGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/ObjectManager/znuny.ObjectManager.TranslationObject.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataAdd.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataDelete.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataDeployment.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataExport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataImport.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataListGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataNameExists.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataSearch.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.DataUpdate.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.InitConfig.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/TranslationObject/znuny.TranslationObject.TranslationFilesDelete.code-snippets"
     },
     {
       "language" : "perl",

@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SystemDataObject.SystemDataDelete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SystemDataObject.SystemDataDelete": {
         "body": [
             "${1:\\$SystemDataObject->SystemDataDelete(",
+            "    Key    => 'OTRS Version',",
+            "    UserID => \\$UserID,",
+            ");}",
+            "${2:\\$SystemDataObject->SystemDataDelete(",
             "    Key    => 'Znuny Version',",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SystemDataObject.SystemDataDelete",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.StatsObject.GetStatsList": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.GetStatsList": {
         "body": [
             "${1:my \\$ArrayRef = \\$StatsObject->GetStatsList(",
             "    AccessRw  => 1,                             # optional, indicates that user may see all statistics",
@@ -7,9 +7,15 @@
             "    Direction => 'ASC' || 'DESC',               # optional",
             "    UserID    => \\$UserID,",
             ");}",
+            "${2:my \\$ArrayRef = \\$StatsObject->GetStatsList(",
+            "    AccessRw  => 1, # Optional, indicates that user may see all statistics",
+            "    OrderBy   => 'ID' || 'Title' || 'Object', # optional",
+            "    Direction => 'ASC' || 'DESC',             # optional",
+            "    UserID    => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.StatsObject.GetStatsList",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

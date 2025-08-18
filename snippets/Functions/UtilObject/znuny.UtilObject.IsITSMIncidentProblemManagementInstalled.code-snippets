@@ -1,10 +1,10 @@
 {
-    "6.5|7.0|7.1 - znuny.UtilObject.IsITSMIncidentProblemManagementInstalled": {
+    "6.5|7.0|7.1|7.2 - znuny.UtilObject.IsITSMIncidentProblemManagementInstalled": {
         "body": [
             "${1:my \\$IsITSMIncidentProblemManagementInstalled = \\$UtilObject->IsITSMIncidentProblemManagementInstalled();}",
         ],
         "prefix": "znuny.UtilObject.IsITSMIncidentProblemManagementInstalled",
-        "description": "6.5|7.0|7.1",
+        "description": "6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

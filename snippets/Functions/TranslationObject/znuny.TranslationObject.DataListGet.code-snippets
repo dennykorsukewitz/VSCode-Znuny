@@ -1,0 +1,22 @@
+{
+    "7.2 - znuny.TranslationObject.DataListGet": {
+        "body": [
+            "${1:my @Data = \\$TranslationObject->DataListGet(",
+            "    ID              => '...', # optional",
+            "    LanguageID      => \\$LanguageID, # optional",
+            "    Source          => '...', # optional",
+            "    Destination     => '...', # optional",
+            "    ValidID         => \\$ValidID, # optional",
+            "    CreateTime      => '...', # optional",
+            "    CreateBy        => '...', # optional",
+            "    ChangeTime      => '...', # optional",
+            "    ChangeBy        => '...', # optional",
+            "    DeploymentState => '...', # optional",
+            "    UserID          => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TranslationObject.DataListGet",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

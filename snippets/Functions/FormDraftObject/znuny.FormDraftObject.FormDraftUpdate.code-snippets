@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.FormDraftObject.FormDraftUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.FormDraftObject.FormDraftUpdate": {
         "body": [
             "${1:my \\$Success = \\$FormDraftObject->FormDraftUpdate(",
             "    FormData => {",
@@ -26,9 +26,34 @@
             "    FormDraftID => \\$FormDraftID,",
             "    UserID      => \\$UserID,",
             ");}",
+            "${2:my \\$Success = \\$FormDraftObject->FormDraftUpdate(",
+            "    FormData => {",
+            "        InformUserID => [ \\$InformUserID, 124, ],",
+            "        Subject      => 'Request for information',",
+            "        ...",
+            "    \\},",
+            "    FileData => [                                           # optional",
+            "        {",
+            "            'Content'     => 'Dear customer\n\nthank you!',",
+            "            'ContentType' => 'text/plain',",
+            "            'ContentID'   => undef,                         # optional",
+            "            'Filename'    => 'thankyou.txt',",
+            "            'Filesize'    => 25,",
+            "            'FileID'      => 1,",
+            "            'Disposition' => 'attachment',",
+            "        \\},",
+            "        ...",
+            "    ],",
+            "    ObjectType  => 'Ticket',",
+            "    ObjectID    => \\$ObjectID,",
+            "    Action      => 'AgentTicketCompose',",
+            "    Title       => 'my draft',",
+            "    FormDraftID => \\$FormDraftID,",
+            "    UserID      => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

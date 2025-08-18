@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailQueueObject.Get": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailQueueObject.Get": {
         "body": [
             "${1:my \\$Item = \\$MailQueueObject->Get(",
+            "    ID              => '...' # optional",
+            "    ArticleID       => \\$ArticleID # optional",
+            ");}",
+            "${2:my \\$Item = \\$MailQueueObject->Get(",
             "    ID        => '...', # optional",
             "    ArticleID => \\$ArticleID, # optional",
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.Get",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

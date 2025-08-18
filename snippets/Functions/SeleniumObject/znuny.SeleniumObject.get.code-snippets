@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SeleniumObject.get": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.get": {
         "body": [
             "${1:\\$SeleniumObject->get(",
             "    \\$URL,",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.get",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

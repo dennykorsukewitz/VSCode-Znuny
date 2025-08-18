@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.StatsObject.StatsCleanUp": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.StatsCleanUp": {
         "body": [
             "${1:my \\$Result = \\$StatsObject->StatsCleanUp(",
             "    UserID          => \\$UserID,",
@@ -8,9 +8,16 @@
             "    # or",
             "    CheckAllObjects => 1,",
             ");}",
+            "${2:my \\$Result = \\$StatsObject->StatsCleanUp(",
+            "    UserID => \\$UserID,",
+            "",
+            "    ObjectNames => [ 'Ticket', 'TicketList' ],",
+            "    or",
+            "    CheckAllObjects => 1,",
+            ");}",
         ],
         "prefix": "znuny.StatsObject.StatsCleanUp",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

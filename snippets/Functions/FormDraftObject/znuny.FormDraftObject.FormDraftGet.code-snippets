@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.FormDraftObject.FormDraftGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.FormDraftObject.FormDraftGet": {
         "body": [
             "${1:my \\$FormDraft = \\$FormDraftObject->FormDraftGet(",
+            "    FormDraftID    => \\$FormDraftID,",
+            "    GetContent => 1,                # optional, default 1",
+            "    UserID     => \\$UserID,",
+            ");}",
+            "${2:my \\$FormDraft = \\$FormDraftObject->FormDraftGet(",
             "    FormDraftID => \\$FormDraftID,",
             "    GetContent  => 1,                # optional, default 1",
             "    UserID      => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

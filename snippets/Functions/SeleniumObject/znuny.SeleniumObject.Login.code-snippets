@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SeleniumObject.Login": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.Login": {
         "body": [
             "${1:\\$SeleniumObject->Login(",
             "    Type     => 'Agent', # Agent|Customer",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.Login",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailAccountObject.MailAccountUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailAccountObject.MailAccountUpdate": {
         "body": [
             "${1:\\$MailAccountObject->MailAccountUpdate(",
             "    ID            => 1,",
@@ -29,9 +29,24 @@
             "    QueueID             => \\$QueueID,",
             "    UserID              => \\$UserID,",
             ");}",
+            "${3:my \\$Success = \\$MailAccountObject->MailAccountUpdate(",
+            "    ID                  => 1,",
+            "    Login               => 'mail',",
+            "    Password            => 'SomePassword',",
+            "    Host                => 'pop3.example.com',",
+            "    Type                => 'POP3',",
+            "    IMAPFolder          => 'Some Folder', # optional, only valid for IMAP-type accounts",
+            "    ValidID             => \\$ValidID,",
+            "    Trusted             => 0,",
+            "    AuthenticationType  => 'oauth2_token', # optional; defaults to 'password'",
+            "    OAuth2TokenConfigID => \\$OAuth2TokenConfigID, # optional",
+            "    DispatchingBy       => 'Queue', # Queue|From",
+            "    QueueID             => \\$QueueID,",
+            "    UserID              => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

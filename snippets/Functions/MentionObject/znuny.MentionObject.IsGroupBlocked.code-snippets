@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.MentionObject.IsGroupBlocked": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.MentionObject.IsGroupBlocked": {
         "body": [
             "${1:my \\$GroupIsBlocked = \\$MentionObject->IsGroupBlocked(",
             "    Group => 'users',",
             ");}",
         ],
         "prefix": "znuny.MentionObject.IsGroupBlocked",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

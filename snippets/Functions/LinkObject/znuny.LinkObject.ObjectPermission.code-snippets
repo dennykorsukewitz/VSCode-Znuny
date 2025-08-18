@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.LinkObject.ObjectPermission": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LinkObject.ObjectPermission": {
         "body": [
             "${1:\\$Permission = \\$LinkObject->ObjectPermission(",
+            "    Object  => 'Ticket',",
+            "    Key     => 123,",
+            "    UserID  => \\$UserID,",
+            ");}",
+            "${2:\\$Permission = \\$LinkObject->ObjectPermission(",
             "    Object => 'Ticket',",
             "    Key    => 123,",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectPermission",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

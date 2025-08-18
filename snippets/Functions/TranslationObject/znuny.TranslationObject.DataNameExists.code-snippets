@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.TranslationObject.DataNameExists": {
+        "body": [
+            "${1:my \\$NameExists = \\$TranslationObject->DataNameExists(",
+            "    ID     => 1234,",
+            "    Name   => '...',",
+            "    UserID => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TranslationObject.DataNameExists",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

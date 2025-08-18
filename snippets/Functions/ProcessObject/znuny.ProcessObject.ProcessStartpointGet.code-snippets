@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ProcessObject.ProcessStartpointGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ProcessObject.ProcessStartpointGet": {
         "body": [
             "${1:my \\$Start = \\$ProcessObject->ProcessStartpointGet(",
             "    ProcessEntityID => \\$ProcessEntityID,",
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessStartpointGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

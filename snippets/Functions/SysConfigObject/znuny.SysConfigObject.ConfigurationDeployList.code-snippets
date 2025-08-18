@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SysConfigObject.ConfigurationDeployList": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SysConfigObject.ConfigurationDeployList": {
         "body": [
             "${1:my @List = \\$SysConfigObject->ConfigurationDeployList();}",
         ],
         "prefix": "znuny.SysConfigObject.ConfigurationDeployList",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

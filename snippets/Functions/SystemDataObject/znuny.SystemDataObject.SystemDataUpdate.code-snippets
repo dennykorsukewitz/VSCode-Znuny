@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SystemDataObject.SystemDataUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SystemDataObject.SystemDataUpdate": {
         "body": [
             "${1:my \\$Result = \\$SystemDataObject->SystemDataUpdate(",
+            "    Key    => 'OTRS Version',",
+            "    Value  => 'Some New Value',",
+            "    UserID => \\$UserID,",
+            ");}",
+            "${2:my \\$Result = \\$SystemDataObject->SystemDataUpdate(",
             "    Key    => 'Znuny Version',",
             "    Value  => 'Some New Value',",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.SystemDataObject.SystemDataUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

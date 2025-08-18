@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailAccountObject.MailAccountFetch": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailAccountObject.MailAccountFetch": {
         "body": [
             "${1:my \\$Ok = \\$MailAccountObject->MailAccountFetch(",
             "    Login         => 'mail',",
@@ -22,9 +22,19 @@
             "    QueueID       => \\$QueueID,",
             "    UserID        => \\$UserID,",
             ");}",
+            "${3:my \\$Ok = \\$MailAccountObject->MailAccountFetch(",
+            "    Login         => 'mail',",
+            "    Password      => 'SomePassword',",
+            "    Host          => 'pop3.example.com',",
+            "    Type          => 'POP3', # POP3,POP3s,IMAP,IMAPS",
+            "    Trusted       => 0,",
+            "    DispatchingBy => 'Queue', # Queue|From",
+            "    QueueID       => \\$QueueID,",
+            "    UserID        => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountFetch",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

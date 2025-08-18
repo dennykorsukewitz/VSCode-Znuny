@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.NotificationEventObject.NotificationExportFilenameGet": {
+        "body": [
+            "${1:my \\$Filename = \\$NotificationEventObject->NotificationExportFilenameGet(",
+            "    Type => 'Appointment',",
+            "    Name => 'notification_1',",
+            "    Format => 'YAML',",
+            ");}",
+        ],
+        "prefix": "znuny.NotificationEventObject.NotificationExportFilenameGet",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

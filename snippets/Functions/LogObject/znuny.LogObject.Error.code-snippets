@@ -1,0 +1,10 @@
+{
+    "7.2 - znuny.LogObject.Error": {
+        "body": [
+            "${1:\\$LogObject->Error(\\"Something went wrong!\\");}",
+        ],
+        "prefix": "znuny.LogObject.Error",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

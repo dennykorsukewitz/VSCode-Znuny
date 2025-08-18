@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.PackageObject.PackageInstallDefaultFiles": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.PackageInstallDefaultFiles": {
         "body": [
             "${1:\\$PackageObject->PackageInstallDefaultFiles();}",
         ],
         "prefix": "znuny.PackageObject.PackageInstallDefaultFiles",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

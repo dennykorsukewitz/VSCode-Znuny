@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.StandardTemplateObject.NameExistsCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StandardTemplateObject.NameExistsCheck": {
         "body": [
             "${1:\\$Exist = \\$StandardTemplateObject->NameExistsCheck(",
             "    Name => 'Some::Template',",
             "    ID   => 1,                  # optional",
             ");}",
+            "${2:\\$Exist = \\$StandardTemplateObject->NameExistsCheck(",
+            "    Name => 'Some::Template',",
+            "    ID => 1, # optional",
+            ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.NameExistsCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

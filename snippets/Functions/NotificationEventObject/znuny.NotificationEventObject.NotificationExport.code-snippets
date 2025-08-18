@@ -1,0 +1,18 @@
+{
+    "7.2 - znuny.NotificationEventObject.NotificationExport": {
+        "body": [
+            "${1:my \\$ExportData = \\$NotificationEventObject->NotificationExport(",
+            "    # required either ID or ExportAll",
+            "    ID                       => \\$NotificationID,",
+            "    ExportAll                => 0,               # possible: 0, 1",
+            "",
+            "    UserID                   => \\$UserID,               # required",
+            "    Type                     => 'Ticket',        # optional, default: 'Ticket'",
+            "    All                      => 1                # optional, default: undef",
+            "\\}}",
+        ],
+        "prefix": "znuny.NotificationEventObject.NotificationExport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

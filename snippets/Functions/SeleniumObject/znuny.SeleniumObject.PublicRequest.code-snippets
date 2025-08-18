@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.SeleniumObject.PublicRequest": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.PublicRequest": {
         "body": [
             "${1:\\$SeleniumObject->PublicRequest(",
             "    Action      => 'PublicUserSearch',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.PublicRequest",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

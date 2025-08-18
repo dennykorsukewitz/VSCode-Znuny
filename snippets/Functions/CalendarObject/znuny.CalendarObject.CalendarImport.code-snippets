@@ -1,7 +1,32 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.CalendarObject.CalendarImport": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CalendarObject.CalendarImport": {
         "body": [
             "${1:my \\$Success = \\$CalendarObject->CalendarImport(",
+            "    Data => {",
+            "        CalendarData => {",
+            "            CalendarID   => \\$CalendarID,",
+            "            GroupID      => \\$GroupID,",
+            "            CalendarName => 'Meetings',",
+            "            Color        => '#FF7700',",
+            "            ValidID      => \\$ValidID,",
+            "        \\},",
+            "        AppointmentData => {",
+            "            {",
+            "                AppointmentID       => \\$AppointmentID,",
+            "                ParentID            => \\$ParentID,",
+            "                CalendarID          => \\$CalendarID,",
+            "                UniqueID            => \\$UniqueID,",
+            "                ...",
+            "            \\},",
+            "            ...",
+            "        \\},",
+            "    \\},",
+            "    OverwriteExistingEntities => 0,     # (optional) Overwrite existing calendar and appointments, default: 0",
+            "                                        # Calendar with same name will be overwritten",
+            "                                        # Appointments with same UniqueID in existing calendar will be overwritten",
+            "    UserID => \\$UserID,",
+            ");}",
+            "${2:my \\$Success = \\$CalendarObject->CalendarImport(",
             "    Data => {",
             "        CalendarData => {",
             "            CalendarID   => \\$CalendarID,",
@@ -28,7 +53,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarImport",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

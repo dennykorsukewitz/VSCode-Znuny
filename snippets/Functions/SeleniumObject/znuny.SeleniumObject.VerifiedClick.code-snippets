@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SeleniumObject.VerifiedClick": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.VerifiedClick": {
         "body": [
             "${1:\\$SeleniumObject->VerifiedClick(",
             "    \\$Button             # optional, see Selenium docs",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.VerifiedClick",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DynamicFieldObject.DynamicFieldUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DynamicFieldObject.DynamicFieldUpdate": {
         "body": [
             "${1:my \\$Success = \\$DynamicFieldObject->DynamicFieldUpdate(",
             "    ID          => 1234,            # mandatory",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldObject.DynamicFieldUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

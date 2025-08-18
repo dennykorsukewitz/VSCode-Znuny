@@ -1,0 +1,12 @@
+{
+    "7.2 - znuny.StandardTemplateObject.StandardTemplateExportDataGet": {
+        "body": [
+            "${1:my %StandardTemplateData = \\$StandardTemplateObject->StandardTemplateExportDataGet(",
+            "    ID => 1, # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateExportDataGet",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

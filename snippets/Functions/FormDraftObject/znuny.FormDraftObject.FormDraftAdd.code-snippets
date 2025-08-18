@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.FormDraftObject.FormDraftAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.FormDraftObject.FormDraftAdd": {
         "body": [
             "${1:my \\$Success = \\$FormDraftObject->FormDraftAdd(",
             "    FormData => {",
@@ -25,9 +25,33 @@
             "    Title      => 'my draft',                               # optional",
             "    UserID     => \\$UserID,",
             ");}",
+            "${2:my \\$Success = \\$FormDraftObject->FormDraftAdd(",
+            "    FormData => {",
+            "        InformUserID => [ \\$InformUserID, 124, ],",
+            "        Subject      => 'Request for information',",
+            "        ...",
+            "    \\},",
+            "    FileData => [                                           # optional",
+            "        {",
+            "            'Content'     => 'Dear customer\n\nthank you!',",
+            "            'ContentType' => 'text/plain',",
+            "            'ContentID'   => undef,                         # optional",
+            "            'Filename'    => 'thankyou.txt',",
+            "            'Filesize'    => 25,",
+            "            'FileID'      => 1,",
+            "            'Disposition' => 'attachment',",
+            "        \\},",
+            "        ...",
+            "    ],",
+            "    ObjectType => 'Ticket',",
+            "    ObjectID   => \\$ObjectID,",
+            "    Action     => 'AgentTicketCompose',",
+            "    Title      => 'my draft',                               # optional",
+            "    UserID     => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

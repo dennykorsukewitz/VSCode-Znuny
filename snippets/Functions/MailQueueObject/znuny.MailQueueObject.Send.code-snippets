@@ -1,7 +1,14 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailQueueObject.Send": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailQueueObject.Send": {
         "body": [
             "${1:my \\$List = \\$MailQueueObject->Send(",
+            "    ID              => '...',",
+            "    Sender          => '...',",
+            "    Recipient       => '...',",
+            "    Message         => '...',",
+            "    Force           => '...' # optional, to force the sending even if isn't time",
+            ");}",
+            "${2:my \\$List = \\$MailQueueObject->Send(",
             "    ID        => '...',",
             "    Sender    => '...',",
             "    Recipient => '...',",
@@ -10,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.Send",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DynamicFieldValueObject.AllValuesDelete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DynamicFieldValueObject.AllValuesDelete": {
         "body": [
             "${1:my \\$Success = \\$DynamicFieldValueObject->AllValuesDelete(",
+            "    FieldID            => \\$FieldID,                 # ID of the dynamic field",
+            "    UserID  => \\$UserID,",
+            ");}",
+            "${2:my \\$Success = \\$DynamicFieldValueObject->AllValuesDelete(",
             "    FieldID => \\$FieldID,    # ID of the dynamic field",
             "    UserID  => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.AllValuesDelete",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

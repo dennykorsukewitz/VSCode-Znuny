@@ -11,11 +11,11 @@ jobs:
   Snippet:
     name: Snippet
     runs-on: ubuntu-22.04 # ubuntu-latest
-    container: debian:10-slim
+    container: debian:11-slim
     strategy:
       fail-fast: false
       matrix:
-        tag: ['rel-7_1-dev', 'rel-7_0', 'dev']
+        tag: ['dev', 'rel-7_2-dev' ]
     env:
       DB: mysql
       MYSQL_USER: "znuny"
@@ -112,7 +112,7 @@ jobs:
       - name: Link repository
         run: |
           cd "$GITHUB_WORKSPACE"
-          apt-get install -y libdatetime-perl libgetopt-complete-perl libio-interactive-perl libstring-similarity-perl libxmlrpc-lite-perl
+          apt-get install -y libdatetime-perl libgetopt-complete-perl libio-interactive-perl libstring-similarity-perl libxmlrpc-lite-perl libpod-parser-perl
 
           su -c "$GITHUB_WORKSPACE/module-tools/bin/otrs.ModuleTools.pl Module::File::Link $GITHUB_WORKSPACE/repository $GITHUB_WORKSPACE/znuny" - znuny
           cd znuny

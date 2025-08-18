@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.TicketObject.TicketAccountedTimeGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TicketObject.TicketAccountedTimeGet": {
         "body": [
             "${1:my \\$AccountedTime = \\$TicketObject->TicketAccountedTimeGet(TicketID => 1234);}",
         ],
         "prefix": "znuny.TicketObject.TicketAccountedTimeGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

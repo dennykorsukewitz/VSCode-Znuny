@@ -1,7 +1,14 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SysConfigObject.SettingReset": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SysConfigObject.SettingReset": {
         "body": [
             "${1:my \\$Result = \\$SysConfigObject->SettingReset(",
+            "    Name                  => 'Setting Name',                # (required) Setting name",
+            "    TargetUserID          => \\$TargetUserID,                             # (optional) UserID for settings in AgentPreferences",
+            "                                                            # or",
+            "    ExclusiveLockGUID     => \\$LockingString,                # (optional) the GUID used to locking the setting",
+            "    UserID                => \\$UserID,                             # (required) UserID that creates modification",
+            ");}",
+            "${2:my \\$Result = \\$SysConfigObject->SettingReset(",
             "    Name              => 'Setting Name',                # (required) Setting name",
             "    TargetUserID      => \\$TargetUserID,                             # (optional) UserID for settings in AgentPreferences",
             "                                                        # or",
@@ -10,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingReset",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

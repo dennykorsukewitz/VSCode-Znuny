@@ -1,0 +1,15 @@
+{
+    "7.2 - znuny.ProcessObject.ProcessPreferencesSet": {
+        "body": [
+            "${1:\\$ProcessObject->ProcessPreferencesSet(",
+            "    ProcessEntityID => \\$ProcessEntityID,",
+            "    Key             => 'UserComment',",
+            "    Value           => 'some comment',",
+            "    UserID          => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ProcessObject.ProcessPreferencesSet",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

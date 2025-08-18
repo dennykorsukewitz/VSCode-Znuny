@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.TransitionActionObject.TransitionActionGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TransitionActionObject.TransitionActionGet": {
         "body": [
             "${1:my \\$TransitionAction = \\$TransitionActionObject->TransitionActionGet(",
             "    TransitionActionEntityID => \\$TransitionActionEntityID,",
             ");}",
         ],
         "prefix": "znuny.TransitionActionObject.TransitionActionGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

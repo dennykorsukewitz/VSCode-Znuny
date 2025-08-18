@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.ProcessObject.ProcessPreferencesDelete": {
+        "body": [
+            "${1:\\$ProcessObject->ProcessPreferencesDelete(",
+            "    ProcessEntityID => \\$ProcessEntityID,",
+            "    Key             => 'UserComment',",
+            ");}",
+        ],
+        "prefix": "znuny.ProcessObject.ProcessPreferencesDelete",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

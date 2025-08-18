@@ -1,0 +1,12 @@
+{
+    "7.2 - znuny.HTMLUtilsObject.ToHTMLReplaceWithParagraphs": {
+        "body": [
+            "${1:my \\$HTMLString = \\$HTMLUtilsObject->ToHTMLReplaceWithParagraphs(",
+            "    String => \\$String,",
+            ");}",
+        ],
+        "prefix": "znuny.HTMLUtilsObject.ToHTMLReplaceWithParagraphs",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.TranslationObject.DataExport": {
+        "body": [
+            "${1:my \\$Export = \\$TranslationObject->DataExport(",
+            "    Format => 'yml',",
+            "    Cache  => 0,",
+            ");}",
+        ],
+        "prefix": "znuny.TranslationObject.DataExport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

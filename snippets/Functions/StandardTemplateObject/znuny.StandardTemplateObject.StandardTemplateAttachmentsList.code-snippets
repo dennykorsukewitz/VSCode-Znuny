@@ -1,0 +1,12 @@
+{
+    "7.2 - znuny.StandardTemplateObject.StandardTemplateAttachmentsList": {
+        "body": [
+            "${1:my %StandardTemplateAttachments = \\$StandardTemplateObject->StandardTemplateAttachmentsList(",
+            "    ID => 1, # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateAttachmentsList",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

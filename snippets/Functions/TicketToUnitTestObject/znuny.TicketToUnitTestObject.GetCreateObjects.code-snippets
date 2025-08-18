@@ -1,10 +1,10 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.TicketToUnitTestObject.GetCreateObjects": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.TicketToUnitTestObject.GetCreateObjects": {
         "body": [
             "${1:my \\$Output = \\$TicketToUnitTestObject->GetCreateObjects();}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetCreateObjects",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

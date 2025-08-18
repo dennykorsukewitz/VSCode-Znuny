@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.SalutationObject.SalutationDelete": {
+        "body": [
+            "${1:my \\$Success = \\$SalutationObject->SalutationDelete(",
+            "    ID     => 1,",
+            "    UserID => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SalutationObject.SalutationDelete",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

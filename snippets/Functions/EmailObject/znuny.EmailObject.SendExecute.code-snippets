@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.EmailObject.SendExecute": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.EmailObject.SendExecute": {
         "body": [
             "${1:# or",
             "my \\$Result = \\$EmailObject->SendExecute(",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.EmailObject.SendExecute",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

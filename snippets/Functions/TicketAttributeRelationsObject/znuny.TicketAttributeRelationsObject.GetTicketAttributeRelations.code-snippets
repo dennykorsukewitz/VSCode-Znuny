@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations": {
         "body": [
             "${1:my \\$TicketAttributeRelations = \\$TicketAttributeRelationsObject->GetTicketAttributeRelations(",
             "    ID         => 123,",
@@ -7,9 +7,16 @@
             "    # Filename => 'test.csv',",
             "    UserID     => \\$UserID,",
             ");}",
+            "${2:my \\$TicketAttributeRelations = \\$TicketAttributeRelationsObject->GetTicketAttributeRelations(",
+            "    ID => 123,",
+            "    # or",
+            "    # Filename => 'test.csv',",
+            "",
+            "    UserID  => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.GetTicketAttributeRelations",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

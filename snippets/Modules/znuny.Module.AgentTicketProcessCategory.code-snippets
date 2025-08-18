@@ -1,0 +1,10 @@
+{
+    "7.2 - AgentTicketProcessCategory": {
+        "body": [
+            "AgentTicketProcessCategory",
+        ],
+        "prefix": "AgentTicketProcessCategory",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

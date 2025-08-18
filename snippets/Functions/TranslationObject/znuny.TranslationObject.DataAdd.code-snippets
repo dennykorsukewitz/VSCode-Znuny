@@ -1,0 +1,22 @@
+{
+    "7.2 - znuny.TranslationObject.DataAdd": {
+        "body": [
+            "${1:my \\$CreatedID = \\$TranslationObject->DataAdd(",
+            "    ID              => '...',",
+            "    LanguageID      => \\$LanguageID,",
+            "    Source          => '...',",
+            "    Destination     => '...',",
+            "    ValidID         => \\$ValidID,",
+            "    CreateTime      => '...',",
+            "    CreateBy        => '...',",
+            "    ChangeTime      => '...',",
+            "    ChangeBy        => '...',",
+            "    DeploymentState => '...',",
+            "    UserID          => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TranslationObject.DataAdd",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

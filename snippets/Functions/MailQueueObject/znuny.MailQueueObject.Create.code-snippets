@@ -1,7 +1,15 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailQueueObject.Create": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailQueueObject.Create": {
         "body": [
             "${1:my \\$Result = \\$MailQueueObject->Create(",
+            "    ArticleID       => \\$ArticleID, # optional",
+            "    MessageID       => \\$MessageID, # optional (in case article id was passed this should be also)",
+            "    Sender          => '...',",
+            "    Recipient       => '...' || [],",
+            "    Message         => '...',",
+            "    Attempts        => '...', # optional",
+            ");}",
+            "${2:my \\$Result = \\$MailQueueObject->Create(",
             "    ArticleID => \\$ArticleID,         # optional",
             "    MessageID => \\$MessageID,         # optional (in case article id was passed this should be also)",
             "    Sender    => '...',",
@@ -11,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.Create",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

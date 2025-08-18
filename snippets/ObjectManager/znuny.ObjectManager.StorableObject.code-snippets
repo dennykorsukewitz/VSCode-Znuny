@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ObjectManager.StorableObject": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ObjectManager.StorableObject": {
         "body": [
             "my \\$StorableObject = \\$Kernel::OM->Get('Kernel::System::Storable');",
         ],
         "prefix": "znuny.ObjectManager.StorableObject",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

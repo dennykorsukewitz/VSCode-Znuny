@@ -1,7 +1,14 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DynamicFieldObject.ObjectMappingGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DynamicFieldObject.ObjectMappingGet": {
         "body": [
             "${1:my \\$ObjectMapping = \\$DynamicFieldObject->ObjectMappingGet(",
+            "    ObjectName            => \\$ObjectName,    # Name or array ref of names of the object(s) to get the ID(s) for",
+            "                                             # Note: either give ObjectName or ObjectID",
+            "    ObjectID              => \\$ObjectID,      # ID or array ref of IDs of the object(s) to get the name(s) for",
+            "                                             # Note: either give ObjectName or ObjectID",
+            "    ObjectType            => 'CustomerUser', # Type of object to get mapping for",
+            ");}",
+            "${2:my \\$ObjectMapping = \\$DynamicFieldObject->ObjectMappingGet(",
             "    ObjectName => \\$ObjectName,    # Name or array ref of names of the object(s) to get the ID(s) for",
             "                                             # Note: either give ObjectName or ObjectID",
             "    ObjectID   => \\$ObjectID,      # ID or array ref of IDs of the object(s) to get the name(s) for",
@@ -10,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldObject.ObjectMappingGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

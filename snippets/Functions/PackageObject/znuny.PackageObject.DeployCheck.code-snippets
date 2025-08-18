@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.PackageObject.DeployCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.DeployCheck": {
         "body": [
             "${1:\\$PackageObject->DeployCheck(",
             "    Name    => 'Application A',",
             "    Version => '1.0',",
             "    Log     => 1,       # Default: 1",
             ");}",
+            "${2:\\$PackageObject->DeployCheck(",
+            "    Name    => 'Application A',",
+            "    Version => '1.0',",
+            "    Log     => 1, # Default: 1",
+            ");}",
         ],
         "prefix": "znuny.PackageObject.DeployCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

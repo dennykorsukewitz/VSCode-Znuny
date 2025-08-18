@@ -1,10 +1,10 @@
 {
-    "7.1 - AgentTicketMarkSeenUnseen": {
+    "7.1|7.2 - AgentTicketMarkSeenUnseen": {
         "body": [
             "AgentTicketMarkSeenUnseen",
         ],
         "prefix": "AgentTicketMarkSeenUnseen",
-        "description": "7.1",
+        "description": "7.1|7.2",
         "scope": "perl"
     }
 }

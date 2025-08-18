@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.LinkObject.ObjectDescriptionGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LinkObject.ObjectDescriptionGet": {
         "body": [
             "${1:%Description = \\$LinkObject->ObjectDescriptionGet(",
+            "    Object  => 'Ticket',",
+            "    Key     => 123,",
+            "    UserID  => \\$UserID,",
+            ");}",
+            "${2:%Description = \\$LinkObject->ObjectDescriptionGet(",
             "    Object => 'Ticket',",
             "    Key    => 123,",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LinkObject.ObjectDescriptionGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

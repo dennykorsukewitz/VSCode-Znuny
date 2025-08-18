@@ -1,14 +1,24 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.NotificationEventObject.NotificationImport": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.NotificationEventObject.NotificationImport": {
         "body": [
             "${1:my \\$NotificationImport = \\$NotificationEventObject->NotificationImport(",
             "    Content                        => \\$YAMLContent,  # mandatory, YAML format",
             "    OverwriteExistingNotifications => 0,             # 0 || 1",
             "    UserID                         => \\$UserID,             # mandatory",
             ");}",
+            "${2:my \\$NotificationImport = \\$NotificationEventObject->NotificationImport(",
+            "    Content                        => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingNotifications => 0,            # optional, possible: 0, 1",
+            "    UserID                         => \\$UserID,            # mandatory",
+            ");}",
+            "${3:my \\$NotificationImport = \\$NotificationEventObject->NotificationImport(",
+            "    Content                   => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingNotifications => 0,            # 0 || 1",
+            "    UserID                    => \\$UserID,            # mandatory",
+            ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationImport",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

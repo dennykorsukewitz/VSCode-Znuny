@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DateTimeObject.ToEpoch": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DateTimeObject.ToEpoch": {
         "body": [
             "${1:my \\$Epoch = \\$DateTimeObject->ToEpoch();}",
         ],
         "prefix": "znuny.DateTimeObject.ToEpoch",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

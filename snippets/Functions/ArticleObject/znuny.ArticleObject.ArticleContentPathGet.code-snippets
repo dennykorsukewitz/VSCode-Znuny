@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.ArticleObject.ArticleContentPathGet": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.ArticleObject.ArticleContentPathGet": {
         "body": [
             "${1:my \\$Path = \\$ArticleObject->ArticleContentPathGet(",
             "    ArticleID => \\$ArticleID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleContentPathGet",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

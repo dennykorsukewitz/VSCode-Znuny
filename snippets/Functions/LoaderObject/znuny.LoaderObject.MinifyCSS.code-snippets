@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.LoaderObject.MinifyCSS": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LoaderObject.MinifyCSS": {
         "body": [
             "${1:my \\$MinifiedCSS = \\$LoaderObject->MinifyCSS( Code => \\$CSS );}",
         ],
         "prefix": "znuny.LoaderObject.MinifyCSS",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

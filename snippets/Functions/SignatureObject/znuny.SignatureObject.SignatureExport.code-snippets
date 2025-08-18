@@ -1,0 +1,16 @@
+{
+    "7.2 - znuny.SignatureObject.SignatureExport": {
+        "body": [
+            "${1:my \\$ExportData = \\$SignatureObject->SignatureExport(",
+            "    # required either ID or ExportAll",
+            "    ID                       => \\$SignatureID,",
+            "    ExportAll                => 0,               # possible: 0, 1",
+            "",
+            "    UserID                   => \\$UserID,               # required",
+            "\\}}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureExport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

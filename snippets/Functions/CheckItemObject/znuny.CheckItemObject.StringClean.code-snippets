@@ -1,7 +1,16 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.CheckItemObject.StringClean": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CheckItemObject.StringClean": {
         "body": [
             "${1:my \\$StringRef = \\$CheckItemObject->StringClean(",
+            "    StringRef               => \'String',",
+            "    TrimLeft                => 0,  # (optional) default 1",
+            "    TrimRight               => 0,  # (optional) default 1",
+            "    RemoveAllNewlines       => 1,  # (optional) default 0",
+            "    RemoveAllTabs           => 1,  # (optional) default 0",
+            "    RemoveAllSpaces         => 1,  # (optional) default 0",
+            "    ReplaceWithWhiteSpace   => 1,  # (optional) default 0",
+            ");}",
+            "${2:my \\$StringRef = \\$CheckItemObject->StringClean(",
             "    StringRef             => \'String',",
             "    TrimLeft              => 0,  # (optional) default 1",
             "    TrimRight             => 0,  # (optional) default 1",
@@ -12,7 +21,7 @@
             ");}",
         ],
         "prefix": "znuny.CheckItemObject.StringClean",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

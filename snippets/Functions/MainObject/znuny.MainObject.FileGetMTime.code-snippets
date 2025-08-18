@@ -1,7 +1,13 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MainObject.FileGetMTime": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MainObject.FileGetMTime": {
         "body": [
             "${1:my \\$FileMTime = \\$MainObject->FileGetMTime(",
+            "    Directory => 'c:\some\location',",
+            "    Filename  => 'me_to/alal.xml',",
+            "    # or Location",
+            "    Location  => 'c:\some\location\me_to\alal.xml'",
+            ");}",
+            "${2:my \\$FileMTime = \\$MainObject->FileGetMTime(",
             "    Directory => 'c:\some\location',",
             "    Filename  => 'me_to/alal.xml',",
             "    # or Location",
@@ -9,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.MainObject.FileGetMTime",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

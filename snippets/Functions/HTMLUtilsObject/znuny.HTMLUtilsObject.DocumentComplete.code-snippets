@@ -1,13 +1,18 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.HTMLUtilsObject.DocumentComplete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.HTMLUtilsObject.DocumentComplete": {
         "body": [
             "${1:my \\$HTMLDocument = \\$HTMLUtilsObject->DocumentComplete(",
+            "    String   => \\$String,  # required",
+            "    Charset  => \\$Charset, # required",
+            "    UserType => 'Agent'   # optional",
+            ");}",
+            "${2:my \\$HTMLDocument = \\$HTMLUtilsObject->DocumentComplete(",
             "    String  => \\$String,",
             "    Charset => \\$Charset,",
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.DocumentComplete",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

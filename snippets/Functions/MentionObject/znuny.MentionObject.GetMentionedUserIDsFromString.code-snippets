@@ -1,7 +1,14 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.MentionObject.GetMentionedUserIDsFromString": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.MentionObject.GetMentionedUserIDsFromString": {
         "body": [
             "${1:my \\$MentionedUserIDs = \\$MentionObject->GetMentionedUserIDsFromString(",
+            "    HTMLString => '...<a class=\\"Mention\\" href=\\"...\\" target=\\"...\\">@root@localhost<\/a>...',",
+            "",
+            "    # optional",
+            "    # Limit for number of returned user IDs. The rest will silently be ignored.",
+            "    Limit => 5,",
+            ");}",
+            "${2:my \\$MentionedUserIDs = \\$MentionObject->GetMentionedUserIDsFromString(",
             "    HTMLString => '...<a class=\\"Mention\\" href=\\"...\\" target=\\"...\\">@root@localhost<\/a>...',",
             "",
             "    # optional",
@@ -15,7 +22,7 @@
             ");}",
         ],
         "prefix": "znuny.MentionObject.GetMentionedUserIDsFromString",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

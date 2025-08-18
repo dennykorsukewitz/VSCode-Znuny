@@ -1,10 +1,10 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.DBCRUDObject.CreateMissingUUIDDatabaseTableColumns": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.DBCRUDObject.CreateMissingUUIDDatabaseTableColumns": {
         "body": [
             "${1:my \\$Success = \\$DBCRUDObject->CreateMissingUUIDDatabaseTableColumns();}",
         ],
         "prefix": "znuny.DBCRUDObject.CreateMissingUUIDDatabaseTableColumns",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.AutoResponseObject.AutoResponseImport": {
+        "body": [
+            "${1:my \\$ImportResult = \\$AutoResponseObject->AutoResponseImport(",
+            "    Content                        => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingAutoResponses => 0,            # optional, possible: 0, 1",
+            "    UserID                         => \\$UserID,            # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseImport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

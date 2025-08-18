@@ -1,10 +1,10 @@
 {
-    "7.0|7.1 - znuny.SessionObject.GetOrphanedSessionIDs": {
+    "7.0|7.1|7.2 - znuny.SessionObject.GetOrphanedSessionIDs": {
         "body": [
             "${1:my @Sessions = \\$SessionObject->GetOrphanedSessionIDs();}",
         ],
         "prefix": "znuny.SessionObject.GetOrphanedSessionIDs",
-        "description": "7.0|7.1",
+        "description": "7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.BackendObject.ObjectMatch": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.BackendObject.ObjectMatch": {
         "body": [
             "${1:my \\$Match = \\$BackendObject->ObjectMatch(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,       # complete config of the DynamicField",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.ObjectMatch",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

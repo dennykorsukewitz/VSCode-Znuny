@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.CalendarObject.CalendarUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CalendarObject.CalendarUpdate": {
         "body": [
             "${1:my \\$Success = \\$CalendarObject->CalendarUpdate(",
             "    CalendarID         => \\$CalendarID,                   # (required) CalendarID",
@@ -20,9 +20,29 @@
             "        \\},",
             "    ],",
             ");}",
+            "${2:my \\$Success = \\$CalendarObject->CalendarUpdate(",
+            "    CalendarID       => \\$CalendarID,                   # (required) CalendarID",
+            "    GroupID          => \\$GroupID,                   # (required) Calendar group",
+            "    CalendarName     => 'Meetings',          # (required) Personal calendar name",
+            "    Color            => '#FF9900',           # (required) Color in hexadecimal RGB notation",
+            "    UserID           => \\$UserID,                   # (required) UserID (who made update)",
+            "    ValidID          => \\$ValidID,                   # (required) ValidID",
+            "",
+            "    TicketAppointments => [                 # (optional) Ticket appointments, array ref of hashes",
+            "        {",
+            "            StartDate => 'FirstResponse',",
+            "            EndDate   => 'Plus_5',",
+            "            QueueID   => [ \\$QueueID ],",
+            "            SearchParams => {",
+            "                Title => 'This is a title',",
+            "                Types => 'This is a type',",
+            "            \\},",
+            "        \\},",
+            "    ],",
+            ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

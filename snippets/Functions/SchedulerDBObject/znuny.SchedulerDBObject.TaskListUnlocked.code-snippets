@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SchedulerDBObject.TaskListUnlocked": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SchedulerDBObject.TaskListUnlocked": {
         "body": [
             "${1:my @TaskList = \\$SchedulerDBObject->TaskListUnlocked();}",
         ],
         "prefix": "znuny.SchedulerDBObject.TaskListUnlocked",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

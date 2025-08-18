@@ -1,7 +1,15 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailAccountObject.MailAccountCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailAccountObject.MailAccountCheck": {
         "body": [
             "${1:my %Check = \\$MailAccountObject->MailAccountCheck(",
+            "    Login         => 'mail',",
+            "    Password      => 'SomePassword',",
+            "    Host          => 'pop3.example.com',",
+            "    Type          => 'POP3', # POP3|POP3S|IMAP|IMAPS",
+            "    Timeout       => '60',",
+            "    Debug         => '0',",
+            ");}",
+            "${2:my %Check = \\$MailAccountObject->MailAccountCheck(",
             "    Login    => 'mail',",
             "    Password => 'SomePassword',",
             "    Host     => 'pop3.example.com',",
@@ -11,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.MailAccountObject.MailAccountCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

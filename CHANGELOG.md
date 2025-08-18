@@ -11,6 +11,8 @@ All notable changes to the "Znuny" extension will be documented in this file.
 ### Changed
 
 - Fixed linting errors.
+- Tidied Code.
+- Run only or newest.
 
 ### Dependencies
 

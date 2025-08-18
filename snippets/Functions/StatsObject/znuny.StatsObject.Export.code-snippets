@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.StatsObject.Export": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.Export": {
         "body": [
             "${1:my \\$ExportFile = \\$StatsObject->Export(",
             "    StatID           => \\$StatID,",
             "    ExportStatNumber => 1 || 0,     # optional, only useful move statistics from the test system to the productive system",
             ");}",
+            "${2:my \\$ExportFile = \\$StatsObject->Export(",
+            "    StatID => \\$StatID,",
+            "    ExportStatNumber => 1 || 0, # optional, only useful move statistics from the test system to the productive system",
+            ");}",
         ],
         "prefix": "znuny.StatsObject.Export",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

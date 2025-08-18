@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DynamicFieldValueObject.ValueGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DynamicFieldValueObject.ValueGet": {
         "body": [
             "${1:my \\$Value = \\$DynamicFieldValueObject->ValueGet(",
+            "    FieldID            => \\$FieldID,                 # ID of the dynamic field",
+            "    ObjectID           => \\$ObjectID,                # ID of the current object that the field",
+            "                                                    #   is linked to, e. g. TicketID",
+            ");}",
+            "${2:my \\$Value = \\$DynamicFieldValueObject->ValueGet(",
             "    FieldID  => \\$FieldID,       # ID of the dynamic field",
             "    ObjectID => \\$ObjectID,      # ID of the current object that the field",
             "                                #   is linked to, e. g. TicketID",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.HelperObject.FillTestEnvironment": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.HelperObject.FillTestEnvironment": {
         "body": [
             "${1:# create everything with defaults, except 20 agents",
             "my \\$Result = \\$HelperObject->FillTestEnvironment(",
@@ -12,7 +12,14 @@
             "        # ...",
             "    \\}",
             ");}",
-            "${3:# would do nothing -> return an empty HashRef",
+            "${3:# create everything with defaults, except Type",
+            "my \\$Result = \\$HelperObject->FillTestEnvironment(",
+            "    Type => {",
+            "        'Type 1::Sub Type' => 1,",
+            "        ...",
+            "    \\}",
+            ");}",
+            "${4:# would do nothing -> return an empty HashRef",
             "my \\$Result = \\$HelperObject->FillTestEnvironment(",
             "    User         => 0, # optional, default 5",
             "    CustomerUser => 0, # optional, default 5",
@@ -23,7 +30,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.FillTestEnvironment",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

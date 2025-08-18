@@ -1,11 +1,11 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.LanguageObject.GetRecommendedCharset": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LanguageObject.GetRecommendedCharset": {
         "body": [
             "${1:    my \\$Charset = \\$LanguageObject->GetRecommendedCharset().}",
             "${2:my \\$Charset = \\$LanguageObject->GetRecommendedCharset();}",
         ],
         "prefix": "znuny.LanguageObject.GetRecommendedCharset",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

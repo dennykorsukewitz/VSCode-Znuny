@@ -1,13 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SessionObject.CreateSessionID": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SessionObject.CreateSessionID": {
         "body": [
             "${1:my \\$SessionID = \\$SessionObject->CreateSessionID(",
             "    UserLogin => 'root',",
             "    UserEmail => 'root@example.com',",
             ");}",
+            "${2:my \\$SessionID = \\$SessionObject->CreateSessionID(",
+            "    UserType      => 'User',                # required, 'User' or 'Customer'",
+            "    UserLogin     => 'root',",
+            "    UserEmail     => 'root@example.com',",
+            "    SessionSource => 'GenericInterface',    # optional, used to identify the source of the session",
+            ");}",
         ],
         "prefix": "znuny.SessionObject.CreateSessionID",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

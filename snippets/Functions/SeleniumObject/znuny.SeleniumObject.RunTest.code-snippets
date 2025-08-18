@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SeleniumObject.RunTest": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.RunTest": {
         "body": [
             "${1:\\$SeleniumObject->RunTest( sub { ... \\} );}",
         ],
         "prefix": "znuny.SeleniumObject.RunTest",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

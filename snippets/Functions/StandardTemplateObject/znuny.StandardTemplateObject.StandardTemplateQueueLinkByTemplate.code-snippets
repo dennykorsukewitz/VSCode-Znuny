@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.StandardTemplateObject.StandardTemplateQueueLinkByTemplate": {
+        "body": [
+            "${1:my \\$Success = \\$StandardTemplateObject->StandardTemplateQueueLinkByTemplate(",
+            "    QueueIDs => [1,2,3],",
+            "    ID       => 1,",
+            "    UserID   => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateQueueLinkByTemplate",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

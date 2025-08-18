@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.PackageObject.PackageInstall": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.PackageInstall": {
         "body": [
             "${1:\\$PackageObject->PackageInstall(",
             "    String    => \\$FileString,",
@@ -7,12 +7,16 @@
             "    FromCloud => 1,             # optional 1 or 0, it indicates if package's origin is Cloud or not",
             ");}",
             "${2:\\$PackageObject->PackageInstall(",
+            "    String    => \\$FileString,",
+            "    Force     => 1,             # optional 1 or 0, for to install package even if validation fails",
+            ");}",
+            "${3:\\$PackageObject->PackageInstall(",
             "    String => \\$FileString,",
             "    Force  => 1,             # optional 1 or 0, for to install package even if validation fails",
             ");}",
         ],
         "prefix": "znuny.PackageObject.PackageInstall",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

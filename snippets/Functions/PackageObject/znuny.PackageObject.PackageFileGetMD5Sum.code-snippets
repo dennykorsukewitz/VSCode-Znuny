@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.PackageObject.PackageFileGetMD5Sum": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.PackageFileGetMD5Sum": {
         "body": [
             "${1:my \\$MD5Sum = \\$PackageObject->PackageFileGetMD5Sum(",
             "    Name    => 'Package Name',",
             "    Version => 123.0,",
             ");}",
+            "${2:my \\$MD5Sum = \\$PackageObject->PackageFileGetMD5Sum(",
+            "    Name => 'Package Name',",
+            "    Version => 123.0,",
+            ");}",
         ],
         "prefix": "znuny.PackageObject.PackageFileGetMD5Sum",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

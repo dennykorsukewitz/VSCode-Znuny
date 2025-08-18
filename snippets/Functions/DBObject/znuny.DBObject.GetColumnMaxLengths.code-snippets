@@ -1,0 +1,12 @@
+{
+    "7.1|7.2 - znuny.DBObject.GetColumnMaxLengths": {
+        "body": [
+            "${1:my %ColumnMaxLength = \\$DBObject->GetColumnMaxLengths(",
+            "    Table => \\"customer_user\\",",
+            ");}",
+        ],
+        "prefix": "znuny.DBObject.GetColumnMaxLengths",
+        "description": "7.1|7.2",
+        "scope": "perl"
+    }
+}

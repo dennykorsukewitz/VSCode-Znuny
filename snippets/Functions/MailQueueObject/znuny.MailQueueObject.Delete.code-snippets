@@ -1,12 +1,15 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.MailQueueObject.Delete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailQueueObject.Delete": {
         "body": [
             "${1:my \\$Result = \\$MailQueueObject->Delete(",
+            "    %Filters,                       # See _FiltersSQLAndBinds",
+            ");}",
+            "${2:my \\$Result = \\$MailQueueObject->Delete(",
             "    %Filters,       # See _FiltersSQLAndBinds",
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.Delete",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

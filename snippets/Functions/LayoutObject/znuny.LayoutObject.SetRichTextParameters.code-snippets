@@ -1,0 +1,12 @@
+{
+    "7.2 - znuny.LayoutObject.SetRichTextParameters": {
+        "body": [
+            "${1:\\$LayoutObject->SetRichTextParameters(",
+            "    Data => \\%Param,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.SetRichTextParameters",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

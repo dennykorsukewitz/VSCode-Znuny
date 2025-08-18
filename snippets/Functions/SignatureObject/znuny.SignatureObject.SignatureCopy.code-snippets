@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.SignatureObject.SignatureCopy": {
+        "body": [
+            "${1:my \\$NewSignatureID = \\$SignatureObject->SignatureCopy(",
+            "    ID     => 1, # mandatory",
+            "    UserID => \\$UserID, # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureCopy",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

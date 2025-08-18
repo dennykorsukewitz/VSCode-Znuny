@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.SignatureObject.SignatureDelete": {
+        "body": [
+            "${1:my \\$Success = \\$SignatureObject->SignatureDelete(",
+            "    ID     => 1,",
+            "    UserID => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureDelete",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

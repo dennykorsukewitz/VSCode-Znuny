@@ -1,5 +1,5 @@
 {
-    "7.0|7.1 - znuny.ActivityObject.Get": {
+    "7.0|7.1|7.2 - znuny.ActivityObject.Get": {
         "body": [
             "${1:my \\$Success = \\$ActivityObject->Get();",
             "    ID         => 1,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.Get",
-        "description": "7.0|7.1",
+        "description": "7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,0 +1,10 @@
+{
+    "7.2 - znuny.TranslationObject.TranslationFilesDelete": {
+        "body": [
+            "${1:my \\$Success = \\$TranslationObject->TranslationFilesDelete();}",
+        ],
+        "prefix": "znuny.TranslationObject.TranslationFilesDelete",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

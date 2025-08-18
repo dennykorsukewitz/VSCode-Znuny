@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.AutoResponseObject.AutoResponseDelete": {
+        "body": [
+            "${1:\\$AutoResponseObject->AutoResponseDelete(",
+            "    ID     => 1,",
+            "    UserID => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseDelete",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.NotificationEventObject.NotificationAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.NotificationEventObject.NotificationAdd": {
         "body": [
             "${1:my \\$ID = \\$NotificationEventObject->NotificationAdd(",
             "    Name => 'Agent::OwnerUpdate',",
@@ -24,9 +24,32 @@
             "    ValidID => \\$ValidID,",
             "    UserID  => \\$UserID,",
             ");}",
+            "${2:my \\$ID = \\$NotificationEventObject->NotificationAdd(",
+            "    Name => 'Agent::OwnerUpdate',",
+            "    Data => {",
+            "        Events => [ 'TicketQueueUpdate' ],",
+            "        ...",
+            "        Queue => [ 'SomeQueue' ],",
+            "    \\},",
+            "    Message => {",
+            "        en => {",
+            "            Subject     => 'Hello',",
+            "            Body        => 'Hello World',",
+            "            ContentType => 'text/plain',",
+            "        \\},",
+            "        de => {",
+            "            Subject     => 'Hallo',",
+            "            Body        => 'Hallo Welt',",
+            "            ContentType => 'text/plain',",
+            "        \\},",
+            "    \\},",
+            "    Comment => 'An optional comment', # (optional)",
+            "    ValidID => \\$ValidID,",
+            "    UserID  => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

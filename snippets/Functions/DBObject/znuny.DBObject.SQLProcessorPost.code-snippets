@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DBObject.SQLProcessorPost": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DBObject.SQLProcessorPost": {
         "body": [
             "${1:my @SQL = \\$DBObject->SQLProcessorPost();}",
         ],
         "prefix": "znuny.DBObject.SQLProcessorPost",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

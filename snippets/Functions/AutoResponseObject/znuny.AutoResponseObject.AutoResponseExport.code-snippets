@@ -1,0 +1,16 @@
+{
+    "7.2 - znuny.AutoResponseObject.AutoResponseExport": {
+        "body": [
+            "${1:my \\$ExportData = \\$AutoResponseObject->AutoResponseExport(",
+            "    # required either ID or ExportAll",
+            "    ID                       => \\$AutoResponseID,",
+            "    ExportAll                => 0,               # possible: 0, 1",
+            "",
+            "    UserID                   => \\$UserID,               # required",
+            "\\}}",
+        ],
+        "prefix": "znuny.AutoResponseObject.AutoResponseExport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

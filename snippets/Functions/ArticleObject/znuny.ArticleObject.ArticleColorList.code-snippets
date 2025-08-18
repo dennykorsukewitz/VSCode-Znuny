@@ -1,0 +1,10 @@
+{
+    "7.2 - znuny.ArticleObject.ArticleColorList": {
+        "body": [
+            "${1:my @ArticleColorList = \\$ArticleObject->ArticleColorList();}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleColorList",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.HelperObject.ConfigSettingChange": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.HelperObject.ConfigSettingChange": {
         "body": [
             "${1:\\$HelperObject->ConfigSettingChange(",
             "    Valid => 1,            # (optional) enable or disable setting",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.ConfigSettingChange",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

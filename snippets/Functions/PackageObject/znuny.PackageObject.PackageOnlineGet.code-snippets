@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.PackageObject.PackageOnlineGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.PackageOnlineGet": {
         "body": [
             "${1:\\$PackageObject->PackageOnlineGet(",
             "    Source => 'http://host.example.com/',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.PackageOnlineGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

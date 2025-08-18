@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.OperationObject.HandleError": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.OperationObject.HandleError": {
         "body": [
             "${1:my \\$Result = \\$OperationObject->HandleError(",
             "    Data => {                               # data payload",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.OperationObject.HandleError",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

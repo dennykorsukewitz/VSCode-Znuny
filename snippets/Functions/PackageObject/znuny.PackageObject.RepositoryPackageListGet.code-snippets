@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.PackageObject.RepositoryPackageListGet": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.RepositoryPackageListGet": {
         "body": [
             "${1:my @List = \\$PackageObject->RepositoryPackageListGet(",
             "    Source             => 'Example repository 1',   # the value of key 'Name' in item of SysConfig option Package::RepositoryList or a direct download URL",
@@ -7,9 +7,15 @@
             "    Cache              => 0,                        # (optional) use cached data",
             "    IncludeSameVersion => 1,                        # (optional) also get packages already installed and with the same version",
             ");}",
+            "${2:my @List = \\$PackageObject->RepositoryPackageListGet(",
+            "    Source             => 'Example repository 1', # the value of key 'Name' in item of SysConfig option Package::RepositoryList or a direct download URL",
+            "    Lang               => 'en',",
+            "    Cache              => 0,    # (optional) use cached data",
+            "    IncludeSameVersion => 1,    # (optional) also get packages already installed and with the same version",
+            ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryPackageListGet",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

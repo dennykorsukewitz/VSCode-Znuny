@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.OperationObject.Run": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.OperationObject.Run": {
         "body": [
             "${1:my \\$Result = \\$OperationObject->Run(",
             "    Data => {                               # data payload before Operation",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.OperationObject.Run",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

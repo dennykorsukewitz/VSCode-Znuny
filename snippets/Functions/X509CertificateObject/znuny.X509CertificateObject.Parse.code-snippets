@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.X509CertificateObject.Parse": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.X509CertificateObject.Parse": {
         "body": [
             "${1:my \\$X509Certificate = \\$X509CertificateObject->Parse(",
             "",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.X509CertificateObject.Parse",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

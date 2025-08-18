@@ -1,7 +1,14 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.TemplateGeneratorObject.AutoResponse": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TemplateGeneratorObject.AutoResponse": {
         "body": [
             "${1:my %AutoResponse = \\$TemplateGeneratorObject->AutoResponse(",
+            "    TicketID         => \\$TicketID,",
+            "    OrigHeader       => {\\},",
+            "    AutoResponseType => 'auto reply',",
+            "    UserID           => \\$UserID,",
+            "    UserType         => 'Agent', # optional",
+            ");}",
+            "${2:my %AutoResponse = \\$TemplateGeneratorObject->AutoResponse(",
             "    TicketID         => \\$TicketID,",
             "    OrigHeader       => {\\},",
             "    AutoResponseType => 'auto reply',",
@@ -9,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.AutoResponse",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.PackageObject.PackageUpgradeAll": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.PackageUpgradeAll": {
         "body": [
             "${1:my %Result = \\$PackageObject->PackageUpgradeAll(",
             "    Force           => 1,     # optional 1 or 0, Upgrades packages even if validation fails.",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.PackageUpgradeAll",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

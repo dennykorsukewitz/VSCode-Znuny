@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.SeleniumObject.InputType": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.InputType": {
         "body": [
             "${1:my \\$Result = \\$SeleniumObject->InputType(",
             "    FieldID => \\$FieldID,",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.InputType",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

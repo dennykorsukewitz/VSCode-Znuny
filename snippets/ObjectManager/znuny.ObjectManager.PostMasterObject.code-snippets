@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ObjectManager.PostMasterObject": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ObjectManager.PostMasterObject": {
         "body": [
             "my \\$PostMasterObject = \\$Kernel::OM->Create(",
             "        'Kernel::System::PostMaster',",
@@ -10,7 +10,7 @@
             "    );",
         ],
         "prefix": "znuny.ObjectManager.PostMasterObject",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

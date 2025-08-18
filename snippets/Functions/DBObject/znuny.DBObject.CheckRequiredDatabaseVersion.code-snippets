@@ -1,11 +1,11 @@
 {
-    "7.1 - znuny.DBObject.CheckRequiredDatabaseVersion": {
+    "7.1|7.2 - znuny.DBObject.CheckRequiredDatabaseVersion": {
         "body": [
             "${1:my %VersionInfo = \\$DBObject->CheckRequiredDatabaseVersion();}",
             "${2:my %VersionInfos = \\$DBObject->CheckRequiredDatabaseVersion();}",
         ],
         "prefix": "znuny.DBObject.CheckRequiredDatabaseVersion",
-        "description": "7.1",
+        "description": "7.1|7.2",
         "scope": "perl"
     }
 }

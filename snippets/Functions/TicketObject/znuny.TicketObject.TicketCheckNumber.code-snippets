@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.TicketObject.TicketCheckNumber": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TicketObject.TicketCheckNumber": {
         "body": [
             "${1:my \\$TicketID = \\$TicketObject->TicketCheckNumber(",
             "    Tn => '200404051004575',",
             ");}",
         ],
         "prefix": "znuny.TicketObject.TicketCheckNumber",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

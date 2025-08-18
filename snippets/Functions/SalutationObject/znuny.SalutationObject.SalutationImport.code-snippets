@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.SalutationObject.SalutationImport": {
+        "body": [
+            "${1:my \\$ImportResult = \\$SalutationObject->SalutationImport(",
+            "    Content                      => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingSalutations => 0,            # optional, possible: 0, 1",
+            "    UserID                       => \\$UserID,            # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.SalutationObject.SalutationImport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

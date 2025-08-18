@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.GenericAgentObject.JobAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.GenericAgentObject.JobAdd": {
         "body": [
             "${1:\\$GenericAgentObject->JobAdd(",
             "    Name => 'JobName',",
@@ -10,9 +10,18 @@
             "    \\},",
             "    UserID => \\$UserID,",
             ");}",
+            "${2:\\$GenericAgentObject->JobAdd(",
+            "    Name => 'JobName',",
+            "    Data => {",
+            "        Queue => 'SomeQueue',",
+            "        ...",
+            "        Valid => 1,",
+            "    \\},",
+            "    UserID => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

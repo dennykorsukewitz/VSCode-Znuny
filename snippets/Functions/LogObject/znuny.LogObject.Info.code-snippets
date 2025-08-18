@@ -1,0 +1,10 @@
+{
+    "7.2 - znuny.LogObject.Info": {
+        "body": [
+            "${1:\\$LogObject->Info(\\"Oh by the way, this thing worked.\\");}",
+        ],
+        "prefix": "znuny.LogObject.Info",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

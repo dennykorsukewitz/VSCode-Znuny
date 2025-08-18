@@ -1,0 +1,10 @@
+{
+    "7.2 - znuny.LogObject.Debug": {
+        "body": [
+            "${1:\\$LogObject->Debug(\\"You won't want to see this unless you're a developer.\\");}",
+        ],
+        "prefix": "znuny.LogObject.Debug",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

@@ -1,10 +1,10 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.UtilObject.GetInstalledDBCRUDObjects": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.UtilObject.GetInstalledDBCRUDObjects": {
         "body": [
             "${1:my \\$DBCRUDObjects = \\$UtilObject->GetInstalledDBCRUDObjects();}",
         ],
         "prefix": "znuny.UtilObject.GetInstalledDBCRUDObjects",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

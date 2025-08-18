@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.QueueObject.NameExistsCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.QueueObject.NameExistsCheck": {
         "body": [
             "${1:\\$Exist = \\$QueueObject->NameExistsCheck(",
             "    Name => 'Some::Queue',",
             "    ID   => 1,              # optional",
             ");}",
+            "${2:\\$Exist = \\$QueueObject->NameExistsCheck(",
+            "    Name => 'Some::Queue',",
+            "    ID => 1, # optional",
+            ");}",
         ],
         "prefix": "znuny.QueueObject.NameExistsCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

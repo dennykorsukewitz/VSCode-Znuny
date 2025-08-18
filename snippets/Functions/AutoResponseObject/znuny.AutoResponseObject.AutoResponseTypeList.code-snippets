@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.AutoResponseObject.AutoResponseTypeList": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.AutoResponseObject.AutoResponseTypeList": {
         "body": [
             "${1:my %AutoResponseType = \\$AutoResponseObject->AutoResponseTypeList(",
             "    Valid => 1,     # (optional) default 1",
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseTypeList",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

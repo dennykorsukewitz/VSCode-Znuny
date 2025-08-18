@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.SignatureObject.SignatureExportFilenameGet": {
+        "body": [
+            "${1:my \\$Filename = \\$SignatureObject->SignatureExportFilenameGet(",
+            "    Name => 'Signature_1',",
+            "    Format => 'YAML',",
+            ");}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureExportFilenameGet",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

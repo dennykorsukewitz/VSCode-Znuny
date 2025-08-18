@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1 - znuny.UnitTestWebserviceObject.ValidateResult": {
+    "6.4|6.5|7.0|7.1|7.2 - znuny.UnitTestWebserviceObject.ValidateResult": {
         "body": [
             "${1:my \\$Result = \\$UnitTestWebserviceObject->ValidateResult(",
             "    UnitTestObject => \\$Self,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.ValidateResult",
-        "description": "6.4|6.5|7.0|7.1",
+        "description": "6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

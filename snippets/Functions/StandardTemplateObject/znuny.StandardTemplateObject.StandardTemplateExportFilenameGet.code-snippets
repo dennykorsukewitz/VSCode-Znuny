@@ -1,0 +1,13 @@
+{
+    "7.2 - znuny.StandardTemplateObject.StandardTemplateExportFilenameGet": {
+        "body": [
+            "${1:my \\$Filename = \\$StandardTemplateObject->StandardTemplateExportFilenameGet(",
+            "    Name => 'StandardTemplate_1',",
+            "    Format => 'YAML',",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateExportFilenameGet",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

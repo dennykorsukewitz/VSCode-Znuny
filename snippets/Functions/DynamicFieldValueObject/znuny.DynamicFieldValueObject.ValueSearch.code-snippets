@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.DynamicFieldValueObject.ValueSearch": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DynamicFieldValueObject.ValueSearch": {
         "body": [
             "${1:my \\$Value = \\$DynamicFieldValueObject->ValueSearch(",
+            "    FieldID            => \\$FieldID,             # ID of dynamic field to search",
+            "    Search             => 'test',",
+            "    SearchSQL          => \\"dynamic_field_value.value_text = 'test'\\",",
+            ");}",
+            "${2:my \\$Value = \\$DynamicFieldValueObject->ValueSearch(",
             "    FieldID   => \\$FieldID,             # ID of dynamic field to search",
             "    Search    => 'test',",
             "    SearchSQL => \\"dynamic_field_value.value_text = 'test'\\",",
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueSearch",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

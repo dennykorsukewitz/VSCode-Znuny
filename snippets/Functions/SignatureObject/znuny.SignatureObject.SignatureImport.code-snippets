@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.SignatureObject.SignatureImport": {
+        "body": [
+            "${1:my \\$ImportResult = \\$SignatureObject->SignatureImport(",
+            "    Content                     => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingSignatures => 0,            # optional, possible: 0, 1",
+            "    UserID                      => \\$UserID,            # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureImport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

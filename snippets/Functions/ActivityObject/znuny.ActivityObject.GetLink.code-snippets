@@ -1,5 +1,5 @@
 {
-    "7.0|7.1 - znuny.ActivityObject.GetLink": {
+    "7.0|7.1|7.2 - znuny.ActivityObject.GetLink": {
         "body": [
             "${1:my \\$String = \\$ActivityObject->GetLink(",
             "    TicketID => \\$TicketID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.GetLink",
-        "description": "7.0|7.1",
+        "description": "7.0|7.1|7.2",
         "scope": "perl"
     }
 }

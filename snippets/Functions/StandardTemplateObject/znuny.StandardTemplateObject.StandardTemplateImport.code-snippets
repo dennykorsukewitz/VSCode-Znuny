@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.StandardTemplateObject.StandardTemplateImport": {
+        "body": [
+            "${1:my \\$ImportResult = \\$StandardTemplateObject->StandardTemplateImport(",
+            "    Content                    => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingTemplates => 0,            # optional, possible: 0, 1",
+            "    UserID                     => \\$UserID,            # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.StandardTemplateObject.StandardTemplateImport",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

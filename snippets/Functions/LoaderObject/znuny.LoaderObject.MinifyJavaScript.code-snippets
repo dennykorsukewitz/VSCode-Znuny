@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.LoaderObject.MinifyJavaScript": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LoaderObject.MinifyJavaScript": {
         "body": [
             "${1:my \\$MinifiedJS = \\$LoaderObject->MinifyJavaScript( Code => \\$JavaScript );}",
         ],
         "prefix": "znuny.LoaderObject.MinifyJavaScript",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

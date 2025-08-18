@@ -1,0 +1,22 @@
+{
+    "7.2 - znuny.TranslationObject.DataDelete": {
+        "body": [
+            "${1:my \\$Success = \\$TranslationObject->DataDelete(",
+            "    ID              => '...', # optional",
+            "    LanguageID      => \\$LanguageID, # optional",
+            "    Source          => '...', # optional",
+            "    Destination     => '...', # optional",
+            "    ValidID         => \\$ValidID, # optional",
+            "    CreateTime      => '...', # optional",
+            "    CreateBy        => '...', # optional",
+            "    ChangeTime      => '...', # optional",
+            "    ChangeBy        => '...', # optional",
+            "    DeploymentState => '...', # optional",
+            "    UserID          => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.TranslationObject.DataDelete",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

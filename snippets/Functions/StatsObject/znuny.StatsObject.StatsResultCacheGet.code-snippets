@@ -1,14 +1,19 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.StatsObject.StatsResultCacheGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.StatsResultCacheGet": {
         "body": [
             "${1:my \\$StatArray = \\$StatsObject->StatsResultCacheGet(",
             "    StatID       => \\$StatID,",
             "    UserID       => \\$UserID,        # target UserID",
             "    UserGetParam => \\%GetParam,",
             ");}",
+            "${2:my \\$StatArray = \\$StatsObject->StatsResultCacheGet(",
+            "    StatID       => \\$StatID,",
+            "    UserID       => \\$UserID,    # target UserID",
+            "    UserGetParam => \\%GetParam,",
+            ");}",
         ],
         "prefix": "znuny.StatsObject.StatsResultCacheGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

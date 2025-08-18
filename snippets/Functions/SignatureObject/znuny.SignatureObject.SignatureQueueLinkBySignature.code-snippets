@@ -1,0 +1,14 @@
+{
+    "7.2 - znuny.SignatureObject.SignatureQueueLinkBySignature": {
+        "body": [
+            "${1:my \\$Success = \\$SignatureObject->SignatureQueueLinkBySignature(",
+            "    QueueIDs => [1,2,3],",
+            "    ID       => 1,",
+            "    UserID   => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.SignatureObject.SignatureQueueLinkBySignature",
+        "description": "7.2",
+        "scope": "perl"
+    }
+}

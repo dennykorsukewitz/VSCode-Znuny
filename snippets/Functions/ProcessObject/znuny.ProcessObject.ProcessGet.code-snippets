@@ -1,12 +1,16 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.ProcessObject.ProcessGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ProcessObject.ProcessGet": {
         "body": [
             "${1:my \\$Process = \\$ProcessObject->ProcessGet(",
+            "    ProcessEntityID => \\$ProcessEntityID,",
+            "    Preferences     => 1,    # (optional) default 1 (0|1), if set to 1, returns Preferences",
+            ");}",
+            "${2:my \\$Process = \\$ProcessObject->ProcessGet(",
             "    ProcessEntityID => \\$ProcessEntityID,",
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessGet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

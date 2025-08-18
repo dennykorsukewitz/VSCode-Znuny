@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.SysConfigObject.SettingsSet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SysConfigObject.SettingsSet": {
         "body": [
             "${1:my \\$Success = \\$SysConfigObject->SettingsSet(",
             "    UserID   => \\$UserID,                                      # (required) UserID",
@@ -14,9 +14,22 @@
             "        # ...",
             "    ],",
             ");}",
+            "${2:my \\$Success = \\$SysConfigObject->SettingsSet(",
+            "    UserID   => \\$UserID,                                      # (required) UserID",
+            "    Comments => 'Deployment comment',                   # (optional) Comment",
+            "    Settings => [                                       # (required) List of settings to update.",
+            "        {",
+            "            Name                   => 'Setting::Name',  # (required)",
+            "            EffectiveValue         => 'Value',          # (optional)",
+            "            IsValid                => 1,                # (optional)",
+            "            UserModificationActive => 1,                # (optional)",
+            "        \\},",
+            "        ...",
+            "    ],",
+            ");}",
         ],
         "prefix": "znuny.SysConfigObject.SettingsSet",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

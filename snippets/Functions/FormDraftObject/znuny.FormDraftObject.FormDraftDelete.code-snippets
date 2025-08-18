@@ -1,13 +1,17 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.FormDraftObject.FormDraftDelete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.FormDraftObject.FormDraftDelete": {
         "body": [
             "${1:my \\$Success = \\$FormDraftObject->FormDraftDelete(",
             "    FormDraftID => \\$FormDraftID,",
             "    UserID      => \\$UserID,",
             ");}",
+            "${2:my \\$Success = \\$FormDraftObject->FormDraftDelete(",
+            "    FormDraftID => \\$FormDraftID,",
+            "    UserID  => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftDelete",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }

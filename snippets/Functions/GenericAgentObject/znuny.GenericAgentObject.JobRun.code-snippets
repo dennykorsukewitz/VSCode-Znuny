@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1 - znuny.GenericAgentObject.JobRun": {
+    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.GenericAgentObject.JobRun": {
         "body": [
             "${1:\\$GenericAgentObject->JobRun(",
             "    Job          => 'JobName',",
@@ -7,9 +7,15 @@
             "    SleepTime    => 100_000,    # (optional) sleeptime per ticket in microseconds",
             "    UserID       => \\$UserID,",
             ");}",
+            "${2:\\$GenericAgentObject->JobRun(",
+            "    Job          => 'JobName',",
+            "    OnlyTicketID => \\$OnlyTicketID,     # (optional) for event based Job execution",
+            "    SleepTime    => 100_000, # (optional) sleeptime per ticket in microseconds",
+            "    UserID       => \\$UserID,",
+            ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobRun",
-        "description": "6.0|6.4|6.5|7.0|7.1",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
         "scope": "perl"
     }
 }
