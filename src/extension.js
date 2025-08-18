@@ -422,11 +422,11 @@ function initGenerateFilelist(context) {
             fileListTemplate = '    <Filelist>\n';
         }
 
-        // Sort object list and add to template.
-        filesList.sort().forEach(function (file, i) {
+        // Sort by ascending order and add to template.
+        filesList.sort((a, b) => a.localeCompare(b)).forEach(function (file, i) {
 
             let permission = '660';
-            if ((file.startsWith('scripts/') || file.startsWith('bin/') || file.endsWith('.sh')) && !file.endsWith('.t')) {
+            if ((file.startsWith('scripts/') || file.startsWith('bin/') || file.endsWith('.sh') || file.endsWith('.pl')) && !file.endsWith('.t')) {
                 permission = '770';
             }
 
