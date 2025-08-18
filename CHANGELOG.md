@@ -7,6 +7,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 ### Added
 
 - When the FileList is created, images (.png, .jpg, .svg, .gif, .ico) are now also added to SOPM FileList.
+- Sort file list by ascending order before generating. Also add *.pl files.
 
 ### Changed
 
@@ -34,6 +35,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 - Fixed wrong snippet filename -> Change to _old.
 - Fixed wrong snippet filename -> Change back.
 - UnitTests should still have permission 660 even if they are located under scripts/.
+- Ensure trailing slash is added to recursive workspace.
 
 ## [1.4.1]
 
