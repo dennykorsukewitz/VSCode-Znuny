@@ -488,7 +488,7 @@ function initObjectDependencies(context) {
 
         // Sort object list and add to template.
         objectDependencies.sort().forEach(object => {
-            objectDependenciesTemplate += `    '${object}', \n`;
+            objectDependenciesTemplate += `    '${object}',\n`;
         })
 
         objectDependenciesTemplate += ");";
