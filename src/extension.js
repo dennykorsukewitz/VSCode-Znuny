@@ -66,6 +66,12 @@ function initAddFolderToWorkspace(context) {
 
         // Get all first level directories from given directories.
         config.recursiveWorkspaces.forEach(myWorkspace => {
+
+            // Add '/' to the end of the directory if not already set.
+            if (!myWorkspace.endsWith('/')) {
+                myWorkspace += '/';
+            }
+
             let workspaceDirectory = fs.readdirSync(myWorkspace, { withFileTypes: true })
                 .filter(dir => dir.isDirectory())
                 .map(dir => myWorkspace + dir.name);
