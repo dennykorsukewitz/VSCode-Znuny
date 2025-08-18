@@ -36,6 +36,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 - Fixed wrong snippet filename -> Change back.
 - UnitTests should still have permission 660 even if they are located under scripts/.
 - Ensure trailing slash is added to recursive workspace.
+- Removed obsolete trailing space from generated @ObjectDependencies array.
 
 ## [1.4.1]
 
