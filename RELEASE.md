@@ -1,10 +1,12 @@
-# [1.5.0]
+# Release
+
+## [1.5.0]
 
 ### Added
 
 - When the FileList is created, images (.png, .jpg, .svg, .gif, .ico) are now also added to SOPM FileList.
 - Sort file list by ascending order before generating. Also add *.pl files.
-- Yml and yaml files are now also added to SOPM FileList.
+- Yml and YAML files are now also added to SOPM FileList.
 
 ### Changed
 
