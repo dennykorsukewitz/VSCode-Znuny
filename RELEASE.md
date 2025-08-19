@@ -36,3 +36,4 @@
 - UnitTests should still have permission 660 even if they are located under scripts/.
 - Ensure trailing slash is added to recursive workspace.
 - Removed obsolete trailing space from generated @ObjectDependencies array.
+- Perl elsif snippet was not displayed correctly because the prefix was defined incorrectly.
