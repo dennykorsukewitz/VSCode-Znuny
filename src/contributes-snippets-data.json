@@ -3304,6 +3304,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/OAuth2TokenConfigObject/znuny.OAuth2TokenConfigObject.IsAuthFlowSupported.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/OAuth2TokenConfigObject/znuny.OAuth2TokenConfigObject.IsOAuth2TokenConfigInUse.code-snippets"
     },
     {
@@ -3377,6 +3381,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/OAuth2TokenObject/znuny.OAuth2TokenObject.RequestTokenByAuthorizationCode.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/OAuth2TokenObject/znuny.OAuth2TokenObject.RequestTokenByClientCredentials.code-snippets"
     },
     {
       "language" : "perl",
