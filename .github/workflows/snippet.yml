@@ -33,14 +33,14 @@ jobs:
     steps:
 
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         env:
           fetch-depth: "1"
         with:
           path: repository
 
       - name: Check out module-tools
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         env:
           fetch-depth: "1"
         with:
@@ -48,7 +48,7 @@ jobs:
           path: module-tools
 
       - name: Check out Znuny
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         env:
           fetch-depth: "1"
         with:
