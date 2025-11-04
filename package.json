@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
-    "@types/node": "22.x",
+    "@types/node": "24.x",
     "@types/vscode": "^1.74.0",
     "@vscode/test-electron": "^2.2.0",
     "eslint": "^9.17.0",
