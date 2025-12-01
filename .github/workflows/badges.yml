@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04 # ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         env:
           fetch-depth: "1"
         with:
