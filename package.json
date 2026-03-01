@@ -58,7 +58,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "glob": "^11.0.0",
+    "glob": "^13.0.6",
     "node-fetch": "^3.3.2",
     "path": "^0.12.7",
     "vscode-uri": "^3.0.7",
