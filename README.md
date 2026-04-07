@@ -17,14 +17,12 @@
 
 ## Features
 
-- [AddFolderToWorkspace](#addfoldertoworkspace)
-- [RemoveFolderFromWorkspace](#removefolderfromworkspace)
 - [Customizer](#customizer)
 - [GenerateFilelist](#generatefilelist)
 - [ObjectDependencies](#objectdependencies)
-- [QuoteWithMarker](#quotewithmarker)
 - [Snippets](#snippets)
 - [StatusBar](#statusbar)
+- [Companion extensions](#companion-extensions) (optional Marketplace installs)
 
 ---
 
@@ -92,40 +90,14 @@ snippets
 
 ---
 
-### AddFolderToWorkspace
+### Companion extensions
 
-This Function provides a searchable list of folders (Workspaces) that can be added to the current VSC Workspace. All configured folders will be displayed.
+These tools are maintained as separate extensions (same publisher). They can be installed directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) (search by name or extension id).
 
-```markdown
-    Of course, you can use the already built-in function:
-    `Workspaces: Add Folder To Workspace...` (workbench.action.addRootFolder).
-    But then you have to click through all the folders again and again.
-```
-
-**Shortcut:** ```strg + alt + z, p```<br>
-**Command:**  ```Znuny: Add Folder to Workspace.```
-
-![AddFolderToWorkspace](doc/images/addfoldertoworkspace.gif)
-
-#### Settings
-
-`Preferences -> Settings -> Extensions -> Znuny`
-
-| Name | Description | Default Value |
-| - | - | - |
-| znuny.addFolderToWorkspace.workspaces | Provides a list of folders (Workspaces) that can be added to the current VSC Workspace. | /Users/ |
-| znuny.addFolderToWorkspace.recursiveWorkspaces | Provides a searchable (only first level) list of folders  (Workspaces) that can be added to the current VSC Workspace. | /Users/ |
-
----
-
-### RemoveFolderFromWorkspace
-
-This Function provides a searchable list of folders (Workspaces) that can be removed **simultaneous** from the current VSC Workspace. All current open folders are displayed.
-
-**Shortcut:** ```strg + alt + z, shift + p```<br>
-**Command:**  ```Znuny: Remove Folder from Workspace.```
-
-![RemoveFolderFromWorkspace](doc/images/removefolderfromworkspace.gif)
+| Workflow | Extension | Marketplace id |
+| -------- | --------- | -------------- |
+| Quote selection with a marker block | [Quote With Marker](https://github.com/dennykorsukewitz/VSCode-QuoteWithMarker) | `dennykorsukewitz.QuoteWithMarker` |
+| Add / remove workspace folders (multi-root helpers) | [Add Folder To Workspace](https://github.com/dennykorsukewitz/VSCode-AddFolderToWorkspace) | `dennykorsukewitz.addfoldertoworkspace` |
 
 ---
 
@@ -222,98 +194,6 @@ This function inserts the `@ObjectDependencies` array by parsing the file conten
 **Command:**  ```Znuny: Insert @ObjectDependencies.```
 
 ![ObjectDependencies](doc/images/objectdependencies.gif)
-
----
-
-### QuoteWithMarker
-
-This function quotes the selected area and adds a custom marker to it.
-
-`QuoteWithMarker` can be very useful especially for custom files `Custom/**`.
-
-**Shortcut:** ```strg + alt + z, q```<br>
-**Command:**  ```Znuny: Quote with Marker.```
-
-<details>
-  <summary>Works for the following languages:</summary>
-
-| LanguageID              | LineComment |
-| ----------------------- | ----------- |
-| bat                     | @REM        |
-| clojure                 | ;;          |
-| CoffeeScript            | #           |
-| c                       | //          |
-| cpp                     | //          |
-| cuda-cpp                | //          |
-| csharp                  | //          |
-| CSS                     |             |
-| dart                    | //          |
-| diff                    | #           |
-| Dockerfile              | #           |
-| fsharp                  | //          |
-| git-commit              | #           |
-| git-rebase              | #           |
-| ignore                  | #           |
-| go                      | //          |
-| groovy                  | //          |
-| handlebars              |             |
-| hlsl                    | //          |
-| HTML                    |             |
-| ini                     | ;           |
-| plaintext               | #           |
-| Java                    | //          |
-| javascriptreact         | //          |
-| JavaScript              | //          |
-| jsx-tags                |             |
-| JSON                    | //          |
-| jsonc                   | //          |
-| jsonl                   | //          |
-| julia                   | #           |
-| tex                     | %           |
-| LaTeX                   | %           |
-| cpp_embedded_latex      | //          |
-| markdown_latex_combined |             |
-| less                    | //          |
-| lua                     | --          |
-| Makefile                | #           |
-| Markdown                |             |
-| objective-c             | //          |
-| objective-cpp           | //          |
-| perl                    | #           |
-| perl6                   | #           |
-| php                     | //          |
-| PowerShell              | #           |
-| jade                    | //-         |
-| python                  | #           |
-| r                       | #           |
-| razor                   |             |
-| restructuredtext        | ..          |
-| ruby                    | #           |
-| rust                    | //          |
-| SCSS                    | //          |
-| shaderlab               | //          |
-| shellscript             | #           |
-| SQL                     | --          |
-| swift                   | //          |
-| TypeScript              | //          |
-| typescriptreact         | //          |
-| vb                      | '           |
-| XML                     |             |
-| xsl                     |             |
-| dockercompose           | #           |
-| YAML                    | #           |
-
-</details>
-
-#### Settings
-
-`Preferences -> Settings -> Extensions -> Znuny`
-
-| Name | Description | Default Value |
-| - | - | - |
-| znuny.quoteWithMarker.codeMarker | Znuny Code Marker used in QuoteWithMarker function. | Znuny |
-
-![QuoteWithMarker](doc/images/quotewithmarker.gif)
 
 ---
 

@@ -1,8 +1,6 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-const fs = require('fs');
-const path = require('path');
 const helper = require('./utils/helper.js');
 const { default: fetch } = require('node-fetch');
 require('buffer');
@@ -19,13 +17,6 @@ function activate(context) {
     // This line of code will only be executed once when your extension is activated
     // console.log('Congratulations, your extension "Znuny" is now active!');
 
-    // This function add the selected folder to workspace (VSC Workspace).
-    // Also known as ZnunyAddToProject function.
-    initAddFolderToWorkspace(context);
-
-    // This function removes the selected folder from workspace (VSC Workspace).
-    initRemoveFolderFromWorkspace(context);
-
     // This function fetches Znuny files from GitHub and adds origin to header.
     initCustomizer(context);
 
@@ -35,178 +26,9 @@ function activate(context) {
     // This function inserts the @ObjectDependencies array by parsing the file content. Only regular used OM (ObjectManager) calls are supported.
     initObjectDependencies(context);
 
-    // This function quotes the selected area and adds a custom marker to it.
-    initQuoteWithMarker(context);
-
     // The status bar gets an additional **Znuny** item and the entire status bar is displayed in the Znuny color if the active file is a "Znuny file".
     initStatusBarItem(context);
 }
-
-function initAddFolderToWorkspace(context) {
-
-    const addFolderToWorkspaceId = 'znuny.addFolderToWorkspace';
-    context.subscriptions.push(vscode.commands.registerCommand(addFolderToWorkspaceId, async () => {
-
-        let workspaceDirectories = [],
-            newWorkspaceFound = 0,
-            manualWorkspace = '',
-            manualDirectoryString = '-- Add manually a directory --';
-
-        let config = vscode.workspace.getConfiguration('znuny').get('addFolderToWorkspace');
-
-        // Check if workspaces are defined.
-        if (!config.workspaces.length && !config.recursiveWorkspaces.length) {
-            vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
-            vscode.window.showWarningMessage(`Znuny - AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
-            return;
-        }
-
-        // Add all stored workspaces / directories.
-        workspaceDirectories = config.workspaces || [];
-
-        // Get all first level directories from given directories.
-        config.recursiveWorkspaces.forEach(myWorkspace => {
-
-            // Add '/' to the end of the directory if not already set.
-            if (!myWorkspace.endsWith('/')) {
-                myWorkspace += '/';
-            }
-
-            let workspaceDirectory = fs.readdirSync(myWorkspace, { withFileTypes: true })
-                .filter(dir => dir.isDirectory())
-                .map(dir => myWorkspace + dir.name);
-
-            workspaceDirectories = workspaceDirectories.concat(workspaceDirectory);
-        })
-
-        // Check if directories are defined.
-        if (!workspaceDirectories.length) {
-            vscode.commands.executeCommand('workbench.action.openSettings', 'addFolderToWorkspace');
-            vscode.window.showWarningMessage(`Znuny - AddFolderToWorkspace: Workspaces - Undefined`, { detail: 'Define at least one workspace (fullpath).\n\nExample: "/Users/workspace/"', modal: true });
-            return;
-        }
-
-        if (workspaceDirectories.length && !workspaceDirectories.includes(manualDirectoryString)) {
-            workspaceDirectories.unshift(manualDirectoryString);
-        }
-
-        // Open QuickPick and add selected Folder (Directory to VSC Workspace).
-        let workspaces = await vscode.window.showQuickPick(workspaceDirectories, {
-            title: 'Znuny - AddFolderToWorkspace',
-            placeHolder: 'Znuny - AddFolderToWorkspace: Select a folder...',
-            canPickMany: true,
-        })
-
-        if (!workspaces) return;
-
-        if (workspaces.length && workspaces.includes(manualDirectoryString)) {
-
-            workspaces.shift(manualDirectoryString);
-            newWorkspaceFound = 1;
-
-            manualWorkspace = await vscode.window.showInputBox({
-                title: 'Znuny - AddFolderToWorkspace',
-                placeHolder: 'Znuny - AddFolderToWorkspace: Add manually a directory...',
-            });
-
-            if (manualWorkspace) {
-                workspaces.push(manualWorkspace);
-            }
-        }
-        if (!workspaces) return;
-
-        let workspaceURIs = [];
-        for await (const workspace of workspaces) {
-
-            // Get URI of selected directory.
-            let URI = vscode.Uri.file(workspace),
-                URIexists = 0;
-
-            if (!URI) return;
-
-            if (vscode.workspace.workspaceFolders) {
-                vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
-
-                    if (URI.path == workspaceFolder.uri.path) {
-                        URIexists = 1;
-                    }
-                })
-            }
-
-            if (!URIexists) {
-                workspaceURIs.push({ uri: URI });
-            }
-        }
-
-        if (!workspaceURIs.length) return;
-
-        if (newWorkspaceFound) {
-            let addNewWorkspaceToConfig = await vscode.window.showQuickPick(['yes', 'no'], {
-                title: 'Znuny - AddFolderToWorkspace (New Workspace)',
-                placeHolder: 'Znuny - AddFolderToWorkspace: Should I save the new workspace in the settings?',
-                canPickMany: false,
-            });
-
-            if (addNewWorkspaceToConfig == 'yes') {
-
-                if (!manualWorkspace.endsWith("/")) {
-                    manualWorkspace += '/';
-                }
-
-                let configWorkspaces = config.workspaces;
-                configWorkspaces.push(manualWorkspace);
-
-                await vscode.workspace.getConfiguration().update('znuny.addFolderToWorkspace.workspaces', configWorkspaces, true);
-            }
-        }
-
-        // Add selected Folder to Workspace.
-        await updateWorkspaceAndWait(0, null, workspaceURIs);
-
-    }))
-}
-
-function initRemoveFolderFromWorkspace(context) {
-
-    const removeFolderFromWorkspaceId = 'znuny.removeFolderFromWorkspace';
-    context.subscriptions.push(vscode.commands.registerCommand(removeFolderFromWorkspaceId, async () => {
-
-        // Check all current workspace folders.
-        let workspaceFolders = [];
-        vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
-            workspaceFolders.push(workspaceFolder.name)
-        })
-
-        if (!workspaceFolders.length) return;
-
-        // Create showQuickPick 'Znuny - RemoveFolderFromWorkspace' selection.
-        let workspaces = await vscode.window.showQuickPick(workspaceFolders, {
-            title: 'Znuny - RemoveFolderFromWorkspace',
-            placeHolder: 'Znuny - RemoveFolderFromWorkspace: Select workspaces to be removed...',
-            canPickMany: true,
-        });
-
-        if (!workspaces) return;
-
-        let removeIndexes = [];
-
-        // Sort and reverse selected 'remove' Folder from Workspace.
-        vscode.workspace.workspaceFolders.sort().forEach(function (workspaceFolder) {
-            // workspaceFolders.push(workspaceFolder.name)
-            let removeWorkspace = workspaces.includes(workspaceFolder.name);
-
-            if (removeWorkspace) {
-                removeIndexes.push(workspaceFolder.index)
-            }
-        })
-
-        // Remove selected Folder from Workspace.
-        for await (const removeIndex of removeIndexes.reverse()) {
-            await updateWorkspaceAndWait(removeIndex, 1, []);
-        }
-    }))
-}
-
 
 function initCustomizer(context) {
 
@@ -500,139 +322,6 @@ function initObjectDependencies(context) {
     }))
 }
 
-function initQuoteWithMarker(context) {
-    const quoteWithMarkerId = 'znuny.quoteWithMarker';
-    context.subscriptions.push(vscode.commands.registerCommand(quoteWithMarkerId, () => {
-
-        let activeEditor = vscode.window.activeTextEditor;
-        if (!activeEditor) return; // No open text editor.
-
-        // Get current selection
-        let selection = activeEditor.selection;
-
-        // Select current line if nothing is selected
-        if (selection.isEmpty == true) {
-            activeEditor.selection = new vscode.Selection(selection.active.line, 0, selection.active.line, 99);
-            selection = activeEditor.selection;
-        }
-
-        let text = activeEditor.document.getText(selection) || '';
-        let config = vscode.workspace.getConfiguration('znuny').get('quoteWithMarker');
-
-        let quoteCharStart = '',
-            quoteCharEnd = '',
-            quoteCharStartOrigin = '',
-            quoteCharBlockStart = '',
-            isBlockComment = 0,
-            codeMarkerReplace,
-            codeMarker = config.codeMarker || 'Znuny',
-            lineComment = config.lineComment || {},
-            languageId = activeEditor.document.languageId;
-
-        let currentTime = new Date();
-
-        // returns the month (from 0 to 11).
-        let month = currentTime.getMonth() + 1;
-
-        // returns the day of the month (from 1 to 31).
-        let day = currentTime.getDate();
-
-        // returns the year (four digits).
-        let year = currentTime.getFullYear();
-
-        if (month.toString().length <= 1) {
-            month = month.toString().padStart(2, '0')
-        }
-        if (day.toString().length <= 1) {
-            day = day.toString().padStart(2, '0')
-        }
-
-        codeMarker = codeMarker.replace(/\${year}/g, year);
-        codeMarker = codeMarker.replace(/\${month}/g, month);
-        codeMarker = codeMarker.replace(/\${day}/g, day);
-
-        // Get quoteCharStart from config.
-        if (lineComment[languageId] && lineComment[languageId].length) {
-            quoteCharStart = lineComment[languageId];
-        }
-
-        // If no quoteCharStart is set, try to use the default value of lineComment of the current language config.
-        if (quoteCharStart.length === 0 && languageId || quoteCharStart === 'undefined') {
-            let extensions = vscode.extensions.all;
-            let languagesData = extensions.filter((extension) => extension.packageJSON.name === languageId);
-
-            let languageExtensionPath = languagesData[0].extensionPath;
-            let languageConfiguration = languagesData[0].packageJSON.contributes.languages[0].configuration;
-
-            const configPath = path.join(languageExtensionPath, languageConfiguration);
-            const content = fs.readFileSync(configPath, { encoding: 'utf8' });
-
-            try {
-                const config = JSON.parse(content);
-                if (config.comments.lineComment) {
-                    quoteCharStart = config.comments.lineComment;
-                }
-                else if (config.comments.blockComment) {
-                    isBlockComment = 1;
-                    quoteCharStart = config.comments.blockComment[0];
-                    quoteCharEnd = ' ' + config.comments.blockComment[1];
-                    quoteCharBlockStart = ' ' + config.comments.blockComment[0].substring(1);
-                }
-
-            } catch (error) {
-                console.log(error);
-            }
-        }
-
-        if (!quoteCharStart) return;
-
-        let lineLength = 0;
-        text.split(/\r?\n/).forEach(line => {
-            if (line.toString().length > lineLength) {
-                lineLength = line.toString().length;
-            }
-        })
-
-        codeMarkerReplace = `${quoteCharStart} ---${quoteCharEnd}\n`;
-        codeMarkerReplace += `${quoteCharStart} ${codeMarker}${quoteCharEnd}\n`;
-        codeMarkerReplace += `${quoteCharStart} ---${quoteCharEnd}\n`;
-
-        if (isBlockComment) {
-            codeMarkerReplace += `${quoteCharStart}\n`;
-            quoteCharStartOrigin = quoteCharStart;
-            quoteCharStart = quoteCharBlockStart;
-        }
-
-        // Add QuoteCharStart to every single line.
-        text.split(/\r?\n/).forEach(line => {
-            codeMarkerReplace += `${quoteCharStart} ${line}\n`;
-        })
-
-        if (isBlockComment) {
-            codeMarkerReplace += `${quoteCharEnd}\n`;
-            quoteCharStart = quoteCharStartOrigin;
-        }
-
-        codeMarkerReplace += `\n${text}`;
-        codeMarkerReplace += `\n\n${quoteCharStart} ---${quoteCharEnd}\n`;
-        text.replace(text, codeMarkerReplace);
-
-        // Replace the selection in the editor with CodeMarker.
-        if (selection.isEmpty == false) {
-            activeEditor.edit(editBuilder => {
-                editBuilder.replace(selection, codeMarkerReplace);
-            });
-        }
-
-        // Add CodeMarker to current position if nothing is selected and could also not be selected.
-        else {
-            activeEditor.edit(editBuilder => {
-                editBuilder.insert(activeEditor.selection.active, codeMarkerReplace);
-            });
-        }
-    }))
-}
-
 function initStatusBarItem(context) {
 
     let config = vscode.workspace.getConfiguration('znuny').get('statusBar');
@@ -679,26 +368,6 @@ function initStatusBarItem(context) {
         // Update status bar item once at start.
         updateStatusBarItem();
     };
-}
-
-function updateWorkspaceAndWait(start, deleteCount, workspaceFoldersToAdd) {
-    const success = vscode.workspace.updateWorkspaceFolders(start, deleteCount, ...workspaceFoldersToAdd)
-
-    if (success) {
-        const disps = []
-        return new Promise(resolve => {
-
-            // Note: it is not valid to call updateWorkspaceFolders() multiple times
-            // without waiting for the onDidChangeWorkspaceFolders() to fire.
-            // So we have to always wait in case we want to add or remove multiple folders.
-            vscode.workspace.onDidChangeWorkspaceFolders(() => {
-                resolve();
-            }, null, disps);
-
-        }).finally(() => disps.forEach(disp => disp.dispose()));
-    } else {
-        return Promise.reject(new Error("Failed to update workspace"))
-    }
 }
 
 function updateStatusBarItem() {
