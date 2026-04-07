@@ -29,7 +29,7 @@
     "Snippets"
   ],
   "engines": {
-    "vscode": "^1.74.0"
+    "vscode": "^1.85.0"
   },
   "activationEvents": [
     "onCommand:znuny.customizer",
@@ -39,26 +39,37 @@
     "workspaceContains:**.sopm",
     "workspaceContains:RELEASE"
   ],
-  "main": "./src/extension",
+  "main": "./dist/extension.js",
+  "browser": "./dist/extension.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "test": "node ./test/runTest.js"
+    "vscode:prepublish": "tsc -p ./ && npm run esbuild-base -- --minify",
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+    "watch": "tsc -watch -p ./",
+    "build": "tsc -p ./ && npm run esbuild-base -- --sourcemap",
+    "build-web": "npm run esbuild-base -- --sourcemap",
+    "lint": "eslint src --ext ts",
+    "lint-fix": "eslint src --ext ts --fix",
+    "pretest": "npm run build && npm run lint",
+    "test": "node ./test/runTest.js",
+    "open-in-browser": "npm run build-web && npx @vscode/test-web --extensionDevelopmentPath=."
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
-    "@types/node": "25.x",
-    "@types/vscode": "^1.74.0",
-    "@vscode/test-electron": "^2.2.0",
+    "@types/node": "^22.13.8",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-electron": "^2.3.9",
+    "@vscode/test-web": "^0.0.62",
+    "esbuild": "^0.25.0",
     "eslint": "^10.1.0",
     "mocha": "^11.0.1",
-    "typescript": "^6.0.2"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
+    "buffer": "^6.0.3",
     "glob": "^13.0.6",
     "node-fetch": "^3.3.2",
-    "path": "^0.12.7",
-    "vscode-uri": "^3.0.7",
     "xmldom": "^0.6.0",
     "xpath": "^0.0.34"
   },
