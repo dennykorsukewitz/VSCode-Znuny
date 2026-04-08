@@ -2,7 +2,7 @@
   "name": "znuny",
   "displayName": "Znuny",
   "description": "Znuny VS Code tooling: Perl/Znuny snippets (static + POD-generated APIs), skin customizer, insert SOPM file list and @ObjectDependencies, Znuny status bar—faster, safer package and module work.",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/Icon.png",
   "license": "SEE LICENSE IN LICENSE",
