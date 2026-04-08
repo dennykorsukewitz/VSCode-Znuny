@@ -1,10 +1,10 @@
 {
   "name": "znuny",
   "displayName": "Znuny",
-  "description": "Znuny is an extension that helps you to make Znuny development easier, faster and more error-free.",
+  "description": "Znuny VS Code tooling: Perl/Znuny snippets (static + POD-generated APIs), skin customizer, insert SOPM file list and @ObjectDependencies, Znuny status bar—faster, safer package and module work.",
   "version": "1.5.0",
   "publisher": "dennykorsukewitz",
-  "icon": "doc/images/icon.png",
+  "icon": "doc/images/Icon.png",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/dennykorsukewitz/VSCode-Znuny/blob/dev/README.md",
   "pricing": "Free",
@@ -49,13 +49,15 @@
     "watch": "tsc -watch -p ./",
     "build": "tsc -p ./ && npm run esbuild-base -- --sourcemap",
     "build-web": "npm run esbuild-base -- --sourcemap",
-    "lint": "eslint src --ext ts",
-    "lint-fix": "eslint src --ext ts --fix",
-    "pretest": "npm run build && npm run lint",
-    "test": "node ./test/runTest.js",
+    "lint": "eslint src",
+    "lint-fix": "eslint src --fix",
+    "compile:test": "tsc -p tsconfig.test.json",
+    "pretest": "rm -Rf .vscode-test && npm run build && npm run compile:test && npm run lint",
+    "test": "node ./dist/test/runTest.js",
     "open-in-browser": "npm run build-web && npx @vscode/test-web --extensionDevelopmentPath=."
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "^22.13.8",
     "@types/vscode": "^1.85.0",
@@ -63,8 +65,10 @@
     "@vscode/test-web": "^0.0.62",
     "esbuild": "^0.25.0",
     "eslint": "^10.1.0",
+    "eslint-plugin-n": "^17.24.0",
     "mocha": "^11.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.25.0"
   },
   "dependencies": {
     "buffer": "^6.0.3",

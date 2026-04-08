@@ -6,7 +6,7 @@ All notable changes to the "Znuny" extension will be documented in this file.
 
 ### Removed
 
-- Quote with Marker, Add Folder to Workspace, and Remove Folder from Workspace (use the standalone extensions `dennykorsukewitz.QuoteWithMarker` and `dennykorsukewitz.addfoldertoworkspace`; see README).
+- Quote with Marker, Add Folder to Workspace, and Remove Folder from Workspace (use the standalone extensions `dennykorsukewitz.QuoteWithMarker` and `dennykorsukewitz.addfoldertoworkspace`; see readme).
 
 ## [1.5.0]
 

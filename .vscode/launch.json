@@ -7,16 +7,44 @@
             "request": "launch",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}"
-            ]
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "preLaunchTask": "npm: build"
         },
         {
-            "name": "Run Extension Tests",
+            "name": "Run Sandbox Extension",
             "type": "extensionHost",
             "request": "launch",
             "args": [
                 "--extensionDevelopmentPath=${workspaceFolder}",
-                "--extensionTestsPath=${workspaceFolder}/test/suite/index"
-            ]
+                "--disable-extensions"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "preLaunchTask": "npm: build"
+        },
+        {
+            "name": "Run Web Extension",
+            "type": "extensionHost",
+            "debugWebWorkerHost": true,
+            "request": "launch",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}",
+                "--extensionDevelopmentKind=web"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "preLaunchTask": "npm: build-web"
+        },
+        {
+            "name": "Run Tests",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run test"
         }
     ]
 }

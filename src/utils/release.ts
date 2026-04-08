@@ -8,7 +8,7 @@ export interface ReleaseData {
 
 // get Znuny data from RELEASE file
 export function getData(filePath: string): ReleaseData {
-    let data: ReleaseData = {};
+    const data: ReleaseData = {};
     let releaseContent: string;
     try {
         releaseContent = fs.readFileSync(filePath, 'utf8');

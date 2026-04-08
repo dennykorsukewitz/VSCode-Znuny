@@ -1,13 +1,18 @@
+# Ignore
+vsix/
+out/
+dist/
+
 .env
 coverage
 node_modules
 .vscode-test*
-out/
-dist/
 **/*.map
 **/*test.js
 **/*test.js.map
 package-lock.json
-.vscode/settings.json
 *.vsix
 TODO.md
+
+# Allows
+!.vscode

@@ -348,10 +348,10 @@ Get existing snippet raw data from json file.
 sub _ReadRawDataFile {
     my ( %Param ) = @_;
 
-    $RawDataFile ||= $Home . '/src/snippets-raw-data.json';
-    $SkippedRawDataFile ||= $Home . '/src/skipped-raw-data.json';
-    $ContributesSnippetsDefaultFile ||= $Home . '/src/contributes-snippets-default.json';
-    $ContributesSnippetsDataFile ||= $Home . '/src/contributes-snippets-data.json';
+    $RawDataFile ||= $Home . '/src/snippets-data/snippets-raw-data.json';
+    $SkippedRawDataFile ||= $Home . '/src/snippets-data/skipped-raw-data.json';
+    $ContributesSnippetsDefaultFile ||= $Home . '/src/snippets-data/contributes-snippets-default.json';
+    $ContributesSnippetsDataFile ||= $Home . '/src/snippets-data/contributes-snippets-data.json';
     $PackageJSONFile ||= $Home . '/package.json';
 
     if ( -e $RawDataFile ) {
