@@ -33,8 +33,8 @@
   },
   "activationEvents": [
     "onCommand:znuny.customizer",
-    "onCommand:znuny.generateFilelist",
-    "onCommand:znuny.objectDependencies",
+    "onCommand:znuny.insertFilelist",
+    "onCommand:znuny.insertObjectDependencies",
     "onCommand:znuny.showZnunyVersion",
     "workspaceContains:**.sopm",
     "workspaceContains:RELEASE"
@@ -84,12 +84,12 @@
         "category": "Znuny"
       },
       {
-        "command": "znuny.generateFilelist",
+        "command": "znuny.insertFilelist",
         "title": "Insert Filelist to SOPM.",
         "category": "Znuny"
       },
       {
-        "command": "znuny.objectDependencies",
+        "command": "znuny.insertObjectDependencies",
         "title": "Insert @ObjectDependencies.",
         "category": "Znuny"
       },
@@ -113,11 +113,11 @@
         "key": "ctrl+alt+z c"
       },
       {
-        "command": "znuny.generateFilelist",
+        "command": "znuny.insertFilelist",
         "key": "ctrl+alt+z f"
       },
       {
-        "command": "znuny.objectDependencies",
+        "command": "znuny.insertObjectDependencies",
         "key": "ctrl+alt+z d"
       },
       {
@@ -129,9 +129,9 @@
       "type": "object",
       "title": "Znuny",
       "properties": {
-        "znuny.generateFilelist.mode": {
+        "znuny.insertFilelist.mode": {
           "type": "string",
-          "description": "Znuny Generate Filelist Mode is used in GenerateFilelist function. It defines how the file list should be generated.",
+          "description": "Znuny insert-filelist mode. It controls how the SOPM file list is inserted.",
           "default": "File",
           "enum": [
             "File",

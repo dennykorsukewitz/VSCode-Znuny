@@ -18,8 +18,8 @@
 ## Features
 
 - [Customizer](#customizer)
-- [GenerateFilelist](#generatefilelist)
-- [ObjectDependencies](#objectdependencies)
+- [Insert Filelist](#insert-filelist)
+- [Insert @ObjectDependencies](#insert-objectdependencies)
 - [Snippets](#snippets)
 - [StatusBar](#statusbar)
 - [Companion extensions](#companion-extensions) (optional Marketplace installs)
@@ -164,7 +164,7 @@ The following steps are performed one after the other.
 
 ---
 
-### GenerateFilelist
+### Insert filelist
 
 Inserts the SOPM Filelist content containing all files of a selectable project.<br>
 The following file types will be added: `pm | tt | t | xml | js | html.tmpl`
@@ -180,13 +180,13 @@ The function can be executed only in the `.sopm` file.
 
 | Name | Description | Default Value |
 | - | - | - |
-| znuny.generateFilelist.mode | Znuny Generate Filelist Mode is used in GenerateFilelist function.<br>It defines how the file list should be generated.<br><br>**File** => Adds only every single file without `<Filelist>`.<br>**Filelist** => Adds the complete filelist with `<Filelist>`. | File |
+| znuny.insertFilelist.mode | Controls how the SOPM file list is inserted.<br><br>**File** => Adds only every single file without `<Filelist>`.<br>**Filelist** => Adds the complete filelist with `<Filelist>`. | File |
 
-![GenerateFilelist](doc/images/generatefilelist.gif)
+![Insert filelist](doc/images/generatefilelist.gif)
 
 ---
 
-### ObjectDependencies
+### Insert @ObjectDependencies
 
 This function inserts the `@ObjectDependencies` array by parsing the file content. Only regular used OM (ObjectManager) calls are supported.
 
