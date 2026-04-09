@@ -3,7 +3,7 @@
 ## Breaking
 
 - Renamed command `znuny.generateFilelist` to `znuny.insertFilelist` and settings key `znuny.generateFilelist.mode` to `znuny.insertFilelist.mode`. Update keybindings, `tasks.json`, and `settings.json` if you still reference the old IDs.
-- Removed built-in **Quote with Marker** and **Add / Remove Folder from Workspace** commands. Use the standalone extensions `dennykorsukewitz.QuoteWithMarker` and `dennykorsukewitz.AddFolderToWorkspace` instead (see README).
+- Removed built-in **Quote with Marker** and **Add / Remove Folder from Workspace** commands. Use the standalone extensions `dennykorsukewitz.QuoteWithMarker` and `dennykorsukewitz.AddFolderToWorkspace` instead (see README.md).
 
 ## Added
 
