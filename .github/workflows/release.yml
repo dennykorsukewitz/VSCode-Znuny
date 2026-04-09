@@ -16,7 +16,7 @@ jobs:
   Release:
     uses: dennykorsukewitz/dennykorsukewitz/.github/workflows/reusable.release.vscode.yml@dev
     with:
-      VSC_NAME: ${{ inputs.VSC_NAME || 'QuoteWithMarker' }}
+      VSC_NAME: ${{ inputs.VSC_NAME || 'Znuny' }}
     secrets:
       PAT: ${{ secrets.PAT }}
       VSC_PAT: ${{ secrets.VSC_PAT }}
