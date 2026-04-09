@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StateObject.StateUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StateObject.StateUpdate": {
         "body": [
             "${1:\\$StateObject->StateUpdate(",
             "    ID             => 123,",
@@ -20,7 +20,7 @@
             ");}",
         ],
         "prefix": "znuny.StateObject.StateUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

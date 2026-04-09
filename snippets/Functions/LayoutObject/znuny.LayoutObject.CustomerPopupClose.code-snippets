@@ -1,0 +1,17 @@
+{
+    "7.3 - znuny.LayoutObject.CustomerPopupClose": {
+        "body": [
+            "${1:# load specific URL in main window",
+            "\\$LayoutObject->CustomerPopupClose(",
+            "    URL => \\"Action=AgentTicketZoom;TicketID=\\$TicketID\\"",
+            ");}",
+            "${2:# reload main window",
+            "\\$LayoutObject->CustomerPopupClose(",
+            "    Reload => 1,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.CustomerPopupClose",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

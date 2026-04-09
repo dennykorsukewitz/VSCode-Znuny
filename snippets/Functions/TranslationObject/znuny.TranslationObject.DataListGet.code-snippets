@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.TranslationObject.DataListGet": {
+    "7.2|7.3 - znuny.TranslationObject.DataListGet": {
         "body": [
             "${1:my @Data = \\$TranslationObject->DataListGet(",
             "    ID              => '...', # optional",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.TranslationObject.DataListGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

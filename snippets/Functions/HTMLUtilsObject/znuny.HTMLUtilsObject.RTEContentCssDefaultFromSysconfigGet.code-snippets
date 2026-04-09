@@ -1,10 +1,10 @@
 {
-    "7.2 - znuny.HTMLUtilsObject.RTEContentCssDefaultFromSysconfigGet": {
+    "7.2|7.3 - znuny.HTMLUtilsObject.RTEContentCssDefaultFromSysconfigGet": {
         "body": [
             "${1:my \\$RTEContentCssDefault = \\$HTMLUtilsObject->RTEContentCssDefaultFromSysconfigGet();}",
         ],
         "prefix": "znuny.HTMLUtilsObject.RTEContentCssDefaultFromSysconfigGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

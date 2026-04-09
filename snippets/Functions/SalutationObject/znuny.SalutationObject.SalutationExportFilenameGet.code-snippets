@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationExportFilenameGet": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationExportFilenameGet": {
         "body": [
             "${1:my \\$Filename = \\$SalutationObject->SalutationExportFilenameGet(",
             "    Name => 'Salutation_1',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationExportFilenameGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

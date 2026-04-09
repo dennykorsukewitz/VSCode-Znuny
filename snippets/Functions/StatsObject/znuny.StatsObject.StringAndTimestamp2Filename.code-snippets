@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.StringAndTimestamp2Filename": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StatsObject.StringAndTimestamp2Filename": {
         "body": [
             "${1:my \\$Filename = \\$StatsObject->StringAndTimestamp2Filename(",
             "    String   => 'Title',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.StringAndTimestamp2Filename",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

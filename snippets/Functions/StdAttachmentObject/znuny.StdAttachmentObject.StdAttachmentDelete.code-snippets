@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StdAttachmentObject.StdAttachmentDelete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StdAttachmentObject.StdAttachmentDelete": {
         "body": [
             "${1:\\$StdAttachmentObject->StdAttachmentDelete(",
             "    ID => \\$ID,",
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentDelete",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

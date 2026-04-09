@@ -1,10 +1,10 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.TicketToUnitTestObject.GetHeader": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TicketToUnitTestObject.GetHeader": {
         "body": [
             "${1:my \\$Output = \\$TicketToUnitTestObject->GetHeader();}",
         ],
         "prefix": "znuny.TicketToUnitTestObject.GetHeader",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

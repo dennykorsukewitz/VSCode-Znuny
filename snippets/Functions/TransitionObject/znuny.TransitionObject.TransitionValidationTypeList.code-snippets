@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.TransitionObject.TransitionValidationTypeList": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TransitionObject.TransitionValidationTypeList": {
         "body": [
             "${1:my %TransitionValidationTypeList = \\$TransitionObject->TransitionValidationTypeList();}",
             "${2:my %TransitionValidationTypeList = TransitionValidationTypeList(",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TransitionObject.TransitionValidationTypeList",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

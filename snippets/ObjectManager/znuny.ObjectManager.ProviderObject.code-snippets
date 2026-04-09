@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ObjectManager.ProviderObject": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ObjectManager.ProviderObject": {
         "body": [
             "my \\$ProviderObject = \\$Kernel::OM->Get('Kernel::GenericInterface::Provider');",
         ],
         "prefix": "znuny.ObjectManager.ProviderObject",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

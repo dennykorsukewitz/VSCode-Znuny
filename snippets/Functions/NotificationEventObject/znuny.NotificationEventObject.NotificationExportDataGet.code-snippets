@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.NotificationEventObject.NotificationExportDataGet": {
+    "7.2|7.3 - znuny.NotificationEventObject.NotificationExportDataGet": {
         "body": [
             "${1:my %NotificationData = \\$NotificationEventObject->NotificationExportDataGet(",
             "    ID               => 1, # mandatory",
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationExportDataGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - AgentTicketResponsibleView": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - AgentTicketResponsibleView": {
         "body": [
             "AgentTicketResponsibleView",
         ],
         "prefix": "AgentTicketResponsibleView",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.LastViewsObject.IsValidRequest": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.LastViewsObject.IsValidRequest": {
         "body": [
             "${1:my \\$IsValidRequest = \\$LastViewsObject->IsValidRequest(",
             "    %Request",
             ");}",
         ],
         "prefix": "znuny.LastViewsObject.IsValidRequest",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

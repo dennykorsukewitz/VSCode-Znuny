@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SchedulerDBObject.RecurrentTaskExecute": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SchedulerDBObject.RecurrentTaskExecute": {
         "body": [
             "${1:my \\$Success = \\$SchedulerDBObject->RecurrentTaskExecute(",
             "    NodeID                   => \\$NodeID,                 # the ID of the node in a cluster environment",
@@ -33,7 +33,7 @@
             ");}",
         ],
         "prefix": "znuny.SchedulerDBObject.RecurrentTaskExecute",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SignatureObject.SignatureExportFilenameGet": {
+    "7.2|7.3 - znuny.SignatureObject.SignatureExportFilenameGet": {
         "body": [
             "${1:my \\$Filename = \\$SignatureObject->SignatureExportFilenameGet(",
             "    Name => 'Signature_1',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureExportFilenameGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

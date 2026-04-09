@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ProcessObject.ProcessGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ProcessObject.ProcessGet": {
         "body": [
             "${1:my \\$Process = \\$ProcessObject->ProcessGet(",
             "    ProcessEntityID => \\$ProcessEntityID,",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessGet",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

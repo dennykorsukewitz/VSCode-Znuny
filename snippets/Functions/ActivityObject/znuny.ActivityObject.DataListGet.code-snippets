@@ -1,5 +1,5 @@
 {
-    "7.0|7.1|7.2 - znuny.ActivityObject.DataListGet": {
+    "7.0|7.1|7.2|7.3 - znuny.ActivityObject.DataListGet": {
         "body": [
             "${1:my @Data = \\$ActivityObject->DataListGet(",
             "    ID         => '...', # optional",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.DataListGet",
-        "description": "7.0|7.1|7.2",
+        "description": "7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

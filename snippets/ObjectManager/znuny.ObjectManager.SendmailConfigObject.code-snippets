@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.ObjectManager.SendmailConfigObject": {
+        "body": [
+            "my \\$SendmailConfigObject = \\$Kernel::OM->Get('Kernel::System::SendmailConfig');",
+        ],
+        "prefix": "znuny.ObjectManager.SendmailConfigObject",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

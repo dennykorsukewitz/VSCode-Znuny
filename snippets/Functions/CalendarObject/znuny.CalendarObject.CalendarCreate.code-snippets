@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CalendarObject.CalendarCreate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.CalendarObject.CalendarCreate": {
         "body": [
             "${1:my %Calendar = \\$CalendarObject->CalendarCreate(",
             "    CalendarName         => 'Meetings',          # (required) Personal calendar name",
@@ -43,7 +43,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.CalendarCreate",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

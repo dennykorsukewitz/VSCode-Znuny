@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.AutoResponseObject.AutoResponseExportDataGet": {
+    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseExportDataGet": {
         "body": [
             "${1:my %AutoResponseData = \\$AutoResponseObject->AutoResponseExportDataGet(",
             "    ID               => 1, # mandatory",
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseExportDataGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

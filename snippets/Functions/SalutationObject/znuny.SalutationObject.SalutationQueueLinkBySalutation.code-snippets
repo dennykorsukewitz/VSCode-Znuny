@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationQueueLinkBySalutation": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationQueueLinkBySalutation": {
         "body": [
             "${1:my \\$Success = \\$SalutationObject->SalutationQueueLinkBySalutation(",
             "    QueueIDs => [1,2,3],",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationQueueLinkBySalutation",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

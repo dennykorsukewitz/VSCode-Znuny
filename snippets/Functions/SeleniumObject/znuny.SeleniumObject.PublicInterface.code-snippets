@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.PublicInterface": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SeleniumObject.PublicInterface": {
         "body": [
             "${1:\\$SeleniumObject->PublicInterface(",
             "    Action      => 'PublicFAQ',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.PublicInterface",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

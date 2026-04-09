@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.ProcessObject.ProcessPreferencesGet": {
+    "7.2|7.3 - znuny.ProcessObject.ProcessPreferencesGet": {
         "body": [
             "${1:my %Preferences = \\$ProcessObject->ProcessPreferencesGet(",
             "    ProcessEntityID => \\$ProcessEntityID,",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessPreferencesGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

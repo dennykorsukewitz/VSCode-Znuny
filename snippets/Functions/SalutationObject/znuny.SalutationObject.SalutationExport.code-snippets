@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationExport": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationExport": {
         "body": [
             "${1:my \\$ExportData = \\$SalutationObject->SalutationExport(",
             "    # required either ID or ExportAll",
@@ -10,7 +10,7 @@
             "\\}}",
         ],
         "prefix": "znuny.SalutationObject.SalutationExport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

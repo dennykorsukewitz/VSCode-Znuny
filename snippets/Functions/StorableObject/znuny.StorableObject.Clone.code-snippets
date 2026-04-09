@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StorableObject.Clone": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StorableObject.Clone": {
         "body": [
             "${1:my \\$StorableData = \\$StorableObject->Clone(",
             "    Data => \\$Data,          # must be a reference",
             ");}",
         ],
         "prefix": "znuny.StorableObject.Clone",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

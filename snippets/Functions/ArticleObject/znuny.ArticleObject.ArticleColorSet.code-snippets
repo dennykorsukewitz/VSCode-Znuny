@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.ArticleObject.ArticleColorSet": {
+    "7.2|7.3 - znuny.ArticleObject.ArticleColorSet": {
         "body": [
             "${1:my \\$ArticleColorID = \\$ArticleObject->ArticleColorSet(",
             "    Name                 => 'agent::Email::VisibleForCustomer',     # required, Name of the article color",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleColorSet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

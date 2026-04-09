@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.MentionObject.GetMentionedUserIDsFromString": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.MentionObject.GetMentionedUserIDsFromString": {
         "body": [
             "${1:my \\$MentionedUserIDs = \\$MentionObject->GetMentionedUserIDsFromString(",
             "    HTMLString => '...<a class=\\"Mention\\" href=\\"...\\" target=\\"...\\">@root@localhost<\/a>...',",
@@ -22,7 +22,7 @@
             ");}",
         ],
         "prefix": "znuny.MentionObject.GetMentionedUserIDsFromString",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

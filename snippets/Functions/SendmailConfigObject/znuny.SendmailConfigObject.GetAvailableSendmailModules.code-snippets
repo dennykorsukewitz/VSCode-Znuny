@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.SendmailConfigObject.GetAvailableSendmailModules": {
+        "body": [
+            "${1:my \\$SendmailModules = \\$SendmailConfigObject->GetAvailableSendmailModules();}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.GetAvailableSendmailModules",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TransitionObject.TransitionCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TransitionObject.TransitionCheck": {
         "body": [
             "${1:my \\$TransitionCheck = \\$TransitionObject->TransitionCheck(",
             "    TransitionEntityID => \\$TransitionEntityID,",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.TransitionObject.TransitionCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

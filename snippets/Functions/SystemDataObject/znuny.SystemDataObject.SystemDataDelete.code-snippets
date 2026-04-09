@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SystemDataObject.SystemDataDelete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SystemDataObject.SystemDataDelete": {
         "body": [
             "${1:\\$SystemDataObject->SystemDataDelete(",
             "    Key    => 'OTRS Version',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.SystemDataObject.SystemDataDelete",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

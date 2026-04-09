@@ -1,11 +1,13 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.EncodeObject.EncodeInput": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.EncodeObject.EncodeInput": {
         "body": [
             "${1:\\$EncodeObject->EncodeInput( \\\\\\$String );}",
-            "${2:\\$EncodeObject->EncodeInput( \\@Array );}",
+            "${2:\\$EncodeObject->EncodeInput( \\\\\\$String );",
+            "\\$EncodeObject->EncodeInput( \\@Array );}",
+            "${3:\\$EncodeObject->EncodeInput( \\@Array );}",
         ],
         "prefix": "znuny.EncodeObject.EncodeInput",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationExportDataGet": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationExportDataGet": {
         "body": [
             "${1:my %SalutationData = \\$SalutationObject->SalutationExportDataGet(",
             "    ID               => 1, # mandatory",
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationExportDataGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

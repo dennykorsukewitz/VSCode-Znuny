@@ -1,10 +1,10 @@
 {
-    "7.2 - znuny.ObjectManager.TranslationObject": {
+    "7.2|7.3 - znuny.ObjectManager.TranslationObject": {
         "body": [
             "my \\$TranslationObject = \\$Kernel::OM->Get('Kernel::System::Translation');",
         ],
         "prefix": "znuny.ObjectManager.TranslationObject",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

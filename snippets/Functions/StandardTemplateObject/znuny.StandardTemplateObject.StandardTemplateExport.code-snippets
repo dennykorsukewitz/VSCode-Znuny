@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.StandardTemplateObject.StandardTemplateExport": {
+    "7.2|7.3 - znuny.StandardTemplateObject.StandardTemplateExport": {
         "body": [
             "${1:my \\$ExportData = \\$StandardTemplateObject->StandardTemplateExport(",
             "    # required either ID or ExportAll",
@@ -10,7 +10,7 @@
             "\\}}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateExport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

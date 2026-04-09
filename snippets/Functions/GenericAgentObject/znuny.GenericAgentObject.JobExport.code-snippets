@@ -1,0 +1,15 @@
+{
+    "7.3 - znuny.GenericAgentObject.JobExport": {
+        "body": [
+            "${1:my \\$ExportData = \\$GenericAgentObject->JobExport(",
+            "    # required either Name or ExportAll",
+            "    Name       => 'job1', # required",
+            "                          # or",
+            "    ExportAll  => 0,      # required, possible: 0, 1",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobExport",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

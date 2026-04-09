@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.LayoutObject.WrapPlainText": {
+    "7.2|7.3 - znuny.LayoutObject.WrapPlainText": {
         "body": [
             "${1:my \\$WrappedPlainText = \\$LayoutObject->WrapPlainText(",
             "    PlainText     => \\"Some Plain text that is longer than the amount stored in MaxCharacters\\",",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.WrapPlainText",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

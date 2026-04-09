@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CSVObject.CSV2Array": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.CSVObject.CSV2Array": {
         "body": [
             "${1:my \\$RefArray = \\$CSVObject->CSV2Array(",
             "    String    => \\$CSVString,",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.CSVObject.CSV2Array",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.OAuth2TokenConfigObject.IsAuthFlowSupported": {
+    "7.2|7.3 - znuny.OAuth2TokenConfigObject.IsAuthFlowSupported": {
         "body": [
             "${1:my \\$AuthFlowIsSupported = \\$OAuth2TokenConfigObject->IsAuthFlowSupported(",
             "    AuthFlow => 'AuthorizationCode', # or 'ClientCredentials'",
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenConfigObject.IsAuthFlowSupported",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

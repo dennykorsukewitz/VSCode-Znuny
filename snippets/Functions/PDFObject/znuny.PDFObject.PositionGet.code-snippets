@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PDFObject.PositionGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.PDFObject.PositionGet": {
         "body": [
             "${1:%Position = \\$PDFObject->PositionGet();}",
         ],
         "prefix": "znuny.PDFObject.PositionGet",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

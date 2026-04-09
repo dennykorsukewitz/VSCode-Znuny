@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SignatureObject.SignatureCopy": {
+    "7.2|7.3 - znuny.SignatureObject.SignatureCopy": {
         "body": [
             "${1:my \\$NewSignatureID = \\$SignatureObject->SignatureCopy(",
             "    ID     => 1, # mandatory",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureCopy",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.SendmailConfigObject.GetFallback": {
+        "body": [
+            "${1:my \\$FallbackSendmailConfig = \\$SendmailConfigObject->GetFallback();}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.GetFallback",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

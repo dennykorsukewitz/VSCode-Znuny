@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationCopy": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationCopy": {
         "body": [
             "${1:my \\$NewSalutationID = \\$SalutationObject->SalutationCopy(",
             "    ID     => 1, # mandatory",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationCopy",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

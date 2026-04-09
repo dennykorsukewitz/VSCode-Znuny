@@ -1,5 +1,5 @@
 {
-    "7.0|7.1|7.2 - znuny.ActivityObject.Add": {
+    "7.0|7.1|7.2|7.3 - znuny.ActivityObject.Add": {
         "body": [
             "${1:my \\$CreatedID = \\$ActivityObject->Add(",
             "    ID               => '...',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.Add",
-        "description": "7.0|7.1|7.2",
+        "description": "7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

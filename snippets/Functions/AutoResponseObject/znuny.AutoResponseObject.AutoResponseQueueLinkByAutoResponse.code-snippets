@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.AutoResponseObject.AutoResponseQueueLinkByAutoResponse": {
+    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseQueueLinkByAutoResponse": {
         "body": [
             "${1:my \\$Success = \\$AutoResponseObject->AutoResponseQueueLinkByAutoResponse(",
             "    QueueIDs => [1,2,3],",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseQueueLinkByAutoResponse",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

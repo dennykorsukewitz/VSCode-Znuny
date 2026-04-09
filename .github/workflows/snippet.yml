@@ -1,0 +1,134 @@
+---
+name: Snippet
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  Snippet:
+    name: Snippet
+    runs-on: ubuntu-22.04 # ubuntu-latest
+    container: debian:11-slim
+    strategy:
+      fail-fast: false
+      matrix:
+        tag: ['dev', 'rel-7_3-dev' ]
+    env:
+      DB: mysql
+      MYSQL_USER: "znuny"
+      MYSQL_ROOT_PASSWORD: "secret"
+      MYSQL_PASSWORD: "secret"
+      MYSQL_DATABASE: "znuny"
+    services:
+      mariadb:
+        image: mariadb:10
+        env:
+          MYSQL_USER: "znuny"
+          MYSQL_ROOT_PASSWORD: "secret"
+          MYSQL_PASSWORD: "secret"
+          MYSQL_DATABASE: "znuny"
+    steps:
+
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        env:
+          fetch-depth: "1"
+        with:
+          path: repository
+
+      - name: Check out module-tools
+        uses: actions/checkout@v4
+        env:
+          fetch-depth: "1"
+        with:
+          repository: znuny/module-tools
+          path: module-tools
+
+      - name: Check out Znuny
+        uses: actions/checkout@v4
+        env:
+          fetch-depth: "1"
+        with:
+          repository: znuny/Znuny
+          ref: ${{ matrix.tag }}
+          path: znuny
+
+      - name: Set GITHUB_ENV
+        run: |
+
+          FRAMEWORK_VERSION=$(grep VERSION znuny/RELEASE | sed -e 's/VERSION = //')
+          FRAMEWORK_MAJOR=$(echo "$FRAMEWORK_VERSION" | cut -d. -f1)
+
+          if [ "$FRAMEWORK_MAJOR" -lt 7 ]; then
+              FRAMEWORK='otrs'
+          else
+              FRAMEWORK='znuny'
+          fi
+
+          echo "FRAMEWORK=$FRAMEWORK" >> "$GITHUB_ENV"
+
+      - name: Echo GITHUB_ENV
+        run: echo "$GITHUB_ENV"
+
+      - name: Install dependencies
+        run: bash "${GITHUB_WORKSPACE}/repository/.github/workflows/ci/znuny-dependencies.sh"
+
+      - name: Setup Znuny
+        run: |
+          echo ${{ env.FRAMEWORK }}
+          cd znuny
+
+          a2dismod mpm_event mpm_worker
+          a2enmod perl deflate filter headers mpm_prefork
+          useradd -d /opt/"${{ env.FRAMEWORK }}" -c 'Znuny user' -g www-data -s /bin/bash -M "${{ env.FRAMEWORK }}"
+
+          # link and create files
+          ln -sf "$PWD" /opt/"${{ env.FRAMEWORK }}"
+          ln -s /opt/"${{ env.FRAMEWORK }}"/scripts/apache2-httpd.include.conf /etc/apache2/sites-enabled/zzz_"${{ env.FRAMEWORK }}".conf
+
+          cp /opt/"${{ env.FRAMEWORK }}"/Kernel/Config.pm.dist /opt/"${{ env.FRAMEWORK }}"/Kernel/Config.pm
+          mkdir -p /opt/"${{ env.FRAMEWORK }}"/var/tmp
+
+          # start apache
+          apachectl start
+
+          # MySQL
+          .github/workflows/ci/config-mysql.sh
+
+          # run needed scripts
+          /opt/"${{ env.FRAMEWORK }}/bin/${{ env.FRAMEWORK }}".SetPermissions.pl
+          su -c "bin/${{ env.FRAMEWORK }}.CheckSum.pl -a create" - znuny
+          touch /opt/"${{ env.FRAMEWORK }}"/installed
+
+          # prepare Selenium tests
+          .github/workflows/ci/config-selenium.sh
+
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Maint::Config::Rebuild" - znuny
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Admin::Config::Update --setting-name CheckEmailAddresses --value 0" - znuny
+
+      - name: Link repository
+        run: |
+          cd "$GITHUB_WORKSPACE"
+          apt-get install -y --no-install-recommends libdatetime-perl libgetopt-complete-perl libio-interactive-perl libstring-similarity-perl libxmlrpc-lite-perl libpod-parser-perl
+
+          su -c "$GITHUB_WORKSPACE/module-tools/bin/otrs.ModuleTools.pl Module::File::Link $GITHUB_WORKSPACE/repository $GITHUB_WORKSPACE/znuny" - znuny
+          cd znuny
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Maint::Cache::Delete" - znuny
+          su -c "bin/${{ env.FRAMEWORK }}.Console.pl Maint::Config::Rebuild --cleanup" - znuny
+
+      - name: Run GenerateVSCSnippets
+        run: |
+          cd "${GITHUB_WORKSPACE}/repository"
+          git init
+          git config --global --add safe.directory "${GITHUB_WORKSPACE}/repository"
+          git config --global user.email "dennykorsukewitz@gmail.com"
+          git config --global user.name "Denny Korsukéwitz"
+          git add . && git commit -m "Init"
+
+          "${GITHUB_WORKSPACE}"/znuny/bin/znuny.GenerateVSCSnippets.pl
+
+          git status
+          if [ "$(git diff --exit-code)" ]; then echo 'The VSC Snippet list is not up to date.' && exit 1; else echo 'The VSC Snippet list is up to date.' && exit 0; fi

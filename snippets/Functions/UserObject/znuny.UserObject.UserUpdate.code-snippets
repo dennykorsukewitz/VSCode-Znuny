@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.UserObject.UserUpdate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.UserObject.UserUpdate": {
         "body": [
             "${1:\\$UserObject->UserUpdate(",
             "    UserID        => \\$UserID,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.UserObject.UserUpdate",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.NotificationEventObject.NotificationCopy": {
+    "7.2|7.3 - znuny.NotificationEventObject.NotificationCopy": {
         "body": [
             "${1:my \\$NewNotificationID = \\$NotificationEventObject->NotificationCopy(",
             "    ID     => 1, # mandatory",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationCopy",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

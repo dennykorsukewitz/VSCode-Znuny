@@ -1,0 +1,14 @@
+{
+    "7.3 - znuny.GenericAgentObject.JobImport": {
+        "body": [
+            "${1:my \\$JobImport = \\$GenericAgentObject->JobImport(",
+            "    Content               => \\$YAMLContent, # mandatory, YAML format",
+            "    OverwriteExistingJobs => 0,            # optional, possible: 0, 1",
+            "    UserID                => \\$UserID,            # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobImport",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

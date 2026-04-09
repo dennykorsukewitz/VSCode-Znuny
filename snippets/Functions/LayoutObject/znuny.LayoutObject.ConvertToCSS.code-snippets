@@ -1,5 +1,5 @@
 {
-    "7.0|7.1|7.2 - znuny.LayoutObject.ConvertToCSS": {
+    "7.0|7.1|7.2|7.3 - znuny.LayoutObject.ConvertToCSS": {
         "body": [
             "${1:my \\$CSS = \\$LayoutObject->ConvertToCSS(",
             "    Data => {",
@@ -34,7 +34,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.ConvertToCSS",
-        "description": "7.0|7.1|7.2",
+        "description": "7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

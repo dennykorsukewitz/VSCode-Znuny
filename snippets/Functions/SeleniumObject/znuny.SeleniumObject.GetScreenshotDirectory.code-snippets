@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.GetScreenshotDirectory": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SeleniumObject.GetScreenshotDirectory": {
         "body": [
             "${1:my %ScreenshotDirectory = \\$SeleniumObject->GetScreenshotDirectory(",
             "    Directory => 'Captured',",
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.GetScreenshotDirectory",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

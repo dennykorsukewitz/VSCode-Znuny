@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.TranslationObject.DataGet": {
+    "7.2|7.3 - znuny.TranslationObject.DataGet": {
         "body": [
             "${1:my %Data = \\$TranslationObject->DataGet(",
             "    ID              => '...', # optional",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.TranslationObject.DataGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

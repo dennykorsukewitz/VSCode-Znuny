@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.ZnunyHelperObject.DynamicFieldFieldOrderAfterFieldGet": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ZnunyHelperObject.DynamicFieldFieldOrderAfterFieldGet": {
         "body": [
             "${1:my \\$FieldOrder = \\$ZnunyHelperObject->DynamicFieldFieldOrderAfterFieldGet(",
             "    Name => 'TestDynamicField1',",
             ");}",
         ],
         "prefix": "znuny.ZnunyHelperObject.DynamicFieldFieldOrderAfterFieldGet",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

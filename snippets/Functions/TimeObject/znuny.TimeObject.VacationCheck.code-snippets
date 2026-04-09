@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TimeObject.VacationCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TimeObject.VacationCheck": {
         "body": [
             "${1:\\$TimeObject->VacationCheck(",
             "    Year     => 2005,",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.TimeObject.VacationCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

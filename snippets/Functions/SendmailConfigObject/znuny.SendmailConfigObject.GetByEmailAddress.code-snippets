@@ -1,0 +1,16 @@
+{
+    "7.3 - znuny.SendmailConfigObject.GetByEmailAddress": {
+        "body": [
+            "${1:my \\$SendmailConfig = \\$SendmailConfigObject->GetByEmailAddress(",
+            "    EmailAddress => 'znuny@example.org',",
+            "",
+            "    # optional, defaults to 0:",
+            "    # Return fallback config (if any) if no config found for email address",
+            "    UseFallback => 1,",
+            ");}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.GetByEmailAddress",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

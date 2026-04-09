@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.AutoResponseObject.AutoResponseExport": {
+    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseExport": {
         "body": [
             "${1:my \\$ExportData = \\$AutoResponseObject->AutoResponseExport(",
             "    # required either ID or ExportAll",
@@ -10,7 +10,7 @@
             "\\}}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseExport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

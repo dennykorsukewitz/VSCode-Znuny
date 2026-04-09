@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SystemMaintenanceObject.SystemMaintenanceIsActive": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SystemMaintenanceObject.SystemMaintenanceIsActive": {
         "body": [
             "${1:my \\$ActiveMaintenance = \\$SystemMaintenanceObject->SystemMaintenanceIsActive();}",
         ],
         "prefix": "znuny.SystemMaintenanceObject.SystemMaintenanceIsActive",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

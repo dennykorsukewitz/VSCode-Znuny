@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SignatureObject.SignatureImport": {
+    "7.2|7.3 - znuny.SignatureObject.SignatureImport": {
         "body": [
             "${1:my \\$ImportResult = \\$SignatureObject->SignatureImport(",
             "    Content                     => \\$YAMLContent, # mandatory, YAML format",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureImport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

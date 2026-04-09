@@ -87,7 +87,9 @@ sub verbatim {    ## no critic
     # function call, otherwise merge them into one
     if ( !$Parser->{UnfinishedFunction} ) {
         return if !$Parser->{FunctionName};
-        return if $Paragraph !~ m{ $Parser->{FunctionName} \( }xms && $Parser->{FunctionName} ne 'new';
+        # Match both " SubName (" and "$Obj->SubName(" (POD often uses arrow calls)
+        return if $Parser->{FunctionName} ne 'new'
+            && $Paragraph !~ m{\Q$Parser->{FunctionName}\E\s*\(}xms;
 
         # parse ObjectManager calls from new() pod
         if ( $Paragraph =~ m{(my \s \$ ([^\s]+) \s+ = \s+ \$Kernel::OM\->Get\(['"](.+)['"]\);)}x ) {

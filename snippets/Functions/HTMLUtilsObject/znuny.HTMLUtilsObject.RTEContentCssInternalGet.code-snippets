@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.HTMLUtilsObject.RTEContentCssInternalGet": {
+    "7.2|7.3 - znuny.HTMLUtilsObject.RTEContentCssInternalGet": {
         "body": [
             "${1:my \\$RTEContentCss = \\$HTMLUtilsObject->RTEContentCssInternalGet(",
             "    UserType => 'Agent' # required",
             ");}",
         ],
         "prefix": "znuny.HTMLUtilsObject.RTEContentCssInternalGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

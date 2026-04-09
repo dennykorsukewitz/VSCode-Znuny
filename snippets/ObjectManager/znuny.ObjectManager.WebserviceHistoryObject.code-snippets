@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ObjectManager.WebserviceHistoryObject": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ObjectManager.WebserviceHistoryObject": {
         "body": [
             "my \\$WebserviceHistoryObject = \\$Kernel::OM->Get('Kernel::System::GenericInterface::WebserviceHistory');",
         ],
         "prefix": "znuny.ObjectManager.WebserviceHistoryObject",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

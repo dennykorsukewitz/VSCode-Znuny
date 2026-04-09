@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.NotificationEventObject.NotificationExport": {
+    "7.2|7.3 - znuny.NotificationEventObject.NotificationExport": {
         "body": [
             "${1:my \\$ExportData = \\$NotificationEventObject->NotificationExport(",
             "    # required either ID or ExportAll",
@@ -12,7 +12,7 @@
             "\\}}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationExport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

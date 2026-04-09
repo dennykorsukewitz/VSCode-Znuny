@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.FormDraftObject.FormDraftDelete": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.FormDraftObject.FormDraftDelete": {
         "body": [
             "${1:my \\$Success = \\$FormDraftObject->FormDraftDelete(",
             "    FormDraftID => \\$FormDraftID,",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.FormDraftObject.FormDraftDelete",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

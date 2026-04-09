@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.NotificationEventObject.NotificationImport": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.NotificationEventObject.NotificationImport": {
         "body": [
             "${1:my \\$NotificationImport = \\$NotificationEventObject->NotificationImport(",
             "    Content                        => \\$YAMLContent,  # mandatory, YAML format",
@@ -18,7 +18,7 @@
             ");}",
         ],
         "prefix": "znuny.NotificationEventObject.NotificationImport",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SLAObject.SLAAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SLAObject.SLAAdd": {
         "body": [
             "${1:my \\$SLAID = \\$SLAObject->SLAAdd(",
             "    ServiceIDs          => [ 1, 5, 7 ],  # (optional)",
@@ -35,7 +35,7 @@
             ");}",
         ],
         "prefix": "znuny.SLAObject.SLAAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

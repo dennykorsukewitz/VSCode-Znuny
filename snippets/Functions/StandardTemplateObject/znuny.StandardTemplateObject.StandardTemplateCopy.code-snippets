@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.StandardTemplateObject.StandardTemplateCopy": {
+    "7.2|7.3 - znuny.StandardTemplateObject.StandardTemplateCopy": {
         "body": [
             "${1:my \\$NewStandardTemplateID = \\$StandardTemplateObject->StandardTemplateCopy(",
             "    ID     => 1, # mandatory",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateCopy",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

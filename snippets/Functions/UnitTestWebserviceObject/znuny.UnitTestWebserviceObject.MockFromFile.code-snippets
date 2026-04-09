@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.UnitTestWebserviceObject.MockFromFile": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.UnitTestWebserviceObject.MockFromFile": {
         "body": [
             "${1:\\$UnitTestWebserviceObject->MockFromFile(",
             "    Location => \\$ConfigObject->Get('Home') . \\"/misc/mocks/WebserviceName/SomeInvoker.json\\";",
@@ -17,7 +17,7 @@
             ");}",
         ],
         "prefix": "znuny.UnitTestWebserviceObject.MockFromFile",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,0 +1,17 @@
+{
+    "7.3 - znuny.SendmailConfigObject.GetSenderEmailAddresses": {
+        "body": [
+            "${1:my \\$EmailAddresses = \\$SendmailConfigObject->GetSenderEmailAddresses(",
+            "",
+            "    # optional; only those not used in any sendmail config",
+            "    OnlyUnused => 1,",
+            "",
+            "    # optional together with OnlyUnused: Also return email addresses already selected in given sendmail config",
+            "    KeepForSendmailConfigID => \\$KeepForSendmailConfigID,",
+            ");}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.GetSenderEmailAddresses",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

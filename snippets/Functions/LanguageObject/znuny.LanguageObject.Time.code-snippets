@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LanguageObject.Time": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.LanguageObject.Time": {
         "body": [
             "${1:\\$Time = \\$LanguageObject->Time(",
             "    Action => 'GET',",
@@ -32,7 +32,7 @@
             ");}",
         ],
         "prefix": "znuny.LanguageObject.Time",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

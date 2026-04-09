@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.YAMLObject.Load": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.YAMLObject.Load": {
         "body": [
             "${1:my \\$PerlStructureScalar = \\$YAMLObject->Load(",
             "    Data => \\$YAMLString,",
             ");}",
         ],
         "prefix": "znuny.YAMLObject.Load",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationDelete": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationDelete": {
         "body": [
             "${1:my \\$Success = \\$SalutationObject->SalutationDelete(",
             "    ID     => 1,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationDelete",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

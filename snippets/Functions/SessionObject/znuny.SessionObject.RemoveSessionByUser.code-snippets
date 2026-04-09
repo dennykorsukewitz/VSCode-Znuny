@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SessionObject.RemoveSessionByUser": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SessionObject.RemoveSessionByUser": {
         "body": [
             "${1:\\$SessionObject->RemoveSessionByUser(",
             "    UserLogin => 'some_user_login'",
             ");}",
         ],
         "prefix": "znuny.SessionObject.RemoveSessionByUser",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

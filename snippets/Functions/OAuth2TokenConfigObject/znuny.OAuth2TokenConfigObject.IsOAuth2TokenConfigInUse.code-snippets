@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.OAuth2TokenConfigObject.IsOAuth2TokenConfigInUse": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.OAuth2TokenConfigObject.IsOAuth2TokenConfigInUse": {
         "body": [
             "${1:my \\$IsInUse = \\$OAuth2TokenConfigObject->IsOAuth2TokenConfigInUse(",
             "    ID => 3,",
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenConfigObject.IsOAuth2TokenConfigInUse",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

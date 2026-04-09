@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.TicketAttributeRelationsObject.AddTicketAttributeRelations": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TicketAttributeRelationsObject.AddTicketAttributeRelations": {
         "body": [
             "${1:my \\$ID = \\$TicketAttributeRelationsObject->AddTicketAttributeRelations(",
             "    Filename                 => 'csv-filename.csv',",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.AddTicketAttributeRelations",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StandardTemplateObject.NameExistsCheck": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StandardTemplateObject.NameExistsCheck": {
         "body": [
             "${1:\\$Exist = \\$StandardTemplateObject->NameExistsCheck(",
             "    Name => 'Some::Template',",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.NameExistsCheck",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

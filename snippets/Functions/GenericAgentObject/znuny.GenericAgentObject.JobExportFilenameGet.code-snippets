@@ -1,0 +1,13 @@
+{
+    "7.3 - znuny.GenericAgentObject.JobExportFilenameGet": {
+        "body": [
+            "${1:my \\$Filename = \\$GenericAgentObject->JobExportFilenameGet(",
+            "    Name => 'Job_1',",
+            "    Format => 'YAML',",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobExportFilenameGet",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

@@ -14,15 +14,15 @@
 ## Changed
 
 - Snippet generator JSON inputs moved from `src/` to **`src/snippets-data/`**; `bin/znuny.GenerateVSCSnippets.pl` default paths updated.
-- **`doc/images/`** asset file names normalized to **PascalCase** (icon, demo GIFs, including filelist / object-dependencies demos aligned with current command names).
-- README introduction, marketplace **`description`**, and related repository metadata text expanded.
+- **`doc/images/`** asset filenames normalized to **PascalCase** (icon, demo GIFs, including filelist / object-dependencies demos aligned with current command names).
+- Readme introduction, marketplace **`description`**, and related repository metadata text expanded.
 - GitHub Actions: updated **actions/checkout**, **actions/setup-node**, **schneegans/dynamic-badges-action**, and tidied the release workflow.
 
 ## Dependencies
 
 - Bump glob from 11.1.0 to 13.0.6 (#32)
-- Bump eslint from 9.39.4 to 10.1.0 (#34)
-- Bump typescript from 5.9.3 to 6.0.2 (#35)
+- Bump ESLint from 9.39.4 to 10.1.0 (#34)
+- Bump TypeScript from 5.9.3 to 6.0.2 (#35)
 - Bump @types/node from 22.18.13 through 24.9.2 to 25.5.0 (#25, #36)
 - Bump schneegans/dynamic-badges-action from 1.7.0 to 1.8.0 (#33)
 - Bump actions/checkout from 4 to 5 to 6 (#27)

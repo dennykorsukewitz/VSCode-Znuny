@@ -51,8 +51,7 @@
     "build-web": "npm run esbuild-base -- --sourcemap",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
-    "compile:test": "tsc -p tsconfig.test.json",
-    "pretest": "rm -Rf .vscode-test && npm run build && npm run compile:test && npm run lint",
+    "pretest": "rm -Rf .vscode-test && npm run build && npm run lint",
     "test": "node ./dist/test/runTest.js",
     "open-in-browser": "npm run build-web && npx @vscode/test-web --extensionDevelopmentPath=."
   },
@@ -977,6 +976,10 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/ActivityObject/znuny.ActivityObject.ListGet.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/ActivityObject/znuny.ActivityObject.StatsGet.code-snippets"
       },
       {
         "language": "perl",
@@ -2416,6 +2419,10 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobCopy.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobDelete.code-snippets"
       },
       {
@@ -2424,7 +2431,27 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobExport.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobExportDataGet.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobExportFilenameGet.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobGet.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobImport.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobInsertErrorsCheck.code-snippets"
       },
       {
         "language": "perl",
@@ -2433,6 +2460,10 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.JobRun.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/GenericAgentObject/znuny.GenericAgentObject.StopWordsErrorsGet.code-snippets"
       },
       {
         "language": "perl",
@@ -2784,6 +2815,14 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/LanguageObject/znuny.LanguageObject.FormatCurrentTime.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LanguageObject/znuny.LanguageObject.FormatNonNumericTime.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Functions/LanguageObject/znuny.LanguageObject.FormatTimeString.code-snippets"
       },
       {
@@ -2961,6 +3000,10 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.CreateDynamicCSS.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.CustomerPopupClose.code-snippets"
       },
       {
         "language": "perl",
@@ -3285,6 +3328,14 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/LogObject/znuny.LogObject.Notice.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/ObjectManager/znuny.ObjectManager.MSGraphObject.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/MSGraphObject/znuny.MSGraphObject.ExecuteOperation.code-snippets"
       },
       {
         "language": "perl",
@@ -4404,6 +4455,10 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.CloseNotification.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.CreateScreenshot.code-snippets"
       },
       {
@@ -4577,6 +4632,50 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/SeleniumObject/znuny.SeleniumObject.get_alert_text.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/ObjectManager/znuny.ObjectManager.SendmailConfigObject.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.Add.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.Delete.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.Get.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.GetAll.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.GetAuthenticationTypes.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.GetAvailableSendmailModules.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.GetByEmailAddress.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.GetFallback.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.GetSenderEmailAddresses.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/SendmailConfigObject/znuny.SendmailConfigObject.Update.code-snippets"
       },
       {
         "language": "perl",

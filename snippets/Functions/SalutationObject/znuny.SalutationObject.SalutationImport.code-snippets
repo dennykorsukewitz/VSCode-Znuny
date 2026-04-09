@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.SalutationObject.SalutationImport": {
+    "7.2|7.3 - znuny.SalutationObject.SalutationImport": {
         "body": [
             "${1:my \\$ImportResult = \\$SalutationObject->SalutationImport(",
             "    Content                      => \\$YAMLContent, # mandatory, YAML format",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.SalutationObject.SalutationImport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

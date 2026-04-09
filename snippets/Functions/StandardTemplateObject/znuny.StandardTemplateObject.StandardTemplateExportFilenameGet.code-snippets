@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.StandardTemplateObject.StandardTemplateExportFilenameGet": {
+    "7.2|7.3 - znuny.StandardTemplateObject.StandardTemplateExportFilenameGet": {
         "body": [
             "${1:my \\$Filename = \\$StandardTemplateObject->StandardTemplateExportFilenameGet(",
             "    Name => 'StandardTemplate_1',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateExportFilenameGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

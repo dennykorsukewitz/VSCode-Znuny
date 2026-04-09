@@ -1,0 +1,20 @@
+{
+    "7.3 - znuny.GenericAgentObject.JobInsertErrorsCheck": {
+        "body": [
+            "${1:my %Errors = \\$GenericAgentObject->JobInsertErrorsCheck(",
+            "    Name             => 'job1',",
+            "    NewNoteFrom      => \\$GetParam{NewNoteFrom\\},",
+            "    NewNoteSubject   => \\$GetParam{NewNoteSubject\\},",
+            "    NewNoteBody      => \\$GetParam{NewNoteBody\\},",
+            "    MIMEBase_From    => \\$GetParam{MIMEBase_From\\},",
+            "    MIMEBase_To      => \\$GetParam{MIMEBase_To\\},",
+            "    MIMEBase_Cc      => \\$GetParam{MIMEBase_Cc\\},",
+            "    MIMEBase_Subject => \\$GetParam{MIMEBase_Subject\\},",
+            "    MIMEBase_Body    => \\$GetParam{MIMEBase_Body\\},",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobInsertErrorsCheck",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

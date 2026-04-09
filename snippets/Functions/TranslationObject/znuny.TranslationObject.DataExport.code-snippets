@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.TranslationObject.DataExport": {
+    "7.2|7.3 - znuny.TranslationObject.DataExport": {
         "body": [
             "${1:my \\$Export = \\$TranslationObject->DataExport(",
             "    Format => 'yml',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TranslationObject.DataExport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.TicketAttributeRelationsObject.ExistsTicketAttributeRelationsFilename": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TicketAttributeRelationsObject.ExistsTicketAttributeRelationsFilename": {
         "body": [
             "${1:my \\$ID = \\$TicketAttributeRelationsObject->ExistsTicketAttributeRelationsFilename(",
             "    Filename => 'test1.csv',",
             ");}",
         ],
         "prefix": "znuny.TicketAttributeRelationsObject.ExistsTicketAttributeRelationsFilename",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

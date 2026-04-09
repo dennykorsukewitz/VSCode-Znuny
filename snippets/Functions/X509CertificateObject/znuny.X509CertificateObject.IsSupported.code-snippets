@@ -1,10 +1,10 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.X509CertificateObject.IsSupported": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.X509CertificateObject.IsSupported": {
         "body": [
             "${1:my \\$X509CertificateObjectIsSupported = \\$X509CertificateObject->IsSupported();}",
         ],
         "prefix": "znuny.X509CertificateObject.IsSupported",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

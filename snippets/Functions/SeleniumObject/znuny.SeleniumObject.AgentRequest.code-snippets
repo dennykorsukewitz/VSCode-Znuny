@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.SeleniumObject.AgentRequest": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SeleniumObject.AgentRequest": {
         "body": [
             "${1:\\$SeleniumObject->AgentRequest(",
             "    Action      => 'CustomerUserSearch',",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.AgentRequest",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

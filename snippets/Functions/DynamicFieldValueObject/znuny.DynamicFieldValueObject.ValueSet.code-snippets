@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DynamicFieldValueObject.ValueSet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.DynamicFieldValueObject.ValueSet": {
         "body": [
             "${1:my \\$Success = \\$DynamicFieldValueObject->ValueSet(",
             "    FieldID  => \\$FieldID,                 # ID of the dynamic field",
@@ -31,7 +31,7 @@
             ");}",
         ],
         "prefix": "znuny.DynamicFieldValueObject.ValueSet",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

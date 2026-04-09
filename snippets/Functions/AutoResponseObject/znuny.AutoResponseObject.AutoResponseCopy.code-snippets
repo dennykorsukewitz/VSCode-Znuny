@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.AutoResponseObject.AutoResponseCopy": {
+    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseCopy": {
         "body": [
             "${1:my \\$NewAutoResponseID = \\$AutoResponseObject->AutoResponseCopy(",
             "    ID     => 1, # mandatory",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseCopy",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CustomerGroupObject.GroupContextNameGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.CustomerGroupObject.GroupContextNameGet": {
         "body": [
             "${1:my \\$ContextName = \\$CustomerGroupObject->GroupContextNameGet(",
             "    SysConfigName => '100-CustomerID-other', # optional, defaults to '001-CustomerID-same'",
             ");}",
         ],
         "prefix": "znuny.CustomerGroupObject.GroupContextNameGet",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

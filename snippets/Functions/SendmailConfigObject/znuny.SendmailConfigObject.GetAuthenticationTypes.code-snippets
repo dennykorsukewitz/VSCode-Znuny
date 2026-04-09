@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.SendmailConfigObject.GetAuthenticationTypes": {
+        "body": [
+            "${1:my \\$AuthenticationTypes = \\$SendmailConfigObject->GetAuthenticationTypes();}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.GetAuthenticationTypes",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

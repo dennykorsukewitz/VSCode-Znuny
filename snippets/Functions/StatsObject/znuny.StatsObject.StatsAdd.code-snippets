@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.StatsAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StatsObject.StatsAdd": {
         "body": [
             "${1:my \\$StatID = \\$StatsObject->StatsAdd(",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.StatsObject.StatsAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

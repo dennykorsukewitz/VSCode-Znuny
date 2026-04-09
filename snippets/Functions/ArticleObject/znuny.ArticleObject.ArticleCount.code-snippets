@@ -1,12 +1,12 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.ArticleObject.ArticleCount": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ArticleObject.ArticleCount": {
         "body": [
             "${1:my \\$Count = \\$ArticleObject->ArticleCount(",
             "    TicketID  => \\$TicketID,",
             ");}",
         ],
         "prefix": "znuny.ArticleObject.ArticleCount",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

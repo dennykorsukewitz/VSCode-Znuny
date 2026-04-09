@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.HelperObject.FillTestEnvironment": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.HelperObject.FillTestEnvironment": {
         "body": [
             "${1:# create everything with defaults, except 20 agents",
             "my \\$Result = \\$HelperObject->FillTestEnvironment(",
@@ -30,7 +30,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.FillTestEnvironment",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

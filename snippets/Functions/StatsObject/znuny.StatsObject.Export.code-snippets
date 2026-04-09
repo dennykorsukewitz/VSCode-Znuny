@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StatsObject.Export": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StatsObject.Export": {
         "body": [
             "${1:my \\$ExportFile = \\$StatsObject->Export(",
             "    StatID           => \\$StatID,",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.StatsObject.Export",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

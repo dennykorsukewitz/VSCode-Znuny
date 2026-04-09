@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PackageObject.RepositoryGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.PackageObject.RepositoryGet": {
         "body": [
             "${1:my \\$Package = \\$PackageObject->RepositoryGet(",
             "    Name    => 'Application A',",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.PackageObject.RepositoryGet",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

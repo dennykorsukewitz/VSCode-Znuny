@@ -1,0 +1,20 @@
+{
+    "7.3 - znuny.ActivityObject.StatsGet": {
+        "body": [
+            "${1:\\$Stats = \\$ActivityObject->StatsGet(",
+            "    ID         => '...', # optional",
+            "    Type       => '...', # optional",
+            "    Title      => '...', # optional",
+            "    Text       => '...', # optional",
+            "    State      => '...', # optional",
+            "    Link       => '...', # optional",
+            "    CreateTime => '...', # optional",
+            "    CreateBy   => '...', # optional",
+            "    UserID     => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.StatsGet",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

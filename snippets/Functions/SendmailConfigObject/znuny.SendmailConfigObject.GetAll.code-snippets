@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.SendmailConfigObject.GetAll": {
+        "body": [
+            "${1:my \\$SendmailConfigs = \\$SendmailConfigObject->GetAll();}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.GetAll",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

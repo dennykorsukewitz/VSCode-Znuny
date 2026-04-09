@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.BackendObject.DisplayValueRender": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.BackendObject.DisplayValueRender": {
         "body": [
             "${1:my \\$ValueStrg = \\$BackendObject->DisplayValueRender(",
             "    DynamicFieldConfig => \\$DynamicFieldConfig,      # complete config of the DynamicField",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.BackendObject.DisplayValueRender",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

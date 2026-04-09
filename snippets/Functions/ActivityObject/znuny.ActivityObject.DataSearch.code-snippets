@@ -1,5 +1,5 @@
 {
-    "7.0|7.1|7.2 - znuny.ActivityObject.DataSearch": {
+    "7.0|7.1|7.2|7.3 - znuny.ActivityObject.DataSearch": {
         "body": [
             "${1:my %Data = \\$ActivityObject->DataSearch(",
             "    Search     => 'test*test',",
@@ -15,7 +15,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.DataSearch",
-        "description": "7.0|7.1|7.2",
+        "description": "7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.AutoResponseObject.AutoResponseQueuesList": {
+    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseQueuesList": {
         "body": [
             "${1:my %AutoResponseQueues = \\$AutoResponseObject->AutoResponseQueuesList(",
             "    ID => 1, # mandatory",
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseQueuesList",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

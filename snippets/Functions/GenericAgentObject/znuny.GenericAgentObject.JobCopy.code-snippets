@@ -1,0 +1,12 @@
+{
+    "7.3 - znuny.GenericAgentObject.JobCopy": {
+        "body": [
+            "${1:my \\$NewJobName = \\$GenericAgentObject->JobCopy(",
+            "    Name    => 'job1', # mandatory",
+            ");}",
+        ],
+        "prefix": "znuny.GenericAgentObject.JobCopy",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

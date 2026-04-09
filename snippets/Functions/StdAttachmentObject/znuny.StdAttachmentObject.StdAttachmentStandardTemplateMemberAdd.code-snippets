@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberAdd": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberAdd": {
         "body": [
             "${1:my \\$Success = \\$StdAttachmentObject->StdAttachmentStandardTemplateMemberAdd(",
             "    AttachmentID       => \\$AttachmentID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.StdAttachmentObject.StdAttachmentStandardTemplateMemberAdd",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

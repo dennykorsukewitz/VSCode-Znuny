@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.StandardTemplateObject.StandardTemplateQueuesList": {
+    "7.2|7.3 - znuny.StandardTemplateObject.StandardTemplateQueuesList": {
         "body": [
             "${1:my %StandardTemplateQueues = \\$StandardTemplateObject->StandardTemplateQueuesList(",
             "    ID => 1, # mandatory",
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateQueuesList",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

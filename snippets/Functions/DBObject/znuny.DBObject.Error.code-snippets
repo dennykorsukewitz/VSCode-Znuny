@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.DBObject.Error": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.DBObject.Error": {
         "body": [
             "${1:my \\$ErrorMessage = \\$DBObject->Error();}",
         ],
         "prefix": "znuny.DBObject.Error",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

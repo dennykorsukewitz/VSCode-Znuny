@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.TemplateGeneratorObject.Template": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.TemplateGeneratorObject.Template": {
         "body": [
             "${1:my \\$Template = \\$TemplateGeneratorObject->Template(",
             "    TemplateID => \\$TemplateID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.TemplateGeneratorObject.Template",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.CalendarObject.TicketAppointmentProcessRule": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.CalendarObject.TicketAppointmentProcessRule": {
         "body": [
             "${1:my \\$Success = \\$CalendarObject->TicketAppointmentProcessRule(",
             "    CalendarID => \\$CalendarID,",
@@ -41,7 +41,7 @@
             ");}",
         ],
         "prefix": "znuny.CalendarObject.TicketAppointmentProcessRule",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

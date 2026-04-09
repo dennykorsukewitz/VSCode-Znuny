@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ValidObject.ValidIDsGet": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ValidObject.ValidIDsGet": {
         "body": [
             "${1:my @List = \\$ValidObject->ValidIDsGet();}",
         ],
         "prefix": "znuny.ValidObject.ValidIDsGet",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

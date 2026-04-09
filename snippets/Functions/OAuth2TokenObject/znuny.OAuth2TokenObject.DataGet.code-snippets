@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.OAuth2TokenObject.DataGet": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.OAuth2TokenObject.DataGet": {
         "body": [
             "${1:my %Data = \\$OAuth2TokenObject->DataGet(",
             "    ID                         => '...', # optional",
@@ -19,7 +19,7 @@
             ");}",
         ],
         "prefix": "znuny.OAuth2TokenObject.DataGet",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

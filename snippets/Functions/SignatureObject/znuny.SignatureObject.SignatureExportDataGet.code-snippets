@@ -1,12 +1,12 @@
 {
-    "7.2 - znuny.SignatureObject.SignatureExportDataGet": {
+    "7.2|7.3 - znuny.SignatureObject.SignatureExportDataGet": {
         "body": [
             "${1:my %SignatureData = \\$SignatureObject->SignatureExportDataGet(",
             "    ID               => 1, # mandatory",
             ");}",
         ],
         "prefix": "znuny.SignatureObject.SignatureExportDataGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.ParamObject.SaveFormDraft": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.ParamObject.SaveFormDraft": {
         "body": [
             "${1:my \\$FormDraftID = \\$ParamObject->SaveFormDraft(",
             "    UserID         => \\$UserID,",
@@ -25,7 +25,7 @@
             ");}",
         ],
         "prefix": "znuny.ParamObject.SaveFormDraft",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

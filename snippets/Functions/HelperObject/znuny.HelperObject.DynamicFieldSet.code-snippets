@@ -1,5 +1,5 @@
 {
-    "6.4|6.5|7.0|7.1|7.2 - znuny.HelperObject.DynamicFieldSet": {
+    "6.4|6.5|7.0|7.1|7.2|7.3 - znuny.HelperObject.DynamicFieldSet": {
         "body": [
             "${1:my \\$Success = \\$HelperObject->DynamicFieldSet(",
             "    Field          => 'DF1',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.HelperObject.DynamicFieldSet",
-        "description": "6.4|6.5|7.0|7.1|7.2",
+        "description": "6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

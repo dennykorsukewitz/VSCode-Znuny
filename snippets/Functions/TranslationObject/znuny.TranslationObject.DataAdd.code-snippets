@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.TranslationObject.DataAdd": {
+    "7.2|7.3 - znuny.TranslationObject.DataAdd": {
         "body": [
             "${1:my \\$CreatedID = \\$TranslationObject->DataAdd(",
             "    ID              => '...',",
@@ -16,7 +16,7 @@
             ");}",
         ],
         "prefix": "znuny.TranslationObject.DataAdd",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

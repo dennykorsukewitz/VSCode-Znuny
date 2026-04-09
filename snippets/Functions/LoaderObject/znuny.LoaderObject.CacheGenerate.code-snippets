@@ -1,10 +1,10 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.LoaderObject.CacheGenerate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.LoaderObject.CacheGenerate": {
         "body": [
             "${1:my %GeneratedFiles = \\$LoaderObject->CacheGenerate();}",
         ],
         "prefix": "znuny.LoaderObject.CacheGenerate",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

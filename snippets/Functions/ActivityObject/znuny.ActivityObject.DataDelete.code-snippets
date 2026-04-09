@@ -1,5 +1,5 @@
 {
-    "7.0|7.1|7.2 - znuny.ActivityObject.DataDelete": {
+    "7.0|7.1|7.2|7.3 - znuny.ActivityObject.DataDelete": {
         "body": [
             "${1:my \\$Success = \\$ActivityObject->DataDelete(",
             "    ID         => '...', # optional",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.DataDelete",
-        "description": "7.0|7.1|7.2",
+        "description": "7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

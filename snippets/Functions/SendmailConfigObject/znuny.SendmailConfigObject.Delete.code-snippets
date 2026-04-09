@@ -1,0 +1,12 @@
+{
+    "7.3 - znuny.SendmailConfigObject.Delete": {
+        "body": [
+            "${1:my \\$SendmailConfigDeleted = \\$SendmailConfigObject->Delete(",
+            "    ID => 123,",
+            ");}",
+        ],
+        "prefix": "znuny.SendmailConfigObject.Delete",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

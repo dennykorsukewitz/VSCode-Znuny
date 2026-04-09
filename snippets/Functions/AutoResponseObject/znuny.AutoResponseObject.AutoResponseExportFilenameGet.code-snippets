@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.AutoResponseObject.AutoResponseExportFilenameGet": {
+    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseExportFilenameGet": {
         "body": [
             "${1:my \\$Filename = \\$AutoResponseObject->AutoResponseExportFilenameGet(",
             "    Name => 'autoresponse_1',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseExportFilenameGet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

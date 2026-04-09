@@ -1,0 +1,15 @@
+{
+    "7.3 - znuny.SeleniumObject.CloseNotification": {
+        "body": [
+            "${1:# Close all messages",
+            "\\$SeleniumObject->CloseNotification();}",
+            "${2:# Close only messages containing specific text",
+            "\\$SeleniumObject->CloseNotification(",
+            "    Text => 'Please select a time zone',",
+            ");}",
+        ],
+        "prefix": "znuny.SeleniumObject.CloseNotification",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

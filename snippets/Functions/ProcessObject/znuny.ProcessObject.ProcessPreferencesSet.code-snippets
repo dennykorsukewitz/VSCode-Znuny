@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.ProcessObject.ProcessPreferencesSet": {
+    "7.2|7.3 - znuny.ProcessObject.ProcessPreferencesSet": {
         "body": [
             "${1:\\$ProcessObject->ProcessPreferencesSet(",
             "    ProcessEntityID => \\$ProcessEntityID,",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.ProcessObject.ProcessPreferencesSet",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

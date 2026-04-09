@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.PIDObject.PIDCreate": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.PIDObject.PIDCreate": {
         "body": [
             "${1:\\$PIDObject->PIDCreate(",
             "    Name  => 'PostMasterPOP3',",
@@ -18,7 +18,7 @@
             ");}",
         ],
         "prefix": "znuny.PIDObject.PIDCreate",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

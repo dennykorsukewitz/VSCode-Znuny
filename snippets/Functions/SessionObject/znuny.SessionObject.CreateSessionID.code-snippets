@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.SessionObject.CreateSessionID": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.SessionObject.CreateSessionID": {
         "body": [
             "${1:my \\$SessionID = \\$SessionObject->CreateSessionID(",
             "    UserLogin => 'root',",
@@ -13,7 +13,7 @@
             ");}",
         ],
         "prefix": "znuny.SessionObject.CreateSessionID",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.MailQueueObject.List": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.MailQueueObject.List": {
         "body": [
             "${1:my \\$List = \\$MailQueueObject->List(",
             "    ID              => '...', # optional",
@@ -14,10 +14,18 @@
             "    Sender    => '...', # optional",
             "    Recipient => '...', # optional",
             "    Attempts  => '...', # optional",
+            "    Limit     => '...', # optional",
+            ");}",
+            "${3:my \\$List = \\$MailQueueObject->List(",
+            "    ID        => '...', # optional",
+            "    ArticleID => \\$ArticleID, # optional",
+            "    Sender    => '...', # optional",
+            "    Recipient => '...', # optional",
+            "    Attempts  => '...', # optional",
             ");}",
         ],
         "prefix": "znuny.MailQueueObject.List",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

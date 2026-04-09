@@ -1,10 +1,10 @@
 {
-    "7.2 - znuny.LogObject.Notice": {
+    "7.2|7.3 - znuny.LogObject.Notice": {
         "body": [
             "${1:\\$LogObject->Notice(\\"Heads up! SNAFU has happened!\\");}",
         ],
         "prefix": "znuny.LogObject.Notice",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }

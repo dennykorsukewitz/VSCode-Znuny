@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2 - znuny.EventObject.EventList": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.EventObject.EventList": {
         "body": [
             "${1:my %Events = \\$EventObject->EventList(",
             "    ObjectTypes => ['Ticket', 'Article'],    # optional filter",
             ");}",
         ],
         "prefix": "znuny.EventObject.EventList",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "7.2 - znuny.TranslationObject.DataImport": {
+    "7.2|7.3 - znuny.TranslationObject.DataImport": {
         "body": [
             "${1:my \\$Success = \\$TranslationObject->DataImport(",
             "    Content => \\$ContentString,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.TranslationObject.DataImport",
-        "description": "7.2",
+        "description": "7.2|7.3",
         "scope": "perl"
     }
 }
