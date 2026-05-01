@@ -56,7 +56,7 @@
     "open-in-browser": "npm run build-web && npx @vscode/test-web --extensionDevelopmentPath=."
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
+    "@eslint/js": "^10.0.1",
     "@types/mocha": "^10.0.1",
     "@types/node": "^22.13.8",
     "@types/vscode": "^1.85.0",
