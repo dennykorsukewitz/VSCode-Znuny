@@ -61,7 +61,7 @@
     "@types/node": "^26.0.1",
     "@types/vscode": "^1.85.0",
     "@vscode/test-electron": "^3.0.0",
-    "@vscode/test-web": "^0.0.80",
+    "@vscode/test-web": "^0.0.81",
     "esbuild": "^0.28.0",
     "eslint": "^10.1.0",
     "eslint-plugin-n": "^18.0.1",
