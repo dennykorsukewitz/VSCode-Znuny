@@ -34,7 +34,7 @@ jobs:
           } >> "$GITHUB_ENV"
 
       - name: Create Total Snippet Counter Badge
-        uses: schneegans/dynamic-badges-action@v1.8.0
+        uses: schneegans/dynamic-badges-action@v1.9.0
         with:
           auth: ${{ secrets.GIST }}
           gistID: e2729bfd9b81d9c032ded617a3f924e7
@@ -44,7 +44,7 @@ jobs:
           color: blue
 
       - name: Create Generated Snippet Counter Badge
-        uses: schneegans/dynamic-badges-action@v1.8.0
+        uses: schneegans/dynamic-badges-action@v1.9.0
         with:
           auth: ${{ secrets.GIST }}
           gistID: e2729bfd9b81d9c032ded617a3f924e7
@@ -54,7 +54,7 @@ jobs:
           color: blue
 
       - name: Create Static Snippet Counter Badge
-        uses: schneegans/dynamic-badges-action@v1.8.0
+        uses: schneegans/dynamic-badges-action@v1.9.0
         with:
           auth: ${{ secrets.GIST }}
           gistID: e2729bfd9b81d9c032ded617a3f924e7
