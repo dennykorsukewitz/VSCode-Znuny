@@ -37,6 +37,13 @@ jobs:
           MYSQL_DATABASE: "znuny"
     steps:
 
+      # debian:11-slim has no git — without it, actions/checkout falls back to
+      # an archive download (no .git). create-pull-request needs a real clone.
+      - name: Install git
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git ca-certificates
+
       - name: Check out repository code
         uses: actions/checkout@v7
         with:
