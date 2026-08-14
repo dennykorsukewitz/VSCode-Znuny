@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.UtilObject.ApplicationUserGet": {
+        "body": [
+            "${1:my \\$ApplicationUser = \\$UtilObject->ApplicationUserGet();}",
+        ],
+        "prefix": "znuny.UtilObject.ApplicationUserGet",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}
