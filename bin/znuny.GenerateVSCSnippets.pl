@@ -828,9 +828,18 @@ sub _GetObjects {
         $ZnunyPODParserObject->{FilesObjectMapping} = \%FilesObjectMapping;
         $ZnunyPODParserObject->{CallObjectMapping}  = \%CallObjectMapping;
 
+        # Parser verbatim() bails out without ObjectName; POD may omit new() with $Kernel::OM->Get (e.g. MSGraph).
+        # Seed from package before parse so function examples are collected.
+        my $PackageFallback = _FallbackObjectManagerFromPackage($File);
+        if ($PackageFallback) {
+            $ZnunyPODParserObject->{ObjectManager} ||= $PackageFallback->{ObjectManager};
+            $ZnunyPODParserObject->{ObjectName}    ||= $PackageFallback->{ObjectName};
+            $ZnunyPODParserObject->{Package}       ||= $PackageFallback->{Package};
+        }
+
         $ZnunyPODParserObject->parse_from_file($File);
 
-        # Modules that document with =head1 only or omit new() POD (e.g. Kernel::System::MSGraph)
+        # Same fallback after parse if POD did not define ObjectManager/ObjectName (e.g. =head1-only docs).
         if ( !$ZnunyPODParserObject->{ObjectManager} || !$ZnunyPODParserObject->{ObjectName} ) {
             my $Fallback = _FallbackObjectManagerFromPackage($File);
             if ($Fallback) {
