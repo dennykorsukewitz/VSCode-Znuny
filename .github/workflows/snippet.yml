@@ -3,9 +3,14 @@ name: Snippet
 
 on:
   push:
+    branches: [dev]
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   Snippet:
@@ -34,27 +39,25 @@ jobs:
 
       - name: Check out repository code
         uses: actions/checkout@v7
-        env:
-          fetch-depth: "1"
         with:
           path: repository
+          fetch-depth: 0
+          token: ${{ secrets.PAT }}
 
       - name: Check out module-tools
         uses: actions/checkout@v7
-        env:
-          fetch-depth: "1"
         with:
           repository: znuny/module-tools
           path: module-tools
+          fetch-depth: 1
 
       - name: Check out Znuny
         uses: actions/checkout@v7
-        env:
-          fetch-depth: "1"
         with:
           repository: znuny/Znuny
           ref: ${{ matrix.tag }}
           path: znuny
+          fetch-depth: 1
 
       - name: Set GITHUB_ENV
         run: |
@@ -122,13 +125,25 @@ jobs:
       - name: Run GenerateVSCSnippets
         run: |
           cd "${GITHUB_WORKSPACE}/repository"
-          git init
           git config --global --add safe.directory "${GITHUB_WORKSPACE}/repository"
-          git config --global user.email "dennykorsukewitz@gmail.com"
-          git config --global user.name "Denny Korsukéwitz"
-          git add . && git commit -m "Init"
 
           "${GITHUB_WORKSPACE}"/znuny/bin/znuny.GenerateVSCSnippets.pl
 
-          git status
-          if [ "$(git diff --exit-code)" ]; then echo 'The VSC Snippet list is not up to date.' && exit 1; else echo 'The VSC Snippet list is up to date.' && exit 0; fi
+          git status --short
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          path: repository
+          token: ${{ secrets.PAT }}
+          committer: Denny Korsukéwitz <dennykorsukewitz@gmail.com>
+          author: Denny Korsukéwitz <dennykorsukewitz@gmail.com>
+          commit-message: "chore: Update VSC snippets (${{ matrix.tag }})"
+          title: "chore: Update VSC snippets (${{ matrix.tag }})"
+          body: |
+            Automated refresh of VS Code snippets from Znuny `${{ matrix.tag }}`.
+
+            Review the diff, then merge when ready.
+          branch: chore/update-snippets-${{ matrix.tag }}
+          base: dev
+          delete-branch: true
