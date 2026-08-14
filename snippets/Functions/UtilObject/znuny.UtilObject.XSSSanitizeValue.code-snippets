@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.UtilObject.XSSSanitizeValue": {
+        "body": [
+            "${1:my \\$Value = \\$UtilObject->XSSSanitizeValue( \\$SuspiciousValue );}",
+        ],
+        "prefix": "znuny.UtilObject.XSSSanitizeValue",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}
