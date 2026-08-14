@@ -19,3 +19,7 @@ updates:
       - "dennykorsukewitz"
     reviewers:
       - "dennykorsukewitz"
+    ignore:
+      # typescript-eslint@8 peer: typescript >=4.8.4 <6.1.0
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
