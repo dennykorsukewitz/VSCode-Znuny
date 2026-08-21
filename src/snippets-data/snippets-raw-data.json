@@ -9627,6 +9627,9 @@
                   "7.1",
                   "7.2",
                   "7.3"
+               ],
+               "my $Package = $PackageObject->PackageBuild(\n    Name => {\n        Content => 'SomePackageName',\n    },\n    Version => {\n        Content => '1.0',\n    },\n    Vendor => {\n        Content => 'OTRS AG',\n    },\n    URL => {\n        Content => 'L<http://znuny.org/>',\n    },\n    License => {\n        Content => 'GNU GENERAL PUBLIC LICENSE Version 3, November 2007',\n    }\n    Description => [\n        {\n            Lang    => 'en',\n            Content => 'english description',\n        },\n        {\n            Lang    => 'de',\n            Content => 'german description',\n        },\n    ],\n    Filelist = [\n        {\n            Location   => 'Kernel/System/Lala.pm',\n            Permission => '644',\n            Content    => $FileInString,\n        },\n        {\n            Location   => 'Kernel/System/Lulu.pm',\n            Permission => '644',\n            Content    => $FileInString,\n        },\n    ],\n);" : [
+                  "7.3"
                ]
             },
             "PackageExport" : {
