@@ -148,9 +148,10 @@ jobs:
           commit-message: "chore: Update VSC snippets (${{ matrix.tag }})"
           title: "chore: Update VSC snippets (${{ matrix.tag }})"
           body: |
-            Automated refresh of VS Code snippets from Znuny `${{ matrix.tag }}`.
+            Automated update of VS Code snippets from Znuny `${{ matrix.tag }}`.
 
-            Review the diff, then merge when ready.
+            1. Review the diff.
+            2. Merge when ready.
           branch: chore/update-snippets-${{ matrix.tag }}
           base: dev
           delete-branch: true
