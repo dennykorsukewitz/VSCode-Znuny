@@ -16,7 +16,7 @@ jobs:
   Snippet:
     name: Snippet
     runs-on: ubuntu-22.04 # ubuntu-latest
-    container: debian:11-slim
+    container: debian:12-slim
     strategy:
       fail-fast: false
       matrix:
@@ -37,7 +37,7 @@ jobs:
           MYSQL_DATABASE: "znuny"
     steps:
 
-      # debian:11-slim has no git — without it, actions/checkout falls back to
+      # debian:12-slim has no git — without it, actions/checkout falls back to
       # an archive download (no .git). create-pull-request needs a real clone.
       - name: Install git
         run: |
