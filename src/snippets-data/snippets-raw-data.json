@@ -17507,6 +17507,9 @@
                ]
             },
             "FormIDRemove" : {
+               "$WebUploadCacheObject->FormIDRemove(\n    FormID   => $FormID,\n    UserID   => $UserID,             # optional\n    UserType => 'User',          # optional, 'User' or 'CustomerUser'\n);" : [
+                  "7.3"
+               ],
                "$WebUploadCacheObject->FormIDRemove( FormID => $FormID );" : [
                   "6.0",
                   "6.4",
