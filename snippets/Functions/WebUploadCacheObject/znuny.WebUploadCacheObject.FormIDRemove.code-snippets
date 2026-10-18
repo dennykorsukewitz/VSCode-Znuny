@@ -1,7 +1,12 @@
 {
     "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.WebUploadCacheObject.FormIDRemove": {
         "body": [
-            "${1:\\$WebUploadCacheObject->FormIDRemove( FormID => \\$FormID );}",
+            "${1:\\$WebUploadCacheObject->FormIDRemove(",
+            "    FormID   => \\$FormID,",
+            "    UserID   => \\$UserID,             # optional",
+            "    UserType => 'User',          # optional, 'User' or 'CustomerUser'",
+            ");}",
+            "${2:\\$WebUploadCacheObject->FormIDRemove( FormID => \\$FormID );}",
         ],
         "prefix": "znuny.WebUploadCacheObject.FormIDRemove",
         "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
