@@ -1,29 +1,27 @@
-# [2.0.0]
-
-## Breaking
-
-- Renamed command `znuny.generateFilelist` to `znuny.insertFilelist` and settings key `znuny.generateFilelist.mode` to `znuny.insertFilelist.mode`. Update keybindings, `tasks.json`, and `settings.json` if you still reference the old IDs.
-- Removed built-in **Quote with Marker** and **Add / Remove Folder from Workspace** commands. Use the standalone extensions `dennykorsukewitz.QuoteWithMarker` and `dennykorsukewitz.AddFolderToWorkspace` instead (see README.md).
+# [2.1.0]
 
 ## Added
 
-- Extension rewritten in **TypeScript** and built with **esbuild** (`dist/extension.js`).
-- Command and UI logic split into `src/features/` (customizer, insert filelist, insert `@ObjectDependencies`, status bar) with shared types under `src/types/`.
-- Optional **companion-extension** install prompts when Quote With Marker or Add Folder To Workspace is missing (install, later, or never ask).
+- Perl snippets for `Kernel::System::Util::ApplicationUserGet` and `Kernel::System::Util::XSSSanitizeValue`.
 
 ## Changed
 
-- Snippet generator JSON inputs moved from `src/` to **`src/snippets-data/`**; `bin/znuny.GenerateVSCSnippets.pl` default paths updated.
-- **`doc/images/`** asset filenames normalized to **PascalCase** (icon, demo GIFs, including filelist / object-dependencies demos aligned with current command names).
-- Readme introduction, marketplace **`description`**, and related repository metadata text expanded.
-- GitHub Actions: updated **actions/checkout**, **actions/setup-node**, **schneegans/dynamic-badges-action**, and tidied the release workflow.
+- Regenerated POD snippets from Znuny `dev`: `Calendar::GetTextColor`, `Package` (`PackageBuild`, `PackageInstall`, `PackageUpgrade`, `RepositoryAdd`), `Ticket::TicketSearch`, `Util::Base64DeepEncode`, and `WebUploadCache::FormIDRemove`.
+- Snippet generator seeds object name and object manager from the package before POD parse, so modules that omit `new()` in POD (for example `Kernel::System::MSGraph`) still yield function snippets.
+- Snippet workflow uses Debian 12, tracks the Znuny `dev` branch only, and opens a pull request after generation.
+- TypeScript stays on 6.0.x (`~6.0.3`). Dependabot ignores TypeScript major updates until `typescript-eslint` accepts TypeScript 7.
+- Marketplace badges in the readme use [vsmarketplacebadges.dev](https://vsmarketplacebadges.dev). Shields.io retired the Visual Studio Marketplace badges.
 
 ## Dependencies
 
-- Bump glob from 11.1.0 to 13.0.6 (#32)
-- Bump ESLint from 9.39.4 to 10.1.0 (#34)
-- Bump TypeScript from 5.9.3 to 6.0.2 (#35)
-- Bump @types/node from 22.18.13 through 24.9.2 to 25.5.0 (#25, #36)
-- Bump schneegans/dynamic-badges-action from 1.7.0 to 1.8.0 (#33)
-- Bump actions/checkout from 4 to 5 to 6 (#27)
-- Bump actions/setup-node from 4 to 6 (#24)
+- Bump @eslint/js from 9.39.4 to 10.0.1 (#41)
+- Bump @types/node from 22.19.17 through 25.9.4 to 26.0.1 (#42, #45)
+- Bump @vscode/test-electron from 2.5.2 to 3.0.0 (#46)
+- Bump @vscode/test-web from 0.0.62 to 0.0.81 (#40, #47)
+- Bump esbuild from 0.25.12 to 0.28.0 (#38)
+- Bump eslint-plugin-n from 17.24.0 to 18.0.1 (#43)
+- Bump mocha from 11.8.0 to 12.0.2 (#55)
+- Bump TypeScript from 5.9.3 to 6.0.3 and pin `~6.0.3` (#39)
+- Bump actions/checkout from 4 to 6 to 7 (#37, #44)
+- Bump schneegans/dynamic-badges-action from 1.8.0 to 1.9.0 (#48)
+- Bump peter-evans/create-pull-request from 7 to 8 (#52)
