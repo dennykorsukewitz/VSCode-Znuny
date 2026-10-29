@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.EnvironmentObject.ZnunyInfoGet": {
+        "body": [
+            "${1:my %ZnunyInfo = \\$EnvironmentObject->ZnunyInfoGet();}",
+        ],
+        "prefix": "znuny.EnvironmentObject.ZnunyInfoGet",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}

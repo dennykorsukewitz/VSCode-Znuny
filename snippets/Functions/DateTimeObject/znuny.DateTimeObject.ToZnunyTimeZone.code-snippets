@@ -1,0 +1,10 @@
+{
+    "7.3 - znuny.DateTimeObject.ToZnunyTimeZone": {
+        "body": [
+            "${1:my \\$Success = \\$DateTimeObject->ToZnunyTimeZone();}",
+        ],
+        "prefix": "znuny.DateTimeObject.ToZnunyTimeZone",
+        "description": "7.3",
+        "scope": "perl"
+    }
+}
