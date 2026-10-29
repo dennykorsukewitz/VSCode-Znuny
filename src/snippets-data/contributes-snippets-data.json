@@ -1844,6 +1844,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/DateTimeObject/znuny.DateTimeObject.ToZnunyTimeZone.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/DateTimeObject/znuny.DateTimeObject.UserDefaultTimeZoneGet.code-snippets"
     },
     {
@@ -2097,6 +2101,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/EnvironmentObject/znuny.EnvironmentObject.PerlInfoGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/EnvironmentObject/znuny.EnvironmentObject.ZnunyInfoGet.code-snippets"
     },
     {
       "language" : "perl",

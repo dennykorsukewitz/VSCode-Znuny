@@ -4121,6 +4121,9 @@
                   "7.2",
                   "7.3"
                ],
+               "# If you already have a DateTime object, possibly in another time zone:\n$DateTimeObject->ToZnunyTimeZone();\nmy $MailTimeStamp = $DateTimeObject->ToEmailTimeStamp();" : [
+                  "7.3"
+               ],
                "# Typical usage:\n# You want to have the date/time of OTRS + its UTC offset, so:\nmy $DateTimeObject = $Kernel::OM->Create('Kernel::System::DateTime');\nmy $MailTimeStamp = $DateTimeObject->ToEmailTimeStamp();" : [
                   "6.0",
                   "6.4",
@@ -4180,6 +4183,11 @@
                   "7.0",
                   "7.1",
                   "7.2",
+                  "7.3"
+               ]
+            },
+            "ToZnunyTimeZone" : {
+               "my $Success = $DateTimeObject->ToZnunyTimeZone();" : [
                   "7.3"
                ]
             },
@@ -5024,6 +5032,11 @@
                   "7.0",
                   "7.1",
                   "7.2",
+                  "7.3"
+               ]
+            },
+            "ZnunyInfoGet" : {
+               "my %ZnunyInfo = $EnvironmentObject->ZnunyInfoGet();" : [
                   "7.3"
                ]
             }

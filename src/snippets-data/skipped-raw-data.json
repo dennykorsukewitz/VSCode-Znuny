@@ -1725,6 +1725,9 @@
          "7.2",
          "7.3"
       ],
+      "_ToZnunyTimeZone" : [
+         "7.3"
+      ],
       "_TypeCreateIfNotExists" : [
          "6.4",
          "6.5",
