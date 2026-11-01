@@ -74,7 +74,7 @@
     "glob": "^13.0.6",
     "node-fetch": "^3.3.2",
     "xmldom": "^0.6.0",
-    "xpath": "^0.0.34"
+    "xpath": "^0.0.36"
   },
   "vsce": {
     "dependencies": true
