@@ -1,10 +1,10 @@
 {
-    "7.2|7.3 - znuny.ArticleObject.ArticleColorInit": {
+    "7.2|7.3|7.5 - znuny.ArticleObject.ArticleColorInit": {
         "body": [
             "${1:my \\$Success = \\$ArticleObject->ArticleColorInit();}",
         ],
         "prefix": "znuny.ArticleObject.ArticleColorInit",
-        "description": "7.2|7.3",
+        "description": "7.2|7.3|7.5",
         "scope": "perl"
     }
 }

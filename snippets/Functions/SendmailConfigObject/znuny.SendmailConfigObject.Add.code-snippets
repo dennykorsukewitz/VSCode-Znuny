@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.SendmailConfigObject.Add": {
+    "7.3|7.5 - znuny.SendmailConfigObject.Add": {
         "body": [
             "${1:my \\$SendmailConfigID = \\$SendmailConfigObject->Add(",
             "    SendmailModule      => 'SMTPTLS',",
@@ -23,7 +23,7 @@
             ");}",
         ],
         "prefix": "znuny.SendmailConfigObject.Add",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

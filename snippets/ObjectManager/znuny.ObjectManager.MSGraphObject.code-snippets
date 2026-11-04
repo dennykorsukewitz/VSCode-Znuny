@@ -1,10 +1,10 @@
 {
-    "7.3 - znuny.ObjectManager.MSGraphObject": {
+    "7.3|7.5 - znuny.ObjectManager.MSGraphObject": {
         "body": [
             "my \\$MSGraphObject = \\$Kernel::OM->Get('Kernel::System::MSGraph');",
         ],
         "prefix": "znuny.ObjectManager.MSGraphObject",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

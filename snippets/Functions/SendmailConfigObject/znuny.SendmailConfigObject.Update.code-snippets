@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.SendmailConfigObject.Update": {
+    "7.3|7.5 - znuny.SendmailConfigObject.Update": {
         "body": [
             "${1:my \\$UpdateSuccessful = \\$SendmailConfigObject->Update(",
             "    ID                  => 5,",
@@ -24,7 +24,7 @@
             ");}",
         ],
         "prefix": "znuny.SendmailConfigObject.Update",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.SendmailConfigObject.GetByEmailAddress": {
+    "7.3|7.5 - znuny.SendmailConfigObject.GetByEmailAddress": {
         "body": [
             "${1:my \\$SendmailConfig = \\$SendmailConfigObject->GetByEmailAddress(",
             "    EmailAddress => 'znuny@example.org',",
@@ -10,7 +10,7 @@
             ");}",
         ],
         "prefix": "znuny.SendmailConfigObject.GetByEmailAddress",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }
