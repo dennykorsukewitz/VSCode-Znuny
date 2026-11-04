@@ -4625,9 +4625,17 @@
                   "7.3",
                   "7.5"
                ]
+            },
+            "ZnunyTimeZoneGet" : {
+               "# You can also call this function without an object:\nmy $ZnunyTimeZone = Kernel::System::DateTime->ZnunyTimeZoneGet();" : [
+                  "7.5"
+               ],
+               "my $ZnunyTimeZone = $DateTimeObject->ZnunyTimeZoneGet();" : [
+                  "7.5"
+               ]
             }
          },
-         "ObjectManager" : "my $DateTimeObject = $Kernel::OM->Create(\n        'Kernel::System::DateTime',\n        ObjectParams => {\n            String   => '2016-08-14 22:45:00',\n            TimeZone => 'Europe/Berlin',        # optional, defaults to setting of SysConfig OTRSTimeZone\n        }\n    );",
+         "ObjectManager" : "my $DateTimeObject = $Kernel::OM->Create(\n        'Kernel::System::DateTime',\n        ObjectParams => {\n            String   => '2016-08-14 22:45:00',\n            TimeZone => 'Europe/Berlin',        # optional, defaults to setting of SysConfig ZnunyTimeZone\n        }\n    );",
          "Package" : "Kernel::System::DateTime',\n        ObjectParams => {\n            String   => '2016-08-14 22:45:00',\n            TimeZone => 'Europe/Berlin"
       },
       "DebugLogObject" : {
@@ -10900,6 +10908,11 @@
                   "7.5"
                ]
             },
+            "ExpireLegacySessionCookie" : {
+               "my $Cookie = $ParamObject->ExpireLegacySessionCookie(\n    SessionName => 'ZnunyAgentInterface',\n    Path        => $ConfigObject->Get('ScriptAlias'),\n    Secure      => $CookieSecureAttribute,\n);" : [
+                  "7.5"
+               ]
+            },
             "GetArray" : {
                "my @Param = $ParamObject->GetArray(\n    Param => 'ID',\n    Raw   => 1,     # optional, input data is not changed\n);" : [
                   "6.4",
@@ -10920,6 +10933,11 @@
                   "7.1",
                   "7.2",
                   "7.3",
+                  "7.5"
+               ]
+            },
+            "GetLegacySessionName" : {
+               "my $LegacySessionName = $ParamObject->GetLegacySessionName(\n    SessionName => 'ZnunyAgentInterface',    # returns OTRSAgentInterface\n);" : [
                   "7.5"
                ]
             },
@@ -10958,6 +10976,14 @@
                   "7.1",
                   "7.2",
                   "7.3",
+                  "7.5"
+               ]
+            },
+            "GetSessionID" : {
+               "# List context also returns the cookie value when the session came from a cookie:\nmy ( $SessionID, $SessionIDCookie ) = $ParamObject->GetSessionID(\n    SessionName => 'ZnunyAgentInterface',\n);" : [
+                  "7.5"
+               ],
+               "my $SessionID = $ParamObject->GetSessionID(\n    SessionName => 'ZnunyAgentInterface',\n);" : [
                   "7.5"
                ]
             },

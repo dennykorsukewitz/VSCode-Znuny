@@ -1,0 +1,16 @@
+{
+    "7.5 - znuny.ParamObject.GetSessionID": {
+        "body": [
+            "${1:# List context also returns the cookie value when the session came from a cookie:",
+            "my ( \\$SessionID, \\$SessionIDCookie ) = \\$ParamObject->GetSessionID(",
+            "    SessionName => 'ZnunyAgentInterface',",
+            ");}",
+            "${2:my \\$SessionID = \\$ParamObject->GetSessionID(",
+            "    SessionName => 'ZnunyAgentInterface',",
+            ");}",
+        ],
+        "prefix": "znuny.ParamObject.GetSessionID",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}
