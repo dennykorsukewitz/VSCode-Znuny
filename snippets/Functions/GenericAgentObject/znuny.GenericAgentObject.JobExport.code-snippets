@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.GenericAgentObject.JobExport": {
+    "7.3|7.5 - znuny.GenericAgentObject.JobExport": {
         "body": [
             "${1:my \\$ExportData = \\$GenericAgentObject->JobExport(",
             "    # required either Name or ExportAll",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobExport",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

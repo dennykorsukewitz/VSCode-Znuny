@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.LayoutObject.CustomerPopupClose": {
+    "7.3|7.5 - znuny.LayoutObject.CustomerPopupClose": {
         "body": [
             "${1:# load specific URL in main window",
             "\\$LayoutObject->CustomerPopupClose(",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.LayoutObject.CustomerPopupClose",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

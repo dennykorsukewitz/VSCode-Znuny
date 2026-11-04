@@ -1,12 +1,12 @@
 {
-    "7.3 - znuny.LanguageObject.FormatCurrentTime": {
+    "7.3|7.5 - znuny.LanguageObject.FormatCurrentTime": {
         "body": [
             "${1:\\$Time = \\$LanguageObject->FormatCurrentTime(",
             "    Format => 'DateFormat',",
             ");}",
         ],
         "prefix": "znuny.LanguageObject.FormatCurrentTime",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

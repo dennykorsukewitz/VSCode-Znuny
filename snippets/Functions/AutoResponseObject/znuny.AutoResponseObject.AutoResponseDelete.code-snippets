@@ -1,5 +1,5 @@
 {
-    "7.2|7.3 - znuny.AutoResponseObject.AutoResponseDelete": {
+    "7.2|7.3|7.5 - znuny.AutoResponseObject.AutoResponseDelete": {
         "body": [
             "${1:\\$AutoResponseObject->AutoResponseDelete(",
             "    ID     => 1,",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.AutoResponseObject.AutoResponseDelete",
-        "description": "7.2|7.3",
+        "description": "7.2|7.3|7.5",
         "scope": "perl"
     }
 }

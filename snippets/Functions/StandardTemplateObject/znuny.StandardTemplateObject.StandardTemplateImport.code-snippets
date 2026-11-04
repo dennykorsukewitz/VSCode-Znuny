@@ -1,5 +1,5 @@
 {
-    "7.2|7.3 - znuny.StandardTemplateObject.StandardTemplateImport": {
+    "7.2|7.3|7.5 - znuny.StandardTemplateObject.StandardTemplateImport": {
         "body": [
             "${1:my \\$ImportResult = \\$StandardTemplateObject->StandardTemplateImport(",
             "    Content                    => \\$YAMLContent, # mandatory, YAML format",
@@ -8,7 +8,7 @@
             ");}",
         ],
         "prefix": "znuny.StandardTemplateObject.StandardTemplateImport",
-        "description": "7.2|7.3",
+        "description": "7.2|7.3|7.5",
         "scope": "perl"
     }
 }

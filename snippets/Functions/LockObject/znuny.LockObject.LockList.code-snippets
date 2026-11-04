@@ -1,12 +1,12 @@
 {
-    "6.0|6.4|6.5|7.0|7.1|7.2|7.3 - znuny.LockObject.LockList": {
+    "6.0|6.4|6.5|7.0|7.1|7.2|7.3|7.5 - znuny.LockObject.LockList": {
         "body": [
             "${1:my %List = \\$LockObject->LockList(",
             "    UserID => \\$UserID,",
             ");}",
         ],
         "prefix": "znuny.LockObject.LockList",
-        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3",
+        "description": "6.0|6.4|6.5|7.0|7.1|7.2|7.3|7.5",
         "scope": "perl"
     }
 }

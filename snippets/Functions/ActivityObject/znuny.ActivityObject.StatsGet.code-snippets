@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.ActivityObject.StatsGet": {
+    "7.3|7.5 - znuny.ActivityObject.StatsGet": {
         "body": [
             "${1:\\$Stats = \\$ActivityObject->StatsGet(",
             "    ID         => '...', # optional",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.ActivityObject.StatsGet",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

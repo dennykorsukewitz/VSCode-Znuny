@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.SeleniumObject.CloseNotification": {
+    "7.3|7.5 - znuny.SeleniumObject.CloseNotification": {
         "body": [
             "${1:# Close all messages",
             "\\$SeleniumObject->CloseNotification();}",
@@ -9,7 +9,7 @@
             ");}",
         ],
         "prefix": "znuny.SeleniumObject.CloseNotification",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

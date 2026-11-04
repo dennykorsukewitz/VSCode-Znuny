@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.LanguageObject.FormatNonNumericTime": {
+    "7.3|7.5 - znuny.LanguageObject.FormatNonNumericTime": {
         "body": [
             "${1:\\$TimeLong = \\$LanguageObject->FormatNonNumericTime(",
             "    Format => 'DateInputFormatLong',",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.LanguageObject.FormatNonNumericTime",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }
