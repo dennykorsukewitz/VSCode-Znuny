@@ -1,0 +1,14 @@
+{
+    "7.5 - znuny.ParamObject.ExpireLegacySessionCookie": {
+        "body": [
+            "${1:my \\$Cookie = \\$ParamObject->ExpireLegacySessionCookie(",
+            "    SessionName => 'ZnunyAgentInterface',",
+            "    Path        => \\$ConfigObject->Get('ScriptAlias'),",
+            "    Secure      => \\$CookieSecureAttribute,",
+            ");}",
+        ],
+        "prefix": "znuny.ParamObject.ExpireLegacySessionCookie",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

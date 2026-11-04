@@ -5,7 +5,7 @@
             "        'Kernel::System::DateTime',",
             "        ObjectParams => {",
             "            String   => '2016-08-14 22:45:00',",
-            "            TimeZone => 'Europe/Berlin',        # optional, defaults to setting of SysConfig OTRSTimeZone",
+            "            TimeZone => 'Europe/Berlin',        # optional, defaults to setting of SysConfig ZnunyTimeZone",
             "        \\}",
             "    );",
         ],
