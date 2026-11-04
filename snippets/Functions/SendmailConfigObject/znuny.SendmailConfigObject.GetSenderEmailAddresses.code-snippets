@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.SendmailConfigObject.GetSenderEmailAddresses": {
+    "7.3|7.5 - znuny.SendmailConfigObject.GetSenderEmailAddresses": {
         "body": [
             "${1:my \\$EmailAddresses = \\$SendmailConfigObject->GetSenderEmailAddresses(",
             "",
@@ -11,7 +11,7 @@
             ");}",
         ],
         "prefix": "znuny.SendmailConfigObject.GetSenderEmailAddresses",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

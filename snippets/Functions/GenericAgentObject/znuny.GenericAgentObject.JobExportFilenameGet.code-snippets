@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.GenericAgentObject.JobExportFilenameGet": {
+    "7.3|7.5 - znuny.GenericAgentObject.JobExportFilenameGet": {
         "body": [
             "${1:my \\$Filename = \\$GenericAgentObject->JobExportFilenameGet(",
             "    Name => 'Job_1',",
@@ -7,7 +7,7 @@
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobExportFilenameGet",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

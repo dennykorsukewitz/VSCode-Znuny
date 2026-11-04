@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.MSGraphObject.ExecuteOperation": {
+    "7.3|7.5 - znuny.MSGraphObject.ExecuteOperation": {
         "body": [
             "${1:my \\$Response = \\$MSGraphObject->ExecuteOperation(",
             "    CommunicationLogObject    => \\$CommunicationLogObject,",
@@ -24,7 +24,7 @@
             ");}",
         ],
         "prefix": "znuny.MSGraphObject.ExecuteOperation",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

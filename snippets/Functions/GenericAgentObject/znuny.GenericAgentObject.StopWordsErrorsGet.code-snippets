@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.GenericAgentObject.StopWordsErrorsGet": {
+    "7.3|7.5 - znuny.GenericAgentObject.StopWordsErrorsGet": {
         "body": [
             "${1:my %Errors = \\$GenericAgentObject->StopWordsErrorsGet(",
             "    Fields => {",
@@ -12,7 +12,7 @@
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.StopWordsErrorsGet",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }

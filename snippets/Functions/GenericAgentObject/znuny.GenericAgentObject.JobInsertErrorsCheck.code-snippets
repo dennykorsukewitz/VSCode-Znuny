@@ -1,5 +1,5 @@
 {
-    "7.3 - znuny.GenericAgentObject.JobInsertErrorsCheck": {
+    "7.3|7.5 - znuny.GenericAgentObject.JobInsertErrorsCheck": {
         "body": [
             "${1:my %Errors = \\$GenericAgentObject->JobInsertErrorsCheck(",
             "    Name             => 'job1',",
@@ -14,7 +14,7 @@
             ");}",
         ],
         "prefix": "znuny.GenericAgentObject.JobInsertErrorsCheck",
-        "description": "7.3",
+        "description": "7.3|7.5",
         "scope": "perl"
     }
 }
