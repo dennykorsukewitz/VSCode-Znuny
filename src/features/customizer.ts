@@ -169,7 +169,7 @@ export function initCustomizer(context: vscode.ExtensionContext) {
                 return;
             }
 
-            url = `https://api.github.com/repos/znuny/${repository}/commits?path=${file};sha=${branch}`;
+            url = `https://api.github.com/repos/znuny/${repository}/commits?path=${encodeURIComponent(file)}&sha=${encodeURIComponent(branch)}`;
 
             if (config.informationMessages === 'verbose') {
                 vscode.window.showInformationMessage(
