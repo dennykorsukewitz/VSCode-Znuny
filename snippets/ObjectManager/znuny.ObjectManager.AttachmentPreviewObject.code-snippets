@@ -1,0 +1,10 @@
+{
+    "7.5 - znuny.ObjectManager.AttachmentPreviewObject": {
+        "body": [
+            "my \\$AttachmentPreviewObject = \\$Kernel::OM->Get('Kernel::System::AttachmentPreview');",
+        ],
+        "prefix": "znuny.ObjectManager.AttachmentPreviewObject",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

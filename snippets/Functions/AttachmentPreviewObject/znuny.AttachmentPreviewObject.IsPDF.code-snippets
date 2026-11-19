@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AttachmentPreviewObject.IsPDF": {
+        "body": [
+            "${1:my \\$IsPDF = \\$AttachmentPreviewObject->IsPDF(",
+            "    ContentType => 'application/pdf',",
+            "    Filename    => 'document.pdf',    # optional",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentPreviewObject.IsPDF",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "7.5 - znuny.ObjectManager.AttachmentsObject": {
+        "body": [
+            "my \\$AttachmentsObject = \\$Kernel::OM->Get('Kernel::System::Attachments');",
+        ],
+        "prefix": "znuny.ObjectManager.AttachmentsObject",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

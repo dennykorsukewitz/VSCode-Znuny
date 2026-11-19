@@ -1,0 +1,14 @@
+{
+    "7.5 - znuny.AttachmentPreviewObject.GetPDFSettings": {
+        "body": [
+            "${1:my \\$Settings = \\$AttachmentPreviewObject->GetPDFSettings(",
+            "    Ticket   => \\%Ticket,    # optional if TicketID is given",
+            "    TicketID => \\$TicketID,         # optional if Ticket is given",
+            "    UserID   => \\$UserID,           # optional, default 1",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentPreviewObject.GetPDFSettings",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

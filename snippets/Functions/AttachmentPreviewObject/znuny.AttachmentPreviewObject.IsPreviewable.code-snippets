@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AttachmentPreviewObject.IsPreviewable": {
+        "body": [
+            "${1:my \\$Ok = \\$AttachmentPreviewObject->IsPreviewable(",
+            "    ContentType => 'application/pdf',",
+            "    Filename    => 'document.pdf',    # optional",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentPreviewObject.IsPreviewable",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

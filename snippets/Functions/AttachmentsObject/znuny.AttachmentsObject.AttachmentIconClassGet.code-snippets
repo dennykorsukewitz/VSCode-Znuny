@@ -1,0 +1,12 @@
+{
+    "7.5 - znuny.AttachmentsObject.AttachmentIconClassGet": {
+        "body": [
+            "${1:my \\$IconClass = \\$AttachmentsObject->AttachmentIconClassGet(",
+            "    ContentType => 'application/pdf',",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentsObject.AttachmentIconClassGet",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "7.5 - znuny.LayoutObject.GetReusedArticleAttachments": {
+        "body": [
+            "${1:my @ReusedAttachments = \\$LayoutObject->GetReusedArticleAttachments();}",
+        ],
+        "prefix": "znuny.LayoutObject.GetReusedArticleAttachments",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}
