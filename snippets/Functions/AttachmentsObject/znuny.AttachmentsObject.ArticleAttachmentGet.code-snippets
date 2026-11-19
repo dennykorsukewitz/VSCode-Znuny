@@ -1,0 +1,15 @@
+{
+    "7.5 - znuny.AttachmentsObject.ArticleAttachmentGet": {
+        "body": [
+            "${1:my %Attachment = \\$AttachmentsObject->ArticleAttachmentGet(",
+            "    TicketID  => \\$TicketID,",
+            "    ArticleID => \\$ArticleID,",
+            "    FileID    => \\$FileID,",
+            "    UserID    => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentsObject.ArticleAttachmentGet",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

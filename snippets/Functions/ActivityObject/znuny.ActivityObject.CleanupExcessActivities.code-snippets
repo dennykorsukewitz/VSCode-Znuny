@@ -1,0 +1,10 @@
+{
+    "7.5 - znuny.ActivityObject.CleanupExcessActivities": {
+        "body": [
+            "${1:my \\$ScheduledTaskCount = \\$ActivityObject->CleanupExcessActivities();}",
+        ],
+        "prefix": "znuny.ActivityObject.CleanupExcessActivities",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

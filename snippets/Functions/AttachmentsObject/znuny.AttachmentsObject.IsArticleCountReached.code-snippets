@@ -1,0 +1,12 @@
+{
+    "7.5 - znuny.AttachmentsObject.IsArticleCountReached": {
+        "body": [
+            "${1:my \\$IsArticleCountReached = \\$AttachmentsObject->IsArticleCountReached(",
+            "    TicketID => \\$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentsObject.IsArticleCountReached",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

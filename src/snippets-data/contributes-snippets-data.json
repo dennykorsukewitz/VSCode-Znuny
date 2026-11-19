@@ -476,6 +476,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Modules/znuny.Module.AgentTicketAttachmentList.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Modules/znuny.Module.AgentTicketBounce.code-snippets"
     },
     {
@@ -708,6 +712,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.CleanupExcessActivities.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.DataAdd.code-snippets"
     },
     {
@@ -749,6 +757,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.StatsGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/ActivityObject/znuny.ActivityObject.TrimToMaxKeepActivities.code-snippets"
     },
     {
       "language" : "perl",
@@ -889,6 +901,66 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/ArticleObject/znuny.ArticleObject.TicketIDLookup.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/ObjectManager/znuny.ObjectManager.AttachmentPreviewObject.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentPreviewObject/znuny.AttachmentPreviewObject.GetPDFSettings.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentPreviewObject/znuny.AttachmentPreviewObject.IsPDF.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentPreviewObject/znuny.AttachmentPreviewObject.IsPreviewable.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/ObjectManager/znuny.ObjectManager.AttachmentsObject.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.AddAttachmentsToArticle.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.ArticleAndAttachmentListGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.ArticleAttachmentCount.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.ArticleAttachmentGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.ArticleAttachmentListGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.AttachmentDirectionIconClassGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.AttachmentIconClassGet.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.CreateTicketAttachmentZipArchive.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.IsArticleAttachmentCountReached.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/AttachmentsObject/znuny.AttachmentsObject.IsArticleCountReached.code-snippets"
     },
     {
       "language" : "perl",
@@ -2800,6 +2872,10 @@
     },
     {
       "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.GetReusedArticleAttachments.code-snippets"
+    },
+    {
+      "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.HTMLLinkQuote.code-snippets"
     },
     {
@@ -2897,6 +2973,10 @@
     {
       "language" : "perl",
       "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.Redirect.code-snippets"
+    },
+    {
+      "language" : "perl",
+      "path" : "./snippets/Functions/LayoutObject/znuny.LayoutObject.RenderArticleAttachmentSelection.code-snippets"
     },
     {
       "language" : "perl",

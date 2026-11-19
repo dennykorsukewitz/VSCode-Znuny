@@ -1,0 +1,12 @@
+{
+    "7.5 - znuny.AttachmentsObject.ArticleAttachmentCount": {
+        "body": [
+            "${1:my \\$ArticleAttachmentCount = \\$AttachmentsObject->ArticleAttachmentCount(",
+            "    TicketID  => \\$TicketID,",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentsObject.ArticleAttachmentCount",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

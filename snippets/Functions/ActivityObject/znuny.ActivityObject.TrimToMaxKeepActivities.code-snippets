@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.ActivityObject.TrimToMaxKeepActivities": {
+        "body": [
+            "${1:my \\$DeletedCount = \\$ActivityObject->TrimToMaxKeepActivities(",
+            "    UserID   => \\$UserID,",
+            "    CreateBy => 1,",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.TrimToMaxKeepActivities",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AttachmentsObject.AttachmentDirectionIconClassGet": {
+        "body": [
+            "${1:my \\$IconClass = \\$AttachmentsObject->AttachmentDirectionIconClassGet(",
+            "    IsVisibleForCustomer => 1,",
+            "    SenderType           => 'customer',",
+            ");}",
+        ],
+        "prefix": "znuny.AttachmentsObject.AttachmentDirectionIconClassGet",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

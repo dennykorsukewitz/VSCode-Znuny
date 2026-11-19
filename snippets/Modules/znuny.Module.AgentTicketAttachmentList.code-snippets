@@ -1,0 +1,10 @@
+{
+    "7.5 - AgentTicketAttachmentList": {
+        "body": [
+            "AgentTicketAttachmentList",
+        ],
+        "prefix": "AgentTicketAttachmentList",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}
