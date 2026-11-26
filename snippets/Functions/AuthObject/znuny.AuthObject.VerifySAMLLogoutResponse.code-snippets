@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AuthObject.VerifySAMLLogoutResponse": {
+        "body": [
+            "${1:my \\$LogoutResponse = \\$AuthObject->VerifySAMLLogoutResponse(",
+            "    Count       => \\$Count,",
+            "    QueryString => \\$QueryString,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthObject.VerifySAMLLogoutResponse",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

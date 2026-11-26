@@ -1,0 +1,14 @@
+{
+    "7.5 - znuny.AuthenticationConfigObject.Deploy": {
+        "body": [
+            "${1:my @Errors;",
+            "my \\$Location = \\$AuthenticationConfigObject->Deploy(",
+            "    UserID => \\$UserID,",
+            "    Errors => \\@Errors,    # optional, gets one entry per config that could not be deployed",
+            ");}",
+        ],
+        "prefix": "znuny.AuthenticationConfigObject.Deploy",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

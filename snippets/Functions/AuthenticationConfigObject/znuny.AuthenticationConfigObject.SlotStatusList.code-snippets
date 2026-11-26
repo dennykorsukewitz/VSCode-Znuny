@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AuthenticationConfigObject.SlotStatusList": {
+        "body": [
+            "${1:my \\$SlotStatus = \\$AuthenticationConfigObject->SlotStatusList(",
+            "    Context => 'Agent',    # or 'Customer'",
+            "    UserID  => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthenticationConfigObject.SlotStatusList",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

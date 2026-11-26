@@ -1,0 +1,20 @@
+{
+    "7.5 - znuny.ActivityObject.Update": {
+        "body": [
+            "${1:my \\$Success = \\$ActivityObject->Update(",
+            "    ID     => 123,",
+            "    UserID => \\$UserID,",
+            "",
+            "    # optional",
+            "    Type  => '...',",
+            "    Title => '...',",
+            "    Text  => '...',",
+            "    State => '...',    # 'new' or 'seen'",
+            "    Link  => '...',",
+            ");}",
+        ],
+        "prefix": "znuny.ActivityObject.Update",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

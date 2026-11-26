@@ -983,6 +983,10 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/ActivityObject/znuny.ActivityObject.IsValidLink.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/Functions/ActivityObject/znuny.ActivityObject.ListGet.code-snippets"
       },
       {
@@ -992,6 +996,10 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/ActivityObject/znuny.ActivityObject.TrimToMaxKeepActivities.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/ActivityObject/znuny.ActivityObject.Update.code-snippets"
       },
       {
         "language": "perl",
@@ -1064,6 +1072,10 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleList.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/ArticleObject/znuny.ArticleObject.ArticleSearchIndexArticleIDsGet.code-snippets"
       },
       {
         "language": "perl",
@@ -1208,6 +1220,54 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/AuthObject/znuny.AuthObject.GetOption.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthObject/znuny.AuthObject.GetSAMLLogoutRequestID.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthObject/znuny.AuthObject.GetSAMLSLOData.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthObject/znuny.AuthObject.InitiateSAMLLogout.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthObject/znuny.AuthObject.VerifySAMLLogoutResponse.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/ObjectManager/znuny.ObjectManager.AuthenticationConfigObject.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.Deploy.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.DumpAssignment.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.EmitConfigLines.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.IsDeploySynced.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.SlotStatusList.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.SortedList.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/AuthenticationConfigObject/znuny.AuthenticationConfigObject.VFSFilenameUsedBy.code-snippets"
       },
       {
         "language": "perl",
@@ -1703,6 +1763,22 @@
       },
       {
         "language": "perl",
+        "path": "./snippets/Functions/CustomerAuthObject/znuny.CustomerAuthObject.GetSAMLLogoutRequestID.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/CustomerAuthObject/znuny.CustomerAuthObject.GetSAMLSLOData.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/CustomerAuthObject/znuny.CustomerAuthObject.InitiateSAMLLogout.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/CustomerAuthObject/znuny.CustomerAuthObject.VerifySAMLLogoutResponse.code-snippets"
+      },
+      {
+        "language": "perl",
         "path": "./snippets/ObjectManager/znuny.ObjectManager.CustomerCompanyObject.code-snippets"
       },
       {
@@ -2092,6 +2168,10 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/DateTimeObject/znuny.DateTimeObject.IsVacationDay.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/DateTimeObject/znuny.DateTimeObject.IsWorkingDay.code-snippets"
       },
       {
         "language": "perl",
@@ -3124,6 +3204,26 @@
       {
         "language": "perl",
         "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.LinkEncode.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.LinkObjectColumnFilterApply.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.LinkObjectColumnFilterHTML.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.LinkObjectColumnFilterParamGet.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.LinkObjectColumnFilterPreferencesSet.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/LayoutObject/znuny.LayoutObject.LinkObjectColumnFilterValuesGet.code-snippets"
       },
       {
         "language": "perl",
@@ -4784,6 +4884,14 @@
       {
         "language": "perl",
         "path": "./snippets/ObjectManager/znuny.ObjectManager.ServiceObject.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/ServiceObject/znuny.ServiceObject.CustomerCompanyServiceMemberAdd.code-snippets"
+      },
+      {
+        "language": "perl",
+        "path": "./snippets/Functions/ServiceObject/znuny.ServiceObject.CustomerCompanyServiceMemberList.code-snippets"
       },
       {
         "language": "perl",

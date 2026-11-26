@@ -1,0 +1,15 @@
+{
+    "7.5 - znuny.CustomerAuthObject.InitiateSAMLLogout": {
+        "body": [
+            "${1:my \\$URL = \\$CustomerAuthObject->InitiateSAMLLogout(",
+            "    Count        => \\$Count,",
+            "    NameID       => \\$NameID,",
+            "    NameIDFormat => \\$NameIDFormat, # optional",
+            "    SessionIndex => \\$SessionIndex,",
+            ");}",
+        ],
+        "prefix": "znuny.CustomerAuthObject.InitiateSAMLLogout",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "7.5 - znuny.AuthenticationConfigObject.IsDeploySynced": {
+        "body": [
+            "${1:my \\$IsSynced = \\$AuthenticationConfigObject->IsDeploySynced();}",
+        ],
+        "prefix": "znuny.AuthenticationConfigObject.IsDeploySynced",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

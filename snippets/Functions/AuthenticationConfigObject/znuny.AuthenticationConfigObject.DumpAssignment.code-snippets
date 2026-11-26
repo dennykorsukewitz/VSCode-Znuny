@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AuthenticationConfigObject.DumpAssignment": {
+        "body": [
+            "${1:my \\$Line = \\$AuthenticationConfigObject->DumpAssignment(",
+            "    Accessor => \\"\\\$Self->{'AuthModule::SAML::Issuer1'\\}\\",",
+            "    Value    => 'https://sp.example.com',",
+            ");}",
+        ],
+        "prefix": "znuny.AuthenticationConfigObject.DumpAssignment",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

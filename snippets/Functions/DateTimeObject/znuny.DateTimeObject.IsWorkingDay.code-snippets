@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.DateTimeObject.IsWorkingDay": {
+        "body": [
+            "${1:my \\$IsWorkingDay = \\$DateTimeObject->IsWorkingDay(",
+            "    Calendar => 9, # optional, OTRS vacation days calendar number",
+            ");}",
+            "${2:my \\$IsWorkingDay = \\$DateTimeObject->IsWorkingDay();}",
+        ],
+        "prefix": "znuny.DateTimeObject.IsWorkingDay",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

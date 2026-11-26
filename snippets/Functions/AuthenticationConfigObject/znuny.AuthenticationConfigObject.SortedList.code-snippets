@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.AuthenticationConfigObject.SortedList": {
+        "body": [
+            "${1:my @Configs = \\$AuthenticationConfigObject->SortedList(",
+            "    Context => 'Agent',    # or 'Customer'",
+            "    UserID  => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthenticationConfigObject.SortedList",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

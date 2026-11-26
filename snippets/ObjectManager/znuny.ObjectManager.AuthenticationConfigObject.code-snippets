@@ -1,0 +1,10 @@
+{
+    "7.5 - znuny.ObjectManager.AuthenticationConfigObject": {
+        "body": [
+            "my \\$AuthenticationConfigObject = \\$Kernel::OM->Get('Kernel::System::AuthenticationConfig');",
+        ],
+        "prefix": "znuny.ObjectManager.AuthenticationConfigObject",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

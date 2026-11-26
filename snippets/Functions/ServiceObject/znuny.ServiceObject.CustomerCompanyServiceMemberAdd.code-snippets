@@ -1,0 +1,15 @@
+{
+    "7.5 - znuny.ServiceObject.CustomerCompanyServiceMemberAdd": {
+        "body": [
+            "${1:\\$ServiceObject->CustomerCompanyServiceMemberAdd(",
+            "    CustomerID => \\$CustomerID,",
+            "    ServiceID  => \\$ServiceID,",
+            "    Active     => 1,",
+            "    UserID     => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.ServiceObject.CustomerCompanyServiceMemberAdd",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

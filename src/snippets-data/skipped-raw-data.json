@@ -1129,6 +1129,9 @@
          "7.3",
          "7.5"
       ],
+      "_LoginFormNeeded" : [
+         "7.5"
+      ],
       "_MailAddressParse" : [
          "6.0",
          "6.4",
@@ -1198,6 +1201,9 @@
          "7.1",
          "7.2",
          "7.3",
+         "7.5"
+      ],
+      "_NormalizeTags" : [
          "7.5"
       ],
       "_NotificationEventCreate" : [
@@ -1337,6 +1343,9 @@
          "7.1",
          "7.2",
          "7.3",
+         "7.5"
+      ],
+      "_PluginForType" : [
          "7.5"
       ],
       "_PossibleNextActionsRender" : [
@@ -2176,6 +2185,9 @@
          "7.3",
          "7.5"
       ],
+      "AdminAuthentication" : [
+         "7.5"
+      ],
       "AdminAutoResponse" : [
          "6.0",
          "6.4",
@@ -2214,6 +2226,9 @@
          "7.1",
          "7.2",
          "7.3",
+         "7.5"
+      ],
+      "AdminCustomerCompanyService" : [
          "7.5"
       ],
       "AdminCustomerGroup" : [

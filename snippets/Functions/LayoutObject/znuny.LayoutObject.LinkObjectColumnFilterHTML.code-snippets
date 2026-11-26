@@ -1,0 +1,15 @@
+{
+    "7.5 - znuny.LayoutObject.LinkObjectColumnFilterHTML": {
+        "body": [
+            "${1:my \\$HTML = \\$LayoutObject->LinkObjectColumnFilterHTML(",
+            "    ColumnName    => 'State',",
+            "    Label         => 'State',",
+            "    ColumnValues  => \\%Values,",
+            "    SelectedValue => [1, 2],",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectColumnFilterHTML",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

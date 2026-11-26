@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.ArticleObject.ArticleSearchIndexArticleIDsGet": {
+        "body": [
+            "${1:my @ArticleIDs = \\$ArticleObject->ArticleSearchIndexArticleIDsGet(",
+            "    TicketID   => \\$TicketID,",
+            "    SearchTerm => 'refund invoice',",
+            ");}",
+        ],
+        "prefix": "znuny.ArticleObject.ArticleSearchIndexArticleIDsGet",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

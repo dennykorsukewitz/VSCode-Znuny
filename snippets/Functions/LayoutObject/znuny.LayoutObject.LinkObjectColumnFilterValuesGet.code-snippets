@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.LayoutObject.LinkObjectColumnFilterValuesGet": {
+        "body": [
+            "${1:my \\$Values = \\$LayoutObject->LinkObjectColumnFilterValuesGet(",
+            "    ColumnName => 'State',",
+            "    TicketIDs  => \\@TicketIDs,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectColumnFilterValuesGet",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}
