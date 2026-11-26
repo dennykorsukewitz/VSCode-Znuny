@@ -2,6 +2,11 @@
     "6.0|6.4|6.5|7.0|7.1|7.2|7.3|7.5 - znuny.SessionObject.RemoveSessionByUser": {
         "body": [
             "${1:\\$SessionObject->RemoveSessionByUser(",
+            "    UserLogin     => 'some_user_login',",
+            "    UserType      => 'User',                # optional, 'User' or 'Customer'",
+            "    KeepSessionID => \\$KeepSessionID,    # optional, keep this session",
+            ");}",
+            "${2:\\$SessionObject->RemoveSessionByUser(",
             "    UserLogin => 'some_user_login'",
             ");}",
         ],

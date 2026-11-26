@@ -1,0 +1,14 @@
+{
+    "7.5 - znuny.AuthenticationConfigObject.VFSFilenameUsedBy": {
+        "body": [
+            "${1:my \\$UsedBy = \\$AuthenticationConfigObject->VFSFilenameUsedBy(",
+            "    Filename  => 'VirtualFS::AuthenticationConfig::SAML::IdPCACert::...',",
+            "    ExcludeID => \\$ExcludeID,  # optional",
+            "    UserID    => \\$UserID,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthenticationConfigObject.VFSFilenameUsedBy",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

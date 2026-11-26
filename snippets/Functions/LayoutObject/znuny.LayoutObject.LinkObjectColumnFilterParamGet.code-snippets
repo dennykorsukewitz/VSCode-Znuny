@@ -1,0 +1,12 @@
+{
+    "7.5 - znuny.LayoutObject.LinkObjectColumnFilterParamGet": {
+        "body": [
+            "${1:my %Result = \\$LayoutObject->LinkObjectColumnFilterParamGet(",
+            "    PrefKey => 'LinkObject::ComplexTableFilters-Ticket',    # optional",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectColumnFilterParamGet",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

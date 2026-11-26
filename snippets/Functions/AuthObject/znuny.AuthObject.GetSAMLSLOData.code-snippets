@@ -1,0 +1,12 @@
+{
+    "7.5 - znuny.AuthObject.GetSAMLSLOData": {
+        "body": [
+            "${1:my %SLOData = \\$AuthObject->GetSAMLSLOData(",
+            "    Count => \\$Count,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthObject.GetSAMLSLOData",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

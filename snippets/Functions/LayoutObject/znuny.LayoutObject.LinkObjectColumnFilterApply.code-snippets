@@ -1,0 +1,13 @@
+{
+    "7.5 - znuny.LayoutObject.LinkObjectColumnFilterApply": {
+        "body": [
+            "${1:my \\$FilteredLinkList = \\$LayoutObject->LinkObjectColumnFilterApply(",
+            "    LinkListWithData => \\$LinkListWithData,",
+            "    ColumnFilter     => \\%ColumnFilter,",
+            ");}",
+        ],
+        "prefix": "znuny.LayoutObject.LinkObjectColumnFilterApply",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

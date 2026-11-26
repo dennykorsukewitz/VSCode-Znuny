@@ -3,6 +3,8 @@
         "body": [
             "${1:my \\$Data   = '<OTRS_CONFIG_Home>';",
             "my \\$Result = \\$WebserviceObject->WebserviceConfigReplace(\\$Data);}",
+            "${2:my \\$Data   = '<ZNUNY_CONFIG_Home>';",
+            "my \\$Result = \\$WebserviceObject->WebserviceConfigReplace(\\$Data);}",
         ],
         "prefix": "znuny.WebserviceObject.WebserviceConfigReplace",
         "description": "6.4|6.5|7.0|7.1|7.2|7.3|7.5",

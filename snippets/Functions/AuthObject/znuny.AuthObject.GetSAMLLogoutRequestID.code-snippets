@@ -1,0 +1,12 @@
+{
+    "7.5 - znuny.AuthObject.GetSAMLLogoutRequestID": {
+        "body": [
+            "${1:my \\$LogoutRequestID = \\$AuthObject->GetSAMLLogoutRequestID(",
+            "    Count => \\$Count,",
+            ");}",
+        ],
+        "prefix": "znuny.AuthObject.GetSAMLLogoutRequestID",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}

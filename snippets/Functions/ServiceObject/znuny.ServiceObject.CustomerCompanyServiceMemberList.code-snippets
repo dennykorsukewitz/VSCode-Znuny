@@ -1,0 +1,17 @@
+{
+    "7.5 - znuny.ServiceObject.CustomerCompanyServiceMemberList": {
+        "body": [
+            "${1:\\$ServiceObject->CustomerCompanyServiceMemberList(",
+            "    CustomerID => \\$CustomerID,",
+            "    Result     => 'HASH',",
+            ");}",
+            "${2:\\$ServiceObject->CustomerCompanyServiceMemberList(",
+            "    ServiceID => \\$ServiceID,",
+            "    Result    => 'HASH',",
+            ");}",
+        ],
+        "prefix": "znuny.ServiceObject.CustomerCompanyServiceMemberList",
+        "description": "7.5",
+        "scope": "perl"
+    }
+}
